@@ -1,0 +1,20 @@
+---
+layout: default
+title: Časová osa
+permalink: /casova-osa/
+---
+<section class="osa-uvod">
+  <h1>Časová osa</h1>
+  <p class="perex">Kapitoly seřazené podle herního letopočtu.</p>
+</section>
+{% assign kapitoly = site.kapitoly | sort: "herni_rok" %}
+<ol class="osa">
+{% for k in kapitoly %}
+  <li>
+    <span class="rok">{{ k.herni_rok }}</span>
+    <a href="{{ k.url | relative_url }}"><strong>{{ k.title }}</strong></a>
+    {% if k.era %}<span class="era">{{ k.era }}</span>{% endif %}
+    <p>{{ k.popis }}</p>
+  </li>
+{% endfor %}
+</ol>

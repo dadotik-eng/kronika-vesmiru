@@ -1,0 +1,32 @@
+---
+layout: default
+---
+<article class="kapitola">
+  <p class="nadtitul">
+    {% if page.era %}{{ page.era }} · {% endif %}{% if page.herni_rok %}rok {{ page.herni_rok }}{% endif %}{% if page.system %} · systém {{ page.system }}{% endif %}
+  </p>
+  <h1>{{ page.title }}</h1>
+  {% if page.overeni == "OK" %}
+    <p class="stav stav-ok">Ověřeno proti pramenům</p>
+  {% else %}
+    <p class="stav stav-ceka">Čeká na ověření{% if page.overeni_poznamka %} – {{ page.overeni_poznamka }}{% endif %}</p>
+  {% endif %}
+  {% if page.audio %}
+    <audio class="prehravac" controls preload="none" src="{{ page.audio }}"></audio>
+  {% endif %}
+  <div class="text">{{ content }}</div>
+  {% if page.prameny %}
+  <section class="prameny">
+    <h2>Prameny</h2>
+    <ul>
+      {% for p in page.prameny %}
+        <li>{% if p.url %}<a href="{{ p.url }}" rel="noopener">{{ p.nazev }}</a>{% else %}{{ p.nazev }}{% endif %}{% if p.typ %} <span class="typ">{{ p.typ }}</span>{% endif %}</li>
+      {% endfor %}
+    </ul>
+  </section>
+  {% endif %}
+  {% if page.stitky %}
+  <p class="stitky">{% for s in page.stitky %}<span>{{ s }}</span>{% endfor %}</p>
+  {% endif %}
+  <p class="zpet"><a href="{{ '/casova-osa/' | relative_url }}">← Zpět na časovou osu</a></p>
+</article>

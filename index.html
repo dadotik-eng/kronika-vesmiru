@@ -1,0 +1,23 @@
+---
+layout: default
+---
+<section class="uvod">
+  <p class="nadtitul">Dějiny lidstva mezi hvězdami</p>
+  <h1>Kronika Vesmíru</h1>
+  <p class="perex">Vyprávění o válkách, objevech a pádech říší ve vesmíru Star Citizen. Každá kapitola vychází z oficiálních pramenů a je proti nim ověřená.</p>
+  <a class="tlacitko" href="{{ '/casova-osa/' | relative_url }}">Projít časovou osu</a>
+</section>
+
+<section class="nejnovejsi">
+  <h2>Nejnovější kapitoly</h2>
+  {% assign kapitoly = site.kapitoly | sort: "date" | reverse %}
+  <div class="karty">
+  {% for k in kapitoly limit: 6 %}
+    <a class="karta" href="{{ k.url | relative_url }}">
+      <span class="rok">{{ k.herni_rok }}</span>
+      <h3>{{ k.title }}</h3>
+      <p>{{ k.popis }}</p>
+    </a>
+  {% endfor %}
+  </div>
+</section>

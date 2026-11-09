@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page.title %}{{ page.title }} · {% endif %}{{ site.title }}</title>
+  <meta name="description" content="{{ page.popis | default: site.description }}">
+  <meta property="og:title" content="{{ page.title | default: site.title }}">
+  <meta property="og:description" content="{{ page.popis | default: site.description }}">
+  <link rel="stylesheet" href="{{ '/assets/css/styl.css' | relative_url }}">
+</head>
+<body>
+  <div class="hvezdy" aria-hidden="true"></div>
+  {% include hlavicka.html %}
+  <main>{{ content }}</main>
+  {% include paticka.html %}
+</body>
+</html>

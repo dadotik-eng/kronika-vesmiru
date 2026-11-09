@@ -1,0 +1,25 @@
+title: Kronika Vesmíru
+description: Česká kronika dějin vesmíru Star Citizen – vyprávěná z ověřených pramenů.
+lang: cs
+url: "https://dadotik-eng.github.io"
+baseurl: "/kronika-vesmiru"
+permalink: pretty
+markdown: kramdown
+kramdown:
+  smart_quotes: ["sbquo", "lsquo", "bdquo", "ldquo"]
+
+collections:
+  kapitoly:
+    output: true
+    permalink: /kapitoly/:name/
+
+defaults:
+  - scope:
+      path: ""
+      type: kapitoly
+    values:
+      layout: kapitola
+
+exclude:
+  - README.md
+  - SABLONA-KAPITOLY.md
