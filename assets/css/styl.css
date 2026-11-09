@@ -1,15 +1,17 @@
 :root {
-  --pozadi: #070a12;
-  --panel: #0f1422;
-  --linka: #232b40;
-  --text: #d9dde8;
-  --tlumene: #8a93a8;
-  --akcent: #e0a84f;
-  --akcent2: #6fb3d9;
+  --pozadi: #081a33;
+  --panel: #12355f;
+  --linka: rgba(222,236,246,.28);
+  --text: #f0f5f7;
+  --tlumene: #bcd0dd;
+  --akcent: #f6bd4b;
+  --akcent2: #bfe3f5;
   --ok: #5cb88a;
   --ceka: #d98b4f;
-  --serif: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
-  --sans: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --serif: "Spectral", Georgia, serif;
+  --sans: "Spectral", Georgia, serif;
+  --display: "Cinzel", "Times New Roman", serif;
+  --label: "Saira Condensed", "Arial Narrow", sans-serif;
 }
 
 * { box-sizing: border-box; }
@@ -37,10 +39,9 @@ body {
     radial-gradient(1px 1px at 86% 82%, #fff5 50%, transparent 51%),
     radial-gradient(1px 1px at 55% 12%, #fff6 50%, transparent 51%),
     radial-gradient(1px 1px at 22% 55%, #fff4 50%, transparent 51%),
-    radial-gradient(ellipse at 80% -10%, #1d2b4a 0%, transparent 55%),
-    radial-gradient(ellipse at 0% 110%, #2a1a2e 0%, transparent 50%),
+    radial-gradient(ellipse at 80% -10%, #12355f 0%, transparent 55%),
     var(--pozadi);
-  background-size: 420px 420px, 380px 380px, 520px 520px, 460px 460px, 340px 340px, 600px 600px, 100% 100%, 100% 100%, 100% 100%;
+  background-size: 420px 420px, 380px 380px, 520px 520px, 460px 460px, 340px 340px, 600px 600px, 100% 100%, 100% 100%;
 }
 
 a { color: var(--akcent2); }
@@ -54,14 +55,14 @@ a:hover { color: #9fd0ee; }
   gap: 0.75rem 1.5rem;
   padding: 1.1rem clamp(1rem, 4vw, 3rem);
   border-bottom: 1px solid var(--linka);
-  background: #070a12cc;
+  background: #081a33e6;
   backdrop-filter: blur(6px);
   position: sticky;
   top: 0;
 }
 
 .logo {
-  font-family: var(--serif);
+  font-family: var(--display);
   font-size: 1.35rem;
   color: var(--text);
   text-decoration: none;
@@ -70,7 +71,7 @@ a:hover { color: #9fd0ee; }
 .logo span { color: var(--akcent); }
 
 .hlavicka nav { display: flex; gap: 1.25rem; flex-wrap: wrap; }
-.hlavicka nav a { color: var(--tlumene); text-decoration: none; font-size: 0.95rem; }
+.hlavicka nav a { color: var(--tlumene); text-decoration: none; font-size: 1rem; font-family: var(--label); text-transform: uppercase; letter-spacing: .08em; }
 .hlavicka nav a:hover { color: var(--text); }
 
 main {
@@ -81,9 +82,10 @@ main {
   padding: 2.5rem clamp(1rem, 4vw, 2rem) 4rem;
 }
 
-h1, h2, h3 { font-family: var(--serif); font-weight: 600; line-height: 1.2; color: #f2ede3; }
+h1, h2, h3 { font-family: var(--display); font-weight: 600; line-height: 1.2; color: #f2ede3; }
 
 .nadtitul {
+  font-family: var(--label);
   text-transform: uppercase;
   letter-spacing: 0.14em;
   font-size: 0.78rem;

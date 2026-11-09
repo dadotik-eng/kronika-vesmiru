@@ -1,0 +1,7 @@
+---
+layout: null
+permalink: /kapitoly.json
+---
+[{% for k in site.kapitoly %}
+{"slug": {{ k.url | split: "/" | last | jsonify }}, "title": {{ k.title | jsonify }}, "date": {{ k.date | date: "%Y-%m-%d" | jsonify }}, "herni_rok": {{ k.herni_rok | jsonify }}, "era": {{ k.era | jsonify }}, "system": {{ k.system | jsonify }}, "popis": {{ k.popis | jsonify }}, "overeni": {{ k.overeni | jsonify }}, "prameny": {{ k.prameny | jsonify }}, "url": {{ k.url | relative_url | jsonify }}, "html": {{ k.content | jsonify }}}{% unless forloop.last %},{% endunless %}{% endfor %}
+]
