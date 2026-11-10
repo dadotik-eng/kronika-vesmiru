@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Star Kronika</title>
+<title>Hvězdná kronika</title>
 <meta name="description" content="Dějiny, firmy, svátky a příběhy univerza Star Citizen – neoficiální česká kronika s vyprávěním.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -131,7 +131,7 @@ h2{font:500 clamp(32px,3.8vw,48px)/1.14 var(--display);margin:.2em 0 .3em;text-w
 <canvas id="c" aria-hidden="true"></canvas>
 <div class="app">
   <header class="top" id="top" hidden>
-    <a class="brand" href="../" title="Hlavní stránka">Star Kronika</a>
+    <a class="brand" href="../" title="Hlavní stránka">Hvězdná kronika</a>
     <nav id="tabs" aria-label="Kategorie"></nav><button type="button" class="topmute" id="mute2" aria-label="Ztlumit zvuk" title="Ztlumit zvuk">&#128266;</button>
   </header>
   <main class="stage" id="stage"><div class="col" id="col"></div></main>
@@ -229,14 +229,14 @@ function route(){if(location.hash==='#osobnosti'){location.replace('../osobnosti
 function ambient(mode){amb=true;if(E)mood('ticho');vis.mode=mode;vis.alarm=0}
 const wanted=()=>{const h=location.hash.slice(1);return idx(h)>=0?h:null};
 function gate(){stopScene();chrome('gate');vis.mode='years';
-  $('#col').innerHTML=`<p class="lab">Neoficiální fanouškovský projekt</p><h1>Star Kronika</h1><p class="lead">Dějiny, firmy, svátky a příběhy univerza Star Citizen na jednom místě. Zapni si zvuk.</p><div class="row"><button type="button" class="main" id="go">Vstoupit do archivu</button><button type="button" class="alt" id="dir">Přeskočit prolog</button></div><p class="small">Hudba a zvuky vznikají přímo v prohlížeči. Hlas je dočasný náhled, ve finální verzi tu bude kvalitní AI dabing.</p><p class="small">Star Kronika není spojena s Cloud Imperium Games ani jimi schválena. Star Citizen® a Roberts Space Industries® jsou ochranné známky Cloud Imperium Rights LLC. <a href="../" style="color:var(--accent)">Hlavní stránka</a> · <a href="../casova-osa/" style="color:var(--accent)">Časová osa</a> · <a href="../o-projektu/" style="color:var(--accent)">O projektu</a></p>`;
+  $('#col').innerHTML=`<p class="lab">Neoficiální fanouškovský projekt</p><h1>Hvězdná kronika</h1><p class="lead">Dějiny, firmy, svátky a příběhy univerza Star Citizen na jednom místě. Zapni si zvuk.</p><div class="row"><button type="button" class="main" id="go">Vstoupit do archivu</button><button type="button" class="alt" id="dir">Přeskočit prolog</button></div><p class="small">Hudba a zvuky vznikají přímo v prohlížeči. Hlas je dočasný náhled, ve finální verzi tu bude kvalitní AI dabing.</p><p class="small">Hvězdná kronika není spojena s Cloud Imperium Games ani jimi schválena. Star Citizen® a Roberts Space Industries® jsou ochranné známky Cloud Imperium Rights LLC. <a href="../" style="color:var(--accent)">Hlavní stránka</a> · <a href="../casova-osa/" style="color:var(--accent)">Časová osa</a> · <a href="../o-projektu/" style="color:var(--accent)">O projektu</a></p>`;
   $('#go').onclick=()=>{unlock();const w=wanted();if(w)go(w);else go('prolog')};$('#dir').onclick=()=>{unlock();warpHub()}}
 function warpHub(){stopScene();$('#ctl').hidden=true;$('#col').innerHTML='';fx('whoosh');
   if(reduce){showHub();return}vis.warp=performance.now();setTimeout(showHub,1120)}
 function showHub(){if(location.hash==='#domu')route();else location.hash='domu'}
 function hub(){chrome('hub');ambient('hub');
   const cnt=k=>{if(k==='osobnosti')return 'Rejstřík osob';const n=D.cats[k].items.length;return n+(n<5?' záznamy':' záznamů')};
-  $('#col').innerHTML=`<p class="lab rise">Archiv je otevřený</p><h1 class="rise" style="--d:1">Star Kronika</h1>
+  $('#col').innerHTML=`<p class="lab rise">Archiv je otevřený</p><h1 class="rise" style="--d:1">Hvězdná kronika</h1>
    <button type="button" class="hero rise" style="--d:2" data-nav="dejiny"><span class="lab">Hlavní vyprávění</span><b>Dějiny vesmíru</b><span>Deset kapitol od prvního kvantového pohonu po dnešní válku</span></button>
    <div class="row rise" style="--d:3"><button type="button" class="alt" data-play="prolog">Přehrát prolog</button></div>
    <div id="nodes">${CATKEYS.map((k,i)=>`<button type="button" class="node rise" style="--d:${i+3}" data-nav="${k}"><i></i><b>${D.cats[k].label}</b><span>${cnt(k)}</span></button>`).join('')}</div>`;
