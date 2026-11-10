@@ -2,10 +2,132 @@
 layout: default
 title: Časová osa
 permalink: /casova-osa/
+popis: Osm set osmdesát jedna let dějin vesmíru Star Citizen na jedné ose. Klikni na datum a přečti si, co se stalo.
 ---
-<section class="blok uzky">
-  <p class="nadtitul">Dějiny vesmíru</p>
+{% assign data = site.data.udalosti %}
+{% assign udalosti = data.udalosti | sort: "rok" %}
+{% assign kapitoly = site.kapitoly | sort: "herni_rok" %}
+<section class="blok osa-hlava">
+  <p class="nadtitul">Dějiny vesmíru · 2075–2956</p>
   <h1>Časová osa</h1>
-  <p class="perex">Hlavní vyprávění i nové kapitoly, seřazené podle herního letopočtu. Kapitoly hlavního vyprávění si poslechneš v archivu, nové kapitoly si můžeš přečíst i poslechnout.</p>
-  {% include osa.html %}
+  <p class="perex">Osm set osmdesát jedna let na jedné ose. Klikni na kterýkoli bod a dozvíš se, co se tehdy stalo. Odtud se dostaneš rovnou do archivu k poslechu.</p>
 </section>
+
+<div class="panorama" id="panorama" aria-label="Přehled celé časové osy">
+  <div class="pan-vnitrek">
+    <div class="pan-ery">
+      {% for e in data.ery %}
+      <a class="pan-era" href="#era-{{ e.id }}" style="--barva: {{ e.barva }}" data-od="{{ e.od }}" data-do="{{ e.do }}">
+        <span>{{ e.nazev }}</span>
+      </a>
+      {% endfor %}
+    </div>
+    <div class="pan-body">
+      {% for u in udalosti %}
+      <a class="pan-bod{% if u.klic %} klic{% endif %}" href="#{{ u.id }}" data-rok="{{ u.rok }}">
+        <span class="pan-popisek"><b>{{ u.datum | default: u.rok }}</b>{{ u.titul }}</span>
+      </a>
+      {% endfor %}
+      {% for k in kapitoly %}
+      <a class="pan-bod nova" href="#kap-{{ k.slug | default: k.url | split: '/' | last }}" data-rok="{{ k.herni_rok }}">
+        <span class="pan-popisek"><b>{{ k.herni_rok }}</b>Nová kapitola: {{ k.title }}</span>
+      </a>
+      {% endfor %}
+    </div>
+    <div class="pan-roky"></div>
+  </div>
+</div>
+
+<nav class="ery-cipy blok" aria-label="Skok na období">
+  {% for e in data.ery %}
+  <a href="#era-{{ e.id }}" style="--barva: {{ e.barva }}">{{ e.nazev }}</a>
+  {% endfor %}
+</nav>
+
+<div class="blok osa-seznam">
+{% for e in data.ery %}
+  {% assign posledni = forloop.last %}
+  <section class="era-blok" id="era-{{ e.id }}" style="--barva: {{ e.barva }}">
+    <header class="era-hlava">
+      <p class="era-rozsah">{% if e.rozsah %}{{ e.rozsah }}{% else %}{{ e.od }}–{{ e.do }}{% endif %}</p>
+      <h2>{{ e.nazev }}</h2>
+    </header>
+    <ol class="udalosti">
+    {% for u in udalosti %}
+      {% if u.rok >= e.od %}{% if u.rok < e.do or posledni %}
+      <li class="udalost{% if u.klic %} klic{% endif %}" id="{{ u.id }}">
+        <div class="ud-datum">{{ u.datum | default: u.rok }}</div>
+        <div class="ud-telo">
+          <h3>{{ u.titul }}</h3>
+          <p>{{ u.text }}</p>
+          {% if u.odkaz %}
+            <a class="ud-odkaz" href="{{ '/archiv/#' | append: u.odkaz | relative_url }}">▶ {% if u.odkaz == 'letka' %}Poslechnout příběh Ztracené letky{% else %}Poslechnout prolog{% endif %}</a>
+          {% endif %}
+          {% if u.kap %}
+            {% assign i = u.kap | minus: 1 %}{% assign d = site.data.dejiny[i] %}
+            <a class="ud-odkaz{% if u.odkaz %} vedlejsi{% endif %}" href="{{ '/archiv/#' | append: d.hraj | relative_url }}">▶ Kapitola {{ d.rim }}. {{ d.title }}</a>
+          {% endif %}
+        </div>
+      </li>
+      {% endif %}{% endif %}
+    {% endfor %}
+    {% for k in kapitoly %}
+      {% if k.herni_rok >= e.od %}{% if k.herni_rok < e.do or posledni %}
+      <li class="udalost nova" id="kap-{{ k.slug | default: k.url | split: '/' | last }}">
+        <div class="ud-datum">{{ k.herni_rok }}</div>
+        <div class="ud-telo">
+          <p class="ud-stitek">Nová kapitola</p>
+          <h3>{{ k.title }}</h3>
+          <p>{{ k.popis }}</p>
+          <a class="ud-odkaz" href="{{ k.url | relative_url }}">Číst kapitolu →</a>
+        </div>
+      </li>
+      {% endif %}{% endif %}
+    {% endfor %}
+    </ol>
+  </section>
+{% endfor %}
+</div>
+
+<script>
+(function () {
+  var pan = document.getElementById('panorama');
+  if (!pan) return;
+  var ery = [].slice.call(pan.querySelectorAll('.pan-era'));
+  var body = [].slice.call(pan.querySelectorAll('.pan-bod'));
+  // Šířka období: odmocnina délky + počet událostí, aby husté období nebylo stlačené.
+  var info = ery.map(function (el) {
+    var od = parseFloat(el.dataset.od), d = parseFloat(el.dataset.do);
+    var n = body.filter(function (b) { var r = parseFloat(b.dataset.rok); return r >= od && r < d; }).length;
+    return { el: el, od: od, do: d, w: Math.sqrt(d - od) + 1.7 * n };
+  });
+  var celkem = info.reduce(function (s, e) { return s + e.w; }, 0), x = 0;
+  info.forEach(function (e) { e.x = x / celkem * 100; e.sirka = e.w / celkem * 100; x += e.w;
+    e.el.style.left = e.x + '%'; e.el.style.width = e.sirka + '%'; });
+  function poloha(rok) {
+    for (var i = 0; i < info.length; i++) {
+      var e = info[i];
+      if (rok < e.do || i === info.length - 1) {
+        var t = Math.min(1, Math.max(0, (rok - e.od) / (e.do - e.od)));
+        return e.x + e.sirka * (0.06 + 0.88 * t);
+      }
+    }
+  }
+  body.forEach(function (b, i) {
+    b.style.left = poloha(parseFloat(b.dataset.rok)) + '%';
+    if (!b.classList.contains('klic')) b.classList.add(i % 2 ? 'dole' : 'nahore');
+  });
+  // Popisky letopočtů na hranicích období
+  var roky = pan.querySelector('.pan-roky');
+  info.forEach(function (e) {
+    var s = document.createElement('span'); s.textContent = Math.floor(e.od);
+    s.style.left = e.x + '%'; roky.appendChild(s);
+  });
+  var k = document.createElement('span'); k.textContent = '2956'; k.style.left = '100%'; k.className = 'konec'; roky.appendChild(k);
+  // Zvýraznění vybrané události
+  function zvyrazni() {
+    body.forEach(function (b) { b.classList.toggle('aktivni', b.getAttribute('href') === location.hash); });
+  }
+  window.addEventListener('hashchange', zvyrazni); zvyrazni();
+})();
+</script>

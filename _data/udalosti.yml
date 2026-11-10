@@ -1,0 +1,258 @@
+# Důležitá data pro stránku Časová osa.
+# Každá událost: id (kotva), rok, datum (volitelné, zobrazí se místo roku), titul, text, kap (kapitola v archivu)
+# Volitelně: odkaz (vlastní cíl v archivu, např. "letka" nebo "prolog"), klic: true = velká událost
+# Vše ověřeno proti Galactapedii a Comm-Linkům (kontrola 10. 11. 2026).
+
+ery:
+  - id: usvit
+    nazev: Úsvit Sluneční soustavy
+    od: 2075
+    do: 2262
+    barva: "#7fb8d8"
+  - id: skoky
+    nazev: Věk skoků
+    od: 2262
+    do: 2380
+    barva: "#8fd0c0"
+  - id: une
+    nazev: Spojené národy Země
+    od: 2380
+    do: 2523
+    barva: "#a6c97f"
+  - id: upe
+    nazev: Spojené planety Země
+    od: 2523
+    do: 2547
+    rozsah: 2523–2546
+    barva: "#d9c46a"
+  - id: messerove
+    nazev: Éra Messerů
+    od: 2547
+    do: 2792.4
+    rozsah: 2546–2792
+    barva: "#e0785c"
+  - id: naprava
+    nazev: Věk nápravy
+    od: 2792.4
+    do: 2945
+    rozsah: 2792–2945
+    barva: "#b99ae0"
+  - id: valka
+    nazev: Válka s Vanduuly
+    od: 2945
+    do: 2956
+    barva: "#f6bd4b"
+
+udalosti:
+  - id: r2075
+    rok: 2075
+    titul: První kvantový pohon
+    text: Doktor Scott Childress a jeho tým v Roberts Space Industries dokončili první soběstačný kvantový pohon.
+    kap: 1
+    klic: true
+  - id: r2113
+    rok: 2113
+    titul: Patent na terraformaci
+    text: RSI si nechala patentovat technologii, která měla mrtvé světy proměnit v obyvatelné.
+    kap: 1
+  - id: r2125
+    rok: 2125
+    titul: Tragédie na Marsu
+    text: Krátce před dokončením se nová atmosféra Marsu zhroutila. Zemřelo 4 876 lidí.
+    kap: 1
+  - id: r2140
+    rok: 2140
+    titul: Zeus
+    text: První kosmická loď s kvantovým pohonem, kterou si mohl koupit i běžný zákazník.
+    kap: 1
+  - id: r2157
+    rok: 2157
+    titul: Mars je obyvatelný
+    text: Druhý pokus vyšel a Mars byl oficiálně prohlášen za úspěšně přetvořený.
+    kap: 1
+    klic: true
+  - id: r2262
+    rok: 2262
+    titul: Neso trojúhelník uzavřen
+    text: Poblíž Neptunu mizely lodě a úřady oblast uzavřely pro veškerý provoz.
+    kap: 2
+  - id: r2271
+    rok: 2271
+    titul: První skok
+    text: Nick Croshaw prolétl skokovým bodem a objevil první soustavu mimo Slunce. Nese dodnes jeho jméno.
+    kap: 2
+    klic: true
+  - id: r2292
+    rok: 2292
+    datum: listopad 2292
+    titul: Tarsus
+    text: Dva mechanici vyzkoušeli levný skokový pohon a hvězdy se otevřely každému majiteli lodi.
+    kap: 2
+  - id: r2380
+    rok: 2380
+    titul: Spojené národy Země
+    text: Lidstvo poprvé dostalo společnou vládu.
+    kap: 3
+  - id: r2438
+    rok: 2438
+    datum: 12. června 2438
+    titul: První kontakt
+    text: Navjumper Vernon Tar narazil v soustavě Davien na banuskou loď. Lidé nebyli ve vesmíru sami.
+    kap: 3
+    klic: true
+  - id: r2438b
+    rok: 2438.8
+    datum: říjen 2438
+    titul: Dohoda s Banu
+    text: Generál Neal Socolovich podepsal s Banu první mezihvězdnou mírovou a obchodní dohodu.
+    kap: 3
+  - id: r2523
+    rok: 2523
+    titul: Spojené planety Země
+    text: Z národů se staly planety a moc si rozdělil Tribunál tří pilířů.
+    kap: 4
+  - id: r2530
+    rok: 2530
+    titul: Začátek studené války s Xi'any
+    text: Incident firmy Gaia Planet Services otevřel dlouhé nepřátelství s říší Xi'anů.
+    kap: 4
+  - id: r2541
+    rok: 2541
+    titul: Objev Tevarinů
+    text: Lidští průzkumníci našli domovskou soustavu válečnické rasy Tevarinů.
+    kap: 5
+  - id: r2544
+    rok: 2544
+    titul: Bitva o Idris IV
+    text: Zlom první tevarinské války a hvězdná chvíle velitele Ivara Messera.
+    kap: 5
+  - id: r2546
+    rok: 2546.9
+    datum: prosinec 2546
+    titul: Messer Prvním občanem
+    text: Po kapitulaci Tevarinů občané sami zvolili Ivara Messera. Začala éra diktatury.
+    kap: 5
+    klic: true
+  - id: r2603
+    rok: 2603
+    datum: 15. února 2603
+    titul: Druhá tevarinská válka
+    text: Z temnoty se vynořila přestavěná flotila Corath'Thala.
+    kap: 6
+  - id: r2610
+    rok: 2610
+    datum: 24. června 2610
+    titul: Squadron 42
+    text: V soustavě Centauri porazila legendární letka Corath'Thala a válka skončila.
+    kap: 6
+  - id: r2638
+    rok: 2638
+    titul: Zmizení guvernéra Kierena
+    text: Guvernér Terry navrhl odtržení od impéria. Propaganda ho zničila a on beze stopy zmizel.
+    kap: 6
+  - id: r2681
+    rok: 2681
+    datum: 9. srpna 2681
+    titul: Armitage
+    text: V soustavě Orion byla vypálena kolonie. Lidé poprvé potkali Vanduuly.
+    kap: 7
+    klic: true
+  - id: r2712
+    rok: 2712
+    datum: únor 2712
+    titul: První Kingship
+    text: Do Orionu přiletěla téměř tříkilometrová vanduulská mateřská loď.
+    kap: 7
+  - id: r2736
+    rok: 2736
+    datum: 29. prosince 2736
+    titul: Pád Tiberu
+    text: Po letech obléhání přiletěl další Kingship a obrana Tiberu se zhroutila.
+    kap: 7
+  - id: r2781
+    rok: 2781
+    titul: Lintonův převrat
+    text: Linton Messer se sestrou Fionou svrhl vlastního otce, imperátora Ulyssese.
+    kap: 6
+  - id: r2789
+    rok: 2789
+    titul: Akari za Perryho linií
+    text: Senátor Terrence Akari překročil zakázanou hranici a setkal se s císařem Xi'anů.
+    kap: 8
+  - id: r2792
+    rok: 2792.3
+    datum: duben 2792
+    titul: Garron II
+    text: Skupina Tide zveřejnila, že imperátor dovolil vyhubit vyvíjející se život na Garronu II.
+    kap: 8
+  - id: r2792b
+    rok: 2792.35
+    datum: 2. května 2792
+    titul: Pád Messerů
+    text: Po masakru na Vale padl Linton Messer a éra Messerů skončila.
+    kap: 8
+    klic: true
+  - id: r2793
+    rok: 2793
+    datum: 5. července 2793
+    titul: Pakt o Perryho linii
+    text: Studená válka s Xi'any oficiálně skončila.
+    kap: 8
+  - id: r2800
+    rok: 2800
+    titul: Imperátor Leon a Archa
+    text: Diplomat Marshall Leon se stal imperátorem. Jeho odkazem je Archa, úložiště vědění všech ras.
+    kap: 9
+  - id: r2865
+    rok: 2865
+    titul: Stanton na prodej
+    text: Vláda oznámila, že celou soustavu Stanton prodá korporacím. Vznikly jediné soukromé planety v impériu.
+    kap: 9
+  - id: r2872
+    rok: 2872
+    titul: Projekt Archangel
+    text: Imperátor Corbyn Salehi ohlásil stavbu celé planety v soustavě Chronos. Dodnes není hotová.
+    kap: 9
+  - id: r2884
+    rok: 2884
+    datum: 7. července 2884
+    titul: Pád Calibanu
+    text: Vanduulský klan proklouzl kolem senzorů. Z letky, která kupovala čas pro evakuaci, přežil jediný pilot.
+    kap: 9
+    odkaz: letka
+    klic: true
+  - id: r2941
+    rok: 2941
+    titul: Zákon o historické pravdě
+    text: Impérium odtajnilo tisíce spisů z éry Messerů. Z nich vychází i tento archiv.
+    odkaz: prolog
+  - id: r2945
+    rok: 2945
+    datum: říjen 2945
+    titul: Útok na Vega II
+    text: Vanduulové zaútočili na planetu, které se dnes říká Aremis.
+    kap: 10
+  - id: r2945b
+    rok: 2945.86
+    datum: 10. listopadu 2945
+    titul: Vyhlášení války
+    text: Senát schválil válku s Vanduuly. Po dvou stech letech šarvátek skončilo předstírání míru.
+    kap: 10
+    klic: true
+  - id: r2946
+    rok: 2946.25
+    datum: březen 2946
+    titul: Operace Mandrake
+    text: Admirál Bishop vedl flotu do soustavy Oberon.
+    kap: 10
+  - id: r2951
+    rok: 2951
+    datum: 1. ledna 2951
+    titul: Imperátorka Addison
+    text: Laylani Addison složila přísahu a do vlády jmenovala první Tevarinku Ki Jotal.
+    kap: 10
+  - id: r2956
+    rok: 2956
+    titul: Současnost
+    text: Rok 2956 běží souběžně s naším časem a příběh se stále píše.
+    kap: 10
