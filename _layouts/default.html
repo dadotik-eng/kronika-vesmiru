@@ -12,7 +12,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Saira+Condensed:wght@400;600&family=Spectral:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="{{ '/assets/css/styl.css' | relative_url }}?v={{ site.time | date: '%s' }}">
 </head>
-<body data-zaklad="{{ '/' | relative_url }}" data-sekce="{{ page.sekce | default: '' }}">
+<body data-zaklad="{{ '/' | relative_url }}" data-verze="{{ site.time | date: '%s' }}" data-sekce="{{ page.sekce | default: '' }}">
   <div class="hvezdy" aria-hidden="true"></div>
   {% include hlavicka.html %}
   <main>{{ content }}</main>

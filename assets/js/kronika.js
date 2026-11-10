@@ -23,7 +23,7 @@
         if (Date.now() > konec) return hotovo(null);
         setTimeout(cekej, 80);
       })();
-      if (!frame.getAttribute('src')) frame.setAttribute('src', ZAKLAD + 'archiv/?embed=1#domu');
+      if (!frame.getAttribute('src')) frame.setAttribute('src', ZAKLAD + 'archiv/?embed=1&v=' + (document.body.dataset.verze || '') + '#domu');
     });
     return framePripraven;
   }
