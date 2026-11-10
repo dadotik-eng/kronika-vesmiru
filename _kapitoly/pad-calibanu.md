@@ -20,7 +20,7 @@ prameny:
   - nazev: "Caliban"
     typ: Star Map
 ---
-Systém Caliban objevila roku 2341 pilotka Ashley Ghan. Patřil k místům, která Impérium počítalo mezi svá. Klid ale netrval věčně. Od roku 2739 začaly do systému pronikat vanduulské nájezdy. Vanduulové, válečnický mimozemský rod, se tak stali hrozbou, s níž muselo Impérium v Calibanu napříště počítat.
+Systém Caliban objevila roku 2341 pilotka Ashley Ghan. Klid ale netrval věčně. Od roku 2739 začaly do systému pronikat vanduulské nájezdy. Vanduulové, válečnický mimozemský rod, se tak stali hrozbou, s níž muselo Impérium v Calibanu napříště počítat.
 
 Rok 2792 přinesl nájezd, který si vyžádal přes sto obětí. Vláda tehdy do systému vyslala 31. bojovou skupinu, aby Caliban bránila. Poslední velký střet této skupiny s Vanduuly je zaznamenán k roku 2859.
 
