@@ -18,4 +18,5 @@ hodnoceni: 5
 hodnoceni_proc: Zrada, alkohol a spravedlnost s humorem – výborné postavy.
 stav: nápad
 priorita: false
+rok_od: 2713
 ---

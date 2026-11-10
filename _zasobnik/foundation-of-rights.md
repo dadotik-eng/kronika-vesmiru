@@ -15,4 +15,5 @@ hodnoceni: 3
 hodnoceni_proc: Příjemný příběh o vytrvalosti, ale politicky suchý.
 stav: nápad
 priorita: false
+rok_od: 2525
 ---

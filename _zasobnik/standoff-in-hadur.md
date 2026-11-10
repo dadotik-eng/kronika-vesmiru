@@ -18,4 +18,5 @@ hodnoceni: 4
 hodnoceni_proc: Napínavá krize studené války s rozhodnutím „kdy neodpálit“.
 stav: nápad
 priorita: false
+rok_od: 2550
 ---

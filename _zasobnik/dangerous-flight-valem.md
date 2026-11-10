@@ -16,4 +16,5 @@ hodnoceni: 4
 hodnoceni_proc: Krátký, ironický příběh o pýše s jasnou pointou.
 stav: nápad
 priorita: false
+rok_od: 2884
 ---

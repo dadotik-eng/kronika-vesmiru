@@ -18,4 +18,5 @@ hodnoceni: 4
 hodnoceni_proc: Dvojice s konfliktem a napětím uprostřed studené války.
 stav: nápad
 priorita: false
+rok_od: 2617
 ---

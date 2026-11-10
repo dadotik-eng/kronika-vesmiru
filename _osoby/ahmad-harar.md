@@ -10,4 +10,5 @@ zdroje:
   typ: Galactapedie
   url: https://robertsspaceindustries.com/galactapedia/article/VYLznx8r3e-ahmad-harar
 kapitoly: []
+rad: 2595
 ---

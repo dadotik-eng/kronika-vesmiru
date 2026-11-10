@@ -17,4 +17,5 @@ hodnoceni: 4
 hodnoceni_proc: Už na webu jako válka o Vegu 2945.
 stav: na webu
 priorita: false
+rok_od: 2945
 ---

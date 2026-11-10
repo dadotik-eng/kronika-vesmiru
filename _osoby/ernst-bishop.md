@@ -11,4 +11,5 @@ zdroje:
   url: https://robertsspaceindustries.com/galactapedia/article/ReJaavPB3k-ernst-bishop
 kapitoly:
 - kap-10
+rad: 2880
 ---

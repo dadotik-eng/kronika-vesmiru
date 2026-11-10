@@ -20,4 +20,5 @@ zdroje:
   url: https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/13564-Galactic-Guide-Davien-System
 kapitoly:
 - kap-3
+rad: 2408
 ---

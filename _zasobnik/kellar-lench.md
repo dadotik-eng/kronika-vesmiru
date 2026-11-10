@@ -15,4 +15,5 @@ hodnoceni: 4
 hodnoceni_proc: Tragický osobní rozměr objevu, který spustil válku.
 stav: nápad
 priorita: false
+rok_od: 2541
 ---

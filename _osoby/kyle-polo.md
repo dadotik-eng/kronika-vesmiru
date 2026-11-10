@@ -10,4 +10,5 @@ zdroje:
   typ: Galactapedie
   url: https://robertsspaceindustries.com/galactapedia/article/0dXZQNQMmp-kyle-polo
 kapitoly: []
+rad: 2883
 ---

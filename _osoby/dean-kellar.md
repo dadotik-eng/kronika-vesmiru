@@ -13,4 +13,5 @@ zdroje:
   typ: Comm-Link
   url: https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/13885-This-Day-In-History-Kellars-Run
 kapitoly: []
+rad: 2901
 ---

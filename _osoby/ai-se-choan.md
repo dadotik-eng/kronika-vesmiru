@@ -10,4 +10,5 @@ zdroje:
   typ: Galactapedie
   url: https://robertsspaceindustries.com/galactapedia/article/Rw1r27OoJJ-aai-se-choan
 kapitoly: []
+rad: 2386
 ---

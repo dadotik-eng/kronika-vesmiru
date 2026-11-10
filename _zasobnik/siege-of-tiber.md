@@ -23,4 +23,5 @@ hodnoceni: 5
 hodnoceni_proc: Už pokryto kapitolou o Tiberu; případně rozšířit o osudy admirálů.
 stav: na webu
 priorita: false
+rok_od: 2732
 ---

@@ -14,4 +14,5 @@ zdroje:
   url: https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/17220-Galactic-Guide-Pallas-System-Hui-Sen-Thus-ng
 kapitoly:
 - kap-4
+rad: 2500
 ---

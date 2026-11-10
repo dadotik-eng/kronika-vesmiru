@@ -11,4 +11,5 @@ zdroje:
   url: https://robertsspaceindustries.com/galactapedia/article/V3qgyvG8ZY-adam-corr
 kapitoly:
 - kap-5
+rad: 2519
 ---

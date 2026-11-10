@@ -26,4 +26,5 @@ hodnoceni: 5
 hodnoceni_proc: Jedna z nejsilnějších záhad lidských dějin s výraznými postavami.
 stav: nápad
 priorita: true
+rok_od: 2232
 ---

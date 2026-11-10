@@ -16,4 +16,5 @@ hodnoceni: 3
 hodnoceni_proc: Laskavý rodinný příběh objevu.
 stav: nápad
 priorita: false
+rok_od: 2861
 ---

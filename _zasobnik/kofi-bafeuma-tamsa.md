@@ -16,4 +16,5 @@ hodnoceni: 3
 hodnoceni_proc: Roztomilá drobnost, zdroj je velmi krátký.
 stav: nápad
 priorita: false
+rok_od: 2943
 ---

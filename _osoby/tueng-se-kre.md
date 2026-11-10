@@ -14,4 +14,5 @@ zdroje:
   url: https://robertsspaceindustries.com/galactapedia/article/0Qlgxrv6xv-emperor-lii-se-kree
 kapitoly:
 - kap-8
+rad: 2613
 ---

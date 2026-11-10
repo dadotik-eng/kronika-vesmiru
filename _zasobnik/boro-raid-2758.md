@@ -15,4 +15,5 @@ hodnoceni: 2
 hodnoceni_proc: Krátká zpráva bez postav.
 stav: nápad
 priorita: false
+rok_od: 2758
 ---

@@ -18,4 +18,5 @@ hodnoceni: 5
 hodnoceni_proc: Poetická nevyřešená záhada s výraznou postavou.
 stav: nápad
 priorita: false
+rok_od: 2931
 ---

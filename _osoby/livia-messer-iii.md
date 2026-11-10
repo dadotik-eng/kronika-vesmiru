@@ -12,4 +12,5 @@ zdroje:
   url: https://robertsspaceindustries.com/galactapedia/article/01dWwaQkrL-livia-messer-iii
 kapitoly:
 - kap-6
+rad: 2593
 ---

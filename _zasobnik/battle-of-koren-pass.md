@@ -14,4 +14,5 @@ hodnoceni: 2
 hodnoceni_proc: Dobrá situace, ale zdroj je velmi stručný a bez jmen.
 stav: nápad
 priorita: false
+rok_od: 2605
 ---

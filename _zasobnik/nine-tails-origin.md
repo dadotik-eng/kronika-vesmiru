@@ -17,4 +17,5 @@ hodnoceni: 4
 hodnoceni_proc: Krvavý vstup na scénu a nečekaný zvrat; propojení s hrou.
 stav: nápad
 priorita: false
+rok_od: 2938
 ---

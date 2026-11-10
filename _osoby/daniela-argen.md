@@ -10,4 +10,5 @@ zdroje:
   typ: Galactapedie
   url: https://robertsspaceindustries.com/galactapedia/article/RvlxLvYKKv-daniela-argen
 kapitoly: []
+rad: 2762
 ---

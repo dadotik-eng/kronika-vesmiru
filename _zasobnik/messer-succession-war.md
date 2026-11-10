@@ -22,4 +22,5 @@ hodnoceni: 4
 hodnoceni_proc: Útěk, občanská válka a atentát – hotové drama, jen zdroje jsou stručné.
 stav: nápad
 priorita: false
+rok_od: 2697
 ---

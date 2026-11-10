@@ -297,3 +297,11 @@ main { flex: 1; width: 100%; }
 .osoba footer { display: flex; flex-wrap: wrap; gap: .4rem 1rem; border-top: 1px solid var(--linka); padding-top: .6rem; }
 .osoba footer a { font-family: var(--label); font-size: .92rem; letter-spacing: .04em; text-decoration: none; }
 .osoba footer a.os-zdroj { color: var(--tlumene); }
+
+/* Opravy z kontroly webu */
+.pan-vnitrek { padding: 0 70px; box-sizing: content-box; }
+.pan-ery, .pan-body, .pan-roky { left: 70px; right: 70px; }
+@media (max-width: 640px) {
+  .vl-bar span { display: none; }
+  .vlady { overflow: hidden; }
+}

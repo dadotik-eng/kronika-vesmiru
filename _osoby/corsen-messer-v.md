@@ -12,4 +12,5 @@ zdroje:
   url: https://robertsspaceindustries.com/galactapedia/article/0OaB8O6awO-corsen-messer-v
 kapitoly:
 - kap-6
+rad: 2609
 ---

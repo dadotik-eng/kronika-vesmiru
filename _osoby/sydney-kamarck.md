@@ -10,4 +10,5 @@ zdroje:
   typ: Galactapedie
   url: https://robertsspaceindustries.com/galactapedia/article/VaZwNWd7lm-sydney-kamarck
 kapitoly: []
+rad: 2761
 ---

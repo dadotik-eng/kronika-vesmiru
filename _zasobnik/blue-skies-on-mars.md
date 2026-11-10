@@ -20,4 +20,5 @@ hodnoceni: 4
 hodnoceni_proc: Silný osobní epilog k již zpracované tragédii na Marsu.
 stav: nápad
 priorita: false
+rok_od: 2157
 ---

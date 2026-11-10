@@ -14,4 +14,5 @@ hodnoceni: 2
 hodnoceni_proc: Zajímavý obraz, ale zdroj neuvádí podrobnosti požáru.
 stav: nápad
 priorita: false
+rok_od: 2237
 ---

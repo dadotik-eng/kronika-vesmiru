@@ -15,4 +15,5 @@ zdroje:
   typ: Comm-Link
   url: https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/18694-Terra-Gazette-What-Does-The-Future-Hold-For-Suj-Kossi
 kapitoly: []
+rad: 2900
 ---

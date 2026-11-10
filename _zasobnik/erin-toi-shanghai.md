@@ -19,4 +19,5 @@ hodnoceni: 4
 hodnoceni_proc: Osobní pohled budoucí Imperátorky na život v ohrožení.
 stav: nápad
 priorita: false
+rok_od: 2777
 ---

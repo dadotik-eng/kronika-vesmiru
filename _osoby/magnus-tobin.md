@@ -11,4 +11,5 @@ zdroje:
   url: https://robertsspaceindustries.com/galactapedia/article/RkGZqr8yNQ-magnus-tobin
 kapitoly:
 - kap-9
+rad: 2756
 ---

@@ -17,4 +17,5 @@ hodnoceni: 3
 hodnoceni_proc: Konspirace navazující na zánik Ellis XI.
 stav: nápad
 priorita: false
+rok_od: 2943
 ---

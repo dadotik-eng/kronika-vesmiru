@@ -12,4 +12,5 @@ zdroje:
   url: https://robertsspaceindustries.com/galactapedia/article/VyvYAGKxAz-galor-messer-ix
 kapitoly:
 - kap-6
+rad: 2666
 ---

@@ -17,4 +17,5 @@ hodnoceni: 3
 hodnoceni_proc: Diplomatické finále studené války, málo dramatu.
 stav: nápad
 priorita: false
+rok_od: 2793
 ---

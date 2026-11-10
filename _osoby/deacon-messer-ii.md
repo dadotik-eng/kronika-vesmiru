@@ -16,4 +16,5 @@ zdroje:
   url: https://robertsspaceindustries.com/galactapedia/article/RXlXYPWk8q-ivar-messer-i
 kapitoly:
 - kap-6
+rad: 2567
 ---

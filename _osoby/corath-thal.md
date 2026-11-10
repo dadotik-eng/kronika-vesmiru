@@ -11,4 +11,5 @@ zdroje:
   url: https://robertsspaceindustries.com/galactapedia/article/RkGxWGQ2Qp-warlord-coraththal
 kapitoly:
 - kap-6
+rad: 2580
 ---

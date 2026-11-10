@@ -14,4 +14,5 @@ zdroje:
   url: https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/12690-2438-Hello
 kapitoly:
 - kap-3
+rad: 2373
 ---

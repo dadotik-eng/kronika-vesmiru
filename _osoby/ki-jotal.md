@@ -14,4 +14,5 @@ zdroje:
   url: https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/17951-New-United-Imperator-Addison-Still-Settling-Into-New-Role
 kapitoly:
 - kap-10
+rad: 2900
 ---

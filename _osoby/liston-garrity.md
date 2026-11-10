@@ -10,4 +10,5 @@ zdroje:
   typ: Galactapedie
   url: https://robertsspaceindustries.com/galactapedia/article/RxnPNwAW4M-liston-garrity
 kapitoly: []
+rad: 2248
 ---

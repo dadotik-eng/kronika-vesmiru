@@ -14,4 +14,5 @@ hodnoceni: 3
 hodnoceni_proc: Silné téma ztráty identity, ale bez konkrétních postav.
 stav: nápad
 priorita: false
+rok_od: 2610
 ---

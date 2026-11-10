@@ -15,4 +15,5 @@ hodnoceni: 5
 hodnoceni_proc: Jasné morální rozhodnutí uprostřed katastrofy.
 stav: nápad
 priorita: false
+rok_od: 2847
 ---

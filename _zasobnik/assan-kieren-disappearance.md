@@ -17,4 +17,5 @@ hodnoceni: 5
 hodnoceni_proc: Připravuje se – politický thriller s nevyřešeným koncem.
 stav: nápad
 priorita: true
+rok_od: 2638
 ---

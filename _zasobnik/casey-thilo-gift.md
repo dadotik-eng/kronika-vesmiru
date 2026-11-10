@@ -18,4 +18,5 @@ hodnoceni: 3
 hodnoceni_proc: Krátký milý příběh s pointou; vhodný jako odlehčení.
 stav: nápad
 priorita: false
+rok_od: 2944
 ---

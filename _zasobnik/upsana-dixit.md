@@ -18,4 +18,5 @@ hodnoceni: 3
 hodnoceni_proc: Tichý akt odporu na začátku diktatury.
 stav: nápad
 priorita: false
+rok_od: 2511
 ---

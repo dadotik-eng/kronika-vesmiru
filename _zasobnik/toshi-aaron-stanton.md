@@ -15,4 +15,5 @@ hodnoceni: 4
 hodnoceni_proc: Dojemný příběh o vytrvalosti za soustavou, kterou hráči znají nejlépe.
 stav: nápad
 priorita: false
+rok_od: 2851
 ---

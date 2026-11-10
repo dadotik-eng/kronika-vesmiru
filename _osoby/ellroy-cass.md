@@ -10,4 +10,5 @@ zdroje:
   typ: Galactapedie
   url: https://robertsspaceindustries.com/galactapedia/article/RegZ7z96Gy-ellroy-cass
 kapitoly: []
+rad: 2919
 ---

@@ -15,4 +15,5 @@ hodnoceni: 3
 hodnoceni_proc: Příjemný příběh o komunitě, menší napětí.
 stav: nápad
 priorita: false
+rok_od: 2436
 ---

@@ -16,4 +16,5 @@ hodnoceni: 3
 hodnoceni_proc: Dojemná výslechová scéna, ale fragment bez konce.
 stav: nápad
 priorita: false
+rok_od: 2945
 ---

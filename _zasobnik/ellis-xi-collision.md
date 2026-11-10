@@ -19,4 +19,5 @@ hodnoceni: 3
 hodnoceni_proc: Velkolepý kosmický jev, ale málo lidského konfliktu.
 stav: nápad
 priorita: false
+rok_od: 2943
 ---

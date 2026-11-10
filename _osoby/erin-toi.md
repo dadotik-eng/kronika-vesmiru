@@ -17,4 +17,5 @@ zdroje:
   url: https://robertsspaceindustries.com/galactapedia/article/bZwQBJmZxE-marshall-leon
 kapitoly:
 - kap-8
+rad: 2746
 ---

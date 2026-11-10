@@ -10,4 +10,5 @@ zdroje:
   typ: Galactapedie
   url: https://robertsspaceindustries.com/galactapedia/article/VlMgQm7qqM-neville-lott
 kapitoly: []
+rad: 2851
 ---

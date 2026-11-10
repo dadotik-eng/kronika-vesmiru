@@ -17,12 +17,12 @@
 - id: upe
   nazev: Spojené planety Země
   od: 2523
-  do: 2547
+  do: 2546.9
   rozsah: 2523–2546
   barva: '#d9c46a'
 - id: messerove
   nazev: Éra Messerů
-  od: 2547
+  od: 2546.9
   do: 2792.4
   rozsah: 2546–2792
   barva: '#e0785c'

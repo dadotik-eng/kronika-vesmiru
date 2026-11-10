@@ -20,4 +20,5 @@ hodnoceni: 5
 hodnoceni_proc: Humorný i smutný „antihrdina“ prvního kontaktu; rozšiřuje kapitolu o Banu.
 stav: nápad
 priorita: false
+rok_od: 2438
 ---

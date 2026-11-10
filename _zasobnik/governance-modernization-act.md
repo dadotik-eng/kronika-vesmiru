@@ -17,4 +17,5 @@ hodnoceni: 4
 hodnoceni_proc: Silné morální dilema u zrodu obnovené demokracie.
 stav: nápad
 priorita: false
+rok_od: 2793
 ---

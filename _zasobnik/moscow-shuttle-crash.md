@@ -21,4 +21,5 @@ hodnoceni: 4
 hodnoceni_proc: Rodinná tragédie, která změnila linii nástupnictví.
 stav: nápad
 priorita: false
+rok_od: 2641
 ---

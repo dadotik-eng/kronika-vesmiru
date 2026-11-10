@@ -1,5 +1,5 @@
 ---
-jmeno: maršál Cathcart
+jmeno: Maršál Cathcart
 narozeni: neznámo
 umrti: neznámo
 role: maršál, pronásledovatel Adelaide Lorris
@@ -17,4 +17,5 @@ zdroje:
   url: https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/12962-Galactic-Guide-Cathcart-System
 kapitoly:
 - kap-3
+rad: 2408
 ---

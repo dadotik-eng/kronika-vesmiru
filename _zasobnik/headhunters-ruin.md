@@ -16,4 +16,5 @@ hodnoceni: 3
 hodnoceni_proc: Kronika gangové války, málo konkrétních postav.
 stav: nápad
 priorita: false
+rok_od: 2563
 ---

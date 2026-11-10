@@ -15,4 +15,5 @@ hodnoceni: 3
 hodnoceni_proc: Zajímavá postava, ale jde spíš o životopis.
 stav: nápad
 priorita: false
+rok_od: 2488
 ---

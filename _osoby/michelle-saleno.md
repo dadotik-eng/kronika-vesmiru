@@ -11,4 +11,5 @@ zdroje:
   url: https://robertsspaceindustries.com/galactapedia/article/bZkLx7GxXO-michelle-saleno
 kapitoly:
 - kap-1
+rad: 2096
 ---

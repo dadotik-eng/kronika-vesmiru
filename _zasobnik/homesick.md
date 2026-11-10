@@ -15,4 +15,5 @@ hodnoceni: 4
 hodnoceni_proc: Komorní příběh války z pohledu civilistů.
 stav: nápad
 priorita: false
+rok_od: 2544
 ---

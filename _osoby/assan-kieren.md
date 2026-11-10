@@ -11,4 +11,5 @@ zdroje:
   url: https://robertsspaceindustries.com/galactapedia/article/RWwZQK774P-assan-kieren
 kapitoly:
 - kap-6
+rad: 2584
 ---

@@ -14,4 +14,5 @@ hodnoceni: 2
 hodnoceni_proc: Spíš shrnutí než příběh; dobré jako epilog.
 stav: nápad
 priorita: false
+rok_od: 2793
 ---

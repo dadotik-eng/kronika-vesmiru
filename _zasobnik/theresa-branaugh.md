@@ -18,4 +18,5 @@ hodnoceni: 5
 hodnoceni_proc: Nevyřešená vražda a dvojí objev – silná záhada.
 stav: nápad
 priorita: false
+rok_od: 2873
 ---

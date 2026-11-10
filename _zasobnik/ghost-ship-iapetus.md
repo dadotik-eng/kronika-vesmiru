@@ -17,4 +17,5 @@ hodnoceni: 5
 hodnoceni_proc: Vynikající záhada s historickou lodí a znepokojivými detaily.
 stav: nápad
 priorita: true
+rok_od: 2255
 ---

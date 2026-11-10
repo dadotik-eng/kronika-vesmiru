@@ -11,4 +11,5 @@ zdroje:
   url: https://robertsspaceindustries.com/galactapedia/article/R5p68KXk5X-scott-childress
 kapitoly:
 - kap-1
+rad: 2032
 ---

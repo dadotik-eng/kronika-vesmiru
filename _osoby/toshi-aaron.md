@@ -11,4 +11,5 @@ zdroje:
   url: https://robertsspaceindustries.com/galactapedia/article/0NjkMMlGXD-toshi-aaron
 kapitoly:
 - kap-9
+rad: 2802
 ---

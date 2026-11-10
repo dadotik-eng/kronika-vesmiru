@@ -11,4 +11,5 @@ zdroje:
   url: https://robertsspaceindustries.com/galactapedia/article/V7d2g8xxva-kellar-lench
 kapitoly:
 - kap-5
+rad: 2514
 ---

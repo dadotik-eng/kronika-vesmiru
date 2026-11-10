@@ -15,4 +15,5 @@ zdroje:
   url: https://robertsspaceindustries.com/galactapedia/article/V3qgjK7Jor-terrence-akari
 kapitoly:
 - kap-8
+rad: 2737
 ---

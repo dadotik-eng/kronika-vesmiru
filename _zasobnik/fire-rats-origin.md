@@ -14,4 +14,5 @@ hodnoceni: 4
 hodnoceni_proc: Legenda o zrodu kultu, navazuje na Proroka z Pyra.
 stav: nápad
 priorita: false
+rok_od: 2563
 ---

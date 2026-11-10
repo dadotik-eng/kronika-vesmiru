@@ -10,4 +10,5 @@ zdroje:
   typ: Galactapedie
   url: https://robertsspaceindustries.com/galactapedia/article/0rxdJWnwyq-illyana-sharrad
 kapitoly: []
+rad: 2897
 ---

@@ -15,4 +15,5 @@ hodnoceni: 4
 hodnoceni_proc: Strašidelná hornická legenda propojená s Pyrem.
 stav: nápad
 priorita: false
+rok_od: 2548
 ---

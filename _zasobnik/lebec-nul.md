@@ -15,4 +15,5 @@ hodnoceni: 3
 hodnoceni_proc: Krátký průkopnický příběh se zmizením.
 stav: nápad
 priorita: false
+rok_od: 2290
 ---

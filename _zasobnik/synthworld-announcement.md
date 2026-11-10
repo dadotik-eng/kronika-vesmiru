@@ -20,4 +20,5 @@ hodnoceni: 2
 hodnoceni_proc: Už na webu (Synthworld).
 stav: na webu
 priorita: false
+rok_od: 2872
 ---

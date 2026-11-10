@@ -16,4 +16,5 @@ hodnoceni: 5
 hodnoceni_proc: Celý životní oblouk vykoupení s výrazným zlomem.
 stav: nápad
 priorita: false
+rok_od: 2919
 ---

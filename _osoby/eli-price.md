@@ -10,4 +10,5 @@ zdroje:
   typ: Galactapedie
   url: https://robertsspaceindustries.com/galactapedia/article/bo1wkzJE41-eli-price
 kapitoly: []
+rad: 2560
 ---

@@ -11,4 +11,5 @@ zdroje:
   url: https://robertsspaceindustries.com/galactapedia/article/R4ZGy5XJXe-cyrus-ishitaka
 kapitoly:
 - kap-5
+rad: 2521
 ---

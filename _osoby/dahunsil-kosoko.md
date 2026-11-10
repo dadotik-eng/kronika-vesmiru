@@ -10,4 +10,5 @@ zdroje:
   typ: Galactapedie
   url: https://robertsspaceindustries.com/galactapedia/article/0KxyMa6y82-dahunsil-kosoko
 kapitoly: []
+rad: 2512
 ---

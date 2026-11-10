@@ -19,4 +19,5 @@ hodnoceni: 5
 hodnoceni_proc: Evakuace pod palbou a oběť letky – navazuje přímo na kapitolu o Tiberu.
 stav: nápad
 priorita: true
+rok_od: 2737
 ---

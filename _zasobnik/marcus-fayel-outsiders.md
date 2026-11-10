@@ -15,4 +15,5 @@ hodnoceni: 4
 hodnoceni_proc: Zneklidňující zrod sekty, vhodné pro temné vyprávění.
 stav: nápad
 priorita: false
+rok_od: 2743
 ---

@@ -15,4 +15,5 @@ hodnoceni: 4
 hodnoceni_proc: Morální dilema s objevem v pozadí.
 stav: nápad
 priorita: false
+rok_od: 2587
 ---

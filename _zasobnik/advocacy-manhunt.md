@@ -19,4 +19,5 @@ hodnoceni: 3
 hodnoceni_proc: Napínavé, ale otevřené bez konce.
 stav: nápad
 priorita: false
+rok_od: 2945
 ---

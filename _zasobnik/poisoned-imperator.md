@@ -22,4 +22,5 @@ hodnoceni: 5
 hodnoceni_proc: Dvorská intrika s vraždou a nevyřešenou otázkou viny.
 stav: nápad
 priorita: false
+rok_od: 2662
 ---

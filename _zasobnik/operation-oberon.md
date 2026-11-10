@@ -15,4 +15,5 @@ hodnoceni: 5
 hodnoceni_proc: Klasická vojenská odysea; výsledek ochotně ponechává zdroj otevřený.
 stav: nápad
 priorita: false
+rok_od: 2605
 ---

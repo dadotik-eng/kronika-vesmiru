@@ -17,4 +17,5 @@ hodnoceni: 3
 hodnoceni_proc: Krátký zdroj; jádro už pokrývá kapitola o Ivaru Messerovi.
 stav: na webu
 priorita: false
+rok_od: 2544
 ---

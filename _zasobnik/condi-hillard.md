@@ -15,4 +15,5 @@ hodnoceni: 4
 hodnoceni_proc: Hrdinka „ze šrotiště“ s tragickým koncem.
 stav: nápad
 priorita: false
+rok_od: 2681
 ---

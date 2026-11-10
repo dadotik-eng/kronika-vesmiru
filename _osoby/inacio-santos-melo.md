@@ -10,4 +10,5 @@ zdroje:
   typ: Galactapedie
   url: https://robertsspaceindustries.com/galactapedia/article/0qnNMa3Mgq-inacio-stanos-melo
 kapitoly: []
+rad: 2513
 ---

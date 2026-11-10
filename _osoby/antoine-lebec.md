@@ -10,4 +10,5 @@ zdroje:
   typ: Galactapedie
   url: https://robertsspaceindustries.com/galactapedia/article/0ODddzO7Dq-antoine-lebec
 kapitoly: []
+rad: 2258
 ---

@@ -12,4 +12,5 @@ zdroje:
   url: https://robertsspaceindustries.com/galactapedia/article/0rxrqgDP12-gammon-messer
 kapitoly:
 - kap-6
+rad: 2629
 ---

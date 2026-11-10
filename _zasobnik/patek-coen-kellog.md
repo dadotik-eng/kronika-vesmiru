@@ -15,4 +15,5 @@ hodnoceni: 3
 hodnoceni_proc: Hořkosladká ironie osudu.
 stav: nápad
 priorita: false
+rok_od: 2811
 ---

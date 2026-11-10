@@ -22,4 +22,5 @@ hodnoceni: 5
 hodnoceni_proc: Tevarinský pohled na konec války – silný doplněk kapitoly o 2. tevarinské válce.
 stav: nápad
 priorita: false
+rok_od: 2610
 ---

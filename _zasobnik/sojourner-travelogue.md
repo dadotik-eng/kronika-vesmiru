@@ -14,4 +14,5 @@ hodnoceni: 3
 hodnoceni_proc: Klidné meditativní vyprávění, vhodné pro audio.
 stav: nápad
 priorita: false
+rok_od: 2950
 ---

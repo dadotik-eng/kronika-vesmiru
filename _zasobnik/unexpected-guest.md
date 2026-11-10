@@ -16,4 +16,5 @@ hodnoceni: 4
 hodnoceni_proc: Podivná záhada s humornou hrdinkou.
 stav: nápad
 priorita: false
+rok_od: 2945
 ---

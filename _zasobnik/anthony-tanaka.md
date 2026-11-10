@@ -17,4 +17,5 @@ hodnoceni: 5
 hodnoceni_proc: Silný lidský příběh s jasným zlomem a dopadem na dějiny.
 stav: nápad
 priorita: true
+rok_od: 2757
 ---

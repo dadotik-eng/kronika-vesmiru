@@ -17,4 +17,5 @@ hodnoceni: 5
 hodnoceni_proc: Klíčový zlom dějin, už zpracovaný na webu.
 stav: na webu
 priorita: false
+rok_od: 2792
 ---

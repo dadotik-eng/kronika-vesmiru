@@ -16,4 +16,5 @@ hodnoceni: 4
 hodnoceni_proc: Vzpoura a občanská válka u zrodu sjednoceného lidstva.
 stav: nápad
 priorita: false
+rok_od: 2380
 ---

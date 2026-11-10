@@ -16,4 +16,5 @@ hodnoceni: 2
 hodnoceni_proc: Zajímavá ironie, ale suchá korporátní látka.
 stav: nápad
 priorita: false
+rok_od: 2308
 ---

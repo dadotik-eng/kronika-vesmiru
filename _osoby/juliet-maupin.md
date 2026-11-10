@@ -10,4 +10,5 @@ zdroje:
   typ: Galactapedie
   url: https://robertsspaceindustries.com/galactapedia/article/VarxxjKJe5-juliet-maupin
 kapitoly: []
+rad: 2747
 ---

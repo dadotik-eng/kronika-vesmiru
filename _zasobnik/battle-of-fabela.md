@@ -17,4 +17,5 @@ hodnoceni: 5
 hodnoceni_proc: Připravuje se – silný příběh o pravdě, vině a zapomenutém hrdinovi.
 stav: nápad
 priorita: true
+rok_od: 2825
 ---

@@ -11,4 +11,5 @@ zdroje:
   url: https://robertsspaceindustries.com/galactapedia/article/Rz2DPeZZnk-abeni-okon
 kapitoly:
 - kap-1
+rad: 2157
 ---

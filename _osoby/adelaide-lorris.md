@@ -17,4 +17,5 @@ zdroje:
   url: https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/14087-Observist-Dark-Spider-Cathcart
 kapitoly:
 - kap-3
+rad: 2408
 ---

@@ -10,4 +10,5 @@ zdroje:
   typ: Galactapedie
   url: https://robertsspaceindustries.com/galactapedia/article/0ODxZEPdoZ-emperor-yaha-se-xyoo
 kapitoly: []
+rad: 1100
 ---

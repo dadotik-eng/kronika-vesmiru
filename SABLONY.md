@@ -22,6 +22,7 @@ zdroje:
   url: https://robertsspaceindustries.com/galactapedia/article/...
 kapitoly: [kap-8]         # kap-1 … kap-10, letka; jinak []
 rozpor: nepovinné – když si prameny odporují
+rad: 2746                 # číslo pro řazení: rok narození, jinak přibližný rok, kdy byl činný
 rod: messer               # jen u Messerů
 ---
 ```
@@ -45,7 +46,8 @@ klic: true                # jen zlomové události (velký zlatý bod)
 nazev: Bitva u Fabely
 nazev_en: Battle of Fabela
 rok: '2825'
-era: Věk nápravy
+rok_od: 2825              # číslo pro řazení (př. n. l. záporně); u neuvedeno vynech
+era: Věk nápravy          # Před lidskou expanzí | Úsvit Sluneční soustavy | Věk skoků | Spojené národy Země | Spojené planety Země | Éra Messerů | Věk nápravy | Válka s Vanduuly / současnost
 typ: bitva                # bitva | katastrofa | zločin | objev | politika | osobní příběh | záhada | povídka | korporace
 shrnuti: 2–3 věty česky.
 postavy: [Paul Barlow, Ignacio Assaf]

@@ -15,4 +15,5 @@ hodnoceni: 2
 hodnoceni_proc: Milá drobnost, ale bez konfliktu.
 stav: nápad
 priorita: false
+rok_od: 2788
 ---

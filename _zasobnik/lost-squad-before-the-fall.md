@@ -18,6 +18,6 @@ zdroje:
 forma: dramatizace
 hodnoceni: 4
 hodnoceni_proc: Souvisí s již zpracovanou Ztracenou letkou.
-stav: na webu
+stav: nápad
 priorita: false
 ---

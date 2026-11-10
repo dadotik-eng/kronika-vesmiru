@@ -17,4 +17,5 @@ hodnoceni: 4
 hodnoceni_proc: Strašidelný prolog ke Croshawovu skoku, který je už na webu.
 stav: nápad
 priorita: false
+rok_od: 2262
 ---

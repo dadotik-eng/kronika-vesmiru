@@ -17,4 +17,5 @@ hodnoceni: 3
 hodnoceni_proc: Příběh proměny, ale zdroj je útržkovitý.
 stav: nápad
 priorita: false
+rok_od: 2944
 ---

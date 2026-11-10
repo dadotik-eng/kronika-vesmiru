@@ -17,4 +17,5 @@ hodnoceni: 5
 hodnoceni_proc: Hrdinská poslední bitva s cynickou propagandistickou dohrou.
 stav: nápad
 priorita: false
+rok_od: 2571
 ---

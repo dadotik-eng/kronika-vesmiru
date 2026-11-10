@@ -15,4 +15,5 @@ hodnoceni: 4
 hodnoceni_proc: Tragický vědec, který měl pravdu – jasný oblouk.
 stav: nápad
 priorita: false
+rok_od: 2496
 ---

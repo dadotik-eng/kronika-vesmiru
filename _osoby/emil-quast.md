@@ -10,4 +10,5 @@ zdroje:
   typ: Galactapedie
   url: https://robertsspaceindustries.com/galactapedia/article/R4jdlJl6oe-emil-quast
 kapitoly: []
+rad: 2888
 ---

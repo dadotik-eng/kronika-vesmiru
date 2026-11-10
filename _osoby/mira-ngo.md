@@ -10,4 +10,5 @@ zdroje:
   typ: Galactapedie
   url: https://robertsspaceindustries.com/galactapedia/article/RWoa1mlWdp-mira-ngo
 kapitoly: []
+rad: 2891
 ---

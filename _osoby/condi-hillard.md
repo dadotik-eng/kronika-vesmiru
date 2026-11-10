@@ -11,4 +11,5 @@ zdroje:
   url: https://robertsspaceindustries.com/galactapedia/article/RX3dlOezZM-condi-hillard
 kapitoly:
 - kap-7
+rad: 2659
 ---

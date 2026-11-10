@@ -17,4 +17,5 @@ hodnoceni: 4
 hodnoceni_proc: Deníková forma se vzpourou a ironickou pointou.
 stav: nápad
 priorita: false
+rok_od: 2944
 ---

@@ -10,4 +10,5 @@ zdroje:
   typ: Galactapedie
   url: https://robertsspaceindustries.com/galactapedia/article/01LNooPKYr-sindo-guerrero
 kapitoly: []
+rad: 2902
 ---

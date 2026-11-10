@@ -28,4 +28,5 @@ hodnoceni: 5
 hodnoceni_proc: Historická detektivka se zlověstnou pointou.
 stav: nápad
 priorita: true
+rok_od: 2546
 ---

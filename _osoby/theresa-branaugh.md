@@ -10,4 +10,5 @@ zdroje:
   typ: Galactapedie
   url: https://robertsspaceindustries.com/galactapedia/article/VpMeGzBPyz-theresa-branaugh
 kapitoly: []
+rad: 2835
 ---

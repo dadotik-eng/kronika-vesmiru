@@ -17,4 +17,5 @@ hodnoceni: 3
 hodnoceni_proc: Objev Terry, ale zdroj je krátký dopis.
 stav: nápad
 priorita: false
+rok_od: 2516
 ---

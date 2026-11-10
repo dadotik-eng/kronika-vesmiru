@@ -11,4 +11,5 @@ zdroje:
   url: https://robertsspaceindustries.com/galactapedia/article/VY4WBM6OZ1-mauricio-tusk
 kapitoly:
 - kap-5
+rad: 2499
 ---

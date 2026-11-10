@@ -15,4 +15,5 @@ hodnoceni: 4
 hodnoceni_proc: Napínavý první dotek s Xi'any v malém měřítku.
 stav: nápad
 priorita: false
+rok_od: 2531
 ---

@@ -11,4 +11,5 @@ zdroje:
   typ: Galactapedie
   url: https://robertsspaceindustries.com/galactapedia/article/Vy2ZqLy458-j-harris-arnold
 kapitoly: []
+rad: 2742
 ---

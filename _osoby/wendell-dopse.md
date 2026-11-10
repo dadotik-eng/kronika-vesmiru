@@ -14,4 +14,5 @@ zdroje:
   url: https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/19097-Portfolio-Rise-Of-The-Red-Festival
 kapitoly:
 - kap-3
+rad: 2399
 ---

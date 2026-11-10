@@ -11,4 +11,5 @@ zdroje:
   url: https://robertsspaceindustries.com/galactapedia/article/VyvYkAr7YW-nick-croshaw
 kapitoly:
 - kap-2
+rad: 2236
 ---

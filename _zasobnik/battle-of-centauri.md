@@ -19,4 +19,5 @@ hodnoceni: 4
 hodnoceni_proc: Taktický zvrat s konkrétními postavami; rozšiřuje kapitolu o 2. tevarinské válce.
 stav: nápad
 priorita: false
+rok_od: 2610
 ---

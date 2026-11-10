@@ -11,4 +11,5 @@ zdroje:
   url: https://robertsspaceindustries.com/galactapedia/article/RL65p7Qpdr-corbyn-salehi
 kapitoly:
 - kap-9
+rad: 2829
 ---

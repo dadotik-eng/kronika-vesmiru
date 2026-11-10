@@ -11,4 +11,5 @@ zdroje:
   url: https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/15371-Portfolio-Tarsus-Electronics
 kapitoly:
 - kap-2
+rad: 2262
 ---

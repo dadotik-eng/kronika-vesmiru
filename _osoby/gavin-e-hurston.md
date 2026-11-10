@@ -13,4 +13,5 @@ zdroje:
   typ: Galactapedie
   url: https://robertsspaceindustries.com/galactapedia/article/V7gMKmw6wa-magda-hurston
 kapitoly: []
+rad: 2867
 ---

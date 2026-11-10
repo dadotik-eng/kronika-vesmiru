@@ -12,4 +12,5 @@ zdroje:
   url: https://robertsspaceindustries.com/galactapedia/article/bBp6YZPOGO-ulysses-messer-x
 kapitoly:
 - kap-6
+rad: 2702
 ---

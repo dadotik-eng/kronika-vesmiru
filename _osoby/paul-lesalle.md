@@ -10,4 +10,5 @@ zdroje:
   typ: Galactapedie
   url: https://robertsspaceindustries.com/galactapedia/article/VgE5krya9w-paul-lesalle
 kapitoly: []
+rad: 2881
 ---

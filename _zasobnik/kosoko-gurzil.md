@@ -15,4 +15,5 @@ hodnoceni: 3
 hodnoceni_proc: Příběh houževnatosti s ironickým dovětkem.
 stav: nápad
 priorita: false
+rok_od: 2538
 ---

@@ -14,4 +14,5 @@ zdroje:
   url: https://robertsspaceindustries.com/galactapedia/article/VDz7Be7E33-titus-costigan
 kapitoly:
 - kap-10
+rad: 2855
 ---

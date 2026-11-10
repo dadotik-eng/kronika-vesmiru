@@ -18,4 +18,5 @@ hodnoceni: 3
 hodnoceni_proc: Pěkná „ztracená věc“, ale málo dramatu.
 stav: nápad
 priorita: false
+rok_od: 2783
 ---

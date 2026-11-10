@@ -20,4 +20,5 @@ hodnoceni: 5
 hodnoceni_proc: Deník objevitelky v mrtvém světě – atmosféra i pointa.
 stav: nápad
 priorita: false
+rok_od: 2531
 ---

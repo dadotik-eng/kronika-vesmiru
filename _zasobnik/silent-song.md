@@ -16,4 +16,5 @@ hodnoceni: 2
 hodnoceni_proc: Pěkný motiv mezidruhové spolupráce, ale bez děje.
 stav: nápad
 priorita: false
+rok_od: 2890
 ---

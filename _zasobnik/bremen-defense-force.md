@@ -16,4 +16,5 @@ hodnoceni: 4
 hodnoceni_proc: Sympatický stařík‑hrdina a vznik nejstarší domobrany.
 stav: nápad
 priorita: false
+rok_od: 2605
 ---

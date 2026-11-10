@@ -15,4 +15,5 @@ hodnoceni: 3
 hodnoceni_proc: Pokryto kapitolou o první tevarinské válce.
 stav: na webu
 priorita: false
+rok_od: 2541
 ---

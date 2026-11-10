@@ -18,4 +18,5 @@ hodnoceni: 4
 hodnoceni_proc: Už na webu (UPE a Gaia Planet Services).
 stav: na webu
 priorita: false
+rok_od: 2530
 ---

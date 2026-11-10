@@ -19,4 +19,5 @@ hodnoceni: 5
 hodnoceni_proc: Zrada, revoluce a nevyřešené zmizení poslední Messerovy.
 stav: nápad
 priorita: true
+rok_od: 2792
 ---

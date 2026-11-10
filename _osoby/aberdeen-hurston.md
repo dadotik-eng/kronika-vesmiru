@@ -10,4 +10,5 @@ zdroje:
   typ: Galactapedie
   url: https://robertsspaceindustries.com/galactapedia/article/VlMMykaZKv-aberdeen-hurston
 kapitoly: []
+rad: 2821
 ---

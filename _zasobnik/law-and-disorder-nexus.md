@@ -16,4 +16,5 @@ hodnoceni: 3
 hodnoceni_proc: Dobré pokračování Kellarova útěku, spíš institucionální.
 stav: nápad
 priorita: false
+rok_od: 2931
 ---

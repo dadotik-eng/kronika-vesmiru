@@ -17,4 +17,5 @@ hodnoceni: 5
 hodnoceni_proc: Napínavý a dojemný příběh s jasnou hlavní postavou.
 stav: nápad
 priorita: true
+rok_od: 2935
 ---

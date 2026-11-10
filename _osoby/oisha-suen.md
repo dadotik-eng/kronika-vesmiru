@@ -10,4 +10,5 @@ zdroje:
   typ: Galactapedie
   url: https://robertsspaceindustries.com/galactapedia/article/01LrmgveKB-oisha-suen
 kapitoly: []
+rad: 2694
 ---

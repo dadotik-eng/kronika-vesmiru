@@ -21,4 +21,5 @@ hodnoceni: 5
 hodnoceni_proc: Intimní životní příběh s nevysvětleným zlomem – ideální pro vyprávění.
 stav: nápad
 priorita: true
+rok_od: 2157
 ---

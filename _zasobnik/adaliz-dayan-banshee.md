@@ -15,4 +15,5 @@ hodnoceni: 4
 hodnoceni_proc: Krátká, ale působivá záhada se jménem soustavy.
 stav: nápad
 priorita: false
+rok_od: 2317
 ---

@@ -11,4 +11,5 @@ zdroje:
   url: https://robertsspaceindustries.com/galactapedia/article/VaZwBAGOBv-janis-rezaian
 kapitoly:
 - kap-5
+rad: 2469
 ---

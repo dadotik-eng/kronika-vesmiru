@@ -17,4 +17,5 @@ hodnoceni: 4
 hodnoceni_proc: Atmosférický „duch v éteru“, ideální pro audio.
 stav: nápad
 priorita: false
+rok_od: 2941
 ---

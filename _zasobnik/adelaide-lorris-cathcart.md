@@ -18,4 +18,5 @@ hodnoceni: 4
 hodnoceni_proc: Připravuje se – vtipná pomsta pronásledovateli; zdroje jsou ale stručné.
 stav: nápad
 priorita: true
+rok_od: 2438
 ---

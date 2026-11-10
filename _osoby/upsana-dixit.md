@@ -10,4 +10,5 @@ zdroje:
   typ: Galactapedie
   url: https://robertsspaceindustries.com/galactapedia/article/0Gx2n4G7na-upsana-dixit
 kapitoly: []
+rad: 2491
 ---

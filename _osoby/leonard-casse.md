@@ -10,4 +10,5 @@ zdroje:
   typ: Galactapedie
   url: https://robertsspaceindustries.com/galactapedia/article/RX3Krj1EKN-leonard-casse
 kapitoly: []
+rad: 2563
 ---

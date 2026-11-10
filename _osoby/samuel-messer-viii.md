@@ -19,4 +19,5 @@ zdroje:
   url: https://robertsspaceindustries.com/galactapedia/article/0KnA1D5nQM-astrid-messer-vii
 kapitoly:
 - kap-6
+rad: 2678
 ---

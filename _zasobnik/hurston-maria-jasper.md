@@ -19,4 +19,5 @@ hodnoceni: 4
 hodnoceni_proc: Rodinné drama korporace s morální šedí a nevyřešeným zmizením.
 stav: nápad
 priorita: false
+rok_od: 2799
 ---

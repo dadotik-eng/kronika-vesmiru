@@ -10,4 +10,5 @@ zdroje:
   typ: Galactapedie
   url: https://robertsspaceindustries.com/galactapedia/article/VgEgojrAQ3-alberto-vara
 kapitoly: []
+rad: 2891
 ---

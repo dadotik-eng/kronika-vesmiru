@@ -17,4 +17,5 @@ hodnoceni: 4
 hodnoceni_proc: Pohled z druhé strany na mírové jednání; silný emotivní rámec.
 stav: nápad
 priorita: false
+rok_od: 2789
 ---

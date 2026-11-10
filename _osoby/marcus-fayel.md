@@ -10,4 +10,5 @@ zdroje:
   typ: Galactapedie
   url: https://robertsspaceindustries.com/galactapedia/article/Rw1k2w51XZ-marcus-fayel
 kapitoly: []
+rad: 2719
 ---

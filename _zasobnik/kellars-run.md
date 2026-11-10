@@ -18,4 +18,5 @@ hodnoceni: 5
 hodnoceni_proc: Akční honička napříč soustavami s jasným koncem.
 stav: nápad
 priorita: true
+rok_od: 2931
 ---

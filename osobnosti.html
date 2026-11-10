@@ -4,7 +4,7 @@ title: Osobnosti
 permalink: /osobnosti/
 popis: Rejstřík osob z dějin vesmíru Star Citizen. Imperátoři, objevitelé, vojáci, zločinci i umělci s krátkými medailonky a odkazy na oficiální zdroje.
 ---
-{% assign osoby = site.osoby | sort: "narozeni" %}
+{% assign osoby = site.osoby | sort: "rad", "last" %}
 {% assign kat = "vladari:Vládci|politika:Politika|armada:Armáda|objevitele:Objevitelé|veda-technika:Věda a technika|korporace:Korporace|kultura:Kultura a média|zlocin:Zločin|xiani-tevarini:Xi'ani a Tevarinové" | split: "|" %}
 <section class="blok osa-hlava">
   <p class="nadtitul">Rejstřík · {{ osoby.size }} osob</p>
@@ -26,7 +26,7 @@ popis: Rejstřík osob z dějin vesmíru Star Citizen. Imperátoři, objevitelé
 
 <div class="blok os-mrizka" id="osoby">
 {% for o in osoby %}
-  <article class="osoba" id="{{ o.slug }}" data-k="{{ o.kategorie }}" data-hledat="{{ o.jmeno | downcase }} {{ o.role | downcase }}">
+  <article class="osoba" id="{{ o.slug }}" data-k="{{ o.kategorie }}" data-hledat="{{ o.jmeno | downcase | escape }} {{ o.role | downcase | escape }}">
     <header>
       <h2>{{ o.jmeno }}</h2>
       <p class="os-roky">{{ o.narozeni }}{% if o.umrti %} – {{ o.umrti }}{% endif %}</p>

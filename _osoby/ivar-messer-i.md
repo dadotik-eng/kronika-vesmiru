@@ -17,4 +17,5 @@ zdroje:
 kapitoly:
 - kap-5
 - kap-6
+rad: 2516
 ---

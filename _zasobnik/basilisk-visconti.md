@@ -16,4 +16,5 @@ hodnoceni: 2
 hodnoceni_proc: Spíš anekdota z firemní historie.
 stav: nápad
 priorita: false
+rok_od: 2535
 ---

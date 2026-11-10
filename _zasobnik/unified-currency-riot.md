@@ -16,4 +16,5 @@ hodnoceni: 3
 hodnoceni_proc: Jasný spouštěč a dramatický obraz, ale bez hlavních postav.
 stav: nápad
 priorita: false
+rok_od: 2529
 ---

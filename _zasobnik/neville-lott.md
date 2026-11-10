@@ -18,4 +18,5 @@ hodnoceni: 3
 hodnoceni_proc: Silný, ale velmi temný materiál – zvážit vhodnost pro web.
 stav: nápad
 priorita: false
+rok_od: 2884
 ---

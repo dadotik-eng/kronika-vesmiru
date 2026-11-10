@@ -18,4 +18,5 @@ hodnoceni: 4
 hodnoceni_proc: Konkrétní neštěstí s vrakem, který hráči znají z Daymaru.
 stav: nápad
 priorita: false
+rok_od: 2862
 ---
