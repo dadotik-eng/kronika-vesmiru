@@ -21,12 +21,16 @@ popis: Rejstřík osob z dějin vesmíru Star Citizen. Imperátoři, objevitelé
     <button type="button" data-k="{{ kv[0] }}">{{ kv[1] }}</button>
     {% endfor %}
   </div>
+  <div class="ery-cipy os-filtr-era" role="group" aria-label="Filtr podle období">
+    <button type="button" class="aktivni" data-e="">Všechna období</button>
+    {% for e in site.data.ery %}<button type="button" data-e="{{ e.id }}" data-od="{{ e.od }}" data-do="{% if forloop.last %}9999{% else %}{{ e.do }}{% endif %}" style="--barva: {{ e.barva }}">{{ e.nazev }}</button>{% endfor %}
+  </div>
   <p class="os-pocet" id="pocet" aria-live="polite"></p>
 </div>
 
 <div class="blok os-mrizka" id="osoby">
 {% for o in osoby %}
-  <article class="osoba" id="{{ o.slug }}" data-k="{{ o.kategorie }}" data-hledat="{{ o.jmeno | downcase | escape }} {{ o.role | downcase | escape }}">
+  <article class="osoba" id="{{ o.slug }}" data-k="{{ o.kategorie }}" data-rad="{{ o.rad }}" data-hledat="{{ o.jmeno | downcase | escape }} {{ o.role | downcase | escape }}">
     <header>
       <h2>{{ o.jmeno }}</h2>
       <p class="os-roky">{{ o.narozeni }}{% if o.umrti %} – {{ o.umrti }}{% endif %}</p>
@@ -46,12 +50,13 @@ popis: Rejstřík osob z dějin vesmíru Star Citizen. Imperátoři, objevitelé
 
 <script>
 (function () {
-  var karty = [].slice.call(document.querySelectorAll('.osoba')), k = '', q = '';
+  var karty = [].slice.call(document.querySelectorAll('.osoba')), k = '', q = '', od = null, doo = null;
   var pocet = document.getElementById('pocet');
   function filtr() {
     var n = 0;
     karty.forEach(function (c) {
-      var ok = (!k || c.dataset.k === k) && (!q || c.dataset.hledat.indexOf(q) >= 0);
+      var r = parseFloat(c.dataset.rad);
+      var ok = (!k || c.dataset.k === k) && (!q || c.dataset.hledat.indexOf(q) >= 0) && (od === null || (r >= od && r < doo));
       c.hidden = !ok; if (ok) n++;
     });
     pocet.textContent = n === karty.length ? '' : 'Zobrazeno ' + n + ' z ' + karty.length;
@@ -63,6 +68,14 @@ popis: Rejstřík osob z dějin vesmíru Star Citizen. Imperátoři, objevitelé
       filtr();
     });
   });
+  function vyberEru(b) {
+    od = b.dataset.e ? parseFloat(b.dataset.od) : null; doo = b.dataset.e ? parseFloat(b.dataset.do) : null;
+    [].forEach.call(document.querySelectorAll('.os-filtr-era button'), function (x) { x.classList.toggle('aktivni', x === b); });
+    filtr();
+  }
+  [].forEach.call(document.querySelectorAll('.os-filtr-era button'), function (b) { b.addEventListener('click', function () { vyberEru(b); }); });
+  var pe = new URLSearchParams(location.search).get('obdobi');
+  if (pe) { var be = document.querySelector('.os-filtr-era button[data-e="' + pe + '"]'); if (be) vyberEru(be); }
   document.getElementById('hledat').addEventListener('input', function (e) { q = e.target.value.trim().toLowerCase(); filtr(); });
   var h = location.hash && document.getElementById(location.hash.slice(1));
   if (h) { h.classList.add('zvyraznena'); h.scrollIntoView(); }

@@ -1,0 +1,5 @@
+---
+layout: null
+permalink: /data/pojmy.json
+---
+{% if site.data.pojmy %}{{ site.data.pojmy | jsonify }}{% else %}[]{% endif %}

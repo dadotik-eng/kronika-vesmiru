@@ -12,10 +12,22 @@
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Saira+Condensed:wght@400;600&family=Spectral:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="{{ '/assets/css/styl.css' | relative_url }}?v={{ site.time | date: '%s' }}">
 </head>
-<body>
+<body data-zaklad="{{ '/' | relative_url }}" data-sekce="{{ page.sekce | default: '' }}">
   <div class="hvezdy" aria-hidden="true"></div>
   {% include hlavicka.html %}
   <main>{{ content }}</main>
   {% include paticka.html %}
+  <div class="prehravac" id="prehravac" hidden>
+    <iframe id="pf" title="Přehrávač kroniky" tabindex="-1"></iframe>
+    <button type="button" class="pf-zmensit" id="pf-zmensit">Zmenšit <span aria-hidden="true">▾</span></button>
+    <div class="pb" id="pb" role="region" aria-label="Přehrávač">
+      <button type="button" class="pb-pp" id="pb-pp" aria-label="Přehrát">▶</button>
+      <div class="pb-info"><b id="pb-nazev">Archivář</b><span id="pb-text"></span></div>
+      <div class="pb-prubeh" aria-hidden="true"><i id="pb-bar"></i></div>
+      <button type="button" class="pb-otevrit" id="pb-otevrit">Otevřít přehrávač <span aria-hidden="true">⤢</span></button>
+      <button type="button" class="pb-zavrit" id="pb-zavrit" aria-label="Zavřít přehrávač">✕</button>
+    </div>
+  </div>
+  <script src="{{ '/assets/js/kronika.js' | relative_url }}?v={{ site.time | date: '%s' }}"></script>
 </body>
 </html>

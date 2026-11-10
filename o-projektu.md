@@ -3,7 +3,7 @@ layout: default
 title: O projektu
 permalink: /o-projektu/
 ---
-<article class="kapitola" markdown="1">
+<article class="kapitola text-pojmy" markdown="1">
 
 # O projektu
 

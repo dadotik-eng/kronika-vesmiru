@@ -1,59 +1,72 @@
 ---
 layout: default
+sekce: domu
 ---
-<section class="hero">
-  <div class="hero-text">
-    <p class="nadtitul">Dějiny lidstva mezi hvězdami</p>
+{% assign nove = site.kapitoly | sort: "date" | reverse %}
+<section class="blok domu-hero">
+  <div class="domu-uvod">
+    <p class="nadtitul">Neoficiální fanouškovská kronika</p>
     <h1>Hvězdná<br>kronika</h1>
-    <p class="perex">Vyprávění o válkách, objevech a pádech říší ve vesmíru Star Citizen. Každá kapitola vychází z oficiálních pramenů a je proti nim ověřená. Zapni si zvuk.</p>
-    <div class="tlacitka">
-      <a class="tlacitko plne" href="{{ '/archiv/' | relative_url }}">Vstoupit do archivu</a>
+    <p class="perex">881 let dějin vesmíru Star Citizen. Archivář vypráví v liště dole a hraje dál, ať klikáš kamkoli.</p>
+    <p class="tlacitka">
+      <a class="tlacitko plne" href="{{ '/archiv/#prolog' | relative_url }}" data-rozbalit="1">▶ Začít prologem</a>
       <a class="tlacitko" href="{{ '/casova-osa/' | relative_url }}">Projít časovou osu</a>
-    </div>
+    </p>
+    <p class="domu-novacek">Poprvé tady? <a href="{{ '/uvod/' | relative_url }}">Co je Star Citizen a tahle kronika →</a></p>
   </div>
-  <svg class="mapa" viewBox="0 0 400 400" aria-hidden="true"><circle cx="200" cy="200" r="190" fill="none" stroke="rgba(222,236,246,.3)"/><circle cx="200" cy="200" r="136" fill="none" stroke="rgba(222,236,246,.18)" stroke-dasharray="2 7"/><circle cx="200" cy="200" r="80" fill="none" stroke="rgba(222,236,246,.3)"/><line x1="0" y1="200" x2="400" y2="200" stroke="rgba(222,236,246,.12)"/><line x1="200" y1="0" x2="200" y2="400" stroke="rgba(222,236,246,.12)"/><circle cx="200" cy="200" r="30" fill="#f6bd4b" opacity=".18"/><circle cx="200" cy="200" r="14" fill="#f6bd4b"/><g class="obeh1"><circle cx="296" cy="104" r="6" fill="#bfe3f5"/></g><g class="obeh2"><circle cx="104" cy="296" r="7" fill="#f6bd4b"/></g><g class="obeh3"><circle cx="352" cy="270" r="5" fill="#bfe3f5"/></g></svg>
+  <aside class="domu-pokracovat" id="pokracovat">
+    <p class="nadtitul">Začni tady</p>
+    <h2>I. Hvězdy na dosah</h2>
+    <p class="dp-stav">První kvantový pohon, terraformace Marsu a tragédie roku 2125.</p>
+    <div class="dp-prubeh"><i style="width:0"></i></div>
+    <a class="tlacitko plne" href="{{ '/archiv/#kap-1' | relative_url }}">▶ Přehrát</a>
+  </aside>
 </section>
 
 <section class="blok">
-  <h2>Nejnovější</h2>
-  <div class="karty">
-  {% assign nove = site.kapitoly | sort: "date" | reverse %}
-  {% for k in nove limit: 3 %}
+  <h2 class="domu-nadpis">Co je nového</h2>
+  <div class="karty domu-karty">
+    {% assign k = nove | first %}
+    {% if k %}
     <a class="karta" href="{{ k.url | relative_url }}">
-      <span class="stitek">Nová kapitola · {{ k.herni_rok }}</span>
+      <span class="karta-stitek">Nová kapitola · {{ k.herni_rok }}</span>
       <h3>{{ k.title }}</h3>
       <p>{{ k.popis }}</p>
     </a>
-  {% endfor %}
-  {% assign zbyva = 3 | minus: nove.size %}
-  {% if zbyva > 0 %}
-    <a class="karta" href="{{ '/archiv/#kap-10' | relative_url }}">
-      <span class="stitek">Kapitola X · 2945–2956</span>
-      <h3>Válka bez konce</h3>
-      <p>Současnost: válka s Vanduuly, která stále nemá konec.</p>
-    </a>
-  {% endif %}
-  {% if zbyva > 1 %}
+    {% endif %}
     <a class="karta" href="{{ '/archiv/#letka' | relative_url }}">
-      <span class="stitek">Dramatizace · 2884</span>
+      <span class="karta-stitek">Příběh k poslechu</span>
       <h3>Ztracená letka</h3>
-      <p>Poslední dva dny pilotů, kteří kryli útěk milionů lidí.</p>
+      <p>Dramatizace: 49 hodin, kdy 89. letka kryla útěk milionů lidí z Calibanu.</p>
     </a>
-  {% endif %}
+    <a class="karta" id="osobnost-dne" href="{{ '/osobnosti/' | relative_url }}">
+      <span class="karta-stitek">Osobnost dne</span>
+      <h3>Rejstřík osob</h3>
+      <p>Imperátoři, objevitelé, vojáci i zločinci s krátkými medailonky.</p>
+    </a>
   </div>
 </section>
 
-<section class="blok dvojice">
-  <div class="sloupec-osa">
-    <h2>Časová osa</h2>
-    <p class="perex male">Kapitoly seřazené podle herního letopočtu.</p>
-    {% include osa.html %}
-  </div>
-  <aside class="sloupec-archiv">
-    <h2>Archiv</h2>
-    <a class="oddil" href="{{ '/archiv/#korporace' | relative_url }}"><b>Korporace a firmy</b><span>Firmy, které postavily lodě, koupily planety a občas i dějiny.</span><i>Otevřít</i></a>
-    <a class="oddil" href="{{ '/archiv/#svatky' | relative_url }}"><b>Svátky a kultura</b><span>Čím žijí lidé i Banu, když zrovna neválčí.</span><i>Otevřít</i></a>
-    <a class="oddil" href="{{ '/osobnosti/' | relative_url }}"><b>Známé osobnosti</b><span>Hrdinové, tyrani a lidé, kteří změnili směr dějin.</span><i>Otevřít</i></a>
-    <a class="oddil" href="{{ '/archiv/#pribehy' | relative_url }}"><b>Příběhy</b><span>Krátké dramatizace skutečných událostí z historie vesmíru.</span><i>Otevřít</i></a>
-  </aside>
-</section>
+<script>
+(function () {
+  var Z = document.body.dataset.zaklad || '/';
+  var p = null; try { p = JSON.parse(localStorage.getItem('kv-pozice') || 'null'); } catch (e) {}
+  var box = document.getElementById('pokracovat');
+  if (p && p.id && box) {
+    box.querySelector('.nadtitul').textContent = 'Rozposloucháno';
+    box.querySelector('h2').textContent = p.label;
+    box.querySelector('.dp-stav').textContent = 'Věta ' + (p.ln + 1) + (p.total ? ' z ' + p.total : '') + ' · pokračuj tam, kde jsi skončil';
+    if (p.total) box.querySelector('.dp-prubeh i').style.width = ((p.ln + 1) / p.total * 100) + '%';
+    var a = box.querySelector('a'); a.textContent = '▶ Pokračovat'; a.href = Z + 'archiv/#' + p.id + '@' + p.ln;
+  }
+  // Osobnost dne: každý den jiná osoba z rejstříku.
+  fetch(Z + 'data/osoby.json').then(function (r) { return r.json(); }).then(function (o) {
+    if (!o.length) return;
+    var d = Math.floor(Date.now() / 864e5), x = o[(d * 37) % o.length], el = document.getElementById('osobnost-dne');
+    if (!el) return;
+    el.href = Z + 'osobnosti/#' + x.id;
+    el.querySelector('h3').textContent = x.jmeno;
+    el.querySelector('p').textContent = x.role + (x.narozeni && x.narozeni !== 'neznámo' ? ' · ' + x.narozeni + (x.umrti ? '–' + x.umrti : '') : '');
+  }).catch(function () {});
+})();
+</script>

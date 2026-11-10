@@ -1,0 +1,220 @@
+# Slovníček pojmů. Web podtrhne výskyty tvarů z pole `tvary` a po najetí ukáže `vysvetleni`.
+# Zdroj: Galactapedie (primárně) a Comm-Linky z archivu H:\Kronika, stav 10. 11. 2026.
+# Tvary jsou záměrně delší a konkrétní, aby nevznikaly falešné shody.
+
+# --- Státy a instituce lidstva ---
+- termin: "UEE"
+  tvary: [UEE, Spojené impérium Země, Spojeného impéria Země, Spojenému impériu Země, Spojeném impériu Země, Spojeným impériem Země]
+  vysvetleni: "Spojené impérium Země, současný stát lidstva od roku 2546. V čele stojí volený imperátor, vedle něj Tribunál a Senát složený ze zástupců planet."
+  zdroj: https://robertsspaceindustries.com/galactapedia/article/VyvyKxy4v6-united-empire-of-earth
+
+- termin: "UNE"
+  tvary: [UNE, Spojené národy Země, Spojených národů Země, Spojeným národům Země, Spojenými národy Země]
+  vysvetleni: "Spojené národy Země, první společná vláda lidstva založená v roce 2380. Vedla první velkou vlnu terraformace a v roce 2523 se pokojně proměnila v UPE."
+  zdroj: https://robertsspaceindustries.com/galactapedia/article/R4ZQpY83oO-united-nations-of-earth
+
+- termin: "UPE"
+  tvary: [UPE, Spojené planety Země, Spojených planet Země, Spojeným planetám Země, Spojenými planetami Země]
+  vysvetleni: "Spojené planety Země, vláda lidstva v letech 2523–2546. Řídil ji tříčlenný Tribunál se Senátem; zanikla, když Ivar Messer převzal moc jako První občan."
+  zdroj: https://robertsspaceindustries.com/galactapedia/article/0QxBjKP2PN-united-planets-of-earth
+
+- termin: "Senát"
+  tvary: [Senát, Senátu, Senátem]
+  vysvetleni: "Zákonodárný sbor tvořený volenými senátory z jednotlivých planet. Schvaluje zákony i rozpočet a od roku 2380 je nejstarší nepřetržitě fungující součástí lidské vlády."
+  zdroj: https://robertsspaceindustries.com/galactapedia/article/VaZn8OqaNZ-senate
+
+- termin: "Tribunál"
+  tvary: [Tribunál, Tribunálu, Tribunálem, tři tribuni, tří tribunů, třemi tribuny, tři tribuny]
+  vysvetleni: "Výkonný orgán vlády, v němž si moc dělí správa infrastruktury, armády a práva. Vznikl s UPE, Ivar Messer ho zrušil a Erin Toi roku 2792 obnovila."
+  zdroj: https://robertsspaceindustries.com/galactapedia/article/bZwq5Nr5EL-tribunal
+
+- termin: "imperátor"
+  tvary: [imperátor, imperátora, imperátorem, imperátorovi, imperátoři, imperátorů, Imperátor, imperátorka, imperátorky, imperátorku, imperátorkou, Imperátorka]
+  vysvetleni: "Nejvyšší úřad UEE. Vytvořil ho Ivar Messer roku 2546 a za Messerů se dědil; dnes imperátora volí občané na jediné desetileté období."
+  zdroj: https://robertsspaceindustries.com/galactapedia/article/0Gz5BoJ9wl-uee-imperator
+
+- termin: "První občan"
+  tvary: [První občan, první občan, Prvního občana, prvního občana, Prvním občanem, prvním občanem]
+  vysvetleni: "Úřad jediného vládce, který si v roce 2546 prosadil Ivar Messer po sérii bombových útoků. Občané kvůli němu rozpustili Tribunál a 15. prosince Messera zvolili."
+  zdroj: https://robertsspaceindustries.com/galactapedia/article/V7gM82vNmr-prime-citizen
+
+- termin: "Advokacie"
+  tvary: [Advokacie, Advokacii, Advokacií]
+  vysvetleni: "Meziplanetární policie UEE založená roku 2523. Stojí nad místními policejními složkami a její agenti stíhají zločiny napříč soustavami."
+  zdroj: https://robertsspaceindustries.com/galactapedia/article/VDoP5pmODk-advocacy
+
+- termin: "Ekvivalence"
+  tvary: [Ekvivalence, Ekvivalenci, Ekvivalencí]
+  vysvetleni: "Osvědčení o dokončeném středoškolském vzdělání v UEE. Bez něj nelze studovat dál, vstoupit do armády ani získat plné občanství."
+  zdroj: https://robertsspaceindustries.com/galactapedia/article/Vgg7YGdQDY-equivalency
+
+- termin: "Spectrum"
+  tvary: [Spectrum, Spectra, Spectru, Spectrem]
+  vysvetleni: "Mezihvězdná komunikační a mediální síť, která propojuje celé UEE. Slouží k osobním zprávám i k vysílání zpráv, sportu a pořadů."
+  zdroj: https://robertsspaceindustries.com/galactapedia/article/VaZwen9E2Q-spectrum
+
+# --- Éra Messerů a její konec ---
+- termin: "Messerové"
+  tvary: [Messerové, Messerů, Messerům, rod Messerů, Rod Messerů, éra Messerů, éry Messerů, éře Messerů, érou Messerů]
+  vysvetleni: "Dynastie, která v letech 2546–2792 absolutisticky vládla UEE. Začala Ivarem Messerem a s každým dalším vládcem byla krutější, válečnější a zkorumpovanější."
+  zdroj: https://robertsspaceindustries.com/galactapedia/article/V8gJ6ZwGqo-messer-era
+
+- termin: "protimesserovská revoluce"
+  tvary: [protimesserovská revoluce, protimesserovské revoluce, protimesserovskou revoluci, protimesserovské hnutí, protimesserovského hnutí, protimesserovské, protimesserovskou, protimesserovského]
+  vysvetleni: "Desítky let sílící odpor, který vyvrcholil roku 2792 smrtí Lintona Messera XI. a koncem dynastie. Rozhodující roli sehrál záznam masakru na Garronu II."
+  zdroj: https://robertsspaceindustries.com/galactapedia/article/bE3rKa32P7-anti-messer-revolution
+
+- termin: "Tide"
+  tvary: [skupina Tide, skupiny Tide, skupině Tide, skupinou Tide, hnutí Tide, Tide]
+  vysvetleni: "Odbojové hnutí proti Messerům s buňkami na většině lidských planet. Pustilo do Spectra záznam masakru na Garronu II, a tím rozpoutalo revoluci."
+  zdroj: https://robertsspaceindustries.com/galactapedia/article/RXlXOpwG6k-tide
+
+- termin: "Garron II"
+  tvary: [Garron II, Garronu II]
+  vysvetleni: "Planeta, jejíž práva na terraformaci prodal roku 2792 Linton Messer XI. Při přestavbě vyhynul druh, o jehož vnímavosti věděl. Odhalení masakru ukončilo éru Messerů."
+  zdroj: https://robertsspaceindustries.com/galactapedia/article/01dWeqnMr1-massacre-of-garron-ii
+
+- termin: "Fair Chance"
+  tvary: [zákon Fair Chance, zákona Fair Chance, zákonu Fair Chance, zákonem Fair Chance, Fair Chance]
+  vysvetleni: "Zákon z roku 2795, přijatý po masakru na Garronu II. Soustavy s vnímavým nebo možná vnímavým životem chrání před kontaktem, terraformací i těžbou."
+  zdroj: https://robertsspaceindustries.com/galactapedia/article/RXlXmnaYGP-fair-chance-act
+
+- termin: "zákon o historické pravdě"
+  tvary: [zákon o historické pravdě, Zákon o historické pravdě, zákona o historické pravdě, zákonem o historické pravdě, zákonu o historické pravdě]
+  vysvetleni: "Zákon Senátu z roku 2941, který odtajnil tisíce dokumentů z éry Messerů. Odhalil vojenské záznamy, tajné projekty i osudy lidí, kteří záhadně zmizeli."
+  zdroj: https://robertsspaceindustries.com/galactapedia/article/0OaB8KmBKq-historical-truth-act-of-2941
+
+# --- Cestování a technologie ---
+- termin: "kvantový pohon"
+  tvary: [kvantový pohon, kvantového pohonu, kvantovému pohonu, kvantovým pohonem, kvantové pohony, kvantových pohonů, kvantovým skokem]
+  vysvetleni: "Motor, který vytváří takzvané Chan-Eisenovo pole a dnes lodím umožňuje letět zhruba pětinou rychlosti světla. První lidský prototyp z roku 2075 dosáhl setiny."
+  zdroj: https://robertsspaceindustries.com/galactapedia/article/RX3DOkJdxJ-quantum-drive
+
+- termin: "skokový bod"
+  tvary: [skokový bod, skokového bodu, skokovému bodu, skokovém bodu, skokovým bodem, skokové body, skokových bodů, skokovými body, skokovým bodům]
+  vysvetleni: "Místo v prostoru, kde začíná průchozí tunel do jiné, často vzdálené soustavy. Pouhým okem je téměř neviditelný; známé body hlídají a označují velké stavby."
+  zdroj: https://robertsspaceindustries.com/galactapedia/article/0rqzJPaMpY-jump-point
+
+- termin: "skokový tunel"
+  tvary: [skokový tunel, skokového tunelu, skokovým tunelem, skokové tunely]
+  vysvetleni: "Přirozená průchozí červí díra, kterou lodě za krátkou dobu urazí vzdálenost, na niž by kvantovým letem potřebovaly roky. Může se bez varování zhroutit."
+  zdroj: https://robertsspaceindustries.com/galactapedia/article/bBp6Bx33wm-jump-tunnel
+
+- termin: "skokový pohon"
+  tvary: [skokový pohon, skokového pohonu, skokovým pohonem, skokové pohony, Skokové pohony, skokových pohonů]
+  vysvetleni: "Kvantový pohon doplněný skokovým modulem, se kterým loď dokáže proletět skokovým tunelem do jiné soustavy."
+  zdroj: https://robertsspaceindustries.com/galactapedia/article/RX3DOkJdxJ-quantum-drive
+
+- termin: "navjumper"
+  tvary: [navjumper, Navjumper, navjumpeři, navjumpera, navjumperem, Navjumperem, navjumpery, navjumperů, navjumperům, navjumperka, Navjumperka, navjumperky, navjumperkou]
+  vysvetleni: "Pilot, který hledá a mapuje nové skokové body. Navázal na první „jumpery“, kteří lodě skoky zpočátku za tučnou odměnu převáděli ručně."
+  zdroj: https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/15019-Galactic-Guide-Croshaw-System
+
+- termin: "Neso trojúhelník"
+  tvary: [Neso trojúhelník, Neso trojúhelníku, Neso trojúhelníkem]
+  vysvetleni: "Oblast u Neptunu, kde beze stopy mizely lodě. Nick Croshaw v ní roky pátral a odhalil, že za zmizeními stojí první lidmi objevený skokový bod."
+  zdroj: https://robertsspaceindustries.com/galactapedia/article/VyvYkAr7YW-nick-croshaw
+
+- termin: "terraformace"
+  tvary: [terraformace, terraformaci, terraformací, Terraformace, terraformační, terraformačního, terraformačními, terraformačním, terraformovat, terraformovali, terraformována]
+  vysvetleni: "Průmyslová přestavba celé planety tak, aby se na ní dalo žít. Lidé ji zvládají od 22. století; nepovedený pokus ale končí katastrofou a původní život ničí."
+  zdroj: https://robertsspaceindustries.com/galactapedia/article/V3qgj8vjnj-terraforming
+
+- termin: "Velká marsovská tragédie"
+  tvary: [Velká marsovská tragédie, Velké marsovské tragédie, Velkou marsovskou tragédii, Velkou marsovskou tragédií]
+  vysvetleni: "Katastrofa z 13. září 2125, kdy chyba atmosférických procesorů rozptýlila novou atmosféru Marsu a udusilo se 4 876 lidí. Terraformace se pak na dvacet let zastavila."
+  zdroj: https://robertsspaceindustries.com/galactapedia/article/bmNrgKnZ6l-mars-tragedy
+
+- termin: "Archa"
+  tvary: [Archa, Archy, Archu, Archou]
+  vysvetleni: "Obří knihovna a archivní stanice v soustavě Tayac s věděním všech známých civilizací. Navrhl ji Marshall Leon v roce 2794, dokončena byla roku 2800."
+  zdroj: https://robertsspaceindustries.com/galactapedia/article/0qnNMX5lAk-the-ark
+
+- termin: "Synthworld"
+  tvary: [Synthworld, Synthworldu, Synthworldem, Projekt Archangel, projekt Archangel, projektu Archangel, projektem Archangel]
+  vysvetleni: "Nedokončená umělá planeta v soustavě Chronos, oficiálně projekt Archangel. Ohlásil ji imperátor Corbyn Salehi roku 2872 jako náhradu za ničivou terraformaci."
+  zdroj: https://robertsspaceindustries.com/galactapedia/article/bZkyrEPLra-synthworld-chronos-iii
+
+# --- Cizí civilizace ---
+- termin: "Banu"
+  tvary: [Banu, banuský, banuská, banuské, banuského, banuskému, banuskou, banuském, banuských]
+  vysvetleni: "První mimozemská civilizace, se kterou se lidé setkali (2438). Snesou mnoho různých atmosfér a nevedou historické záznamy, takže jejich domovský svět nikdo nezná. Obchodují se všemi."
+  zdroj: https://robertsspaceindustries.com/galactapedia/article/0NwpYPpNZ4-banu
+
+- termin: "Banuský protektorát"
+  tvary: [Banuský protektorát, Banuského protektorátu, Banuskému protektorátu, Banuským protektorátem]
+  vysvetleni: "Volné spojenectví banuských planet, měst a flotil. Společné záležitosti řeší Rada protektorátu složená ze stovek Banu."
+  zdroj: https://robertsspaceindustries.com/galactapedia/article/Vgg795z2a3-banu-protectorate
+
+- termin: "Xi’ani"
+  tvary: [Xi’ani, Xi’anů, Xi’anům, Xi’any, Xi’anech, xi’anský, xi’anská, xi’anské, xi’anského, xi’anskému, xi’anským, xi’anskou, Xi’anský, Xi’anská, Xi’anské, Xi’anského, Xi’anskému, Xi’anským, "Xi'ani", "Xi'anů", "Xi'anům", "Xi'any", "xi'anský", "xi'anská", "xi'anské", "xi'anského", "xi'anským"]
+  vysvetleni: "Vesmírná civilizace z planety RyiXy’an, terraformující už tisíce let. Od prvního kontaktu v roce 2530 s nimi lidé vedli více než dvě a půl století studenou válku."
+  zdroj: https://robertsspaceindustries.com/galactapedia/article/ReJwN9KJEj-xian
+
+- termin: "Kr.ē"
+  tvary: [rod Kr.ē, rodu Kr.ē, císař Kr.ē, císaře Kr.ē, Kr.ē]
+  vysvetleni: "Současný xi’anský císařský rod. Císař Kr.ē vládne od roku 2643 a se senátorem Terrencem Akarim připravil první dohodu o konci studené války."
+  zdroj: https://robertsspaceindustries.com/galactapedia/article/VaZwmlmPQo-emperor-kree
+
+- termin: "Perryho linie"
+  tvary: [Perryho linie, Perryho linii, Perryho linií, Pakt o Perryho linii, Paktu o Perryho linii, Paktem o Perryho linii]
+  vysvetleni: "Osm pohraničních soustav mezi lidmi a Xi’any, které armáda od roku 2542 držela jako uzavřené vojenské pásmo. Pakt o Perryho linii je roku 2793 spravedlivě rozdělil."
+  zdroj: https://robertsspaceindustries.com/galactapedia/article/V8gJQMY9mO-perry-line
+
+- termin: "studená válka"
+  tvary: [studená válka, studené války, studené válce, studenou válku, studenou válkou]
+  vysvetleni: "Napětí mezi lidmi a Xi’any v letech 2530–2793. K velkým bitvám nedošlo, pohraniční soustavy se však proměnily ve vojenská pásma."
+  zdroj: https://robertsspaceindustries.com/galactapedia/article/RXlLjDewkZ-xian-human-cold-war
+
+- termin: "Tevarinové"
+  tvary: [Tevarinové, Tevarinů, Tevarinům, Tevariny, Tevarinech, Tevarin, Tevarinem, Tevarinka, Tevarinku, Tevarinkou, tevarinský, tevarinská, tevarinské, tevarinského, tevarinskou, tevarinským, Tevarinský, Tevarinská, Tevarinské]
+  vysvetleni: "Válečnický národ z planety Kaleeth, řídící se kodexem Rijora. Po prohrané válce v letech 2541–2546 přišli o domov; část splynula s lidskou společností, ostatní se rozptýlili."
+  zdroj: https://robertsspaceindustries.com/galactapedia/article/V8gJv3nB3X-tevarin
+
+- termin: "Kaleeth"
+  tvary: [Kaleeth, Kaleethu, Elysium IV, Jalan]
+  vysvetleni: "Domovský svět Tevarinů. Po první tevarinské válce ho lidé zabrali a osídlili; dnes se planeta jmenuje Jalan (Elysium IV)."
+  zdroj: https://robertsspaceindustries.com/galactapedia/article/VarAXY2zy2-jalan-elysium-iv
+
+- termin: "Vanduulové"
+  tvary: [Vanduulové, Vanduulů, Vanduulům, Vanduuly, Vanduulech, Vanduula, Vanduul, vanduulský, vanduulská, vanduulské, vanduulského, vanduulskému, vanduulském, vanduulskou, vanduulským, vanduulskými, vanduulských, Vanduulský, Vanduulská, Vanduulské]
+  vysvetleni: "Nepřátelská rasa bez ústřední vlády, rozdělená do samostatných klanů, které přepadají osady. Lidé je poznali roku 2681 a každé setkání od té doby stálo mnoho životů."
+  zdroj: https://robertsspaceindustries.com/galactapedia/article/VpGPp92gdO-vanduul
+
+- termin: "Kingship"
+  tvary: [Kingship, Kingshipu, Kingshipem, Kingshipy, Kingshipů]
+  vysvetleni: "Vojenské označení největších vanduulských lodí, vlajkových lodí mocných klanů. Jeden trup spojuje bitevní loď, nosič, velitelské centrum i výsadkový transport."
+  zdroj: https://robertsspaceindustries.com/galactapedia/article/V3qWn9Dlvm-vanduul-kingship
+
+# --- Armáda ---
+- termin: "Squadron 42"
+  tvary: [Squadron 42]
+  vysvetleni: "42. zvláštní stíhací letka námořnictva UEE, původně trestní jednotka. Proslavila se roku 2610 v bitvě o Centauri na konci druhé tevarinské války."
+  zdroj: https://robertsspaceindustries.com/galactapedia/article/RWoeByvQap-squadron-42
+
+- termin: "Ztracená letka"
+  tvary: [Ztracená letka, Ztracené letky, Ztracené letce, Ztracenou letku, Ztracenou letkou]
+  vysvetleni: "89. logistická letka, která roku 2884 dva dny bez posil bránila Caliban před Vanduuly a umožnila útěk milionům civilistů. Přežil jediný nejmenovaný pilot."
+  zdroj: https://robertsspaceindustries.com/galactapedia/article/0Gz5BNmPqo-squadron-89
+
+# --- Místa současnosti ---
+- termin: "Stanton"
+  tvary: [soustava Stanton, soustavy Stanton, soustavě Stanton, soustavu Stanton, soustavou Stanton, Stanton]
+  vysvetleni: "Soustava, kterou v roce 2851 objevila navjumperka Toshi Aaron. Vláda prodala všechny její planety čtyřem velkým korporacím, které na nich vydávají vlastní pravidla."
+  zdroj: https://robertsspaceindustries.com/galactapedia/article/RX3lKBA3dq-stanton-system
+
+- termin: "Pyro"
+  tvary: [soustava Pyro, soustavy Pyro, soustavě Pyro, soustavu Pyro, Pyro]
+  vysvetleni: "Nenárokovaná soustava kolem nestálé hvězdy, objevená roku 2493. Korporace ji vytěžily a opustily, na počátku 27. století se stala útočištěm psanců a dnes ji ovládají soupeřící zločinecké frakce."
+  zdroj: https://robertsspaceindustries.com/galactapedia/article/0ODxJM917N-pyro-system
+
+# --- Prameny ---
+- termin: "Galactapedie"
+  tvary: [Galactapedie, Galactapedii, Galactapedií]
+  vysvetleni: "Oficiální encyklopedie vesmíru Star Citizen na webu RSI s hesly o lidech, lodích, planetách i událostech. Ve hře ji vede Archa. Hlavní pramen této kroniky."
+  zdroj: https://robertsspaceindustries.com/galactapedia/article/0qnNMX5lAk-the-ark
+
+- termin: "Comm-Link"
+  tvary: [Comm-Link, Comm-Linku, Comm-Linky, Comm-Linků, Comm-Linkem]
+  vysvetleni: "Rubrika zpráv na webu RSI, kde vývojáři vedle novinek o hře od roku 2012 zveřejňují i povídky a články o vesmíru. Vedlejší pramen kroniky."
+  zdroj: https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/19061-Future-Lore-Release-Schedule

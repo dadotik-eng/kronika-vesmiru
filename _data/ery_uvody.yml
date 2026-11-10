@@ -1,0 +1,31 @@
+# Úvodní texty k obdobím časové osy (klíč = id z _data/ery.yml).
+# uvod = 2–3 věty o tom, co období vymezuje; veta = krátký podtitul.
+# Zdroj: Galactapedie (archiv H:\Kronika), stav 10. 11. 2026.
+
+usvit:
+  uvod: "Přelidněná Země hledá cestu ven. Kvantový pohon z roku 2075 zpřístupnil lidem celou Sluneční soustavu a terraformace Marsu ukázala, že se dají přestavět i celé světy: nejdřív katastrofou roku 2125, pak úspěchem v roce 2157."
+  veta: "Kvantový pohon, rudá planeta a první oběti terraformace."
+
+skoky:
+  uvod: "U Neptunu beze stopy mizely lodě a za tou záhadou se skrýval první skokový bod. Nick Croshaw jím v roce 2271 prolétl do cizí soustavy, navjumpeři začali mapovat další cesty a levnější skokové pohony otevřely hvězdy i soukromým pilotům."
+  veta: "Neso trojúhelník, navjumpeři a první cizí slunce."
+
+une:
+  uvod: "V roce 2380 dostalo lidstvo první společnou vládu a s ní Senát. Nastal čas rychlých objevů skokových bodů, terraformace a stěhování ze Země do nových kolonií. V roce 2438 se lidé v soustavě Davien poprvé setkali s cizí civilizací, Banu, a uzavřeli s nimi mír a obchod."
+  veta: "Jedna vláda, nové kolonie a první setkání s Banu."
+
+upe:
+  uvod: "Z národů se staly planety, každá s hlasem v Senátu, a výkonnou moc si rozdělil tříčlenný Tribunál. Za pouhých třiadvacet let lidé narazili na Xi’any i Tevariny. S prvními začala studená válka, s druhými skutečná, a z té vzešel Ivar Messer."
+  veta: "Tři tribuni, dva noví sousedé a válka, z níž vzešel diktátor."
+
+messerove:
+  uvod: "Ivar Messer proměnil úřad Prvního občana v doživotní a dědičný titul imperátora a jeho rod vládl 246 let. Éru provázela propaganda, cenzura, politické věznice, studená válka s Xi’any i první vanduulské nájezdy. Skončila revolucí po masakru na Garronu II."
+  veta: "Jeden rod na trůnu a dvě a půl století strachu."
+
+naprava:
+  uvod: "Po pádu Messerů obnovila Erin Toi Tribunál, zákon Fair Chance začal chránit vyvíjející se život a mír s Xi’any zpečetil Pakt o Perryho linii. Vznikla Archa, impérium prodalo soustavu Stanton korporacím a začalo stavět Synthworld. Vanduulové ale neodešli: v roce 2884 padl Caliban."
+  veta: "Obnovený Tribunál, Archa, prodaný Stanton a nedokončený umělý svět."
+
+valka:
+  uvod: "V říjnu 2945 napadl vanduulský klan s Kingshipem planetu Vega II a 10. listopadu Senát schválil válku. Námořnictvo poprvé zničilo Kingship a přešlo do protiútoku, impérium navázalo obchod s Xi’any a od roku 2951 vládne Laylani Addison. Rok 2956 je přítomnost kroniky."
+  veta: "Vega II, vyhlášená válka a příběh, který se stále píše."

@@ -1,0 +1,44 @@
+---
+layout: default
+title: Příběhy
+permalink: /pribehy/
+popis: Dramatizace a kapitoly ze skutečných událostí dějin vesmíru Star Citizen.
+---
+{% assign enc = site.data.encyklopedie.pribehy.polozky %}
+{% assign nove = site.kapitoly | sort: "date" | reverse %}
+<section class="blok uzky">
+  <p class="nadtitul">Příběhy</p>
+  <h1>Příběhy z kroniky</h1>
+  <p class="perex">Krátké dramatizace a samostatné kapitoly o konkrétních událostech. Všechny vycházejí z oficiálních pramenů.</p>
+
+  <h2 class="pri-nadpis">K poslechu</h2>
+  <div class="pri-mrizka">
+    {% for p in enc %}{% if p.prehrat %}
+    <article class="pri-karta">
+      <p class="pri-stitek">{{ p.stitek }}</p>
+      <h3>{{ p.nazev }}</h3>
+      <p class="text-pojmy">{{ p.text }}</p>
+      <a class="dej-hraj" href="{{ '/archiv/#' | append: p.prehrat | relative_url }}">▶ Přehrát</a>
+    </article>
+    {% endif %}{% endfor %}
+    {% for k in nove %}
+    <article class="pri-karta">
+      <p class="pri-stitek">Kapitola od bota · {{ k.herni_rok }}{% if k.overeni != "OK" %} · čeká na ověření{% endif %}</p>
+      <h3>{{ k.title }}</h3>
+      <p class="text-pojmy">{{ k.popis }}</p>
+      <p class="pri-akce"><a class="dej-hraj" href="{{ '/archiv/#web-' | append: k.slug | relative_url }}">▶ Přehrát</a> <a href="{{ k.url | relative_url }}">Číst →</a></p>
+    </article>
+    {% endfor %}
+  </div>
+
+  <h2 class="pri-nadpis">Připravujeme</h2>
+  <div class="pri-mrizka">
+    {% for p in enc %}{% if p.pripravuje_se %}
+    <article class="pri-karta pripravujeme">
+      <p class="pri-stitek">Připravuje se</p>
+      <h3>{{ p.nazev }}</h3>
+      <p class="text-pojmy">{{ p.text }}</p>
+    </article>
+    {% endif %}{% endfor %}
+  </div>
+</section>

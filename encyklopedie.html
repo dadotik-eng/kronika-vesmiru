@@ -1,0 +1,44 @@
+---
+layout: default
+title: Encyklopedie
+permalink: /encyklopedie/
+popis: Korporace, svátky a slovníček pojmů ze světa Star Citizen.
+---
+{% assign enc = site.data.encyklopedie %}
+<section class="blok uzky">
+  <p class="nadtitul">Encyklopedie</p>
+  <h1>Encyklopedie</h1>
+  <p class="perex">Firmy, svátky a pojmy, bez kterých se v dějinách vesmíru neobejdeš.</p>
+  <nav class="ery-cipy enc-cipy" aria-label="Oddíly encyklopedie">
+    <a href="#korporace" style="--barva:#f6bd4b">Korporace</a>
+    <a href="#svatky" style="--barva:#8fd0c0">Svátky a kultura</a>
+    <a href="#pojmy" style="--barva:#bfe3f5">Slovníček pojmů</a>
+  </nav>
+
+  {% for oddil in "korporace|svatky" | split: "|" %}{% assign o = enc[oddil] %}
+  <h2 class="pri-nadpis" id="{{ oddil }}">{{ o.nazev }}</h2>
+  <p class="enc-uvod">{{ o.uvod }}</p>
+  <div class="pri-mrizka">
+    {% for p in o.polozky %}
+    <article class="pri-karta" id="{{ oddil }}-{{ p.id }}">
+      <p class="pri-stitek">{{ p.stitek }}</p>
+      <h3>{{ p.nazev }}</h3>
+      <p class="enc-text">{{ p.text }}</p>
+      {% if p.kapitoly.size > 0 %}<p class="pri-akce">{% for n in p.kapitoly %}{% assign i = n | minus: 1 %}{% assign d = site.data.dejiny[i] %}<a href="{{ '/archiv/#' | append: d.hraj | relative_url }}">▶ Kapitola {{ d.rim }}</a> {% endfor %}</p>{% endif %}
+    </article>
+    {% endfor %}
+  </div>
+  {% endfor %}
+
+  <h2 class="pri-nadpis" id="pojmy">Slovníček pojmů</h2>
+  {% if site.data.pojmy %}
+  {% assign pj = site.data.pojmy | sort: "termin" %}
+  <dl class="slovnicek">
+    {% for p in pj %}
+    <div class="slovo"><dt>{{ p.termin }}</dt><dd>{{ p.vysvetleni }}{% if p.zdroj %} <a href="{{ p.zdroj }}" target="_blank" rel="noopener" class="os-zdroj">zdroj ↗</a>{% endif %}</dd></div>
+    {% endfor %}
+  </dl>
+  {% else %}
+  <p class="enc-uvod">Slovníček se připravuje.</p>
+  {% endif %}
+</section>

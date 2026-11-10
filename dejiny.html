@@ -1,0 +1,58 @@
+---
+layout: default
+title: Dějiny
+permalink: /dejiny/
+popis: Celé vyprávění Hvězdné kroniky k poslechu – prolog, deset kapitol a dramatizace Ztracená letka.
+---
+<section class="blok uzky">
+  <p class="nadtitul">Hlavní vyprávění · 2075–2956</p>
+  <h1>Dějiny</h1>
+  <p class="perex">Archivář tě provede 881 lety od prvního kvantového pohonu po válku, která trvá dodnes. Vyprávění hraje v liště dole, takže můžeš mezitím listovat dál.</p>
+
+  <ol class="dejiny-seznam">
+    <li class="dej-polozka prolog-polozka" data-scena="prolog">
+      <span class="dej-rim">✦</span>
+      <div class="dej-telo">
+        <p class="dej-era">Úvod</p>
+        <h2>Prolog</h2>
+        <p class="text-pojmy">Kdo je Archivář a proč se dějiny dlouho psaly na rozkaz.</p>
+      </div>
+      <a class="dej-hraj" href="{{ '/archiv/#prolog' | relative_url }}" data-rozbalit="1">▶ Přehrát</a>
+    </li>
+    {% for k in site.data.dejiny %}
+    <li class="dej-polozka" data-scena="{{ k.hraj }}">
+      <span class="dej-rim">{{ k.rim }}</span>
+      <div class="dej-telo">
+        <p class="dej-era">{{ k.rozpeti }} · {{ k.era }}</p>
+        <h2>{{ k.title }}</h2>
+        <p class="text-pojmy">{{ k.popis }}</p>
+        <p class="dej-stav" hidden></p>
+      </div>
+      <a class="dej-hraj" href="{{ '/archiv/#' | append: k.hraj | relative_url }}">▶ Přehrát</a>
+    </li>
+    {% if k.hraj == "kap-9" %}
+    <li class="dej-polozka odbocka" data-scena="letka">
+      <span class="dej-rim">↳</span>
+      <div class="dej-telo">
+        <p class="dej-era">2884 · odbočka · dramatizace</p>
+        <h2>Ztracená letka</h2>
+        <p class="text-pojmy">Poslední dva dny pilotů 89. letky, kteří kryli útěk milionů lidí z Calibanu.</p>
+        <p class="dej-stav" hidden></p>
+      </div>
+      <a class="dej-hraj" href="{{ '/archiv/#letka' | relative_url }}">▶ Přehrát</a>
+    </li>
+    {% endif %}
+    {% endfor %}
+  </ol>
+  <p class="poznamka">Chceš kroniku s animacemi přes celou obrazovku? V liště dole klikni na „Otevřít přehrávač“.</p>
+</section>
+<script>
+(function () {
+  var p = null; try { p = JSON.parse(localStorage.getItem('kv-pozice') || 'null'); } catch (e) {}
+  if (!p) return;
+  var li = document.querySelector('.dej-polozka[data-scena="' + p.id + '"]'); if (!li) return;
+  li.classList.add('rozposlouchano');
+  var st = li.querySelector('.dej-stav'); if (st) { st.hidden = false; st.textContent = 'Rozposloucháno · věta ' + (p.ln + 1) + (p.total ? ' z ' + p.total : ''); }
+  var a = li.querySelector('.dej-hraj'); a.textContent = '▶ Pokračovat'; a.href = a.href.split('#')[0] + '#' + p.id + '@' + p.ln;
+})();
+</script>
