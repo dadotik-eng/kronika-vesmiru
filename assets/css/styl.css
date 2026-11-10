@@ -489,3 +489,35 @@ html.prehravac-otevreny { overflow: hidden; }
 .os-ilustrace { margin: -1.2rem -1.3rem 1rem; position: relative; overflow: hidden; border-radius: inherit; border-bottom-left-radius: 0; border-bottom-right-radius: 0; }
 .os-ilustrace img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; }
 .os-ilustrace figcaption { position: absolute; right: 8px; bottom: 6px; font-size: 11px; letter-spacing: .02em; color: rgba(230,236,245,.85); background: rgba(7,15,31,.7); padding: 2px 7px; border-radius: 3px; }
+
+/* Časová osa – panorama (kombinace staré osy s barvami období) */
+.osa-pan { max-width: 1380px; margin: 1.4rem auto 0; padding: 0 1.5rem; overflow-x: auto; overflow-y: hidden; }
+.op-vnitrek { position: relative; height: 236px; min-width: 980px; }
+.op-era { position: absolute; top: 0; height: 100%; box-sizing: border-box; border-left: 1px solid color-mix(in srgb, var(--barva) 40%, transparent); border-top: 3px solid var(--barva);
+  background: color-mix(in srgb, var(--barva) 5%, transparent); text-decoration: none; transition: background .2s; }
+.op-era span { position: absolute; top: 10px; left: 0; right: 0; padding: 0 .6rem; font-family: var(--label); font-size: .8rem; line-height: 1.25; letter-spacing: .1em; text-transform: uppercase; color: var(--barva); }
+.op-era:hover { background: color-mix(in srgb, var(--barva) 11%, transparent); }
+.op-era.vybrana { background: color-mix(in srgb, var(--barva) 16%, transparent); }
+.op-cara { position: absolute; left: 0; right: 0; top: 150px; height: 2px; background: rgba(222,236,246,.45); pointer-events: none; }
+.op-bod { position: absolute; top: 0; height: 0; width: 0; z-index: 2; text-decoration: none; color: var(--text); }
+.op-bod::after { content: ""; position: absolute; left: -4px; top: 147px; width: 8px; height: 8px; border-radius: 50%; background: var(--barva); opacity: .8; transition: transform .15s; }
+.op-bod::before { content: ""; position: absolute; left: -10px; top: 138px; width: 20px; height: 26px; } /* větší plocha pro klik */
+.op-bod.klic::after { left: -6px; top: 145px; width: 12px; height: 12px; opacity: 1; box-shadow: 0 0 0 3px var(--pozadi, #070f1f); }
+.op-bod:hover::after, .op-bod:focus-visible::after, .op-bod.aktivni::after { transform: scale(1.5); opacity: 1; }
+.op-popisek { position: absolute; top: 106px; left: 0; transform: translateX(-50%); white-space: nowrap; text-align: center; font-size: .82rem; line-height: 1.2; color: var(--text); display: none; }
+.op-popisek b { display: block; font-family: var(--label); font-size: .76rem; letter-spacing: .1em; text-transform: uppercase; color: var(--barva); }
+.op-bod.klic .op-popisek { display: block; }
+.op-bod.klic .op-popisek::after { content: ""; position: absolute; left: 50%; top: 100%; width: 1px; height: 10px; background: var(--barva); opacity: .6; }
+.op-bod.klic.patro .op-popisek { top: 62px; }
+.op-bod.klic.patro .op-popisek::after { height: 54px; }
+.op-bod.vlevo .op-popisek { transform: translateX(-12px); text-align: left; }
+.op-bod.vlevo .op-popisek::after { left: 12px; }
+.op-bod.vpravo .op-popisek { transform: translateX(calc(-100% + 12px)); text-align: right; }
+.op-bod.vpravo .op-popisek::after { left: auto; right: 12px; }
+.op-bod:not(.klic):hover .op-popisek, .op-bod:not(.klic):focus-visible .op-popisek { display: block; top: 168px; padding: .3rem .55rem; background: rgba(7,15,31,.95); border: 1px solid var(--linka); border-radius: 4px; z-index: 5; }
+.op-roky { position: absolute; left: 0; right: 0; top: 210px; pointer-events: none; }
+.op-roky span { position: absolute; transform: translateX(-50%); font-family: var(--label); font-size: .75rem; letter-spacing: .08em; color: var(--tlumene); }
+.op-roky span:first-child { transform: none; }
+.op-roky span.konec { transform: translateX(-100%); }
+.osa-ovladani { padding-top: 0; }
+.era-panel { border-top: 3px solid var(--barva); }

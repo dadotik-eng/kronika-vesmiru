@@ -12,13 +12,25 @@ popis: 881 let dějin vesmíru Star Citizen po obdobích. Vyber období a uvidí
 <section class="blok osa-hlava">
   <p class="nadtitul">Časová osa · 2075–2956</p>
   <h1>881 let na jedné ose</h1>
-  <div class="pas-obdobi" role="tablist" aria-label="Období">
+</section>
+
+<div class="osa-pan" id="osa-pan" aria-label="Panorama časové osy">
+  <div class="op-vnitrek">
     {% for e in site.data.ery %}{% assign r = e.rozsah | default: "" | split: "–" %}
-    <a class="pas-era" role="tab" href="#{{ e.id }}" data-era="{{ e.id }}" style="--barva: {{ e.barva }}">
-      <b>{% if e.rozsah %}{{ r[0] }}{% else %}{{ e.od }}{% endif %}</b><span>{{ e.nazev }}</span>
-    </a>
+    <a class="op-era" href="#{{ e.id }}" data-era="{{ e.id }}" data-od="{{ e.od }}" data-do="{{ e.do }}" data-zacatek="{% if e.rozsah %}{{ r[0] }}{% else %}{{ e.od }}{% endif %}" style="--barva: {{ e.barva }}"><span>{{ e.nazev }}</span></a>
     {% endfor %}
+    <div class="op-cara" aria-hidden="true"></div>
+    {% for x in udalosti %}
+    <a class="op-bod{% if x.klic %} klic{% endif %}" href="#{{ x.slug }}" data-rok="{{ x.rok }}"><span class="op-popisek"><b>{{ x.datum | default: x.rok }}</b>{{ x.titul }}</span></a>
+    {% endfor %}
+    {% for k in kapitoly %}
+    <a class="op-bod" href="#kap-{{ k.slug }}" data-rok="{{ k.herni_rok }}"><span class="op-popisek"><b>{{ k.herni_rok }}</b>Nová kapitola: {{ k.title }}</span></a>
+    {% endfor %}
+    <div class="op-roky" aria-hidden="true"></div>
   </div>
+</div>
+
+<section class="blok osa-ovladani">
   <p class="osa-prepinac"><button type="button" id="zobrazit-vse" class="tlacitko">Zobrazit celou osu</button></p>
 </section>
 
@@ -41,7 +53,7 @@ popis: 881 let dějin vesmíru Star Citizen po obdobích. Vyber období a uvidí
 
     <div class="era-sloupce">
       <div class="era-box">
-        <p class="era-box-nadpis">Poslechnout</p>
+        <p class="era-box-nadpis">K poslechu</p>
         {% assign nic = true %}
         {% for k in site.data.dejiny %}{% if k.herni_rok >= e.od %}{% if k.herni_rok < e.do or posledni %}{% assign nic = false %}
         <a class="era-hraj" href="{{ '/archiv/#' | append: k.hraj | relative_url }}">▶ {{ k.rim }}. {{ k.title }}</a>
@@ -60,12 +72,7 @@ popis: 881 let dějin vesmíru Star Citizen po obdobích. Vyber období a uvidí
         {% endif %}{% endif %}{% endif %}{% endfor %}
         {% if n == 0 %}<p class="era-nic">Zatím nikdo v rejstříku.</p>{% endif %}
         <a class="era-vice" href="{{ '/osobnosti/?obdobi=' | append: e.id | relative_url }}">Všichni z tohoto období →</a>
-      </div>
-      <div class="era-box">
-        <p class="era-box-nadpis">K tomu</p>
-        {% if e.id == "messerove" %}<a class="era-osoba" href="{{ '/rod-messeru/' | relative_url }}">Rodokmen Messerů →</a>{% endif %}
-        <a class="era-osoba" href="{{ '/pribehy/' | relative_url }}">Příběhy a dramatizace →</a>
-        <a class="era-osoba" href="{{ '/encyklopedie/' | relative_url }}">Encyklopedie: korporace a svátky →</a>
+        {% if e.id == "messerove" %}<a class="era-vice" href="{{ '/rod-messeru/' | relative_url }}">Rodokmen Messerů →</a>{% endif %}
       </div>
     </div>
 
@@ -95,11 +102,45 @@ popis: 881 let dějin vesmíru Star Citizen po obdobích. Vyber období a uvidí
 
 <script>
 (function () {
-  var paneli = [].slice.call(document.querySelectorAll('.era-panel')), pas = [].slice.call(document.querySelectorAll('.pas-era'));
+  var paneli = [].slice.call(document.querySelectorAll('.era-panel')), pas = [].slice.call(document.querySelectorAll('.op-era'));
+  rozlozPanorama();
   var vse = false, btn = document.getElementById('zobrazit-vse');
   [].forEach.call(document.querySelectorAll('.era-panel .udalosti'), function (ol) {
     [].slice.call(ol.children).sort(function (a, b) { return parseFloat(a.dataset.rok) - parseFloat(b.dataset.rok); }).forEach(function (li) { ol.appendChild(li); });
   });
+
+  function rozlozPanorama() {
+    var pan = document.getElementById('osa-pan'); if (!pan) return;
+    var ery = [].slice.call(pan.querySelectorAll('.op-era')), body = [].slice.call(pan.querySelectorAll('.op-bod'));
+    // šířka období: odmocnina délky + počet událostí, aby hustá období nebyla stlačená
+    var info = ery.map(function (el) {
+      var od = parseFloat(el.dataset.od), d = parseFloat(el.dataset.do);
+      var roky = body.map(function (b) { return parseFloat(b.dataset.rok); }).filter(function (r) { return r >= od && r < d; });
+      return { el: el, od: od, do: d, roky: roky, w: Math.sqrt(d - od) + 1.7 * roky.length };
+    });
+    var celkem = info.reduce(function (s, e) { return s + e.w; }, 0), x = 0;
+    info.forEach(function (e) { e.x = x / celkem * 100; e.s = e.w / celkem * 100; x += e.w; e.el.style.left = e.x + '%'; e.el.style.width = e.s + '%'; });
+    function poloha(rok) {
+      for (var i = 0; i < info.length; i++) {
+        var e = info[i];
+        if (rok < e.do || i === info.length - 1) {
+          var t = Math.min(1, Math.max(0, (rok - e.od) / (e.do - e.od)));
+          var v = e.roky.filter(function (r) { return r < rok; }).length, p = e.roky.length > 1 ? v / (e.roky.length - 1) : 0.5;
+          return { x: e.x + e.s * (0.08 + 0.84 * (0.35 * t + 0.65 * p)), barva: e.el.style.getPropertyValue('--barva') };
+        }
+      }
+    }
+    body.forEach(function (b) { var p = poloha(parseFloat(b.dataset.rok)); b.style.left = p.x + '%'; b.style.setProperty('--barva', p.barva);
+      b.classList.toggle('vlevo', p.x < 6); b.classList.toggle('vpravo', p.x > 94); });
+    var sirka = pan.querySelector('.op-vnitrek').offsetWidth, posl = -1e9;
+    body.filter(function (b) { return b.classList.contains('klic'); }).sort(function (a, b) { return parseFloat(a.style.left) - parseFloat(b.style.left); }).forEach(function (b) {
+      var px = parseFloat(b.style.left) / 100 * sirka; b.classList.remove('patro');
+      if (px - posl < 150) b.classList.add('patro'); else posl = px;
+    });
+    var roky = pan.querySelector('.op-roky'); roky.innerHTML = '';
+    info.forEach(function (e) { var s = document.createElement('span'); s.textContent = e.el.dataset.zacatek; s.style.left = e.x + '%'; roky.appendChild(s); });
+    var k = document.createElement('span'); k.textContent = '2956'; k.style.left = '100%'; k.className = 'konec'; roky.appendChild(k);
+  }
   function eraPro(h) {
     if (!h) return null;
     var el = document.getElementById(h); if (!el) return null;
@@ -111,6 +152,7 @@ popis: 881 let dějin vesmíru Star Citizen po obdobích. Vyber období a uvidí
     paneli.forEach(function (p) { p.hidden = !vse && p.dataset.era !== era; });
     pas.forEach(function (a) { var on = a.dataset.era === era; a.classList.toggle('vybrana', on); a.setAttribute('aria-selected', on); });
     [].forEach.call(document.querySelectorAll('.udalost.zvyraznena'), function (x) { x.classList.remove('zvyraznena'); });
+    [].forEach.call(document.querySelectorAll('.op-bod'), function (b) { b.classList.toggle('aktivni', b.getAttribute('href') === '#' + h); });
     var c = h && document.getElementById(h);
     if (c && c.classList.contains('udalost')) { c.classList.add('zvyraznena'); setTimeout(function () { c.scrollIntoView({ block: 'center' }); }, 30); }
   }
