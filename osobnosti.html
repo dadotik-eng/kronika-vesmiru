@@ -30,7 +30,8 @@ popis: Rejstřík osob z dějin vesmíru Star Citizen. Imperátoři, objevitelé
 
 <div class="blok os-mrizka" id="osoby">
 {% for o in osoby %}
-  <article class="osoba" id="{{ o.slug }}" data-k="{{ o.kategorie }}" data-rad="{{ o.rad }}" data-hledat="{{ o.jmeno | downcase | escape }} {{ o.role | downcase | escape }}">
+  <article class="osoba{% if o.ilustrace %} ma-ilustraci{% endif %}" id="{{ o.slug }}" data-k="{{ o.kategorie }}" data-rad="{{ o.rad }}" data-hledat="{{ o.jmeno | downcase | escape }} {{ o.role | downcase | escape }}">
+    {% if o.ilustrace %}<figure class="os-ilustrace"><img src="{{ '/assets/osoby/' | append: o.slug | append: '.webp' | relative_url }}" alt="Ilustrace: {{ o.jmeno | escape }}" loading="lazy" width="960" height="540"><figcaption>Ilustrace (AI) – není to oficiální podoba postavy</figcaption></figure>{% endif %}
     <header>
       <span class="os-emblem" aria-hidden="true"></span>
       <h2>{{ o.jmeno }}</h2>

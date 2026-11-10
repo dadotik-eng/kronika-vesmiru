@@ -484,3 +484,8 @@ html.prehravac-otevreny { overflow: hidden; }
 .osoba header > *:not(.os-emblem) { grid-column: 2; }
 .os-emblem { grid-row: 1 / span 4; grid-column: 1; width: 48px; height: 60px; }
 .os-kat { justify-self: start; }
+
+/* Ilustrace osob (AI, bez oficiálních symbolů) */
+.os-ilustrace { margin: -1.2rem -1.3rem 1rem; position: relative; overflow: hidden; border-radius: inherit; border-bottom-left-radius: 0; border-bottom-right-radius: 0; }
+.os-ilustrace img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; }
+.os-ilustrace figcaption { position: absolute; right: 8px; bottom: 6px; font-size: 11px; letter-spacing: .02em; color: rgba(230,236,245,.85); background: rgba(7,15,31,.7); padding: 2px 7px; border-radius: 3px; }
