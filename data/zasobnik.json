@@ -1,0 +1,7 @@
+---
+layout: null
+permalink: /data/zasobnik.json
+---
+[{% assign z = site.zasobnik | sort: "rok" %}{% for p in z %}
+{"id":{{ p.slug | jsonify }},"nazev":{{ p.nazev | jsonify }},"rok":{{ p.rok | jsonify }},"era":{{ p.era | jsonify }},"typ":{{ p.typ | jsonify }},"forma":{{ p.forma | jsonify }},"hodnoceni":{{ p.hodnoceni | jsonify }},"stav":{{ p.stav | jsonify }},"priorita":{{ p.priorita | jsonify }},"shrnuti":{{ p.shrnuti | jsonify }},"zdroje":{{ p.zdroje | jsonify }}}{% unless forloop.last %},{% endunless %}{% endfor %}
+]

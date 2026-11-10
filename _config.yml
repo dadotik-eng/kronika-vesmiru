@@ -12,6 +12,12 @@ collections:
   kapitoly:
     output: true
     permalink: /kapitoly/:name/
+  osoby:
+    output: false
+  udalosti:
+    output: false
+  zasobnik:
+    output: false
 
 defaults:
   - scope:
@@ -23,4 +29,5 @@ defaults:
 exclude:
   - README.md
   - SABLONA-KAPITOLY.md
-  - zasobnik
+  - ZASOBNIK.md
+  - SABLONY.md

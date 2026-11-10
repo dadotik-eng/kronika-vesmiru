@@ -4,7 +4,7 @@ title: Osobnosti
 permalink: /osobnosti/
 popis: Rejstřík osob z dějin vesmíru Star Citizen. Imperátoři, objevitelé, vojáci, zločinci i umělci s krátkými medailonky a odkazy na oficiální zdroje.
 ---
-{% assign osoby = site.data.osoby %}
+{% assign osoby = site.osoby | sort: "narozeni" %}
 {% assign kat = "vladari:Vládci|politika:Politika|armada:Armáda|objevitele:Objevitelé|veda-technika:Věda a technika|korporace:Korporace|kultura:Kultura a média|zlocin:Zločin|xiani-tevarini:Xi'ani a Tevarinové" | split: "|" %}
 <section class="blok osa-hlava">
   <p class="nadtitul">Rejstřík · {{ osoby.size }} osob</p>
@@ -26,7 +26,7 @@ popis: Rejstřík osob z dějin vesmíru Star Citizen. Imperátoři, objevitelé
 
 <div class="blok os-mrizka" id="osoby">
 {% for o in osoby %}
-  <article class="osoba" id="{{ o.id }}" data-k="{{ o.kategorie }}" data-hledat="{{ o.jmeno | downcase }} {{ o.role | downcase }}">
+  <article class="osoba" id="{{ o.slug }}" data-k="{{ o.kategorie }}" data-hledat="{{ o.jmeno | downcase }} {{ o.role | downcase }}">
     <header>
       <h2>{{ o.jmeno }}</h2>
       <p class="os-roky">{{ o.narozeni }}{% if o.umrti %} – {{ o.umrti }}{% endif %}</p>
@@ -35,7 +35,7 @@ popis: Rejstřík osob z dějin vesmíru Star Citizen. Imperátoři, objevitelé
     <p class="os-text">{{ o.medailonek }}</p>
     {% if o.rozpor %}<p class="os-rozpor"><b>Rozpor v pramenech:</b> {{ o.rozpor }}</p>{% endif %}
     <footer>
-      {% if o.rod == "messer" %}<a href="{{ '/rod-messeru/#' | append: o.id | relative_url }}">Rodokmen →</a>{% endif %}
+      {% if o.rod == "messer" %}<a href="{{ '/rod-messeru/#' | append: o.slug | relative_url }}">Rodokmen →</a>{% endif %}
       {% for k in o.kapitoly %}{% if k == "letka" %}<a href="{{ '/archiv/#letka' | relative_url }}">▶ Ztracená letka</a>{% else %}{% assign n = k | remove: "kap-" | plus: 0 | minus: 1 %}{% assign d = site.data.dejiny[n] %}<a href="{{ '/archiv/#' | append: k | relative_url }}">▶ Kapitola {{ d.rim }}</a>{% endif %}{% endfor %}
       {% for z in o.zdroje %}<a class="os-zdroj" href="{{ z.url }}" target="_blank" rel="noopener">{{ z.typ }} ↗</a>{% endfor %}
     </footer>

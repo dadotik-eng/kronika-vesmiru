@@ -1,0 +1,7 @@
+---
+layout: null
+permalink: /data/osoby.json
+---
+[{% assign osoby = site.osoby | sort: "narozeni" %}{% for o in osoby %}
+{"id":{{ o.slug | jsonify }},"jmeno":{{ o.jmeno | jsonify }},"narozeni":{{ o.narozeni | jsonify }},"umrti":{{ o.umrti | jsonify }},"role":{{ o.role | jsonify }},"kategorie":{{ o.kategorie | jsonify }}}{% unless forloop.last %},{% endunless %}{% endfor %}
+]

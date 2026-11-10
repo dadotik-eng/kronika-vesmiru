@@ -1,0 +1,40 @@
+# Období časové osy (barva, rozsah). Události jsou v kolekci _udalosti/.
+- id: usvit
+  nazev: Úsvit Sluneční soustavy
+  od: 2075
+  do: 2262
+  barva: '#7fb8d8'
+- id: skoky
+  nazev: Věk skoků
+  od: 2262
+  do: 2380
+  barva: '#8fd0c0'
+- id: une
+  nazev: Spojené národy Země
+  od: 2380
+  do: 2523
+  barva: '#a6c97f'
+- id: upe
+  nazev: Spojené planety Země
+  od: 2523
+  do: 2547
+  rozsah: 2523–2546
+  barva: '#d9c46a'
+- id: messerove
+  nazev: Éra Messerů
+  od: 2547
+  do: 2792.4
+  rozsah: 2546–2792
+  barva: '#e0785c'
+- id: naprava
+  nazev: Věk nápravy
+  od: 2792.4
+  do: 2945
+  rozsah: 2792–2945
+  barva: '#b99ae0'
+- id: valka
+  nazev: Válka s Vanduuly
+  od: 2945
+  do: 2957
+  rozsah: 2945–2956
+  barva: '#f6bd4b'

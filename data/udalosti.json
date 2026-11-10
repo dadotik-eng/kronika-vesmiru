@@ -1,0 +1,7 @@
+---
+layout: null
+permalink: /data/udalosti.json
+---
+[{% assign ud = site.udalosti | sort: "rok" %}{% for u in ud %}
+{"id":{{ u.slug | jsonify }},"rok":{{ u.rok | jsonify }},"datum":{{ u.datum | jsonify }},"titul":{{ u.titul | jsonify }},"kap":{{ u.kap | jsonify }}}{% unless forloop.last %},{% endunless %}{% endfor %}
+]

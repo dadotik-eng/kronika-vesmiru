@@ -4,8 +4,7 @@ title: Časová osa
 permalink: /casova-osa/
 popis: Osm set osmdesát jedna let dějin vesmíru Star Citizen na jedné ose. Klikni na datum a přečti si, co se stalo.
 ---
-{% assign data = site.data.udalosti %}
-{% assign udalosti = data.udalosti | sort: "rok" %}
+{% assign udalosti = site.udalosti | sort: "rok" %}
 {% assign kapitoly = site.kapitoly | sort: "herni_rok" %}
 <section class="blok osa-hlava">
   <p class="nadtitul">Dějiny vesmíru · 2075–2956</p>
@@ -16,7 +15,7 @@ popis: Osm set osmdesát jedna let dějin vesmíru Star Citizen na jedné ose. K
 <div class="panorama" id="panorama" aria-label="Přehled celé časové osy">
   <div class="pan-vnitrek">
     <div class="pan-ery">
-      {% for e in data.ery %}
+      {% for e in site.data.ery %}
       <a class="pan-era" href="#era-{{ e.id }}" style="--barva: {{ e.barva }}" data-od="{{ e.od }}" data-do="{{ e.do }}" data-zacatek="{% if e.rozsah %}{{ e.rozsah | split: '–' | first }}{% else %}{{ e.od }}{% endif %}">
         <span>{{ e.nazev }}</span>
       </a>
@@ -24,7 +23,7 @@ popis: Osm set osmdesát jedna let dějin vesmíru Star Citizen na jedné ose. K
     </div>
     <div class="pan-body">
       {% for u in udalosti %}
-      <a class="pan-bod{% if u.klic %} klic{% endif %}" href="#{{ u.id }}" data-rok="{{ u.rok }}">
+      <a class="pan-bod{% if u.klic %} klic{% endif %}" href="#{{ u.slug }}" data-rok="{{ u.rok }}">
         <span class="pan-popisek"><b>{{ u.datum | default: u.rok }}</b>{{ u.titul }}</span>
       </a>
       {% endfor %}
@@ -39,13 +38,13 @@ popis: Osm set osmdesát jedna let dějin vesmíru Star Citizen na jedné ose. K
 </div>
 
 <nav class="ery-cipy blok" aria-label="Skok na období">
-  {% for e in data.ery %}
+  {% for e in site.data.ery %}
   <a href="#era-{{ e.id }}" style="--barva: {{ e.barva }}">{{ e.nazev }}</a>
   {% endfor %}
 </nav>
 
 <div class="blok osa-seznam">
-{% for e in data.ery %}
+{% for e in site.data.ery %}
   {% assign posledni = forloop.last %}
   <section class="era-blok" id="era-{{ e.id }}" style="--barva: {{ e.barva }}">
     <header class="era-hlava">
@@ -55,7 +54,7 @@ popis: Osm set osmdesát jedna let dějin vesmíru Star Citizen na jedné ose. K
     <ol class="udalosti">
     {% for u in udalosti %}
       {% if u.rok >= e.od %}{% if u.rok < e.do or posledni %}
-      <li class="udalost{% if u.klic %} klic{% endif %}" id="{{ u.id }}" data-rok="{{ u.rok }}">
+      <li class="udalost{% if u.klic %} klic{% endif %}" id="{{ u.slug }}" data-rok="{{ u.rok }}">
         <div class="ud-datum">{{ u.datum | default: u.rok }}</div>
         <div class="ud-telo">
           <h3>{{ u.titul }}</h3>
