@@ -15,7 +15,8 @@ popis: Korporace, svátky a slovníček pojmů ze světa Star Citizen.
     <a href="#pojmy" style="--barva:#bfe3f5">Slovníček pojmů</a>
   </nav>
 
-  {% for oddil in "korporace|svatky" | split: "|" %}{% assign o = enc[oddil] %}
+  {% assign oddily = "korporace|svatky" | split: "|" %}
+  {% for oddil in oddily %}{% assign o = enc[oddil] %}
   <h2 class="pri-nadpis" id="{{ oddil }}">{{ o.nazev }}</h2>
   <p class="enc-uvod">{{ o.uvod }}</p>
   <div class="pri-mrizka">
