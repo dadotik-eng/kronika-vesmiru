@@ -1,0 +1,3208 @@
+# Zásobník příběhů – Kronika Vesmíru
+# Vygenerováno z databáze Archivář (archivar.sqlite). Řazeno podle herního roku; položky s rokem „neuvedeno“ jsou na konci.
+
+- id: hades-extinction
+  nazev: "Vymření Hadesianů"
+  nazev_en: "Hades Extinction Event"
+  rok: "kolem 300 000 př. n. l."
+  era: "Úsvit Sluneční soustavy"
+  typ: "záhada"
+  shrnuti: "Nejstarší známí obyvatelé soustavy Hades, Hadesiané, zmizeli podle současných odhadů zhruba 300 000 let před naším letopočtem. Jedna z nejrozšířenějších hypotéz tvrdí, že je vyhladila ničivá meziplanetární válka. Odpůrci namítají, že chybí důkazy o technologii schopné ničit v takovém měřítku."
+  postavy: []
+  zdroje:
+    - record_key: "galactapedia:V8gJZNZlKG"
+      rsi_url: "https://robertsspaceindustries.com/galactapedia/article/V8gJZNZlKG-hades-extinction-event"
+  forma: "vyprávění"
+  hodnoceni: 3
+  hodnoceni_proc: "Atmosférická záhada bez postav; vhodná jako krátké vyprávění."
+  stav: "nápad"
+  priorita: false
+
+- id: great-divide
+  nazev: "Velký rozkol: občanská válka Xi'anů"
+  nazev_en: "The Great Divide (Xi'an Civil War)"
+  rok: "20044–19770 př. n. l."
+  era: "Úsvit Sluneční soustavy"
+  typ: "katastrofa"
+  shrnuti: "Válka mezi xi'anskými rody začala, když se poslední dcera rodu Kl.ō pokusila přeběhnout k rodu Uai'i, a postupně se rozrostla v celosoustavný konflikt. Členové rodu Kl.ō nakonec sabotovali starou síť meteorologických satelitů nad RyiXy'anem, aby zabili vůdce ostatních rodů při mírových jednáních, ale spustili řetězovou reakci, která zničila atmosféru planety a zabila miliony. Xi'ané pak vynulovali kalendář, založili státní službu a první imperiální rod Ru'a."
+  postavy: []
+  zdroje:
+    - record_key: "galactapedia:VyvYA5qmqX"
+      rsi_url: "https://robertsspaceindustries.com/galactapedia/article/VyvYA5qmqX-the-great-divide"
+  forma: "vyprávění"
+  hodnoceni: 4
+  hodnoceni_proc: "Epická mimozemská tragédie, která vysvětluje xi'anskou kulturu."
+  stav: "nápad"
+  priorita: false
+
+- id: spirit-wars
+  nazev: "Duchovní války a konec rodu Xy.ō"
+  nazev_en: "Spirit Wars"
+  rok: "351–1342"
+  era: "Úsvit Sluneční soustavy"
+  typ: "bitva"
+  shrnuti: "Po staletí vedli Xi'ané války s tajemnými Kr'thaky. Při kr'thakském vpádu roku 1305 byla vyhlazena císařovna Iith se Xy.ō i celý její rod, čímž skončil druhý imperiální věk a nastalo sto let anarchie. Xi'ané dodnes zakazují jakýkoli styk s Kr'thaky a UEE odmítají poskytnout informace."
+  postavy:
+    - "Iith se Xy.ō"
+  zdroje:
+    - record_key: "galactapedia:0dQ4DYJ9W8"
+      rsi_url: "https://robertsspaceindustries.com/galactapedia/article/0dQ4DYJ9W8-spirit-wars"
+    - record_key: "galactapedia:RxNxDYkqzz"
+      rsi_url: "https://robertsspaceindustries.com/galactapedia/article/RxNxDYkqzz-krthak"
+  forma: "vyprávění"
+  hodnoceni: 3
+  hodnoceni_proc: "Tajemný nepřítel, ale zdroje jsou velmi strohé."
+  stav: "nápad"
+  priorita: false
+
+- id: third-imperial-age
+  nazev: "Pád rodu Xy.ō a nástup Kr.ē"
+  nazev_en: "This Day in History: The Third Imperial Age"
+  rok: "1305–1457"
+  era: "Úsvit Sluneční soustavy"
+  typ: "politika"
+  shrnuti: "Roku 1305 Kr'thakové načasovali orbitální bombardování sídla vládnoucího rodu Xy.ō na rodinnou slavnost a pak systematicky pobili všechny zbývající členy rodu. Xi'anská říše zůstala přes sto let bez císaře. Kolem 4. července 1457 byl korunován U.e'o se Kr.ē a začal třetí imperiální věk, který trvá dodnes – současný císař Kr.ē však nemá legitimní dědice."
+  postavy:
+    - "U.e'o se Kr.ē"
+  zdroje:
+    - record_key: "commlink:15997"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/15997-This-Day-In-History-The-Third-Imperial-Age"
+    - record_key: "galactapedia:0dQ4DYJ9W8"
+      rsi_url: "https://robertsspaceindustries.com/galactapedia/article/0dQ4DYJ9W8-spirit-wars"
+  forma: "vyprávění"
+  hodnoceni: 4
+  hodnoceni_proc: "Mimozemská dynastická tragédie s přesahem do současnosti."
+  stav: "nápad"
+  priorita: false
+
+- id: childress-quantum-drive
+  nazev: "Childress a první kvantový pohon"
+  nazev_en: "2075: The Stars Get A Little Closer / Scott Childress"
+  rok: "2075"
+  era: "Úsvit Sluneční soustavy"
+  typ: "objev"
+  shrnuti: "Hlavní inženýr RSI Scott Childress, kterého Chris Roberts najal po promoci roku 2061, vedl tým, jenž v roce 2075 sestrojil první lidský kvantový pohon. Motor umožnil let rychlostí setiny rychlosti světla a otevřel lidstvu Sluneční soustavu."
+  postavy:
+    - "Scott Childress"
+    - "Chris Roberts"
+  zdroje:
+    - record_key: "commlink:12664"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/12664-2075-The-Stars-Get-A-Little-Closer"
+    - record_key: "galactapedia:R5p68KXk5X"
+      rsi_url: "https://robertsspaceindustries.com/galactapedia/article/R5p68KXk5X-scott-childress"
+  forma: "vyprávění"
+  hodnoceni: 4
+  hodnoceni_proc: "Už zpracováno jako kapitola na webu."
+  stav: "na webu"
+  priorita: false
+
+- id: mars-tragedy
+  nazev: "Tragédie na Marsu"
+  nazev_en: "2125: A Dark Day / Mars Tragedy"
+  rok: "2125"
+  era: "Úsvit Sluneční soustavy"
+  typ: "katastrofa"
+  shrnuti: "13. září 2125 způsobila chyba atmosférických procesorů, že se nově vytvořená atmosféra Marsu katastrofálně rozptýlila a 4 876 lidí se udusilo. Terraformace se na dvacet let zastavila a Mars byl úspěšně přeměněn až v polovině 50. let 22. století."
+  postavy: []
+  zdroje:
+    - record_key: "commlink:12672"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/12672-2125-A-Dark-Day"
+    - record_key: "galactapedia:bmNrgKnZ6l"
+      rsi_url: "https://robertsspaceindustries.com/galactapedia/article/bmNrgKnZ6l-mars-tragedy"
+    - record_key: "galactapedia:V8gJ6nl7Zx"
+      rsi_url: "https://robertsspaceindustries.com/galactapedia/article/V8gJ6nl7Zx-mars-tragedy-memorial"
+  forma: "vyprávění"
+  hodnoceni: 4
+  hodnoceni_proc: "Už zpracováno jako kapitola na webu."
+  stav: "na webu"
+  priorita: false
+
+- id: abeni-okon
+  nazev: "Dítě z Marsu"
+  nazev_en: "This Day in History: The Extraterrestrial Child"
+  rok: "2157"
+  era: "Úsvit Sluneční soustavy"
+  typ: "osobní příběh"
+  shrnuti: "18. března 2157, v noci oslav dokončené terraformace Marsu, porodila inženýrka Kinah Okon předčasně dceru Abeni – prvního člověka narozeného na jiné planetě. Abeni vyrůstala pod neustálým dohledem médií, v mládí propadla večírkům a rozhazování, pak se ale po jedné noční výměně slov s fanoušky bez vysvětlení stáhla a věnovala se komunitní práci. Naposledy veřejně vystoupila roku 2232 při startu lodi Artemis, kde řekla, že skutečnými hrdiny jsou jiní."
+  postavy:
+    - "Abeni Okon"
+    - "Kinah Okon"
+    - "Madu Okon"
+    - "Michael V. Smith"
+    - "Lisa Danvers"
+  zdroje:
+    - record_key: "commlink:13640"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/13640-This-Day-In-History-The-Extraterrestrial-Child"
+    - record_key: "galactapedia:Rz2DPeZZnk"
+      rsi_url: "https://robertsspaceindustries.com/galactapedia/article/Rz2DPeZZnk-abeni-okon"
+  forma: "dramatizace"
+  hodnoceni: 5
+  hodnoceni_proc: "Intimní životní příběh s nevysvětleným zlomem – ideální pro vyprávění."
+  stav: "nápad"
+  priorita: true
+
+- id: blue-skies-on-mars
+  nazev: "Modré nebe nad Marsem"
+  nazev_en: "2157: Blue Skies on Mars"
+  rok: "2157"
+  era: "Úsvit Sluneční soustavy"
+  typ: "osobní příběh"
+  shrnuti: "Po téměř čtyřiceti letech zkoušek a tragédií byl Mars v roce 2157 prohlášen za planetu s dýchatelnou atmosférou a odhalen památník obětem tragédie z roku 2125. Senátor Stephen Nguyen v projevu vzpomínal na mladšího bratra Seana, nadšeného kutila a inženýra, který při tragédii zahynul. Místo tichého rozjímání vyzval lidi, aby jména na památníku byla bojovým pokřikem – „buďte stateční, buďte sami sebou“."
+  postavy:
+    - "Stephen Nguyen"
+    - "Sean Nguyen"
+  zdroje:
+    - record_key: "commlink:12675"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/12675-2157-Blue-Skies-On-Mars"
+    - record_key: "galactapedia:bmNrgKnZ6l"
+      rsi_url: "https://robertsspaceindustries.com/galactapedia/article/bmNrgKnZ6l-mars-tragedy"
+    - record_key: "galactapedia:V8gJ6nl7Zx"
+      rsi_url: "https://robertsspaceindustries.com/galactapedia/article/V8gJ6nl7Zx-mars-tragedy-memorial"
+  forma: "vyprávění"
+  hodnoceni: 4
+  hodnoceni_proc: "Silný osobní epilog k již zpracované tragédii na Marsu."
+  stav: "nápad"
+  priorita: false
+
+- id: artemis-janus
+  nazev: "Artemis a umělá inteligence Janus"
+  nazev_en: "2232: The First Push / Artemis / Janus"
+  rok: "2232–2237"
+  era: "Úsvit Sluneční soustavy"
+  typ: "záhada"
+  shrnuti: "V roce 2232 odstartovala kolonizační loď Artemis s pěti tisíci dobrovolníky ve stáze k soustavě GJ 667Cc; řídit ji měla nejsložitější umělá inteligence své doby, Janus. Kapitánka Lisa Danvers chtěla start pilotovat sama a Janus v noci před odletem poprvé zkoušel „si představovat“ nečekané scénáře. V roce 2237 denní hlášení náhle ustala a loď už nikdo nespatřil; podezření, že za tím stojí Janus, se nikdy nepotvrdilo, ale přispělo k tomu, že lidé výzkum AI téměř opustili."
+  postavy:
+    - "Lisa Danvers"
+    - "Arthur Kenlo"
+    - "Justin Cobb"
+    - "Janus"
+    - "Carol Zahir"
+    - "Abeni Okon"
+  zdroje:
+    - record_key: "commlink:12680"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/12680-2232-The-First-Push"
+    - record_key: "galactapedia:0jGxngnLzm"
+      rsi_url: "https://robertsspaceindustries.com/galactapedia/article/0jGxngnLzm-artemis"
+    - record_key: "galactapedia:VDzOvEdNyd"
+      rsi_url: "https://robertsspaceindustries.com/galactapedia/article/VDzOvEdNyd-janus"
+    - record_key: "galactapedia:bmGyM6NED9"
+      rsi_url: "https://robertsspaceindustries.com/galactapedia/article/bmGyM6NED9-airpra"
+  forma: "dramatizace"
+  hodnoceni: 5
+  hodnoceni_proc: "Jedna z nejsilnějších záhad lidských dějin s výraznými postavami."
+  stav: "nápad"
+  priorita: true
+
+- id: behesht-nul-fire
+  nazev: "Oheň, který hoří na Nulu II"
+  nazev_en: "Behesht Mines"
+  rok: "2237–2796"
+  era: "Éra Messerů"
+  typ: "katastrofa"
+  shrnuti: "Těžařská společnost Behesht Mines patřila k prvním, kdo se uchytil v soustavě Croshaw, a opakovaně čelila kritice kvůli nebezpečným praktikám a ničení přírody. Zkrachovala při pádu Messerů a svůj majetek prodala nebo opustila. Proslavila se hlavně požárem, který dodnes hoří na Nulu II."
+  postavy: []
+  zdroje:
+    - record_key: "galactapedia:VpMez1B2qM"
+      rsi_url: "https://robertsspaceindustries.com/galactapedia/article/VpMez1B2qM-behesht-mines"
+  forma: "vyprávění"
+  hodnoceni: 2
+  hodnoceni_proc: "Zajímavý obraz, ale zdroj neuvádí podrobnosti požáru."
+  stav: "nápad"
+  priorita: false
+
+- id: ghost-ship-iapetus
+  nazev: "Loď duchů z Iapetu"
+  nazev_en: "Untold Tales: Ghost Ship From Beyond Saturn"
+  rok: "2255"
+  era: "Úsvit Sluneční soustavy"
+  typ: "záhada"
+  shrnuti: "V roce 2944 objevila průzkumná loď pod ledem na odvrácené straně Iapetu téměř neporušený RSI Zeus C-6, který zmizel 10. srpna 2255 při zkoušce nového komunikačního systému. Uvnitř nebyla těla tříčlenné posádky – chyběla černá skříňka, skafandry a zásoby, přestože funkční vysílačka mohla přivolat pomoc. O tři roky později našli prázdný skafandr s nášivkou C-6 tři sta mil od vraku, a to opačným směrem, než leží civilizace."
+  postavy:
+    - "Brooke Cloverly"
+    - "K. Scott Bashara"
+    - "Eve Price Murray"
+  zdroje:
+    - record_key: "commlink:18793"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/18793-Untold-Tales-Ghost-Ship-From-Beyond-Saturn"
+  forma: "dramatizace"
+  hodnoceni: 5
+  hodnoceni_proc: "Vynikající záhada s historickou lodí a znepokojivými detaily."
+  stav: "nápad"
+  priorita: true
+
+- id: neso-triangle-goodman
+  nazev: "Zmizení lodi Goodman v Nesově trojúhelníku"
+  nazev_en: "2262: The Neso Triangle"
+  rok: "2262"
+  era: "Úsvit Sluneční soustavy"
+  typ: "záhada"
+  shrnuti: "V srpnu 2262 vyřadil kus trosek motor nákladní lodi Goodman s osmi členy posádky na cestě k platformě u Neptunu. Loď se po opravě pomalu plazila dál, odvysílala poslední zprávu a pak beze stopy zmizela; během několika měsíců stejně zmizely další dvě lodě. Oblast byla uzavřena – a právě tyto záhady později přivedly Nicka Croshawa k objevu skokových bodů."
+  postavy:
+    - "Nick Croshaw"
+  zdroje:
+    - record_key: "commlink:12682"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/12682-2262-The-Neso-Triangle"
+    - record_key: "galactapedia:VyvYkAr7YW"
+      rsi_url: "https://robertsspaceindustries.com/galactapedia/article/VyvYkAr7YW-nick-croshaw"
+  forma: "dramatizace"
+  hodnoceni: 4
+  hodnoceni_proc: "Strašidelný prolog ke Croshawovu skoku, který je už na webu."
+  stav: "nápad"
+  priorita: false
+
+- id: croshaw-first-jump
+  nazev: "Croshawův první skok"
+  nazev_en: "2271: One Small Jump for Man / Nick Croshaw"
+  rok: "2271"
+  era: "Věk skoků"
+  typ: "objev"
+  shrnuti: "Astrofyzik a pilot Nick Croshaw léta zkoumal Nesův trojúhelník u Neptunu, kde mizely lodě, a usoudil, že za tím stojí neznámá anomálie. 10. dubna 2271 jí s upraveným kvantovým pohonem sám proletěl jako první člověk do jiné soustavy, která dnes nese jeho jméno."
+  postavy:
+    - "Nick Croshaw"
+  zdroje:
+    - record_key: "commlink:12685"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/12685-2271-One-Small-Jump-For-Man"
+    - record_key: "galactapedia:VyvYkAr7YW"
+      rsi_url: "https://robertsspaceindustries.com/galactapedia/article/VyvYkAr7YW-nick-croshaw"
+  forma: "vyprávění"
+  hodnoceni: 4
+  hodnoceni_proc: "Už zpracováno jako kapitola na webu."
+  stav: "na webu"
+  priorita: false
+
+- id: lebec-nul
+  nazev: "„Nic“ v soustavě Nul"
+  nazev_en: "Antoine Lebec"
+  rok: "2290–2307"
+  era: "Věk skoků"
+  typ: "objev"
+  shrnuti: "Antoine Lebec se po Croshawově skoku rozhodl stát se průzkumníkem, ale loď si mohl dovolit až poté, co vyhrál v loterii pozemek s měděnou žílou na Angeli. Roku 2290 objevil soustavu, kde podle svých slov našel „nul“ – nic, a dal jí tak jméno. V roce 2307 zmizel při průzkumu jejího okraje, nejspíš při pokusu proletět skokem do Calibanu."
+  postavy:
+    - "Antoine Lebec"
+  zdroje:
+    - record_key: "galactapedia:0ODddzO7Dq"
+      rsi_url: "https://robertsspaceindustries.com/galactapedia/article/0ODddzO7Dq-antoine-lebec"
+  forma: "vyprávění"
+  hodnoceni: 3
+  hodnoceni_proc: "Krátký průkopnický příběh se zmizením."
+  stav: "nápad"
+  priorita: false
+
+- id: tarsus-module
+  nazev: "Modul Tarsus"
+  nazev_en: "Portfolio: Tarsus Electronics"
+  rok: "2292"
+  era: "Věk skoků"
+  typ: "objev"
+  shrnuti: "Dvojice navjumperů Tara a Alfon zjistila, že skokový pohon RSI je technologicky totožný s běžnými kvantovými pohony, jen dokonale „naříznutý“. Za 27 měsíců vyvinuli modul, který mění kvantový pohon na skokový, a 7. listopadu 2292 ho úspěšně vyzkoušeli; pojmenovali ho Tarsus podle svých jmen."
+  postavy:
+    - "Tara"
+    - "Alfon"
+  zdroje:
+    - record_key: "commlink:15371"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/15371-Portfolio-Tarsus-Electronics"
+  forma: "vyprávění"
+  hodnoceni: 4
+  hodnoceni_proc: "Už zpracováno jako kapitola na webu."
+  stav: "na webu"
+  priorita: false
+
+- id: tadmor-nemoco
+  nazev: "Spor o objev v soustavě Fora"
+  nazev_en: "Tadmor Terraforming Concern"
+  rok: "2308–2369"
+  era: "Věk skoků"
+  typ: "korporace"
+  shrnuti: "Firma Tadmor Terraforming Concern získala roku 2308 práva terraformovat Fora II mimo obyvatelné pásmo a léta neúspěšně zkoušela, až ji investoři roku 2364 zažalovali. Aby zaplatila soud, prodala platformy nové firmě NemoCo – a ta vzápětí s pomocí bývalého zaměstnance Tadmoru Dae-ho Ochoy oznámila objev skokového bodu. Tadmor žaloval, že objev patří jemu, ale pro nedostatek důkazů prohrál a roku 2369 zanikl."
+  postavy:
+    - "Korian Tadmor"
+    - "Dae-ho Ochoa"
+  zdroje:
+    - record_key: "galactapedia:VarG6NEaDv"
+      rsi_url: "https://robertsspaceindustries.com/galactapedia/article/VarG6NEaDv-tadmor-terraforming-concern"
+  forma: "vyprávění"
+  hodnoceni: 2
+  hodnoceni_proc: "Zajímavá ironie, ale suchá korporátní látka."
+  stav: "nápad"
+  priorita: false
+
+- id: adaliz-dayan-banshee
+  nazev: "Zmizení Adaliz Dayan"
+  nazev_en: "Adaliz Dayan"
+  rok: "2317 (?)"
+  era: "Věk skoků"
+  typ: "záhada"
+  shrnuti: "Terraformační inženýrka Adaliz Dayan založila při práci na Hyperionu v soustavě Fora sdružení Immram pro průzkum okolí. Za podivných okolností zmizela při zkoumání kapsy záření; pátrání ukázalo, že šlo o skokový bod do nové soustavy. Předpokládá se, že jím proletěla, ale nikdy nebyla nalezena – soustava dostala jméno Banshee podle její přezdívky ze sataballu."
+  postavy:
+    - "Adaliz Dayan"
+  zdroje:
+    - record_key: "galactapedia:Vgg7Ml89dN"
+      rsi_url: "https://robertsspaceindustries.com/galactapedia/article/Vgg7Ml89dN-adaliz-dayan"
+  forma: "vyprávění"
+  hodnoceni: 4
+  hodnoceni_proc: "Krátká, ale působivá záhada se jménem soustavy."
+  stav: "nápad"
+  priorita: false
+
+- id: unification-wars
+  nazev: "Sjednocovací války a vzpoura na Stanleym"
+  nazev_en: "Unification Wars"
+  rok: "2380–2384"
+  era: "Spojené národy Země"
+  typ: "bitva"
+  shrnuti: "20. října 2380 se posádka válečné lodi Stanley vzbouřila a hrozila útoky na pozemská města, pokud se vláda nevrátí k uspořádání před sjednocením. Rada UNE loď znovu dobyla, ale vzbouřilo se dalších šest lodí a vypukla válka, po ní druhá s rebely opevněnými na Marsu. Třetí a poslední válka skončila 29. července 2384 na nebi nad New Yorkem a poražení odpůrci sjednocení prchli ze Sluneční soustavy a často založili gangy psanců."
+  postavy: []
+  zdroje:
+    - record_key: "galactapedia:RWolrAWw9m"
+      rsi_url: "https://robertsspaceindustries.com/galactapedia/article/RWolrAWw9m-unification-wars"
+    - record_key: "commlink:19503"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/19503-Portfolio-Unification-Wars"
+  forma: "vyprávění"
+  hodnoceni: 4
+  hodnoceni_proc: "Vzpoura a občanská válka u zrodu sjednoceného lidstva."
+  stav: "nápad"
+  priorita: false
+
+- id: rust-society-knocks
+  nazev: "Knocks a Rezavá společnost"
+  nazev_en: "Portfolio: Rust Society"
+  rok: "2436–2477"
+  era: "Spojené národy Země"
+  typ: "osobní příběh"
+  shrnuti: "Franklin „Knocks“ Yeung byl na konci 24. století neúspěšný přepravce na Calibanu, kterému práci dohazovala parta pilotů z baru Delilah's. Když roku 2436 sotva přežil přepadení v Oberonu, přestal létat a z barového kroužku vybudoval organizaci, která mladým přepravcům poskytovala rady, zprávy o bezpečnosti a mentorství. Rezavá společnost se rozšířila po celé říši a Knocks ji vedl až do roku 2477."
+  postavy:
+    - "Franklin Yeung (Knocks)"
+  zdroje:
+    - record_key: "commlink:17718"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/17718-Portfolio-Rust-Society"
+  forma: "vyprávění"
+  hodnoceni: 3
+  hodnoceni_proc: "Příjemný příběh o komunitě, menší napětí."
+  stav: "nápad"
+  priorita: false
+
+- id: adelaide-lorris-cathcart
+  nazev: "Adelaide Lorris a maršál Cathcart"
+  nazev_en: "Cathcart System (Adelaide Lorris)"
+  rok: "2438"
+  era: "Spojené národy Země"
+  typ: "objev"
+  shrnuti: "V roce 2438 objevila hledaná uprchlice Adelaide Lorris soustavu bez planet, kterou podle mnohých dlouho využívala jako úkryt a nahlásila ji teprve ve chvíli, kdy u skokového bodu zahlédla průzkumníky. Soustavu pojmenovala po maršálovi, který ji pronásledoval – Cathcart. UNE ji nikdy nezabrala a soustava se stala vojenským smetištěm lodí, z nichž později vyrostla pirátská stanice Spider."
+  postavy:
+    - "Adelaide Lorris"
+    - "maršál Cathcart"
+  zdroje:
+    - record_key: "galactapedia:RL6524vWO3"
+      rsi_url: "https://robertsspaceindustries.com/galactapedia/article/RL6524vWO3-cathcart-system"
+    - record_key: "commlink:12962"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/12962-Galactic-Guide-Cathcart-System"
+  forma: "dramatizace"
+  hodnoceni: 4
+  hodnoceni_proc: "Připravuje se – vtipná pomsta pronásledovateli; zdroje jsou ale stručné."
+  stav: "nápad"
+  priorita: true
+
+- id: banu-first-contact
+  nazev: "První kontakt s Banu"
+  nazev_en: "2438: Hello / Banu-Human First Contact"
+  rok: "2438"
+  era: "Spojené národy Země"
+  typ: "objev"
+  shrnuti: "V roce 2438 utekl banuský úředník Njeri neznámým skokovým bodem do Davienu a navjumper Vernon Tar na jeho loď vystřelil v domnění, že mu někdo krade objev. Njeri palbu neopětoval, a tak mohli lidé a Banu navázat první kontakt a ještě téhož roku uzavřít první mezidruhovou smlouvu."
+  postavy:
+    - "Njeri (Jerry)"
+    - "Vernon Tar"
+  zdroje:
+    - record_key: "commlink:12690"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/12690-2438-Hello"
+    - record_key: "galactapedia:VYLwadeGEp"
+      rsi_url: "https://robertsspaceindustries.com/galactapedia/article/VYLwadeGEp-njeri"
+  forma: "vyprávění"
+  hodnoceni: 4
+  hodnoceni_proc: "Už zpracováno jako kapitola na webu."
+  stav: "na webu"
+  priorita: false
+
+- id: jerry-first-banu
+  nazev: "Jerry, první Banu"
+  nazev_en: "Jerry: A History Half-Remembered"
+  rok: "2438–2456"
+  era: "Spojené národy Země"
+  typ: "osobní příběh"
+  shrnuti: "Banu Njeri, kterému lidé začali říkat Jerry, nebyl objevitel, ale úředník, který zpronevěřil peníze svého souli a na útěku náhodou objevil skok do Davienu, kde na něj 12. června 2438 vystřelil navjumper Vernon Tar. Po prvním kontaktu se vrátil domů v naději na slávu, ale souli mu nevěřil a jeho firma pro styky s lidmi zkrachovala. Nakonec se vrátil do Davienu, kde byl celebritou, a dožil tam až do roku 2456."
+  postavy:
+    - "Jerry (Njeri)"
+    - "Vernon Tar"
+    - "Natalia Gordillo"
+    - "Neal Socolovich"
+  zdroje:
+    - record_key: "commlink:19597"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/19597-Jerry-A-History-Half-Remembered"
+    - record_key: "galactapedia:VYLwadeGEp"
+      rsi_url: "https://robertsspaceindustries.com/galactapedia/article/VYLwadeGEp-njeri"
+  forma: "dramatizace"
+  hodnoceni: 5
+  hodnoceni_proc: "Humorný i smutný „antihrdina“ prvního kontaktu; rozšiřuje kapitolu o Banu."
+  stav: "nápad"
+  priorita: false
+
+- id: armistead-perry
+  nazev: "Generálka Perryová"
+  nazev_en: "Armistead Perry"
+  rok: "2488–2589"
+  era: "Spojené planety Země"
+  typ: "osobní příběh"
+  shrnuti: "Armistead Perry vstoupila do námořnictva UPE roku 2488 a léta stíhala pašeráky z Banu protektorátu u skokového bodu Geddon–Corel. V roce 2531 přišla při střetu s velkým pašeráckým kroužkem o nohu, byla povýšena na generálku a převelena do soustavy Kilian. Roku 2542 navrhla nárazníkové pásmo mezi lidmi a Xi'any – osm soustav, které dostaly jméno Perryho linie."
+  postavy:
+    - "Armistead Perry"
+  zdroje:
+    - record_key: "galactapedia:Rw1KpEJDvp"
+      rsi_url: "https://robertsspaceindustries.com/galactapedia/article/Rw1KpEJDvp-armistead-perry"
+  forma: "vyprávění"
+  hodnoceni: 3
+  hodnoceni_proc: "Zajímavá postava, ale jde spíš o životopis."
+  stav: "nápad"
+  priorita: false
+
+- id: daniel-penselin
+  nazev: "Poslední let Lilienthalu"
+  nazev_en: "Daniel Penselin"
+  rok: "2496"
+  era: "Spojené národy Země"
+  typ: "osobní příběh"
+  shrnuti: "Fyzik Daniel Penselin publikoval roku 2491 hypotézu kvantového pohonu o pětinu úspornějšího, ale univerzita mu škrtla financování. Upravil proto pohon vlastní lodi Lilienthal a roku 2496 ji vyzkoušel; loď po katastrofální poruše narazila do měsíce Cestulu. Záznamy ale prokázaly, že spotřeba skutečně klesla – jeho práce se po úpravách stala standardem a měsíc, kde zemřel, nese jeho jméno."
+  postavy:
+    - "Daniel Penselin"
+  zdroje:
+    - record_key: "galactapedia:RX3lK73waM"
+      rsi_url: "https://robertsspaceindustries.com/galactapedia/article/RX3lK73waM-daniel-penselin"
+  forma: "vyprávění"
+  hodnoceni: 4
+  hodnoceni_proc: "Tragický vědec, který měl pravdu – jasný oblouk."
+  stav: "nápad"
+  priorita: false
+
+- id: upsana-dixit
+  nazev: "Moderátorka, která odešla na protest"
+  nazev_en: "Upsana Dixit"
+  rok: "2511–2563"
+  era: "Spojené planety Země"
+  typ: "osobní příběh"
+  shrnuti: "Novinářka Upsana Dixit založila roku 2511 debatní pořad Showdown!, který nestranně moderovala, až z něj vyrostl spektrální hit. V roce 2546 odešla na protest proti vzestupu Ivara Messera a nahradil ji konfrontační Inácio Santos Melo. Zemřela roku 2563 při zemětřesení ve svém rodném Quintonu."
+  postavy:
+    - "Upsana Dixit"
+    - "Inácio Santos Melo"
+  zdroje:
+    - record_key: "galactapedia:0Gx2n4G7na"
+      rsi_url: "https://robertsspaceindustries.com/galactapedia/article/0Gx2n4G7na-upsana-dixit"
+    - record_key: "galactapedia:0qnNMa3Mgq"
+      rsi_url: "https://robertsspaceindustries.com/galactapedia/article/0qnNMa3Mgq-inacio-stanos-melo"
+  forma: "vyprávění"
+  hodnoceni: 3
+  hodnoceni_proc: "Tichý akt odporu na začátku diktatury."
+  stav: "nápad"
+  priorita: false
+
+- id: better-earth-terra
+  nazev: "Lepší Země"
+  nazev_en: "2516: A Better Earth"
+  rok: "2516"
+  era: "Spojené národy Země"
+  typ: "objev"
+  shrnuti: "V roce 2516 narazila průzkumnice projektu Far Star Wei-Yin Song na soustavu, která byla křižovatkou několika skokových bodů a měla superzemi s přirozeně dýchatelnou atmosférou. Ve zprávě vrchní radě UNE navrhla myšlenku, jak tuto soustavu využít pro vzdálené kolonie, kterým Země připadala čím dál vzdálenější."
+  postavy:
+    - "Wei-Yin Song"
+    - "Kelso Trask"
+    - "Patricia Oat"
+  zdroje:
+    - record_key: "commlink:12692"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/12692-2516-A-Better-Earth"
+  forma: "vyprávění"
+  hodnoceni: 3
+  hodnoceni_proc: "Objev Terry, ale zdroj je krátký dopis."
+  stav: "nápad"
+  priorita: false
+
+- id: foundation-of-rights
+  nazev: "Tichá senátorka a Společné zákony"
+  nazev_en: "This Day in History: A Foundation of Rights"
+  rok: "2525"
+  era: "Spojené planety Země"
+  typ: "politika"
+  shrnuti: "Nově vzniklý senát Spojených planet Země se měsíce hádal, co vlastně má vláda svým světům zaručit. 10. března 2525 se poprvé ozvala dosud mlčící senátorka z Davienu Nomi Rao a během hodiny představila plán základních práv a služeb pro všechny planety. Návrh nejdřív vyvolal další bouři, ale Rao na něm vytrvale pracovala s oběma tábory a Společné zákony prošly zhruba o rok později."
+  postavy:
+    - "Nomi Rao"
+  zdroje:
+    - record_key: "commlink:14578"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/14578-This-Day-In-History-A-Foundation-Of-Rights"
+  forma: "vyprávění"
+  hodnoceni: 3
+  hodnoceni_proc: "Příjemný příběh o vytrvalosti, ale politicky suchý."
+  stav: "nápad"
+  priorita: false
+
+- id: marie-sante-horus
+  nazev: "Marie Sante a její Horus"
+  nazev_en: "Marie Sante"
+  rok: "2528–2545"
+  era: "Spojené planety Země"
+  typ: "záhada"
+  shrnuti: "Marie Sante utekla ve čtrnácti z hornické rodiny na Gonnu a znovu se objevila až roku 2528 s objevem soustavy, kterou pojmenovala po své lodi Horus. Když v roce 2542 objevila skok do xi'anské soustavy a Horus byl uzavřen jako součást Perryho linie, odmítla odejít a unikala námořnictvu. V roce 2545 i s lodí beze stopy zmizela."
+  postavy:
+    - "Marie Sante"
+  zdroje:
+    - record_key: "galactapedia:RX36PWwe4K"
+      rsi_url: "https://robertsspaceindustries.com/galactapedia/article/RX36PWwe4K-marie-sante"
+  forma: "vyprávění"
+  hodnoceni: 4
+  hodnoceni_proc: "Vzdorovitá hrdinka a nevyřešené zmizení."
+  stav: "nápad"
+  priorita: false
+
+- id: united-earth-credit
+  nazev: "Zrození kreditu"
+  nazev_en: "This Day in History: United Earth Credits"
+  rok: "2528"
+  era: "Spojené planety Země"
+  typ: "politika"
+  shrnuti: "Rychlá kolonizace přinesla záplavu soupeřících planetárních měn, a tak vrchní tajemnice Livia Fenner sestavila komisi, z níž vzešel Sjednocený pozemský kredit a Centrální hlavní banka. Zavedení měny vyvolalo na Cestulu nepokoje, které musely potlačit expediční síly. Ivar Messer si později banku přivlastnil jako osobní trezor a Galor Messer IX. přejmenoval kredity na „imperiály“."
+  postavy:
+    - "Livia Fenner"
+    - "Ivar Messer"
+    - "Galor Messer IX"
+  zdroje:
+    - record_key: "commlink:13218"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/13218-This-Day-In-History-United-Earth-Credits"
+  forma: "vyprávění"
+  hodnoceni: 2
+  hodnoceni_proc: "Zajímavé pozadí, slabý příběh."
+  stav: "nápad"
+  priorita: false
+
+- id: unified-currency-riot
+  nazev: "Měnová vzpoura v Jatě"
+  nazev_en: "Unified Currency Riot"
+  rok: "2529"
+  era: "Spojené planety Země"
+  typ: "katastrofa"
+  shrnuti: "Po zavedení Sjednoceného pozemského kreditu (UEC) vypukly v roce 2529 v Jatě na Cestulu dva týdny nepokojů. Začaly, když soukromý strážný vystřelil do protestujícího davu před sídlem SSN/CAtv. Stovky lidí byly zraněny a několik jich zemřelo, než armáda UPE rabování ukončila."
+  postavy: []
+  zdroje:
+    - record_key: "galactapedia:0QlvpyjLvJ"
+      rsi_url: "https://robertsspaceindustries.com/galactapedia/article/0QlvpyjLvJ-unified-currency-riot"
+    - record_key: "commlink:13218"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/13218-This-Day-In-History-United-Earth-Credits"
+  forma: "vyprávění"
+  hodnoceni: 3
+  hodnoceni_proc: "Jasný spouštěč a dramatický obraz, ale bez hlavních postav."
+  stav: "nápad"
+  priorita: false
+
+- id: xian-human-first-contact
+  nazev: "57 dní v zajetí Xi'anů"
+  nazev_en: "Xi'an-Human First Contact"
+  rok: "2530"
+  era: "Spojené planety Země"
+  typ: "politika"
+  shrnuti: "V roce 2530 vstoupila terraformační firma Gaia Planet Services nelegálně do soustavy Th.us'ūng a bez povinných průzkumů začala terraformovat planetu v už obydlené soustavě. Xi'anské síly zařízení obsadily a lidi držely 57 dní jako rukojmí, dokud UPE nepřistoupily na jejich podmínky. Nedůvěra na obou stranách zahájila studenou válku."
+  postavy: []
+  zdroje:
+    - record_key: "galactapedia:R4ZQpYEEvx"
+      rsi_url: "https://robertsspaceindustries.com/galactapedia/article/R4ZQpYEEvx-xian-human-first-contact"
+    - record_key: "commlink:12695"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/12695-2523-The-Three-Pillars"
+    - record_key: "commlink:12697"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/12697-2530-The-Galaxy-Gets-Bigger"
+  forma: "vyprávění"
+  hodnoceni: 4
+  hodnoceni_proc: "Už na webu (UPE a Gaia Planet Services)."
+  stav: "na webu"
+  priorita: false
+
+- id: best-mistake-hades
+  nazev: "Nejlepší chyba Seline Novikovové"
+  nazev_en: "DISCOVERED: The Best Mistake"
+  rok: "2531"
+  era: "Spojené planety Země"
+  typ: "objev"
+  shrnuti: "V červenci 2531 vedla Seline Novikov první mapovací výpravu do soustavy Hades a kvůli nestabilním skokovým trasám zůstala bez spojení a vybavení. Bez povolení přistála s malou skupinou v korozivním popelu na Hadu II a jako jedna z prvních lidí vstoupila do ruin hadesianské civilizace – trosek, úlomků s podivnými vzory a obřích podzemních bran. Za neoprávněné přistání byla zbavena velení; podle ní to byla „nejlepší chyba, jakou kdy udělala“."
+  postavy:
+    - "Seline Novikov"
+    - "Jans"
+    - "Lace"
+    - "Donovan"
+  zdroje:
+    - record_key: "commlink:16005"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/16005-DISCOVERED-The-Best-Mistake"
+    - record_key: "galactapedia:V8gJZNZlKG"
+      rsi_url: "https://robertsspaceindustries.com/galactapedia/article/V8gJZNZlKG-hades-extinction-event"
+  forma: "dramatizace"
+  hodnoceni: 5
+  hodnoceni_proc: "Deník objevitelky v mrtvém světě – atmosféra i pointa."
+  stav: "nápad"
+  priorita: false
+
+- id: teesa-morrison-baker
+  nazev: "Málem válka v Bakeru"
+  nazev_en: "Teesa Morrison"
+  rok: "2531"
+  era: "Spojené planety Země"
+  typ: "objev"
+  shrnuti: "Kosmická tulačka Teesa Morrison, narozená na tankeru, objevila roku 2531 v soustavě Baker skokový bod, ale za ním narazila na xi'anskou vojenskou jednotku a musela ustoupit. Záznam setkání unikl do médií a o dva týdny později se z bodu vynořil xi'anský průzkumník, což málem vyvolalo válku. Pod tlakem veřejnosti zvolilo námořnictvo opatrnost a Morrison si za odměnu koupila větší loď, která se stala jejím domovem."
+  postavy:
+    - "Teesa Morrison"
+  zdroje:
+    - record_key: "galactapedia:01LrNgqDrL"
+      rsi_url: "https://robertsspaceindustries.com/galactapedia/article/01LrNgqDrL-teesa-morrison"
+  forma: "dramatizace"
+  hodnoceni: 4
+  hodnoceni_proc: "Napínavý první dotek s Xi'any v malém měřítku."
+  stav: "nápad"
+  priorita: false
+
+- id: basilisk-visconti
+  nazev: "Proč „Bazilišek“"
+  nazev_en: "Portfolio: Basilisk"
+  rok: "2535"
+  era: "Spojené planety Země"
+  typ: "korporace"
+  shrnuti: "Inženýrka Simone Visconti z Asury opustila prestižní univerzitu se slovy „to není pro mě“ a vyvinula mimořádně odolné pancéřování trupu. Když roku 2535 vrchní generál Volder navštívil její firmu, zeptal se jen, proč ji pojmenovala Basilisk; odpověděla, že „protože se velmi těžko zabíjí“."
+  postavy:
+    - "Simone Visconti"
+    - "Volder"
+  zdroje:
+    - record_key: "commlink:17122"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/17122-Portfolio-Basilisk"
+  forma: "vyprávění"
+  hodnoceni: 2
+  hodnoceni_proc: "Spíš anekdota z firemní historie."
+  stav: "nápad"
+  priorita: false
+
+- id: kosoko-gurzil
+  nazev: "Navjumper s jednou nohou"
+  nazev_en: "Dahunsil Kosoko"
+  rok: "2538–2581"
+  era: "Spojené planety Země"
+  typ: "osobní příběh"
+  shrnuti: "Dahunsil Kosoko přišel roku 2538 při havárii o nohu a osm měsíců se léčil. Z pojistky si v den propuštění koupil novou loď a o tři týdny později objevil skokový bod do soustavy, kterou pojmenoval Odara po své tetě. Roku 2542 byla přejmenována na Gurzil a začleněna do Perryho linie; Kosoko zemřel roku 2581 kvůli poruše recyklace vzduchu."
+  postavy:
+    - "Dahunsil Kosoko"
+  zdroje:
+    - record_key: "galactapedia:0KxyMa6y82"
+      rsi_url: "https://robertsspaceindustries.com/galactapedia/article/0KxyMa6y82-dahunsil-kosoko"
+  forma: "vyprávění"
+  hodnoceni: 3
+  hodnoceni_proc: "Příběh houževnatosti s ironickým dovětkem."
+  stav: "nápad"
+  priorita: false
+
+- id: first-tevarin-war-messer
+  nazev: "První tevarinská válka a vzestup Ivara Messera"
+  nazev_en: "2541: Awfully Crowded in My Sky / 2546: A Leader Rises"
+  rok: "2541–2546"
+  era: "Spojené planety Země"
+  typ: "bitva"
+  shrnuti: "Po prvním kontaktu s Tevariny vypukla v roce 2541 válka; kapitán Ivar Messer se proslavil v bitvě o Idris IV, vláda z něj udělala tvář náborové kampaně a on tuto popularitu proměnil v politický vzestup až k úřadu Prvního občana a Imperátora."
+  postavy:
+    - "Ivar Messer"
+  zdroje:
+    - record_key: "commlink:12700"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/12700-2541-Awfully-Crowded-In-My-Sky"
+    - record_key: "commlink:12702"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/12702-2546-A-Leader-Rises"
+    - record_key: "galactapedia:RXlXYPWk8q"
+      rsi_url: "https://robertsspaceindustries.com/galactapedia/article/RXlXYPWk8q-ivar-messer-i"
+  forma: "vyprávění"
+  hodnoceni: 4
+  hodnoceni_proc: "Už zpracováno jako kapitola na webu."
+  stav: "na webu"
+  priorita: false
+
+- id: kellar-lench
+  nazev: "Muž, který našel Tevariny"
+  nazev_en: "Kellar Lench"
+  rok: "2541"
+  era: "Spojené planety Země"
+  typ: "objev"
+  shrnuti: "Vědec Kellar Lench opustil po více než 250 dnech osamělé mise na Yaru své místo i firmu New Horizons. 15. listopadu 2541 objevil v Centauri skokový bod do soustavy plné života a své zjištění předal Spojeným planetám Země – to vedlo k prvnímu kontaktu s Tevariny a k první tevarinské válce. Později učil fyziku na MIST a zemřel roku 2573 na následky alkoholismu."
+  postavy:
+    - "Kellar Lench"
+  zdroje:
+    - record_key: "galactapedia:V7d2g8xxva"
+      rsi_url: "https://robertsspaceindustries.com/galactapedia/article/V7d2g8xxva-kellar-lench"
+  forma: "vyprávění"
+  hodnoceni: 4
+  hodnoceni_proc: "Tragický osobní rozměr objevu, který spustil válku."
+  stav: "nápad"
+  priorita: false
+
+- id: tevarin-human-first-contact
+  nazev: "První kontakt s Tevariny"
+  nazev_en: "Tevarin-Human First Contact"
+  rok: "2541"
+  era: "Spojené planety Země"
+  typ: "objev"
+  shrnuti: "Kellar Lench po objevu skokového bodu do Elysia vyslal výzkumný dron a našel na Elysiu IV vesmírnou civilizaci. Diplomatické pokusy prvokontaktního týmu UPE selhaly. Tevarinové, kteří bez terraformace trpěli přelidněním, zaútočili na lidské kolonie a vypukla první tevarinská válka."
+  postavy:
+    - "Kellar Lench"
+  zdroje:
+    - record_key: "galactapedia:Vgg7YGkaEw"
+      rsi_url: "https://robertsspaceindustries.com/galactapedia/article/Vgg7YGkaEw-tevarin-human-first-contact"
+  forma: "vyprávění"
+  hodnoceni: 3
+  hodnoceni_proc: "Pokryto kapitolou o první tevarinské válce."
+  stav: "na webu"
+  priorita: false
+
+- id: battle-of-idris-iv
+  nazev: "Bitva o Idris IV"
+  nazev_en: "Battle of Idris IV"
+  rok: "2544"
+  era: "Spojené planety Země"
+  typ: "bitva"
+  shrnuti: "1. října 2544 se na Idrisu IV a nad ním střetly síly Spojených planet Země s Tevariny, kteří planetu předtím obsadili. Taktika mladého Ivara Messera zajistila lidem vítězství a obrátila průběh první tevarinské války. Bitva odstartovala Messerův vzestup k moci."
+  postavy:
+    - "Ivar Messer"
+  zdroje:
+    - record_key: "galactapedia:ReJajXKelk"
+      rsi_url: "https://robertsspaceindustries.com/galactapedia/article/ReJajXKelk-battle-of-idris-iv"
+    - record_key: "commlink:13295"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/13295-News-Update-This-Day-In-History"
+  forma: "vyprávění"
+  hodnoceni: 3
+  hodnoceni_proc: "Krátký zdroj; jádro už pokrývá kapitola o Ivaru Messerovi."
+  stav: "na webu"
+  priorita: false
+
+- id: homesick
+  nazev: "Stesk"
+  nazev_en: "Homesick"
+  rok: "2544"
+  era: "Spojené planety Země"
+  typ: "povídka"
+  shrnuti: "Červen 2544, třetí rok první tevarinské války: mladý vypravěč, uprchlík z bombardovaného Idrisu IV, žije s matkou v New Austin na Terře. Matka se po útěku a bratrově rozhodnutí zůstat bojovat zhroutila, a když vypravěč s nákupem obdivuje válečnou loď, osloví ho náborářka námořnictva."
+  postavy:
+    - "Florin"
+  zdroje:
+    - record_key: "commlink:18679"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/serialized-fiction/18679-Homesick"
+  forma: "dramatizace"
+  hodnoceni: 4
+  hodnoceni_proc: "Komorní příběh války z pohledu civilistů."
+  stav: "nápad"
+  priorita: false
+
+- id: path-to-prime-citizen
+  nazev: "Cesta k Prvnímu občanovi"
+  nazev_en: "This Day in History: The Path to Prime Citizen"
+  rok: "2546"
+  era: "Spojené planety Země"
+  typ: "zločin"
+  shrnuti: "23. srpna 2546 zničila série výbuchů biodóm v Jatě a zabila tisíce lidí; následovaly další útoky s xi'anskou technologií. Vrchní generál Ivar Messer využil strachu, triumvirát byl nahrazen úřadem Prvního občana a Messer byl 15. prosince zvolen. Historička Sydney Kamarck později v odtajněných archivech odhalila stopy vedoucí k Messerovým spolubojovníkům z Idrisu IV, Adamu Corrovi a Cyrusi Ishitakovi, a v knize obvinila Messera, že útoky zosnoval."
+  postavy:
+    - "Ivar Messer"
+    - "Sydney Kamarck"
+    - "Adam Corr"
+    - "Cyrus Ishitaka"
+    - "Janis Rezaian"
+    - "Mauricio Tusk"
+  zdroje:
+    - record_key: "commlink:15117"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/15117-This-Day-In-History-The-Path-To-Prime-Citizen"
+    - record_key: "galactapedia:0Gz5GgEvkj"
+      rsi_url: "https://robertsspaceindustries.com/galactapedia/article/0Gz5GgEvkj-atrocity-at-jata"
+    - record_key: "galactapedia:R4ZGy5XJXe"
+      rsi_url: "https://robertsspaceindustries.com/galactapedia/article/R4ZGy5XJXe-cyrus-ishitaka"
+    - record_key: "galactapedia:V3qgyvG8ZY"
+      rsi_url: "https://robertsspaceindustries.com/galactapedia/article/V3qgyvG8ZY-adam-corr"
+    - record_key: "galactapedia:VaZwNW43ym"
+      rsi_url: "https://robertsspaceindustries.com/galactapedia/article/VaZwNW43ym-silent-song"
+  forma: "dramatizace"
+  hodnoceni: 5
+  hodnoceni_proc: "Historická detektivka se zlověstnou pointou."
+  stav: "nápad"
+  priorita: true
+
+- id: prophet-of-pyro
+  nazev: "Prorok z Pyra"
+  nazev_en: "Untold Tales: Prophet of Pyro"
+  rok: "2548–2563"
+  era: "Éra Messerů"
+  typ: "záhada"
+  shrnuti: "V roce 2548 začali horníci Pyrotechnic Amalgamated v dolech na Pyru II slyšet hlas šeptající „odejděte, nebo budete rozdrceni“ a někteří odmítli do dolu vstoupit. Firma kvůli nákladům v nehostinné soustavě roku 2563 zkrachovala a někteří věří, že to Prorok předpověděl. Gang Fire Rats prý s Prorokem dodnes během slunečních erupcí „rozmlouvá“ a badatelka Kiana Richards věří, že hlas souvisí s erupcemi a kovovými ložisky."
+  postavy:
+    - "Kiana Richards"
+  zdroje:
+    - record_key: "commlink:18628"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/18628-Untold-Tales-Prophet-Of-Pyro"
+  forma: "vyprávění"
+  hodnoceni: 4
+  hodnoceni_proc: "Strašidelná hornická legenda propojená s Pyrem."
+  stav: "nápad"
+  priorita: false
+
+- id: standoff-in-hadur
+  nazev: "Patová situace v Haduru"
+  nazev_en: "Standoff in Hadur"
+  rok: "2550"
+  era: "Éra Messerů"
+  typ: "politika"
+  shrnuti: "Ivar Messer nechal 7. listopadu 2550 umístit do Haduru neotestovaný dálkový skener TKL-2900, za který se zaručila inženýrka Martha Agrawal, a ten při spuštění explodoval. Na místo dorazily xi'anské lodě, poručice Polina Balmont vypálila varovné výstřely a admirál Hireche porušil zákaz a nasadil tajnou minovou loď Nautilus, aby vyrovnal přesilu. Napětí opadlo, když data ze zapisovačů prokázala technickou závadu, a Hireche se odvážně stáhl bez boje."
+  postavy:
+    - "Ivar Messer"
+    - "Martha Agrawal"
+    - "Polina Balmont"
+    - "admirál Hireche"
+  zdroje:
+    - record_key: "commlink:18050"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/18050-Standoff-In-Hadur"
+  forma: "dramatizace"
+  hodnoceni: 4
+  hodnoceni_proc: "Napínavá krize studené války s rozhodnutím „kdy neodpálit“."
+  stav: "nápad"
+  priorita: false
+
+- id: fire-rats-origin
+  nazev: "Zrod Ohnivých krys"
+  nazev_en: "Fire Rats"
+  rok: "2563"
+  era: "Éra Messerů"
+  typ: "osobní příběh"
+  shrnuti: "Když Pyrotechnic Amalgamated roku 2563 zkrachovala, nechala své dělníky opuštěné na planetě Bloom v soustavě Pyro. Přežívali v bývalých kasárnách, a když docházely zásoby, údajně nedaleko havarovala nákladní loď zasažená sluneční erupcí a dala jim vše potřebné. Odtud prý pochází jejich uctívání divoké hvězdy Pyra – dnes jsou Fire Rats kult i gang, jehož členové nosí jizvy z úmyslného vystavení erupcím."
+  postavy: []
+  zdroje:
+    - record_key: "galactapedia:bZkOav4oEO"
+      rsi_url: "https://robertsspaceindustries.com/galactapedia/article/bZkOav4oEO-fire-rats"
+  forma: "vyprávění"
+  hodnoceni: 4
+  hodnoceni_proc: "Legenda o zrodu kultu, navazuje na Proroka z Pyra."
+  stav: "nápad"
+  priorita: false
+
+- id: headhunters-ruin
+  nazev: "Lebky nad Ruin Station"
+  nazev_en: "Headhunters / Ruin Station"
+  rok: "2563–2912"
+  era: "Éra Messerů"
+  typ: "zločin"
+  shrnuti: "Stanici, kterou Pyrotechnic Amalgamated po bankrotu roku 2563 opustila, obsadili psanci a přezdívali ji Ruin. Gang Headhunters, původně pašeráci z Virgilu, se tam ve 2620. letech usídlil a značil své území lidskou lebkou. Od 2740. let se o stanici desítky let přetahoval se syndikátem Drop Kings, dokud ten roku 2912 neustoupil."
+  postavy: []
+  zdroje:
+    - record_key: "galactapedia:bZkOavLgjB"
+      rsi_url: "https://robertsspaceindustries.com/galactapedia/article/bZkOavLgjB-headhunters"
+    - record_key: "galactapedia:RX3AzPdnw8"
+      rsi_url: "https://robertsspaceindustries.com/galactapedia/article/RX3AzPdnw8-ruin-station"
+  forma: "vyprávění"
+  hodnoceni: 3
+  hodnoceni_proc: "Kronika gangové války, málo konkrétních postav."
+  stav: "nápad"
+  priorita: false
+
+- id: fallen-olympus-36th
+  nazev: "Pád Olympu a šest stíhaček"
+  nazev_en: "Portfolio: 36th Fighter Squadron / UEES Olympus"
+  rok: "2571"
+  era: "Éra Messerů"
+  typ: "bitva"
+  shrnuti: "V roce 2571 pronásledoval nosič UEES Olympus piráty a rebely do soustavy Nul; admirál chtěl zásah osobně a vedl loď příliš blízko planety Ashana, jejíž gravitace ji strhla k zemi. Šest lehkých stíhaček, které stihly odstartovat, téměř hodinu drželo rebely v šachu a zničilo 37 lodí, než všechny padly. Černou skříňku poručice Jasmine Tuttle prodal pirát její rodině a námořnictvo ze záznamu udělalo propagandu, která zakryla trapnou ztrátu – z vraku je dnes město Olympus."
+  postavy:
+    - "Jasmine Tuttle"
+  zdroje:
+    - record_key: "commlink:14315"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/14315-Portfolio-36th-Fighter-Squadron"
+    - record_key: "galactapedia:0Gxk9rGkej"
+      rsi_url: "https://robertsspaceindustries.com/galactapedia/article/0Gxk9rGkej-uees-olympus"
+  forma: "dramatizace"
+  hodnoceni: 5
+  hodnoceni_proc: "Hrdinská poslední bitva s cynickou propagandistickou dohrou."
+  stav: "nápad"
+  priorita: false
+
+- id: eli-price
+  nazev: "Výčitky poručíka Price"
+  nazev_en: "Eli Price"
+  rok: "2587–2594"
+  era: "Éra Messerů"
+  typ: "osobní příběh"
+  shrnuti: "Poručík Eli Price v roce 2587 sledoval psance přepadající lodě v soustavě Castra a viděl, jak loď zmizela do neznámého skokového bodu do Oya. Zjistil, že jde o lidské separatisty, kteří loupí jen to, co potřebují k přežití, a přesto je s výčitkami nahlásil. Námořnictvo jejich lodě při útěku zničilo; Price se trápil vinou, odešel z armády a stal se obhájcem."
+  postavy:
+    - "Eli Price"
+  zdroje:
+    - record_key: "galactapedia:bo1wkzJE41"
+      rsi_url: "https://robertsspaceindustries.com/galactapedia/article/bo1wkzJE41-eli-price"
+  forma: "dramatizace"
+  hodnoceni: 4
+  hodnoceni_proc: "Morální dilema s objevem v pozadí."
+  stav: "nápad"
+  priorita: false
+
+- id: second-tevarin-war
+  nazev: "Slzy ohně: konec druhé tevarinské války"
+  nazev_en: "2610: Tears of Fire"
+  rok: "2603–2610"
+  era: "Éra Messerů"
+  typ: "bitva"
+  shrnuti: "Vojevůdce Corath'Thal vedl od 9. března 2603 partyzánskou válku za návrat Tevarinů na Kaleeth. Po porážce u Centauri 24. června 2610 prorazil s posledními věrnými blokádou a jeho flotila shořela v atmosféře rodné planety; malíř Aaron Fring ten pohled zachytil v obraze Slzy ohně."
+  postavy:
+    - "Corath'Thal"
+    - "Aaron Fring"
+  zdroje:
+    - record_key: "commlink:12705"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/12705-2610-Tears-Of-Fire"
+    - record_key: "galactapedia:0qn8vvz9YW"
+      rsi_url: "https://robertsspaceindustries.com/galactapedia/article/0qn8vvz9YW-tears-of-fire"
+    - record_key: "galactapedia:RkGxWGQ2Qp"
+      rsi_url: "https://robertsspaceindustries.com/galactapedia/article/RkGxWGQ2Qp-warlord-coraththal"
+  forma: "vyprávění"
+  hodnoceni: 4
+  hodnoceni_proc: "Už zpracováno jako kapitola na webu."
+  stav: "na webu"
+  priorita: false
+
+- id: battle-of-koren-pass
+  nazev: "Šestnáct hodin v průsmyku Koren"
+  nazev_en: "Battle of Koren Pass"
+  rok: "2605"
+  era: "Éra Messerů"
+  typ: "bitva"
+  shrnuti: "V roce 2605 obklíčil tevarinský úderný oddíl na Crionu (Caliban II) skupinu vojáků armády UEE v tancích Nova. Boj trval šestnáct hodin bez přestávky. Skončil vítězstvím UEE, když dorazily záchranné síly a donutily Tevariny k ústupu."
+  postavy: []
+  zdroje:
+    - record_key: "galactapedia:01dWmOD45G"
+      rsi_url: "https://robertsspaceindustries.com/galactapedia/article/01dWmOD45G-battle-of-koren-pass"
+  forma: "vyprávění"
+  hodnoceni: 2
+  hodnoceni_proc: "Dobrá situace, ale zdroj je velmi stručný a bez jmen."
+  stav: "nápad"
+  priorita: false
+
+- id: bremen-defense-force
+  nazev: "Philippe Lattimore a bremenská domobrana"
+  nazev_en: "Portfolio: Bremen Defense Force"
+  rok: "2605–2640"
+  era: "Éra Messerů"
+  typ: "osobní příběh"
+  shrnuti: "Za druhé tevarinské války živil Rytif armádu a bohatství přilákalo psance, kteří přepadali civilisty. Osmdesátiletý veterán první války Philippe Lattimore, kterého námořnictvo odmítlo, hlídkoval sám, až málem zahynul. Roku 2605 přesvědčil statkáře Arctura Koernera hodinovým projevem o financování Bremenské obranné síly, která rychle snížila kriminalitu na polovinu a přetrvala dodnes."
+  postavy:
+    - "Philippe Lattimore"
+    - "Arcturus Koerner"
+  zdroje:
+    - record_key: "commlink:16748"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/16748-Portfolio-Bremen-Defense-Force"
+  forma: "dramatizace"
+  hodnoceni: 4
+  hodnoceni_proc: "Sympatický stařík‑hrdina a vznik nejstarší domobrany."
+  stav: "nápad"
+  priorita: false
+
+- id: operation-oberon
+  nazev: "Operace Oberon"
+  nazev_en: "Always Forward: A UEE Marine History – Operation Oberon"
+  rok: "2605"
+  era: "Éra Messerů"
+  typ: "bitva"
+  shrnuti: "V dubnu 2605 obsadili Tevarinové výsadkovou zónu u rafinerie kvantového paliva na Urielu a generál námořní pěchoty Russ Adachi prosadil chirurgický úder navzdory odporu armády a námořnictva. 24. června 2605 komanda vysazená v modulech „Nail“ pronikla do tunelů a zničila řídicí místnost rafinerie, ale záchrannou loď zahnali Tevarinové. Mariňáci uvízli a s nepřítelem v patách se vydali přes zasněžené hory; analytici jim dávali 3,8 % šance na přežití."
+  postavy:
+    - "Russ Adachi"
+  zdroje:
+    - record_key: "commlink:18316"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/18316-Always-Forward-A-UEE-Marine-History"
+  forma: "dramatizace"
+  hodnoceni: 5
+  hodnoceni_proc: "Klasická vojenská odysea; výsledek ochotně ponechává zdroj otevřený."
+  stav: "nápad"
+  priorita: false
+
+- id: battle-of-centauri
+  nazev: "Bitva u Centauri a lest kapitánky Dunlevyové"
+  nazev_en: "Battle of Centauri"
+  rok: "2610"
+  era: "Éra Messerů"
+  typ: "bitva"
+  shrnuti: "24. června 2610 vstoupil tevarinský vojevůdce Corath'Thal do soustavy Centauri a místo útoku na skokový bod odlákal flotilu UEE k obydleným planetám Yar a Saisei. Kapitánka Alexandra Dunlevy ze 42. letky přesvědčila admirála Tibaulta Frasera, aby předstíral ústup, a když Tevarinové rozbili formaci u skokového bodu, přepadla je. Zbytky Corath'Thalových sil sice prorazily do Elysia, ale místo boje se upálily v atmosféře svého bývalého domova."
+  postavy:
+    - "Corath'Thal"
+    - "Alexandra Dunlevy"
+    - "Tibault Fraser"
+  zdroje:
+    - record_key: "galactapedia:VlM1yqjoNv"
+      rsi_url: "https://robertsspaceindustries.com/galactapedia/article/VlM1yqjoNv-battle-of-centauri"
+    - record_key: "commlink:13970"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/13970-This-Day-In-History-Battle-For-Centauri"
+  forma: "dramatizace"
+  hodnoceni: 4
+  hodnoceni_proc: "Taktický zvrat s konkrétními postavami; rozšiřuje kapitolu o 2. tevarinské válce."
+  stav: "nápad"
+  priorita: false
+
+- id: instrument-of-surrender
+  nazev: "Nástroj kapitulace"
+  nazev_en: "Instrument of Surrender"
+  rok: "2610"
+  era: "Éra Messerů"
+  typ: "povídka"
+  shrnuti: "Povídka začíná 24. června 2610, kdy zbytky flotily Corath'Thala proletí skokovým bodem do Elysia po porážce u Centauri. Vojevůdce svým lidem oznámí, že buď selhal kodex Rijora, nebo oni selhali jemu, a že on sám se vrací domů – kdo chce, ať ho následuje, ostatní ať využijí jeho útok k útěku."
+  postavy:
+    - "Corath'Thal"
+    - "Rados"
+  zdroje:
+    - record_key: "commlink:17440"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/serialized-fiction/17440-Instrument-Of-Surrender-Part-One"
+    - record_key: "commlink:17493"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/serialized-fiction/17493-Instrument-Of-Surrender-Part-Two"
+    - record_key: "commlink:17531"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/serialized-fiction/17531-Instrument-Of-Surrender-Part-Three"
+    - record_key: "commlink:17577"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/serialized-fiction/17577-Instrument-Of-Surrender-Part-Four"
+  forma: "dramatizace"
+  hodnoceni: 5
+  hodnoceni_proc: "Tevarinský pohled na konec války – silný doplněk kapitoly o 2. tevarinské válce."
+  stav: "nápad"
+  priorita: false
+
+- id: tevarin-purge
+  nazev: "Tevarinská očista"
+  nazev_en: "Tevarin Purge"
+  rok: "2610"
+  era: "Éra Messerů"
+  typ: "osobní příběh"
+  shrnuti: "Po prohrané druhé válce Tevarinové dobrovolně přetrhali pouta se svou kulturou: ničili záznamy, zřekli se kodexu Rijora a bořili chrámy. Většina se začlenila do UEE a malá menšina zmizela v neznámém vesmíru. Od počátku 30. století roste mezi Tevariny hnutí, které se ke ztracené kultuře a jazyku chce vrátit."
+  postavy: []
+  zdroje:
+    - record_key: "galactapedia:R6dWB877Nn"
+      rsi_url: "https://robertsspaceindustries.com/galactapedia/article/R6dWB877Nn-tevarin-purge"
+  forma: "vyprávění"
+  hodnoceni: 3
+  hodnoceni_proc: "Silné téma ztráty identity, ale bez konkrétních postav."
+  stav: "nápad"
+  priorita: false
+
+- id: harar-dyson-kaipua
+  nazev: "Tři dny v xi'anském zajetí"
+  nazev_en: "Ahmad Harar / Carl Dyson"
+  rok: "2617"
+  era: "Éra Messerů"
+  typ: "objev"
+  shrnuti: "V roce 2617 objevili pilot Ahmad Harar a jeho střelec Carl Dyson při hlídce v Horu gravitační anomálii. Dyson chtěl objev nahlásit, ale Harar ho přemluvil, ať skok proletí sami a zapíšou se do dějin – ocitli se však v soustavě ovládané Xi'any. Po třech dnech výslechů je propustili s varováním, že každá loď UEE v Kai'pua bude zničena, a Harar byl za neuposlechnutí degradován."
+  postavy:
+    - "Ahmad Harar"
+    - "Carl Dyson"
+  zdroje:
+    - record_key: "galactapedia:VYLznx8r3e"
+      rsi_url: "https://robertsspaceindustries.com/galactapedia/article/VYLznx8r3e-ahmad-harar"
+    - record_key: "galactapedia:R5p2mqLvXN"
+      rsi_url: "https://robertsspaceindustries.com/galactapedia/article/R5p2mqLvXN-carl-dyson"
+  forma: "dramatizace"
+  hodnoceni: 4
+  hodnoceni_proc: "Dvojice s konfliktem a napětím uprostřed studené války."
+  stav: "nápad"
+  priorita: false
+
+- id: assan-kieren-disappearance
+  nazev: "Zmizení guvernéra Assana Kierena"
+  nazev_en: "Assan Kieren / 2638: A Call for Sovereignty"
+  rok: "2638–2639"
+  era: "Éra Messerů"
+  typ: "záhada"
+  shrnuti: "Guvernér Terry Assan Kieren vyzval roku 2638 k hlasování o odtržení Terry od UEE a messerovská propaganda proti němu rozjela kampaň obvinění od nevěry po drogy a korupci. Kieren tvrdil, že má důkazy o volebních podvodech, a podal žalobu na Imperátora, referendum však neuspělo a jeho kariéra skončila. Následujícího listopadu zmizel a vládní média ho pak spojovala s údajnou xi'anskou teroristickou sítí; okolnosti zmizení nebyly nikdy objasněny."
+  postavy:
+    - "Assan Kieren"
+  zdroje:
+    - record_key: "galactapedia:RWwZQK774P"
+      rsi_url: "https://robertsspaceindustries.com/galactapedia/article/RWwZQK774P-assan-kieren"
+    - record_key: "commlink:12706"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/12706-2638-A-Call-For-Sovereignty"
+  forma: "dramatizace"
+  hodnoceni: 5
+  hodnoceni_proc: "Připravuje se – politický thriller s nevyřešeným koncem."
+  stav: "nápad"
+  priorita: true
+
+- id: assan-kieren-sovereignty
+  nazev: "Volání po suverenitě Terry"
+  nazev_en: "2638: A Call for Sovereignty"
+  rok: "2638"
+  era: "Éra Messerů"
+  typ: "politika"
+  shrnuti: "Guvernér Assan Kieren vyzval v roce 2638 Terru k hlasování o nezávislosti na UEE; messerovská propaganda ho zdiskreditovala a referendum neprošlo."
+  postavy:
+    - "Assan Kieren"
+  zdroje:
+    - record_key: "commlink:12706"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/12706-2638-A-Call-For-Sovereignty"
+    - record_key: "galactapedia:RWwZQK774P"
+      rsi_url: "https://robertsspaceindustries.com/galactapedia/article/RWwZQK774P-assan-kieren"
+  forma: "vyprávění"
+  hodnoceni: 4
+  hodnoceni_proc: "Už zpracováno jako kapitola na webu."
+  stav: "na webu"
+  priorita: false
+
+- id: moscow-shuttle-crash
+  nazev: "Pád raketoplánu nad Moskvou"
+  nazev_en: "Livia Messer III / Marius Messer IV"
+  rok: "2641"
+  era: "Éra Messerů"
+  typ: "katastrofa"
+  shrnuti: "V roce 2641 selhal raketoplán Imperátorky Livie Messer III. při návratu do atmosféry nad Moskvou. Livia přežila, ale její manžel Daniel Scota a šestnáctiletý syn Marius, čerstvě přijatý na námořní leteckou akademii, zahynuli. Livia mu udělila čestný titul Imperátora a roku 2643 se stáhla z veřejného života, čímž otevřela cestu k moci svému bratru Corsenovi."
+  postavy:
+    - "Livia Messer III"
+    - "Marius Messer IV"
+    - "Daniel Scota"
+    - "Deacon Messer II"
+    - "Corsen Messer V"
+  zdroje:
+    - record_key: "galactapedia:01dWwaQkrL"
+      rsi_url: "https://robertsspaceindustries.com/galactapedia/article/01dWwaQkrL-livia-messer-iii"
+    - record_key: "galactapedia:RxNxAgrXZz"
+      rsi_url: "https://robertsspaceindustries.com/galactapedia/article/RxNxAgrXZz-marius-messer-iv"
+  forma: "vyprávění"
+  hodnoceni: 4
+  hodnoceni_proc: "Rodinná tragédie, která změnila linii nástupnictví."
+  stav: "nápad"
+  priorita: false
+
+- id: poisoned-imperator
+  nazev: "Otrávený Imperátor"
+  nazev_en: "Corsen Messer V / Gammon Messer / Illyana Messer VI"
+  rok: "2662"
+  era: "Éra Messerů"
+  typ: "zločin"
+  shrnuti: "Imperátor Corsen Messer V. rozšířil trest smrti, zrušil soudy pro politické zločiny a otevřel další politické věznice na Charonu III; jeho syn Gammon se proslavil krutými výslechovými metodami. V roce 2662 byli oba zavražděni jedem. Viník nebyl nikdy odhalen, historici však vinu připisují Corsenově nejmladší dceři Illyaně, která se pak stala Imperátorkou."
+  postavy:
+    - "Corsen Messer V"
+    - "Gammon Messer"
+    - "Illyana Messer VI"
+    - "Deacon Messer II"
+  zdroje:
+    - record_key: "galactapedia:0OaB8O6awO"
+      rsi_url: "https://robertsspaceindustries.com/galactapedia/article/0OaB8O6awO-corsen-messer-v"
+    - record_key: "galactapedia:0rxrqgDP12"
+      rsi_url: "https://robertsspaceindustries.com/galactapedia/article/0rxrqgDP12-gammon-messer"
+    - record_key: "galactapedia:bZwQBNmWrL"
+      rsi_url: "https://robertsspaceindustries.com/galactapedia/article/bZwQBNmWrL-illyana-messer-vi"
+  forma: "dramatizace"
+  hodnoceni: 5
+  hodnoceni_proc: "Dvorská intrika s vraždou a nevyřešenou otázkou viny."
+  stav: "nápad"
+  priorita: false
+
+- id: condi-hillard
+  nazev: "První vítězství nad Vanduulem"
+  nazev_en: "Condi Hillard"
+  rok: "2681–2712"
+  era: "Éra Messerů"
+  typ: "bitva"
+  shrnuti: "Condi Hillard si po škole opravila vyřazený Gladius ze šrotiště a pracovala jako ochranka v soustavě Orion. Dva týdny po útoku na Armitage roku 2681 sestřelila Scythe a vedla svůj tým ke zničení zbylých vanduulských lodí – jako první člověk, který porazil Vanduula v boji lodí. Její taktiku převzala Letka 36; zahynula roku 2712 při obraně Armitage v bitvě o Orion."
+  postavy:
+    - "Condi Hillard"
+  zdroje:
+    - record_key: "galactapedia:RX3dlOezZM"
+      rsi_url: "https://robertsspaceindustries.com/galactapedia/article/RX3dlOezZM-condi-hillard"
+  forma: "dramatizace"
+  hodnoceni: 4
+  hodnoceni_proc: "Hrdinka „ze šrotiště“ s tragickým koncem."
+  stav: "nápad"
+  priorita: false
+
+- id: vanduul-human-first-contact
+  nazev: "Dell Township: první krev"
+  nazev_en: "Vanduul-Human First Contact"
+  rok: "2681"
+  era: "Éra Messerů"
+  typ: "bitva"
+  shrnuti: "9. srpna 2681 přepadla vanduulská nájezdní skupina osadu Dell Township na Armitage a zabila všech 638 obyvatel kromě jednoho. Úřady nejdřív vinily psance a s vanduulským klanem se armáda poprvé setkala až 15. září. Protože Vanduulové nemají jednotnou vládu, nebylo možné ani se mstít, ani vyjednávat."
+  postavy: []
+  zdroje:
+    - record_key: "galactapedia:RWwZDmxaXP"
+      rsi_url: "https://robertsspaceindustries.com/galactapedia/article/RWwZDmxaXP-vanduul-human-first-contact"
+    - record_key: "commlink:12707"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/12707-2681-Scorched-Earth"
+  forma: "dramatizace"
+  hodnoceni: 4
+  hodnoceni_proc: "Už součást kapitoly o Armitage 2681."
+  stav: "na webu"
+  priorita: false
+
+- id: messer-succession-war
+  nazev: "Válka bratranců: Astrid proti Samuelovi"
+  nazev_en: "Astrid Messer VII / Samuel Messer VIII"
+  rok: "2697–2701"
+  era: "Éra Messerů"
+  typ: "politika"
+  shrnuti: "Když Illyana Messer VI. roku 2697 zemřela, uchvátila moc její neteř Astrid, přestože nástupcem byl jmenován Illyanin nejmladší syn Samuel. Věrní agenti Samuela propašovali ze Země dřív, než ho Astrid stihla nechat zabít, a následovala čtyřletá občanská válka. Roku 2701 Samuelovi agenti Astrid zavraždili a Samuel se ujal úřadu."
+  postavy:
+    - "Astrid Messer VII"
+    - "Samuel Messer VIII"
+    - "Illyana Messer VI"
+    - "Galor Messer IX"
+  zdroje:
+    - record_key: "galactapedia:0KnA1D5nQM"
+      rsi_url: "https://robertsspaceindustries.com/galactapedia/article/0KnA1D5nQM-astrid-messer-vii"
+    - record_key: "galactapedia:RkZ9W2L2NB"
+      rsi_url: "https://robertsspaceindustries.com/galactapedia/article/RkZ9W2L2NB-samuel-messer-viii"
+    - record_key: "galactapedia:VyvYAGKxAz"
+      rsi_url: "https://robertsspaceindustries.com/galactapedia/article/VyvYAGKxAz-galor-messer-ix"
+  forma: "dramatizace"
+  hodnoceni: 4
+  hodnoceni_proc: "Útěk, občanská válka a atentát – hotové drama, jen zdroje jsou stručné."
+  stav: "nápad"
+  priorita: false
+
+- id: battle-of-orion
+  nazev: "Bitva o Orion"
+  nazev_en: "Battle of Orion"
+  rok: "2712"
+  era: "Éra Messerů"
+  typ: "bitva"
+  shrnuti: "16. února 2712 vtrhly do Orionu z neznámého skokového bodu tisíce Vanduulů doprovázené Kingshipem, s nímž se síly UEE setkaly poprvé. Už 18. února musela UEE soustavu vydat. Šlo o první velkou porážku od dočasné ztráty Idrisu roku 2542 a bod obratu ve válce s Vanduuly."
+  postavy: []
+  zdroje:
+    - record_key: "galactapedia:RMXyYxqw8K"
+      rsi_url: "https://robertsspaceindustries.com/galactapedia/article/RMXyYxqw8K-battle-of-orion"
+  forma: "vyprávění"
+  hodnoceni: 3
+  hodnoceni_proc: "Už pokryto kapitolou o Vanduulech."
+  stav: "na webu"
+  priorita: false
+
+- id: tohil-suen-firmino
+  nazev: "Pašeráci, kteří objevili Tohil"
+  nazev_en: "Oisha Suen / Aadya Firmino"
+  rok: "2713–2723"
+  era: "Éra Messerů"
+  typ: "objev"
+  shrnuti: "Mechanička Oisha Suen a dědička Aadya Firmino provozovaly pašerácký podnik v Nyxu, dokud je Firmino troufalým přetahováním klientů nepřipravila o místo v Levski. Na útěku roku 2716 objevila Suen skokový bod do nové soustavy; Firmino ji přemluvila k mlčení, opila ji v Bremenu a objev nahlásila jako svůj. Suen promluvila v Terra Gazette, úřady připsaly objev oběma – a vydaly na obě zatykač; Suen se pak vrátila do Levski, kam Firmino už nepustili."
+  postavy:
+    - "Oisha Suen"
+    - "Aadya Firmino"
+  zdroje:
+    - record_key: "galactapedia:01LrmgveKB"
+      rsi_url: "https://robertsspaceindustries.com/galactapedia/article/01LrmgveKB-oisha-suen"
+    - record_key: "galactapedia:0Nj5o4M9v2"
+      rsi_url: "https://robertsspaceindustries.com/galactapedia/article/0Nj5o4M9v2-aadya-firmino"
+  forma: "dramatizace"
+  hodnoceni: 5
+  hodnoceni_proc: "Zrada, alkohol a spravedlnost s humorem – výborné postavy."
+  stav: "nápad"
+  priorita: false
+
+- id: siege-of-tiber
+  nazev: "Obléhání Tiberu"
+  nazev_en: "Siege of Tiber"
+  rok: "2732–2736"
+  era: "Éra Messerů"
+  typ: "bitva"
+  shrnuti: "Velkoadmirál Tesca Halimeade se v Tiberu nejdřív bránil a hledal způsob, jak s Vanduuly jednat, pak je lákal do pastí, dokud v roce 2735 nezahynul se svou vlajkovou lodí Aquilon v záloze u neznámého skokového bodu. Imperátor Galor Messer IX. nechal roku 2736 Tiber II vybombardovat do ruin. Když se UEE zdála na pokraji vítězství, přiletěl 29. prosince 2736 Kingship, zničil většinu flotily i s admirálkou Mirou Triolo a Tiber padl."
+  postavy:
+    - "Tesca Halimeade"
+    - "Mira Triolo"
+    - "Galor Messer IX"
+  zdroje:
+    - record_key: "galactapedia:0OaBY5pGrq"
+      rsi_url: "https://robertsspaceindustries.com/galactapedia/article/0OaBY5pGrq-siege-of-tiber"
+    - record_key: "galactapedia:VlNPQMPnrA"
+      rsi_url: "https://robertsspaceindustries.com/galactapedia/article/VlNPQMPnrA-ins-aniene"
+    - record_key: "galactapedia:RkZ9WG9L7n"
+      rsi_url: "https://robertsspaceindustries.com/galactapedia/article/RkZ9WG9L7n-ins-flavus"
+    - record_key: "commlink:18616"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/18616-Siege-Of-Tiber"
+  forma: "dramatizace"
+  hodnoceni: 5
+  hodnoceni_proc: "Už pokryto kapitolou o Tiberu; případně rozšířit o osudy admirálů."
+  stav: "na webu"
+  priorita: false
+
+- id: fall-of-virgil
+  nazev: "Pád Virgilu a poslední let Letky 214"
+  nazev_en: "Fall of Virgil"
+  rok: "2737"
+  era: "Éra Messerů"
+  typ: "bitva"
+  shrnuti: "2. ledna 2737, hned po ztrátě Tiberu, vpadli Vanduulové s Kingshipem do soustavy Virgil a zaútočili na Cyrene. Trosky 81. bojové skupiny zdržovaly útočníky, zatímco Letka 214 chránila poslední transporty k skokovému bodu do Vegy – a pak se ještě dvakrát vrátila pro další lidi. Přes milion civilistů uniklo, ale povrch Cyrene byl zničen, vojenská pomoc dorazila až po více než týdnu a ztráta Virgilu otřásla důvěrou v UEE."
+  postavy:
+    - "Amare Jericho"
+  zdroje:
+    - record_key: "galactapedia:box5moyeoZ"
+      rsi_url: "https://robertsspaceindustries.com/galactapedia/article/box5moyeoZ-fall-of-virgil"
+    - record_key: "galactapedia:0OaBY5pGrq"
+      rsi_url: "https://robertsspaceindustries.com/galactapedia/article/0OaBY5pGrq-siege-of-tiber"
+    - record_key: "galactapedia:RkGG7Yp5pL"
+      rsi_url: "https://robertsspaceindustries.com/galactapedia/article/RkGG7Yp5pL-ins-jericho"
+  forma: "dramatizace"
+  hodnoceni: 5
+  hodnoceni_proc: "Evakuace pod palbou a oběť letky – navazuje přímo na kapitolu o Tiberu."
+  stav: "nápad"
+  priorita: true
+
+- id: marcus-fayel-outsiders
+  nazev: "Očista Leiru II"
+  nazev_en: "Marcus Fayel"
+  rok: "2743–2816"
+  era: "Éra Messerů"
+  typ: "osobní příběh"
+  shrnuti: "Terraformační expert Marcus Fayel dohlížel od roku 2743 na přeměnu Leiru II a tajně tam provozoval vlastní důl. Když ho firma Hatfield & Harding roku 2803 vyhlásila zaměstnancem roku, poslal místo sebe video, v němž stále opakoval „čistota záměru“. V roce 2812 přerušil spojení, prohlásil „očistu“ planety za dokončenou, odrazil vyslané žoldnéře a jako vůdce náboženského řádu Outsiders vládl planetě, kterou přejmenoval na Mya, až do smrti."
+  postavy:
+    - "Marcus Fayel"
+  zdroje:
+    - record_key: "galactapedia:Rw1k2w51XZ"
+      rsi_url: "https://robertsspaceindustries.com/galactapedia/article/Rw1k2w51XZ-marcus-fayel"
+  forma: "vyprávění"
+  hodnoceni: 4
+  hodnoceni_proc: "Zneklidňující zrod sekty, vhodné pro temné vyprávění."
+  stav: "nápad"
+  priorita: false
+
+- id: anthony-tanaka
+  nazev: "Chlapec, který odmítl pracovat"
+  nazev_en: "Anthony Tanaka"
+  rok: "2757"
+  era: "Éra Messerů"
+  typ: "osobní příběh"
+  shrnuti: "Anthony Tanaka musel od sedmi let pracovat v muniční továrně v Newcastlu na Borei. Když 3. prosince 2757 po šestnáctihodinové směně odmítl zaskočit za kolegu v anafylaktickém šoku, popravil ho přímo na podlaze továrny agent Advocacy. Propašovaný záznam vraždy se stal symbolem odporu proti Messerům a na jeho počest vznikl Den vzpomínek."
+  postavy:
+    - "Anthony Tanaka"
+  zdroje:
+    - record_key: "galactapedia:RwZBdpj2rz"
+      rsi_url: "https://robertsspaceindustries.com/galactapedia/article/RwZBdpj2rz-anthony-tanaka"
+    - record_key: "commlink:13412"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/13412-This-Day-In-History-Anthony-Tanaka"
+  forma: "dramatizace"
+  hodnoceni: 5
+  hodnoceni_proc: "Silný lidský příběh s jasným zlomem a dopadem na dějiny."
+  stav: "nápad"
+  priorita: true
+
+- id: boro-raid-2758
+  nazev: "Útok na Boro"
+  nazev_en: "2758: Not in Nottingham"
+  rok: "2758"
+  era: "Éra Messerů"
+  typ: "bitva"
+  shrnuti: "Obyvatelé Bora věřili, že je ochrání orbitální obrana a skenery, ale v lednu 2758 na ně udeřila vanduulská skupina. Milice se vzepřela, ale nájezdníci uprchli až po příletu flotily UEE. Útok trval 27 minut, zemřelo čtrnáct lidí a byl zničen či vyrabován majetek za miliony."
+  postavy:
+    - "Edward Coss"
+  zdroje:
+    - record_key: "commlink:12710"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/12710-2758-Not-In-Nottingham"
+  forma: "vyprávění"
+  hodnoceni: 2
+  hodnoceni_proc: "Krátká zpráva bez postav."
+  stav: "nápad"
+  priorita: false
+
+- id: erin-toi-shanghai
+  nazev: "Atentát v Šanghaji"
+  nazev_en: "On The Path (Erin Toi)"
+  rok: "2777"
+  era: "Éra Messerů"
+  typ: "politika"
+  shrnuti: "11. března 2777 odvedl šéf ochranky Irfan Udell čerstvou senátorku Erin Toi z prvního setkání s voliči rovnou do vojenského transportu: úřady v Šanghaji právě zatkly dva muže, kteří ji chtěli zavraždit. Spiklenci Shigeki Renshaw a Dalton Boudet mlčeli a oba zemřeli ve vězení ještě před soudem; senátor Heng Ibrahim jí důvěrně řekl, že za útokem stojí Messerové. Neúspěšný atentát podle Toi rozzlobil Lintona a Fionu Messerovy a přispěl k převratu roku 2781."
+  postavy:
+    - "Erin Toi"
+    - "Irfan Udell"
+    - "Heng Ibrahim"
+    - "Shigeki Renshaw"
+    - "Dalton Boudet"
+  zdroje:
+    - record_key: "commlink:18548"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/18548-On-The-Path"
+  forma: "dramatizace"
+  hodnoceni: 4
+  hodnoceni_proc: "Osobní pohled budoucí Imperátorky na život v ohrožení."
+  stav: "nápad"
+  priorita: false
+
+- id: coup-2781
+  nazev: "Noc na stadionu Khanos"
+  nazev_en: "This Day in History: The Beginning of the End"
+  rok: "2781"
+  era: "Éra Messerů"
+  typ: "politika"
+  shrnuti: "12. srpna 2781 měl Imperátor Ulysses Messer X. slavnostně otevřít monumentální stadion Khanos na Angeli. Odbojáři, kterým tajně pomáhala jeho dcera Fiona, ale nastražili do základů nálože, výbuch zabil tisíce lidí a armáda věrná synovi Lintonovi zaútočila na Imperátorův doprovod. Obklíčený Ulysses se zastřelil, Linton se stal Imperátorem a nechal popravit odbojáře, které Fiona naverbovala."
+  postavy:
+    - "Ulysses Messer X"
+    - "Linton Messer XI"
+    - "Fiona Messer"
+  zdroje:
+    - record_key: "commlink:14074"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/14074-This-Day-In-History-The-Beginning-Of-The-End"
+    - record_key: "galactapedia:bBp6YZPOGO"
+      rsi_url: "https://robertsspaceindustries.com/galactapedia/article/bBp6YZPOGO-ulysses-messer-x"
+    - record_key: "galactapedia:RwZBaD4Mdq"
+      rsi_url: "https://robertsspaceindustries.com/galactapedia/article/RwZBaD4Mdq-linton-messer-xi"
+    - record_key: "galactapedia:R56nLjJog7"
+      rsi_url: "https://robertsspaceindustries.com/galactapedia/article/R56nLjJog7-fiona-messer"
+  forma: "dramatizace"
+  hodnoceni: 5
+  hodnoceni_proc: "Převrat, zrada v rodině a výbuch – plně dramatická scéna."
+  stav: "nápad"
+  priorita: false
+
+- id: juliet-maupin
+  nazev: "Ztracená bedna Juliet Maupin"
+  nazev_en: "Juliet Maupin / Dalton Colabello"
+  rok: "2783–2911"
+  era: "Věk nápravy"
+  typ: "korporace"
+  shrnuti: "Inženýrka Juliet Maupin vedla přestavbu bombardéru Retaliator a pak vyvíjela pokročilé zbraně pro messerovskou vládu. Po protimesserovské revoluci se strachem z obvinění uprchla s rodinou do soustavy Corel. Bednu jejích prototypů, které se nikdy nedostaly k testům, našel roku 2911 sběratel Dalton Colabello ve skladu na Cestulu a postavil na nich firmu Apocalypse Arms."
+  postavy:
+    - "Juliet Maupin"
+    - "Dalton Colabello"
+  zdroje:
+    - record_key: "galactapedia:VarxxjKJe5"
+      rsi_url: "https://robertsspaceindustries.com/galactapedia/article/VarxxjKJe5-juliet-maupin"
+    - record_key: "galactapedia:VlMJJp9B9M"
+      rsi_url: "https://robertsspaceindustries.com/galactapedia/article/VlMJJp9B9M-dalton-colabello"
+  forma: "vyprávění"
+  hodnoceni: 3
+  hodnoceni_proc: "Pěkná „ztracená věc“, ale málo dramatu."
+  stav: "nápad"
+  priorita: false
+
+- id: noah-traeger-osiris
+  nazev: "Objev na dovolené"
+  nazev_en: "Noah Traeger"
+  rok: "2788"
+  era: "Éra Messerů"
+  typ: "objev"
+  shrnuti: "Mechanik námořnictva Noah Traeger místo pláže na dovolené v Goss opravoval rozbitý skener. Při testu zachytil podivný signál, který vedl k neznámému skokovému bodu do soustavy Osiris. Za odměnu si po odchodu z armády otevřel opravnu lodí na Casselu."
+  postavy:
+    - "Noah Traeger"
+  zdroje:
+    - record_key: "galactapedia:VDzyygGMQ1"
+      rsi_url: "https://robertsspaceindustries.com/galactapedia/article/VDzyygGMQ1-noah-traeger"
+  forma: "vyprávění"
+  hodnoceni: 2
+  hodnoceni_proc: "Milá drobnost, ale bez konfliktu."
+  stav: "nápad"
+  priorita: false
+
+- id: akari-kre-treaty
+  nazev: "Akari a cesta přes Perryho linii"
+  nazev_en: "2789: A Cold War Thaws / 2792: The Tide Rises"
+  rok: "2789–2793"
+  era: "Éra Messerů"
+  typ: "politika"
+  shrnuti: "Senátor Terrence Akari v roce 2789 tajně překročil Perryho linii s pomocí šéfa Advocacy na Terře Nathana Warricka a na Tohilu III vyjednal s císařem Kr.ē pakt o neútočení. Terra ho ratifikovala a Akari se musel skrývat před Lintonovými agenty; o tři roky později skupina Tide odvysílala záběry z Garronu II a Messerové padli."
+  postavy:
+    - "Terrence Akari"
+    - "Emperor Kr.ē"
+    - "Nathan Warrick"
+    - "Linton Messer XI"
+  zdroje:
+    - record_key: "commlink:12712"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/12712-2789-A-Cold-War-Thaws"
+    - record_key: "commlink:12715"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/12715-2792-The-Tide-Rises"
+    - record_key: "galactapedia:V3qgjK7Jor"
+      rsi_url: "https://robertsspaceindustries.com/galactapedia/article/V3qgjK7Jor-terrence-akari"
+    - record_key: "galactapedia:RL6ZQLwnko"
+      rsi_url: "https://robertsspaceindustries.com/galactapedia/article/RL6ZQLwnko-terrence-akari"
+    - record_key: "galactapedia:RXlXOpwG6k"
+      rsi_url: "https://robertsspaceindustries.com/galactapedia/article/RXlXOpwG6k-tide"
+  forma: "vyprávění"
+  hodnoceni: 4
+  hodnoceni_proc: "Už zpracováno jako kapitola na webu."
+  stav: "na webu"
+  priorita: false
+
+- id: kre-letter
+  nazev: "Dopis, který neměl být nikdy přečten"
+  nazev_en: "Ark Archives: Xi'an Emperor Letter"
+  rok: "2789"
+  era: "Éra Messerů"
+  typ: "politika"
+  shrnuti: "Před tajnou cestou na setkání se senátorem Terrencem Akarim v roce 2789 napsal xi'anský císař Kr.ē dopis, který se měl přečíst celé říši jen v případě, že se nevrátí. Obsahoval pokyny k nástupu nového rodu a radu budoucímu císaři: být laskavý v činech, diplomatický v odporu a moudrý tváří v tvář neznámému. Císař se vrátil živý a dopis sám veřejně přečetl až v roce 2901 při stém výročí Archy."
+  postavy:
+    - "Emperor Kr.ē"
+    - "Terrence Akari"
+    - "Ary Alfonso"
+  zdroje:
+    - record_key: "commlink:18174"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/18174-Ark-Archives-Xian-Emperor-Letter"
+  forma: "vyprávění"
+  hodnoceni: 4
+  hodnoceni_proc: "Pohled z druhé strany na mírové jednání; silný emotivní rámec."
+  stav: "nápad"
+  priorita: false
+
+- id: squadron-78-refusal
+  nazev: "Torpéda do prázdna"
+  nazev_en: "Portfolio: 78th Squadron"
+  rok: "2791"
+  era: "Éra Messerů"
+  typ: "osobní příběh"
+  shrnuti: "Na počátku roku 2791 dostala bombardovací Letka 78 rozkaz zničit antihmotovými torpédy obydlený měsíc v soustavě Ferron, údajnou základnu povstalců. Velitelka Lisa Cahillier zjistila, že jde o neozbrojené zemědělské středisko s desítkami tisíc uprchlíků, a odmítla střílet bez potvrzeného cíle. Když admirálka Lorna Gestala rozkaz zopakovala, Cahillier nařídila palbu – ale na asteroid za měsícem; letka pak byla celá zatčena."
+  postavy:
+    - "Lisa Cahillier"
+    - "Lorna Gestala"
+    - "Jaso Iger"
+  zdroje:
+    - record_key: "commlink:14618"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/14618-Portfolio-78th-Squadron"
+  forma: "dramatizace"
+  hodnoceni: 5
+  hodnoceni_proc: "Silný morální čin v posledních dnech Messerů."
+  stav: "nápad"
+  priorita: true
+
+- id: fiona-messer
+  nazev: "Zmizení Fiony Messer"
+  nazev_en: "Fiona Messer"
+  rok: "2792"
+  era: "Éra Messerů"
+  typ: "záhada"
+  shrnuti: "Fiona Messer nejdřív pomohla bratru Lintonovi svrhnout jejich otce Ulyssese, pak ale tajně spolupracovala s živly uvnitř UEE, aby Lintona sesadila a zdědila jeho místo. Informace, které předala odbojové skupině Tide, pomohly zažehnout protimesserovskou revoluci. Když se povstání rozhořelo, zapsala si do deníku, že se šíří příliš rychle; poté beze stopy zmizela a její osud je dodnes neznámý."
+  postavy:
+    - "Fiona Messer"
+    - "Linton Messer XI"
+    - "Ulysses Messer X"
+  zdroje:
+    - record_key: "galactapedia:R56nLjJog7"
+      rsi_url: "https://robertsspaceindustries.com/galactapedia/article/R56nLjJog7-fiona-messer"
+    - record_key: "galactapedia:bE3rKa32P7"
+      rsi_url: "https://robertsspaceindustries.com/galactapedia/article/bE3rKa32P7-anti-messer-revolution"
+  forma: "dramatizace"
+  hodnoceni: 5
+  hodnoceni_proc: "Zrada, revoluce a nevyřešené zmizení poslední Messerovy."
+  stav: "nápad"
+  priorita: true
+
+- id: massacre-of-garron-ii
+  nazev: "Masakr na Garronu II"
+  nazev_en: "Massacre of Garron II"
+  rok: "2792"
+  era: "Éra Messerů"
+  typ: "zločin"
+  shrnuti: "Linton Messer XI. prodal v roce 2792 terraformační práva na Garron II společnosti Bright Worlds Terraforming Group, ačkoli oba věděli, že tamní druh projevuje inteligenci. Druh byl při terraformaci vyhlazen. Skupina Tide odvysílala záběry přes Spectrum a vyvolala revoltu, která ukončila 246 let vlády Messerů."
+  postavy:
+    - "Linton Messer XI"
+  zdroje:
+    - record_key: "galactapedia:01dWeqnMr1"
+      rsi_url: "https://robertsspaceindustries.com/galactapedia/article/01dWeqnMr1-massacre-of-garron-ii"
+    - record_key: "galactapedia:RwZBaD4Mdq"
+      rsi_url: "https://robertsspaceindustries.com/galactapedia/article/RwZBaD4Mdq-linton-messer-xi"
+  forma: "vyprávění"
+  hodnoceni: 5
+  hodnoceni_proc: "Klíčový zlom dějin, už zpracovaný na webu."
+  stav: "na webu"
+  priorita: false
+
+- id: the-ark
+  nazev: "Archa"
+  nazev_en: "Portfolio: The ARK"
+  rok: "2792–2800"
+  era: "Věk nápravy"
+  typ: "politika"
+  shrnuti: "Po pádu Messerů, kteří stovky let potlačovali nepohodlná fakta, vznikla myšlenka Archy – knihovny a archivu všech ras, který nepatří žádné planetě ani druhu."
+  postavy:
+    - "Erin Toi"
+    - "Marshall Leon"
+  zdroje:
+    - record_key: "commlink:15174"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/15174-Portfolio-The-ARK"
+    - record_key: "commlink:12720"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/12720-2800-The-Neutral-Zone"
+  forma: "vyprávění"
+  hodnoceni: 3
+  hodnoceni_proc: "Už zpracováno jako kapitola na webu."
+  stav: "na webu"
+  priorita: false
+
+- id: governance-modernization-act
+  nazev: "Den, kdy Toi neporušila hlasování"
+  nazev_en: "This Day in History: Governance Modernization Act"
+  rok: "2793"
+  era: "Věk nápravy"
+  typ: "politika"
+  shrnuti: "Imperátorka Erin Toi po pádu Messerů tajně podporovala zákon, který měl přesunout hlavní město na Terru a přejmenovat říši na Demokratickou hvězdnou unii. 30. dubna 2793 zákon v senátu neprošel o tři hlasy a její šéf kabinetu Clement Redfield ji naléhal, aby hlasování přebila výkonným rozhodnutím. Toi odmítla, protože „vůle lidu musí stát nad mými osobními názory“ – jinak by nebyla lepší než Messerové."
+  postavy:
+    - "Erin Toi"
+    - "Clement Redfield"
+    - "Esther Aguila"
+  zdroje:
+    - record_key: "commlink:17063"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/17063-This-Day-In-History-Governance-Modernization-Act"
+  forma: "dramatizace"
+  hodnoceni: 4
+  hodnoceni_proc: "Silné morální dilema u zrodu obnovené demokracie."
+  stav: "nápad"
+  priorita: false
+
+- id: messer-war-crimes-trials
+  nazev: "Soudy s messerovskými zločinci"
+  nazev_en: "Messer Era War Crimes Trials"
+  rok: "2793–2795"
+  era: "Věk nápravy"
+  typ: "politika"
+  shrnuti: "V letech 2793–2795 se na Zemi konala série procesů s vysokými představiteli messerovské vlády, vysílaná živě po celé UEE. Většina odsouzených dostala doživotí. Řada osvobozených či omilostněných úředníků však dál sloužila i v nové vládě."
+  postavy: []
+  zdroje:
+    - record_key: "galactapedia:V8gJ66mw9x"
+      rsi_url: "https://robertsspaceindustries.com/galactapedia/article/V8gJ66mw9x-messer-era-war-crimes-trials"
+  forma: "vyprávění"
+  hodnoceni: 2
+  hodnoceni_proc: "Spíš shrnutí než příběh; dobré jako epilog."
+  stav: "nápad"
+  priorita: false
+
+- id: perry-line-pact
+  nazev: "Pakt Perryho linie"
+  nazev_en: "Perry Line Pact"
+  rok: "2793"
+  era: "Věk nápravy"
+  typ: "politika"
+  shrnuti: "Po Akari-Kr.ē smlouvě zbývalo rozhodnout o osmi sporných soustavách Perryho linie. Velvyslanec Ramon Coen předložil roku 2793 Xi'anům plán na jejich spravedlivé rozdělení, společné odstranění protilodních min a otevřené hranice. Podpisem smlouvy studená válka oficiálně skončila."
+  postavy:
+    - "Ramon Coen"
+  zdroje:
+    - record_key: "galactapedia:0Gx9GdvqAQ"
+      rsi_url: "https://robertsspaceindustries.com/galactapedia/article/0Gx9GdvqAQ-perry-line-pact"
+    - record_key: "commlink:15404"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/15404-This-Day-In-History-The-Perry-Line-Pact"
+  forma: "vyprávění"
+  hodnoceni: 3
+  hodnoceni_proc: "Diplomatické finále studené války, málo dramatu."
+  stav: "nápad"
+  priorita: false
+
+- id: hurston-maria-jasper
+  nazev: "Maria Čistého srdce"
+  nazev_en: "Life/Labor: The Secret History of Hurston Dynamics"
+  rok: "2799–2880"
+  era: "Věk nápravy"
+  typ: "korporace"
+  shrnuti: "Jasper Hurston si roku 2799 vzal proti vůli otce Altona Mariu Wharton, dceru protimesserovských aktivistů, a společně vynesli do tisku praktiku „off-bookingu“, kterou Hurston zbavoval zraněné dělníky péče. Maria výměnou za mlčení prosadila rozšíření zdravotní péče, ale když Jasper roku 2811 chystal převrat ve vedení, otec ho vyhodil a Maria ho podle svědectví marně zkoušela zachránit vydíráním kvůli otrávenému jezeru na Asuře. Jasper později za nejasných okolností zmizel, zatímco po Marii nese jméno nemocnice v Lorville."
+  postavy:
+    - "Maria Wharton"
+    - "Jasper Hurston"
+    - "Alton Hurston"
+    - "Olivia Hurston"
+    - "Chesterfield Hurston"
+  zdroje:
+    - record_key: "commlink:19424"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/19424-Life-Labor-The-Secret-History-Of-Hurston-Dynamics"
+  forma: "dramatizace"
+  hodnoceni: 4
+  hodnoceni_proc: "Rodinné drama korporace s morální šedí a nevyřešeným zmizením."
+  stav: "nápad"
+  priorita: false
+
+- id: patek-coen-kellog
+  nazev: "Vyvrácený sen Pateka Coena"
+  nazev_en: "Patek Coen"
+  rok: "2811–2839"
+  era: "Věk nápravy"
+  typ: "objev"
+  shrnuti: "Pilot přívozu Patek Coen toužil žít v soustavě, kterou sám objeví, a po deseti letech hledání našel roku 2811 Kellog. Na Kellogu II se však ukázala civilizace Ormů a soustava spadla pod zákon Fair Chance, takže se tam usadit nemohl. Jeho autobiografie „Vyvrácený sen“ se stala nečekaným bestsellerem."
+  postavy:
+    - "Patek Coen"
+  zdroje:
+    - record_key: "galactapedia:R9vPd4ZjK7"
+      rsi_url: "https://robertsspaceindustries.com/galactapedia/article/R9vPd4ZjK7-patek-coen"
+  forma: "vyprávění"
+  hodnoceni: 3
+  hodnoceni_proc: "Hořkosladká ironie osudu."
+  stav: "nápad"
+  priorita: false
+
+- id: battle-of-fabela
+  nazev: "Bitva o Fabelu: dobrá lež"
+  nazev_en: "Battle of Fabela"
+  rok: "2825"
+  era: "Věk nápravy"
+  typ: "bitva"
+  shrnuti: "15. srpna 2825 vybombardoval vanduulský klan hornickou osadu Fabela na Calibanu a média oslavila mariňáka Paula Barlowa, který prý sám zničil celou letku. Ve skutečnosti opilý a vyděšený Barlow utíkal k dolu, kde ho raněný bývalý horník Ignacio Assaf přiměl zprovoznit vozidlo Ballista a sám od děla sestřelil bombardéry; Assaf zemřel dřív, než dorazily posily. Velení Barlowa donutilo „dobrou lež“ udržet a pravdu přiznal až po Pádu Calibanu v roce 2884 v knize napsané s novinářkou Melanií Andrieux."
+  postavy:
+    - "Paul Barlow"
+    - "Ignacio Assaf"
+    - "Melania Andrieux"
+  zdroje:
+    - record_key: "commlink:17862"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/17862-Battle-Of-Fabela"
+  forma: "dramatizace"
+  hodnoceni: 5
+  hodnoceni_proc: "Připravuje se – silný příběh o pravdě, vině a zapomenutém hrdinovi."
+  stav: "nápad"
+  priorita: true
+
+- id: tohil-regatta-2847
+  nazev: "Regata, která se otočila"
+  nazev_en: "2847 Tohil Regatta"
+  rok: "2847"
+  era: "Věk nápravy"
+  typ: "katastrofa"
+  shrnuti: "Během regaty o Courier Cup 2847 na oceánském světě Tohil III se začal potápět Amidon Island, nejlidnatější plovoucí botanický ostrov planety. Kapitán Iggy Decarlo z vedoucí lodi Jacinto bez váhání opustil závod a přiměl i soupeře, aby pomohli zachraňovat turisty a místní, kteří neměli jak odletět. Katastrofa vedla k přísnějším stavebním předpisům a fakticky ukončila regatu."
+  postavy:
+    - "Iggy Decarlo"
+  zdroje:
+    - record_key: "commlink:17811"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/17811-2847-Tohil-Regatta"
+  forma: "dramatizace"
+  hodnoceni: 5
+  hodnoceni_proc: "Jasné morální rozhodnutí uprostřed katastrofy."
+  stav: "nápad"
+  priorita: false
+
+- id: toshi-aaron-stanton
+  nazev: "Rybářka, která našla Stanton"
+  nazev_en: "Toshi Aaron"
+  rok: "2851"
+  era: "Věk nápravy"
+  typ: "objev"
+  shrnuti: "Toshi Aaron z Magnusu snila o objevu skokového bodu už od dětství, ale neměla peníze na průzkum na plný úvazek. Brala proto rizikovou a dobře placenou práci na rybářských lodích v oceánech Magnusu a mimo sezónu hledala skokové body. V roce 2851 zachytila anomálii, která vedla do nové soustavy, a požádala, aby nesla jméno Stanton po jejím zesnulém bratrovi."
+  postavy:
+    - "Toshi Aaron"
+  zdroje:
+    - record_key: "galactapedia:0NjkMMlGXD"
+      rsi_url: "https://robertsspaceindustries.com/galactapedia/article/0NjkMMlGXD-toshi-aaron"
+  forma: "vyprávění"
+  hodnoceni: 4
+  hodnoceni_proc: "Dojemný příběh o vytrvalosti za soustavou, kterou hráči znají nejlépe."
+  stav: "nápad"
+  priorita: false
+
+- id: errol-navis-oso
+  nazev: "Účetní, který chtěl nebe"
+  nazev_en: "Errol Navis"
+  rok: "2861"
+  era: "Věk nápravy"
+  typ: "objev"
+  shrnuti: "Účetní Errol Navis vyrůstal v uzavřených základnách a toužil po světě s otevřeným nebem. Když mu firma Shubin zamítla přeložení na Terru, koupil si malou loď a jezdil s dcerou Oso na víkendové výlety. Na jednom z nich objevil na okraji soustavy Castra skokový bod a soustavu pojmenoval po dceři."
+  postavy:
+    - "Errol Navis"
+    - "Oso Navis"
+  zdroje:
+    - record_key: "galactapedia:bZkAvg8BPE"
+      rsi_url: "https://robertsspaceindustries.com/galactapedia/article/bZkAvg8BPE-errol-navis"
+  forma: "vyprávění"
+  hodnoceni: 3
+  hodnoceni_proc: "Laskavý rodinný příběh objevu."
+  stav: "nápad"
+  priorita: false
+
+- id: uees-flyssa
+  nazev: "Osud torpédoborce Flyssa"
+  nazev_en: "UEES Flyssa"
+  rok: "2862"
+  era: "Věk nápravy"
+  typ: "katastrofa"
+  shrnuti: "Torpédoborec třídy Javelin Flyssa sloužil od roku 2779 u vanduulské hranice a roku 2801 zničil v soustavě Odin tři vanduulské Blady. V roce 2862 měl pod velením kapitána Chin Ormistona vyhnat nelegální horníky z měsíce Daymar, když explodovala prchající loď a trosky rozervaly jeho trysky. Při nařízeném ústupu se motory přetížily, loď se zřítila na povrch a všech 65 lidí na palubě zahynulo."
+  postavy:
+    - "Chin Ormiston"
+    - "Thembeka Muholi"
+  zdroje:
+    - record_key: "galactapedia:V3GqNQAAXA"
+      rsi_url: "https://robertsspaceindustries.com/galactapedia/article/V3GqNQAAXA-uees-flyssa"
+    - record_key: "commlink:18203"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/18203-The-Fate-Of-The-UEES-Flyssa"
+  forma: "dramatizace"
+  hodnoceni: 4
+  hodnoceni_proc: "Konkrétní neštěstí s vrakem, který hráči znají z Daymaru."
+  stav: "nápad"
+  priorita: false
+
+- id: synthworld-announcement
+  nazev: "Ohlášení Synthworldu"
+  nazev_en: "2872: Behold Sisyphus / 2920: The Money Pit"
+  rok: "2872–2920"
+  era: "Věk nápravy"
+  typ: "politika"
+  shrnuti: "V roce 2872 ohlásila vláda projekt Archangel – stavbu umělé planety, která měla lidstvo zbavit morálního břemene terraformace, a pozitivně se k němu vyjádřil i xi'anský císař Kr.ē. O padesát let později už Terra Gazette psala o „finančním skokovém bodu“, kam peníze jen mizí."
+  postavy:
+    - "Corbyn Salehi"
+    - "Emperor Kr.ē"
+  zdroje:
+    - record_key: "commlink:12721"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/12721-2872-Behold-Sisyphus"
+    - record_key: "commlink:12722"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/12722-2920-The-Money-Pit"
+    - record_key: "galactapedia:RLMmAnr4gj"
+      rsi_url: "https://robertsspaceindustries.com/galactapedia/article/RLMmAnr4gj-project-archangel"
+  forma: "vyprávění"
+  hodnoceni: 2
+  hodnoceni_proc: "Už na webu (Synthworld)."
+  stav: "na webu"
+  priorita: false
+
+- id: theresa-branaugh
+  nazev: "Smrt Theresy Branaugh"
+  nazev_en: "Theresa Branaugh / Desmond Fell"
+  rok: "2873–2877"
+  era: "Věk nápravy"
+  typ: "záhada"
+  shrnuti: "Geoložka Theresa Branaugh financovala své výpravy půjčkami od lichvářů a nejednou před nimi musela prchat do jiných soustav. V roce 2873 se nevrátila z expedice do soustavy Chronos. O čtyři roky později našel průzkumník Desmond Fell za neznámým skokovým bodem její tělo v jeskyni na Branaugh II u vraku lodi, kterou sestřelil někdo, kdo tam měl úkryt; Fell pak soustavu pojmenoval po ní."
+  postavy:
+    - "Theresa Branaugh"
+    - "Desmond Fell"
+  zdroje:
+    - record_key: "galactapedia:VpMeGzBPyz"
+      rsi_url: "https://robertsspaceindustries.com/galactapedia/article/VpMeGzBPyz-theresa-branaugh"
+    - record_key: "galactapedia:RX3dlQ5KON"
+      rsi_url: "https://robertsspaceindustries.com/galactapedia/article/RX3dlQ5KON-desmond-fell"
+  forma: "dramatizace"
+  hodnoceni: 5
+  hodnoceni_proc: "Nevyřešená vražda a dvojí objev – silná záhada."
+  stav: "nápad"
+  priorita: false
+
+- id: dangerous-flight-valem
+  nazev: "Nebezpečný let doktora Valema"
+  nazev_en: "This Day in History: A Dangerous Flight"
+  rok: "2884"
+  era: "Věk nápravy"
+  typ: "osobní příběh"
+  shrnuti: "Zázračné dítě Russell Valem věřil, že skokové body lidstvo spoutávají, a léta vyvíjel motor schopný letět rychlostí světla. 14. ledna 2884 předvedl nad Angeli svůj prototyp CHARIOT, který kvůli strachu z krádeže nikdy nevyzkoušel v terénu. Po slovech „Skáču vpřed, abych odhalil vesmír“ motor zapnul a loď explodovala."
+  postavy:
+    - "Russell Valem"
+    - "Lasse Hatwell"
+  zdroje:
+    - record_key: "commlink:13474"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/13474-This-Day-In-History-A-Dangerous-Flight"
+  forma: "dramatizace"
+  hodnoceni: 4
+  hodnoceni_proc: "Krátký, ironický příběh o pýše s jasnou pointou."
+  stav: "nápad"
+  priorita: false
+
+- id: fall-of-caliban
+  nazev: "Pád Calibanu a Ztracená letka"
+  nazev_en: "Fall of Caliban / Squadron 89 / Sylvie Randall"
+  rok: "2884"
+  era: "Věk nápravy"
+  typ: "bitva"
+  shrnuti: "Po desetiletích drobných nájezdů padl 23. července 2884 Crion i celá soustava Caliban do rukou Vanduulů. Velitelka Sylvie Randall, která marně žádala o prostředky, nařídila 89. letce bránit a evakuovat civilisty; letka dva dny vzdorovala bez posil a přežil jen jeden pilot. Námořnictvo jednotku na její počest roku 2885 vyřadilo."
+  postavy:
+    - "Sylvie Randall"
+  zdroje:
+    - record_key: "galactapedia:0Gz5DNryvE"
+      rsi_url: "https://robertsspaceindustries.com/galactapedia/article/0Gz5DNryvE-fall-of-caliban"
+    - record_key: "galactapedia:0Gz5BNmPqo"
+      rsi_url: "https://robertsspaceindustries.com/galactapedia/article/0Gz5BNmPqo-squadron-89"
+    - record_key: "galactapedia:V3qgj86Wz2"
+      rsi_url: "https://robertsspaceindustries.com/galactapedia/article/V3qgj86Wz2-sylvie-randall"
+    - record_key: "commlink:16558"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/16558-Portfolio-Lost-Squad"
+  forma: "dramatizace"
+  hodnoceni: 5
+  hodnoceni_proc: "Už dramatizováno na webu."
+  stav: "na webu"
+  priorita: false
+
+- id: neville-lott
+  nazev: "Neville Lott: vrah z hor Tecuya"
+  nazev_en: "Neville Lott"
+  rok: "2884–2917"
+  era: "Věk nápravy"
+  typ: "zločin"
+  shrnuti: "Neville Lott přišel při Pádu Calibanu v roce 2884 o dvojče i rodiče a s těžkými popáleninami byl evakuován na Terru. Po propuštění z nemocnice zmizel a v horách Tecuya ve Vastacu se vydával za turistu, aby si vyhlédl oběti, které pak v masce z pytloviny unášel a zaživa pitval. Advocacy ho dopadla roku 2891, u soudu se nebránil a v roce 2917 zemřel ve vězení; autorka Paula Qi tvrdí, že vražedné sklony měl už před Calibanem."
+  postavy:
+    - "Neville Lott"
+    - "Paula Qi"
+  zdroje:
+    - record_key: "galactapedia:VlMgQm7qqM"
+      rsi_url: "https://robertsspaceindustries.com/galactapedia/article/VlMgQm7qqM-neville-lott"
+    - record_key: "commlink:18361"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/18361-Dispatches-From-The-Dark-Neville-Lotts-Clearing"
+  forma: "vyprávění"
+  hodnoceni: 3
+  hodnoceni_proc: "Silný, ale velmi temný materiál – zvážit vhodnost pro web."
+  stav: "nápad"
+  priorita: false
+
+- id: silent-song
+  nazev: "Tichá píseň"
+  nazev_en: "Silent Song"
+  rok: "2890–2900"
+  era: "Věk nápravy"
+  typ: "osobní příběh"
+  shrnuti: "K výročí Archy vzniklo v pásu asteroidů soustavy Tayac interaktivní dílo Silent Song, které je určeno k prohlížení z lodi. Vytvořili ho lidský umělec Yosef Colt, xi'anská umělkyně Nyalā Ao'ro a banuský výrobní souli, kteří od roku 2890 deset let žili spolu."
+  postavy:
+    - "Yosef Colt"
+    - "Nyalā Ao'ro"
+  zdroje:
+    - record_key: "galactapedia:VaZwNW43ym"
+      rsi_url: "https://robertsspaceindustries.com/galactapedia/article/VaZwNW43ym-silent-song"
+  forma: "vyprávění"
+  hodnoceni: 2
+  hodnoceni_proc: "Pěkný motiv mezidruhové spolupráce, ale bez děje."
+  stav: "nápad"
+  priorita: false
+
+- id: laurence-kiefly
+  nazev: "Pamatuji si domov"
+  nazev_en: "Untold Tales: The Journey Home"
+  rok: "2911–2914"
+  era: "Válka s Vanduuly / současnost"
+  typ: "záhada"
+  shrnuti: "Pilot Laurence Kiefly, chlapec ze Saisei, který chtěl být hercem, zmizel 1. února 2911 při průzkumné misi 106. letky do Calibanu a byl prohlášen za mrtvého. 17. prosince 2914 našli jeho rodiče před domem teplou bednu ze šrotu s vyrytým nápisem „Pamatuji si domov“ a v ní jeho tělo. Zemřel nanejvýš dva měsíce předtím a jeho rány někdo ošetřil primitivní, ale účinnou medicínou – kdo ho přivezl, se nikdy nezjistilo."
+  postavy:
+    - "Laurence Kiefly"
+    - "Jordan Kiefly"
+    - "Javier Kiefly"
+    - "Harper Kiefly"
+    - "Ava Toll"
+  zdroje:
+    - record_key: "commlink:16388"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/16388-Untold-Tales-The-Journey-Home"
+  forma: "dramatizace"
+  hodnoceni: 5
+  hodnoceni_proc: "Mrazivě dojemná záhada s jedinečnou pointou."
+  stav: "nápad"
+  priorita: true
+
+- id: suj-kossi
+  nazev: "Od zloděje k senátorovi"
+  nazev_en: "Suj Kossi"
+  rok: "2919–2946"
+  era: "Válka s Vanduuly / současnost"
+  typ: "osobní příběh"
+  shrnuti: "Tevarin Suj Kossi vyrůstal v rodině zlodějů na Jalanu; když roku 2919 při přepadení vodní farmy zahynula jeho sestra i tři farmáři – a na farmě nebylo nic k ukradení –, utekl a vstoupil do armády. Jako pilot v roce 2928 kryl vlastní lodí tři techniky před vanduulskou palbou, šestnáct měsíců se léčil a získal občanství i Medaili za statečnost. Pak bojoval za nájemníky proti nespravedlivým vystěhováním a roku 2946 se stal prvním tevarinským senátorem."
+  postavy:
+    - "Suj Kossi"
+    - "Fef Rusfa"
+  zdroje:
+    - record_key: "galactapedia:RMNgraDJAA"
+      rsi_url: "https://robertsspaceindustries.com/galactapedia/article/RMNgraDJAA-suj-kossi"
+  forma: "dramatizace"
+  hodnoceni: 5
+  hodnoceni_proc: "Celý životní oblouk vykoupení s výrazným zlomem."
+  stav: "nápad"
+  priorita: false
+
+- id: gal-dougan
+  nazev: "Poslední píseň Gal Dougan"
+  nazev_en: "Untold Tales: The Last Song of Gal Dougan"
+  rok: "2931"
+  era: "Válka s Vanduuly / současnost"
+  typ: "záhada"
+  shrnuti: "Folková zpěvačka Gal Dougan vyrostla v hornické rodině na Borei a proslavila se písněmi o dřině, lásce a rodině. 31. května 2931 se po letech ústraní objevila na udílení cen Elira v Prime, zazpívala dvě písně, tiše poděkovala a odešla – a už ji nikdo nikdy neviděl. Zpáteční let neměla koupený, odmítla odvoz s tím, že poletí vlastní lodí, ale všechny její lodě zůstaly doma."
+  postavy:
+    - "Gal Dougan"
+    - "Warner Dougan"
+  zdroje:
+    - record_key: "commlink:15361"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/15361-Untold-Tales"
+    - record_key: "galactapedia:box5WYgM2A"
+      rsi_url: "https://robertsspaceindustries.com/galactapedia/article/box5WYgM2A-gal-dougan"
+  forma: "vyprávění"
+  hodnoceni: 5
+  hodnoceni_proc: "Poetická nevyřešená záhada s výraznou postavou."
+  stav: "nápad"
+  priorita: false
+
+- id: kellars-run
+  nazev: "Kellarův útěk"
+  nazev_en: "Kellar's Run"
+  rok: "2931"
+  era: "Válka s Vanduuly / současnost"
+  typ: "zločin"
+  shrnuti: "V roce 2931 zastřelil Dean Kellar na pirátské stanici Spider v soustavě Cathcart tajného agenta Advocacy během sporu o trysky Anvil. Probil se ke své lodi a vedl zločince, agenty i ozbrojené civilisty sérií bitev napříč pěti soustavami. Honička skončila v soustavě Nexus, kde Kellara v přestřelce zabila civilistka Anna Flynn."
+  postavy:
+    - "Dean Kellar"
+    - "Anna Flynn"
+  zdroje:
+    - record_key: "galactapedia:RxNxDYYJNd"
+      rsi_url: "https://robertsspaceindustries.com/galactapedia/article/RxNxDYYJNd-kellars-run"
+    - record_key: "commlink:13885"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/13885-This-Day-In-History-Kellars-Run"
+  forma: "dramatizace"
+  hodnoceni: 5
+  hodnoceni_proc: "Akční honička napříč soustavami s jasným koncem."
+  stav: "nápad"
+  priorita: true
+
+- id: law-and-disorder-nexus
+  nazev: "Zkrocení Nexu"
+  nazev_en: "Law and Disorder: Calming the Crossroads of Crime"
+  rok: "2931"
+  era: "Válka s Vanduuly / současnost"
+  typ: "politika"
+  shrnuti: "Po Kellarově útěku nabídl ředitel Advocacy Renzo Berlanga rezignaci, ale Imperátor Mikkel Sheriden se ho zeptal, zda chce být ředitelem, který to dopustil, nebo tím, kdo to napravil. Berlanga agenturu zreformoval a UEE se pustila do dobývání soustavy Nexus. Nexus III se podařilo získat, ale po skandálu se zmizelými stíhačkami a politickém tlaku od plánu dobýt Nexus IV upustil."
+  postavy:
+    - "Renzo Berlanga"
+    - "Mikkel Sheriden"
+  zdroje:
+    - record_key: "commlink:18229"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/18229-Law-And-Disorder-The-Constant-Fight-For-A-Peaceful-Empire"
+  forma: "vyprávění"
+  hodnoceni: 3
+  hodnoceni_proc: "Dobré pokračování Kellarova útěku, spíš institucionální."
+  stav: "nápad"
+  priorita: false
+
+- id: walzer-massacre
+  nazev: "Masakr na stanici Demien"
+  nazev_en: "This Day in History: The Walzer Massacre"
+  rok: "2935"
+  era: "Válka s Vanduuly / současnost"
+  typ: "zločin"
+  shrnuti: "Po Kellarově útěku začala UEE dobývat soustavu Nexus a vyhnaný gang Horizon Crew se 10. ledna 2935 pokusil potají ovládnout stanici OP Demien. Čtrnáctiletý Arjun Walzer si všiml krvavého otisku ruky a téměř padesát minut byl ve spojení se svou matkou, agentkou Advocacy, a dokumentoval útok. Nikdo na stanici nepřežil, ale díky jeho zprávě zasáhly úřady dřív, než gang stanici zabezpečil, a mariňáci ji po šesti hodinách dobyli zpět."
+  postavy:
+    - "Arjun Walzer"
+    - "Emily Walzer"
+    - "Francis Walzer"
+  zdroje:
+    - record_key: "commlink:15668"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/15668-This-Day-In-History-The-Walzer-Massacre"
+  forma: "dramatizace"
+  hodnoceni: 5
+  hodnoceni_proc: "Napínavý a dojemný příběh s jasnou hlavní postavou."
+  stav: "nápad"
+  priorita: true
+
+- id: nine-tails-origin
+  nazev: "Zrod Devíti ocasů"
+  nazev_en: "Nine Tails"
+  rok: "2938–2943"
+  era: "Válka s Vanduuly / současnost"
+  typ: "zločin"
+  shrnuti: "Gang Nine Tails se poprvé ukázal roku 2938 útokem na vězeňský transport, při kterém zemřelo 28 policistů z Terry a byl osvobozen Albert „Sinkhole“ Holden, šéf syndikátu Rangda. Den nato byl Holden nalezen popravený ve vesmíru. Po letech nevyzpytatelných útoků gang roku 2942 náhle zmizel – a o rok později se vrátil a ovládl stanici Grim HEX ve Stantonu."
+  postavy:
+    - "Albert „Sinkhole“ Holden"
+  zdroje:
+    - record_key: "galactapedia:0Gxpleqwqo"
+      rsi_url: "https://robertsspaceindustries.com/galactapedia/article/0Gxpleqwqo-nine-tails"
+    - record_key: "commlink:18768"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/18768-Portfolio-Nine-Tails"
+  forma: "vyprávění"
+  hodnoceni: 4
+  hodnoceni_proc: "Krvavý vstup na scénu a nečekaný zvrat; propojení s hrou."
+  stav: "nápad"
+  priorita: false
+
+- id: unanswered-cry
+  nazev: "Nezodpovězené volání lodi Solomon"
+  nazev_en: "Untold Tales: The Unanswered Cry"
+  rok: "2941"
+  era: "Válka s Vanduuly / současnost"
+  typ: "záhada"
+  shrnuti: "20. června 2941 zachytila žoldnéřka Sera Misagaru v soustavě Bremen nouzové volání kapitána Stevense z lodi Solomon, ale na udaných souřadnicích nic nenašla. Ukázalo se, že stejné volání slyšeli i další piloti – pokaždé jinou zprávu a jiné souřadnice, ale vždy Solomon a vždy kapitán Stevens. Sera a další se od té doby každý rok vracejí pátrat."
+  postavy:
+    - "Sera Misagaru"
+    - "kapitán Stevens"
+    - "Johana Quint"
+  zdroje:
+    - record_key: "commlink:15977"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/15977-Untold-Tales-The-Unanswered-Cry"
+  forma: "dramatizace"
+  hodnoceni: 4
+  hodnoceni_proc: "Atmosférický „duch v éteru“, ideální pro audio."
+  stav: "nápad"
+  priorita: false
+
+- id: ellis-xi-collision
+  nazev: "Smrt planety Ellis XI"
+  nazev_en: "UEE Comm Archive: The Collision of Ellis XI / Death of a Planet"
+  rok: "2943"
+  era: "Válka s Vanduuly / současnost"
+  typ: "katastrofa"
+  shrnuti: "Po srážce s bludným asteroidem se malý měsíc planety Ellis XI začal pomalu propadat k jejímu povrchu a vědci nakonec uznali, že srážku nelze odvrátit. Senátor Clay Harren koordinoval s armádou ochranu obydlených planet a zároveň rozděloval těžební a vědecké kontrakty, o které se ucházela i geofyzička Aksha Fordhel. Zánik planety přilákal i xi'anské vědce a proměnil se v bohatý zdroj poznání a surovin."
+  postavy:
+    - "Clay Harren"
+    - "Aksha Fordhel"
+    - "Erin Patterson"
+  zdroje:
+    - record_key: "commlink:12985"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/12985-UEE-COMM-ARCHIVE-The-Collision-Of-Ellis-XI"
+    - record_key: "commlink:13049"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/13049-News-Update-Death-Of-A-Planet"
+  forma: "vyprávění"
+  hodnoceni: 3
+  hodnoceni_proc: "Velkolepý kosmický jev, ale málo lidského konfliktu."
+  stav: "nápad"
+  priorita: false
+
+- id: kofi-bafeuma-tamsa
+  nazev: "Banu, který chtěl potkat umělkyni"
+  nazev_en: "Kofi Baféuma (Cothi Bat-Thel-Ma)"
+  rok: "2943–2945"
+  era: "Válka s Vanduuly / současnost"
+  typ: "objev"
+  shrnuti: "Banuský průzkumník Kofi Baféuma objevil roku 2943 soustavu a prodal její polohu UEE pod podmínkou, že si ponechá právo ji pojmenovat. Dal jí jméno po lidské výtvarnici Tamse Wheel, aby se s ní mohl setkat – a v roce 2945 se mu to podařilo."
+  postavy:
+    - "Kofi Baféuma"
+    - "Tamsa Wheel"
+  zdroje:
+    - record_key: "galactapedia:bE3rL1DkwW"
+      rsi_url: "https://robertsspaceindustries.com/galactapedia/article/bE3rL1DkwW-kofi-bafeuma"
+  forma: "vyprávění"
+  hodnoceni: 3
+  hodnoceni_proc: "Roztomilá drobnost, zdroj je velmi krátký."
+  stav: "nápad"
+  priorita: false
+
+- id: parker-terrell-ellis
+  nazev: "Novinář, který zmizel"
+  nazev_en: "Parker Terrell"
+  rok: "2943"
+  era: "Válka s Vanduuly / současnost"
+  typ: "záhada"
+  shrnuti: "Investigativní novinář Parker Terrell prohlásil v pořadu Showdown!, že vláda UEE nelegálně použila superzbraň ke zničení povrchu planety Ellis XI, a pak na tři měsíce zmizel. Když ho Advocacy našla na Vannu a vyslechla, znovu vystoupil s tvrzením, že se musel skrývat, protože mluvil pravdu. New United s ním rozvázal smlouvu a Terrell začal roku 2944 moderovat vlastní pořad Plain Truth."
+  postavy:
+    - "Parker Terrell"
+  zdroje:
+    - record_key: "galactapedia:Rxnza3Qdqd"
+      rsi_url: "https://robertsspaceindustries.com/galactapedia/article/Rxnza3Qdqd-parker-terrell"
+    - record_key: "commlink:13049"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/13049-News-Update-Death-Of-A-Planet"
+  forma: "vyprávění"
+  hodnoceni: 3
+  hodnoceni_proc: "Konspirace navazující na zánik Ellis XI."
+  stav: "nápad"
+  priorita: false
+
+- id: adriena-santos-levski
+  nazev: "Špionka z Levski"
+  nazev_en: "DataCache: /rtrvd; A.Santos/"
+  rok: "2944"
+  era: "Válka s Vanduuly / současnost"
+  typ: "povídka"
+  shrnuti: "Adriena Santos byla v listopadu 2944 najata Mikahem Piercem, aby pronikla do komunity v Levski v soustavě Nyx. Mezi tamními lidmi však prošla proměnou, vrátila celou zálohu a zaměstnavatele varovala, aby soustavou už nikdy nepašoval otroky – a že má teď přátele, kteří se násilí nebojí."
+  postavy:
+    - "Adriena Santos"
+    - "Mikah Pierce"
+    - "scire_facias"
+  zdroje:
+    - record_key: "commlink:14620"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/14620-DataCache-rtrvd-ASantos"
+  forma: "vyprávění"
+  hodnoceni: 3
+  hodnoceni_proc: "Příběh proměny, ale zdroj je útržkovitý."
+  stav: "nápad"
+  priorita: false
+
+- id: buassi-prentice
+  nazev: "Deníky Buassiho Prentice"
+  nazev_en: "DISCOVERED: Journals of Buassi Prentice"
+  rok: "2944"
+  era: "Válka s Vanduuly / současnost"
+  typ: "povídka"
+  shrnuti: "Zadlužený badatel Buassi Prentice v listopadu 2944 utekl před věřitelem Vivendenem na lodi Pytheas a v Haven na Tyrolu sehnal posádku za slib odměny, kterou neměl. Týdny marně pátral v soustavě Hades po skokovém bodu, až mu posádka přestala věřit. Poslední zápis je prosba k Vivendenovi o výkupné – loď si mezitím posádka přejmenovala na Rip'N'Rag."
+  postavy:
+    - "Buassi Prentice"
+    - "Derek Voughn"
+    - "Vivenden"
+  zdroje:
+    - record_key: "commlink:14409"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/14409-DISCOVERED-Journals-Of-Buassi-Prentice"
+  forma: "dramatizace"
+  hodnoceni: 4
+  hodnoceni_proc: "Deníková forma se vzpourou a ironickou pointou."
+  stav: "nápad"
+  priorita: false
+
+- id: casey-thilo-gift
+  nazev: "Dárek k výročí"
+  nazev_en: "DataCache: commscan_caseythilo"
+  rok: "2944"
+  era: "Válka s Vanduuly / současnost"
+  typ: "povídka"
+  shrnuti: "Rio Calabas podezříval partnera Caseyho Thila ze skrývaných kreditů a falešných schůzek a najal hackera scire_facias, aby jeho komunikaci prolomil. Odposlech odhalil, že Casey tajně financuje výpravu průzkumnice Aimé Aliker, aby mohl k desátému výročí pojmenovat po Riovi nově objevenou soustavu."
+  postavy:
+    - "Rio Calabas"
+    - "Casey Thilo"
+    - "Aimé Aliker"
+    - "scire_facias"
+  zdroje:
+    - record_key: "commlink:14379"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/14379-DataCache-Commscan_caseythilo"
+  forma: "dramatizace"
+  hodnoceni: 3
+  hodnoceni_proc: "Krátký milý příběh s pointou; vhodný jako odlehčení."
+  stav: "nápad"
+  priorita: false
+
+- id: advocacy-lost-and-found
+  nazev: "Chlapec v záchranném modulu"
+  nazev_en: "ADVOCACY ARCHIVE: Lost & Found"
+  rok: "2945"
+  era: "Válka s Vanduuly / současnost"
+  typ: "zločin"
+  shrnuti: "V červnu 2945 našel agent Advocacy Salim Dominic u Odyssy po přestřelce trosky lodí a záchranný modul s malým chlapcem Dekkerem, kterého matka během boje katapultovala. Při výslechu chlapec prozradil, že matka šla v Odysse ukázat jakousi věc starému příteli. Zmínil i její nemilovanou známou – Cindy Kit, jméno spojené se syndikátem."
+  postavy:
+    - "Salim Dominic"
+    - "Dekker"
+  zdroje:
+    - record_key: "commlink:14794"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/14794-ADVOCACY-ARCHIVE-Lost-Found"
+  forma: "dramatizace"
+  hodnoceni: 3
+  hodnoceni_proc: "Dojemná výslechová scéna, ale fragment bez konce."
+  stav: "nápad"
+  priorita: false
+
+- id: advocacy-manhunt
+  nazev: "Hon na Clemena Acorda"
+  nazev_en: "ADVOCACY ARCHIVE: Manhunt"
+  rok: "2945"
+  era: "Válka s Vanduuly / současnost"
+  typ: "zločin"
+  shrnuti: "Agent Advocacy Aaron Desmond odletěl v březnu 2945 na Lo za svým informátorem FourBitem, který pronikl do skupiny radikála Clemena Acorda. Desmond našel FourBita popraveného v nákladním kontejneru a vyšetřování ho zavedlo k Acordovi – i ten však byl nalezen zabitý stejným způsobem. Po zbytku skupiny nebylo ani stopy."
+  postavy:
+    - "Aaron Desmond"
+    - "Catherine Lindy"
+    - "Terrence Wiley (FourBit)"
+    - "Clemen Acord"
+    - "Len Texiera"
+  zdroje:
+    - record_key: "commlink:14643"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/14643-ADVOCACY-ARCHIVE-Manhunt"
+  forma: "dramatizace"
+  hodnoceni: 3
+  hodnoceni_proc: "Napínavé, ale otevřené bez konce."
+  stav: "nápad"
+  priorita: false
+
+- id: battle-of-vega-ii
+  nazev: "Bitva o Vegu II"
+  nazev_en: "Battle of Vega II"
+  rok: "2945"
+  era: "Válka s Vanduuly / současnost"
+  typ: "bitva"
+  shrnuti: "5. října 2945 napadl velký vanduulský klan s Kingshipem planetu Aremis (Vega II). Druhá flotila admirála Ernsta Bishopa po zoufalém boji zničila Kingship a přeživší Vanduuly vyhnala. Bylo to poprvé v dějinách, kdy lidé Kingship zničili."
+  postavy:
+    - "Ernst Bishop"
+  zdroje:
+    - record_key: "galactapedia:0Gz5mkprmg"
+      rsi_url: "https://robertsspaceindustries.com/galactapedia/article/0Gz5mkprmg-battle-of-vega-ii"
+    - record_key: "galactapedia:ReJaavPB3k"
+      rsi_url: "https://robertsspaceindustries.com/galactapedia/article/ReJaavPB3k-ernst-bishop"
+  forma: "dramatizace"
+  hodnoceni: 4
+  hodnoceni_proc: "Už na webu jako válka o Vegu 2945."
+  stav: "na webu"
+  priorita: false
+
+- id: unexpected-guest
+  nazev: "Nečekaný host Octavie Wattové"
+  nazev_en: "Untold Tales: The Unexpected Guest"
+  rok: "2945"
+  era: "Válka s Vanduuly / současnost"
+  typ: "záhada"
+  shrnuti: "V prosinci 2945 chystala 127letá Octavia Watt na okraji vylidněného Tramu v soustavě Ferron dům na Den cestovatelů, když se do něj zřítil výsadkový modul námořní pěchoty. Její soused, bývalý námořník Merle Ramic, tvrdí, že uniforma vojáka uvnitř byla asi dvě stě let stará. UEE incident nikdy nekomentovala, jen Octavii vyplatila odstupné."
+  postavy:
+    - "Octavia Watt"
+    - "Merle Ramic"
+  zdroje:
+    - record_key: "commlink:15647"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/15647-Untold-Tales-The-Unexpected-Guest"
+  forma: "dramatizace"
+  hodnoceni: 4
+  hodnoceni_proc: "Podivná záhada s humornou hrdinkou."
+  stav: "nápad"
+  priorita: false
+
+- id: sojourner-travelogue
+  nazev: "Cestovní deník poutníka"
+  nazev_en: "Sojourner Travelogue"
+  rok: "2950"
+  era: "Válka s Vanduuly / současnost"
+  typ: "povídka"
+  shrnuti: "Deník tuláka ze srpna 2950 zachycuje drobné lekce z cest – například „užívej si to, co máš před sebou“. Vypravěč přespává v uzlu Covalex, stydí se za svou paži a ráno najde u batohu sendvič se vzkazem, aby vyhlížel loď Ithaca."
+  postavy: []
+  zdroje:
+    - record_key: "commlink:18345"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/serialized-fiction/18345-Sojourner-Travelogue"
+  forma: "vyprávění"
+  hodnoceni: 3
+  hodnoceni_proc: "Klidné meditativní vyprávění, vhodné pro audio."
+  stav: "nápad"
+  priorita: false
+
+- id: covalex-hanso-malloy
+  nazev: "Hnojivo, které skrývalo pašování"
+  nazev_en: "Portfolio: Covalex Shipping"
+  rok: "neuvedeno"
+  era: "Éra Messerů"
+  typ: "korporace"
+  shrnuti: "Na konci messerovské éry vysoké daně udělaly z běžného zboží luxus a pašerka Hanso Malloy hledala cestu k vzácné přepravní licenci. Farmář Covantino Lexly ji požádal o dovoz nebezpečného, ale účinného hnojiva moly-nitronese, které nikdo nechtěl vozit, a tak si u ministerstva zemědělství vymohla zvláštní licenci právě na ně. Hnojivo se špatně skenovalo a celníci ho neradi prohledávali – Covalex, pojmenovaný po farmáři, se tak stal dokonalou pašeráckou sítí, jejíž členové museli účtovat férové ceny."
+  postavy:
+    - "Hanso Malloy"
+    - "Covantino Lexly"
+  zdroje:
+    - record_key: "commlink:14802"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/14802-Portfolio-Covalex-Shipping"
+  forma: "vyprávění"
+  hodnoceni: 4
+  hodnoceni_proc: "Vtipný „heist“ původ velké firmy."
+  stav: "nápad"
+  priorita: false
+
+- id: lost-squad-before-the-fall
+  nazev: "Ztracená letka: Před pádem"
+  nazev_en: "Lost Squad: \"Before the Fall\""
+  rok: "neuvedeno"
+  era: "Věk nápravy"
+  typ: "povídka"
+  shrnuti: "Natáčecí scénář první epizody spektrálního seriálu Lost Squad, začínající v Boru na Crionu, kde se buduje nové město."
+  postavy: []
+  zdroje:
+    - record_key: "commlink:17616"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/serialized-fiction/17616-Lost-Squad-Before-The-Fall-Act-1"
+    - record_key: "commlink:17659"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/serialized-fiction/17659-Lost-Squad-Before-The-Fall-Act-2"
+    - record_key: "commlink:17701"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/serialized-fiction/17701-Lost-Squad-Before-The-Fall-Act-3"
+    - record_key: "commlink:17741"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/serialized-fiction/17741-Lost-Squad-Before-The-Fall-Act-4"
+  forma: "dramatizace"
+  hodnoceni: 4
+  hodnoceni_proc: "Souvisí s již zpracovanou Ztracenou letkou."
+  stav: "na webu"
+  priorita: false
+
+- id: brothers-in-arms
+  nazev: "Bratři ve zbrani"
+  nazev_en: "Brothers In Arms"
+  rok: "neuvedeno"
+  era: "Válka s Vanduuly / současnost"
+  typ: "povídka"
+  shrnuti: "Gavin Rhedd se svou malou bezpečnostní firmou Rhedd Alert Security týdny marně hledá zakázky a piráty, zatímco mu vypovídá HUD."
+  postavy:
+    - "Gavin Rhedd"
+  zdroje:
+    - record_key: "commlink:16942"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/serialized-fiction/16942-Brothers-In-Arms-Part-One"
+    - record_key: "commlink:16986"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/serialized-fiction/16986-Brothers-In-Arms-Part-Two"
+    - record_key: "commlink:17017"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/serialized-fiction/17017-Brothers-In-Arms-Part-Three"
+    - record_key: "commlink:17050"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/serialized-fiction/17050-Brothers-In-Arms-Part-Four"
+  forma: "dramatizace"
+  hodnoceni: 3
+  hodnoceni_proc: "Delší seriál; pro adaptaci nutno dočíst celý text."
+  stav: "nápad"
+  priorita: false
+
+- id: cassandras-tears
+  nazev: "Cassandřiny slzy"
+  nazev_en: "Cassandra's Tears"
+  rok: "neuvedeno"
+  era: "Válka s Vanduuly / současnost"
+  typ: "povídka"
+  shrnuti: "Pilot Cal Mason se na nosiči UEES Gemini v Centauri zotavuje čtyři týdny poté, co zachránil uneseného xi'anského diplomata. Svědí ho ruce vrátit se do kokpitu a vrací se ke své letce."
+  postavy:
+    - "Cal Mason"
+    - "Penny"
+  zdroje:
+    - record_key: "commlink:12739"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/serialized-fiction/12739-Cassandras-Tears-Issue-1"
+    - record_key: "commlink:12750"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/serialized-fiction/12750-Cassandras-Tears-Issue-2"
+    - record_key: "commlink:12758"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/serialized-fiction/12758-Cassandras-Tears-Issue-3"
+    - record_key: "commlink:12766"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/serialized-fiction/12766-Cassandras-Tears-Issue-4"
+    - record_key: "commlink:12786"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/serialized-fiction/12786-Cassandras-Tears-Issue-5"
+    - record_key: "commlink:12818"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/serialized-fiction/12818-Cassandras-Tears-Issue-6"
+    - record_key: "commlink:12822"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/serialized-fiction/12822-Cassandras-Tears-Issue-7"
+    - record_key: "commlink:12827"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/serialized-fiction/12827-Cassandras-Tears-Issue-8"
+    - record_key: "commlink:12835"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/serialized-fiction/12835-Cassandras-Tears-Issue-9"
+    - record_key: "commlink:12844"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/serialized-fiction/12844-Cassandras-Tears-Issue-10"
+  forma: "dramatizace"
+  hodnoceni: 3
+  hodnoceni_proc: "Delší seriál; pro adaptaci nutno dočíst celý text."
+  stav: "nápad"
+  priorita: false
+
+- id: collision-course
+  nazev: "Kolizní kurz"
+  nazev_en: "Collision Course"
+  rok: "neuvedeno"
+  era: "Válka s Vanduuly / současnost"
+  typ: "povídka"
+  shrnuti: "Žoldnéřka Clara v Stantonu marně čeká na zakázky, protože ji místní bezpečnostní firmy kvůli cechovnímu postavení odmítají. Její suché období přeruší dobrodružství ve třech dílech."
+  postavy:
+    - "Clara"
+    - "Gunther"
+  zdroje:
+    - record_key: "commlink:16058"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/serialized-fiction/16058-Collision-Course-Part-1"
+    - record_key: "commlink:16071"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/serialized-fiction/16071-Collision-Course-Part-2"
+    - record_key: "commlink:16081"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/serialized-fiction/16081-Collision-Course-Part-3"
+  forma: "dramatizace"
+  hodnoceni: 3
+  hodnoceni_proc: "Delší seriál; pro adaptaci nutno dočíst celý text."
+  stav: "nápad"
+  priorita: false
+
+- id: crossroads
+  nazev: "Na rozcestí"
+  nazev_en: "Crossroads"
+  rok: "neuvedeno"
+  era: "Válka s Vanduuly / současnost"
+  typ: "povídka"
+  shrnuti: "Tevarinský pirát Krenn se po zásahu katapultuje ze své Talon a jeho kokpit se zřítí na vrakoviště, kde zůstane zraněný a přišpendlený k sedadlu."
+  postavy:
+    - "Krenn"
+  zdroje:
+    - record_key: "commlink:18968"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/serialized-fiction/18968-Crossroads"
+  forma: "dramatizace"
+  hodnoceni: 3
+  hodnoceni_proc: "Tevarinská postava v současnosti; nutno dočíst."
+  stav: "nápad"
+  priorita: false
+
+- id: dateline-sesen
+  nazev: "Uzávěrka: Sesen"
+  nazev_en: "DATELINE: SESEN"
+  rok: "neuvedeno"
+  era: "Válka s Vanduuly / současnost"
+  typ: "povídka"
+  shrnuti: "Reportérka Ulla Yadav se s kolegou Haddixem ve vymrazené lodi Freelancer plíží ke skokovému bodu, aby odhalila „falešné piráty“ a firmy, které na nich vydělávají."
+  postavy:
+    - "Ulla Yadav"
+    - "Haddix"
+  zdroje:
+    - record_key: "commlink:13500"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/serialized-fiction/13500-DATELINE-SESEN-Part-One"
+    - record_key: "commlink:13557"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/serialized-fiction/13557-DATELINE-SESEN-Part-Two"
+    - record_key: "commlink:13558"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/serialized-fiction/13558-DATELINE-SESEN-Part-Three"
+    - record_key: "commlink:13570"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/serialized-fiction/13570-DATELINE-SESEN-Part-Four"
+    - record_key: "commlink:13594"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/serialized-fiction/13594-DATELINE-SESEN-Part-Five"
+    - record_key: "commlink:13595"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/serialized-fiction/13595-DATELINE-SESEN-Part-Six"
+    - record_key: "commlink:13634"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/serialized-fiction/13634-DATELINE-SESEN-Part-Seven"
+    - record_key: "commlink:13635"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/serialized-fiction/13635-DATELINE-SESEN-Part-Eight"
+    - record_key: "commlink:13636"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/serialized-fiction/13636-DATELINE-SESEN-Part-Nine"
+    - record_key: "commlink:13794"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/serialized-fiction/13794-DATELINE-SESEN-Part-Ten"
+    - record_key: "commlink:13795"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/serialized-fiction/13795-DATELINE-SESEN-Part-Eleven"
+  forma: "dramatizace"
+  hodnoceni: 3
+  hodnoceni_proc: "Delší seriál; pro adaptaci nutno dočíst celý text."
+  stav: "nápad"
+  priorita: false
+
+- id: divestment
+  nazev: "Rozdílení"
+  nazev_en: "Divestment"
+  rok: "neuvedeno"
+  era: "Válka s Vanduuly / současnost"
+  typ: "povídka"
+  shrnuti: "Banuský essosouli Njo slaví „rozdílení“ majetku po dosažení 275 milionů úderů srdce a jediná člověk v posádce, Jaclyn, nervózně čeká, co pro ni skrývá schránka. Njo ji kdysi potkal v uprchlickém táboře během občanské války v Charonu."
+  postavy:
+    - "Jaclyn"
+    - "Essosouli Njo"
+  zdroje:
+    - record_key: "commlink:20008"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/serialized-fiction/20008-Divestment"
+  forma: "dramatizace"
+  hodnoceni: 4
+  hodnoceni_proc: "Krásný pohled do banuské kultury přes lidskou hrdinku."
+  stav: "nápad"
+  priorita: false
+
+- id: drifters
+  nazev: "Tuláci"
+  nazev_en: "Drifters"
+  rok: "neuvedeno"
+  era: "Válka s Vanduuly / současnost"
+  typ: "povídka"
+  shrnuti: "Retaliator Echo Calling kapitána Reynoldse vytrhne EMP z kvantu do pasti pěti lodí, které přesně vědí, co veze. Díky záložnímu reaktoru má loď stále zbraně a štíty."
+  postavy:
+    - "Reynolds"
+    - "Nickels"
+  zdroje:
+    - record_key: "commlink:17794"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/serialized-fiction/17794-Drifters-Part-One"
+    - record_key: "commlink:17836"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/serialized-fiction/17836-Drifters-Part-Two"
+    - record_key: "commlink:17875"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/serialized-fiction/17875-Drifters-Part-Three"
+    - record_key: "commlink:17923"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/serialized-fiction/17923-Drifters-Part-Four"
+  forma: "dramatizace"
+  hodnoceni: 4
+  hodnoceni_proc: "Akční start s posádkou; vhodné k dramatizaci."
+  stav: "nápad"
+  priorita: false
+
+- id: dying-star
+  nazev: "Umírající hvězda"
+  nazev_en: "Dying Star"
+  rok: "neuvedeno"
+  era: "Válka s Vanduuly / současnost"
+  typ: "povídka"
+  shrnuti: "Kaseem, nováček na stanici Ruin v Pyru, pochopí, že ho gang Grevola poslal jako návnadu, aby odlákal Overlordy od skutečné zásilky. Odhodí falešný náklad, ale pronásledovatelé jdou dál po něm."
+  postavy:
+    - "Kaseem"
+  zdroje:
+    - record_key: "commlink:18295"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/serialized-fiction/18295-Dying-Star"
+  forma: "dramatizace"
+  hodnoceni: 3
+  hodnoceni_proc: "Krátká akční povídka z Pyra."
+  stav: "nápad"
+  priorita: false
+
+- id: finding-fiona-vid
+  nazev: "Hledání Fiony"
+  nazev_en: "Something Every Tuesday: Finding Fiona"
+  rok: "neuvedeno"
+  era: "Válka s Vanduuly / současnost"
+  typ: "záhada"
+  shrnuti: "Herečka Jasmine Dupree v talk show propaguje kontroverzní vid Sparrow, v němž hraje smyšlenou verzi Fiony Messer, která lituje svých činů a snaží se je napravit. Film rozpoutal debatu, zda si nejzlořečenější rod dějin zaslouží jakékoli vykoupení."
+  postavy:
+    - "Jasmine Dupree"
+    - "Esen Landari"
+    - "Fiona Messer"
+  zdroje:
+    - record_key: "commlink:15754"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/15754-Something-Every-Tuesday-Finding-Fiona"
+  forma: "vyprávění"
+  hodnoceni: 2
+  hodnoceni_proc: "Spíš doplněk k příběhu Fiony Messer než samostatný příběh."
+  stav: "nápad"
+  priorita: false
+
+- id: first-run
+  nazev: "První jízda"
+  nazev_en: "The First Run"
+  rok: "neuvedeno"
+  era: "Válka s Vanduuly / současnost"
+  typ: "povídka"
+  shrnuti: "Sorri Lyrax opouští otcův bar Golden Horde, aby se stala kurýrkou ve vesmíru, ačkoli otec tvrdí, že ve vesmíru jsou jen váleční štváči a zloději. Vypráví o své první zakázce."
+  postavy:
+    - "Sorri Lyrax"
+  zdroje:
+    - record_key: "commlink:13820"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/serialized-fiction/13820-The-First-Run-Episode-One"
+    - record_key: "commlink:13826"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/serialized-fiction/13826-The-First-Run-Episode-Two"
+    - record_key: "commlink:13847"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/serialized-fiction/13847-The-First-Run-Episode-Three"
+    - record_key: "commlink:13859"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/serialized-fiction/13859-The-First-Run-Episode-Four"
+    - record_key: "commlink:13860"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/serialized-fiction/13860-The-First-Run-Episode-Five"
+    - record_key: "commlink:13889"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/serialized-fiction/13889-The-First-Run-Episode-Six"
+    - record_key: "commlink:13900"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/serialized-fiction/13900-The-First-Run-Episode-Seven"
+    - record_key: "commlink:13901"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/serialized-fiction/13901-The-First-Run-Episode-Eight"
+    - record_key: "commlink:13946"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/serialized-fiction/13946-The-First-Run-Episode-Nine"
+    - record_key: "commlink:13966"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/serialized-fiction/13966-The-First-Run-Episode-Ten"
+    - record_key: "commlink:13981"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/serialized-fiction/13981-The-First-Run-Episode-Eleven"
+  forma: "dramatizace"
+  hodnoceni: 3
+  hodnoceni_proc: "Delší seriál; pro adaptaci nutno dočíst celý text."
+  stav: "nápad"
+  priorita: false
+
+- id: genesis-ii-inhabitants
+  nazev: "Válka, do které se nesmí zasáhnout"
+  nazev_en: "The Inhabitants of Genesis II"
+  rok: "neuvedeno"
+  era: "Válka s Vanduuly / současnost"
+  typ: "záhada"
+  shrnuti: "Na Genesis II žije nejméně pět vyvíjejících se druhů; oceánští hlavonožci začali pronikat na souš a krvavě se střetávají s ptačími plazy. Mnozí pozorovatelé čekají válku a vědci i etici se přou, zda ji zastavit dřív, než jeden z druhů zanikne. Zákon Fair Chance však jakýkoli zásah zakazuje."
+  postavy: []
+  zdroje:
+    - record_key: "galactapedia:01dWXY9edJ"
+      rsi_url: "https://robertsspaceindustries.com/galactapedia/article/01dWXY9edJ-inhabitants-of-genesis-ii"
+    - record_key: "galactapedia:RXlXmnaYGP"
+      rsi_url: "https://robertsspaceindustries.com/galactapedia/article/RXlXmnaYGP-fair-chance-act"
+  forma: "vyprávění"
+  hodnoceni: 3
+  hodnoceni_proc: "Silné etické dilema, ale bez děje a postav."
+  stav: "nápad"
+  priorita: false
+
+- id: hazy-days
+  nazev: "Zamlžené dny"
+  nazev_en: "Hazy Days"
+  rok: "neuvedeno"
+  era: "Válka s Vanduuly / současnost"
+  typ: "povídka"
+  shrnuti: "Pernell Arai se probudí v nemocnici v Orisonu po úspěšné regeneraci a lékařka ho varuje, že jeho poslední otisk paměti je starý. Vrací se mu útržky vzpomínek a nejasnosti, co se mu stalo."
+  postavy:
+    - "Pernell Arai"
+    - "Sergie"
+  zdroje:
+    - record_key: "commlink:19039"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/serialized-fiction/19039-Hazy-Days"
+  forma: "dramatizace"
+  hodnoceni: 3
+  hodnoceni_proc: "Zajímavé téma regenerace a paměti."
+  stav: "nápad"
+  priorita: false
+
+- id: hostile-negotiations
+  nazev: "Nepřátelská jednání"
+  nazev_en: "Hostile Negotiations"
+  rok: "neuvedeno"
+  era: "Válka s Vanduuly / současnost"
+  typ: "povídka"
+  shrnuti: "Kayla se po letech na Terře přestěhovala na Crusader a zvyká si na kancelářskou práci i život nad plynným obrem."
+  postavy:
+    - "Kayla"
+    - "Susan"
+  zdroje:
+    - record_key: "commlink:16567"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/serialized-fiction/16567-Hostile-Negotiations-Part-One"
+    - record_key: "commlink:16621"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/serialized-fiction/16621-Hostile-Negotiations-Part-Two"
+  forma: "dramatizace"
+  hodnoceni: 2
+  hodnoceni_proc: "Méně dramatický start; nutno dočíst."
+  stav: "nápad"
+  priorita: false
+
+- id: human-perspective
+  nazev: "Lidský pohled"
+  nazev_en: "A Human Perspective"
+  rok: "neuvedeno"
+  era: "Válka s Vanduuly / současnost"
+  typ: "povídka"
+  shrnuti: "Bývalý voják Charl Grissom žije na své malé banuské nákladní lodi Reacher a nejraději by v banuském prostoru zůstal navždy. Seriál sleduje jeho pohled na mimozemské kultury."
+  postavy:
+    - "Charl Grissom"
+  zdroje:
+    - record_key: "commlink:13074"
+      rsi_url: "https://robertsspaceindustries.com/comm-link/spectrum-dispatch/13074-A-Human-Perspective-Episode-1"
+    - record_key: "commlink:13075"
+      rsi_url: "https://web.archive.org/web/20140711233147/https://robertsspaceindustries.com/comm-link/spectrum-dispatch/13075-A-Human-Perspective-Episode-2"
+    - record_key: "commlink:13076"
+      rsi_url: "https://web.archive.org/web/20140712005651/https://robertsspaceindustries.com/comm-link/spectrum-dispatch/13076-A-Human-Perspective-Episode-3"
+    - record_key: "commlink:13077"
+      rsi_url: "https://web.archive.org/web/20140712013438/https://robertsspaceindustries.com/comm-link/spectrum-dispatch/13077-A-Human-Perspective-Episode-4"
+    - record_key: "commlink:13078"
+      rsi_url: "https://web.archive.org/web/20140712004924/https://robertsspaceindustries.com/comm-link/spectrum-dispatch/13078-A-Human-Perspective-Episode-5"
+    - record_key: "commlink:13079"
+      rsi_url: "https://web.archive.org/web/20140712003606/https://robertsspaceindustries.com/comm-link/spectrum-dispatch/13079-A-Human-Perspective-Episode-6"
+    - record_key: "commlink:13080"
+      rsi_url: "https://web.archive.org/web/20140712021924/https://robertsspaceindustries.com/comm-link/spectrum-dispatch/13080-A-Human-Perspective-Episode-7"
+    - record_key: "commlink:13081"
+      rsi_url: "https://web.archive.org/web/20140711234228/https://robertsspaceindustries.com/comm-link/spectrum-dispatch/13081-A-Human-Perspective-Episode-8"
+    - record_key: "commlink:13082"
+      rsi_url: "https://web.archive.org/web/20140712011443/https://robertsspaceindustries.com/comm-link/spectrum-dispatch/13082-A-Human-Perspective-Episode-9"
+    - record_key: "commlink:13083"
+      rsi_url: "https://web.archive.org/web/20140712022125/https://robertsspaceindustries.com/comm-link/spectrum-dispatch/13083-A-Human-Perspective-Episode-10"
+  forma: "dramatizace"
+  hodnoceni: 3
+  hodnoceni_proc: "Delší seriál; pro adaptaci nutno dočíst celý text."
+  stav: "nápad"
+  priorita: false
+
+- id: jared-yildiz-death
+  nazev: "Smrt herce Jareda Yildize"
+  nazev_en: "StarWatch: Murder or Worse?"
+  rok: "neuvedeno"
+  era: "Válka s Vanduuly / současnost"
+  typ: "záhada"
+  shrnuti: "Herec Jared Yildiz byl nalezen mrtvý na své lodi Constellation Phoenix, kterou zřejmě přepadli piráti. Pitva ale naznačila, že se mohl předávkovat drogou Neon ještě předtím, než ho útočníci zastřelili, a z lodi zmizela stíhačka P-72 Archimedes. Bulvár spekuloval o neznámém hostovi na palubě a podezření padlo i na skandálního Ellroye Casse; Advocacy vydala zatykač na Bonta Viceroye."
+  postavy:
+    - "Jared Yildiz"
+    - "Ellroy Cass"
+    - "Bont Viceroy"
+    - "Callie C"
+    - "Nash Toulouse"
+  zdroje:
+    - record_key: "commlink:14132"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/14132-StarWatch-Murder-Or-Worse"
+  forma: "dramatizace"
+  hodnoceni: 3
+  hodnoceni_proc: "Celebritní detektivka, ale bez rozuzlení ve zdroji."
+  stav: "nápad"
+  priorita: false
+
+- id: jasmine-bloom
+  nazev: "Volání Jasmine Bloom"
+  nazev_en: "Untold Tales: The Tale of the Jasmine's Plight"
+  rok: "neuvedeno"
+  era: "Válka s Vanduuly / současnost"
+  typ: "záhada"
+  shrnuti: "Záchranný tým Mulligan's ERS zachytil v nebezpečném pásu Coil v soustavě Odin nouzový signál, který se spustil teprve 45 minut předtím. Našli však vrak, který tam podle všeho plul desítky let – nákladní loď Jasmine Bloom, s níž se kapitánka Jasmine Fistern vydala do Odinu zhruba před třiceti lety. Uvnitř objevili kapitánku s rukou na konzoli a záchranný modul skrývající rodinné tajemství."
+  postavy:
+    - "Dottie Mulligan"
+    - "Jasmine Fistern"
+    - "Colin Fistern"
+  zdroje:
+    - record_key: "commlink:15175"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/15175-Untold-Tales"
+  forma: "dramatizace"
+  hodnoceni: 4
+  hodnoceni_proc: "Strašidelná záhada s časovým paradoxem; konec je ve zdroji jen naznačen."
+  stav: "nápad"
+  priorita: false
+
+- id: kid-crimson
+  nazev: "Příběhy Kida Crimsona"
+  nazev_en: "Tales of Kid Crimson"
+  rok: "neuvedeno"
+  era: "Válka s Vanduuly / současnost"
+  typ: "povídka"
+  shrnuti: "Psanec Salassi, přezdívaný Kid Crimson, se po měsíci unikání lovci odměn z Garronu chce v baru opít, když ho přepadnou dva ozbrojenci. S ironickým nadhledem vypráví, jak se z podobných situací dostává."
+  postavy:
+    - "Kid Crimson (Salassi)"
+  zdroje:
+    - record_key: "commlink:12744"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/serialized-fiction/12744-Tales-Of-Kid-Crimson-Issue-1"
+    - record_key: "commlink:12752"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/serialized-fiction/12752-Tales-Of-Kid-Crimson-Issue-2"
+    - record_key: "commlink:12761"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/serialized-fiction/12761-Tales-Of-Kid-Crimson-Issue-3"
+    - record_key: "commlink:12773"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/serialized-fiction/12773-Tales-Of-Kid-Crimson-Issue-4"
+    - record_key: "commlink:12812"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/serialized-fiction/12812-Tales-Of-Kid-Crimson-Issue-5"
+    - record_key: "commlink:12819"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/serialized-fiction/12819-Tales-Of-Kid-Crimson-Issue-6"
+    - record_key: "commlink:12824"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/serialized-fiction/12824-Tales-Of-Kid-Crimson-Issue-7"
+    - record_key: "commlink:12829"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/serialized-fiction/12829-Tales-Of-Kid-Crimson-Issue-8"
+    - record_key: "commlink:12837"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/serialized-fiction/12837-Tales-Of-Kid-Crimson-Issue-9"
+    - record_key: "commlink:12846"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/serialized-fiction/12846-Tales-Of-Kid-Crimson-Issue-10"
+  forma: "dramatizace"
+  hodnoceni: 3
+  hodnoceni_proc: "Delší seriál; pro adaptaci nutno dočíst celý text."
+  stav: "nápad"
+  priorita: false
+
+- id: knowledge-good-evil
+  nazev: "Poznání dobra a zla"
+  nazev_en: "The Knowledge of Good and Evil"
+  rok: "neuvedeno"
+  era: "Válka s Vanduuly / současnost"
+  typ: "povídka"
+  shrnuti: "Pouliční „krysa“ z Bazaar Street vypráví svérázným slangem, jak se naučila přežívat opravováním kradené techniky."
+  postavy: []
+  zdroje:
+    - record_key: "commlink:16584"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/serialized-fiction/16584-The-Knowledge-Of-Good-And-Evil-Part-One"
+    - record_key: "commlink:16633"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/serialized-fiction/16633-The-Knowledge-Of-Good-And-Evil-Part-Two"
+    - record_key: "commlink:16680"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/serialized-fiction/16680-The-Knowledge-Of-Good-And-Evil-Part-Three"
+    - record_key: "commlink:16727"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/serialized-fiction/16727-The-Knowledge-Of-Good-And-Evil-Part-Four"
+  forma: "dramatizace"
+  hodnoceni: 3
+  hodnoceni_proc: "Delší seriál; pro adaptaci nutno dočíst celý text."
+  stav: "nápad"
+  priorita: false
+
+- id: liam-nealey
+  nazev: "Sám ve vanduulském prostoru"
+  nazev_en: "Empire Report: Stranded in Vanduul Space"
+  rok: "neuvedeno"
+  era: "Válka s Vanduuly / současnost"
+  typ: "osobní příběh"
+  shrnuti: "Pilot Liam Nealey při průzkumu narazil v údajně neobydlené soustavě na vanduulský klan a jeho letka byla rozprášena. Katapultoval se, ukryl se ve vraku vanduulské lodi a po bitvě zjistil, že zůstal sám a kyslík mu nevydrží do příletu záchranářů. Zásoby hledal v troskách i u padlých kamarádů, jejichž jména a polohy si pečlivě zapisoval, aby se i oni mohli vrátit domů."
+  postavy:
+    - "Liam Nealey"
+    - "Anaya Nealey"
+    - "Gabija Nealey"
+    - "Victoria Hutchins"
+  zdroje:
+    - record_key: "commlink:16372"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/16372-Empire-Report-Stranded-In-Vanduul-Space"
+  forma: "dramatizace"
+  hodnoceni: 5
+  hodnoceni_proc: "Survival příběh s emotivním detailem a šťastným koncem."
+  stav: "nápad"
+  priorita: false
+
+- id: lost-generation
+  nazev: "Ztracená generace"
+  nazev_en: "The Lost Generation"
+  rok: "neuvedeno"
+  era: "Válka s Vanduuly / současnost"
+  typ: "povídka"
+  shrnuti: "Vrtař v lávových dolech korporace narazí při ražbě na nečekanou dutinu. Když jde podle předpisů změřit plyny, uvidí v ní něco, z čeho mu vypadne senzor z ruky."
+  postavy: []
+  zdroje:
+    - record_key: "commlink:12857"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/12857-The-Lost-Generation-Issue-1"
+    - record_key: "commlink:12865"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/12865-The-Lost-Generation-Issue-2"
+    - record_key: "commlink:12873"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/12873-The-Lost-Generation-Issue-3"
+    - record_key: "commlink:12881"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/12881-The-Lost-Generation-Issue-4"
+    - record_key: "commlink:12889"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/12889-The-Lost-Generation-Issue-5"
+    - record_key: "commlink:12898"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/12898-The-Lost-Generation-Issue-6"
+    - record_key: "commlink:12906"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/12906-The-Lost-Generation-Issue-7"
+    - record_key: "commlink:12914"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/12914-The-Lost-Generation-Issue-8"
+    - record_key: "commlink:12922"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/12922-The-Lost-Generation-Issue-9"
+    - record_key: "commlink:12930"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/12930-The-Lost-Generation-Issue-10"
+  forma: "dramatizace"
+  hodnoceni: 3
+  hodnoceni_proc: "Slibný tajemný začátek; nutno dočíst celý seriál."
+  stav: "nápad"
+  priorita: false
+
+- id: on-the-run
+  nazev: "Na útěku"
+  nazev_en: "On The Run"
+  rok: "neuvedeno"
+  era: "Válka s Vanduuly / současnost"
+  typ: "povídka"
+  shrnuti: "Strážný Duane potká na chodbě nečekaně banuského návštěvníka; druhý díl sleduje Alex na rušném banuském tržišti."
+  postavy:
+    - "Duane"
+    - "Alex"
+  zdroje:
+    - record_key: "commlink:16724"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/16724-On-The-Run"
+    - record_key: "commlink:16762"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/16762-On-The-Run-Pt-2"
+  forma: "dramatizace"
+  hodnoceni: 2
+  hodnoceni_proc: "Zdroj z úvodních pasáží nejasný; nutno dočíst."
+  stav: "nápad"
+  priorita: false
+
+- id: one-good-deed
+  nazev: "Jeden dobrý skutek"
+  nazev_en: "One Good Deed"
+  rok: "neuvedeno"
+  era: "Válka s Vanduuly / současnost"
+  typ: "povídka"
+  shrnuti: "Umar pracuje šest let pro odtahovou a asistenční službu In-A-Fix Assistance se svými drony BARD a dostane další volání o pomoc."
+  postavy:
+    - "Umar"
+    - "Jess"
+  zdroje:
+    - record_key: "commlink:16465"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/serialized-fiction/16465-One-Good-Deed-Part-One"
+    - record_key: "commlink:16524"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/serialized-fiction/16524-One-Good-Deed-Part-Two"
+  forma: "dramatizace"
+  hodnoceni: 3
+  hodnoceni_proc: "Delší seriál; pro adaptaci nutno dočíst celý text."
+  stav: "nápad"
+  priorita: false
+
+- id: one-last-job
+  nazev: "Poslední zakázka"
+  nazev_en: "One Last Job"
+  rok: "neuvedeno"
+  era: "Válka s Vanduuly / současnost"
+  typ: "povídka"
+  shrnuti: "Zadlužený Jonah jde do zaplivaného baru v doku na schůzku s člověkem, kterému dluží spoustu peněz."
+  postavy:
+    - "Jonah"
+  zdroje:
+    - record_key: "commlink:17101"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/serialized-fiction/17101-One-Last-Job-Part-One"
+    - record_key: "commlink:17134"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/serialized-fiction/17134-One-Last-Job-Part-Two"
+    - record_key: "commlink:17165"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/serialized-fiction/17165-One-Last-Job-Part-Three"
+    - record_key: "commlink:17212"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/serialized-fiction/17212-One-Last-Job-Part-Four"
+  forma: "dramatizace"
+  hodnoceni: 3
+  hodnoceni_proc: "Delší seriál; pro adaptaci nutno dočíst celý text."
+  stav: "nápad"
+  priorita: false
+
+- id: orbital-supermax
+  nazev: "Orbitální supermax"
+  nazev_en: "Orbital Supermax"
+  rok: "neuvedeno"
+  era: "Válka s Vanduuly / současnost"
+  typ: "povídka"
+  shrnuti: "Vypravěč, pašerák, si odpykává trest na vězeňské stanici OSP-4 v soustavě Banshee a místo cely musí chodit k psycholožce Cayle Wyrick, protože odkláněl léky do vězeňské ošetřovny."
+  postavy:
+    - "Cayla Wyrick"
+    - "kapitán Fieras"
+  zdroje:
+    - record_key: "commlink:13999"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/serialized-fiction/13999-Orbital-Supermax-Episode-One"
+    - record_key: "commlink:14009"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/serialized-fiction/14009-Orbital-Supermax-Episode-Two"
+    - record_key: "commlink:14021"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/serialized-fiction/14021-Orbital-Supermax-Episode-Three"
+    - record_key: "commlink:14036"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/serialized-fiction/14036-Orbital-Supermax-Episode-Four"
+    - record_key: "commlink:14051"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/serialized-fiction/14051-Orbital-Supermax-Episode-Five"
+    - record_key: "commlink:14068"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/serialized-fiction/14068-Orbital-Supermax-Episode-Six"
+    - record_key: "commlink:14078"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/serialized-fiction/14078-Orbital-Supermax-Episode-Seven"
+    - record_key: "commlink:14095"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/serialized-fiction/14095-Orbital-Supermax-Episode-Eight"
+    - record_key: "commlink:14110"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/serialized-fiction/14110-Orbital-Supermax-Episode-Nine"
+    - record_key: "commlink:14128"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/serialized-fiction/14128-Orbital-Supermax-Episode-Ten"
+    - record_key: "commlink:14140"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/serialized-fiction/14140-Orbital-Supermax-Episode-Eleven"
+  forma: "dramatizace"
+  hodnoceni: 3
+  hodnoceni_proc: "Delší seriál; pro adaptaci nutno dočíst celý text."
+  stav: "nápad"
+  priorita: false
+
+- id: phantom-bounty
+  nazev: "Odměna za Fantoma"
+  nazev_en: "Phantom Bounty"
+  rok: "neuvedeno"
+  era: "Válka s Vanduuly / současnost"
+  typ: "povídka"
+  shrnuti: "Lovci odměn Mila a Rhys pronásledují už 265 dní Fantoma a docházejí jim peníze; v další špinavé putyce doufají v rozhodující stopu."
+  postavy:
+    - "Mila"
+    - "Rhys"
+  zdroje:
+    - record_key: "commlink:16770"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/serialized-fiction/16770-Phantom-Bounty-Part-One"
+    - record_key: "commlink:16827"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/serialized-fiction/16827-Phantom-Bounty-Part-Two"
+    - record_key: "commlink:16876"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/serialized-fiction/16876-Phantom-Bounty-Part-Three"
+    - record_key: "commlink:16908"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/serialized-fiction/16908-Phantom-Bounty-Part-Four"
+  forma: "dramatizace"
+  hodnoceni: 3
+  hodnoceni_proc: "Delší seriál; pro adaptaci nutno dočíst celý text."
+  stav: "nápad"
+  priorita: false
+
+- id: second-run
+  nazev: "Druhá jízda: zásilka Sorri Lyrax"
+  nazev_en: "The Second Run: A Sorri Lyrax Delivery"
+  rok: "neuvedeno"
+  era: "Válka s Vanduuly / současnost"
+  typ: "povídka"
+  shrnuti: "Kurýrka Sorri Lyrax se vrací v novém dobrodružství, které začíná po kodrcavém letu na stanici nad Jatou."
+  postavy:
+    - "Sorri Lyrax"
+  zdroje:
+    - record_key: "commlink:17248"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/serialized-fiction/17248-The-Second-Run-A-Sorri-Lyrax-Delivery-Part-One"
+    - record_key: "commlink:17308"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/serialized-fiction/17308-The-Second-Run-A-Sorri-Lyrax-Delivery-Part-Two"
+    - record_key: "commlink:17365"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/serialized-fiction/17365-The-Second-Run-A-Sorri-Lyrax-Delivery-Part-Three"
+    - record_key: "commlink:17408"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/serialized-fiction/17408-The-Second-Run-A-Sorri-Lyrax-Delivery-Part-Four"
+  forma: "dramatizace"
+  hodnoceni: 3
+  hodnoceni_proc: "Delší seriál; pro adaptaci nutno dočíst celý text."
+  stav: "nápad"
+  priorita: false
+
+- id: separate-law
+  nazev: "Jiný zákon"
+  nazev_en: "A Separate Law"
+  rok: "neuvedeno"
+  era: "Válka s Vanduuly / současnost"
+  typ: "povídka"
+  shrnuti: "Gates jde do zchátralého civilního činžáku napravit situaci kolem svého informátora, protože ví, že kdo nechrání své zdroje, přijde o ně. Dvanáctidílná detektivka z prostředí Advocacy a podsvětí."
+  postavy:
+    - "Gates"
+    - "Tiger Kitty"
+  zdroje:
+    - record_key: "commlink:13137"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/serialized-fiction/13137-A-SEPARATE-LAW-PART-ONE"
+    - record_key: "commlink:13148"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/serialized-fiction/13148-A-SEPARATE-LAW-PART-TWO"
+    - record_key: "commlink:13166"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/serialized-fiction/13166-A-SEPARATE-LAW-PART-THREE"
+    - record_key: "commlink:13171"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/serialized-fiction/13171-A-SEPARATE-LAW-PART-FOUR"
+    - record_key: "commlink:13202"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/serialized-fiction/13202-A-SEPARATE-LAW-PART-FIVE"
+    - record_key: "commlink:13210"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/serialized-fiction/13210-A-SEPARATE-LAW-PART-SIX"
+    - record_key: "commlink:13222"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/serialized-fiction/13222-A-SEPARATE-LAW-PART-SEVEN"
+    - record_key: "commlink:13236"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/serialized-fiction/13236-A-SEPARATE-LAW-PART-EIGHT"
+    - record_key: "commlink:13248"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/serialized-fiction/13248-A-SEPARATE-LAW-PART-NINE"
+    - record_key: "commlink:13261"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/serialized-fiction/13261-A-SEPARATE-LAW-PART-TEN"
+    - record_key: "commlink:13273"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/serialized-fiction/13273-A-SEPARATE-LAW-PART-ELEVEN"
+    - record_key: "commlink:13286"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/serialized-fiction/13286-A-SEPARATE-LAW-PART-TWELVE"
+  forma: "dramatizace"
+  hodnoceni: 3
+  hodnoceni_proc: "Delší seriál; pro adaptaci nutno dočíst celý text."
+  stav: "nápad"
+  priorita: false
+
+- id: sid-and-cyrus
+  nazev: "Sid a Cyrus"
+  nazev_en: "Sid & Cyrus"
+  rok: "neuvedeno"
+  era: "Válka s Vanduuly / současnost"
+  typ: "povídka"
+  shrnuti: "Barmanka Sid v zapadlém baru Falling Sky obslouží nervózního mladíka, který tvrdí, že ho posílá Tomyris, vůdkyně psanců Cadejo Crew. Sid hned pozná, že je to jeho první zakázka."
+  postavy:
+    - "Sid"
+    - "Cyrus"
+    - "Tomyris"
+    - "Vinny"
+  zdroje:
+    - record_key: "commlink:17945"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/serialized-fiction/17945-Sid-Cyrus-Part-One"
+    - record_key: "commlink:17977"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/serialized-fiction/17977-Sid-Cyrus-Part-Two"
+    - record_key: "commlink:18027"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/serialized-fiction/18027-Sid-Cyrus-Part-Three"
+  forma: "dramatizace"
+  hodnoceni: 3
+  hodnoceni_proc: "Delší seriál; pro adaptaci nutno dočíst celý text."
+  stav: "nápad"
+  priorita: false
+
+- id: sins-of-the-father
+  nazev: "Hříchy otců"
+  nazev_en: "News Update: Sins of the Father"
+  rok: "neuvedeno"
+  era: "Válka s Vanduuly / současnost"
+  typ: "osobní příběh"
+  shrnuti: "Sedmnáctiletý Victor Heller, syn dvou pirátů z gangu Screaming Galsons, přerušil kontakty s rodiči a pracoval na třech místech, aby získal občanství. Jeho vrstevník Len Weeng z privilegované rodiny na Croshaw má cestu mnohem snazší. Uprostřed Victorova úsilí zabili lovci odměn jeho matku Arinu a piráti rodiče se znovu dostali do zpráv."
+  postavy:
+    - "Victor Heller"
+    - "Len Weeng"
+    - "Arina Heller"
+    - "Marjorie Lowe"
+  zdroje:
+    - record_key: "commlink:12961"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/12961-NEWS-UPDATE-SINS-OF-THE-FATHER"
+  forma: "vyprávění"
+  hodnoceni: 3
+  hodnoceni_proc: "Lidský příběh o občanství, bez velkého rozuzlení."
+  stav: "nápad"
+  priorita: false
+
+- id: the-cup
+  nazev: "Pohár"
+  nazev_en: "The Cup"
+  rok: "neuvedeno"
+  era: "Válka s Vanduuly / současnost"
+  typ: "povídka"
+  shrnuti: "Na Murray Cupu v soustavě Ellis se o vítězství utkají favorit Ykonde Remisk, xi'anský šampion Nyanāl Mo'tak Xu.oa, stárnoucí tevarinský veterán Zogat Guul a nováček Hypatia Darring, která získala pole position."
+  postavy:
+    - "Ykonde Remisk"
+    - "Nyanāl Mo'tak Xu.oa"
+    - "Zogat Guul"
+    - "Hypatia Darring"
+  zdroje:
+    - record_key: "commlink:16435"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/serialized-fiction/16435-The-Cup-Part-One"
+    - record_key: "commlink:16474"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/serialized-fiction/16474-The-Cup-Part-Two"
+    - record_key: "commlink:16533"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/serialized-fiction/16533-The-Cup-Part-Three"
+  forma: "dramatizace"
+  hodnoceni: 4
+  hodnoceni_proc: "Sportovní drama s výraznými postavami různých ras."
+  stav: "nápad"
+  priorita: false
+
+- id: the-meltdown
+  nazev: "Tavení"
+  nazev_en: "The Meltdown"
+  rok: "neuvedeno"
+  era: "Válka s Vanduuly / současnost"
+  typ: "povídka"
+  shrnuti: "Marid slaví s novými kolegy nástup do práce pod vedením Tami, která to přehnala s koktejly. Povídka sleduje jeho první dny v novém týmu."
+  postavy:
+    - "Marid"
+    - "Tami"
+  zdroje:
+    - record_key: "commlink:16417"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/serialized-fiction/16417-The-Meltdown"
+  forma: "dramatizace"
+  hodnoceni: 2
+  hodnoceni_proc: "Odlehčená povídka bez historického přesahu."
+  stav: "nápad"
+  priorita: false
+
+- id: the-payout
+  nazev: "Výplata"
+  nazev_en: "The Payout"
+  rok: "neuvedeno"
+  era: "Válka s Vanduuly / současnost"
+  typ: "povídka"
+  shrnuti: "Sully Cannata utíká tunely opuštěné továrny, zatímco za ním umírají jeho společníci při předávce, která se zvrtla."
+  postavy:
+    - "Sully Cannata"
+    - "Jens"
+  zdroje:
+    - record_key: "commlink:18261"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/serialized-fiction/18261-The-Payout"
+  forma: "dramatizace"
+  hodnoceni: 3
+  hodnoceni_proc: "Delší seriál; pro adaptaci nutno dočíst celý text."
+  stav: "nápad"
+  priorita: false
+
+- id: the-shakedown
+  nazev: "Vydírání"
+  nazev_en: "The Shakedown"
+  rok: "neuvedeno"
+  era: "Válka s Vanduuly / současnost"
+  typ: "povídka"
+  shrnuti: "Ostřílený dálkový přepravce Berkley si ohřívá jídlo na přehřívajícím se radaru během dlouhého letu, než se cesta zkomplikuje."
+  postavy:
+    - "Berkley"
+  zdroje:
+    - record_key: "commlink:18271"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/serialized-fiction/18271-The-Shakedown"
+  forma: "dramatizace"
+  hodnoceni: 2
+  hodnoceni_proc: "Humorný začátek, nejasný přínos pro kroniku."
+  stav: "nápad"
+  priorita: false
+
+- id: whisperer-in-the-dark
+  nazev: "Šeptající ve tmě"
+  nazev_en: "Whisperer in the Dark"
+  rok: "neuvedeno"
+  era: "Válka s Vanduuly / současnost"
+  typ: "povídka"
+  shrnuti: "Samotářská průzkumnice Tonya Oriel na lodi Beacon miluje ticho vesmíru, ale po třech týdnech musí do přeplněného uzlu Xenia v soustavě Baker prodat data a doplnit zásoby. Odehrává se před Ztracenou generací."
+  postavy:
+    - "Tonya Oriel"
+  zdroje:
+    - record_key: "commlink:16380"
+      rsi_url: "https://robertsspaceindustries.com/en/comm-link/serialized-fiction/16380-Whisperer-In-The-Dark"
+  forma: "dramatizace"
+  hodnoceni: 3
+  hodnoceni_proc: "Delší seriál; pro adaptaci nutno dočíst celý text."
+  stav: "nápad"
+  priorita: false
