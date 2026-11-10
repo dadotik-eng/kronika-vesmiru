@@ -1,4 +1,5 @@
 ---
+ilustrace: true
 jmeno: Corsen Messer V.
 narozeni: '2609'
 umrti: '2662'
