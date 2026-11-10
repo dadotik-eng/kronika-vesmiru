@@ -9,6 +9,8 @@ permalink: /o-projektu/
 
 **Kronika Vesmíru** převypráví česky dějiny vesmíru hry Star Citizen. Nejde o oficiální stránky – je to fanouškovský projekt.
 
+Kapitoly si můžeš **přečíst** (časová osa a stránky kapitol), nebo **poslechnout** v [archivu]({{ '/archiv/' | relative_url }}), kde je provází Archivář s hudbou a hlasem.
+
 ## Jak kapitoly vznikají
 
 1. **Rešerše** – fakta se dohledávají v oficiálních pramenech Roberts Space Industries: Galactapedie, Comm-Linky a Star Map.

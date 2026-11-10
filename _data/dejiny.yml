@@ -1,0 +1,62 @@
+# Hlavní vyprávění (10 kapitol nedělní Ukázky). Přehrává se v archiv/ pod #kap-N.
+# herni_rok = začátek období, podle něj se řadí časová osa.
+- rim: "I"
+  title: "Hvězdy na dosah"
+  rozpeti: "2075–2157"
+  era: "Úsvit Sluneční soustavy"
+  herni_rok: 2075
+  hraj: "kap-1"
+- rim: "II"
+  title: "První skok"
+  rozpeti: "2262–2292"
+  era: "Objev skokových bodů"
+  herni_rok: 2262
+  hraj: "kap-2"
+- rim: "III"
+  title: "Nejsme sami"
+  rozpeti: "2380–2438"
+  era: "Spojené národy Země"
+  herni_rok: 2380
+  hraj: "kap-3"
+- rim: "IV"
+  title: "Tři pilíře a první trhlina"
+  rozpeti: "2523–2530"
+  era: "Spojené planety Země"
+  herni_rok: 2523
+  hraj: "kap-4"
+- rim: "V"
+  title: "Válka, která stvořila diktátora"
+  rozpeti: "2541–2546"
+  era: "První tevarinská válka"
+  herni_rok: 2541
+  hraj: "kap-5"
+- rim: "VI"
+  title: "Dynastie"
+  rozpeti: "2546–2781"
+  era: "Éra Messerů"
+  herni_rok: 2546
+  hraj: "kap-6"
+- rim: "VII"
+  title: "Stín z Orionu"
+  rozpeti: "2681–2736"
+  era: "Příchod Vanduulů"
+  herni_rok: 2681
+  hraj: "kap-7"
+- rim: "VIII"
+  title: "Příliv"
+  rozpeti: "2789–2793"
+  era: "Pád Messerů"
+  herni_rok: 2789
+  hraj: "kap-8"
+- rim: "IX"
+  title: "Archa a umělý svět"
+  rozpeti: "2800–2884"
+  era: "Věk nápravy"
+  herni_rok: 2800
+  hraj: "kap-9"
+- rim: "X"
+  title: "Válka bez konce"
+  rozpeti: "2945–2956"
+  era: "Současnost"
+  herni_rok: 2945
+  hraj: "kap-10"

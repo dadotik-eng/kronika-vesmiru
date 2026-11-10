@@ -1,0 +1,20 @@
+{% assign osa = site.data.dejiny | concat: site.kapitoly | sort: "herni_rok" %}
+<ol class="osa">
+{% for k in osa %}
+  {% if k.hraj %}
+  <li>
+    <span class="tecka"></span>
+    <span class="rok">{{ k.rozpeti }}</span>
+    <a href="{{ '/archiv/#' | append: k.hraj | relative_url }}">{{ k.rim }}. {{ k.title }}</a>
+    <span class="era">{{ k.era }} · poslech v archivu</span>
+  </li>
+  {% else %}
+  <li class="nova">
+    <span class="tecka"></span>
+    <span class="rok">{{ k.herni_rok }}</span>
+    <a href="{{ k.url | relative_url }}">{{ k.title }}</a>
+    <span class="era">{% if k.era %}{{ k.era }} · {% endif %}nová kapitola</span>
+  </li>
+  {% endif %}
+{% endfor %}
+</ol>

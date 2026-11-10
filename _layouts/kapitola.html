@@ -3,14 +3,18 @@ layout: default
 ---
 <article class="kapitola">
   <p class="nadtitul">
-    {% if page.era %}{{ page.era }} · {% endif %}{% if page.herni_rok %}rok {{ page.herni_rok }}{% endif %}{% if page.system %} · systém {{ page.system }}{% endif %}
+    {% if page.era %}{{ page.era }} · {% endif %}{% if page.herni_rok %}{{ page.herni_rok }}{% endif %}{% if page.system %} · {{ page.system }}{% endif %}
   </p>
   <h1>{{ page.title }}</h1>
-  {% if page.overeni == "OK" %}
-    <p class="stav stav-ok">Ověřeno proti pramenům</p>
-  {% else %}
-    <p class="stav stav-ceka">Čeká na ověření{% if page.overeni_poznamka %} – {{ page.overeni_poznamka }}{% endif %}</p>
-  {% endif %}
+  <div class="radek-stav">
+    {% if page.overeni == "OK" %}
+      <span class="stav stav-ok">Ověřeno proti pramenům</span>
+    {% else %}
+      <span class="stav stav-ceka">Čeká na ověření{% if page.overeni_poznamka %} – {{ page.overeni_poznamka }}{% endif %}</span>
+    {% endif %}
+    {% assign slug = page.url | split: "/" | last %}
+    <a class="tlacitko plne male" href="{{ '/archiv/#web-' | append: slug | relative_url }}">▶ Přehrát s Archivářem</a>
+  </div>
   {% if page.audio %}
     <audio class="prehravac" controls preload="none" src="{{ page.audio }}"></audio>
   {% endif %}
@@ -20,7 +24,7 @@ layout: default
     <h2>Prameny</h2>
     <ul>
       {% for p in page.prameny %}
-        <li>{% if p.url %}<a href="{{ p.url }}" rel="noopener">{{ p.nazev }}</a>{% else %}{{ p.nazev }}{% endif %}{% if p.typ %} <span class="typ">{{ p.typ }}</span>{% endif %}</li>
+        <li>{% if p.url %}<a href="{{ p.url }}" rel="noopener">{{ p.nazev }}</a>{% else %}{{ p.nazev }}{% endif %}{% if p.typ %} · {{ p.typ }}{% endif %}</li>
       {% endfor %}
     </ul>
   </section>
