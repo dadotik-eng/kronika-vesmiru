@@ -1,0 +1,139 @@
+# Rod Messerů – rodokmen. Zdroj: články Galactapedie o jednotlivých Messerech (archiv H:\Kronika, stav 9. 11. 2026).
+# x = vodorovná poloha uzlu (0–1180), gen = generace (řádek), rodic = id rodiče, nejisty_rodic = vazba odvozená, ne výslovně uvedená.
+# cislo = pořadí imperátora (římská číslice v titulu). Marius IV dostal titul jen čestně.
+
+clenove:
+  - id: ivar-messer-i
+    zdroj: https://robertsspaceindustries.com/galactapedia/article/RXlXYPWk8q-ivar-messer-i
+    jmeno: Ivar Messer I.
+    zivot: 2516–2592
+    vlada: 2546–2592
+    cislo: I
+    gen: 0
+    x: 590
+    partner: Delia Hassan
+    text: Hrdina první tevarinské války z bitvy o Idris IV. Roku 2546 si nechal vytvořit úřad Prvního občana, rozpustil Tribunál a z UPE udělal Spojené impérium Země. Na začátku roku 2547 se prohlásil imperátorem a úřad se stal dědičným.
+  - id: deacon-messer-ii
+    zdroj: https://robertsspaceindustries.com/galactapedia/article/0j46m4BYge-deacon-messer-ii
+    jmeno: Deacon Messer II.
+    zivot: 2567–2661
+    vlada: 2592–2628
+    cislo: II
+    gen: 1
+    x: 590
+    rodic: ivar-messer-i
+    text: Jediný syn Ivara I. Vedl impérium za druhé tevarinské války a rozšířil pravomoci Advokacie. Roku 2628 dobrovolně předal trůn dceři Livii a zůstal jejím rádcem.
+    rozpor: Článek o Ivarovi I. uvádí svatbu roku 2571 a narození syna „krátce poté“, článek o Deaconovi ale uvádí rok narození 2567.
+  - id: livia-messer-iii
+    zdroj: https://robertsspaceindustries.com/galactapedia/article/01dWwaQkrL-livia-messer-iii
+    jmeno: Livia Messer III.
+    zivot: 2593–2661
+    vlada: 2628–2643
+    cislo: III
+    gen: 2
+    x: 300
+    rodic: deacon-messer-ii
+    partner: Daniel Scota
+    text: Zpřísnila tresty, nechala na Charonu III postavit politické věznice a fakticky zřídila úřad propagandy. Roku 2641 přežila havárii raketoplánu nad Moskvou, ve které zahynuli její manžel i syn. Roku 2643 odešla z veřejného života.
+  - id: corsen-messer-v
+    zdroj: https://robertsspaceindustries.com/galactapedia/article/0OaB8O6awO-corsen-messer-v
+    jmeno: Corsen Messer V.
+    zivot: 2609–2662
+    vlada: 2643–2662
+    cislo: V
+    gen: 2
+    x: 760
+    rodic: deacon-messer-ii
+    partner: Inaya Satti
+    text: Nejmladší syn Deacona II. Rozšířil trest smrti, zrušil právo na soud u politických zločinů a otevřel další věznice na Charonu III. Roku 2662 byl otráven spolu se synem Gammonem; historici z toho viní jeho dceru Illyanu.
+  - id: marius-messer-iv
+    zdroj: https://robertsspaceindustries.com/galactapedia/article/RxNxAgrXZz-marius-messer-iv
+    jmeno: Marius Messer IV.
+    zivot: 2625–2641
+    vlada: čestný titul
+    cislo: IV
+    cestny: true
+    gen: 3
+    x: 300
+    rodic: livia-messer-iii
+    text: Jediný syn Livie III. V šestnácti letech zahynul s otcem při havárii raketoplánu nad Moskvou. Matka mu udělila čestný titul imperátora.
+  - id: gammon-messer
+    zdroj: https://robertsspaceindustries.com/galactapedia/article/0rxrqgDP12-gammon-messer
+    jmeno: Gammon Messer
+    zivot: 2629–2662
+    gen: 3
+    x: 620
+    rodic: corsen-messer-v
+    partner: Yemi Duas
+    text: Nejstarší dítě Corsena V. Po smrti bratrance Maria se nečekaně stal následníkem. Připisuje se mu zpřísnění podmínek ve vězeních a kruté výslechové metody. Roku 2662 byl zavražděn spolu s otcem.
+  - id: illyana-messer-vi
+    zdroj: https://robertsspaceindustries.com/galactapedia/article/bZwQBNmWrL-illyana-messer-vi
+    jmeno: Illyana Messer VI.
+    zivot: 2631–2697
+    vlada: 2662–2697
+    cislo: VI
+    gen: 3
+    x: 900
+    rodic: corsen-messer-v
+    text: Na trůn usedla po vraždě otce a bratra, kterou jí historici přičítají. Za její vlády se zmírnila propaganda a tisk směl vládu kritizovat. Za nástupce určila mladšího syna Samuela, aby předešla sporům mezi dětmi.
+  - id: astrid-messer-vii
+    zdroj: https://robertsspaceindustries.com/galactapedia/article/0KnA1D5nQM-astrid-messer-vii
+    jmeno: Astrid Messer VII.
+    zivot: 2661–2701
+    vlada: 2697–2701
+    cislo: VII
+    gen: 4
+    x: 620
+    rodic: gammon-messer
+    text: Gammonova dcera. Po smrti tety Illyany se zmocnila trůnu a rozpoutala čtyřletou válku s Samuelovými stoupenci. Zesílila cenzuru a dala zatýkat novináře. Roku 2701 ji zavraždili Samuelovi agenti.
+  - id: galor-messer-ix
+    zdroj: https://robertsspaceindustries.com/galactapedia/article/VyvYAGKxAz-galor-messer-ix
+    jmeno: Galor Messer IX.
+    zivot: 2666–2751
+    vlada: 2715–2751
+    cislo: IX
+    gen: 4
+    x: 810
+    rodic: illyana-messer-vi
+    text: Starší syn Illyany. V dětství vážně onemocněl a nečekalo se, že se dožije dvaceti let. Matka ho vydědila ve prospěch mladšího bratra. Na trůn se dostal až po smrti mladšího bratra Samuela. Zavedl měnu imperiály a prosadil architektonický styl Meta-Baroque. Zemřel v úřadu v 85 letech.
+  - id: samuel-messer-viii
+    zdroj: https://robertsspaceindustries.com/galactapedia/article/RkZ9W2L2NB-samuel-messer-viii
+    jmeno: Samuel Messer VIII.
+    zivot: 2678–2715
+    vlada: 2697–2715
+    cislo: VIII
+    gen: 4
+    x: 1000
+    rodic: illyana-messer-vi
+    text: Matkou určený nástupce, kterého ale sesadila sestřenice Astrid. Po čtyřleté občanské válce ji nechal zavraždit a ujal se vlády. Omezil svobodu projevu a vojensky potlačoval protesty. Byl ubodán v posteli.
+    poznamka_vlada: Někteří historici počítají jeho vládu až od roku 2701.
+  - id: ulysses-messer-x
+    zdroj: https://robertsspaceindustries.com/galactapedia/article/bBp6YZPOGO-ulysses-messer-x
+    jmeno: Ulysses Messer X.
+    zivot: 2702–2781
+    vlada: 2751–2781
+    cislo: X
+    gen: 5
+    x: 1000
+    rodic: samuel-messer-viii
+    nejisty_rodic: true
+    text: Synovec Galora IX., který ho určil za nástupce a jemuž dělal vrchního tajemníka. Zrušil ochranu přírody, zvýšil daně a snížil minimální věk pro práci na deset let. Když ho roku 2781 svrhl syn Linton, spáchal sebevraždu.
+    rozpor: Galactapedie ho uvádí jako synovce Galora IX., ale otce výslovně nejmenuje. Jediným známým sourozencem Galora je Samuel VIII., proto vazba vede k němu čárkovaně.
+  - id: linton-messer-xi
+    zdroj: https://robertsspaceindustries.com/galactapedia/article/RwZBaD4Mdq-linton-messer-xi
+    jmeno: Linton Messer XI.
+    zivot: 2745–2792
+    vlada: 2781–2792
+    cislo: XI
+    gen: 6
+    x: 900
+    rodic: ulysses-messer-x
+    text: Poslední imperátor z rodu Messerů. K moci se dostal převratem proti otci. Prodal práva na terraformaci Garronu II, přestože věděl, že tam žijí vnímající bytosti. Zveřejnění masakru odstartovalo revoluci, během níž byl roku 2792 zabit.
+  - id: fiona-messer
+    zdroj: https://robertsspaceindustries.com/galactapedia/article/R56nLjJog7-fiona-messer
+    jmeno: Fiona Messer
+    zivot: 2768–?
+    gen: 6
+    x: 1090
+    rodic: ulysses-messer-x
+    text: Lintonova mladší sestra. Pomohla mu svrhnout otce, pak ale tajně spolupracovala s odbojem a předávala informace skupině Tide. Když vypukla revoluce, zmizela a dodnes se neví, co se s ní stalo.

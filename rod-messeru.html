@@ -1,0 +1,110 @@
+---
+layout: default
+title: Rod Messerů
+permalink: /rod-messeru/
+popis: Rodokmen dynastie Messerů, která vládla lidstvu 246 let. Od Ivara Messera I. po pád Lintona XI. v roce 2792.
+---
+{% assign rod = site.data.messerove.clenove %}
+<section class="blok osa-hlava">
+  <p class="nadtitul">Éra Messerů · 2546–2792</p>
+  <h1>Rod Messerů</h1>
+  <p class="perex">Jedenáct imperátorů, dvě vraždy v rodině, jedna občanská válka a jeden převrat. Klikni na jméno a dozvíš se, kdo to byl.</p>
+</section>
+
+<div class="strom-obal" aria-label="Rodokmen Messerů">
+  <div class="strom" id="strom">
+    <svg class="strom-cary" id="cary" aria-hidden="true"></svg>
+    {% for m in rod %}
+    <button type="button" class="uzel{% if m.cislo and m.cestny == nil %} imperator{% endif %}{% if m.cestny %} cestny{% endif %}" id="u-{{ m.id }}"
+      data-id="{{ m.id }}" data-gen="{{ m.gen }}" data-x="{{ m.x }}" data-rodic="{{ m.rodic }}" data-nejisty="{{ m.nejisty_rodic }}">
+      {% if m.cislo %}<span class="u-cislo">{{ m.cislo }}</span>{% endif %}
+      <span class="u-jmeno">{{ m.jmeno }}</span>
+      <span class="u-roky">{{ m.zivot }}</span>
+      {% if m.vlada %}<span class="u-vlada">vláda {{ m.vlada }}</span>{% endif %}
+      {% if m.partner %}<span class="u-partner">⚭ {{ m.partner }}</span>{% endif %}
+    </button>
+    {% endfor %}
+  </div>
+</div>
+
+<div class="blok strom-pod">
+  <div class="legenda">
+    <span><i class="lg imp"></i>imperátor (pořadí)</span>
+    <span><i class="lg cl"></i>člen rodu bez trůnu</span>
+    <span><i class="lg ces"></i>čestný titul</span>
+    <span><i class="lg nej"></i>vazba odvozená, ne výslovně uvedená</span>
+  </div>
+
+  <article class="medailon" id="medailon" aria-live="polite">
+    <p class="nadtitul">Vyber člena rodu</p>
+    <p>Klikni na kteréhokoli Messera v rodokmenu.</p>
+  </article>
+
+  <h2>Vlády v čase</h2>
+  <div class="vlady" id="vlady">
+    {% assign imp = rod | where_exp: "m", "m.cislo" | where_exp: "m", "m.cestny == nil" %}
+    {% for m in imp %}{% assign r = m.vlada | split: "–" %}
+    <div class="vlada-radek" data-od="{{ r[0] }}" data-do="{{ r[1] }}">
+      <span class="vl-jmeno">{{ m.jmeno }}</span>
+      <span class="vl-pas"><button type="button" class="vl-bar" data-id="{{ m.id }}" title="{{ m.jmeno }}: {{ m.vlada }}"><span>{{ m.vlada }}</span></button></span>
+    </div>
+    {% endfor %}
+    <div class="vlada-radek osa-let"><span class="vl-jmeno"></span><span class="vl-pas"><b>2546</b><b>2600</b><b>2650</b><b>2700</b><b>2750</b><b>2792</b></span></div>
+  </div>
+
+  <p class="poznamka">Zdroj: články Galactapedie o jednotlivých členech rodu, uložené v archivu Kroniky. Kde si prameny odporují, je to u medailonu uvedeno. Chceš slyšet celý příběh? <a href="{{ '/archiv/#kap-6' | relative_url }}">▶ Kapitola VI. Dynastie</a> · <a href="{{ '/archiv/#kap-8' | relative_url }}">▶ Kapitola VIII. Příliv</a></p>
+</div>
+
+<script>
+(function () {
+  var DATA = {{ rod | jsonify }};
+  var byId = {}; DATA.forEach(function (m) { byId[m.id] = m; });
+  var strom = document.getElementById('strom'), svg = document.getElementById('cary');
+  var W = 1180, RADEK = 150, VYSKA = 7 * RADEK;
+  strom.style.width = W + 'px'; strom.style.height = VYSKA + 'px';
+  svg.setAttribute('viewBox', '0 0 ' + W + ' ' + VYSKA); svg.setAttribute('width', W); svg.setAttribute('height', VYSKA);
+  var uzly = [].slice.call(strom.querySelectorAll('.uzel'));
+  uzly.forEach(function (u) {
+    u.style.left = (parseFloat(u.dataset.x) - 80) + 'px';
+    u.style.top = (parseInt(u.dataset.gen, 10) * RADEK + 12) + 'px';
+  });
+  function cara() {
+    var html = '';
+    uzly.forEach(function (u) {
+      var r = u.dataset.rodic; if (!r) return;
+      var p = document.getElementById('u-' + r); if (!p) return;
+      var x1 = p.offsetLeft + p.offsetWidth / 2, y1 = p.offsetTop + p.offsetHeight;
+      var x2 = u.offsetLeft + u.offsetWidth / 2, y2 = u.offsetTop, ym = (y1 + y2) / 2;
+      html += '<path d="M' + x1 + ' ' + y1 + ' V' + ym + ' H' + x2 + ' V' + y2 + '"' + (u.dataset.nejisty === 'true' ? ' class="nejisty"' : '') + '/>';
+    });
+    svg.innerHTML = html;
+  }
+  cara(); window.addEventListener('load', cara);
+
+  var med = document.getElementById('medailon');
+  function ukaz(id, skok) {
+    var m = byId[id]; if (!m) return;
+    uzly.forEach(function (u) { u.classList.toggle('vybrany', u.dataset.id === id); });
+    [].forEach.call(document.querySelectorAll('.vl-bar'), function (b) { b.classList.toggle('vybrany', b.dataset.id === id); });
+    med.innerHTML = '<p class="nadtitul">' + (m.cislo && !m.cestny ? m.cislo + '. imperátor · vláda ' + m.vlada : m.cestny ? 'čestný titul imperátora' : 'člen rodu') + '</p>' +
+      '<h2>' + m.jmeno + '</h2><p class="med-roky">' + m.zivot + (m.partner ? ' · manžel/ka: ' + m.partner : '') + '</p>' +
+      '<p>' + m.text + '</p>' + (m.poznamka_vlada ? '<p class="med-pozn">' + m.poznamka_vlada + '</p>' : '') +
+      (m.rozpor ? '<p class="med-pozn"><b>Rozpor v pramenech:</b> ' + m.rozpor + '</p>' : '') +
+      '<p class="med-odkazy">' + (m.zdroj ? '<a href="' + m.zdroj + '" target="_blank" rel="noopener">Článek v Galactapedii ↗</a>' : '') + '</p>';
+    if (history.replaceState) history.replaceState(null, '', '#' + id);
+    if (skok) med.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  }
+  uzly.forEach(function (u) { u.addEventListener('click', function () { ukaz(u.dataset.id, true); }); });
+  [].forEach.call(document.querySelectorAll('.vl-bar'), function (b) { b.addEventListener('click', function () { ukaz(b.dataset.id, true); }); });
+
+  // Pruhy vlád: 2546–2792
+  var A = 2546, B = 2792;
+  [].forEach.call(document.querySelectorAll('.vlada-radek[data-od]'), function (r) {
+    var od = parseInt(r.dataset.od, 10), d = parseInt(r.dataset.do, 10), bar = r.querySelector('.vl-bar');
+    bar.style.left = ((od - A) / (B - A) * 100) + '%'; bar.style.width = Math.max(1.2, (d - od) / (B - A) * 100) + '%';
+  });
+  [].forEach.call(document.querySelectorAll('.osa-let b'), function (b) { b.style.left = ((parseInt(b.textContent, 10) - A) / (B - A) * 100) + '%'; });
+
+  var h = location.hash.slice(1); ukaz(byId[h] ? h : 'ivar-messer-i', false);
+})();
+</script>
