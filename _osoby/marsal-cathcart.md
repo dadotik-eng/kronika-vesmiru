@@ -3,7 +3,7 @@ jmeno: Maršál Cathcart
 narozeni: neznámo
 umrti: neznámo
 role: maršál, pronásledovatel Adelaide Lorris
-kategorie: zlocin
+kategorie: armada
 medailonek: Cathcart byl uznávaný maršál, který v 25. století pronásledoval hledanou uprchlici Adelaide Lorris. Když Lorris v roce 2438 objevila novou soustavu, pojmenovala ji právě po něm. Soustava Cathcart se později stala útočištěm psanců a tuláků, kteří z vyřazených vojenských lodí postavili osadu Spider. Maršál Cathcart nakonec Lorris v roce 2464 zastřelil.
 zdroje:
 - nazev: Cathcart System
