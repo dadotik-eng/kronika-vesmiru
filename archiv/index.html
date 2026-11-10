@@ -27,7 +27,8 @@ canvas{position:fixed;inset:0;width:100%;height:100%;display:block;transition:op
 .top button:hover{color:var(--accent)}
 .top button[aria-current="page"]{color:var(--accent);border-color:var(--accent)}
 .brand{color:var(--muted)}
-.top a{color:inherit;text-decoration:none;padding:6px 0;border-bottom:2px solid transparent;letter-spacing:inherit}.top a:hover{color:#fff}
+.top{position:relative}.topmute{flex:none;width:40px;height:40px;border:1px solid var(--line);border-radius:50%;font-size:18px;line-height:1;display:grid;place-items:center;margin-left:14px;cursor:pointer}.topmute:hover{border-color:var(--accent)}.topmute.ztlumeno{border-color:#ff7a5c}
+.top a{color:inherit;text-decoration:none;padding:6px 0;border-bottom:2px solid transparent;letter-spacing:inherit}.top a:hover{color:#fff}.top a,#tabs button{white-space:nowrap}
 .stage{position:relative;min-height:0;display:flex;align-items:center;padding:0 clamp(20px,6vw,84px)}
 .stage.scroll{display:block;overflow:auto;padding-top:8px;padding-bottom:40px}
 .col{width:min(600px,46vw);position:relative}
@@ -107,7 +108,7 @@ h2{font:500 clamp(32px,3.8vw,48px)/1.14 var(--display);margin:.2em 0 .3em;text-w
 @media(prefers-reduced-motion:reduce){.find,.rise{animation:none}}
 @media(max-width:800px){
  body{font-size:18px}
- .top{padding:10px 14px;font-size:14px;letter-spacing:.05em;gap:4px;flex-wrap:wrap}.top .brand{width:100%}.top nav{gap:14px;flex-wrap:nowrap;overflow-x:auto;width:100%}.top nav button{flex:none}
+ .top{padding:10px 14px;font-size:14px;letter-spacing:.05em;gap:4px;flex-wrap:wrap}.top .brand{width:100%}.topmute{position:absolute;top:6px;right:10px}.top nav{gap:14px;flex-wrap:nowrap;overflow-x:auto;width:100%}.top nav button{flex:none}
  .stage{align-items:flex-end;padding:0 18px 16px}
  .stage.scroll{padding:6px 16px 26px}
  .stage.film::before{content:"";position:absolute;inset:32% 0 0;background:linear-gradient(transparent,rgba(8,26,51,.93) 26%);pointer-events:none}
@@ -131,7 +132,7 @@ h2{font:500 clamp(32px,3.8vw,48px)/1.14 var(--display);margin:.2em 0 .3em;text-w
 <div class="app">
   <header class="top" id="top" hidden>
     <a class="brand" href="../" title="Hlavní stránka">Kronika Vesmíru</a>
-    <nav id="tabs" aria-label="Kategorie"></nav>
+    <nav id="tabs" aria-label="Kategorie"></nav><button type="button" class="topmute" id="mute2" aria-label="Ztlumit zvuk" title="Ztlumit zvuk">&#128266;</button>
   </header>
   <main class="stage" id="stage"><div class="col" id="col"></div></main>
   <div class="ctl" id="ctl" hidden>
@@ -306,10 +307,10 @@ function toggle(){playing=!playing;setPP();if(playing){if(E)E.ctx.resume();run()
 function resumeOn(){if(!playing){playing=true;setPP();if(E)E.ctx.resume()}}
 let VOL=.8,muted=false;try{const v=parseFloat(localStorage.getItem('kv-vol'));if(v>=0&&v<=1)VOL=v;muted=localStorage.getItem('kv-mute')==='1'}catch(e){}
 function setVol(){const v=muted?0:VOL;if(E)E.master.gain.setTargetAtTime(.8*v,E.ctx.currentTime,.05);const r=$('#vol'),m=$('#mute');if(r)r.value=Math.round(VOL*100);
-  if(m){m.innerHTML=muted||VOL===0?'&#128263;':VOL<.4?'&#128264;':'&#128266;';m.setAttribute('aria-label',muted?'Zapnout zvuk':'Ztlumit');m.title=m.getAttribute('aria-label')}
+  [m,$('#mute2')].forEach(b=>{if(!b)return;b.innerHTML=muted||VOL===0?'&#128263;':VOL<.4?'&#128264;':'&#128266;';b.setAttribute('aria-label',muted?'Zapnout zvuk':'Ztlumit zvuk');b.title=b.getAttribute('aria-label');b.classList.toggle('ztlumeno',muted||VOL===0)})
   try{localStorage.setItem('kv-vol',VOL);localStorage.setItem('kv-mute',muted?'1':'0')}catch(e){}}
 $('#vol').oninput=e=>{VOL=e.target.value/100;muted=false;setVol()};
-$('#mute').onclick=()=>{muted=!muted;setVol();if(playing&&voiceOn)run()};
+$('#mute').onclick=$('#mute2').onclick=()=>{if(!muted&&VOL===0)VOL=.8;else muted=!muted;setVol();if(playing&&voiceOn)run()};
 setVol();
 $('#pp').onclick=toggle;
 $('#back').onclick=()=>{if(ln>0){ln--;resumeOn();run()}};
