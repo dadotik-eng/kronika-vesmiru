@@ -27,6 +27,7 @@ canvas{position:fixed;inset:0;width:100%;height:100%;display:block;transition:op
 .top button:hover{color:var(--accent)}
 .top button[aria-current="page"]{color:var(--accent);border-color:var(--accent)}
 .brand{color:var(--muted)}
+.top a{color:inherit;text-decoration:none;padding:6px 0;border-bottom:2px solid transparent;letter-spacing:inherit}.top a:hover{color:#fff}
 .stage{position:relative;min-height:0;display:flex;align-items:center;padding:0 clamp(20px,6vw,84px)}
 .stage.scroll{display:block;overflow:auto;padding-top:8px;padding-bottom:40px}
 .col{width:min(600px,46vw);position:relative}
@@ -129,7 +130,7 @@ h2{font:500 clamp(32px,3.8vw,48px)/1.14 var(--display);margin:.2em 0 .3em;text-w
 <canvas id="c" aria-hidden="true"></canvas>
 <div class="app">
   <header class="top" id="top" hidden>
-    <button type="button" class="brand" data-nav="domu">Kronika Vesmíru</button>
+    <a class="brand" href="../" title="Hlavní stránka">Kronika Vesmíru</a>
     <nav id="tabs" aria-label="Kategorie"></nav>
   </header>
   <main class="stage" id="stage"><div class="col" id="col"></div></main>
@@ -218,7 +219,7 @@ const after=(ms,f)=>timers.push(setTimeout(f,ms));
 const idx=id=>S.findIndex(s=>s.id===id);
 function chrome(v){view=v;const film=v==='scene'||v==='gate'||v==='end';const st=$('#stage');st.className='stage'+(film?' film':'')+(v==='hub'?' hubv':'')+(v==='list'?' scroll':'');
   $('#top').hidden=v==='gate'||(v==='scene'&&S[sc]&&S[sc].id==='prolog');$('#ctl').hidden=v!=='scene';renderTabs()}
-function renderTabs(){const on=location.hash.slice(1);$('#tabs').innerHTML=[['dejiny','Dějiny'],...CATKEYS.map(k=>[k,D.cats[k].short])].map(([k,l])=>`<button type="button" data-nav="${k}"${(view==='list'&&on===k)?' aria-current="page"':''}>${l}</button>`).join('')}
+function renderTabs(){const on=location.hash.slice(1);$('#tabs').innerHTML=[['dejiny','Dějiny'],...CATKEYS.map(k=>[k,D.cats[k].short])].map(([k,l])=>`<button type="button" data-nav="${k}"${(view==='list'&&on===k)?' aria-current="page"':''}>${l}</button>${k==='dejiny'?'<a href="../casova-osa/">Časová osa</a>':''}`).join('')}
 function stopScene(){viaFork=false;playing=false;token++;clear();duck(false);document.body.classList.remove('radio');document.body.dataset.mood='prolog';sc=-1;cancelAnimationFrame(rafYear)}
 function nav(h){fx('tick');if(location.hash==='#'+h)route();else location.hash=h}
 function route(){closeCard(false);const h=location.hash.slice(1);

@@ -20,7 +20,7 @@ popis: Rodokmen dynastie Messerů, která vládla lidstvu 246 let. Od Ivara Mess
       {% if m.cislo %}<span class="u-cislo">{{ m.cislo }}</span>{% endif %}
       <span class="u-jmeno">{{ m.jmeno }}</span>
       <span class="u-roky">{{ m.zivot }}</span>
-      {% if m.vlada %}<span class="u-vlada">vláda {{ m.vlada }}</span>{% endif %}
+      {% if m.cestny %}<span class="u-vlada">čestný titul</span>{% elsif m.vlada %}<span class="u-vlada">vláda {{ m.vlada }}</span>{% endif %}
       {% if m.partner %}<span class="u-partner">⚭ {{ m.partner }}</span>{% endif %}
     </button>
     {% endfor %}
@@ -42,7 +42,7 @@ popis: Rodokmen dynastie Messerů, která vládla lidstvu 246 let. Od Ivara Mess
 
   <h2>Vlády v čase</h2>
   <div class="vlady" id="vlady">
-    {% assign imp = rod | where_exp: "m", "m.cislo" | where_exp: "m", "m.cestny == nil" %}
+    {% assign imp = rod | where_exp: "m", "m.cislo" | where_exp: "m", "m.cestny == nil" | sort: "vlada" %}
     {% for m in imp %}{% assign r = m.vlada | split: "–" %}
     <div class="vlada-radek" data-od="{{ r[0] }}" data-do="{{ r[1] }}">
       <span class="vl-jmeno">{{ m.jmeno }}</span>
