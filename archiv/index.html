@@ -222,7 +222,7 @@ function chrome(v){view=v;const film=v==='scene'||v==='gate'||v==='end';const st
   $('#top').hidden=v==='gate'||(v==='scene'&&S[sc]&&S[sc].id==='prolog');$('#ctl').hidden=v!=='scene';renderTabs()}
 function renderTabs(){const on=location.hash.slice(1);$('#tabs').innerHTML=[['dejiny','Dějiny'],...CATKEYS.map(k=>[k,D.cats[k].short])].map(([k,l])=>`<button type="button" data-nav="${k}"${(view==='list'&&on===k)?' aria-current="page"':''}>${l}</button>${k==='dejiny'?'<a href="../casova-osa/">Časová osa</a>':''}`).join('')}
 function stopScene(){viaFork=false;playing=false;token++;clear();duck(false);document.body.classList.remove('radio');document.body.dataset.mood='prolog';sc=-1;cancelAnimationFrame(rafYear)}
-function nav(h){fx('tick');if(location.hash==='#'+h)route();else location.hash=h}
+function nav(h){if(h==='osobnosti'){location.href='../osobnosti/';return}fx('tick');if(location.hash==='#'+h)route();else location.hash=h}
 function route(){closeCard(false);const h=location.hash.slice(1);
   if(h==='dejiny'){stopScene();listHistory()}else if(CATKEYS.includes(h)){stopScene();listCat(h)}else if(h==='domu'){stopScene();hub()}else if(entered&&idx(h)>=0){go(h)}else if(!entered){gate()}else{stopScene();hub()}
   $('#stage').scrollTop=0}

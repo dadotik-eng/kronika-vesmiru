@@ -1,0 +1,1560 @@
+# Rejstřík osob Kroniky vesmíru.
+# Řazeno podle roku narození (neznámé na konci). Zdroj: lokální databáze Archiváře (Galactapedie, Comm-Linky).
+# kategorie: vladari | politika | armada | objevitele | veda-technika | korporace | kultura | zlocin | xiani-tevarini
+# kapitoly: id scén v archivu (kap-1 … kap-10, letka)
+
+- id: "scott-childress"
+  jmeno: "Scott Childress"
+  narozeni: "2032"
+  umrti: "2121"
+  role: "hlavní inženýr RSI, tvůrce kvantového pohonu"
+  kategorie: "veda-technika"
+  medailonek: "Doktor Scott Childress vedl jako hlavní inženýr tým vědců společnosti Roberts Space Industries (RSI), který v roce 2075 sestrojil první kvantový pohon vyrobený lidmi. Do RSI se dostal hned po absolvování Fairchildova institutu vědy a technologie v roce 2061, protože jeho disertace o konstrukci motorů pro rychlé kosmické lodě zaujala zakladatele firmy Chrise Robertse. Kvantové jádro RSI umožňovalo let rychlostí jedné setiny rychlosti světla. Otevřelo tak novou éru průzkumu Sluneční soustavy a obecně se považuje za základ, na kterém lidstvo později postavilo svou cestu ke hvězdám."
+  zdroje:
+    - nazev: "Scott Childress"
+      typ: Galactapedie
+      url: https://robertsspaceindustries.com/galactapedia/article/R5p68KXk5X-scott-childress
+  kapitoly: [kap-1]
+
+- id: "michelle-saleno"
+  jmeno: "Michelle Saleno"
+  narozeni: "2096"
+  umrti: "neznámo"
+  role: "zkušební pilotka, zakladatelka 999. zkušební letky"
+  kategorie: "armada"
+  medailonek: "Michelle „Sal“ Saleno se naučila létat ve čtrnácti letech od rodičů, kteří s malým zemědělským letadlem prováděli postřiky polí, a v osmnácti nastoupila do pilotního výcviku námořnictva Amecania. Jako zkušební pilotka v roce 2128 jako první člověk doletěla kvantovým pohonem za oběžnou dráhu Jupiteru. Když se v roce 2136 při prvním zkušebním letu rozpadl prototyp lodi Zeus, obrátila se na ni společnost RSI a Saleno prosadila vznik 999. zkušební letky. Její připomínky vedly k úplnému přepracování trupu, takže Zeus mohl v roce 2140 vstoupit na trh jako první civilní loď s kvantovým pohonem. Z námořnictva odešla v roce 2156 a začala učit na letecké škole pro děti z chudých poměrů."
+  zdroje:
+    - nazev: "Michelle Saleno"
+      typ: Galactapedie
+      url: https://robertsspaceindustries.com/galactapedia/article/bZkLx7GxXO-michelle-saleno
+  kapitoly: [kap-1]
+
+- id: "abeni-okon"
+  jmeno: "Abeni Okon"
+  narozeni: "2157"
+  umrti: "2252"
+  role: "první člověk narozený mimo Zemi"
+  kategorie: "kultura"
+  medailonek: "Abeni Okon přišla na svět na Marsu jako vůbec první člověk narozený na jiné planetě než na Zemi; její rodiče Kinah a Madu Okonovi patřili k prvním kolonistům. Média z ní udělala symbol lidské vynalézavosti a vytrvalosti, mimo jiné proto, že první pokus o terraformaci Marsu v roce 2125 skončil katastrofou. V mládí si slávu užívala, rozhazovala a špatně investovala, ale na konci svých dvacátých let se bez vysvětlení stáhla z veřejného života a věnovala se komunitní práci tam, kde bylo pomoci nejvíc zapotřebí. Naposledy se veřejně ukázala v roce 2232 jako čestný host při vypuštění kolonizační lodi Artemis. Zemřela přirozenou smrtí v roce 2252, je pochována na Marsu a její narozeniny 18. března se slaví jako lidský svátek."
+  zdroje:
+    - nazev: "Abeni Okon"
+      typ: Galactapedie
+      url: https://robertsspaceindustries.com/galactapedia/article/Rz2DPeZZnk-abeni-okon
+  kapitoly: [kap-1]
+
+- id: "nick-croshaw"
+  jmeno: "Nick Croshaw"
+  narozeni: "2236"
+  umrti: "2321"
+  role: "astrofyzik a pilot, první člověk, který prošel skokovým bodem"
+  kategorie: "objevitele"
+  medailonek: "Astrofyzik a pilot Nick Croshaw se 10. dubna 2271 zapsal do dějin jako první člověk, který objevil skokový bod a úspěšně jím proletěl. Léta předtím zkoumal Neso trojúhelník, oblast poblíž Neptunu, kde beze stopy mizely lodě, a dospěl k závěru, že za zmizeními stojí dosud neznámý druh vesmírné anomálie. Na sólovou výpravu se vydal s kvantovým pohonem, který si sám upravil. Stal se tak také prvním člověkem, který navštívil jinou planetární soustavu než Sluneční; ta později dostala jméno Croshaw. Jeho skok zahájil novou éru lidského průzkumu a kolonizace."
+  zdroje:
+    - nazev: "Nick Croshaw"
+      typ: Galactapedie
+      url: https://robertsspaceindustries.com/galactapedia/article/VyvYkAr7YW-nick-croshaw
+  kapitoly: [kap-2]
+
+- id: "liston-garrity"
+  jmeno: "Liston Garrity"
+  narozeni: "2248"
+  umrti: "2317"
+  role: "konstruktér zbraní, zakladatel Garrity Arms"
+  kategorie: "korporace"
+  medailonek: "Liston Garrity byl konstruktér zbraní, který na konci 23. století založil zbrojařskou firmu Garrity Arms. Narodil se na Zemi a úspěch jeho řady spalovacích pistolí Tedge mu umožnil přestěhovat se do rozvíjející se kolonie na Marsu. Za svůj život navrhl čtrnáct různých zbraní. Jeho příjmení se pod licencí používá jako značka zbraní dodnes."
+  zdroje:
+    - nazev: "Liston Garrity"
+      typ: Galactapedie
+      url: https://robertsspaceindustries.com/galactapedia/article/RxnPNwAW4M-liston-garrity
+  kapitoly: []
+
+- id: "antoine-lebec"
+  jmeno: "Antoine Lebec"
+  narozeni: "2258"
+  umrti: "2307?"
+  role: "navjumper, objevitel soustavy Nul"
+  kategorie: "objevitele"
+  medailonek: "Antoine Lebec se narodil na Zemi a k průzkumu ho přivedl objev soustavy Croshaw v roce 2271. Pilotní výcvik dokončil v roce 2277, ale vlastní loď si mohl koupit až v roce 2282, kdy v loterii vyhrál pozemek s těžebními právy na planetě Angeli (Croshaw II), pod kterým ležela přírodní žíla mědi. V roce 2290 objevil soustavu Nul; nahlásil, že při první návštěvě našel „nul“, a podle toho dostala soustava své jméno. V roce 2307 zmizel při průzkumu okrajových oblastí Nulu a historici se domnívají, že mohl zahynout při pokusu proletět skokovým bodem do Calibanu, který byl objeven až později."
+  zdroje:
+    - nazev: "Antoine Lebec"
+      typ: Galactapedie
+      url: https://robertsspaceindustries.com/galactapedia/article/0ODddzO7Dq-antoine-lebec
+  kapitoly: []
+
+- id: "adaliz-dayan"
+  jmeno: "Adaliz Dayan"
+  narozeni: "2279"
+  umrti: "2317?"
+  role: "terraformační inženýrka, objevitelka soustavy Banshee"
+  kategorie: "objevitele"
+  medailonek: "Adaliz Dayan pracovala jako inženýrka na terraformaci planety Hyperion (Fora III) a založila Immramskou asociaci, spolek, který mezi terraformačními úkoly prozkoumával okolní prostor. Za nezvyklých okolností zmizela, když zkoumala kapsu radiace. Při pátrání po její lodi se ukázalo, že radiace označuje skokový bod do dosud neznámé soustavy. Předpokládá se, že jím Dayan proletěla, ale nikdy ji nenašli. Soustava dostala jméno Banshee podle přezdívky, kterou si vysloužila při hraní sataballu na vysoké škole."
+  zdroje:
+    - nazev: "Adaliz Dayan"
+      typ: Galactapedie
+      url: https://robertsspaceindustries.com/galactapedia/article/Vgg7Ml89dN-adaliz-dayan
+  kapitoly: []
+
+- id: "neal-socolovich"
+  jmeno: "Neal Socolovich"
+  narozeni: "2373"
+  umrti: "2474"
+  role: "generál armády UNE, vyjednavač míru s Banu"
+  kategorie: "armada"
+  medailonek: "Neal Socolovich se narodil na planetě Angeli (Croshaw II) a v roce 2390 vstoupil do armády Spojených národů Země (UNE). Generálem se stal v roce 2415 po dvou nasazeních v soustavě Banshee, kde proslul schopností urovnávat spory s psanci bez jediného výstřelu. Od roku 2430 velel v nově objevené soustavě Davien a historici mu připisují zásluhu na tom, že první setkání lidstva s Banu v roce 2438 proběhlo mírově. Byl klíčovou postavou jednání o mírové a obchodní dohodě s Banu, první mezidruhové smlouvě v lidských dějinách. Po odchodu do výslužby v roce 2441 koupil pozemek na rodné planetě, začal vyrábět víno a zemřel v roce 2474."
+  zdroje:
+    - nazev: "Neal Socolovich"
+      typ: Galactapedie
+      url: https://robertsspaceindustries.com/galactapedia/article/VJX7vxG2BG-neal-socolovich
+    - nazev: "2438: Hello"
+      typ: Comm-Link
+      url: https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/12690-2438-Hello
+  kapitoly: [kap-3]
+
+- id: "ai-se-choan"
+  jmeno: "Āi se Cho'an"
+  narozeni: "2386"
+  umrti: "2577?"
+  role: "xi’anská navjumperka, objevitelka soustavy Yā'mon"
+  kategorie: "xiani-tevarini"
+  medailonek: "Āi se Cho'an pocházela z xi’anského rodu, který se specializoval na navigaci skokových bodů, a navigačnímu řemeslu se učila od dětství. Po dokončení xi’anské civilní služby v roce 2477 začala hledat nové skokové body. Za objev soustavy Yā'mon v roce 2529 získala ve věku pouhých 111 let (podle xi’anského kalendáře) postavení matriarchy. V roce 2577 zmizela při cestě soustavou T.āl; historici rodu Cho'an se domnívají, že zahynula při průletu dosud neobjeveným skokovým bodem. Rod proto zavedl pro své členy jako přechodový rituál roční pobyt v soustavě T.āl v naději, že najdou to, na co kdysi narazila ona."
+  zdroje:
+    - nazev: "Āi se Cho'an"
+      typ: Galactapedie
+      url: https://robertsspaceindustries.com/galactapedia/article/Rw1r27OoJJ-aai-se-choan
+  kapitoly: []
+
+- id: "micah-zahir"
+  jmeno: "Micah Zahir"
+  narozeni: "2460"
+  umrti: "2577"
+  role: "nezávislý průzkumník surovin, objevitel soustavy Oretani"
+  kategorie: "objevitele"
+  medailonek: "Micah Zahir se narodil na planetě Vann (Croshaw III) a v roce 2480 se přestěhoval na Asuru (Ferron III), kde chtěl pracovat jako operátor těžebních skenerů. Práci nesehnal, a tak se dal najmout jako doprovod zásobovacích konvojů. Na jedné z cest zachytil zvláštní signál, později se na místo vrátil sám a v roce 2481 objevil skokový bod do soustavy Oretani, kterou pojmenoval po své oblíbené lodi z filmu Blast Crater z roku 2464. Odměnu od Spojených národů Země (UNE) investoval do nemovitostí na Seleně (Vega III) a v době své smrti v roce 2577 patřil k největším vlastníkům půdy v soustavě Vega."
+  zdroje:
+    - nazev: "Micah Zahir"
+      typ: Galactapedie
+      url: https://robertsspaceindustries.com/galactapedia/article/R5pWGMakx9-micah-zahir
+  kapitoly: []
+
+- id: "arial-hurston"
+  jmeno: "Arial Hurston"
+  narozeni: "2466"
+  umrti: "2537"
+  role: "třetí výkonný ředitel Hurston Dynamics"
+  kategorie: "korporace"
+  medailonek: "Arial Hurston byl třetím výkonným ředitelem společnosti Hurston Dynamics. Jeho úsporná opatření přinesla firmě dvě desetiletí rekordních zisků. Patřila k nim i dodnes sporná pracovní smlouva typu Life/Labor, kterou zastánci práv pracujících kritizují jako tak svazující, že se téměř rovná legalizovanému otroctví. Na jeho počest dostal jméno Arial první měsíc planety Hurston."
+  zdroje:
+    - nazev: "Arial Hurston"
+      typ: Galactapedie
+      url: https://robertsspaceindustries.com/galactapedia/article/0qnN5w4kmW-arial-hurston
+  kapitoly: []
+
+- id: "janis-rezaian"
+  jmeno: "Janis Rezaian"
+  narozeni: "2469"
+  umrti: "2550"
+  role: "vrchní tajemnice UPE"
+  kategorie: "politika"
+  medailonek: "Janis Rezaian zastávala v letech 2539 až 2546 úřad vrchní tajemnice Spojených planet Země (UPE) a zasedala v Tribunálu. Spolu s vrchním advokátem Mauriciem Tuskem veřejně kritizovala vrchního generála Ivara Messera za to, že odmítá vyjednávat s ostatními členy Tribunálu. Jakmile se Messer stal prvním občanem, Tribunál rozpustil. V roce 2548 kandidovala na senátorku za planetu Vann (Croshaw III), ale volby prohrála. Zemřela přirozenou smrtí ve věku 81 let."
+  zdroje:
+    - nazev: "Janis Rezaian"
+      typ: Galactapedie
+      url: https://robertsspaceindustries.com/galactapedia/article/VaZwBAGOBv-janis-rezaian
+  kapitoly: [kap-5]
+
+- id: "ne-se-ruoth"
+  jmeno: "Nē\" se Ruoth"
+  narozeni: "2475"
+  umrti: "2898"
+  role: "xi’anská průzkumnice a historička"
+  kategorie: "xiani-tevarini"
+  medailonek: "Nē\" se Ruoth byla nejmladší dcerou jedné z matriarch xi’anského rodu Ruoth a měla se stát politickou historičkou jako ostatní v rodině, víc ji však lákal průzkum a pilotování lodí. Během civilní služby Pō't.ōngp.ū sloužila jako průzkumnice xi’anské armády a ve volných chvílích prozkoumávala okraje soustav, kde byla zrovna umístěna. Tak v roce 2542 objevila skokový bod ze soustavy R.il'a do soustavy Odara (dnešní Gurzil), kterou ovládaly Spojené planety Země (UPE). Její příchod do Odary vyhrotil napětí mezi Xi’any a lidmi, a tak sice dostala za objev pochvalu, ale za neopatrnost přišla o místo pilotky a zbytek služby odsloužila jako písařka. Po návratu se ujala rodinného řemesla, dál létala na vlastní lodi a v roce 2881 zvítězila v Koa e Ko'ia."
+  zdroje:
+    - nazev: "Nē\" se Ruoth"
+      typ: Galactapedie
+      url: https://robertsspaceindustries.com/galactapedia/article/V8WPAo6xpO-nee-se-ruoth
+  kapitoly: []
+
+- id: "upsana-dixit"
+  jmeno: "Upsana Dixit"
+  narozeni: "2491"
+  umrti: "2563"
+  role: "novinářka, tvůrkyně pořadu Showdown!"
+  kategorie: "kultura"
+  medailonek: "Upsana Dixit se narodila v roce 2491 v Quintonu na planetě Angeli (Croshaw II). V roce 2511 vytvořila Showdown!, třicetiminutový zvukový pořad, v němž se debatovalo o aktuálním dění. Když si pořad získal velké publikum, koupila ho společnost SSN/CAtv a v roce 2521 z něj udělala vysílání na Spectru. Dixit jej nestranně moderovala až do roku 2546, kdy na protest proti nástupu Ivara Messera I. k moci odešla. Zemřela ve věku 72 let při zemětřesení ve svém rodném Quintonu v roce 2563."
+  zdroje:
+    - nazev: "Upsana Dixit"
+      typ: Galactapedie
+      url: https://robertsspaceindustries.com/galactapedia/article/0Gx2n4G7na-upsana-dixit
+  kapitoly: []
+
+- id: "teesa-morrison"
+  jmeno: "Teesa Morrison"
+  narozeni: "2492"
+  umrti: "2571"
+  role: "průzkumnice, objevitelka skokového bodu Baker–Yā'mon"
+  kategorie: "objevitele"
+  medailonek: "Teesa Morrison se narodila na tankeru, který zrovna proletoval soustavou Cano, a sama o sobě říkala, že je „vesmírná tulačka a průzkumnice na plný úvazek“; výpravy si financovala příležitostnými zakázkami. V roce 2531 objevila v soustavě Baker skokový bod, ale za ním narazila na vojenskou jednotku Xi’anů a musela ustoupit. Armáda Spojených planet Země (UPE) se snažila zprávu utajit, jenže záznam setkání unikl do médií, a když se o dva týdny později z bodu vynořil xi’anský průzkumník, visela válka na vlásku. Pod tlakem veřejnosti však námořnictvo UPE zvolilo opatrný postup a otevřenému konfliktu se podařilo zabránit. Za vládní odměnu si Morrison koupila větší loď, která se stala jejím trvalým domovem, a v roce 2571 zemřela přirozenou smrtí při průletu soustavou Goss."
+  zdroje:
+    - nazev: "Teesa Morrison"
+      typ: Galactapedie
+      url: https://robertsspaceindustries.com/galactapedia/article/01LrNgqDrL-teesa-morrison
+  kapitoly: []
+
+- id: "mauricio-tusk"
+  jmeno: "Mauricio Tusk"
+  narozeni: "2499"
+  umrti: "2551"
+  role: "vrchní advokát UPE"
+  kategorie: "politika"
+  medailonek: "Mauricio Tusk sloužil od roku 2524 jako strážce zákona v Advokacii a v letech 2541 až 2546 zastával úřad vrchního advokáta Spojených planet Země (UPE). Spolu s vrchní tajemnicí Janis Rezaian veřejně kritizoval tehdejšího vrchního generála Ivara Messera za neochotu ke kompromisům s ostatními členy Tribunálu. Když byl Messer v roce 2546 zvolen prvním občanem a Tribunál zanikl, přišel Tusk o svůj úřad. Roku 2547 se vrátil k Advokacii a v roce 2551 zahynul při vysoce riskantní akci, jejímž cílem bylo někoho vyprostit."
+  zdroje:
+    - nazev: "Mauricio Tusk"
+      typ: Galactapedie
+      url: https://robertsspaceindustries.com/galactapedia/article/VY4WBM6OZ1-mauricio-tusk
+  kapitoly: [kap-5]
+
+- id: "marie-sante"
+  jmeno: "Marie Sante"
+  narozeni: "2504"
+  umrti: "2545?"
+  role: "navjumperka, objevitelka soustavy Horus"
+  kategorie: "objevitele"
+  medailonek: "Navjumperka Marie Sante se narodila na planetě Gonn (Oberon I) jako nejstarší ze sedmi dětí a často se musela starat o sourozence. Ve čtrnácti utekla z domova a znovu se objevila až v roce 2528, kdy ohlásila vládě Spojených planet Země (UPE) objev soustavy Horus, pojmenované po její lodi; podle podrobných map, které předložila, historici soudí, že tam byla poprvé až o deset let dříve. Když v roce 2542 objevila skokový bod do xi’anské soustavy R.il'a, zařadila UPE Horus do Perryho linie a uzavřela ho pro civilisty. Sante však odmítla odejít a dál soustavu prozkoumávala, přičemž unikala námořnictvu a občas se s ním i střetla. V roce 2545 i se svou lodí beze stopy zmizela a její osud je dodnes oblíbeným námětem příběhů a dokumentů na planetě Serling (Horus I)."
+  zdroje:
+    - nazev: "Marie Sante"
+      typ: Galactapedie
+      url: https://robertsspaceindustries.com/galactapedia/article/RX36PWwe4K-marie-sante
+  kapitoly: []
+
+- id: "ita-hurston"
+  jmeno: "Ita Hurston"
+  narozeni: "2512"
+  umrti: "2542"
+  role: "vrchní praporčice speciálních sil UPE"
+  kategorie: "armada"
+  medailonek: "Ita Hurston byla vrchní praporčicí a příslušnicí pokročilých speciálních operačních sil Spojených planet Země (UPE). Zemřela během první tevarinské války (2541–2546). Na její počest dostal jméno Ita čtvrtý měsíc planety Hurston (Stanton I)."
+  zdroje:
+    - nazev: "Ita Hurston"
+      typ: Galactapedie
+      url: https://robertsspaceindustries.com/galactapedia/article/0qnNMY2dO1-ita-hurston
+  kapitoly: []
+
+- id: "dahunsil-kosoko"
+  jmeno: "Dahunsil Kosoko"
+  narozeni: "2512"
+  umrti: "2581"
+  role: "navjumper, objevitel soustavy Gurzil"
+  kategorie: "objevitele"
+  medailonek: "Dahunsil Kosoko pocházel z planety Cestulus (Davien II) a v roce 2529 se na základě místního inzerátu přidal k posádce navjumperů. V roce 2538 přežil havárii lodi, po níž strávil osm měsíců v nemocnici a přišel o nohu. Z pojistného plnění si v den propuštění koupil novou loď, zamířil do tehdejší soustavy Nivelin a o tři týdny později, v roce 2539, objevil skokový bod do neznámé soustavy. Pojmenoval ji Odara po své tetě, ale v roce 2542, kdy byl objeven skokový bod z xi’anské soustavy R.il'a, ji přejmenovali na Gurzil a zařadili do Perryho linie. Navjumperem zůstal až do smrti v roce 2581, kterou způsobila porucha recyklace vzduchu na jeho lodi."
+  zdroje:
+    - nazev: "Dahunsil Kosoko"
+      typ: Galactapedie
+      url: https://robertsspaceindustries.com/galactapedia/article/0KxyMa6y82-dahunsil-kosoko
+  kapitoly: []
+
+- id: "inacio-santos-melo"
+  jmeno: "Inácio Santos Melo"
+  narozeni: "2513"
+  umrti: "2615"
+  role: "novinář, moderátor pořadu Showdown!"
+  kategorie: "kultura"
+  medailonek: "Inácio Santos Melo se narodil v roce 2513 na planetě Cestulus (Davien II). Začínal jako politický asistent, krátce řídil volební kampaně a pak se stal politickým zpravodajem listu United Times/Tribune. V roce 2546 nahradil tvůrkyni pořadu Showdown! Upsanu Dixit v roli moderátora. Jeho konfrontační přístup k hostům zvedl sledovanost a stal se pevnou součástí pořadu i poté, co Melo v roce 2588 odešel do důchodu."
+  zdroje:
+    - nazev: "Inácio Santos Melo"
+      typ: Galactapedie
+      url: https://robertsspaceindustries.com/galactapedia/article/0qnNMa3Mgq-inacio-stanos-melo
+  kapitoly: []
+
+- id: "kellar-lench"
+  jmeno: "Kellar Lench"
+  narozeni: "2514"
+  umrti: "2573"
+  role: "vědec, objevitel Tevarinů"
+  kategorie: "objevitele"
+  medailonek: "Doktor Kellar Lench byl vědec, který jako první člověk našel soustavu Elysium a civilizaci Tevarinů. Po doktorátu pracoval pro výzkumný institut New Horizons, dceřinou firmu skupiny Hathor, ale po více než 250 dnech osamělé mise na planetě Yar (Centauri II) opustil své stanoviště, dal výpověď a odjel do města Fujin na planetě Saisei (Centauri III). Dne 15. listopadu 2541 objevil v soustavě Centauri skokový bod do soustavy plné života. Jeho rozhodnutí sdělit objev Spojeným planetám Země (UPE) vedlo k prvnímu kontaktu s Tevariny a následně k první tevarinské válce. Později přednášel fyziku na Marsovském institutu vesmírných technologií (MIST) a zemřel v roce 2573 na následky alkoholismu."
+  zdroje:
+    - nazev: "Kellar Lench"
+      typ: Galactapedie
+      url: https://robertsspaceindustries.com/galactapedia/article/V7d2g8xxva-kellar-lench
+  kapitoly: [kap-5]
+
+- id: "ivar-messer-i"
+  jmeno: "Ivar Messer I."
+  narozeni: "2516"
+  umrti: "2592"
+  role: "první imperátor UEE"
+  kategorie: "vladari"
+  rod: "messer"
+  medailonek: "Ivar Messer sloužil jako důstojník 112. pěšího praporu armády Spojených planet Země (UPE) a vyznamenal se v první tevarinské válce, v operaci Nemesis i v bitvě o Idris IV, kde po smrti svého velitele převzal velení a dovedl vojáky k vítězství. Vláda jeho obraz statečného a charismatického důstojníka využila v náborové kampani a Messer z této popularity po válce vytěžil politický vliv i místo vrchního generála v Tribunálu. Pobouření veřejnosti po krveprolití v Jatě využil k prosazení nového úřadu prvního občana, do kterého byl 15. prosince 2546 v mimořádných volbách sám zvolen. Poté rozpustil Tribunál, přejmenoval UPE na Spojené impérium Země (UEE) a počátkem roku 2547 se prohlásil imperátorem. V roce 2571 se oženil s technickou ředitelkou Delií Hassan a jejich jediný syn Deacon po jeho smrti v roce 2592 převzal vládu."
+  rozpor: "Podle článku o Ivarovi se oženil s Delií Hassan v roce 2571 a syna Deacona měl „krátce poté“, článek o Deaconovi však uvádí, že se Deacon narodil už v roce 2567."
+  zdroje:
+    - nazev: "Ivar Messer I"
+      typ: Galactapedie
+      url: https://robertsspaceindustries.com/galactapedia/article/RXlXYPWk8q-ivar-messer-i
+    - nazev: "Deacon Messer II"
+      typ: Galactapedie
+      url: https://robertsspaceindustries.com/galactapedia/article/0j46m4BYge-deacon-messer-ii
+  kapitoly: [kap-5, kap-6]
+
+- id: "adam-corr"
+  jmeno: "Adam Corr"
+  narozeni: "2519"
+  umrti: "neznámo"
+  role: "veterán armády UPE, podezřelý z atentátů roku 2546"
+  kategorie: "zlocin"
+  medailonek: "Adam Corr byl veterán armády Spojených planet Země (UPE), který jako četař bojoval v bitvě o Idris IV pod velením Ivara Messera I. a z armády odešel s čestným propuštěním. Později byl označen za jednoho ze dvou mužů, kteří údajně na Messerův rozkaz provedli v roce 2546 sérii bombových útoků v UPE. Jako specialista na infiltraci zaplatil jen pár dní před prvními výbuchy kauci za odborníka na trhaviny Cyruse Ishitaku, který seděl ve vězení na planetě Cestulus (Davien II). Co se s Correm stalo potom, není známo."
+  zdroje:
+    - nazev: "Adam Corr"
+      typ: Galactapedie
+      url: https://robertsspaceindustries.com/galactapedia/article/V3qgyvG8ZY-adam-corr
+  kapitoly: [kap-5]
+
+- id: "cyrus-ishitaka"
+  jmeno: "Cyrus Ishitaka"
+  narozeni: "2521"
+  umrti: "2546"
+  role: "veterán armády UPE, podezřelý z atentátů roku 2546"
+  kategorie: "zlocin"
+  medailonek: "Cyrus Ishitaka byl veterán armády Spojených planet Země (UPE) v hodnosti desátníka a spolubojovník Ivara Messera I. z bitvy o Idris IV. O jeho soukromém životě se ví málo, kromě opakovaného zatčení za držení a distribuci drog. Jako armádní expert na trhaviny byl později podezírán, že spolu s Adamem Correm provedl na Messerův rozkaz sérii bombových útoků v roce 2546. Pobýval na čtyřech z pěti zasažených planet a necelý týden po posledním útoku ho našli mrtvého; pitva mu pod nehty odhalila stopy chemikálie použité při útocích."
+  zdroje:
+    - nazev: "Cyrus Ishitaka"
+      typ: Galactapedie
+      url: https://robertsspaceindustries.com/galactapedia/article/R4ZGy5XJXe-cyrus-ishitaka
+  kapitoly: [kap-5]
+
+- id: "eli-price"
+  jmeno: "Eli Price"
+  narozeni: "2560"
+  umrti: "2663"
+  role: "poručík námořnictva UEE, objevitel skokového bodu Oya–Castra"
+  kategorie: "objevitele"
+  medailonek: "Eli Price byl poručíkem námořnictva Spojeného impéria Země (UEE) a později právníkem; oficiálně je veden jako objevitel skokového bodu mezi soustavami Oya a Castra z roku 2587. Při pátrání po psancích, kteří přepadali nákladní lodě v Castře, hlídal místo, kam ukládali kořist, a podle svých deníků viděl, jak se odnikud vynořila loď a zboží odvezla. Tajně ji sledoval až k neznámému skokovému bodu a na druhé straně z odposlechu zjistil, že jde o skupinu lidských separatistů, kteří přepadali lodě jen tehdy, když potřebovali zásoby. Přes vnitřní rozpory objev nahlásil; námořnictvo vyslalo úderné jednotky, a když se psanci pokusili uprchnout, jejich lodě zničilo. Price se s pocitem viny nevyrovnal, v roce 2591 odešel z armády a po studiu práv působil až do konce kariéry jako obhájce."
+  zdroje:
+    - nazev: "Eli Price"
+      typ: Galactapedie
+      url: https://robertsspaceindustries.com/galactapedia/article/bo1wkzJE41-eli-price
+  kapitoly: []
+
+- id: "leonard-casse"
+  jmeno: "Leonard Casse"
+  narozeni: "2563"
+  umrti: "2615"
+  role: "konstruktér lodí, zakladatel Casse Aerospace"
+  kategorie: "veda-technika"
+  medailonek: "Leonard Casse začínal v roce 2587 jako mladší inženýr u Roberts Space Industries v týmu transportní lodi Starbright, kde ho povýšili poté, co odhalil potenciálně nebezpečnou chybu v jejím návrhu. V roce 2595 už vedl návrh modelu Starbright 2600, který sklidil chválu za vstupní systém a ovládání. V roce 2599 odešel z RSI, protože mu nevyhovovala hierarchická struktura, a založil Casse Aerospace, kde měl názor každého stejnou váhu. Stihl vytvořit jen dvě lodě, Cosmo Sloop a stíhačku Hurricane, než v roce 2615 zahynul při srážce za letu. Jeho rukopis se znovu proslavil v 80. letech 28. století díky J. Harrisi Arnoldovi z Anvil Aerospace a v roce 2902 byl Casse uveden do Síně slávy Edlesonova institutu designu."
+  zdroje:
+    - nazev: "Leonard Casse"
+      typ: Galactapedie
+      url: https://robertsspaceindustries.com/galactapedia/article/RX3Krj1EKN-leonard-casse
+  kapitoly: []
+
+- id: "deacon-messer-ii"
+  jmeno: "Deacon Messer II."
+  narozeni: "2567"
+  umrti: "2661"
+  role: "imperátor UEE (2592–2628)"
+  kategorie: "vladari"
+  rod: "messer"
+  medailonek: "Deacon Messer II., jediný syn Ivara I. a Delie Hassan, vládl jako imperátor Spojeného impéria Země (UEE) v letech 2592 až 2628. Za jeho vlády proběhla druhá tevarinská válka (2603–2610); zvýšil výdaje na armádu, rozšířil pravomoci Advokacie a zpřísnil minimální tresty, zároveň však podpořil průzkum a terraformaci, zvýšil daně bohatým a snížil je chudým a střední třídě. V roce 2628 dobrovolně předal vládu dceři Livii III. a zůstal jejím poradcem až do smrti vnuka Mariuse IV. v roce 2641. V roce 2643 se spolu s Livií zcela stáhl z veřejného života a přerušil styky se synem Corsenem V., s vnoučaty si však blízký vztah udržel až do své smrti v roce 2661."
+  rozpor: "Článek o Ivarovi Messerovi I. uvádí, že se Ivar oženil s Delií Hassan v roce 2571 a syna Deacona měl „krátce poté“; podle článku o Deaconovi se však Deacon narodil už v roce 2567."
+  zdroje:
+    - nazev: "Deacon Messer II"
+      typ: Galactapedie
+      url: https://robertsspaceindustries.com/galactapedia/article/0j46m4BYge-deacon-messer-ii
+    - nazev: "Ivar Messer I"
+      typ: Galactapedie
+      url: https://robertsspaceindustries.com/galactapedia/article/RXlXYPWk8q-ivar-messer-i
+  kapitoly: [kap-6]
+
+- id: "assan-kieren"
+  jmeno: "Assan Kieren"
+  narozeni: "2584"
+  umrti: "2639?"
+  role: "guvernér Terry, zastánce odtržení od UEE"
+  kategorie: "politika"
+  medailonek: "Assan Kieren byl politik zastupující Terru, který se veřejně stavěl proti militaristickému kurzu Spojeného impéria Země (UEE). Guvernérem Terry byl zvolen v roce 2633. V roce 2638 se proslavil v celém impériu, když vyzval, aby Terra uspořádala hlasování o suverenitě, které by jí umožnilo od UEE odejít. Messerovská propaganda se ho snažila zdiskreditovat, referendum neprošlo a vzniklý skandál ukončil jeho politickou kariéru. Následující listopad za dosud nevyjasněných okolností zmizel."
+  zdroje:
+    - nazev: "Assan Kieren"
+      typ: Galactapedie
+      url: https://robertsspaceindustries.com/galactapedia/article/RWwZQK774P-assan-kieren
+  kapitoly: [kap-6]
+
+- id: "livia-messer-iii"
+  jmeno: "Livia Messer III."
+  narozeni: "2593"
+  umrti: "2661"
+  role: "imperátorka UEE (2628–2643)"
+  kategorie: "vladari"
+  rod: "messer"
+  medailonek: "Livia Messer III. vládla Spojenému impériu Země (UEE) v letech 2628 až 2643 poté, co jí otec Deacon II. dobrovolně přenechal úřad. Navázala na jeho právní reformy: zvýšila horní hranice trestů a změnila definici věznic, což jí umožnilo zřídit politické věznice na planetě Charon III. Posílila také vládní dohled nad médii, čímž fakticky vznikl neoficiální úřad propagandy, a z bezpečnostních důvodů omezila cestování. V roce 2641 přežila havárii raketoplánu nad Moskvou, při níž zahynuli její manžel Daniel Scota a syn Marius. V roce 2643 odešla z úřadu, synovi udělila čestný titul Marius IV. a v roce 2661 zemřela ve spánku, měsíc před svým otcem."
+  zdroje:
+    - nazev: "Livia Messer III"
+      typ: Galactapedie
+      url: https://robertsspaceindustries.com/galactapedia/article/01dWwaQkrL-livia-messer-iii
+  kapitoly: [kap-6]
+
+- id: "carl-dyson"
+  jmeno: "Carl Dyson"
+  narozeni: "2593"
+  umrti: "2701"
+  role: "střelec námořnictva UEE a hudebník"
+  kategorie: "objevitele"
+  medailonek: "Carl Dyson sloužil jako střelec v hodnosti poručíka v námořnictvu Spojeného impéria Země (UEE). V roce 2617 zachytil při hlídce v soustavě Horus se svým pilotem Ahmadem Hararem gravitační anomálii, kterou palubní počítač vyhodnotil jako pravděpodobný skokový bod. Chtěl objev nahlásit veliteli, ale Harar ho přemluvil, aby jím nejdřív proletěli; na druhé straně je okamžitě zneškodnila xi’anská armáda a tři dny je vyslýchala. Nakonec je propustili zpět do Horu se vzkazem, že každá loď UEE spatřená v soustavě Kai'pua bude bez varování sestřelena. Dyson místo degradace požádal o čestné propuštění, odstěhoval se na Zemi a stal se hudebníkem; jeho album Twilight on the Firing Line získalo dvě ceny Elira."
+  zdroje:
+    - nazev: "Carl Dyson"
+      typ: Galactapedie
+      url: https://robertsspaceindustries.com/galactapedia/article/R5p2mqLvXN-carl-dyson
+  kapitoly: []
+
+- id: "ahmad-harar"
+  jmeno: "Ahmad Harar"
+  narozeni: "2595"
+  umrti: "2699"
+  role: "pilot námořnictva UEE"
+  kategorie: "objevitele"
+  medailonek: "Ahmad Harar byl pilotem v hodnosti poručíka v námořnictvu Spojeného impéria Země (UEE). Při hlídce v soustavě Horus v roce 2617 objevil se svým střelcem Carlem Dysonem gravitační anomálii, kterou po hodinách analýzy vyhodnotili jako skokový bod. Místo hlášení na velitelství Dysona přesvědčil, aby jím proletěli, protože to byla jejich šance zapsat se do dějin; ocitli se však v soustavě pod kontrolou Xi’anů a byli zajati. Po třech dnech výslechů přesvědčili věznitele, že armáda UEE o skokovém bodu neví, a vrátili se do Horu se vzkazem, že lodě UEE v soustavě Kai'pua budou napadeny. Harar dostal důtku, přijal degradaci a sloužil ještě třicet let, než v roce 2647 odešel do výslužby jako kapitán."
+  zdroje:
+    - nazev: "Ahmad Harar"
+      typ: Galactapedie
+      url: https://robertsspaceindustries.com/galactapedia/article/VYLznx8r3e-ahmad-harar
+  kapitoly: []
+
+- id: "corsen-messer-v"
+  jmeno: "Corsen Messer V."
+  narozeni: "2609"
+  umrti: "2662"
+  role: "imperátor UEE (2643–2662)"
+  kategorie: "vladari"
+  rod: "messer"
+  medailonek: "Corsen Messer V. byl nejmladším synem Deacona II. a vlády se ujal v roce 2643, kdy se jeho starší sestra Livia III. stáhla z veřejného života. Za jeho vlády se rozšířil okruh zločinů, za které hrozil trest smrti, vzrostly daně v celém impériu, u politických zločinů bylo zrušeno právo na soud, zesílila cenzura a na planetě Charon III přibyly politické věznice. Založil také monumentalistický architektonický směr. V roce 2662 byl spolu se starším synem Gammonem otráven; viník nebyl nikdy dopaden, ale historici se shodují, že za vraždou stála jeho nejmladší dcera Illyana VI."
+  zdroje:
+    - nazev: "Corsen Messer V"
+      typ: Galactapedie
+      url: https://robertsspaceindustries.com/galactapedia/article/0OaB8O6awO-corsen-messer-v
+  kapitoly: [kap-6]
+
+- id: "marius-messer-iv"
+  jmeno: "Marius Messer IV."
+  narozeni: "2625"
+  umrti: "2641"
+  role: "syn Livie III., čestný imperátor"
+  kategorie: "vladari"
+  rod: "messer"
+  medailonek: "Marius byl jediným synem imperátorky Livie III. a jejího manžela Daniela Scoty, bývalého pilota. Dětství prožil na Zemi s bratrancem Gammonem a sestřenicí Illyanou a od útlého věku ho soukromě vyučoval dědeček Deacon II., často s ním a s matkou objížděl impérium. V šestnácti letech získal Ekvivalenci a byl přijat na Námořní leteckou akademii Spojeného impéria Země (UNFA). V roce 2641 zahynul spolu s otcem, když jejich raketoplán při návratu do atmosféry nad Moskvou postihla katastrofální porucha. Matka mu udělila čestný titul imperátora a v roce 2643 se stáhla z veřejného života."
+  zdroje:
+    - nazev: "Marius Messer IV"
+      typ: Galactapedie
+      url: https://robertsspaceindustries.com/galactapedia/article/RxNxAgrXZz-marius-messer-iv
+    - nazev: "Livia Messer III"
+      typ: Galactapedie
+      url: https://robertsspaceindustries.com/galactapedia/article/01dWwaQkrL-livia-messer-iii
+  kapitoly: [kap-6]
+
+- id: "gammon-messer"
+  jmeno: "Gammon Messer"
+  narozeni: "2629"
+  umrti: "2662"
+  role: "následník trůnu, důstojník armády UEE"
+  kategorie: "armada"
+  rod: "messer"
+  medailonek: "Gammon Messer byl nejstarším dítětem imperátora Corsena V. a herečky Inayi Satti a dětství prožil na Zemi se sestrou Illyanou a bratrancem Mariusem. Při narození byl až třetí v pořadí následnictví, a tak se věnoval zálibám a podle pověstí i neřestem. Po Mariusově smrti v roce 2641 a otcově nástupu na trůn v roce 2643 se nečekaně stal prvním následníkem; otec ho poslal na vojenskou školu a v osmnácti nastoupil do armády UEE. V roce 2654 se oženil s plukovnicí Yemi Duas a v roce 2661 se mu narodila jediná dcera Astrid. Připisuje se mu zpřísnění podmínek pro vězně a vymýšlení obzvlášť krutých výslechových metod; v roce 2662 byl zavražděn spolu s otcem."
+  zdroje:
+    - nazev: "Gammon Messer"
+      typ: Galactapedie
+      url: https://robertsspaceindustries.com/galactapedia/article/0rxrqgDP12-gammon-messer
+  kapitoly: [kap-6]
+
+- id: "illyana-messer-vi"
+  jmeno: "Illyana Messer VI."
+  narozeni: "2631"
+  umrti: "2697"
+  role: "imperátorka UEE (2662–2697)"
+  kategorie: "vladari"
+  rod: "messer"
+  medailonek: "Illyana Messer VI. se stala imperátorkou Spojeného impéria Země (UEE) v roce 2662 po vraždě svého otce Corsena V. a bratra Gammona, kterou podle historiků sama zosnovala. Za její vlády UEE zmírnilo propagandu a zpravodajské organizace mohly kritizovat některé kroky vlády, aniž by jim hrozila odveta. Ke konci života určila za nástupce mladšího syna Samuela místo staršího Galora, aby předešla mocenskému boji mezi svými dětmi. Po její smrti v roce 2697 se však trůnu zmocnila její neteř Astrid a rozpoutala čtyři roky ozbrojených střetů mezi stoupenci jednotlivých větví rodu."
+  zdroje:
+    - nazev: "Illyana Messer VI"
+      typ: Galactapedie
+      url: https://robertsspaceindustries.com/galactapedia/article/bZwQBNmWrL-illyana-messer-vi
+    - nazev: "Corsen Messer V"
+      typ: Galactapedie
+      url: https://robertsspaceindustries.com/galactapedia/article/0OaB8O6awO-corsen-messer-v
+  kapitoly: [kap-6, kap-7]
+
+- id: "condi-hillard"
+  jmeno: "Condi Hillard"
+  narozeni: "2659"
+  umrti: "2712"
+  role: "pilotka Orion Defense Protection"
+  kategorie: "armada"
+  medailonek: "Condi Hillard po získání Ekvivalence koupila na vrakovišti starou stíhačku Gladius, opravila ji a našla práci u bezpečnostní firmy Orion Defense Protection (ODP) v soustavě Orion. Po vanduulském útoku na Armitage (Orion III) v roce 2681 ODP prodloužila hlídky svých pilotů a o dva týdny později Vanduulové zaútočili znovu. Hillard sestřelila stíhačku Scythe a vedla svůj tým ke zničení zbylých lodí dřív, než mohly zasáhnout nedalekou základnu; stala se tak prvním člověkem, který porazil Vanduula v souboji lodí. Z její taktiky vyvinula 36. letka námořnictva UEE jednu z prvních metod, jak vanduulské stíhačky sestřelovat. Padla v roce 2712 při obraně Armitage během bitvy o Orion."
+  zdroje:
+    - nazev: "Condi Hillard"
+      typ: Galactapedie
+      url: https://robertsspaceindustries.com/galactapedia/article/RX3dlOezZM-condi-hillard
+  kapitoly: [kap-7]
+
+- id: "astrid-messer-vii"
+  jmeno: "Astrid Messer VII."
+  narozeni: "2661"
+  umrti: "2701"
+  role: "imperátorka UEE (2697–2701)"
+  kategorie: "vladari"
+  rod: "messer"
+  medailonek: "Astrid Messer VII., jediná dcera Gammona Messera, se v roce 2697 zmocnila vlády poté, co její teta Illyana VI. náhle zemřela na mrtvici. Agenti věrní Illyaně stihli ze Země odvézt jejího nejmladšího syna a určeného nástupce Samuela dřív, než ho Astrid mohla nechat zavraždit. Jako imperátorka nasadila armádu na jeho hledání, rozšířila cenzuru a nařídila hromadné zatýkání novinářů, kteří se stavěli proti konfliktu. V roce 2701 ji zavraždili Samuelovi agenti a Samuel se ujal vlády."
+  zdroje:
+    - nazev: "Astrid Messer VII"
+      typ: Galactapedie
+      url: https://robertsspaceindustries.com/galactapedia/article/0KnA1D5nQM-astrid-messer-vii
+    - nazev: "Gammon Messer"
+      typ: Galactapedie
+      url: https://robertsspaceindustries.com/galactapedia/article/0rxrqgDP12-gammon-messer
+  kapitoly: [kap-6]
+
+- id: "galor-messer-ix"
+  jmeno: "Galor Messer IX."
+  narozeni: "2666"
+  umrti: "2751"
+  role: "imperátor UEE (2715–2751)"
+  kategorie: "vladari"
+  rod: "messer"
+  medailonek: "Galor Messer IX. vládl Spojenému impériu Země (UEE) v letech 2715 až 2751. V dětství vážně onemocněl a nikdo nečekal, že se dožije dvaceti let, a proto ho matka Illyana VI. vydědila ve prospěch mladšího bratra Samuela. Na trůn usedl až poté, co byl Samuel ubodán ve své posteli. Měnu UEE přejmenoval na imperiály, vládní budovy nechal přestavět v metabarokním stylu a za nástupce určil synovce Ulyssese. Zemřel v úřadu v roce 2751 ve věku 85 let po dlouhém boji s degenerativním onemocněním kostí."
+  zdroje:
+    - nazev: "Galor Messer IX"
+      typ: Galactapedie
+      url: https://robertsspaceindustries.com/galactapedia/article/VyvYAGKxAz-galor-messer-ix
+  kapitoly: [kap-6]
+
+- id: "samuel-messer-viii"
+  jmeno: "Samuel Messer VIII."
+  narozeni: "2678"
+  umrti: "2715"
+  role: "imperátor UEE (2697/2701–2715)"
+  kategorie: "vladari"
+  rod: "messer"
+  medailonek: "Samuela Messera VIII. určila za nástupce jeho matka Illyana VI., po její smrti v roce 2697 se však moci chopila jeho sestřenice Astrid a Samuela odstavila. Po čtyřleté občanské válce zorganizovali jeho agenti Astridinu vraždu a Samuel se v roce 2701 oficiálně stal imperátorem. Za své vlády zpřísnil omezení svobody projevu a několikrát nechal armádu potlačit civilní protesty. Byl ubodán ve své posteli a v roce 2715 ho na trůnu vystřídal starší bratr Galor IX."
+  rozpor: "Galactapedie datuje jeho vládu od roku 2697, sama však uvádí, že část historiků ji počítá až od roku 2701; článek o Astrid Messer VII. ji pro léta 2697–2701 označuje za jednu ze dvou imperátorů."
+  zdroje:
+    - nazev: "Samuel Messer VIII"
+      typ: Galactapedie
+      url: https://robertsspaceindustries.com/galactapedia/article/RkZ9W2L2NB-samuel-messer-viii
+    - nazev: "Galor Messer IX"
+      typ: Galactapedie
+      url: https://robertsspaceindustries.com/galactapedia/article/VyvYAGKxAz-galor-messer-ix
+    - nazev: "Astrid Messer VII"
+      typ: Galactapedie
+      url: https://robertsspaceindustries.com/galactapedia/article/0KnA1D5nQM-astrid-messer-vii
+  kapitoly: [kap-6]
+
+- id: "aadya-firmino"
+  jmeno: "Aadya Firmino"
+  narozeni: "2692"
+  umrti: "2781"
+  role: "pašeračka a ředitelka Terra Movers Construction, spoluobjevitelka soustavy Tohil"
+  kategorie: "objevitele"
+  medailonek: "Aadya Firmino vyrůstala v chráněném prostředí a toužila po dobrodružství, a tak v roce 2713 odletěla svou novou lodí Constellation Andromeda do Levski v soustavě Nyx, kde poznala pilotku a mechaničku Oishu Suen. Tři roky spolu pašovaly, dokud je nevyhostili po Firminině posledním pokusu přetáhnout klienty jiným pašerákům, při němž byl zničen jeden z přístavů Levski a tři lidé byli těžce zraněni. Krátce nato Suen zachytila skokový bod do neznámé soustavy Tohil; Firmino ji přemluvila k mlčení, pak ji v soustavě Bremen opila a objev nahlásila vládě UEE jako svůj vlastní. Po rozhovoru, který Suen poskytla listu Terra Gazette, přiznalo Ministerstvo dopravy a navigace zásluhy oběma a Advokacie na ně vydala zatykače, Firmino se však díky týmu právníků vyhnula vězení. V roce 2723 jí byl odepřen vstup na Levski a po návratu na Terru nastoupila do otcovy firmy Terra Movers Construction, kterou po jeho smrti v roce 2736 převzala jako výkonná ředitelka."
+  zdroje:
+    - nazev: "Aadya Firmino"
+      typ: Galactapedie
+      url: https://robertsspaceindustries.com/galactapedia/article/0Nj5o4M9v2-aadya-firmino
+  kapitoly: []
+
+- id: "oisha-suen"
+  jmeno: "Oisha Suen"
+  narozeni: "2694"
+  umrti: "2793"
+  role: "pilotka a pašeračka, spoluobjevitelka soustavy Tohil"
+  kategorie: "objevitele"
+  medailonek: "Oisha Suen byla pilotka, mechanička a pašeračka. V roce 2713 se na stanici Levski v soustavě Nyx seznámila s dědičkou stavební firmy z Terry Aadyou Firmino a společně rozjely pašerácký obchod, jehož základnou byla Firminina loď Constellation Andromeda. V roce 2716 je Lidová aliance vyhostila a během útěku Suen na právě opraveném skeneru zachytila podivný signál, který vedl k novému skokovému bodu do soustavy Tohil. Firmino ji však zradila, objev ohlásila jako svůj a odměnu si nechala; Suen proto poskytla otevřený rozhovor listu Terra Gazette, který vyvolal vyšetřování, a vláda nakonec přiznala zásluhy oběma. Za pravdivou výpověď dostala snížený trest, vrátila se na Levski, kde jí vyhoštění zrušili, a založila tam firmu na přepravu cestujících."
+  zdroje:
+    - nazev: "Oisha Suen"
+      typ: Galactapedie
+      url: https://robertsspaceindustries.com/galactapedia/article/01LrmgveKB-oisha-suen
+  kapitoly: []
+
+- id: "ulysses-messer-x"
+  jmeno: "Ulysses Messer X."
+  narozeni: "2702"
+  umrti: "2781"
+  role: "imperátor UEE (2751–2781)"
+  kategorie: "vladari"
+  rod: "messer"
+  medailonek: "Ulysses Messer X. byl od roku 2722 vrchním tajemníkem svého strýce Galora IX., dohlížel na přestavbu vládních budov v metabarokním stylu a se zhoršujícím se zdravím imperátora přebíral stále víc jeho každodenních povinností. Po nástupu na trůn v roce 2751 věnoval většinu prostředků UEE dokončení těchto staveb. Během své vlády osekal ochranu životního prostředí, zvýšil daně, snížil minimální věk pro práci na deset let, pozastavil minimální mzdu, oslabil státní dohled nad průmyslem, rozšířil pravomoci policie a přepsal zákony o vlastizradě. V roce 2781 proti němu provedl převrat jeho syn Linton XI. a Ulysses spáchal sebevraždu dřív, než se k němu Lintonovi agenti dostali."
+  zdroje:
+    - nazev: "Ulysses Messer X"
+      typ: Galactapedie
+      url: https://robertsspaceindustries.com/galactapedia/article/bBp6YZPOGO-ulysses-messer-x
+  kapitoly: [kap-6]
+
+- id: "marcus-fayel"
+  jmeno: "Marcus Fayel"
+  narozeni: "2719"
+  umrti: "2816"
+  role: "terraformační expert, zakladatel hnutí Outsiders"
+  kategorie: "kultura"
+  medailonek: "Marcus Fayel vystudoval univerzitu UPARQ a v roce 2743 ho firma Hatfield & Harding najala, aby dohlížel na terraformaci planety Leir II. Na místě si bez vědomí zaměstnavatele zřídil vlastní těžbu, jinak však platil za vzorného dozorce; když ho firma v roce 2803 vyhlásila zaměstnancem roku, místo osobní účasti poslal na banket video, v němž neustále opakoval slova „čistota záměru“. V roce 2812 přerušil veškerou komunikaci a ve smyčce vysílal, že „očista“ planety je dokončena a on se svými stoupenci se stává jejím správcem. Žoldnéře, které firma vyslala planetu získat zpět, odrazil. Planetu přejmenoval na Mya a své náboženské hnutí, Outsidery neboli Bratrstvo Slunečního oka, vedl až do své smrti v roce 2816."
+  zdroje:
+    - nazev: "Marcus Fayel"
+      typ: Galactapedie
+      url: https://robertsspaceindustries.com/galactapedia/article/Rw1k2w51XZ-marcus-fayel
+  kapitoly: []
+
+- id: "terrence-akari"
+  jmeno: "Terrence Akari"
+  narozeni: "2737 nebo 2743"
+  umrti: "2833 nebo 2859"
+  role: "senátor za Terru, vyjednavač míru s Xi’any"
+  kategorie: "politika"
+  medailonek: "Terrence Akari byl senátorem za Terru a celoživotním zastáncem míru mezi lidmi a mimozemšťany, který se jako první člověk vzepřel Lintonu Messerovi XI. V roce 2789 tajně překročil Perryho linii a v soustavě Tohil vyjednal s xi’anským císařem Kr.ē pakt o neútočení, takzvanou smlouvu Akari–Kr.ē. Po návratu ji Rada guvernérů Terry jednomyslně schválila a Terra prohlásila, že nepodpoří žádné válečné akce proti Xi’anům; protože to bylo považováno za velezradu, musel se Akari před Lintonovými agenty skrývat. Po protimesserovské revoluci roku 2792 odmítl nabídku imperátorky Erin Toi stát se velvyslancem u Xi’anů a vrátil se do Senátu, kde se podílel na zákonu Fair Chance, na zákonu o reorganizaci armády z roku 2793 a na dalších zásadních reformách."
+  rozpor: "Galactapedie má o Akarim dva články se stejným názvem, které si odporují. První uvádí roky 2737–2833, zvolení senátorem v roce 2772 a smrt v úřadu v roce 2833; druhý roky 2743–2859, senátorský mandát v letech 2781–2789 a 2792–2812 a odchod ze Senátu v roce 2812. Liší se i v tom, kdo mu pomohl dostat se k Xi’anům: podle prvního protimesserovští aktivisté, podle druhého náčelník terranské sekce Advokacie Nathan Warrick. První článek mu navíc připisuje podíl na zákonu o historické pravdě, který podle svého názvu pochází až z roku 2941."
+  zdroje:
+    - nazev: "Terrence Akari"
+      typ: Galactapedie
+      url: https://robertsspaceindustries.com/galactapedia/article/RL6ZQLwnko-terrence-akari
+    - nazev: "Terrence Akari"
+      typ: Galactapedie
+      url: https://robertsspaceindustries.com/galactapedia/article/V3qgjK7Jor-terrence-akari
+  kapitoly: [kap-8]
+
+- id: "j-harris-arnold"
+  jmeno: "J. Harris Arnold"
+  narozeni: "2742"
+  umrti: "2853"
+  role: "zakladatel a hlavní konstruktér Anvil Aerospace"
+  kategorie: "korporace"
+  medailonek: "Jude „J“ Harris Arnold byl jediným synem realitních magnátů z Terry a vystudoval astronautickou laboratoř Marsovského institutu vesmírných technologií (MIST), kde poprvé poznal dílo zesnulého konstruktéra Leonarda Casse. Kariéru začal v roce 2763 jako mladší konstruktér u Aegis Dynamics, ale po neúspěšném prototypu a opakovaném odmítání návrhů tam neviděl budoucnost, a tak s půjčkou od rodičů založil v roce 2772 ve městě Nova Kyiv na Terře společnost Anvil Aerospace. Jeho první stíhačka Osprey zaujala námořnictvo, a když ho držitel práv ke Cassovu dílu zažaloval, Arnold spor urovnal tím, že celé portfolio Casse Aerospace koupil, a Cassovy typické prvky dál používal jako poctu. Když Aegis po protimesserovské revoluci přišla o většinu zakázek, získal Anvil přímou zakázku na loď U4A-3 Terrapin nasazenou v roce 2796 a později stíhačka F7A Hornet, jejíž vývoj Arnold osobně řídil, nahradila Avenger jako standardní frontovou stíhačku UEE. Proslul sdílením zisku se zaměstnanci a podporou talentů, každou část svých lodí schvaloval osobně až do pozdního věku a v roce 2853 zemřel u svého pracovního stolu."
+  zdroje:
+    - nazev: "J Harris Arnold"
+      typ: Galactapedie
+      url: https://robertsspaceindustries.com/galactapedia/article/Vy2ZqLy458-j-harris-arnold
+  kapitoly: []
+
+- id: "linton-messer-xi"
+  jmeno: "Linton Messer XI."
+  narozeni: "2745"
+  umrti: "2792"
+  role: "poslední imperátor z rodu Messerů (2781–2792)"
+  kategorie: "vladari"
+  rod: "messer"
+  medailonek: "Linton Messer XI. byl posledním Messerem v úřadu imperátora Spojeného impéria Země (UEE). Moc převzal v roce 2781, když s pomocí sestry Fiony svrhl svého otce Ulyssese X. Za jeho vlády prodal práva na terraformaci planety Garron II soukromé firmě napojené na jeho rodinu, přestože věděl, že planetu obývají vnímající bytosti. Revoluční skupina Tide vypustila záznam následného masakru do médií a rozpoutala protimesserovskou revoluci, během níž byl Linton v roce 2792 zabit v úřadu."
+  zdroje:
+    - nazev: "Linton Messer XI"
+      typ: Galactapedie
+      url: https://robertsspaceindustries.com/galactapedia/article/RwZBaD4Mdq-linton-messer-xi
+    - nazev: "Fiona Messer"
+      typ: Galactapedie
+      url: https://robertsspaceindustries.com/galactapedia/article/R56nLjJog7-fiona-messer
+  kapitoly: [kap-6, kap-8]
+
+- id: "anthony-tanaka"
+  jmeno: "Anthony Tanaka"
+  narozeni: "2745"
+  umrti: "2757"
+  role: "dětský dělník, mučedník protimesserovského hnutí"
+  kategorie: "politika"
+  medailonek: "Anthony Tanaka se narodil v Newcastlu na planetě Borea a místní úřady ho v sedmi letech poslaly pracovat do muniční továrny. Dne 3. prosince 2757, vyčerpaný po šestnáctihodinové směně, odmítl zaskočit za spolupracovníka, který upadl do anafylaktického šoku. Agent Advokacie, který ve firmě sloužil jako ochranka, ho za tento vzdor popravil přímo v hale továrny. Záznam vraždy byl z továrny propašován a stal se symbolem odporu pro sílící protimesserovské hnutí; na Tanakovu počest vznikl Den vzpomínky."
+  zdroje:
+    - nazev: "Anthony Tanaka"
+      typ: Galactapedie
+      url: https://robertsspaceindustries.com/galactapedia/article/RwZBdpj2rz-anthony-tanaka
+  kapitoly: []
+
+- id: "erin-toi"
+  jmeno: "Erin Toi"
+  narozeni: "2746"
+  umrti: "2873"
+  role: "první imperátorka UEE po pádu Messerů"
+  kategorie: "vladari"
+  medailonek: "Erin Toi byla politička a spisovatelka, senátorka za Zemi a první imperátorka Spojeného impéria Země (UEE) po skončení éry Messerů (2546–2792). V úřadu dohlížela na vznik a zavedení zákona Fair Chance, na soudy s bývalými messerovskými agenty za válečné zločiny, na Pakt o Perryho linii, na obnovu Tribunálu i na další zásadní změny ve vládě UEE. Senátoru Terrenci Akarimu nabídla místo velvyslance u Xi’anů a diplomatickým tajemníkem své vlády jmenovala Marshalla Leona. Úřad opustila v roce 2801 a Leona podpořila v kampani za svého nástupce."
+  zdroje:
+    - nazev: "Erin Toi"
+      typ: Galactapedie
+      url: https://robertsspaceindustries.com/galactapedia/article/R4ZG3NxM7Y-erin-toi
+    - nazev: "Terrence Akari"
+      typ: Galactapedie
+      url: https://robertsspaceindustries.com/galactapedia/article/RL6ZQLwnko-terrence-akari
+    - nazev: "Marshall Leon"
+      typ: Galactapedie
+      url: https://robertsspaceindustries.com/galactapedia/article/bZwQBJmZxE-marshall-leon
+  kapitoly: [kap-8]
+
+- id: "juliet-maupin"
+  jmeno: "Juliet Maupin"
+  narozeni: "2747"
+  umrti: "2862"
+  role: "inženýrka zbraní a skenerů"
+  kategorie: "veda-technika"
+  medailonek: "Juliet Maupin byla inženýrka specializovaná na zbraně a skenery. Kariéru zahájila v roce 2766 jako strojnice ve společnosti Aegis Dynamics, v roce 2772 přešla k lodnímu týmu na planetě Cestulus (Davien II), vypracovala se na hlavní inženýrku a vedla tým, který v roce 2783 přepracoval bombardér Retaliator. Poté ji armáda Spojeného impéria Země (UEE) pověřila vývojem nové řady silných a pokročilých zbraní pro Messerovu vládu. Po protimesserovské revoluci uprchla s rodinou do soustavy Corel, protože se bála, že ji budou spojovat se starým režimem. Bednu jejích prototypů, které se nikdy nedostaly k testům do soustavy Kilian, našel v roce 2911 ve skladu na Cestulu Dalton Colabello a postavil na nich první řadu zbraní své firmy Apocalypse Arms."
+  zdroje:
+    - nazev: "Juliet Maupin"
+      typ: Galactapedie
+      url: https://robertsspaceindustries.com/galactapedia/article/VarxxjKJe5-juliet-maupin
+  kapitoly: []
+
+- id: "marshall-leon"
+  jmeno: "Marshall Leon"
+  narozeni: "2753"
+  umrti: "2891"
+  role: "imperátor UEE (2801–2811), tvůrce Archy"
+  kategorie: "vladari"
+  medailonek: "Marshall Leon začal v roce 2774 pracovat v sociálních službách a vypracoval se až do Rady guvernérů planety Reisse (Rhetor III). V letech 2787 až 2793 byl senátorem a poté do roku 2800 diplomatickým tajemníkem UEE ve vládě imperátorky Erin Toi; v této funkci přišel s myšlenkou Archy a v roce 2794 pro její stavbu získal souhlas Senátu. Toi ho díky jeho diplomatickým úspěchům a práci na Arše podpořila v kampani a v letech 2801 až 2811 zastával úřad imperátora Spojeného impéria Země (UEE). Hned v prvním roce úřadu se zúčastnil slavnostního otevření Archy. Po skončení mandátu zasedal až do své smrti ve správní radě Archy."
+  zdroje:
+    - nazev: "Marshall Leon"
+      typ: Galactapedie
+      url: https://robertsspaceindustries.com/galactapedia/article/bZwQBJmZxE-marshall-leon
+  kapitoly: [kap-9]
+
+- id: "magnus-tobin"
+  jmeno: "Magnus Tobin"
+  narozeni: "2756"
+  umrti: "2912"
+  role: "zakladatel microTechu, tvůrce mobiGlasu"
+  kategorie: "korporace"
+  medailonek: "Magnus Tobin po získání Ekvivalence nastoupil do textilní firmy svých rodičů a díky přestavbě jejího technického zázemí jí pomohl k rekordním ziskům. V roce 2782 s počátečním kapitálem od rodičů oficiálně založil společnost microTech, která se však dlouho nedokázala dostat do zisku; obrat přišel, až když se spojil se svou bývalou mentorkou Aleenou Tressler a na její radu najímal špičkové inženýry a nechával jim volnou ruku. Koupě firmy Empiric Education ho přivedla přímo k vytvoření prvního mobiGlasu, jehož úspěch udělal z microTechu jednu z největších firem ve Spojeném impériu Země (UEE). Stál také za koupí planety Stanton IV od UEE a zemřel v roce 2912 poté, co osobně dohlížel na stavbu města New Babbage."
+  zdroje:
+    - nazev: "Magnus Tobin"
+      typ: Galactapedie
+      url: https://robertsspaceindustries.com/galactapedia/article/RkGZqr8yNQ-magnus-tobin
+  kapitoly: [kap-9]
+
+- id: "noah-traeger"
+  jmeno: "Noah Traeger"
+  narozeni: "2759"
+  umrti: "2848"
+  role: "mechanik a inženýr námořnictva UEE, objevitel soustavy Osiris"
+  kategorie: "objevitele"
+  medailonek: "Noah Traeger, mechanik a inženýr námořnictva Spojeného impéria Země (UEE), je známý především objevem soustavy Osiris v roce 2788. Služba v námořnictvu začala v roce 2782 a jejím obsahem byly opravy poškozených lodí na palubách několika kapitálních plavidel. Místo odpočinku na pláži během dovolené v soustavě Goss přišla na řadu oprava rozbitého skeneru; první test vypadal jako nezdar, ale podivný signál nakonec vedl k dosud neznámému skokovému bodu. V roce 2808 následovalo čestné propuštění a odměna za objev posloužila k otevření dílny na opravy lodí na planetě Cassel (Goss II)."
+  zdroje:
+    - nazev: "Noah Traeger"
+      typ: Galactapedie
+      url: https://robertsspaceindustries.com/galactapedia/article/VDzyygGMQ1-noah-traeger
+  kapitoly: []
+
+- id: "sydney-kamarck"
+  jmeno: "Sydney Kamarck"
+  narozeni: "2761"
+  umrti: "2864"
+  role: "historička, autorka knihy The Path to Prime Citizen"
+  kategorie: "veda-technika"
+  medailonek: "Sydney Kamarck byla historička politických systémů lidstva na Rhetorské univerzitě, proslavená knihou The Path to Prime Citizen z roku 2812. Vycházela z tisíců osobních i úředních záznamů rodu Messerů, které v roce 2806 zveřejnila Komise pro pravdu a smíření. Při jejich studiu dospěla k závěru, že za sérií bombových útoků, které v roce 2546 zabily tisíce lidí, mohl stát Ivar Messer I. Ve své knize tvrdila, že útoky nejspíš provedli jeho bývalí spolubojovníci Adam Corr a Cyrus Ishitaka, a to na Messerův rozkaz."
+  zdroje:
+    - nazev: "Sydney Kamarck"
+      typ: Galactapedie
+      url: https://robertsspaceindustries.com/galactapedia/article/VaZwNWd7lm-sydney-kamarck
+  kapitoly: []
+
+- id: "daniela-argen"
+  jmeno: "Daniela Argen"
+  narozeni: "2762"
+  umrti: "2838"
+  role: "senátorka za Locke"
+  kategorie: "politika"
+  medailonek: "Daniela Argen byla v letech 2801 až 2827 senátorkou Spojeného impéria Země (UEE) za planetu Locke (Idris IV); zvolena byla se slibem oživit ekonomiku a prosadila daňové úlevy pro začínající podnikatele i program, který snížil nezaměstnanost. V roce 2815 předložila Senátu plán na stavbu věznice s nejvyšší ostrahou a závodu na zpracování antihmoty na Kellogu VI: silná stráž měla bez dalších nákladů na armádu varovat před vanduulskými vpády skrz tehdy nově objevené skokové body do soustav Virgil a Vector a závod měl přinášet příjmy i stálý přísun antihmoty. Senát plán schválil. Během třetího funkčního období ji Advokacie zatkla za přijímání úplatků, musela odstoupit a po soudu dostala pokutu; pak pracovala jako soukromá poradkyně. V roce 2838 ji našli mrtvou s mnoha bodnými ranami v hotelovém pokoji na planetě Asura (Ferron III) a její vražda nebyla nikdy objasněna."
+  zdroje:
+    - nazev: "Daniela Argen"
+      typ: Galactapedie
+      url: https://robertsspaceindustries.com/galactapedia/article/RvlxLvYKKv-daniela-argen
+  kapitoly: []
+
+- id: "fiona-messer"
+  jmeno: "Fiona Messer"
+  narozeni: "2768"
+  umrti: "neznámo"
+  role: "sestra Lintona XI., poslední z rodu Messerů"
+  kategorie: "politika"
+  rod: "messer"
+  medailonek: "Fiona Messer byla mladší sestrou Lintona XI. a po jeho smrti poslední žijící členkou dynastie Messerů. Nejprve pomohla bratrovi sesadit jejich otce Ulyssese X., pak se ale spolčila s některými silami uvnitř UEE, aby Lintona odstranila a sama převzala jeho místo. Informace, které předávala odbojové skupině Tide, pomohly rozdmýchat protimesserovskou revoluci. Když po úniku záznamu z masakru na Garronu II vypuklo povstání, zapsala si do osobního deníku, že se šíří příliš rychle, než aby se dalo zvládnout. Historici se domnívají, že uprchla, aby unikla zajetí a popravě, která čekala jejího bratra; co se s ní stalo potom, není známo."
+  zdroje:
+    - nazev: "Fiona Messer"
+      typ: Galactapedie
+      url: https://robertsspaceindustries.com/galactapedia/article/R56nLjJog7-fiona-messer
+  kapitoly: [kap-6, kap-8]
+
+- id: "patek-coen"
+  jmeno: "Patek Coen"
+  narozeni: "2786"
+  umrti: "2867"
+  role: "navjumper, objevitel soustavy Kellog"
+  kategorie: "objevitele"
+  medailonek: "Patek Coen se narodil na planetě Kampos (Ellis IV) a začínal jako pilot soukromé trajektové linky na sousední planety Green a Noble. K navjumpingu ho přivedla biografie Antoina Lebeca, a tak ve volném čase absolvoval soukromé kurzy navigace a detekce; jeho snem bylo žít v soustavě, kterou sám objeví. Po téměř deseti letech hledání našel v roce 2811 skokový bod do soustavy Kellog, zklamání však přišlo, když se ukázalo, že na planetě Kellog II žije civilizace Ormů, soustava spadla pod zákon Fair Chance a on v ní nesměl žít. S navjumpingem skončil v roce 2839, kdy se jeho autobiografie A Refuted Dream nečekaně stala bestsellerem."
+  zdroje:
+    - nazev: "Patek Coen"
+      typ: Galactapedie
+      url: https://robertsspaceindustries.com/galactapedia/article/R9vPd4ZjK7-patek-coen
+  kapitoly: []
+
+- id: "toshi-aaron"
+  jmeno: "Toshi Aaron"
+  narozeni: "2802"
+  umrti: "2929"
+  role: "navjumperka, objevitelka soustavy Stanton"
+  kategorie: "objevitele"
+  medailonek: "Toshi Aaron se narodila v soustavě Magnus a už jako malé dítě snila o objevení nového skokového bodu. Na průzkum hvězd na plný úvazek neměla peníze, a tak brala riskantní, ale dobře placené práce při rybolovu v oceánech Magnu a mimo sezónu hledala skokové body. V roce 2851 zachytila anomálii, která se ukázala být skokovým bodem do nové soustavy. Objev ohlásila vládě Spojeného impéria Země (UEE) a požádala, aby soustava nesla jméno Stanton na počest jejího zesnulého bratra."
+  zdroje:
+    - nazev: "Toshi Aaron"
+      typ: Galactapedie
+      url: https://robertsspaceindustries.com/galactapedia/article/0NjkMMlGXD-toshi-aaron
+  kapitoly: [kap-9]
+
+- id: "aberdeen-hurston"
+  jmeno: "Aberdeen Hurston"
+  narozeni: "2821"
+  umrti: "2912"
+  role: "inženýr Hurston Dynamics, konstruktér antihmotové hlavice"
+  kategorie: "veda-technika"
+  medailonek: "Aberdeen Hurston byl inženýr, který ve společnosti Hurston Dynamics pracoval od roku 2841 až do odchodu do důchodu v roce 2877. Už během studií na univerzitě spolupracoval na dálku se zbrojním týmem firmy na prvních pokusech o rakety na bázi antihmoty. V roce 2853 tým po letech výzkumu představil první antihmotovou hlavici společnosti postavenou podle jeho návrhu, což firmě zajistilo dlouhodobý kontrakt se Spojeným impériem Země (UEE). Na jeho počest nese jméno Aberdeen druhý měsíc planety Hurston."
+  zdroje:
+    - nazev: "Aberdeen Hurston"
+      typ: Galactapedie
+      url: https://robertsspaceindustries.com/galactapedia/article/VlMMykaZKv-aberdeen-hurston
+  kapitoly: []
+
+- id: "errol-navis"
+  jmeno: "Errol Navis"
+  narozeni: "2822"
+  umrti: "2931"
+  role: "účetní a amatérský průzkumník, objevitel soustavy Oso"
+  kategorie: "objevitele"
+  medailonek: "Errol Navis se narodil na planetě Carteyna (Cano II) rodičům geoinženýrům a po studiu matematiky nastoupil v roce 2843 jako účetní ke společnosti Shubin Interstellar. Dětství strávené v uzavřených základnách s řízeným prostředím v něm podle pozdějších výkladů probudilo silnou touhu žít ve světě s otevřeným nebem a dýchatelnou atmosférou. Když mu Shubin zamítl přeložení na Terru, koupil si malou loď a o víkendech s ní bral svou malou dceru Oso na výlety do exotických míst. Na jednom z nich zachytil na okraji soustavy Castra anomálii, z níž se vyklubal skokový bod do dosud neznámé soustavy Oso; stalo se tak v roce 2861. Odměnu od vlády Spojeného impéria Země (UEE) použil na koupi domu na Terře a na založení účetní poradenské firmy."
+  zdroje:
+    - nazev: "Errol Navis"
+      typ: Galactapedie
+      url: https://robertsspaceindustries.com/galactapedia/article/bZkAvg8BPE-errol-navis
+  kapitoly: []
+
+- id: "corbyn-salehi"
+  jmeno: "Corbyn Salehi"
+  narozeni: "2829"
+  umrti: "2922"
+  role: "imperátor UEE (2871–2881), zakladatel projektu Synthworld"
+  kategorie: "vladari"
+  medailonek: "Corbyn Salehi byl imperátorem Spojeného impéria Země (UEE) v letech 2871 až 2881. Zvolen byl se slibem otevřené vlády a konce korupce: nechal odtajnit tisíce dokumentů, podporoval vyšetřování Advokacie proti úředníkům obviněným z pochybení a rozšířil definici chráněné planety podle zákona Fair Chance. Jeho nejtrvalejším odkazem je založení projektu Archangel, známého také jako Synthworld. Po skončení mandátu projekt řídil jako ředitel a zemřel v roce 2922 na komplikace spojené s umělou slinivkou."
+  zdroje:
+    - nazev: "Corbyn Salehi"
+      typ: Galactapedie
+      url: https://robertsspaceindustries.com/galactapedia/article/RL65p7Qpdr-corbyn-salehi
+  kapitoly: [kap-9]
+
+- id: "magda-hurston"
+  jmeno: "Magda Hurston"
+  narozeni: "2833"
+  umrti: "2921"
+  role: "výkonná ředitelka Hurston Dynamics (2883–2915)"
+  kategorie: "korporace"
+  medailonek: "Magda Hurston se narodila v roce 2833 na planetě Rytif (Bremen II) jako nejstarší dítě Chesterfielda Hurstona, vystudovala organizační a sociální psychologii v Ženevě a v roce 2856 nastoupila do rodinné firmy Hurston Dynamics. Jako provozní ředitelka v roce 2865 prosadila koupi planety Stanton I a jejích čtyř měsíců od Spojeného impéria Země (UEE), díky níž mohla firma vyrábět zbraně mimo přísné zákony UEE; tak vznikla planeta Hurston. Dohlížela na stavbu prvních obytných domů pro dělníky a na rychlé a levné budování města Lorville, založeného v roce 2877. V letech 2883 až 2915 vedla firmu jako výkonná ředitelka, prodloužila pracovní dobu zaměstnancům se smlouvami Life/Labor, rozšířila těžbu a zpracování antihmoty a podepsala s armádou rekordně výnosnou smlouvu na antihmotové hlavice. Ve vedení ji vystřídal syn Gavin a v roce 2921 zahynula spolu se šesti dalšími lidmi při srážce dvou raketoplánů."
+  zdroje:
+    - nazev: "Magda Hurston"
+      typ: Galactapedie
+      url: https://robertsspaceindustries.com/galactapedia/article/V7gMKmw6wa-magda-hurston
+  kapitoly: [kap-9]
+
+- id: "dyna-lei"
+  jmeno: "Dyna Lei"
+  narozeni: "2833"
+  umrti: "2941"
+  role: "módní návrhářka, zakladatelka značky Dyna Lei"
+  kategorie: "kultura"
+  medailonek: "Dyna Lei se narodila v roce 2833 v rodině textilních dělníků a v šestnácti letech ji díky silnému portfoliu přijali jako učednici krejčího ke značce LaVenti. O tři roky později začala přes Spectrum prodávat oblečení vlastního návrhu a ze zisku si otevřela malý módní butik v Prime na Terře. Zlom přišel v roce 2857, kdy si jednu z jejích rób oblékla na předávání hudebních cen Elira hvězda Aris Achrekar, a její podnik se prudce rozrostl. Navrhovala až do své smrti v roce 2941; jedny z jejích posledních šatů, inspirované barvami planety Kiel IV, měla v roce 2939 na sobě senátorka Janna Thurville na galavečeru Green Gala, který pořádala Imperiální nadace umění."
+  zdroje:
+    - nazev: "Dyna Lei"
+      typ: Galactapedie
+      url: https://robertsspaceindustries.com/galactapedia/article/bo1LkZwmX7-dyna-lei
+  kapitoly: []
+
+- id: "sylvie-randall"
+  jmeno: "Sylvie Randall"
+  narozeni: "2835"
+  umrti: "2884"
+  role: "velitelka 89. letky („Ztracené letky“)"
+  kategorie: "armada"
+  medailonek: "Velitelka Sylvie Randall byla důstojnicí námořnictva Spojeného impéria Země (UEE) a poslední velitelkou 89. logistické podpůrné letky, které se později začalo říkat Ztracená letka. Velení převzala v roce 2878 a po celou dobu žádala námořnictvo o víc peněz a zásob; prostředky, které se jí podařilo sehnat, dávala do oprav systému včasného varování v soustavě Caliban. Jejím posledním rozkazem bylo, aby letka bránila a evakuovala civilní obyvatelstvo Calibanu. Zahynula spolu se svou letkou při pádu Calibanu v roce 2884."
+  zdroje:
+    - nazev: "Sylvie Randall"
+      typ: Galactapedie
+      url: https://robertsspaceindustries.com/galactapedia/article/V3qgj86Wz2-sylvie-randall
+  kapitoly: [kap-9, letka]
+
+- id: "theresa-branaugh"
+  jmeno: "Theresa Branaugh"
+  narozeni: "2835"
+  umrti: "2873?"
+  role: "geoložka a průzkumnice, neoficiální objevitelka soustavy Branaugh"
+  kategorie: "objevitele"
+  medailonek: "Theresa Branaugh byla geoložka, zeměměřička a průzkumnice, která veškerý čas zasvětila snu objevit novou planetární soustavu. Výpravy financovala půjčkami od lichvářů, před nimiž v době splatnosti občas utíkala do jiných soustav. V roce 2873 ji přátelé nahlásili jako pohřešovanou, když se nevrátila z výpravy do soustavy Chronos. O čtyři roky později našel průzkumník Desmond Fell její tělo v odlehlé jeskyni na planetě Branaugh II poblíž trosek její lodi; Advokacie vraha neodhalila, ale zjistila, že loď sestřelil někdo, kdo tu oblast používal jako úkryt. Fell soustavu na její počest pojmenoval Branaugh, a proto se o ní mluví jako o neoficiální objevitelce."
+  zdroje:
+    - nazev: "Theresa Branaugh"
+      typ: Galactapedie
+      url: https://robertsspaceindustries.com/galactapedia/article/VpMeGzBPyz-theresa-branaugh
+  kapitoly: []
+
+- id: "desmond-fell"
+  jmeno: "Desmond Fell"
+  narozeni: "2846"
+  umrti: "2933"
+  role: "průzkumník a navjumper, objevitel soustavy Branaugh"
+  kategorie: "objevitele"
+  medailonek: "Desmond Fell vystudoval Univerzitu Lo v New Junction (ULON), kde získal dvojí titul z geotechnologie a politického diskurzu, aby si splnil celoživotní sen objevit planetární soustavu. Po studiích pracoval jako zeměměřič pro LFR Mineral Group a v roce 2876 si z výdělků koupil loď Aurora. Při návštěvě soustavy Chronos, kam se jel podívat na Synthworld, zachytil anomálii, která ho dovedla k nezaznamenanému skokovému bodu. Na druhé straně našel v roce 2877 nejen novou soustavu, ale i tělo průzkumnice Theresy Branaugh, pohřešované čtyři roky. Objev nahlásil vládě Spojeného impéria Země (UEE) a soustavu pojmenoval na její počest."
+  zdroje:
+    - nazev: "Desmond Fell"
+      typ: Galactapedie
+      url: https://robertsspaceindustries.com/galactapedia/article/RX3dlQ5KON-desmond-fell
+  kapitoly: []
+
+- id: "neville-lott"
+  jmeno: "Neville Lott"
+  narozeni: "2851"
+  umrti: "2917"
+  role: "sériový vrah"
+  kategorie: "zlocin"
+  medailonek: "Neville Lott byl sériový vrah, který v 80. letech 29. století v pohoří Tecuya v oblasti Vastac na Terře ulovil, zajal a rozřezal sedm turistů. Při pádu Calibanu v roce 2884 přišel o dvojče i rodiče, těžce popálený byl evakuován na Terru a během léčby se u něj projevilo hluboké psychické trauma. Krátce po propuštění z nemocnice zmizel a nikdo o něm neslyšel, dokud nezačali mizet turisté: přidával se k nim na stezkách a v noci se vracel k jejich tábořišti v masce sešité z pytloviny. Advokacie ho dopadla v roce 2891; u soudu odmítl hájit se nepříčetností, byl odsouzen bez obhajoby a v roce 2917 zemřel ve vězení. Paula Qi v knize Unspeakable Evil předložila svědectví, že vražedné sklony projevoval už před Calibanem, a kritizovala dramatizace, podle nichž z něj vraha udělaly až tamní události."
+  zdroje:
+    - nazev: "Neville Lott"
+      typ: Galactapedie
+      url: https://robertsspaceindustries.com/galactapedia/article/VlMgQm7qqM-neville-lott
+  kapitoly: []
+
+- id: "joona-tzur"
+  jmeno: "Joona Tzur"
+  narozeni: "2852"
+  umrti: "žije"
+  role: "bývalý guvernér planety Severus"
+  kategorie: "politika"
+  medailonek: "Joona Tzur byl v roce 2903 zvolen guvernérem planety Severus (Kiel III) a zavedl program na oživení její ekonomiky: opuštěnou vojenskou infrastrukturu prodával firmám, které hledaly levné pozemky. Strategie se vyplatila, nabídky využila řada leteckých a kosmických společností a Tzur peníze investoval do zeleně a veřejných prostranství, čímž vytvořil pracovní místa a zvelebil dříve zpustlou krajinu. Díky jeho úsilí se v roce 2913 rozhodla správní rada veletrhu Intergalactic Aerospace Expo natrvalo usídlit na Severu. Funkční období mu skončilo v roce 2915; jeho nejstarší dcerou je senátorka Janna Thurville."
+  zdroje:
+    - nazev: "Joona Tzur"
+      typ: Galactapedie
+      url: https://robertsspaceindustries.com/galactapedia/article/RkGaY322MQ-joona-tzur
+    - nazev: "Janna Thurville"
+      typ: Galactapedie
+      url: https://robertsspaceindustries.com/galactapedia/article/Var8a27eW2-janna-thurville
+  kapitoly: []
+
+- id: "kelos-costigan"
+  jmeno: "Kelos Costigan"
+  narozeni: "2855"
+  umrti: "žije"
+  role: "imperátor UEE (2941–2950)"
+  kategorie: "vladari"
+  medailonek: "Kelos Costigan byl imperátorem Spojeného impéria Země (UEE) v letech 2941 až 2950. Než vstoupil do politiky, obchodoval s komoditami; později byl vrchním tajemníkem ve dvou vládách. V roce 2930 neuspěl v kandidatuře na imperátora, ale v roce 2940 zvítězil jako kandidát Univerzalistické strany. Za jeho vlády byla přijata obchodní iniciativa mezi lidmi a Xi’any (HuXa) a planeta Aremis (Vega II) byla uznána za součást impéria. Jeho nejstarším synem je podnikatel a politik Titus Costigan."
+  zdroje:
+    - nazev: "Kelos Costigan"
+      typ: Galactapedie
+      url: https://robertsspaceindustries.com/galactapedia/article/VJOzBxdJ28-kelos-costigan
+    - nazev: "Titus Costigan"
+      typ: Galactapedie
+      url: https://robertsspaceindustries.com/galactapedia/article/VDz7Be7E33-titus-costigan
+  kapitoly: [kap-10]
+
+- id: "dalton-colabello"
+  jmeno: "Dalton Colabello"
+  narozeni: "2858"
+  umrti: "žije"
+  role: "zakladatel a ředitel Apocalypse Arms"
+  kategorie: "korporace"
+  medailonek: "Dalton Colabello pochází z chudé rodiny z planety Borea a po získání Ekvivalence nastoupil do strýcovy stavební firmy. V roce 2884 založil vlastní stavební podnik a v roce 2887 se stal milionářem díky přestavbě řady skladů pro Drake Interplanetary. Jeho koníček, sbírání starých zbraní, ho v roce 2911 přivedl k bedně prototypů lodních zbraní neznámého původu na planetě Cestulus (Davien II). Po dlouhém pátrání zjistil, že je pro Messerův režim navrhla bývalá inženýrka Aegis Dynamics Juliet Maupin, a od její pravnučky koupil původní dokumentaci i výrobní práva. Na jejich základě postavil první řadu zbraní své nové firmy Apocalypse Arms, kterou založil v roce 2913."
+  rozpor: "Článek o Colabellovi označuje Boreu jako Magnus III, článek o Anthonym Tanakovi (i odkazy Galactapedie) jako Magnus II."
+  zdroje:
+    - nazev: "Dalton Colabello"
+      typ: Galactapedie
+      url: https://robertsspaceindustries.com/galactapedia/article/VlMJJp9B9M-dalton-colabello
+    - nazev: "Anthony Tanaka"
+      typ: Galactapedie
+      url: https://robertsspaceindustries.com/galactapedia/article/RwZBdpj2rz-anthony-tanaka
+  kapitoly: []
+
+- id: "gavin-e-hurston"
+  jmeno: "Gavin E. Hurston"
+  narozeni: "2867"
+  umrti: "žije"
+  role: "výkonný ředitel Hurston Dynamics"
+  kategorie: "korporace"
+  medailonek: "„Plukovník“ Gavin E. Hurston je současným výkonným ředitelem společnosti Hurston Dynamics. V roce 2915 vystřídal v čele firmy svou matku Magdu Hurston, z jejíž iniciativy firma koupila planetu Stanton I od Spojeného impéria Země (UEE). Pokračuje v politice svých předchůdců: planetu dál drancuje povrchovou těžbou a místo běžných pracovních poměrů používá smlouvy typu Life/Labor."
+  zdroje:
+    - nazev: "Gavin E Hurston"
+      typ: Galactapedie
+      url: https://robertsspaceindustries.com/galactapedia/article/RzPoAdZpEl-gavin-e-hurston
+    - nazev: "Magda Hurston"
+      typ: Galactapedie
+      url: https://robertsspaceindustries.com/galactapedia/article/V7gMKmw6wa-magda-hurston
+  kapitoly: []
+
+- id: "gal-dougan"
+  jmeno: "Gal Dougan"
+  narozeni: "2868"
+  umrti: "neznámo"
+  role: "folková zpěvačka"
+  kategorie: "kultura"
+  medailonek: "Gal Dougan byla folková zpěvačka, která začínala jako hornice v rodinném těžařském podniku. Proslavila se elegantními aranžmá, dělnickou poezií v textech a osobitým pěveckým stylem, kterému hudební tisk říká „ten zvuk Gal Dougan“. Na čtyřech albech zpívala o radostech a strastech práce, lásky a rodiny bez příkras, což odráželo její bouřlivé dospívání v chudé hornické rodině. Po koncertě v roce 2931 zmizela a dodnes se neví, kde je."
+  zdroje:
+    - nazev: "Gal Dougan"
+      typ: Galactapedie
+      url: https://robertsspaceindustries.com/galactapedia/article/box5WYgM2A-gal-dougan
+  kapitoly: []
+
+- id: "tarquin-klast"
+  jmeno: "Tarquin Klast"
+  narozeni: "2879"
+  umrti: "žije"
+  role: "guvernér státu Dellin na planetě Charon III"
+  kategorie: "politika"
+  medailonek: "Tarquin Klast je zvoleným guvernérem státu Dellin na planetě Charon III. Pochází z chudé rodiny a do úřadu se dostal uprostřed konfliktu mezi Dellinem a sousedním státem Acheron. Zpravodajské organizace a kontrolní skupiny ho obviňují, že ve své vládě odstranil systém brzd a protivah, zřejmě aby si udržel moc. Klast odpovídá, že tyto změny byly nutné k ochraně Dellinu před vojenskými útoky Acheronu."
+  zdroje:
+    - nazev: "Tarquin Klast"
+      typ: Galactapedie
+      url: https://robertsspaceindustries.com/galactapedia/article/0dQ4mGDJYd-tarquin-klast
+  kapitoly: []
+
+- id: "ernst-bishop"
+  jmeno: "Ernst Bishop"
+  narozeni: "2880"
+  umrti: "žije"
+  role: "admirál námořnictva UEE"
+  kategorie: "armada"
+  medailonek: "Ernst Bishop je admirálem námořnictva Spojeného impéria Země (UEE) a od 9. února 2939 velí 65. bojové skupině 2. flotily. Předtím velel 6. bojové skupině. Do hodnosti admirála ho navrhl imperátor Mikkel Sheriden a Senát ho potvrdil v roce 2930. V čele 65. bojové skupiny se účastnil bitvy o Vegu II."
+  zdroje:
+    - nazev: "Ernst Bishop"
+      typ: Galactapedie
+      url: https://robertsspaceindustries.com/galactapedia/article/ReJaavPB3k-ernst-bishop
+  kapitoly: [kap-10]
+
+- id: "paul-lesalle"
+  jmeno: "Paul LeSalle"
+  narozeni: "2881"
+  umrti: "žije"
+  role: "podnikatel, bývalý senátor a předseda Centralistické strany"
+  kategorie: "politika"
+  medailonek: "Paul LeSalle je podnikatel, v letech 2915 až 2939 senátor za planetu Cassel (Goss II) a v letech 2942 až 2948 předseda Centralistické strany. Jako senátor prosazoval nižší daně a zavedl pobídky pro firmy, které přesunou činnost na Cassel. Ze Senátu odešel v roce 2939, krátce poté, co byl jeho bývalý obchodní partner Alin Hastings odsouzen za zpronevěru a daňové úniky, a tři roky se pak věnoval své přepravní firmě a rodině. V dubnu 2950 se dostal mezi pět finálních kandidátů na imperátora Spojeného impéria Země (UEE) s programem, který sliboval daňové úlevy pro firmy, přehodnocení zákona Fair Chance, podporu lovců odměn a místních milic, povinnou vojenskou službu jako podmínku některých občanských výhod a nahrazení vězení za drobné přestupky pokutami a veřejně prospěšnou prací."
+  zdroje:
+    - nazev: "Paul LeSalle"
+      typ: Galactapedie
+      url: https://robertsspaceindustries.com/galactapedia/article/VgE5krya9w-paul-lesalle
+  kapitoly: []
+
+- id: "kyle-polo"
+  jmeno: "Kyle Polo"
+  narozeni: "2883"
+  umrti: "žije"
+  role: "bývalý senátor za Angeli"
+  kategorie: "politika"
+  medailonek: "Kyle Polo byl v letech 2935 až 2945 senátorem za planetu Angeli (Croshaw II). Hlasoval pro zákony, které snižovaly vládní výdaje a daně pro velké i malé podniky na Angeli. Jeho největším návrhem byla Polova iniciativa, která měla omezit vojenský rozpočet tím, že ho podřídí kontrole Senátu. Zpočátku získala podporu, ale po vanduulském útoku na soustavu Vega byla 4. listopadu 2945 odmítnuta a Polo, který se ve stejném hlasování ucházel o znovuzvolení, přišel o mandát."
+  zdroje:
+    - nazev: "Kyle Polo"
+      typ: Galactapedie
+      url: https://robertsspaceindustries.com/galactapedia/article/0dXZQNQMmp-kyle-polo
+  kapitoly: []
+
+- id: "tamsa-wheel"
+  jmeno: "Tamsa Wheel"
+  narozeni: "2883"
+  umrti: "žije"
+  role: "výtvarnice a sochařka"
+  kategorie: "kultura"
+  medailonek: "Tamsa Wheel je výtvarnice známá velkými interpretačními sochami z nečekaných kombinací materiálů. Podle kritika Herina Chibera její tvorba zachycuje „křehkou rovnováhu mezi matematickou přesností a nespoutaným chaosem vesmíru“. Banuský průzkumník Kofi Baféuma byl jejím dílem tak nadšený, že po ní v roce 2943 pojmenoval planetární soustavu Tamsa."
+  zdroje:
+    - nazev: "Tamsa Wheel"
+      typ: Galactapedie
+      url: https://robertsspaceindustries.com/galactapedia/article/RXlXOw9WaN-tamsa-wheel
+  kapitoly: []
+
+- id: "amandeep-vakario"
+  jmeno: "Amandeep Vakario"
+  narozeni: "2884"
+  umrti: "žije"
+  role: "duchovní kouč a motivační řečník"
+  kategorie: "kultura"
+  medailonek: "Amandeep Vakario se narodil na Terře a sám sebe označuje za duchovního vůdce; působí jako motivační řečník a kouč osobního rozvoje. V roce 2903 na meditačních seminářích prožil v deprivační nádrži „duchovní zjevení“, které ho přivedlo k vydání první knihy Finding the Hidden You vlastním nákladem. Její úspěch mu umožnil rozjet na Spectru vlastní pořad Costless Visualization a po vystoupení v show Something Every Tuesday v roce 2936 jeho popularita prudce vzrostla. Pořad pak ukončil a začal se věnovat slavným klientům, mezi něž patřili Ellroy Cass a Magnus Tobin; nejznámější je jeho kniha Enlightened Negotiating z roku 2942. Na Tobinovu žádost napsal a namluvil sérii inspirativních citátů Moments of Clarity, která zní v Commons v New Babbage na planetě microTech (Stanton IV)."
+  rozpor: "Galactapedie uvádí, že se Vakario věnoval soukromým klientům až po roce 2936 a mezi nimi i Magnusi Tobinovi, Tobin však podle vlastního článku zemřel už v roce 2912."
+  zdroje:
+    - nazev: "Amandeep Vakario"
+      typ: Galactapedie
+      url: https://robertsspaceindustries.com/galactapedia/article/R4jPNKq9vY-amandeep-vakario
+    - nazev: "Magnus Tobin"
+      typ: Galactapedie
+      url: https://robertsspaceindustries.com/galactapedia/article/RkGZqr8yNQ-magnus-tobin
+  kapitoly: []
+
+- id: "ghata-veras"
+  jmeno: "Ghata Veras"
+  narozeni: "2887"
+  umrti: "žije"
+  role: "senátor za Lo"
+  kategorie: "politika"
+  medailonek: "Ghata Veras sloužil patnáct let v armádě Spojeného impéria Země (UEE), čímž získal občanství, a pak kandidoval do Rady guvernérů planety Lo (Corel III) se slibem snížit daně lidem se středními a nižšími příjmy. Úřadu se ujal v roce 2920 a v radě se podílel na prosazení plošného snížení daně z příjmu o 3 %. V roce 2941 byl za Centralistickou stranu zvolen senátorem za Lo; dál bojuje za nižší daně a pomohl připravit několik zákonů na ochranu spotřebitelů, které omezují shromažďování a prodej dat bez upozornění. V roce 2943 vedl kampaň za uzavření věznice s nejvyšší ostrahou QuarterDeck na Kellogu VI kvůli porušování lidských práv; návrh neprošel, ale komentátoři čekají, že to v příznivější době zkusí znovu."
+  zdroje:
+    - nazev: "Ghata Veras"
+      typ: Galactapedie
+      url: https://robertsspaceindustries.com/galactapedia/article/bBzPN2lLG9-ghata-veras
+  kapitoly: []
+
+- id: "emil-quast"
+  jmeno: "Emil Quast"
+  narozeni: "2888"
+  umrti: "žije"
+  role: "architekt a interiérový designér"
+  kategorie: "kultura"
+  medailonek: "Emil Quast je architekt a interiérový designér, známý především budovou Flowhouse, veřejným shromaždištěm na Terře s organicky zakřivenou siluetou. Je samouk a začínal v Jele City na planetě Vann (Croshaw III), kde vzbudil pozornost dřevěnými prvky na stěnách galerie svého blízkého přítele Jiemby Kahlona. Guvernérka Jele City si ho pak najala na přestavbu své kanceláře, což byla první z řady veřejných zakázek, které ho nakonec přivedly do Prime na Terře. Společnost Roberts Space Industries (RSI) si ho najala na návrh interiéru lodi Constellation Phoenix, která byla v roce 2944 představena s velkým ohlasem."
+  zdroje:
+    - nazev: "Emil Quast"
+      typ: Galactapedie
+      url: https://robertsspaceindustries.com/galactapedia/article/R4jdlJl6oe-emil-quast
+  kapitoly: []
+
+- id: "parker-terrell"
+  jmeno: "Parker Terrell"
+  narozeni: "2888"
+  umrti: "žije"
+  role: "investigativní novinář, moderátor pořadu Plain Truth"
+  kategorie: "kultura"
+  medailonek: "Parker Terrell je investigativní novinář a moderátor talk show Plain Truth. Do roku 2943 psal pro New United, kde publikoval řadu odhalení a získal pověst neodbytného a vyhraněného komentátora. Po vystoupení v debatním pořadu Showdown!, kde tvrdil, že vláda Spojeného impéria Země (UEE) nezákonně použila superzbraň ke zničení povrchu planety Ellis XI, na tři měsíce zmizel. Když ho našli na planetě Vann (Croshaw III) a vyslechla ho Advokacie, znovu vystoupil v Showdown! s tvrzením, že ho za pravdu zahnali do úkrytu, a New United s ním brzy nato ukončil smlouvu. Pak přijal nabídku Spectra připravit vlastní talk show a Plain Truth se začala vysílat v roce 2944."
+  zdroje:
+    - nazev: "Parker Terrell"
+      typ: Galactapedie
+      url: https://robertsspaceindustries.com/galactapedia/article/Rxnza3Qdqd-parker-terrell
+  kapitoly: []
+
+- id: "laylani-addison"
+  jmeno: "Laylani Addison"
+  narozeni: "2889"
+  umrti: "žije"
+  role: "imperátorka UEE (od 2951)"
+  kategorie: "vladari"
+  medailonek: "Laylani Addison je současnou imperátorkou Spojeného impéria Země (UEE); přísahu složila 1. ledna 2951. Předtím devět let vyučovala integrované vědy a xenotechnologie na Mentorské univerzitě a v letech 2931 až 2947 tam byla děkankou aplikovaných věd. Není členkou žádné politické strany. Její program počítá s Inovační iniciativou, která uvolní omezení výzkumu umělé inteligence, s vyššími výdaji na vzdělání, vědu a veřejné univerzity, s lepšími vztahy mezi lidmi a mimozemskými civilizacemi, s více penězi pro Synthworld a s vládním programem na nalezení ztracené kolonizační lodi Artemis. Do své vlády jmenovala Tevarinku Ki Jotal, první členku kabinetu z řad Tevarinů."
+  zdroje:
+    - nazev: "Laylani Addison"
+      typ: Galactapedie
+      url: https://robertsspaceindustries.com/galactapedia/article/VYLvBm6Po1-laylani-addison
+    - nazev: "New United: Imperator Addison Still Settling into New Role"
+      typ: Comm-Link
+      url: https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/17951-New-United-Imperator-Addison-Still-Settling-Into-New-Role
+  kapitoly: [kap-10]
+
+- id: "alberto-vara"
+  jmeno: "Alberto Vara"
+  narozeni: "2891"
+  umrti: "žije"
+  role: "astroinženýr, zakladatel Infinity Custom"
+  kategorie: "veda-technika"
+  medailonek: "Alberto Vara je astroinženýr, držitel ceny Aron a zakladatel studia Infinity Custom, které se zabývá kompletními úpravami lodí. Po absolvování Marsovského institutu vesmírných technologií (MIST) v roce 2914 nastoupil jako mladší inženýr do Origin Jumpworks a za práci na motoru lodi M50 získal v roce 2921 svou první cenu Aron. V roce 2925 se stal hlavním inženýrem a zůstal jím až do roku 2932, kdy odešel založit vlastní firmu. O několik let později se v archivech Originu našel náčrt závodní lodi s otevřeným kokpitem; Vara s Originem tento koncept uskutečnil a závodní X1 debutoval v roce 2947."
+  zdroje:
+    - nazev: "Alberto Vara"
+      typ: Galactapedie
+      url: https://robertsspaceindustries.com/galactapedia/article/VgEgojrAQ3-alberto-vara
+  kapitoly: []
+
+- id: "mira-ngo"
+  jmeno: "Mira Ngo"
+  narozeni: "2891"
+  umrti: "žije"
+  role: "senátorka za Terru"
+  kategorie: "politika"
+  medailonek: "Mira Ngo je od roku 2936 senátorkou za Terru a nejmladším člověkem, který byl kdy zvolen do Senátu Spojeného impéria Země (UEE). Pochází z rodiny senátorů už ve třetí generaci a dlouhodobě prosazuje politiku Tranzicionalistické strany, například přesun hlavního města UEE ze Země na Terru. Dne 10. října 2949, kdy oznámila kandidaturu na imperátorku, jí někdo vykradl dům a brzy nato unikly osobní dokumenty odhalující vazby rodiny Ngo na několik soukromých stavebních firem na Terře. Přesto se v roce 2950 dostala mezi pět finálních kandidátů; slibovala obnovu historických budov na Zemi, změnu financování Synthworldu i války s Vanduuly a mírnější tresty za nenásilné trestné činy."
+  zdroje:
+    - nazev: "Mira Ngo"
+      typ: Galactapedie
+      url: https://robertsspaceindustries.com/galactapedia/article/RWoa1mlWdp-mira-ngo
+  kapitoly: []
+
+- id: "janna-thurville"
+  jmeno: "Janna Thurville"
+  narozeni: "2895"
+  umrti: "žije"
+  role: "senátorka za Severus"
+  kategorie: "politika"
+  medailonek: "Janna Thurville je nejstarší dcerou bývalého guvernéra planety Severus (Kiel III) Joony Tzura a koncertní klavíristky Xin Yi Tzur. Když byl Severus v roce 2937 uznán, stala se spolu s centralistou Hideo Utem jednou z jeho prvních senátorů. Je členkou Tranzicionalistické strany, podporuje decentralizaci vládní moci a její přenesení na ekonomicky nejúspěšnější planety UEE, prosazuje vyšší výdaje na vzdělání a umění a staví se proti přehnaným výdajům na armádu. V roce 2939 přišla na galavečer Green Gala Imperiální nadace umění v šatech od Dyny Lei, inspirovaných barvami planety Kiel IV."
+  zdroje:
+    - nazev: "Janna Thurville"
+      typ: Galactapedie
+      url: https://robertsspaceindustries.com/galactapedia/article/Var8a27eW2-janna-thurville
+    - nazev: "Dyna Lei"
+      typ: Galactapedie
+      url: https://robertsspaceindustries.com/galactapedia/article/bo1LkZwmX7-dyna-lei
+  kapitoly: []
+
+- id: "illyana-sharrad"
+  jmeno: "Illyana Sharrad"
+  narozeni: "2897"
+  umrti: "žije"
+  role: "vrchní tajemnice UEE (2942–2950)"
+  kategorie: "politika"
+  medailonek: "Illyana Sharrad byla v letech 2942 až 2950 vrchní tajemnicí Spojeného impéria Země (UEE). Do úřadu ji jmenoval imperátor Kelos Costigan poté, co během dvacetileté kariéry konzultantky pro civilní infrastrukturu odhalila rozsáhlý korupční systém kolem zakázek na veřejné stavby. Ve funkci prosazovala vyšší výdaje na opravy a rozvoj infrastruktury, ucpávala mezery v systému imperiálních grantů a pomohla sesadit několik zkorumpovaných úředníků. Na konci roku 2949 oznámila kandidaturu na imperátorku za Univerzalistickou stranu a v dubnu 2950 postoupila mezi pět finálních kandidátů, mimo jiné s plánem Jump Start na podporu místních infrastrukturních projektů a se zmrazením peněz pro Synthworld. Anonymní útočné reklamy na její rozpočet však těsně před hlasováním přetáhly část univerzalistických voličů k Titovi Costiganovi."
+  zdroje:
+    - nazev: "Illyana Sharrad"
+      typ: Galactapedie
+      url: https://robertsspaceindustries.com/galactapedia/article/0rxdJWnwyq-illyana-sharrad
+  kapitoly: []
+
+- id: "silas-koerner"
+  jmeno: "Silas Koerner"
+  narozeni: "2899"
+  umrti: "žije"
+  role: "zakladatel a ředitel Consolidated Outland"
+  kategorie: "korporace"
+  medailonek: "Silas Koerner je zakladatelem, jediným vlastníkem, hlavním konstruktérem a výkonným ředitelem společnosti Consolidated Outland. Narodil se na planetě Rytif (Bremen II) jako jediný dědic rodinného jmění. Peníze investoval do mnoha oborů, od chovu ryb přes těžbu a dálkové mapování až po elektroniku, a teprve poté založil firmu na výrobu kosmických lodí."
+  zdroje:
+    - nazev: "Silas Koerner"
+      typ: Galactapedie
+      url: https://robertsspaceindustries.com/galactapedia/article/V8gJMXjE8o-silas-koerner
+  kapitoly: []
+
+- id: "suj-kossi"
+  jmeno: "Suj Kossi"
+  narozeni: "2900"
+  umrti: "žije"
+  role: "první tevarinský senátor (za Jalan)"
+  kategorie: "xiani-tevarini"
+  medailonek: "Suj Kossi se v roce 2946 stal prvním Tevarinem, který získal senátorský mandát, když zvítězil ve volbách za planetu Jalan. Narodil se v roce 2900 u města Gemma v rodině profesionálních lupičů a od deseti let se účastnil jejich nájezdů; když v roce 2919 při přepadení vodní farmy u Nedily zahynula jeho nejstarší sestra i tři farmáři a ukázalo se, že nebylo co ukrást, utekl z domova a vstoupil do armády UEE. Později přešel k námořnictvu jako pilot a v roce 2928 při vanduulském nájezdu v soustavě Oberon zaštítil vlastní lodí tři techniky před nepřátelskou palbou; za těžká zranění, která ukončila jeho vojenskou kariéru, dostal občanství, Medaili za statečnost a čestné propuštění. Jako zastánce nájemníků se v roce 2937 dostal do městské rady Gemmy, prosadil regulaci nájemného a v roce 2946 kandidoval za Univerzalistickou stranu do Senátu, přičemž kampaň na týden přerušil, aby se po bitvě o Vegu II hlásil u námořních záloh. V Senátu spolupracuje s imperátorkou Laylani Addison na programech pro zapojení Tevarinů do veřejné sféry a v roce 2951 byl znovu zvolen."
+  rozpor: "Článek o Kossim označuje Jalan za Elysium III, článek o Corath'Thalovi (a odkaz v Kossiho článku) za Elysium IV."
+  zdroje:
+    - nazev: "Suj Kossi"
+      typ: Galactapedie
+      url: https://robertsspaceindustries.com/galactapedia/article/RMNgraDJAA-suj-kossi
+    - nazev: "Terra Gazette: What Does the Future Hold for Suj Kossi?"
+      typ: Comm-Link
+      url: https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/18694-Terra-Gazette-What-Does-The-Future-Hold-For-Suj-Kossi
+  kapitoly: []
+
+- id: "eria-quint"
+  jmeno: "Eria Quint"
+  narozeni: "2901"
+  umrti: "žije"
+  role: "novinářka, moderátorka pořadu Showdown!"
+  kategorie: "kultura"
+  medailonek: "Eria Quint je novinářka, moderátorka debatních pořadů a politická analytička. Od roku 2935 moderuje zpravodajský debatní pořad Showdown! na Spectru. Předtím pracovala jako politická reportérka listu Terra Gazette."
+  zdroje:
+    - nazev: "Eria Quint"
+      typ: Galactapedie
+      url: https://robertsspaceindustries.com/galactapedia/article/V7gMqNgeOa-eria-quint
+  kapitoly: []
+
+- id: "sindo-guerrero"
+  jmeno: "Sindo Guerrero"
+  narozeni: "2902"
+  umrti: "žije"
+  role: "hudebník"
+  kategorie: "kultura"
+  medailonek: "Sindo Guerrero je hudebník, který spojuje flamenco s psychedelií; nejvíc ho proslavila píseň „Sun Kissed“. Jako dítě o hudbu nejevil zájem, ale v pozdním dospívání se stal zpěvákem kapely svých přátel a dalších pět let s nimi vystupoval a učil se hrát na kytaru a klávesy. Když se rodiče přestěhovali do soustavy Ellis, rozjel sólovou dráhu a jeho první hit „Outsider Again, I...“ se dostal do první desítky hitparády New United. Na rodinném výletě do soustavy T.āl v roce 2929 ho žlutě zbarvená architektura planety Oil'xa (T.āl II) inspirovala k písni „Sun Kissed“, která se stala rekordní jedničkou. V roce 2937, po téměř dvou letech nepřetržitého turné a po skončení desetileté smlouvy, přestal koncertovat s tím, že vydělal dost na celý život; od té doby jen spolupracuje s jinými hudebníky."
+  zdroje:
+    - nazev: "Sindo Guerrero"
+      typ: Galactapedie
+      url: https://robertsspaceindustries.com/galactapedia/article/01LNooPKYr-sindo-guerrero
+  kapitoly: []
+
+- id: "titus-costigan"
+  jmeno: "Titus Costigan"
+  narozeni: "2909"
+  umrti: "žije"
+  role: "ředitel Esrua Industries, kandidát na imperátora"
+  kategorie: "politika"
+  medailonek: "Titus Costigan je výkonným ředitelem firmy Esrua Industries, ředitelem neziskové nadace Better Together Foundation a nejstarším synem bývalého imperátora Kelose Costigana. V roce 2950 se jako kandidát Univerzalistické strany dostal mezi pět finálních kandidátů na úřad imperátora Spojeného impéria Země (UEE). Sliboval oživit ekonomiku uvolněním regulací pro podniky, zvýšit financování Iniciativy pro mobilizaci milic a zprůhlednit, jak se utrácejí peníze na Synthworld. Před finálním hlasováním se objevilo několik útočných reklam neznámého původu, které ho spojovaly s drogovým syndikátem působícím v několika soustavách, a jeho kampaň na ně odmítla reagovat."
+  zdroje:
+    - nazev: "Titus Costigan"
+      typ: Galactapedie
+      url: https://robertsspaceindustries.com/galactapedia/article/VDz7Be7E33-titus-costigan
+  kapitoly: []
+
+- id: "ellroy-cass"
+  jmeno: "Ellroy Cass"
+  narozeni: "2919"
+  umrti: "žije"
+  role: "umělec a celebrita"
+  kategorie: "kultura"
+  medailonek: "Ellroy Cass je umělec, herec, tanečník, hudebník a celebrita, známý svými monumentálními díly, která spojují zvuk, obraz a živé vystoupení. Bulvár o něm pravidelně píše kvůli velkým večírkům, problémům s návykovými látkami, extravagantním uměleckým kouskům, okázalým nákupům a bouřlivému chování. V roce 2944 zemřel herec Jared Yildiz na předávkování drogou Neon, kterou údajně získal na palubě Cassovy lodi Constellation Phoenix. Cass byl už tehdy pod drobnohledem kvůli nedávnému pobytu na odvykací léčbě a zvýšená pozornost médií vyústila v jeho veřejné zhroucení, při němž se pokusil zapálit svůj rekreační dům na planetě Tangaroa (Helios II)."
+  zdroje:
+    - nazev: "Ellroy Cass"
+      typ: Galactapedie
+      url: https://robertsspaceindustries.com/galactapedia/article/RegZ7z96Gy-ellroy-cass
+  kapitoly: []
+
+- id: "selma-tontil"
+  jmeno: "Selma Tontil"
+  narozeni: "neznámo"
+  umrti: "neznámo"
+  role: "právnička, spoluzakladatelka a ředitelka firmy Tarsus"
+  kategorie: "korporace"
+  medailonek: "Selma Tontil byla povoláním právnička a sama patřila mezi navjumpery. Když Tara a Alfon v roce 2292 úspěšně vyzkoušeli modul Tarsus, který dokázal přeměnit běžný kvantový pohon na skokový, poradila jim, aby si vynález urychleně nechali patentovat, a s její pomocí vznikla společnost Tarsus. Úprava stála jen zlomek ceny skokového pohonu RSI, a když firmu RSI zažalovala, Tontil právo na úpravy pohonů úspěšně obhájila. Později od obou vynálezců odkoupila jejich kontrolní podíly a jako ředitelka rozšířila výrobu i o oblíbenou řadu kvantových pohonů."
+  zdroje:
+    - nazev: "Portfolio: Tarsus Electronics"
+      typ: Comm-Link
+      url: https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/15371-Portfolio-Tarsus-Electronics
+  kapitoly: [kap-2]
+
+- id: "ashley-ghan"
+  jmeno: "Ashley Ghan"
+  narozeni: "neznámo"
+  umrti: "neznámo"
+  role: "dopravkyně, objevitelka soustavy Caliban"
+  kategorie: "objevitele"
+  medailonek: "Ashley Ghan byla dopravkyně, která v roce 2341 prodala vládě polohu soustavy Caliban. Na zásobovacím letu v soustavě Nul ji přepadla banda psanců; uprchla kvantovým skokem a při kontrole, zda ji nikdo nepronásleduje, narazila na anomálii, z níž se vyklubal skokový bod. Soustavu pojmenovala po svém otci a byla to teprve šestá soustava, kterou lidstvo objevilo. Vládní průzkumníci však na měsíci Caliban 4f našli lidskou stavbu s bednami rud, což vyvolalo pochybnosti o jejím příběhu. Ghan odmítla nabídky na slávu, převzala odměnu a zmizela; v rozhovoru s Lynn Gale v roce 2343 trvala na tom, že měla jen štěstí."
+  rozpor: "Článek Galactapedie o Antoinu Lebecovi uvádí jako objevitelku skokového bodu Nul–Caliban „Ashleigh Gonn“, článek o soustavě Caliban i Comm-Link ji jmenují Ashley Ghan."
+  zdroje:
+    - nazev: "Caliban System"
+      typ: Galactapedie
+      url: https://robertsspaceindustries.com/galactapedia/article/0jGyPQ1r5m-caliban-system
+    - nazev: "Galactic Guide: Caliban System"
+      typ: Comm-Link
+      url: https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/16510-Galactic-Guide-Caliban-System
+    - nazev: "Antoine Lebec"
+      typ: Galactapedie
+      url: https://robertsspaceindustries.com/galactapedia/article/0ODddzO7Dq-antoine-lebec
+  kapitoly: []
+
+- id: "vernon-tar"
+  jmeno: "Vernon Tar"
+  narozeni: "neznámo"
+  umrti: "neznámo"
+  role: "navjumper, první člověk, který potkal Banu"
+  kategorie: "objevitele"
+  medailonek: "Vernon Tar byl šestatřicetiletý nezávislý navjumper, který 12. června 2438 při hledání skokových bodů v soustavě Davien zachytil neznámou loď. Myslel si, že jde o jiného průzkumníka, a zahájil palbu; teprve pak zjistil, že má před sebou mimozemské plavidlo, a nahlásil své souřadnice Spojeným národům Země (UNE). Na místo spěchala delegace generála Neala Socoloviche, o dva týdny později navázali Banu oficiální kontakt a v říjnu 2438 vzešla z jednání první mezihvězdná mírová a obchodní dohoda. Podle Socolovichova hlášení armáda Tarovi vysvětlila, že pokud bude mlčet, zůstane hrdinou prvního kontaktu, a v rozhovoru pro tisk za něj dokonce vystupoval podstavený voják. Později vyšlo najevo, že loď, na kterou narazil, patřila banuskému uprchlíkovi."
+  zdroje:
+    - nazev: "Banu-Human First Contact"
+      typ: Galactapedie
+      url: https://robertsspaceindustries.com/galactapedia/article/VY4Wnv7ZgW-banu-human-first-contact
+    - nazev: "First Contact Day"
+      typ: Galactapedie
+      url: https://robertsspaceindustries.com/galactapedia/article/01Lvo8ZWxX-first-contact-day
+    - nazev: "2438: Hello"
+      typ: Comm-Link
+      url: https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/12690-2438-Hello
+    - nazev: "Galactic Guide: Davien System"
+      typ: Comm-Link
+      url: https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/13564-Galactic-Guide-Davien-System
+  kapitoly: [kap-3]
+
+- id: "wendell-dopse"
+  jmeno: "Wendell Dopse"
+  narozeni: "neznámo"
+  umrti: "neznámo"
+  role: "průzkumník, objevitel soustavy Davien"
+  kategorie: "objevitele"
+  medailonek: "Wendell Dopse koncem roku 2429 požádal v šanghajské kanceláři projektu Far Star o zlevněný skokový pohon a v polovině ledna 2430 ho dostal. Podle legendy strávil dva týdny Červeného festivalu s rodinou a váhal, zda ji má opustit; poslední den svátku prý uviděl osamělý červený lampion stoupající k obloze, vzal to jako znamení a vydal se jeho směrem. O několik dní později objevil skokový bod ze Sluneční soustavy do soustavy Davien, kterou pojmenoval po svém tchánovi. Objev vyvrátil tehdejší předpoklad vědců, že ve Sluneční soustavě už žádný další skokový bod není, a urychlil vývoj technologií pro vyhledávání skoků. Skeptici však legendu o lampionu zpochybňují a upozorňují na jeho dřívější výpravy, při nichž zdokonaloval nové skenovací metody."
+  zdroje:
+    - nazev: "Galactic Guide: Davien System"
+      typ: Comm-Link
+      url: https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/13564-Galactic-Guide-Davien-System
+    - nazev: "Portfolio: Rise of the Red Festival"
+      typ: Comm-Link
+      url: https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/19097-Portfolio-Rise-Of-The-Red-Festival
+  kapitoly: [kap-3]
+
+- id: "adelaide-lorris"
+  jmeno: "Adelaide Lorris"
+  narozeni: "neznámo"
+  umrti: "2464"
+  role: "uprchlice, objevitelka soustavy Cathcart"
+  kategorie: "objevitele"
+  medailonek: "Adelaide Lorris byla hledaná uprchlice, která v roce 2438 objevila soustavu Cathcart. Mnozí se domnívají, že jí soustava nějakou dobu sloužila jako úkryt a data o skoku předala Spojeným národům Země (UNE) až ve chvíli, kdy si všimla průzkumníků skenujících okolí skokového bodu. Soustavu pojmenovala po maršálovi, který ji pronásledoval, a ironií osudu ji právě tento maršál v roce 2464 zastřelil. Protože soustava neměla žádné planety, UNE si ji nenárokovalo a armáda ji začala využívat jako skládku vyřazených lodí."
+  zdroje:
+    - nazev: "Cathcart System"
+      typ: Galactapedie
+      url: https://robertsspaceindustries.com/galactapedia/article/RL6524vWO3-cathcart-system
+    - nazev: "Galactic Guide: Cathcart System"
+      typ: Comm-Link
+      url: https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/12962-Galactic-Guide-Cathcart-System
+    - nazev: "Observist Dark: Spider, Cathcart"
+      typ: Comm-Link
+      url: https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/14087-Observist-Dark-Spider-Cathcart
+  kapitoly: [kap-3]
+
+- id: "marsal-cathcart"
+  jmeno: "maršál Cathcart"
+  narozeni: "neznámo"
+  umrti: "neznámo"
+  role: "maršál, pronásledovatel Adelaide Lorris"
+  kategorie: "zlocin"
+  medailonek: "Cathcart byl uznávaný maršál, který v 25. století pronásledoval hledanou uprchlici Adelaide Lorris. Když Lorris v roce 2438 objevila novou soustavu, pojmenovala ji právě po něm. Soustava Cathcart se později stala útočištěm psanců a tuláků, kteří z vyřazených vojenských lodí postavili osadu Spider. Maršál Cathcart nakonec Lorris v roce 2464 zastřelil."
+  zdroje:
+    - nazev: "Cathcart System"
+      typ: Galactapedie
+      url: https://robertsspaceindustries.com/galactapedia/article/RL6524vWO3-cathcart-system
+    - nazev: "Observist Dark: Spider, Cathcart"
+      typ: Comm-Link
+      url: https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/14087-Observist-Dark-Spider-Cathcart
+    - nazev: "Galactic Guide: Cathcart System"
+      typ: Comm-Link
+      url: https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/12962-Galactic-Guide-Cathcart-System
+  kapitoly: [kap-3]
+
+- id: "armistead-perry"
+  jmeno: "Armistead Perry"
+  narozeni: "neznámo"
+  umrti: "neznámo"
+  role: "generálka námořnictva UPE a UEE, autorka Perryho linie"
+  kategorie: "armada"
+  medailonek: "Armistead Perry pocházela z vojenské rodiny, Ekvivalenci získala už v šestnácti letech a důstojnickou akademii námořnictva Spojených planet Země (UPE) zakončila jako nejlepší absolventka. Do námořnictva nastoupila v roce 2488 jako poručice v soustavě Corel, kde hlídala skokový bod do Geddonu a zadržovala pašeráky z Banuského protektorátu; plukovnicí byla už v roce 2503. V roce 2531 přišla při střetu s velkým pašeráckým gangem o nohu, byla povýšena na generálku a převelena do soustavy Kilian, odkud pomáhala vybudovat silnou vojenskou přítomnost v nově objevené soustavě Yā'mon. V roce 2542 navrhla vytvořit nárazníkové pásmo mezi Xi’anským impériem a UPE; Tribunál po měsících souhlasil, vybral pro ně osm soustav a na její počest je pojmenoval Perryho linie. Generálkou zůstala i v námořnictvu Spojeného impéria Země (UEE), a to až do roku 2589."
+  zdroje:
+    - nazev: "Armistead Perry"
+      typ: Galactapedie
+      url: https://robertsspaceindustries.com/galactapedia/article/Rw1KpEJDvp-armistead-perry
+  kapitoly: []
+
+- id: "lii-se-kre"
+  jmeno: "Lii\" se Kr.ē"
+  narozeni: "neznámo"
+  umrti: "neznámo"
+  role: "císařovna Xi’anů (2372–2643)"
+  kategorie: "xiani-tevarini"
+  medailonek: "Lii\" se Kr.ē vládla Xi’anskému impériu v letech 2372 až 2643 jako předposlední panovnice Třetího imperiálního věku. Kvůli událostem, které provázely první kontakt Xi’anů s lidmi, zastávala tvrdě protilidský postoj a nechala rychle posilovat xi’anské vojenské síly podél Perryho linie. Ani opakované výhrůžky vojenským zásahem ze strany Spojených planet Země (UPE) ji nepřiměly prozradit, jak daleko Xi’anské impérium sahá. Jejím synovcem je současný císař T.uēng se Kr.ē."
+  zdroje:
+    - nazev: "Emperor Lii\" se Kr.ē"
+      typ: Galactapedie
+      url: https://robertsspaceindustries.com/galactapedia/article/0Qlgxrv6xv-emperor-lii-se-kree
+  kapitoly: [kap-4]
+
+- id: "tueng-se-kre"
+  jmeno: "T.uēng se Kr.ē"
+  narozeni: "neznámo"
+  umrti: "žije"
+  role: "současný císař Xi’anů"
+  kategorie: "xiani-tevarini"
+  medailonek: "T.uēng se Kr.ē je současným císařem Xi’anského impéria; korunován byl v roce 2643 jako nástupce své tety, císařovny Lii\" se Kr.ē. Spolu se senátorem Spojeného impéria Země (UEE) Terrencem Akarim stál za první dohodou, která měla ukončit studenou válku mezi Xi’any a lidmi. Je posledním členem rodu Kr.ē, který smí podle zákona převzít císařský titul. Po jeho smrti bude vybrán nový císařský rod a Třetí imperiální věk skončí."
+  zdroje:
+    - nazev: "Emperor T.uēng se Kr.ē"
+      typ: Galactapedie
+      url: https://robertsspaceindustries.com/galactapedia/article/VaZwmlmPQo-emperor-kree
+    - nazev: "Emperor Lii\" se Kr.ē"
+      typ: Galactapedie
+      url: https://robertsspaceindustries.com/galactapedia/article/0Qlgxrv6xv-emperor-lii-se-kree
+  kapitoly: [kap-8]
+
+- id: "chule-se-rua"
+  jmeno: "Ch.ul'ē se Ru'a"
+  narozeni: "neznámo"
+  umrti: "neznámo"
+  role: "xi’anská císařovna Prvního imperiálního věku"
+  kategorie: "xiani-tevarini"
+  medailonek: "Ch.ul'ē se Ru'a byla předposlední císařovnou Prvního imperiálního věku Xi’anů. Jako jediná dcera předchozího panovníka čelila silnému tlaku Rady tří svého rodu, aby zajistila pokračování linie Ru'a co největším počtem dědiců; roku 1021 př. n. l. porodila syna Se'anga, další děti však přes opakované pokusy mít nemohla. Celý život milovala zvířata: schválila stavbu přírodní rezervace na planetě Ko'li (Ē'aluth III) a osobně dohlížela na vznik stanovišť pro živočichy z původního domovského světa Xi’anů. Zemřela ve věku pouhých 162 let při sesuvu půdy, když ji během návštěvy planety Xi (R.il'a V) zastihla nečekaná bouře."
+  zdroje:
+    - nazev: "Emperor Ch.ul'ē se Ru'a"
+      typ: Galactapedie
+      url: https://robertsspaceindustries.com/galactapedia/article/0QleWjn559-emperor-chulee-se-rua
+  kapitoly: []
+
+- id: "seang-se-rua"
+  jmeno: "Se'ang se Ru'a"
+  narozeni: "neznámo"
+  umrti: "neznámo"
+  role: "poslední xi’anský císař z rodu Ru'a"
+  kategorie: "xiani-tevarini"
+  medailonek: "Se'ang se Ru'a byl posledním císařem Xi’anského impéria z rodu Ru'a, který vládl po celý První imperiální věk. Jeho matka Ch.ul'ē zemřela nečekaně mladá a bez dalších potomků, takže Se'ang zůstal jediným členem rodu oprávněným zdědit korunu. Spolu s Radou tří rodu Ru'a proto vymyslel postup, jak vybrat příští císařský rod; volba padla na rod Xy.ō a Se'ang dobrovolně odstoupil, aby mohla nastoupit Y.ah'a se Xy.ō jako první panovnice Druhého imperiálního věku (od roku 878 př. n. l.). Spolu s ní vedl terraformaci planety R.aip'uāng (Kai'pua II), kam se pak uchýlil a zbývající desetiletí zasvětil studiu li'tovy."
+  zdroje:
+    - nazev: "Emperor Se'ang se Ru'a"
+      typ: Galactapedie
+      url: https://robertsspaceindustries.com/galactapedia/article/RWo5gEXjnP-emperor-seang-se-rua
+    - nazev: "Emperor Y.ah'a se Xy.ō"
+      typ: Galactapedie
+      url: https://robertsspaceindustries.com/galactapedia/article/0ODxZEPdoZ-emperor-yaha-se-xyoo
+  kapitoly: []
+
+- id: "yaha-se-xyo"
+  jmeno: "Y.ah'a se Xy.ō"
+  narozeni: "neznámo"
+  umrti: "neznámo"
+  role: "první xi’anská císařovna Druhého imperiálního věku"
+  kategorie: "xiani-tevarini"
+  medailonek: "Y.ah'a se Xy.ō byla první císařovnou Druhého imperiálního věku Xi’anů. Původně se věnovala potravinářské mikrobiologii a do Rady tří svého rodu se dostala, když objevila bakterii umožňující rychlé kvašení obilí a luštěnin, čímž odvrátila hrozící hladomor na planetě Ka'ua (Hyoton IV). Když byl rod Xy.ō vybrán jako nástupce rodu Ru'a, stala se císařovnou díky příznivému postavení nejmladší ze tří dcer. S posledním císařem rodu Ru'a Se'angem vedla terraformaci planety R.aip'uāng (Kai'pua II) jako poctu mnoha tisíciletím služby rodu Ru'a. Za její vlády se rozvinulo vědění o konzervaci potravin a vzrostl vliv rodů, které se zabývaly biologií."
+  zdroje:
+    - nazev: "Emperor Y.ah'a se Xy.ō"
+      typ: Galactapedie
+      url: https://robertsspaceindustries.com/galactapedia/article/0ODxZEPdoZ-emperor-yaha-se-xyoo
+  kapitoly: []
+
+- id: "corath-thal"
+  jmeno: "Corath'Thal"
+  narozeni: "neznámo"
+  umrti: "neznámo"
+  role: "tevarinský válečný vůdce"
+  kategorie: "xiani-tevarini"
+  medailonek: "Corath'Thal byl tevarinský válečný vůdce, který za druhé tevarinské války vedl ozbrojené povstání proti Spojenému impériu Země (UEE). Jako skvělý a charismatický vůdce sjednotil mnoho Tevarinů rozprášených po první válce s cílem získat zpět jejich domovský svět Kaleeth, dnešní Jalan (Elysium IV). Pomocí partyzánské taktiky se nepozorovaně přesouval mezi soustavami a útočil tam, kde armáda UEE nebyla, takže lidé jen těžko odhadovali jeho další krok. Tevarinské síly však postupně řídly a nebylo je čím doplnit. Když po bitvě o Centauri bylo jasné, že Tevarinové znovu prohrají, vedl Corath'Thal svou flotilu k poslednímu výpadu ke Kaleethu, kde lodě vypnuly štíty a shořely v atmosféře planety."
+  zdroje:
+    - nazev: "Warlord Corath'Thal"
+      typ: Galactapedie
+      url: https://robertsspaceindustries.com/galactapedia/article/RkGxWGQ2Qp-warlord-coraththal
+  kapitoly: [kap-6]
+
+- id: "paul-barlow"
+  jmeno: "Paul Barlow"
+  narozeni: "neznámo"
+  umrti: "neznámo"
+  role: "mariňák, oslavovaný „hrdina“ bitvy o Fabelu"
+  kategorie: "armada"
+  medailonek: "Paul Barlow byl jediným mariňákem ze svého družstva, který přežil vanduulský útok na hornickou osadu Fabela v soustavě Caliban 15. srpna 2825. Oficiální verze, kterou rozšířila média, z něj udělala hrdinu, jenž sám s vozidlem Ballista zničil celou vanduulskou letku, a Barlowa oslavovali po celém impériu. Po pádu Calibanu v roce 2884 však přiznal, že na nátlak nadřízených lhal: ve skutečnosti při útoku v opilosti utíkal schovat se do dolu a z Ballisty střílel zraněný bývalý horník Ignacio Assaf, zatímco Barlow jen vysílal nouzové volání. S novinářkou Melanií Andrieux napsal knihu A Good Lie, která obě verze staví vedle sebe, a veškerý výtěžek z ní připadl Assafově rodině. Zbytek života pomáhal veteránům trpícím posttraumatickou stresovou poruchou; námořní pěchota jeho tvrzení nikdy nekomentovala a oficiální vyšetřování neproběhlo."
+  zdroje:
+    - nazev: "Battle of Fabela"
+      typ: Comm-Link
+      url: https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/17862-Battle-Of-Fabela
+  kapitoly: []
+
+- id: "ignacio-assaf"
+  jmeno: "Ignacio Assaf"
+  narozeni: "neznámo"
+  umrti: "2825"
+  role: "bývalý horník, skutečný hrdina bitvy o Fabelu"
+  kategorie: "armada"
+  medailonek: "Ignacio Assaf byl bývalý horník, který se v osadě Fabela v soustavě Caliban živil sběrem a zpeněžováním starého vybavení. Při vanduulském útoku 15. srpna 2825 ho zranily střepiny, přesto byl odhodlaný vetřelce zastavit. Uklidnil vyděšeného mariňáka Paula Barlowa a přesvědčil ho, aby díky svému vojenskému oprávnění zpřístupnil vozidlo Ballista čekající na údržbu; ze střeleckého místa pak těžce poškodil bombardér Void a sestřelil druhý bombardér i dvě stíhačky Scythe. Posily námořnictva, které vzápětí dorazily, už pro něj přišly pozdě: podlehl zraněním a slávu za jeho čin oficiálně sklidil Barlow. Pravdu odhalil Barlow až po pádu Calibanu v roce 2884 a svou knihu A Good Lie věnoval Assafovi slovy „I když tě dějiny zapomenou, já nikdy.“"
+  zdroje:
+    - nazev: "Battle of Fabela"
+      typ: Comm-Link
+      url: https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/17862-Battle-Of-Fabela
+  kapitoly: []
+
+- id: "dean-kellar"
+  jmeno: "Dean Kellar"
+  narozeni: "neznámo"
+  umrti: "2931"
+  role: "zločinec a pilot, hlavní postava Kellarova útěku"
+  kategorie: "zlocin"
+  medailonek: "O původu Deana Kellara se nic jistého neví; poprvé se v záznamech objevil jako dvanáctiletý, když ho policie v soustavě Banshee zadržela při pokusu o loupež v hangáru. Do sedmnácti let měl na kontě sedm odsouzení za násilné činy a po vzpouře v nápravném zařízení skončil na vězeňském světě QuarterDeck, odkud vyšel jako chladnokrevný profesionál: pašoval pro síť Ligo Crew a později plnil zakázkové vraždy pro různé syndikáty. V roce 2931 zastřelil ve stanici Spider v soustavě Cathcart po hádce o manévrovací trysky Anvil muže, který se ukázal být tajným agentem Advokacie. Následná honička, nazvaná Kellarův útěk, se rozšířila do pěti soustav a zapojily se do ní přes tři desítky lidí z obou stran zákona. Skončila 20. května 2931 v soustavě Nexus, kde Kellara po sedmadvacetiminutovém souboji zabila civilistka a bývalá vojačka Anna Flynn."
+  zdroje:
+    - nazev: "Kellar's Run"
+      typ: Galactapedie
+      url: https://robertsspaceindustries.com/galactapedia/article/RxNxDYYJNd-kellars-run
+    - nazev: "This Day In History: Kellar's Run"
+      typ: Comm-Link
+      url: https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/13885-This-Day-In-History-Kellars-Run
+  kapitoly: []
+
+- id: "charles-baxter"
+  jmeno: "Charles Baxter"
+  narozeni: "neznámo"
+  umrti: "neznámo"
+  role: "předák Gaia Planet Services, svědek prvního kontaktu s Xi’any"
+  kategorie: "korporace"
+  medailonek: "Charles Baxter byl předákem terraformačního týmu společnosti Gaia Planet Services, který v roce 2530 bez povolení přistál na planetě Pallas III, aby ji připravil k terraformaci. Během průzkumu se odevšad vynořily neznámé lodě a všech 276 lidí zajali Xi’ani; bylo to vůbec první setkání lidstva s touto civilizací. Xi’ani poznali, že operaci vede Baxter, a na znamení dobré vůle ho propustili. Uprchl do soustavy Baker a nejdřív se obrátil na své nadřízené, ne na úřady; když chtělo vedení firmy vyjednávat s Xi’any na vlastní pěst, Baxter se postavil proti. Poté vypovídal před třemi tribuny Spojených planet Země (UPE) a výborem senátorů a přiznal, že tým před přistáním planetu pořádně neprověřil skenery."
+  zdroje:
+    - nazev: "2530: The Galaxy Gets Bigger"
+      typ: Comm-Link
+      url: https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/12697-2530-The-Galaxy-Gets-Bigger
+    - nazev: "Galactic Guide: Pallas System (Hui sen Th.us’ūng)"
+      typ: Comm-Link
+      url: https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/17220-Galactic-Guide-Pallas-System-Hui-Sen-Thus-ng
+  kapitoly: [kap-4]
+
+- id: "ki-jotal"
+  jmeno: "Ki Jotal"
+  narozeni: "neznámo"
+  umrti: "žije"
+  role: "ředitelka Ministerstva dopravy a navigace, první Tevarinka v kabinetu"
+  kategorie: "xiani-tevarini"
+  medailonek: "Ki Jotal je Tevarinka, kterou imperátorka Laylani Addison jmenovala ředitelkou Ministerstva dopravy a navigace Spojeného impéria Země (UEE). Stala se tak vůbec prvním Tevarinem v kabinetu. Příznivci imperátorky její jmenování uvádějí mezi hlavními úspěchy nové vlády, která slíbila posílit hlas Tevarinů ve státní správě. Addisonina administrativa navíc jmenovala do vládních funkcí víc Tevarinů než kterákoli vláda předtím."
+  zdroje:
+    - nazev: "Terra Gazette: What Does the Future Hold for Suj Kossi?"
+      typ: Comm-Link
+      url: https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/18694-Terra-Gazette-What-Does-The-Future-Hold-For-Suj-Kossi
+    - nazev: "New United: Imperator Addison Still Settling into New Role"
+      typ: Comm-Link
+      url: https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/17951-New-United-Imperator-Addison-Still-Settling-Into-New-Role
+  kapitoly: [kap-10]
+
+- id: "sektor8"
+  jmeno: "Sektor8"
+  narozeni: "neznámo"
+  umrti: "žije"
+  role: "pouliční umělec"
+  kategorie: "kultura"
+  medailonek: "Sektor8 je pseudonym pouličního umělce, který žije a tvoří na planetě Rytif (Bremen II) ve Spojeném impériu Země (UEE). Specializuje se na barevná abstraktní díla, která na veřejné budovy umístí během jediného večera. V roce 2948 si ho firmy Accelerated Mass Design a Consolidated Outland najaly, aby navrhl speciální vzhled pro jejich limitovanou závodní loď Mustang Omega."
+  zdroje:
+    - nazev: "Sektor8"
+      typ: Galactapedie
+      url: https://robertsspaceindustries.com/galactapedia/article/RwZBLBJvY6-sektor8
+  kapitoly: []

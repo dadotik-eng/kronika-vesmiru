@@ -1,0 +1,69 @@
+---
+layout: default
+title: Osobnosti
+permalink: /osobnosti/
+popis: Rejstřík osob z dějin vesmíru Star Citizen. Imperátoři, objevitelé, vojáci, zločinci i umělci s krátkými medailonky a odkazy na oficiální zdroje.
+---
+{% assign osoby = site.data.osoby %}
+{% assign kat = "vladari:Vládci|politika:Politika|armada:Armáda|objevitele:Objevitelé|veda-technika:Věda a technika|korporace:Korporace|kultura:Kultura a média|zlocin:Zločin|xiani-tevarini:Xi'ani a Tevarinové" | split: "|" %}
+<section class="blok osa-hlava">
+  <p class="nadtitul">Rejstřík · {{ osoby.size }} osob</p>
+  <h1>Osobnosti</h1>
+  <p class="perex">Lidé i mimozemšťané, kteří psali dějiny. Každý medailonek vychází z oficiálního zdroje a odkazuje na něj.</p>
+  <p class="tlacitka"><a class="tlacitko" href="{{ '/rod-messeru/' | relative_url }}">Rodokmen Messerů</a></p>
+</section>
+
+<div class="blok os-ovladani">
+  <input type="search" id="hledat" placeholder="Hledat jméno nebo roli…" aria-label="Hledat osobu">
+  <div class="ery-cipy os-filtr" role="group" aria-label="Filtr podle oblasti">
+    <button type="button" class="aktivni" data-k="">Všichni</button>
+    {% for p in kat %}{% assign kv = p | split: ":" %}
+    <button type="button" data-k="{{ kv[0] }}">{{ kv[1] }}</button>
+    {% endfor %}
+  </div>
+  <p class="os-pocet" id="pocet" aria-live="polite"></p>
+</div>
+
+<div class="blok os-mrizka" id="osoby">
+{% for o in osoby %}
+  <article class="osoba" id="{{ o.id }}" data-k="{{ o.kategorie }}" data-hledat="{{ o.jmeno | downcase }} {{ o.role | downcase }}">
+    <header>
+      <h2>{{ o.jmeno }}</h2>
+      <p class="os-roky">{{ o.narozeni }}{% if o.umrti %} – {{ o.umrti }}{% endif %}</p>
+      <p class="os-role">{{ o.role }}</p>
+    </header>
+    <p class="os-text">{{ o.medailonek }}</p>
+    {% if o.rozpor %}<p class="os-rozpor"><b>Rozpor v pramenech:</b> {{ o.rozpor }}</p>{% endif %}
+    <footer>
+      {% if o.rod == "messer" %}<a href="{{ '/rod-messeru/#' | append: o.id | relative_url }}">Rodokmen →</a>{% endif %}
+      {% for k in o.kapitoly %}{% if k == "letka" %}<a href="{{ '/archiv/#letka' | relative_url }}">▶ Ztracená letka</a>{% else %}{% assign n = k | remove: "kap-" | plus: 0 | minus: 1 %}{% assign d = site.data.dejiny[n] %}<a href="{{ '/archiv/#' | append: k | relative_url }}">▶ Kapitola {{ d.rim }}</a>{% endif %}{% endfor %}
+      {% for z in o.zdroje %}<a class="os-zdroj" href="{{ z.url }}" target="_blank" rel="noopener">{{ z.typ }} ↗</a>{% endfor %}
+    </footer>
+  </article>
+{% endfor %}
+</div>
+
+<script>
+(function () {
+  var karty = [].slice.call(document.querySelectorAll('.osoba')), k = '', q = '';
+  var pocet = document.getElementById('pocet');
+  function filtr() {
+    var n = 0;
+    karty.forEach(function (c) {
+      var ok = (!k || c.dataset.k === k) && (!q || c.dataset.hledat.indexOf(q) >= 0);
+      c.hidden = !ok; if (ok) n++;
+    });
+    pocet.textContent = n === karty.length ? '' : 'Zobrazeno ' + n + ' z ' + karty.length;
+  }
+  [].forEach.call(document.querySelectorAll('.os-filtr button'), function (b) {
+    b.addEventListener('click', function () {
+      k = b.dataset.k;
+      [].forEach.call(document.querySelectorAll('.os-filtr button'), function (x) { x.classList.toggle('aktivni', x === b); });
+      filtr();
+    });
+  });
+  document.getElementById('hledat').addEventListener('input', function (e) { q = e.target.value.trim().toLowerCase(); filtr(); });
+  var h = location.hash && document.getElementById(location.hash.slice(1));
+  if (h) { h.classList.add('zvyraznena'); h.scrollIntoView(); }
+})();
+</script>

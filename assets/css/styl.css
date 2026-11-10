@@ -267,3 +267,33 @@ main { flex: 1; width: 100%; }
 .osa-let b { position: absolute; top: 3px; transform: translateX(-50%); font-family: var(--label); font-weight: 400; font-size: .78rem; color: var(--tlumene); }
 .poznamka { font-size: .95rem; color: var(--tlumene); }
 @media (max-width: 640px) { .vlada-radek { grid-template-columns: 7.5rem 1fr; } .vl-jmeno { font-size: .8rem; } }
+
+/* ===== Osobnosti ===== */
+.os-ovladani { padding-bottom: 1.5rem; }
+#hledat {
+  width: 100%; max-width: 26rem; padding: .7rem 1rem; margin-bottom: 1rem; font: inherit; font-size: 1.05rem;
+  background: rgba(10,25,48,.85); color: var(--text); border: 1px solid var(--linka); border-radius: 3px;
+}
+#hledat:focus { outline: none; border-color: var(--led); }
+.os-filtr { padding-bottom: .4rem; }
+.os-filtr button {
+  --barva: var(--led); font-family: var(--label); font-size: .95rem; letter-spacing: .06em; cursor: pointer; color: var(--tlumene);
+  background: transparent; border: 1px solid var(--linka); padding: .3rem .8rem; border-radius: 99px;
+}
+.os-filtr button:hover { color: var(--text); }
+.os-filtr button.aktivni { color: var(--pozadi); background: var(--akcent); border-color: var(--akcent); }
+.os-pocet { font-family: var(--label); color: var(--tlumene); margin: .4rem 0 0; min-height: 1.4em; }
+.os-mrizka { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 22rem), 1fr)); gap: 1.1rem; }
+.osoba {
+  background: rgba(10,25,48,.78); border: 1px solid var(--linka); border-radius: 4px; padding: 1.2rem 1.3rem 1rem;
+  display: flex; flex-direction: column; scroll-margin-top: 6rem;
+}
+.osoba.zvyraznena { border-color: var(--akcent); box-shadow: 0 0 20px rgba(246,189,75,.25); }
+.osoba h2 { font-size: 1.3rem; margin: 0; }
+.os-roky { font-family: var(--label); color: var(--akcent); letter-spacing: .05em; margin: .2rem 0 0; }
+.os-role { font-family: var(--label); text-transform: uppercase; letter-spacing: .1em; font-size: .82rem; color: var(--led); margin: .15rem 0 .7rem; }
+.os-text { margin: 0 0 .8rem; color: var(--text); font-size: 1rem; line-height: 1.6; flex: 1; }
+.os-rozpor { font-size: .9rem; color: var(--tlumene); border-top: 1px solid var(--linka); padding-top: .5rem; margin: 0 0 .8rem; }
+.osoba footer { display: flex; flex-wrap: wrap; gap: .4rem 1rem; border-top: 1px solid var(--linka); padding-top: .6rem; }
+.osoba footer a { font-family: var(--label); font-size: .92rem; letter-spacing: .04em; text-decoration: none; }
+.osoba footer a.os-zdroj { color: var(--tlumene); }
