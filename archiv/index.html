@@ -89,6 +89,8 @@ h2{font:500 clamp(32px,3.8vw,48px)/1.14 var(--display);margin:.2em 0 .3em;text-w
 #st{flex:1;min-width:0;color:var(--muted)}
 #st b{display:block;color:var(--text);font-weight:600;font-size:18px}
 .tg{border:1px solid var(--line);padding:9px 12px;letter-spacing:.04em;flex:none}
+.vol{display:flex;align-items:center;gap:6px;flex:none}.vol .vb{width:38px;height:38px;font-size:17px;line-height:1}
+#vol{width:110px;accent-color:var(--accent);cursor:pointer}
 .tg:hover{border-color:var(--accent)}.tg[aria-pressed="false"]{color:var(--muted);text-decoration:line-through}
 #auto[aria-pressed="false"]{text-decoration:none}
 #auto[aria-pressed="true"]{background:var(--accent);color:var(--night);border-color:var(--accent);font-weight:600}
@@ -140,6 +142,7 @@ h2{font:500 clamp(32px,3.8vw,48px)/1.14 var(--display);margin:.2em 0 .3em;text-w
     <button type="button" class="tg" id="auto" aria-pressed="false">Automaticky dál</button>
     <button type="button" class="tg" id="tm" aria-pressed="true">Hudba</button>
     <button type="button" class="tg" id="tv" aria-pressed="true">Hlas</button>
+    <div class="vol"><button type="button" class="b vb" id="mute" aria-label="Ztlumit" title="Ztlumit">&#128266;</button><input type="range" id="vol" min="0" max="100" step="1" value="80" aria-label="Hlasitost"></div>
   </div>
 </div>
 <div class="scrim" id="scrim" hidden><div class="card" role="dialog" aria-modal="true" aria-labelledby="ct" id="card" tabindex="-1"></div></div>
@@ -193,7 +196,7 @@ function Engine(ctx){
 window.KronikaAudio=Engine;
 
 let E=null,musicOn=true,tick=null,ducked=false,amb=false,curMood=null,entered=false;
-function audioStart(){if(E)return;try{const AC=window.AudioContext||window.webkitAudioContext;if(!AC)return;E=Engine(new AC());E.ctx.resume();tick=setInterval(()=>{if(E&&(playing||amb))E.schedule(E.ctx.currentTime+3)},900)}catch(e){E=null}}
+function audioStart(){if(E)return;try{const AC=window.AudioContext||window.webkitAudioContext;if(!AC)return;E=Engine(new AC());setVol();E.ctx.resume();tick=setInterval(()=>{if(E&&(playing||amb))E.schedule(E.ctx.currentTime+3)},900)}catch(e){E=null}}
 function duck(on){if(!E||ducked===on)return;ducked=on;E.duck.gain.setTargetAtTime(on?.55:1,E.ctx.currentTime,.25)}
 function mood(m){if(!E)return;E.ctx.resume();if(curMood!==m){curMood=m;E.setMood(m)}E.schedule(E.ctx.currentTime+3)}
 const fx=n=>{if(E)E.fx(n)};
@@ -280,7 +283,7 @@ function run(){clear();const s=S[sc],l=s.lines[ln],my=++token;
   if(!playing)return;
   const done=()=>{if(my!==token)return;duck(false);if(l.radio&&E&&l.fx!=='cut')E.fx('radio');after((l.h??.35)*1000/SPEED,()=>{if(my===token)next()})};
   if(voiceOn&&canVoice()){let started=false,ended=false;const fin=()=>{if(!ended){ended=true;done()}};
-    const u=new SpeechSynthesisUtterance(l.v),p=PROF[l.who]||[1,1];u.lang='cs-CZ';u.voice=cz;u.rate=p[0];u.pitch=p[1];
+    const u=new SpeechSynthesisUtterance(l.v),p=PROF[l.who]||[1,1];u.lang='cs-CZ';u.voice=cz;u.rate=p[0];u.pitch=p[1];u.volume=muted?0:VOL;
     u.onstart=()=>{started=true;duck(true)};u.onend=fin;u.onerror=e=>{if(e.error==='interrupted'||e.error==='canceled')return;voiceBroken=true;setVT();fin()};
     after(120/SPEED,()=>{if(my===token)syn.speak(u)});
     after(4000,()=>{if(my===token&&!started){voiceBroken=true;setVT();try{syn.cancel()}catch(e){}after(est(l),fin)}});
@@ -300,6 +303,13 @@ function setYear(l){cancelAnimationFrame(rafYear);const el=$('#year');if(!el)ret
   else el.textContent=l.run||l.y}
 function toggle(){playing=!playing;setPP();if(playing){if(E)E.ctx.resume();run()}else{token++;clear();duck(false);if(E)E.ctx.suspend()}}
 function resumeOn(){if(!playing){playing=true;setPP();if(E)E.ctx.resume()}}
+let VOL=.8,muted=false;try{const v=parseFloat(localStorage.getItem('kv-vol'));if(v>=0&&v<=1)VOL=v;muted=localStorage.getItem('kv-mute')==='1'}catch(e){}
+function setVol(){const v=muted?0:VOL;if(E)E.master.gain.setTargetAtTime(.8*v,E.ctx.currentTime,.05);const r=$('#vol'),m=$('#mute');if(r)r.value=Math.round(VOL*100);
+  if(m){m.innerHTML=muted||VOL===0?'&#128263;':VOL<.4?'&#128264;':'&#128266;';m.setAttribute('aria-label',muted?'Zapnout zvuk':'Ztlumit');m.title=m.getAttribute('aria-label')}
+  try{localStorage.setItem('kv-vol',VOL);localStorage.setItem('kv-mute',muted?'1':'0')}catch(e){}}
+$('#vol').oninput=e=>{VOL=e.target.value/100;muted=false;setVol()};
+$('#mute').onclick=()=>{muted=!muted;setVol();if(playing&&voiceOn)run()};
+setVol();
 $('#pp').onclick=toggle;
 $('#back').onclick=()=>{if(ln>0){ln--;resumeOn();run()}};
 $('#fwd').onclick=()=>{resumeOn();token++;clear();next()};
