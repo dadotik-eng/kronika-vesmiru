@@ -38,6 +38,7 @@ canvas{position:fixed;inset:0;width:100%;height:100%;display:block;transition:op
 #hud{font:600 14px/1.3 var(--label);letter-spacing:.2em;text-transform:uppercase;color:#bfe3f5;margin:0 0 18px;display:flex;align-items:center;gap:12px;min-height:1.3em;opacity:0;transform:translateY(-4px);transition:opacity .5s,transform .5s}
 #hud.on{opacity:.9;transform:none}
 .embed .top{display:none!important}
+.embed .app{grid-template-rows:1fr auto}
 .pojem{border-bottom:1px dotted rgba(191,227,245,.7);cursor:help;position:relative;outline:none}
 .pojem:hover::after,.pojem:focus::after{content:attr(data-v);position:absolute;left:0;bottom:calc(100% + 8px);width:min(340px,80vw);font:400 15px/1.45 var(--body);letter-spacing:0;text-transform:none;color:#f0f5f7;background:#0b1d36;border:1px solid rgba(191,227,245,.4);border-radius:4px;padding:9px 11px;z-index:20;box-shadow:0 8px 24px rgba(0,0,0,.5)}
 .osoba-odkaz{color:inherit;text-decoration:underline;text-decoration-color:rgba(246,189,75,.7);text-underline-offset:4px;cursor:pointer}

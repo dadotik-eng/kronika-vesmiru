@@ -106,6 +106,7 @@ popis: 881 let dějin vesmíru Star Citizen po obdobích. Vyber období a uvidí
     var p = el.closest('.era-panel'); return p ? p.dataset.era : null;
   }
   function zHashe() {
+    if (!document.body.contains(btn)) { window.removeEventListener('hashchange', zHashe); return; }
     var h = decodeURIComponent(location.hash.slice(1)), era = eraPro(h) || 'usvit';
     paneli.forEach(function (p) { p.hidden = !vse && p.dataset.era !== era; });
     pas.forEach(function (a) { var on = a.dataset.era === era; a.classList.toggle('vybrana', on); a.setAttribute('aria-selected', on); });
@@ -115,7 +116,6 @@ popis: 881 let dějin vesmíru Star Citizen po obdobích. Vyber období a uvidí
   }
   btn.addEventListener('click', function () { vse = !vse; btn.textContent = vse ? 'Zobrazit jen jedno období' : 'Zobrazit celou osu'; zHashe(); });
   window.addEventListener('hashchange', zHashe);
-  document.addEventListener('kronika:stranka', function od() { document.removeEventListener('kronika:stranka', od); window.removeEventListener('hashchange', zHashe); }, { once: true });
   zHashe();
 })();
 </script>

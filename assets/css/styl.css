@@ -479,3 +479,8 @@ html.prehravac-otevreny { overflow: hidden; }
 .os-filtr-era button { --barva: var(--led); font-family: var(--label); font-size: .9rem; letter-spacing: .05em; cursor: pointer; color: var(--barva); background: transparent; border: 1px solid color-mix(in srgb, var(--barva) 50%, transparent); padding: .25rem .7rem; border-radius: 99px; }
 .os-filtr-era button.aktivni { background: color-mix(in srgb, var(--barva) 35%, transparent); color: #fff; }
 .os-filtr-era { padding-bottom: .4rem; }
+
+.osoba header { display: grid; grid-template-columns: 52px 1fr; column-gap: .9rem; align-items: start; }
+.osoba header > *:not(.os-emblem) { grid-column: 2; }
+.os-emblem { grid-row: 1 / span 4; grid-column: 1; width: 48px; height: 60px; }
+.os-kat { justify-self: start; }

@@ -14,7 +14,7 @@ popis: Dramatizace a kapitoly ze skutečných událostí dějin vesmíru Star Ci
   <h2 class="pri-nadpis">K poslechu</h2>
   <div class="pri-mrizka">
     {% for p in enc %}{% if p.prehrat %}
-    <article class="pri-karta">
+    <article class="pri-karta" id="pribeh-{{ p.id }}">
       <p class="pri-stitek">{{ p.stitek }}</p>
       <h3>{{ p.nazev }}</h3>
       <p class="text-pojmy">{{ p.text }}</p>
@@ -22,7 +22,7 @@ popis: Dramatizace a kapitoly ze skutečných událostí dějin vesmíru Star Ci
     </article>
     {% endif %}{% endfor %}
     {% for k in nove %}
-    <article class="pri-karta">
+    <article class="pri-karta" id="kapitola-{{ k.slug }}">
       <p class="pri-stitek">Kapitola od bota · {{ k.herni_rok }}{% if k.overeni != "OK" %} · čeká na ověření{% endif %}</p>
       <h3>{{ k.title }}</h3>
       <p class="text-pojmy">{{ k.popis }}</p>
@@ -34,7 +34,7 @@ popis: Dramatizace a kapitoly ze skutečných událostí dějin vesmíru Star Ci
   <h2 class="pri-nadpis">Připravujeme</h2>
   <div class="pri-mrizka">
     {% for p in enc %}{% if p.pripravuje_se %}
-    <article class="pri-karta pripravujeme">
+    <article class="pri-karta pripravujeme" id="pribeh-{{ p.id }}">
       <p class="pri-stitek">Připravuje se</p>
       <h3>{{ p.nazev }}</h3>
       <p class="text-pojmy">{{ p.text }}</p>

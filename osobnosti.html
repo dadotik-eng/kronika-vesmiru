@@ -32,6 +32,7 @@ popis: Rejstřík osob z dějin vesmíru Star Citizen. Imperátoři, objevitelé
 {% for o in osoby %}
   <article class="osoba" id="{{ o.slug }}" data-k="{{ o.kategorie }}" data-rad="{{ o.rad }}" data-hledat="{{ o.jmeno | downcase | escape }} {{ o.role | downcase | escape }}">
     <header>
+      <span class="os-emblem" aria-hidden="true"></span>
       <h2>{{ o.jmeno }}</h2>
       <p class="os-roky">{{ o.narozeni }}{% if o.umrti %} – {{ o.umrti }}{% endif %}</p>
       <p class="os-role">{{ o.role }}</p>
@@ -42,6 +43,9 @@ popis: Rejstřík osob z dějin vesmíru Star Citizen. Imperátoři, objevitelé
     <footer>
       {% if o.rod == "messer" %}<a href="{{ '/rod-messeru/#' | append: o.slug | relative_url }}">Rodokmen →</a>{% endif %}
       {% for k in o.kapitoly %}{% if k == "letka" %}<a href="{{ '/archiv/#letka' | relative_url }}">▶ Ztracená letka</a>{% else %}{% assign n = k | remove: "kap-" | plus: 0 | minus: 1 %}{% assign d = site.data.dejiny[n] %}<a href="{{ '/archiv/#' | append: k | relative_url }}">▶ Kapitola {{ d.rim }}</a>{% endif %}{% endfor %}
+      {% assign casti = o.jmeno | remove: "." | split: " " %}{% assign klic = casti | last %}{% if o.rod == "messer" %}{% assign klic = casti | first %}{% endif %}
+      {% if klic.size > 3 %}{% for p in site.data.encyklopedie.pribehy.polozky %}{% if p.text contains klic or p.nazev contains klic %}<a href="{{ '/pribehy/#pribeh-' | append: p.id | relative_url }}">{% if p.prehrat %}▶{% else %}◇{% endif %} Příběh: {{ p.nazev }}</a>{% endif %}{% endfor %}
+      {% for k in site.kapitoly %}{% if k.content contains klic %}<a href="{{ k.url | relative_url }}">◆ Kapitola: {{ k.title }}</a>{% endif %}{% endfor %}{% endif %}
       {% for z in o.zdroje %}<a class="os-zdroj" href="{{ z.url }}" target="_blank" rel="noopener">{{ z.typ }} ↗</a>{% endfor %}
     </footer>
   </article>
@@ -77,6 +81,29 @@ popis: Rejstřík osob z dějin vesmíru Star Citizen. Imperátoři, objevitelé
   var pe = new URLSearchParams(location.search).get('obdobi');
   if (pe) { var be = document.querySelector('.os-filtr-era button[data-e="' + pe + '"]'); if (be) vyberEru(be); }
   document.getElementById('hledat').addEventListener('input', function (e) { q = e.target.value.trim().toLowerCase(); filtr(); });
+  // Archivní emblém: barva podle období, symbol podle oblasti, iniciály.
+  var ERY = [[2262,'#7fb8d8'],[2380,'#8fd0c0'],[2523,'#a6c97f'],[2546.9,'#d9c46a'],[2792.4,'#e0785c'],[2945,'#b99ae0'],[1e9,'#f6bd4b']];
+  var SYM = {
+    vladari: '<path d="M14 34l-3-15 8 6 5-11 5 11 8-6-3 15z"/>',
+    politika: '<path d="M12 33h24M14 30V20M20 30V20M28 30V20M34 30V20M11 18l13-7 13 7z"/>',
+    armada: '<path d="M24 11l11 4v8c0 7-5 11-11 13-6-2-11-6-11-13v-8z"/>',
+    objevitele: '<path d="M24 10l4 10 10 4-10 4-4 10-4-10-10-4 10-4z"/>',
+    'veda-technika': '<circle cx="24" cy="24" r="3"/><ellipse cx="24" cy="24" rx="13" ry="5"/><ellipse cx="24" cy="24" rx="13" ry="5" transform="rotate(60 24 24)"/><ellipse cx="24" cy="24" rx="13" ry="5" transform="rotate(-60 24 24)"/>',
+    korporace: '<path d="M13 35V17l8-4v22M21 35V20h14v15M25 24h2M30 24h2M25 29h2M30 29h2"/>',
+    kultura: '<path d="M19 33V15l14-3v18"/><circle cx="16" cy="33" r="3"/><circle cx="30" cy="30" r="3"/>',
+    zlocin: '<path d="M14 14l20 20M34 14L14 34"/><circle cx="24" cy="24" r="12"/>',
+    'xiani-tevarini': '<path d="M24 12l12 21H12z"/><circle cx="24" cy="26" r="3"/>'
+  };
+  karty.forEach(function (c) {
+    var e = c.querySelector('.os-emblem'); if (!e) return;
+    var r = parseFloat(c.dataset.rad), barva = '#bfe3f5';
+    if (!isNaN(r)) for (var i = 0; i < ERY.length; i++) if (r < ERY[i][0]) { barva = ERY[i][1]; break; }
+    var jm = c.querySelector('h2').textContent.replace(/\b[IVXL]+\.?$/, '').trim().split(/\s+/);
+    var ini = (jm[0][0] + (jm.length > 1 ? jm[jm.length - 1][0] : '')).toUpperCase();
+    e.innerHTML = '<svg viewBox="0 0 48 60" width="48" height="60"><path d="M24 2l20 11v22L24 46 4 35V13z" fill="rgba(7,15,31,.9)" stroke="' + barva + '" stroke-width="1.6"/>' +
+      '<g fill="none" stroke="' + barva + '" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round">' + (SYM[c.dataset.k] || '') + '</g>' +
+      '<text x="24" y="58" text-anchor="middle" font-family="Saira Condensed, sans-serif" font-size="10" letter-spacing="1.5" fill="' + barva + '">' + ini + '</text></svg>';
+  });
   var h = location.hash && document.getElementById(location.hash.slice(1));
   if (h) { h.classList.add('zvyraznena'); h.scrollIntoView(); }
 })();
