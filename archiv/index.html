@@ -341,12 +341,16 @@ let POJMY=[],OSOBY=[];
 const esc=t=>t.replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 Promise.all([fetch('../data/pojmy.json').then(r=>r.ok?r.json():[]).catch(()=>[]),fetch('../data/osoby.json').then(r=>r.ok?r.json():[]).catch(()=>[])]).then(([p,o])=>{
   POJMY=[];p.forEach(x=>(x.tvary||[x.termin]).forEach(f=>{if(f&&f.length>2)POJMY.push([f,x.vysvetleni])}));POJMY.sort((a,b)=>b[0].length-a[0].length);
-  OSOBY=[];o.forEach(x=>{const n=x.jmeno.replace(/\s+[IVXL]+\.?$/,'').trim();if(n.split(/\s+/).length>=2)OSOBY.push([n,x.id])});OSOBY.sort((a,b)=>b[0].length-a[0].length)});
+  OSOBY=[];o.forEach(x=>{const n=x.jmeno.replace(/\s+[IVXL]+\.?$/,'').trim();if(n.split(/\s+/).length>=2)OSOBY.push([n,x.id,tvarRe(n)])});OSOBY.sort((a,b)=>b[0].length-a[0].length)});
+/* skloňované tvary jmen: Selma Tontil → Selmou Tontil, Ivar Messer → Ivara Messera */
+function tvarRe(n){const kmen=w=>{const e=w.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');return w.length>=4?e.replace(/[aeiouyáéíóúůý]$/i,'')+'\\p{L}{0,3}':e};return new RegExp(n.split(/\s+/).map(kmen).join('\\s+'),'u')}
 const hran=(t,i,len)=>{const a=t[i-1],b=t[i+len];const w=c=>c&&/[\p{L}\p{N}]/u.test(c);return !w(a)&&!w(b)};
 function obohat(t){let parts=[{t,raw:true}];
   const zabal=(seznam,fn)=>{seznam.forEach(([f,v])=>{for(let k=0;k<parts.length;k++){const p=parts[k];if(!p.raw)continue;const i=p.t.indexOf(f);if(i<0||!hran(p.t,i,f.length))continue;
     parts.splice(k,1,{t:p.t.slice(0,i),raw:true},{h:fn(p.t.slice(i,i+f.length),v)},{t:p.t.slice(i+f.length),raw:true});return}})};
-  zabal(OSOBY,(x,id)=>`<a class="osoba-odkaz" data-osoba="${id}" href="../osobnosti/#${id}">${esc(x)}</a>`);
+  const zabalRe=(seznam,fn)=>{seznam.forEach(([f,v,re])=>{for(let k=0;k<parts.length;k++){const p=parts[k];if(!p.raw)continue;const m=re.exec(p.t);if(!m||!hran(p.t,m.index,m[0].length))continue;const i=m.index,L=m[0].length;
+    parts.splice(k,1,{t:p.t.slice(0,i),raw:true},{h:fn(p.t.slice(i,i+L),v)},{t:p.t.slice(i+L),raw:true});return}})};
+  zabalRe(OSOBY,(x,id)=>`<a class="osoba-odkaz" data-osoba="${id}" href="../osobnosti/#${id}">${esc(x)}</a>`);
   zabal(POJMY,(x,v)=>`<span class="pojem" tabindex="0" data-v="${esc(v)}">${esc(x)}</span>`);
   return parts.map(p=>p.raw?esc(p.t):p.h).join('')}
 document.addEventListener('click',e=>{const a=e.target.closest('.osoba-odkaz');if(!a)return;e.preventDefault();e.stopPropagation();
