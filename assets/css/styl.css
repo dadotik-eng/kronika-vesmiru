@@ -305,3 +305,7 @@ main { flex: 1; width: 100%; }
   .vl-bar span { display: none; }
   .vlady { overflow: hidden; }
 }
+
+.osoba[hidden] { display: none; }
+.osoba header { position: relative; }
+.os-kat { display: inline-block; margin: -.3rem 0 .7rem; font-family: var(--label); font-size: .78rem; letter-spacing: .08em; text-transform: uppercase; color: var(--akcent); border: 1px solid rgba(246,189,75,.45); border-radius: 99px; padding: .1rem .6rem; }

@@ -1,4 +1,4 @@
-# Kronika Vesmíru
+# Star Kronika
 
 Neoficiální česká kronika dějin vesmíru Star Citizen.
 Web: https://dadotik-eng.github.io/kronika-vesmiru/

@@ -31,6 +31,7 @@ popis: Rejstřík osob z dějin vesmíru Star Citizen. Imperátoři, objevitelé
       <h2>{{ o.jmeno }}</h2>
       <p class="os-roky">{{ o.narozeni }}{% if o.umrti %} – {{ o.umrti }}{% endif %}</p>
       <p class="os-role">{{ o.role }}</p>
+      {% for p in kat %}{% assign kv = p | split: ":" %}{% if kv[0] == o.kategorie %}<span class="os-kat" data-kat="{{ kv[0] }}">{{ kv[1] }}</span>{% endif %}{% endfor %}
     </header>
     <p class="os-text">{{ o.medailonek }}</p>
     {% if o.rozpor %}<p class="os-rozpor"><b>Rozpor v pramenech:</b> {{ o.rozpor }}</p>{% endif %}

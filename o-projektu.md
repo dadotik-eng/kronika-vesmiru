@@ -7,7 +7,7 @@ permalink: /o-projektu/
 
 # O projektu
 
-**Kronika Vesmíru** převypráví česky dějiny vesmíru hry Star Citizen. Nejde o oficiální stránky – je to fanouškovský projekt.
+**Star Kronika** převypráví česky dějiny vesmíru hry Star Citizen. Nejde o oficiální stránky – je to fanouškovský projekt.
 
 Kapitoly si můžeš **přečíst** (časová osa a stránky kapitol), nebo **poslechnout** v [archivu]({{ '/archiv/' | relative_url }}), kde je provází Archivář s hudbou a hlasem.
 
@@ -26,6 +26,6 @@ Roky v kapitolách jsou herní letopočty (například 2884). Comm-Linky RSI maj
 
 ## Upozornění
 
-Kronika Vesmíru není spojena s Cloud Imperium Games ani jimi schválena. Star Citizen®, Squadron 42®, Roberts Space Industries® a RSI® jsou ochranné známky Cloud Imperium Rights LLC.
+Star Kronika není spojena s Cloud Imperium Games ani jimi schválena. Star Citizen®, Squadron 42®, Roberts Space Industries® a RSI® jsou ochranné známky Cloud Imperium Rights LLC.
 
 </article>
