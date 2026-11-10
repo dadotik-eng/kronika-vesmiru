@@ -329,9 +329,9 @@ main { flex: 1; width: 100%; }
 .v-nic { margin: 0; padding: .8rem; color: var(--tlumene); }
 .ztlumit, .menu-tlacitko { width: 38px; height: 38px; display: grid; place-items: center; border: 1px solid var(--linka); border-radius: 50%; background: transparent; color: var(--tlumene); cursor: pointer; flex: none; }
 .ztlumit:hover, .menu-tlacitko:hover { color: var(--text); border-color: var(--led); }
-.ztlumit .ik-ticho, .ztlumit.ztlumeno .ik-zvuk { display: none; }
-.ztlumit.ztlumeno .ik-ticho { display: block; }
-.ztlumit.ztlumeno { border-color: #ff7a5c; color: #ff9a80; }
+.ztlumit.ztlumeno { border-color: #ff7a5c; color: #ff9a80; position: relative; }
+.ztlumit.ztlumeno::after { content: ""; position: absolute; left: 8px; right: 8px; top: 50%; height: 2px; background: currentColor; transform: rotate(-40deg); }
+#z-hlas { margin-left: -.3rem; }
 .menu-tlacitko { display: none; border-radius: 4px; }
 .pat-odkazy a { color: var(--led); }
 body.nacita main { opacity: .55; transition: opacity .2s; }

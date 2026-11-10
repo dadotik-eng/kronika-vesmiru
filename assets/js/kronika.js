@@ -104,19 +104,25 @@
   // Přehrávač načteme v klidu na pozadí, aby se spustil hned.
   setTimeout(function () { pripravFrame(); }, 1800);
 
-  /* ---------- Ztlumení ---------- */
-  var tl = $('#ztlumit');
-  function kreslitZtlumeni() {
-    var m = cist('kv-mute') === '1';
-    tl.classList.toggle('ztlumeno', m);
-    tl.setAttribute('aria-label', m ? 'Zapnout zvuk' : 'Ztlumit zvuk'); tl.title = tl.getAttribute('aria-label');
+  /* ---------- Hudba a hlas (zvlášť vypínatelné) ---------- */
+  var zv = { hudba: $('#z-hudba'), hlas: $('#z-hlas') };
+  function kreslitZvuk() {
+    ['hudba', 'hlas'].forEach(function (k) {
+      var on = cist('kv-' + k) !== '0', b = zv[k]; if (!b) return;
+      b.setAttribute('aria-pressed', on); b.classList.toggle('ztlumeno', !on);
+      b.setAttribute('aria-label', (on ? 'Vypnout ' : 'Zapnout ') + (k === 'hudba' ? 'hudbu' : 'hlas')); b.title = b.getAttribute('aria-label');
+    });
   }
-  tl.addEventListener('click', function () {
-    var m = cist('kv-mute') !== '1';
-    ulozit('kv-mute', m ? '1' : '0'); kreslitZtlumeni();
-    var w = okno(); if (w) try { w.KRONIKA.mute(m); } catch (e) {}
+  ['hudba', 'hlas'].forEach(function (k) {
+    if (!zv[k]) return;
+    zv[k].addEventListener('click', function () {
+      var on = cist('kv-' + k) === '0';
+      ulozit('kv-' + k, on ? '1' : '0'); kreslitZvuk();
+      var w = okno(); if (w) try { w.KRONIKA[k](on); } catch (e) {}
+    });
   });
-  kreslitZtlumeni();
+  window.kronikaZvuk = function () { kreslitZvuk(); };
+  kreslitZvuk();
 
   /* ---------- Menu na mobilu ---------- */
   var mt = $('#menu-tlacitko'), menu = $('#hlavni-menu');
