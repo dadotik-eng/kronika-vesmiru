@@ -151,6 +151,8 @@ popis: 881 let dějin vesmíru Star Citizen po obdobích. Vyber období a uvidí
     var h = decodeURIComponent(location.hash.slice(1)), era = eraPro(h) || 'usvit';
     paneli.forEach(function (p) { p.hidden = !vse && p.dataset.era !== era; });
     pas.forEach(function (a) { var on = a.dataset.era === era; a.classList.toggle('vybrana', on); a.setAttribute('aria-selected', on); });
+    var pan = document.getElementById('osa-pan'), vyb = pan && pan.querySelector('.op-era.vybrana');
+    if (pan && vyb && pan.scrollWidth > pan.clientWidth) pan.scrollLeft = vyb.offsetLeft - 16;
     [].forEach.call(document.querySelectorAll('.udalost.zvyraznena'), function (x) { x.classList.remove('zvyraznena'); });
     [].forEach.call(document.querySelectorAll('.op-bod'), function (b) { b.classList.toggle('aktivni', b.getAttribute('href') === '#' + h); });
     var c = h && document.getElementById(h);
