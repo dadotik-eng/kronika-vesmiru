@@ -17,7 +17,7 @@ popis: Osm set osmdesát jedna let dějin vesmíru Star Citizen na jedné ose. K
   <div class="pan-vnitrek">
     <div class="pan-ery">
       {% for e in data.ery %}
-      <a class="pan-era" href="#era-{{ e.id }}" style="--barva: {{ e.barva }}" data-od="{{ e.od }}" data-do="{{ e.do }}">
+      <a class="pan-era" href="#era-{{ e.id }}" style="--barva: {{ e.barva }}" data-od="{{ e.od }}" data-do="{{ e.do }}" data-zacatek="{% if e.rozsah %}{{ e.rozsah | split: '–' | first }}{% else %}{{ e.od }}{% endif %}">
         <span>{{ e.nazev }}</span>
       </a>
       {% endfor %}
@@ -55,7 +55,7 @@ popis: Osm set osmdesát jedna let dějin vesmíru Star Citizen na jedné ose. K
     <ol class="udalosti">
     {% for u in udalosti %}
       {% if u.rok >= e.od %}{% if u.rok < e.do or posledni %}
-      <li class="udalost{% if u.klic %} klic{% endif %}" id="{{ u.id }}">
+      <li class="udalost{% if u.klic %} klic{% endif %}" id="{{ u.id }}" data-rok="{{ u.rok }}">
         <div class="ud-datum">{{ u.datum | default: u.rok }}</div>
         <div class="ud-telo">
           <h3>{{ u.titul }}</h3>
@@ -73,7 +73,7 @@ popis: Osm set osmdesát jedna let dějin vesmíru Star Citizen na jedné ose. K
     {% endfor %}
     {% for k in kapitoly %}
       {% if k.herni_rok >= e.od %}{% if k.herni_rok < e.do or posledni %}
-      <li class="udalost nova" id="kap-{{ k.slug | default: k.url | split: '/' | last }}">
+      <li class="udalost nova" id="kap-{{ k.slug | default: k.url | split: '/' | last }}" data-rok="{{ k.herni_rok }}.5">
         <div class="ud-datum">{{ k.herni_rok }}</div>
         <div class="ud-telo">
           <p class="ud-stitek">Nová kapitola</p>
@@ -99,7 +99,8 @@ popis: Osm set osmdesát jedna let dějin vesmíru Star Citizen na jedné ose. K
   var info = ery.map(function (el) {
     var od = parseFloat(el.dataset.od), d = parseFloat(el.dataset.do);
     var n = body.filter(function (b) { var r = parseFloat(b.dataset.rok); return r >= od && r < d; }).length;
-    return { el: el, od: od, do: d, w: Math.sqrt(d - od) + 1.7 * n };
+    var roky = body.map(function (b) { return parseFloat(b.dataset.rok); }).filter(function (r) { return r >= od && r < d; });
+    return { el: el, od: od, do: d, roky: roky, w: Math.sqrt(d - od) + 1.7 * n };
   });
   var celkem = info.reduce(function (s, e) { return s + e.w; }, 0), x = 0;
   info.forEach(function (e) { e.x = x / celkem * 100; e.sirka = e.w / celkem * 100; x += e.w;
@@ -108,19 +109,27 @@ popis: Osm set osmdesát jedna let dějin vesmíru Star Citizen na jedné ose. K
     for (var i = 0; i < info.length; i++) {
       var e = info[i];
       if (rok < e.do || i === info.length - 1) {
+        // Mix skutečného letopočtu a pořadí v období, aby se body neslévaly.
         var t = Math.min(1, Math.max(0, (rok - e.od) / (e.do - e.od)));
-        return e.x + e.sirka * (0.06 + 0.88 * t);
+        var v = e.roky.filter(function (r) { return r < rok; }).length;
+        var p = e.roky.length > 1 ? v / (e.roky.length - 1) : 0.5;
+        return e.x + e.sirka * (0.08 + 0.84 * (0.35 * t + 0.65 * p));
       }
     }
   }
   body.forEach(function (b, i) {
     b.style.left = poloha(parseFloat(b.dataset.rok)) + '%';
-    if (!b.classList.contains('klic')) b.classList.add(i % 2 ? 'dole' : 'nahore');
+  });
+  // Klíčové popisky, které by se překrývaly, posuneme o patro výš.
+  var sirkaPx = pan.querySelector('.pan-vnitrek').offsetWidth, posledni = -1e9;
+  body.filter(function (b) { return b.classList.contains('klic'); }).forEach(function (b) {
+    var x = parseFloat(b.style.left) / 100 * sirkaPx;
+    if (x - posledni < 130) { b.classList.add('patro'); } else { posledni = x; }
   });
   // Popisky letopočtů na hranicích období
   var roky = pan.querySelector('.pan-roky');
   info.forEach(function (e) {
-    var s = document.createElement('span'); s.textContent = Math.floor(e.od);
+    var s = document.createElement('span'); s.textContent = e.el.dataset.zacatek;
     s.style.left = e.x + '%'; roky.appendChild(s);
   });
   var k = document.createElement('span'); k.textContent = '2956'; k.style.left = '100%'; k.className = 'konec'; roky.appendChild(k);
@@ -129,5 +138,11 @@ popis: Osm set osmdesát jedna let dějin vesmíru Star Citizen na jedné ose. K
     body.forEach(function (b) { b.classList.toggle('aktivni', b.getAttribute('href') === location.hash); });
   }
   window.addEventListener('hashchange', zvyrazni); zvyrazni();
+  // Nové kapitoly zařadíme mezi události podle roku.
+  [].forEach.call(document.querySelectorAll('.udalosti'), function (ol) {
+    [].slice.call(ol.children).sort(function (a, b) { return parseFloat(a.dataset.rok) - parseFloat(b.dataset.rok); })
+      .forEach(function (li) { ol.appendChild(li); });
+  });
+  if (location.hash) { var c = document.getElementById(location.hash.slice(1)); if (c) c.scrollIntoView(); }
 })();
 </script>

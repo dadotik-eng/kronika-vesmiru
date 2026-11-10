@@ -40,7 +40,8 @@ ery:
   - id: valka
     nazev: Válka s Vanduuly
     od: 2945
-    do: 2956
+    do: 2957
+    rozsah: 2945–2956
     barva: "#f6bd4b"
 
 udalosti:
