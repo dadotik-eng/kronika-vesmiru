@@ -227,6 +227,9 @@ function renderTabs(){const on=location.hash.slice(1);$('#tabs').innerHTML=[['de
 function stopScene(){viaFork=false;playing=false;token++;clear();duck(false);document.body.classList.remove('radio');document.body.dataset.mood='prolog';sc=-1;cancelAnimationFrame(rafYear)}
 function nav(h){if(h==='osobnosti'){if(EMBED&&HOST.kronikaNav)HOST.kronikaNav('osobnosti/');else location.href='../osobnosti/';return}fx('tick');if(location.hash==='#'+h)route();else location.hash=h}
 function route(){if(location.hash==='#osobnosti'){if(EMBED&&HOST.kronikaNav)HOST.kronikaNav('osobnosti/');else location.replace('../osobnosti/');return}closeCard(false);const [h,hl]=location.hash.slice(1).split('@');
+  /* Rozcestníky archivu (domov, dějiny, korporace…) nahradil nový web – přesměrovat tam. */
+  const NOVY={domu:'dejiny/',dejiny:'dejiny/',korporace:'encyklopedie/#korporace',svatky:'encyklopedie/#svatky',osobnosti:'osobnosti/',pribehy:'pribehy/'};
+  if(NOVY[h]!==undefined&&(!EMBED||window.__kvViditelny)){doNoveho(NOVY[h]);return}
   if(h==='dejiny'){stopScene();listHistory()}else if(CATKEYS.includes(h)){stopScene();listCat(h)}else if(h==='domu'){stopScene();hub()}else if(entered&&idx(h)>=0){go(h,+hl||0)}else if(!entered){if(EMBED){stopScene();hub()}else gate()}else{stopScene();hub()}
   $('#stage').scrollTop=0}
 function ambient(mode){amb=true;if(E)mood('ticho');vis.mode=mode;vis.alarm=0}
@@ -234,7 +237,8 @@ const wanted=()=>{const h=location.hash.slice(1).split('@')[0];return idx(h)>=0?
 function gate(){stopScene();chrome('gate');vis.mode='years';
   $('#col').innerHTML=`<p class="lab">Neoficiální fanouškovský projekt</p><h1>Hvězdná kronika</h1><p class="lead">Dějiny, firmy, svátky a příběhy univerza Star Citizen na jednom místě. Zapni si zvuk.</p><div class="row"><button type="button" class="main" id="go">Vstoupit do archivu</button><button type="button" class="alt" id="dir">Přeskočit prolog</button></div><p class="small">Hudba a zvuky vznikají přímo v prohlížeči. Hlas je dočasný náhled, ve finální verzi tu bude kvalitní AI dabing.</p><p class="small">Hvězdná kronika není spojena s Cloud Imperium Games ani jimi schválena. Star Citizen® a Roberts Space Industries® jsou ochranné známky Cloud Imperium Rights LLC. <a href="../" style="color:var(--accent)">Hlavní stránka</a> · <a href="../casova-osa/" style="color:var(--accent)">Časová osa</a> · <a href="../o-projektu/" style="color:var(--accent)">O projektu</a></p>`;
   $('#go').onclick=()=>{unlock();const w=wanted();if(w)go(w,wantedLine());else go('prolog')};$('#dir').onclick=()=>{unlock();warpHub()}}
-function warpHub(){stopScene();$('#ctl').hidden=true;$('#col').innerHTML='';fx('whoosh');
+function doNoveho(cil){stopScene();if(EMBED){if(HOST.kronikaNav)HOST.kronikaNav(cil);else hub()}else location.replace('../'+cil)}
+function warpHub(){if(!EMBED||window.__kvViditelny){doNoveho('dejiny/');return}stopScene();$('#ctl').hidden=true;$('#col').innerHTML='';fx('whoosh');
   if(reduce){showHub();return}vis.warp=performance.now();setTimeout(showHub,1120)}
 function showHub(){if(location.hash==='#domu')route();else location.hash='domu'}
 function hub(){chrome('hub');ambient('hub');
@@ -304,7 +308,7 @@ function fork(){pauseOut();chrome('end');if(E)mood('ticho');viaFork=true;const a
   $('#col').innerHTML=`<p class="lab">Rozcestí · červenec 2884</p><h2>Kudy dál?</h2>${an}<div class="row" style="display:grid;gap:12px;max-width:520px"><button type="button" class="hero" style="margin:0" data-play="letka"><span class="lab">Odbočka · dramatizace</span><b>Ztracená letka</b><span>Poslední dva dny pilotů, kteří kryli útěk milionů lidí.</span></button><button type="button" class="hero" style="margin:0;border-color:var(--line)" data-play="kap-10"><span class="lab">Hlavní cesta</span><b>X. Válka bez konce</b><span>Pokračování příběhu.</span></button></div>`;bindStop()}
 function endOf(s){pauseOut();chrome('end');document.body.dataset.mood='prolog';if(E)mood('ticho');
   const nextCh=s.n&&D.chapters[s.n];const story=s.id==='letka';const an=nextCh?autoNext(`kap-${nextCh.n}`,nextCh.title):(story&&viaFork?autoNext('kap-10','X. Válka bez konce'):'');
-  $('#col').innerHTML=`<p class="lab">${story?'Konec příběhu':'Konec kapitoly'}</p><h2>${story?'Ztracená letka':s.label}</h2>${an}<div class="row">${nextCh?`<button type="button" class="main" data-play="kap-${nextCh.n}">Pokračovat: ${nextCh.title}</button>`:story?'<button type="button" class="main" data-play="kap-10">Pokračovat: X. Válka bez konce</button>':''}<button type="button" class="alt" data-nav="${story?'pribehy':'domu'}">${story?'Další příběhy':'Zpět do archivu'}</button></div>`;bindStop()}
+  $('#col').innerHTML=`<p class="lab">${story?'Konec příběhu':'Konec kapitoly'}</p><h2>${story?'Ztracená letka':s.label}</h2>${an}<div class="row">${nextCh?`<button type="button" class="main" data-play="kap-${nextCh.n}">Pokračovat: ${nextCh.title}</button>`:story?'<button type="button" class="main" data-play="kap-10">Pokračovat: X. Válka bez konce</button>':''}<button type="button" class="alt" data-nav="${story?'pribehy':'domu'}">${story?'Další příběhy':'Zpět na Dějiny'}</button></div>`;bindStop()}
 function setYear(l){cancelAnimationFrame(rafYear);const el=$('#year');if(!el)return;
   if(l.run&&!reduce){const a=l.y,b=l.run,dur=est(l)*.92,t0=performance.now();el.textContent=a;const st=now=>{const k=Math.min(1,(now-t0)/dur);el.textContent=Math.round(a+(b-a)*k*k);if(k<1&&document.body.contains(el))rafYear=requestAnimationFrame(st)};rafYear=requestAnimationFrame(st)}
   else el.textContent=l.run||l.y}
