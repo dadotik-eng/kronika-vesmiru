@@ -65,6 +65,10 @@ def zkontroluj(soubor):
     for pole in POVINNE.get(slozka, []):
         if fm.get(pole) in (None, ''):
             chyba(soubor, f"chybí povinné pole '{pole}'")
+    if slozka == '_kapitoly':
+        for pr in fm.get('prameny') or []:
+            if isinstance(pr, dict) and not pr.get('url'):
+                varovani.append(f"UPOZORNĚNÍ  {soubor}: pramen '{pr.get('nazev')}' nemá odkaz (url)")
     if slozka == '_kapitoly' and fm.get('overeni') not in (None, 'OK', 'neověřeno'):
         chyba(soubor, f"pole 'overeni' musí být OK nebo neověřeno, je {fm.get('overeni')!r}")
     if 'obdobi' in fm and fm['obdobi'] not in ERY:

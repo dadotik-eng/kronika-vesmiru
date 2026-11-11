@@ -1,0 +1,25 @@
+---
+layout: default
+title: Ztracená letka
+permalink: /pribehy/ztracena-letka/
+popis: Dramatizace pádu Calibanu roku 2884 – poslední dva dny pilotů, kteří kryli útěk milionů lidí.
+---
+{% assign d = site.data.letka %}
+<article class="kapitola">
+  <p class="nadtitul">{{ d.podtitul }}</p>
+  <h1>{{ d.nazev }}</h1>
+  <div class="radek-stav">
+    <a class="tlacitko plne male" href="{{ '/archiv/#letka' | relative_url }}">▶ Přehrát s Archivářem</a>
+  </div>
+  <p class="stav-poznamka">{{ d.poznamka }}</p>
+  <div class="text dramatizace">
+    {% for r in d.repliky %}
+      {% if r.kdo == "ARCHIVÁŘ" %}
+        <p class="dr-vypravec">{{ r.text }}</p>
+      {% else %}
+        <p class="dr-replika{% if r.radio %} dr-radio{% endif %}"><span class="dr-kdo">{{ r.kdo }}</span>{{ r.text }}</p>
+      {% endif %}
+    {% endfor %}
+  </div>
+  <p><a href="{{ '/kapitoly/pad-calibanu/' | relative_url }}">Celá kapitola: Pád Calibanu →</a> · <a href="{{ '/pribehy/' | relative_url }}">Zpět na Příběhy</a></p>
+</article>

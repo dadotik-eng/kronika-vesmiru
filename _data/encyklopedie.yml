@@ -151,6 +151,7 @@ pribehy:
     kapitoly:
     - 9
     prehrat: letka
+    cist: /pribehy/ztracena-letka/
     pripravuje_se: false
   - id: fabela
     nazev: Lež z Fabely

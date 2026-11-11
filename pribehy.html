@@ -18,7 +18,7 @@ popis: Dramatizace a kapitoly ze skutečných událostí dějin vesmíru Star Ci
       <p class="pri-stitek">{{ p.stitek }}</p>
       <h3>{{ p.nazev }}</h3>
       <p class="text-pojmy">{{ p.text }}</p>
-      <a class="dej-hraj" href="{{ '/archiv/#' | append: p.prehrat | relative_url }}">▶ Přehrát</a>
+      <p class="pri-akce"><a class="dej-hraj" href="{{ '/archiv/#' | append: p.prehrat | relative_url }}">▶ Přehrát</a>{% if p.cist %} <a href="{{ p.cist | relative_url }}">Číst →</a>{% endif %}</p>
     </article>
     {% endif %}{% endfor %}
     {% for k in nove %}

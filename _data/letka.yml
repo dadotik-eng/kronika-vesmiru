@@ -1,0 +1,74 @@
+# Text dramatizace Ztracená letka (vygenerováno z archiv/index.html, scéna letka) – při úpravě textu v archivu přegenerovat.
+nazev: Ztracená letka
+podtitul: Dramatizace · 2884
+poznamka: Průběh bitvy vychází z oficiální historie. Rozhovory a některé podrobnosti jsou smyšlené.
+repliky:
+- kdo: ARCHIVÁŘ
+  text: 7. července 2884. 04:43 standardního času.
+- kdo: ARCHIVÁŘ
+  text: Varovné senzory celé soustavy mlčí. Dodnes nikdo přesně neví proč.
+- kdo: ARCHIVÁŘ
+  text: Poblíž planety Caliban IV letí dva piloti osmdesáté deváté letky. Běžná hlídka.
+- kdo: HLÍDKA JEDNA
+  text: Hlídko dva, vidíš to za mnou?
+  radio: true
+- kdo: HLÍDKA DVA
+  text: Mám jeden kontakt. Ne. Tři. Deset.
+  radio: true
+- kdo: HLÍDKA JEDNA
+  text: Tohle není nájezd. Vysílám nouzový signál.
+  radio: true
+- kdo: HLÍDKA DVA
+  text: Velíne Crion, tady hlídka dva, hlásím vanduulský kl…
+  radio: true
+- kdo: ARCHIVÁŘ
+  text: Ani jedna zpráva nebyla dokončena.
+- kdo: ARCHIVÁŘ
+  text: Letka vzlétla, aniž tušila, proti čemu stojí. Čtyři lodě padly dřív, než se objevil hlavní nepřítel.
+- kdo: VELITELKA RANDALLOVÁ
+  text: Všem lodím, tady Randallová. Vidím Kingship.
+  radio: true
+- kdo: VELITELKA RANDALLOVÁ
+  text: Vypusťte komunikační drony. Žádáme o posily.
+  radio: true
+- kdo: VELÍN CRION
+  text: Velitelko, nejbližší flotila může dorazit až za dva dny.
+  radio: true
+- kdo: VELITELKA RANDALLOVÁ
+  text: Tak máme dva dny.
+  radio: true
+- kdo: VELITELKA RANDALLOVÁ
+  text: Přestáváme bránit Crion. Odteď chráníme konvoje. Každá civilní loď, která odstartuje, se dostane ven.
+  radio: true
+- kdo: ARCHIVÁŘ
+  text: Letka startovala z provizorních ranvejí v okrese Blackwater. Jednotka určená pro logistiku stála proti válečnému klanu.
+- kdo: CIVILNÍ TRANSPORT
+  text: Tady civilní transport. Na palubě máme tisíce lidí a žádné zbraně.
+  radio: true
+- kdo: PILOT 89. LETKY
+  text: Leťte a neohlížejte se.
+  radio: true
+- kdo: ARCHIVÁŘ
+  text: První den. Druhý den. Letka se zmenšovala a konvoje dál odlétaly.
+- kdo: ARCHIVÁŘ
+  text: Velitelka Sylvie Randallová z bitvy nevyvázla. Její poslední rozkaz platil do konce.
+- kdo: ARCHIVÁŘ
+  text: Čtyřicet devět hodin po prvním kontaktu dorazila druhá flotila.
+- kdo: DRUHÁ FLOTILA
+  text: Tady druhá flotila. Crion hoří. Odpovězte. Je tu někdo živý?
+  radio: true
+- kdo: PILOT 89. LETKY
+  text: Tady osmdesátá devátá.
+  radio: true
+- kdo: DRUHÁ FLOTILA
+  text: Kolik vás zbývá?
+  radio: true
+- kdo: PILOT 89. LETKY
+  text: Jeden.
+  radio: true
+- kdo: ARCHIVÁŘ
+  text: Přes tři miliony lidí unikly. Podle odhadů více než pět a půl milionu zemřelo.
+- kdo: ARCHIVÁŘ
+  text: Roku 2885 námořnictvo letku vyřadilo ze služby. Lidé jí začali říkat Ztracená letka.
+- kdo: ARCHIVÁŘ
+  text: Oficiální záznam jméno posledního pilota neuvádí.
