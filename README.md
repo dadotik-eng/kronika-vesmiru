@@ -13,7 +13,7 @@ Web staví GitHub Pages sám (Jekyll) – nic se neinstaluje. Každá změna v �
 | `_layouts/` | Šablony stránek (obecná, kapitola) |
 | `_includes/` | Hlavička a patička (včetně upozornění, že nejde o oficiální web CIG) |
 | `assets/css/styl.css` | Vzhled |
-| `index.html` | Úvodní stránka (6 nejnovějších kapitol) |
+| `index.html` | Úvodní stránka |
 | `casova-osa.html` | Kapitoly seřazené podle herního roku |
 | `o-projektu.md` | Jak kapitoly vznikají + upozornění |
 

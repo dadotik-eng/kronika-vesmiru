@@ -9,7 +9,7 @@ permalink: /o-projektu/
 
 **Hvězdná kronika** převypráví česky dějiny vesmíru hry Star Citizen. Nejde o oficiální stránky – je to fanouškovský projekt.
 
-Kapitoly si můžeš **přečíst** (časová osa a stránky kapitol), nebo **poslechnout** v [archivu]({{ '/archiv/' | relative_url }}), kde je provází Archivář s hudbou a hlasem.
+Deset hlavních kapitol si můžeš **poslechnout** v [archivu]({{ '/archiv/' | relative_url }}), kde je provází Archivář s hudbou a hlasem. Nové příběhy přibývají postupně jako psané kapitoly na stránce [Příběhy]({{ '/pribehy/' | relative_url }}) – ty si můžeš přečíst i poslechnout.
 
 ## Jak kapitoly vznikají
 

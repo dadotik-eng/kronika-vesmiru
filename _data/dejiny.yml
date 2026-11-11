@@ -1,4 +1,5 @@
 # Hlavní vyprávění (10 kapitol nedělní Ukázky). Přehrává se v archiv/ pod #kap-N.
+# era = název období přesně podle _data/ery.yml
 # herni_rok = začátek období, podle něj se řadí časová osa.
 - rim: "I"
   title: "Hvězdy na dosah"
@@ -10,7 +11,7 @@
 - rim: "II"
   title: "První skok"
   rozpeti: "2262–2292"
-  era: "Objev skokových bodů"
+  era: "Věk skoků"
   herni_rok: 2262
   hraj: "kap-2"
   popis: "Neso trojúhelník, Croshawův první skok a levný pohon Tarsus."
@@ -31,7 +32,7 @@
 - rim: "V"
   title: "Válka, která stvořila diktátora"
   rozpeti: "2541–2546"
-  era: "První tevarinská válka"
+  era: "Spojené planety Země"
   herni_rok: 2541
   hraj: "kap-5"
   popis: "První tevarinská válka a vzestup Ivara Messera."
@@ -45,14 +46,14 @@
 - rim: "VII"
   title: "Stín z Orionu"
   rozpeti: "2681–2736"
-  era: "Příchod Vanduulů"
+  era: "Éra Messerů"
   herni_rok: 2681
   hraj: "kap-7"
   popis: "Vanduulové, první Kingship a pád Tiberu."
 - rim: "VIII"
   title: "Příliv"
   rozpeti: "2789–2793"
-  era: "Pád Messerů"
+  era: "Éra Messerů"
   herni_rok: 2789
   hraj: "kap-8"
   popis: "Akari za Perryho linií, masakr na Garronu II a pád Messerů."
@@ -66,7 +67,7 @@
 - rim: "X"
   title: "Válka bez konce"
   rozpeti: "2945–2956"
-  era: "Současnost"
+  era: "Válka s Vanduuly"
   herni_rok: 2945
   hraj: "kap-10"
   popis: "Útok na Vega II, válka s Vanduuly a současnost."

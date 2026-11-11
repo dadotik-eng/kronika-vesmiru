@@ -68,7 +68,6 @@ main { flex: 1; width: 100%; }
 .hero { display: flex; flex-wrap: wrap; align-items: center; gap: 2.5rem; max-width: 1200px; margin: 0 auto; padding: 5.5rem 5% 4rem; }
 .hero-text { flex: 1 1 30rem; min-width: 0; }
 .hero h1 { font-size: clamp(3rem, 8vw, 5rem); line-height: 1; }
-.mapa { flex: 1 1 20rem; max-width: 27rem; min-width: 0; }
 .obeh1, .obeh2, .obeh3 { transform-origin: 200px 200px; }
 @media (prefers-reduced-motion: no-preference) {
   .obeh1 { animation: obeh 60s linear infinite; }
@@ -94,8 +93,6 @@ main { flex: 1; width: 100%; }
 .stitek { font-family: var(--label); font-size: .9rem; letter-spacing: .12em; text-transform: uppercase; color: var(--akcent); }
 
 .dvojice { display: flex; flex-wrap: wrap; gap: 3.5rem; }
-.sloupec-osa { flex: 1 1 32rem; min-width: 0; }
-.sloupec-osa h2 { margin-bottom: 0; }
 .sloupec-archiv { flex: 1 1 20rem; min-width: 0; display: flex; flex-direction: column; gap: .9rem; }
 .oddil { display: flex; flex-direction: column; gap: .4rem; padding: 1.3rem; border: 1px solid var(--linka); border-radius: 4px; text-decoration: none; }
 .oddil:hover { border-color: var(--akcent); }
@@ -143,48 +140,6 @@ main { flex: 1; width: 100%; }
 .osa-hlava { padding-top: 3.5rem; padding-bottom: 2rem; }
 .osa-hlava h1 { font-size: clamp(2.4rem, 6vw, 3.6rem); }
 
-.panorama { overflow-x: auto; overflow-y: hidden; padding: 0 5%; margin-bottom: 1.5rem; scrollbar-color: var(--linka) transparent; }
-.pan-vnitrek { position: relative; min-width: 1100px; max-width: 1400px; margin: 0 auto; height: 250px; }
-.pan-ery { position: absolute; left: 0; right: 0; top: 132px; height: 34px; }
-.pan-era {
-  position: absolute; top: 0; height: 100%; display: block;
-  background: color-mix(in srgb, var(--barva) 22%, transparent); border-top: 2px solid var(--barva);
-  border-right: 1px solid var(--pozadi); text-decoration: none;
-}
-.pan-era span { position: absolute; top: calc(100% + 6px); left: 0; right: 0; text-align: center; font-family: var(--label); font-size: .8rem; line-height: 1.15; letter-spacing: .06em; text-transform: uppercase; color: var(--barva); padding: 0 .2rem; }
-.pan-era:hover { background: color-mix(in srgb, var(--barva) 38%, transparent); }
-.pan-body { position: absolute; left: 0; right: 0; top: 0; height: 100%; pointer-events: none; }
-.pan-bod {
-  position: absolute; top: 133px; width: 18px; margin-left: -9px; height: 32px; pointer-events: auto; text-decoration: none; z-index: 1;
-}
-.pan-bod::before {
-  content: ""; position: absolute; left: 3px; top: 10px; width: 12px; height: 12px; border-radius: 50%;
-  background: var(--pozadi); border: 2px solid var(--led); transition: transform .15s;
-}
-.pan-bod.klic::before { left: 1px; top: 8px; width: 16px; height: 16px; background: var(--akcent); border-color: var(--akcent); box-shadow: 0 0 12px rgba(246,189,75,.6); }
-.pan-bod.nova::before { border-color: var(--ok); background: var(--ok); border-radius: 2px; transform: rotate(45deg); }
-.pan-bod:hover::before, .pan-bod.aktivni::before { transform: scale(1.5); }
-.pan-bod.nova:hover::before { transform: rotate(45deg) scale(1.5); }
-.pan-popisek {
-  position: absolute; left: 50%; transform: translateX(-50%); width: max-content; max-width: 150px; text-align: center;
-  font-family: var(--label); font-size: .82rem; line-height: 1.2; color: var(--tlumene);
-}
-.pan-popisek b { display: block; color: var(--akcent); font-weight: 600; letter-spacing: .04em; }
-.pan-bod.klic .pan-popisek { bottom: 44px; color: var(--text); }
-.pan-bod.klic.patro .pan-popisek { bottom: 84px; }
-.pan-bod.klic.patro .pan-popisek::after { height: 48px; bottom: -50px; }
-.pan-bod.klic .pan-popisek::after { content: ""; position: absolute; left: 50%; bottom: -10px; height: 8px; border-left: 1px solid var(--linka); }
-.pan-bod:not(.klic) .pan-popisek {
-  opacity: 0; pointer-events: none; transition: opacity .15s; background: rgba(7,15,31,.95);
-  border: 1px solid var(--linka); padding: .35rem .55rem; border-radius: 3px; z-index: 3; color: var(--text);
-}
-.pan-bod:not(.klic) .pan-popisek { bottom: 40px; }
-.pan-bod:not(.klic):hover .pan-popisek, .pan-bod:not(.klic):focus .pan-popisek, .pan-bod.aktivni:not(.klic) .pan-popisek { opacity: 1; }
-.pan-bod:hover, .pan-bod:focus { z-index: 4; }
-.pan-roky { position: absolute; left: 0; right: 0; top: 214px; height: 20px; }
-.pan-roky span { position: absolute; transform: translateX(-50%); font-family: var(--label); font-size: .78rem; color: var(--tlumene); opacity: .8; }
-.pan-roky span:first-child { transform: none; }
-.pan-roky span.konec { transform: translateX(-100%); }
 
 .ery-cipy { display: flex; flex-wrap: wrap; gap: .5rem; padding-bottom: 2.5rem; }
 .ery-cipy a {
@@ -193,7 +148,6 @@ main { flex: 1; width: 100%; }
 }
 .ery-cipy a:hover { background: color-mix(in srgb, var(--barva) 18%, transparent); }
 
-.osa-seznam { max-width: 900px; }
 .era-blok { margin-bottom: 3.2rem; scroll-margin-top: 6rem; }
 .era-hlava { border-left: 4px solid var(--barva); padding-left: 1rem; margin-bottom: 1.6rem; }
 .era-hlava h2 { margin: 0; color: var(--text); }
@@ -299,8 +253,6 @@ main { flex: 1; width: 100%; }
 .osoba footer a.os-zdroj { color: var(--tlumene); }
 
 /* Opravy z kontroly webu */
-.pan-vnitrek { padding: 0 70px; box-sizing: content-box; }
-.pan-ery, .pan-body, .pan-roky { left: 70px; right: 70px; }
 @media (max-width: 640px) {
   .vl-bar span { display: none; }
   .vlady { overflow: hidden; }
