@@ -25,7 +25,8 @@ layout: default
     <h2>Prameny</h2>
     <ul>
       {% for p in page.prameny %}
-        <li>{% if p.url %}<a href="{{ p.url }}" rel="noopener">{{ p.nazev }}</a>{% else %}{{ p.nazev }}{% endif %}{% if p.typ %} · {{ p.typ }}{% endif %}</li>
+        {% assign u = p.url %}{% if u and u.size > 0 %}{% unless u contains "://" %}{% assign u = "https://robertsspaceindustries.com" | append: u %}{% endunless %}{% endif %}
+        <li>{% if u %}<a href="{{ u }}" rel="noopener">{{ p.nazev }}</a>{% else %}{{ p.nazev }}{% endif %}{% if p.typ %} · {{ p.typ }}{% endif %}</li>
       {% endfor %}
     </ul>
   </section>

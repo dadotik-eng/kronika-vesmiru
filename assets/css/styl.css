@@ -122,6 +122,10 @@ main { flex: 1; width: 100%; }
 .jen-beta { display: none; }
 html.beta .jen-beta { display: block; }
 .kapitola .text { font-size: 1.3rem; line-height: 1.8; }
+.kapitola .dramatizace p:first-child::first-letter { float: none; font-size: inherit; padding: 0; color: inherit; font-family: inherit; }
+.dr-replika { padding-left: 1rem; border-left: 2px solid var(--linka); }
+.dr-radio { font-style: italic; border-left-color: var(--akcent); }
+.dr-kdo { display: block; font-family: var(--label); font-style: normal; font-size: .8rem; letter-spacing: .08em; color: var(--akcent); }
 .kapitola .text p:first-child::first-letter { float: left; font-family: var(--display); font-size: 4.2em; line-height: .85; padding: .08em .12em 0 0; color: var(--akcent); }
 .prehravac { width: 100%; margin: 0 0 1.5rem; }
 .prameny { margin-top: 2.5rem; padding-top: 1.4rem; border-top: 1px solid var(--linka); }
