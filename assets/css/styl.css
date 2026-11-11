@@ -593,3 +593,8 @@ a.os-odkaz:hover { color: var(--akcent); }
 #prepni-linii:hover { background: rgba(246,189,75,.12); }
 #prepni-linii[aria-pressed="false"] { color: var(--tlumene); border-color: var(--linka); }
 #prepni-linii::before { content: ""; display: inline-block; width: 18px; border-top: 2px dashed currentColor; vertical-align: middle; margin-right: .5rem; }
+
+/* Události z her (Squadron 42) */
+.udalost.hra { border-left: 3px solid #7fd0ff; padding-left: .8rem; }
+.ud-hra { font-family: var(--label); font-size: .8rem; letter-spacing: .06em; text-transform: uppercase; color: #7fd0ff; margin: 0 0 .2rem; }
+.op-bod.hra::before { background: #7fd0ff !important; border-color: #7fd0ff !important; box-shadow: 0 0 12px rgba(127,208,255,.6) !important; }
