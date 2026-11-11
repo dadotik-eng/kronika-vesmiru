@@ -82,12 +82,20 @@ popis: Rodokmen dynastie Messerů, která vládla lidstvu 246 let. Od Ivara Mess
   strom.style.width = W + 'px'; strom.style.height = VYSKA + 'px';
   [svg, lin].forEach(function (g) { g.setAttribute('viewBox', '0 0 ' + W + ' ' + VYSKA); g.setAttribute('width', W); g.setAttribute('height', VYSKA); });
   var uzly = [].slice.call(strom.querySelectorAll('.uzel'));
-  uzly.forEach(function (u) {
-    u.style.left = (parseFloat(u.dataset.x) - 80) + 'px';
-    u.style.top = (parseInt(u.dataset.gen, 10) * RADEK + 12) + 'px';
-  });
+  // Řádky generací podle skutečné výšky uzlů, aby se nikdy nepřekrývaly (portréty, delší texty, větší písmo)
+  function rozloz() {
+    var maxH = [];
+    uzly.forEach(function (u) { var g = parseInt(u.dataset.gen, 10); u.style.left = (parseFloat(u.dataset.x) - 80) + 'px'; maxH[g] = Math.max(maxH[g] || 0, u.offsetHeight); });
+    var top = [12]; for (var g = 1; g < maxH.length; g++) top[g] = top[g - 1] + (maxH[g - 1] || 0) + 46;
+    uzly.forEach(function (u) { u.style.top = top[parseInt(u.dataset.gen, 10)] + 'px'; });
+    VYSKA = top[maxH.length - 1] + maxH[maxH.length - 1] + 30;
+    strom.style.height = VYSKA + 'px';
+    [svg, lin].forEach(function (gg) { gg.setAttribute('viewBox', '0 0 ' + W + ' ' + VYSKA); gg.setAttribute('height', VYSKA); });
+  }
+  rozloz();
   function stred(u) { return [u.offsetLeft + u.offsetWidth / 2, u.offsetTop + u.offsetHeight / 2]; }
   function cara() {
+    rozloz();
     var html = '';
     uzly.forEach(function (u) {
       var r = u.dataset.rodic; if (!r) return;
