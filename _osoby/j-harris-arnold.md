@@ -14,3 +14,13 @@ kapitoly: []
 rad: 2742
 obdobi: messerove
 ---
+
+Arnold byl jediným synem Paxe Harrise a Ndilimeke Arnold. U Aegis Dynamics se podílel na projektu Monitor, z něhož vzešla loď Hammerhead. Jeho návrh byl vybrán mezi šest prototypů, ale při prvních zkušebních letech neuspěl a námořnictvu nikdy nebyl dodán. Od nadřízených pak nedostával žádnou zpětnou vazbu, nové návrhy mu opakovaně zamítali, a tak si ve volném čase kreslil lodě podle svého oblíbeného Leonarda Casseho.
+
+Svou firmu chtěl vést po vzoru Casse Aerospace: názor každého má stejnou váhu bez ohledu na postavení, poslední slovo má ale Arnold. Vývoj se tím prodlužoval, on však věřil, že spokojení lidé postaví lepší loď. Jméno Anvil zvolil podle věty svého bývalého profesora z MIST Roberta Calvina z knihy Mechanisms of Empire: vojenské výdaje rozdmýchávají pece expanze a bijí do kovadlin inovace.
+
+Prototyp Osprey vznikl už během prvního roku a nesl Casseho zakřivená křídla i jeho znak otevřeného kruhu. Arnold ho díky známostem z Aegis ukázal malé skupině důstojníků námořnictva a získal první objednávku. Po žalobě kvůli autorským právům koupil celé Casseho portfolio za nezveřejněnou částku.
+
+Po pádu Messerů ho oslovil viceadmirál Galen Whishaw z vývojové divize námořnictva s nabídkou přímé zakázky. Loď U4A-3 Terrapin, na které Arnold pracoval s hlavní inženýrkou Allegrou Wilsing, udělala z Anvilu nepostradatelnou součást obrany impéria.
+
+I když byl začátkem 2840. let napůl na odpočinku, dál musel schválit každou součást každé lodi. Ještě v roce 2850 při cestě na MacArthur procházel mezi jednáními s velením námořnictva úpravy projektů ve svém mobiGlasu. V roce 2851 přednášel na MIST jako host. Pozvání na další rok odmítl – chtěl se vrátit „domů“, do kanceláří Anvilu v Nova Kyiv. Tam o dva roky později zemřel u svého stolu.

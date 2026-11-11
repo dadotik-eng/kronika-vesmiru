@@ -17,3 +17,9 @@ kapitoly:
 rad: 2500
 obdobi: upe
 ---
+
+Gaia Planet Services brala povolení jako zbytečnou byrokracii; v jedné zprávě firma napsala, že radši zaplatí pokutu, než aby ztrácela čas. Baxterův tým proto zamířil rovnou na Pallas III a začal vybírat místa pro terraformační zařízení.
+
+Po propuštění se Baxter z Bakeru ozval nejdřív vedení firmy. Generální ředitel Joseph Jules Jr. prý zoufale hledal způsob, jak z debaklu udělat pro firmu úspěch, a hrstka podlézavých manažerů mu přizvukovala. Baxter a další namítali, že bez lingvistů, kteří by rozluštili neznámý jazyk, je to jen zbožné přání. Vedení se nakonec neochotně obrátilo na vládu UPE.
+
+Na slyšení před vysokou tajemnicí Cho, vysokým generálem Volderem a vysokou advokátkou Machado se Baxter nejdřív odvolával na rady firemního právníka. Machado mu připomněla, že nejde o trestní řízení, ale o 275 jeho kolegů, které stále drží cizí civilizace. Baxter pak popsal, jak stál na hřebeni a čekal tři transportní lodě – a místo nich přiletěly cizí. Podle vlastních slov si v tu chvíli vzpomněl, co tam vlastně dělají, a pochopil, že mají velký problém.

@@ -20,3 +20,5 @@ kapitoly:
 rad: 2746
 obdobi: naprava
 ---
+
+Toi převzala vládu po staletích messerovské diktatury s úkolem napravit škody a pošramocenou pověst státu. Jejím šéfem štábu byl Clement Redfield, který ji opakovaně nabádal, aby se soustředila na to, co se opravdu dá udělat, ne na to, co slíbila. Jeho rada, že kampaň se vede se snem, ale vládne se podle skutečnosti, se v impériu cituje dodnes – mimo jiné v týmu současné imperátorky Laylani Addison.

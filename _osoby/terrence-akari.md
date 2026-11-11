@@ -18,3 +18,9 @@ kapitoly:
 rad: 2737
 obdobi: messerove
 ---
+
+Do politiky vstoupil přes městskou radu Primu, kde pracoval deset let. Do Senátu kandidoval s programem uklidnit napětí mezi lidmi a Xi'any na Terře. Prameny se rozcházejí v letopočtech jeho života i v tom, kdy byl poprvé zvolen.
+
+Na cestu do soustavy Tohil ho propašovali odpůrci Messerů; podle jednoho z pramenů mu pomohl i velitel Advokacie pro Terru Nathan Warrick. Po vyhlášení Terry, že nepodpoří válku proti Xi'anům, se musel skrývat, dokud revoluce Lintona Messera nesvrhla.
+
+V Senátu obnoveného impéria patřil k hlavním architektům nového státu. Kromě zákona Fair Chance a reorganizace armády se podílel i na zákonu o historické pravdě a v roce 2794 pomohl založit Úřad výkonných služeb. Prameny se liší i v tom, jak jeho kariéra skončila: podle jednoho odešel ze Senátu v roce 2812, podle druhého zemřel přirozenou smrtí přímo v úřadu.

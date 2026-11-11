@@ -17,3 +17,11 @@ kapitoly:
 rad: 2889
 obdobi: valka
 ---
+
+Addison vyrostla v soustavě Oya a do politiky přišla zvenčí – před zvolením nikdy nezastávala žádný úřad a kandidovala jako nezávislá. Její vítězství bylo překvapením.
+
+První týdny ve funkci byly chaotické: trapná chyba v seznamu hostů na inauguračním plese, vlažný potlesk senátorů po prvním projevu a potíže s obsazením klíčových míst ve vládě. Kandidátku na náměstkyni ministerstva dopravy Maryann Althoff musela stáhnout, když vyšly najevo její urážlivé výroky o vysokých velitelích armády.
+
+Hned první den v úřadu podepsala imperiální nařízení, kterým přiměla Senát znovu projednat zákon zakazující veškerý výzkum umělé inteligence. Využila k tomu málo používané právo imperátora: může přimět zákonodárce, aby znovu posoudili zákon, který nebyl na pořadu jednání pětadvacet a více let. Místo nového zákona chce prosadit dodatek s výjimkami pro přesně vymezené případy, což obchází vědecký výbor Senátu. Sama ale přiznala, že než budou vydána první povolení, potrvá to roky.
+
+Její rádci prý seřadili sliby z kampaně od „splnitelných“ po „nesplnitelné“ a ve vládě koluje rada, kterou kdysi dostala imperátorka Erin Toi: vést kampaň se snem, ale vládnout podle skutečnosti. Mezi úspěchy se počítá svolání XenoScience Conference, na níž se v New Yorku sešli přední vědci různých druhů, a jmenování Ki Jotal první tevarinskou členkou kabinetu.
