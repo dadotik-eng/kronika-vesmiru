@@ -17,10 +17,30 @@ zdroje:
   url: https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/13547-Portfolio-Aegis-Dynamics
 ---
 
-Aegis Dynamics se narodila pro válku. Vznikla sloučením pozemské firmy Aegis Macrocomputing, která stavěla počítačové systémy pro lodě, a společnosti Dynamic Production Systems z Davienu, jež vlastnila loděnice ve čtyřech soustavách. Cíl byl od prvního dne jasný: stavět lodě pro námořnictvo.
+Aegis Dynamics se narodila pro válku. A málem s válkou i zemřela.
 
-Když Ivar Messer upevňoval moc, Aegis byla u toho. Většina vojenských lodí impéria za Messerů pocházela z jejích loděnic a bombardér Retaliator se stal symbolem železné pěsti režimu. Firma splynula s diktaturou natolik, že po jejím pádu v roce 2792 přišel tvrdý účet: veřejné odsouzení, ztráta většiny vojenských zakázek, hromadné propouštění. Peníze armády odešly k firmám bez politické zátěže, jako byly Anvil Aerospace a MISC. Aegis změnila i logo – ostrý blesk nahradil nenápadnější znak.
+## Loděnice pro diktátora
 
-Pak se stalo něco nečekaného. Civilisté si oblíbili její vojenské konstrukce. Z obávaných Retaliatorů se staly osobní transportéry, mobilní domovy, těžařské lodě i hasičská plavidla. Stíhačka Avenger se zase stala standardní lodí Advokacie a místní policie.
+Firma vznikla sloučením dvou společností: pozemské Aegis Macrocomputing, která stavěla počítačové systémy pro rodící se lodní průmysl, a Dynamic Production Systems z Davienu, která vlastnila loděnice ve čtyřech soustavách. Cíl byl od prvního dne jasný – stavět lodě pro námořnictvo v době, kdy lidstvo zbrojilo.
 
-Firma, která kdysi zbrojila pro útlak, se uživila na lidech, které pomáhala utlačovat. Dnes sídlí na planetě Cestulus (Davien II) a patří k velkým výrobcům civilních i vojenských lodí.
+Když Ivar Messer upevňoval moc, Aegis mu dodávala lodě. Většina válečných plavidel impéria za Messerů pocházela z jejích loděnic a bombardér Retaliator se stal symbolem železné pěsti režimu.
+
+## Pád a nečekaná záchrana
+
+Po pádu Messerů v roce 2792 to vypadalo, že firma zmizí. Lidé ji spojovali s hrůzami celé éry. Přišla o většinu zakázek, propouštěla ve velkém a peníze armády odešly k firmám bez politické zátěže, jako byly Anvil Aerospace a MISC. Aegis vyměnila i logo: ostrý vojenský blesk s písmeny AD nahradil měkčí, nenápadnější znak.
+
+Pak se stalo něco nečekaného. Civilisté si začali vojenské lodě Aegis upravovat pro sebe. Ať už kvůli čím dál nebezpečnějšímu vesmíru, nebo kvůli spolehlivosti lodí, firma, kterou kdysi živily zakázky diktatury, se uživila na lidech, které pomáhala utlačovat. Zachránila ji civilní verze Retaliatoru.
+
+## Lodě
+
+**Avenger** byl koncem 28. století hlavní frontovou stíhačkou na nosičích. Když přišly obratnější stroje jako Hornet, armáda ho vyřadila a stal se standardní lodí Advokacie a místní policie. Armáda ho dodnes používá k výcviku a civilní verzi kupují lovci odměn – druhé sedadlo nahradil přístup do nákladového prostoru.
+
+**Retaliator** se za dvě století změnil k nepoznání. Původně strategický bombardér dokázal nést bomby na planetu i torpéda proti kapitálním lodím. Právě výměnné pumovnice umožnily civilistům předělat ho na obytné prostory, nákladní loď nebo cokoli jiného. Spousta vyřazených Retaliatorů navíc ležela ve skladech po celé galaxii, takže to byl levný začátek pro každého, kdo chtěl větší loď s posádkou. Kolem „Tali“ vznikla celá kultura: civilní piloti si říkají „bomber boys“, pořádají sjezdy a soutěží, kdo pro loď vymyslí nejzajímavější využití. Na jejich setkáních se sejdou i tisíce lodí najednou.
+
+**Reclaimer** je dnes nejprodávanější vojenskou lodí firmy – těžká vrakovací loď pro podporu v boji s drony, vlečnými paprsky a skokovým pohonem dlouhého dosahu. Na hranicích ho civilisté používají k vrakování i k průzkumu.
+
+**Idris** je korveta, dnes jedna z největších lodí Aegis (dřív firma stavěla i bitevní křižníky). Vojenská Idris-M slouží v námořnictvu na hlídky, průzkum nebezpečných skokových bodů i k přepadům. Lehčí Idris-P bez hlavního děla používají domobrany proti pašerákům. V omezeném počtu se prodává i civilistům a stala se luxusním zbožím – být kapitánem Idris je prestiž a o každý kus se soupeří.
+
+## Dnes
+
+Aegis sídlí na planetě Cestulus (Davien II) a patří znovu k velkým výrobcům civilních i vojenských lodí. Stín minulosti ale nezmizel úplně.
