@@ -4,7 +4,7 @@ name: Kontrola obsahu
 on:
   pull_request:
   push:
-    branches: [main]
+    branches: [main, beta]
 permissions:
   contents: read
 jobs:
@@ -18,8 +18,9 @@ jobs:
       - run: pip install pyyaml
       - name: Zkontrolovat obsah
         run: |
-          if [ "${{ github.event_name }}" = "pull_request" ]; then
-            ZMENY=$(git diff --name-only origin/${{ github.base_ref }}...HEAD)
+          if [ "${{ github.event_name }}" = "pull_request" ] || [ "${{ github.ref_name }}" = "beta" ]; then
+            ZAKLAD="${{ github.base_ref }}"; [ -z "$ZAKLAD" ] && ZAKLAD=main
+            ZMENY=$(git diff --name-only origin/$ZAKLAD...HEAD)
             echo "Změněné soubory:"; echo "$ZMENY"
             python3 nastroje/kontrola.py $ZMENY
           else
