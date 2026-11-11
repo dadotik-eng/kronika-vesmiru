@@ -12,12 +12,16 @@ stitky: [Abeni Okon, Mars, Kinah a Madu Okon, Artemis]
 prameny:
   - nazev: "Abeni Okon"
     typ: Galactapedie
+    url: https://robertsspaceindustries.com/galactapedia/article/Rz2DPeZZnk-abeni-okon
   - nazev: "Mars (Sol IV)"
     typ: Galactapedie
+    url: https://robertsspaceindustries.com/galactapedia/article/Regn8D76xw-mars-sol-iv
   - nazev: "Mars Tragedy Memorial"
     typ: Galactapedie
+    url: https://robertsspaceindustries.com/galactapedia/article/V8gJ6nl7Zx-mars-tragedy-memorial
   - nazev: "2157: Blue Skies on Mars"
     typ: Comm-Link
+    url: https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/12675-2157-Blue-Skies-On-Mars
 ---
 
 Osmnáctého března roku 2157 se nad Marsem nerozlévalo žádné rudé nebe. Toho roku už bylo modré. Planeta, která lidstvu dlouho ukazovala jen prach a bouře, byla v polovině 50. let 22. století konečně úspěšně terraformována. Trvalo to roky a stálo to oběti – ten první pokus o terraformaci skončil katastrofou, která si v roce 2125 vyžádala tisíce životů. Mars se poučil. A pod tím nově modrým nebem se narodila Abeni Okon.
