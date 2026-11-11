@@ -10,11 +10,12 @@ layout: default
     {% if page.overeni == "OK" %}
       <span class="stav stav-ok">Ověřeno proti pramenům</span>
     {% else %}
-      <span class="stav stav-ceka">Čeká na ověření{% if page.overeni_poznamka %} – {{ page.overeni_poznamka }}{% endif %}</span>
+      <span class="stav stav-ceka">Čeká na ověření</span>
     {% endif %}
     {% assign slug = page.url | split: "/" | last %}
     <a class="tlacitko plne male" href="{{ '/archiv/#web-' | append: slug | relative_url }}">▶ Přehrát s Archivářem</a>
   </div>
+  {% if page.overeni_poznamka %}<p class="stav-poznamka jen-beta">Poznámka z kontroly (vidíš jen v betě): {{ page.overeni_poznamka }}</p>{% endif %}
   {% if page.audio %}
     <audio class="kapitola-audio" controls preload="none" src="{{ page.audio }}"></audio>
   {% endif %}

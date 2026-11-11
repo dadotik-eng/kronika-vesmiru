@@ -118,6 +118,9 @@ main { flex: 1; width: 100%; }
 .stav { font-family: var(--label); font-size: .95rem; padding: .2rem .75rem; border-radius: 3px; }
 .stav-ok { color: var(--ok); border: 1px solid var(--ok); }
 .stav-ceka { color: var(--ceka); border: 1px solid var(--ceka); }
+.stav-poznamka { font-size: .85rem; color: var(--tlumene); border-left: 2px solid var(--ceka); padding: .3rem .7rem; margin: .6rem 0 0; }
+.jen-beta { display: none; }
+html.beta .jen-beta { display: block; }
 .kapitola .text { font-size: 1.3rem; line-height: 1.8; }
 .kapitola .text p:first-child::first-letter { float: left; font-family: var(--display); font-size: 4.2em; line-height: .85; padding: .08em .12em 0 0; color: var(--akcent); }
 .prehravac { width: 100%; margin: 0 0 1.5rem; }
