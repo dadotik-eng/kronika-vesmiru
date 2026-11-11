@@ -28,6 +28,7 @@ POVINNE = {
     '_kapitoly': ['title', 'herni_rok'],
     '_zasobnik': [],
     '_encyklopedie': ['nazev', 'sekce', 'perex'],
+    '_rasy': ['nazev', 'perex', 'biologie'],
 }
 ERY = {e['id'] for e in yaml.safe_load(open('_data/ery.yml', encoding='utf-8'))} | {'mimo'}   # mimo = mimo lidské dějiny (xi’anští císaři…)
 

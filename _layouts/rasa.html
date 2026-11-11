@@ -1,0 +1,43 @@
+---
+layout: default
+---
+{% assign rasy = site.rasy | sort: "poradi" %}
+<article class="kapitola rasa-detail" style="--barva: {{ page.barva }}">
+  <p class="nadtitul"><a href="{{ '/rasy/' | relative_url }}">Mimozemské rasy</a> · {{ page.nazev_en }}</p>
+  <h1>{{ page.nazev }}</h1>
+  <dl class="rasa-udaje">
+    <div><dt>Domov</dt><dd>{{ page.domov }}</dd></div>
+    <div><dt>První setkání s lidmi</dt><dd>{{ page.kontakt }}</dd></div>
+    <div><dt>Vztah k lidstvu</dt><dd>{{ page.vztah }}</dd></div>
+  </dl>
+  {% if page.obrazek %}<figure class="od-ilustrace"><img src="{{ page.obrazek | relative_url }}" alt="{{ page.nazev | escape }}"><figcaption>{{ page.obrazek_popisek | default: "Ilustrační obrázek" }}</figcaption></figure>{% endif %}
+  <p class="perex rasa-perex">{{ page.perex }}</p>
+
+  <div class="rasa-karty" role="tablist" aria-label="Části">
+    <button type="button" role="tab" id="tab-historie" aria-controls="historie" aria-selected="true" class="aktivni">Historie</button>
+    <button type="button" role="tab" id="tab-biologie" aria-controls="biologie" aria-selected="false">Biologie</button>
+  </div>
+  <section class="text prolinkovat rasa-panel" id="historie" role="tabpanel" aria-labelledby="tab-historie">{{ content }}</section>
+  <section class="text prolinkovat rasa-panel" id="biologie" role="tabpanel" aria-labelledby="tab-biologie" hidden>{{ page.biologie | markdownify }}</section>
+
+  {% include prameny.html seznam=page.zdroje %}
+  <nav class="cteni-dalsi">
+    {% for r in rasy %}{% if r.url == page.url %}{% assign i = forloop.index0 %}{% endif %}{% endfor %}
+    {% if i > 0 %}{% assign j = i | minus: 1 %}<a href="{{ rasy[j].url | relative_url }}">← {{ rasy[j].nazev }}</a>{% else %}<span></span>{% endif %}
+    {% assign j = i | plus: 1 %}{% if rasy[j] %}<a href="{{ rasy[j].url | relative_url }}">{{ rasy[j].nazev }} →</a>{% endif %}
+  </nav>
+</article>
+<script>
+(function () {
+  var tabs = [].slice.call(document.querySelectorAll('.rasa-karty [role=tab]'));
+  function ukaz(id) {
+    tabs.forEach(function (t) {
+      var on = t.getAttribute('aria-controls') === id;
+      t.classList.toggle('aktivni', on); t.setAttribute('aria-selected', on);
+      document.getElementById(t.getAttribute('aria-controls')).hidden = !on;
+    });
+  }
+  tabs.forEach(function (t) { t.addEventListener('click', function () { ukaz(t.getAttribute('aria-controls')); if (history.replaceState) history.replaceState(null, '', '#' + t.getAttribute('aria-controls')); }); });
+  if (location.hash === '#biologie') ukaz('biologie');
+})();
+</script>

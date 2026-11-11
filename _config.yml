@@ -18,6 +18,9 @@ collections:
   encyklopedie:
     output: true
     permalink: /encyklopedie/:name/
+  rasy:
+    output: true
+    permalink: /rasy/:name/
   udalosti:
     output: false
   zasobnik:
@@ -39,6 +42,11 @@ defaults:
       type: encyklopedie
     values:
       layout: heslo
+  - scope:
+      path: ""
+      type: rasy
+    values:
+      layout: rasa
 
 exclude:
   - README.md

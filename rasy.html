@@ -1,0 +1,26 @@
+---
+layout: default
+title: Mimozemské rasy
+permalink: /rasy/
+sekce: rasy
+popis: Mimozemské civilizace vesmíru Star Citizen – Banu, Xi'ani, Tevarinové, Vanduulové a další. Historie setkání s lidstvem i to, co víme o jejich biologii.
+---
+{% assign rasy = site.rasy | sort: "poradi" %}
+<section class="blok uzky">
+  <p class="nadtitul">Mimozemské rasy</p>
+  <h1>Nejsme sami</h1>
+  <p class="perex">Lidstvo se mezi hvězdami setkalo s obchodníky, diplomaty, válečníky i s někým, kdo prostě zabíjí. U každé rasy najdeš její historii a to, co víme o její biologii.</p>
+  <div class="rasy-mrizka">
+    {% for r in rasy %}
+    <a class="rasa-karta" href="{{ r.url | relative_url }}" style="--barva: {{ r.barva }}">
+      {% if r.obrazek %}<span class="rk-obraz"><img src="{{ r.obrazek | relative_url }}" alt="" loading="lazy"></span>{% else %}<span class="rk-obraz rk-prazdny" aria-hidden="true"><span>{{ r.nazev | slice: 0 }}</span></span>{% endif %}
+      <span class="rk-telo">
+        <span class="rk-stitek">{{ r.vztah }} · {{ r.kontakt }}</span>
+        <span class="rk-nazev">{{ r.nazev }}</span>
+        <span class="rk-text">{{ r.perex }}</span>
+        <span class="rk-dal">Historie a biologie →</span>
+      </span>
+    </a>
+    {% endfor %}
+  </div>
+</section>

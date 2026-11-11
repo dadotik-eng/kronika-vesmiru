@@ -557,3 +557,27 @@ a.os-odkaz:hover { color: var(--akcent); }
 .rod-panel .med-odkazy { display: flex; gap: 1.2rem; flex-wrap: wrap; margin-top: 1.2rem; font-family: var(--label); letter-spacing: .04em; }
 .rod-panel .med-odkazy a { text-decoration: none; }
 .k-text { font-weight: 600; }
+
+/* Mimozemské rasy */
+.rasy-mrizka { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1.2rem; margin-top: 2rem; }
+.rasa-karta { display: flex; flex-direction: column; background: var(--panel); border: 1px solid var(--linka); border-top: 3px solid var(--barva); border-radius: 4px; overflow: hidden; text-decoration: none; color: var(--text); transition: transform .2s, border-color .2s; }
+.rasa-karta:hover { transform: translateY(-3px); border-color: var(--barva); }
+.rk-obraz { display: block; aspect-ratio: 16 / 9; overflow: hidden; background: #0b1526; }
+.rk-obraz img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.rk-prazdny { display: flex; align-items: center; justify-content: center; background: radial-gradient(circle at 50% 60%, color-mix(in srgb, var(--barva) 30%, transparent), transparent 65%), #0b1526; }
+.rk-prazdny span { font-family: var(--display); font-size: 4rem; color: var(--barva); opacity: .55; }
+.rk-telo { display: flex; flex-direction: column; gap: .4rem; padding: 1rem 1.2rem 1.2rem; flex: 1; }
+.rk-stitek { font-family: var(--label); font-size: .8rem; letter-spacing: .06em; text-transform: uppercase; color: var(--barva); }
+.rk-nazev { font-family: var(--display); font-size: 1.6rem; }
+.rk-text { color: var(--tlumene); line-height: 1.55; flex: 1; }
+.rk-dal { font-family: var(--label); letter-spacing: .04em; color: var(--akcent); margin-top: .4rem; }
+.rasa-detail .nadtitul a { color: inherit; text-decoration: none; }
+.rasa-detail h1 { color: var(--text); }
+.rasa-udaje { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: .8rem; margin: 0 0 1.4rem; padding: .9rem 1rem; border: 1px solid var(--linka); border-left: 3px solid var(--barva); border-radius: 4px; background: var(--panel); }
+.rasa-udaje dt { font-family: var(--label); font-size: .78rem; letter-spacing: .06em; text-transform: uppercase; color: var(--tlumene); }
+.rasa-udaje dd { margin: .15rem 0 0; }
+.rasa-perex { font-size: 1.15rem; }
+.rasa-karty { display: flex; gap: .4rem; margin: 1.6rem 0 1rem; border-bottom: 1px solid var(--linka); }
+.rasa-karty button { background: none; border: 0; border-bottom: 3px solid transparent; color: var(--tlumene); font-family: var(--label); font-size: 1.05rem; letter-spacing: .06em; text-transform: uppercase; padding: .5rem 1rem; cursor: pointer; margin-bottom: -1px; }
+.rasa-karty button.aktivni { color: var(--text); border-bottom-color: var(--barva); }
+.rasa-detail .text p:first-child::first-letter { color: var(--barva); }
