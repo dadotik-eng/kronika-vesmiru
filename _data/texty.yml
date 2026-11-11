@@ -1,0 +1,224 @@
+# Vygenerováno nástrojem nastroje/texty_z_archivu.py ze scén v archiv/index.html – needitovat ručně.
+prolog:
+  nazev: Prolog
+  podtitul: Archivář
+  poznamka: ''
+  odstavce:
+  - kdo: ARCHIVÁŘ
+    text: Dvě a půl století se dějiny psaly na rozkaz.
+  - kdo: ARCHIVÁŘ
+    text: Messerové je přepisovali. Korporace si je kupovaly. Vanduulové je pálili.
+  - kdo: ARCHIVÁŘ
+    text: Pak v roce 2941 přišel zákon o historické pravdě a tisíce tajných spisů vyšly na světlo.
+  - kdo: ARCHIVÁŘ
+    text: Jsem archivář. Mým úkolem je říct vám, co se skutečně stalo.
+  - kdo: ARCHIVÁŘ
+    text: Čeká nás osm set osmdesát jedna let. Od prvního kvantového pohonu až po válku, která trvá dodnes.
+  - kdo: ARCHIVÁŘ
+    text: Uslyšíte o světech, které jsme stvořili, i o těch, které jsme zničili. O letce, z níž přežil jediný pilot, a o imperátorovi, kterého svrhla pravda, již se snažil utajit.
+  - kdo: ARCHIVÁŘ
+    text: Archiv je plný cizích hlasů, vysílání a zapomenutých jmen. Kudy půjdete, je na vás.
+kap-1:
+  nazev: I. Hvězdy na dosah
+  podtitul: 2075–2157
+  poznamka: ''
+  odstavce:
+  - kdo: ARCHIVÁŘ
+    text: Každé impérium má svůj první krok a ten lidský začal v laboratoři. V roce 2075 dokončil doktor Scott Childress se svým týmem ve společnosti Roberts Space Industries první soběstačný kvantový pohon. Loď s ním dosáhla setiny rychlosti světla a Sluneční soustava se najednou zmenšila.
+  - kdo: ARCHIVÁŘ
+    text: O necelých čtyřicet let později, v roce 2113, si stejná firma nechala patentovat technologii terraformace. Lidé už nechtěli planety jen navštěvovat. Chtěli je přestavět. V roce 2120 začaly práce na Marsu a svět sledoval, jak se rudá pustina proměňuje v druhý domov.
+  - kdo: ARCHIVÁŘ
+    text: Roku 2125, krátce před dokončením, se nově budovaná atmosféra zhroutila. Zahynulo 4 876 lidí. Historie tu událost zná jako Velkou marsovskou tragédii a lidstvo se tehdy poprvé zeptalo, zda nezašlo příliš daleko.
+  - kdo: ARCHIVÁŘ
+    text: Odpovědí bylo pokračovat. V roce 2140 uvedla společnost RSI na trh Zeus, první kosmickou loď, kterou si mohl koupit i běžný zákazník. A v roce 2157 byl Mars oficiálně prohlášen za úspěšně přetvořený. Vedle prvních svobodných nádechů na nové planetě vyrostl pomník těm, kteří je zaplatili životem.
+kap-2:
+  nazev: II. První skok
+  podtitul: 2262–2292
+  poznamka: ''
+  odstavce:
+  - kdo: ARCHIVÁŘ
+    text: Poblíž Neptunu začaly mizet lodě. Nikdo nevěděl proč a oblast dostala jméno Neso trojúhelník. V roce 2262 ji úřady uzavřely pro veškerý provoz. Vědec a průzkumník Nick Croshaw se ale nenechal odradit a anomálii studoval téměř deset let.
+  - kdo: ARCHIVÁŘ
+    text: 'V roce 2271 upravil vlastní kvantový pohon, naletěl do neznáma a na druhé straně spatřil cizí slunce. Stal se prvním člověkem, který prošel skokovým bodem. Klíčem bylo správné přiblížení a záření odhaleného fúzního jádra. Nová soustava nese dodnes jeho jméno: Croshaw.'
+  - kdo: ARCHIVÁŘ
+    text: Vyrazit tam však znamenalo riskovat život. Mnozí se ze skoku nevrátili a lodě bylo nutné provádět ručně. Tak se zrodila nová kasta pilotů, navjumpeři. Terraformace nových planet spolykala tolik peněz, že výbor pověřený jejím vedením začal prodávat jednosměrné letenky. Lidé si tak koupili místo v první mezihvězdné kolonii a zároveň ji zaplatili.
+  - kdo: ARCHIVÁŘ
+    text: Společnost RSI brzy nabídla stabilní skokový pohon, ale jen za ceny dostupné vládám a miliardářům. Teprve dva mechanici z malé čerpací stanice přišli na to, že jde jen o vylepšenou úpravu běžného kvantového pohonu. V listopadu 2292 své zařízení vyzkoušeli, s právničkou Selmou Tontil založili firmu Tarsus a levný skokový pohon otevřel hvězdy každému, kdo vlastnil loď.
+kap-3:
+  nazev: III. Nejsme sami
+  podtitul: 2380–2438
+  poznamka: ''
+  odstavce:
+  - kdo: ARCHIVÁŘ
+    text: Po objevu dalších skokových bodů se vlády Země sešly na světovém summitu. V roce 2380 vyhlásily vznik Spojených národů Země. Poprvé ve své historii začalo lidstvo mluvit jedním hlasem, a to právě včas.
+  - kdo: ARCHIVÁŘ
+    text: V roce 2438 prohledával navjumper Vernon Tar soustavu Davien, když narazil na neznámou loď. Střet naštěstí nikoho nezabil, ale mohl být začátkem první mezihvězdné války. Armáda mu proto dala jasně najevo, že pokud bude mlčet, zapíše se do dějin jako hrdina.
+  - kdo: ARCHIVÁŘ
+    text: O dva týdny později se v Davienu objevila delegace Banu. Generál Neal Socolovich s ní několik měsíců lámal jazykovou bariéru a v říjnu téhož roku podepsal první mezihvězdnou dohodu o míru a obchodu.
+  - kdo: ARCHIVÁŘ
+    text: Ironii celé události lidé odhalili až po letech. Davien vůbec neležel poblíž banuského území. Loď, kterou Tar potkal, patřila uprchlíkovi. Na první setkání s mimozemskou civilizací tak lidstvo narazilo díky někomu, kdo před ní utíkal. Soustava přesto rozkvetla a stala se bránou k východnímu obchodu.
+kap-4:
+  nazev: IV. Tři pilíře a první trhlina
+  podtitul: 2523–2530
+  poznamka: ''
+  odstavce:
+  - kdo: ARCHIVÁŘ
+    text: Lidské kolonie rostly a stará struktura přestávala stačit. V roce 2523 se Spojené národy proměnily ve Spojené planety Země. Každá planeta získala zastoupení v Senátu a výkonnou moc si rozdělili tři tribuni. Moc jednoho člověka měla být navždy minulostí.
+  - kdo: ARCHIVÁŘ
+    text: Sedm let nato vyslala společnost Gaia Planet Services 276 lidí, aby terraformovali svět považovaný za neobydlený. Neměli povolení a planeta nebyla tak opuštěná, jak si mysleli. Krátce po zahájení prací se odevšad vynořily cizí lodě.
+  - kdo: ARCHIVÁŘ
+    text: Tým zajali Xi’ani, druhá mimozemská civilizace, se kterou se lidé setkali. Na znamení dobré vůle propustili předáka Charlese Baxtera. Dobrá vůle však dlouho nevydržela.
+  - kdo: ARCHIVÁŘ
+    text: Začala studená válka, která přetrvala přes dvě a půl století. Nikdo ji nikdy nevyhlásil, přesto si sabotáže, špionáž a tajné operace vyžádaly oběti na obou stranách. Pozdější vládci navíc pochopili, jak užitečný je nepřítel za hranicí. Strach z Xi’anů se stal jedním z nejsilnějších nástrojů moci v lidských dějinách.
+kap-5:
+  nazev: V. Válka, která stvořila diktátora
+  podtitul: 2541–2546
+  poznamka: ''
+  odstavce:
+  - kdo: ARCHIVÁŘ
+    text: V roce 2541 objevili lidští průzkumníci skokový bod do domovské soustavy Tevarinů, válečnické rasy se svým přísným kodexem cti. Konflikt propukl téměř okamžitě. Námořnictvo bránilo přístupové skoky, ale Tevarinové našli jinou cestu a v roce 2542 překvapivě zaútočili na soustavu Idris.
+  - kdo: ARCHIVÁŘ
+    text: Zlom přišel v roce 2544 v bitvě o Idris IV. Když padl velitel, převzal velení mladý důstojník Ivar Messer a navedl bombardéry nebezpečně blízko vlastním pozicím. Riskantní manévr zvrátil bitvu a možná celou válku. Vláda potřebovala hrdinu a udělala z Messera tvář konfliktu.
+  - kdo: ARCHIVÁŘ
+    text: V roce 2546 Tevarinové kapitulovali. Messer přivedl jejich zajatého vůdce přímo do sněmovny a lidé šíleli nadšením. Domovský svět poražených, Kaleeth, byl zabrán, osídlen a přejmenován na Elysium IV.
+  - kdo: ARCHIVÁŘ
+    text: 'Teď přišla Messerova skutečná ofenzíva. Jako vrchní generál prohlásil vládu tří tribunů za přežitek, přiživoval strach z Xi’anů a navrhl jediný úřad s plnou mocí: prvního občana. V prosinci 2546 pro něj občané sami hlasovali a hned jej do funkce zvolili. Z Prvního občana se časem stal imperátor a ze Spojených planet Spojené impérium Země. Tři pilíře padly bez jediného výstřelu.'
+kap-6:
+  nazev: VI. Dynastie
+  podtitul: 2546–2781
+  poznamka: ''
+  odstavce:
+  - kdo: ARCHIVÁŘ
+    text: Rod Messerů vládl lidstvu 246 let. Trůn se dědil z ruky do ruky, propaganda ovládla zpravodajství a každý kritik riskoval, že prostě zmizí. Impérium mezitím dál rostlo a stále nové planety lidé přetvářeli podle sebe.
+  - kdo: ARCHIVÁŘ
+    text: 'V roce 2603 se z temnoty vynořila přestavěná tevarinská flotila pod velením válečníka Corath’Thala. Přiletěla do soustavy Fora a žádala jediné: vrátit Elysium IV, ztracený domov svého lidu. Imperátor odpověděl rozkazem k totálnímu útoku. Válka trvala sedm let a skončila roku 2610 v soustavě Centauri, kde Corath’Thala porazila legendární letka Squadron 42.'
+  - kdo: ARCHIVÁŘ
+    text: Ne každý nepřítel přicházel zvenčí. V roce 2638 navrhl guvernér Terry Assan Kieren, aby se soustava od impéria odtrhla. Státní propaganda jej systematicky zničila a Kieren krátce nato zmizel. Prokázat se nikdy nic nepodařilo.
+  - kdo: ARCHIVÁŘ
+    text: Největší hrozba pro Messery však vyrůstala v jejich vlastním domě. V roce 2781 svrhl Linton Messer svého otce, imperátora Ulyssese, spiknutím, do něhož byla zapojena i jeho sestra Fiona. Ulysses svržení nepřežil. Linton využil revoluční nálady, aby se dostal k moci. Netušil, že to samé hnutí jednou přijde i pro něj.
+kap-7:
+  nazev: VII. Stín z Orionu
+  podtitul: 2681–2736
+  poznamka: ''
+  odstavce:
+  - kdo: ARCHIVÁŘ
+    text: V roce 2681 byla v soustavě Orion vypálena kolonie na planetě Armitage. Útočníci nechtěli jednat ani obchodovat. Vanduulové jsou kočovné klany, jejichž domovský svět nikdo nezná, a po každém nájezdu zmizí zpět do tmy. Imperátorka Illyana Messer ani její nástupci je nebrali jako skutečnou hrozbu.
+  - kdo: ARCHIVÁŘ
+    text: Omyl se ukázal v únoru 2712. Do Orionu vplula flotila kapitálních lodí a lidé poprvé spatřili Kingship, plavidlo dlouhé přes tři kilometry. Bitva skončila prakticky dřív, než začala. Námořnictvo ustoupilo do soustavy Tiber a Orion nechalo svému osudu. Pozdější imperátor dal soustavu vymazat ze všech nevojenských map.
+  - kdo: ARCHIVÁŘ
+    text: Armáda se připravila na další úder, ale žádný nepřicházel. Vanduulové zůstali v Orionu přes rok, vytěžili jeho planety a pak se stáhli. Teprve 4. února 2726 se v Tiberu objevila první vanduulská stíhačka. V dubnu 2732 dorazil do soustavy velký klan a začalo obléhání.
+  - kdo: ARCHIVÁŘ
+    text: Čtyři krvavé roky bojů přinesly lidem většinu toho, co dodnes vědí o vanduulské taktice. V prosinci 2736 přiletěl z Orionu další Kingship a obrana se zhroutila. Přeživší lodě ustoupily do soustavy Virgil v naději, že se Vanduulové opět zastaví u koristi. Tentokrát je následovali.
+kap-8:
+  nazev: VIII. Příliv
+  podtitul: 2789–2793
+  poznamka: ''
+  odstavce:
+  - kdo: ARCHIVÁŘ
+    text: Režim začal praskat ve chvíli, kdy na to nejméně čekal. Senátor Terrence Akari z planety Terra překročil v roce 2789 Perryho linii, zakázanou hranici s Xi’any, a setkal se s xi’anským císařem z rodu Kr.ē. Společně sepsali mírovou smlouvu. 29. května svolal Akari mimořádné zasedání Senátu, zatímco imperátor odpočíval daleko od hlavního města, a nechal o ní okamžitě hlasovat.
+  - kdo: ARCHIVÁŘ
+    text: Pokud Xi’ani nebyli nepřítelem, co ještě bylo lež? Odpověď přišla v dubnu 2792. Linton Messer prodal práva na terraformaci planety Garron II a její vyvíjející se život, včetně druhu s prokazatelnou vnímavostí, byl vyhuben. Imperátor o tom věděl.
+  - kdo: ARCHIVÁŘ
+    text: Aktivistická skupina Tide pustila záznam do celé galaktické sítě. Vzpoura se šířila ze světa na svět. 27. dubna zahájily bezpečnostní síly na planetě Vale palbu do demonstrantů a zabily přes 230 lidí. Tím se zhroutil poslední zbytek poslušnosti.
+  - kdo: ARCHIVÁŘ
+    text: 2. května byl Linton sesazen a revolucionáři ho popravili. Jeho sestra Fiona zmizela beze stopy a éra Messerů skončila. Moc převzala senátorka Erin Toi, obnovila Tribunál a omezila vládu imperátora časovým limitem. V červenci 2793 pak Pakt o Perryho linii oficiálně ukončil studenou válku. Garron II je dnes chráněn zákonem Fair Chance, aby se tamní život mohl vyvíjet bez zásahů lidí.
+kap-9:
+  nazev: IX. Archa a umělý svět
+  podtitul: 2800–2884
+  poznamka: ''
+  odstavce:
+  - kdo: ARCHIVÁŘ
+    text: Po pádu Messerů bylo třeba začít znovu.
+  - kdo: ARCHIVÁŘ
+    text: Dobré úmysly ale stály peníze.
+  - kdo: ARCHIVÁŘ
+    text: V roce 2872 ohlásil imperátor Corbyn Salehi plán, který měl terraformaci navždy nahradit.
+  - kdo: ARCHIVÁŘ
+    text: Zatímco se stavěl nový svět, staré se ztrácely.
+kap-10:
+  nazev: X. Válka bez konce
+  podtitul: 2945–2956
+  poznamka: ''
+  odstavce:
+  - kdo: ARCHIVÁŘ
+    text: Na začátku října 2945 zaútočili Vanduulové na planetu Vega II, dnes zvanou Aremis. Útok zasáhl města New Corvo a Estilia a lidé pochopili, že po více než dvou a půl stoletích šarvátek se už nedá předstírat mír. Admirál Bishop před Senátem řekl to, co se dlouho nikdo neodvážil vyslovit.
+  - kdo: ARCHIVÁŘ
+    text: Imperátor Kelos Costigan pak požádal o vyhlášení války a Senát ji v listopadu 2945 schválil. Aremis získal na tomtéž zasedání plné uznání jako planeta impéria. Roku 2946 vedl admirál Bishop flotu do operace Mandrake v soustavě Oberon.
+  - kdo: ARCHIVÁŘ
+    text: Válka změnila i politiku. V roce 2947 oznámilo impérium obchodní iniciativu s Xi’any a tentýž rok se atentátník pokusil Costigana zabít. 1. ledna 2951 složila přísahu imperátorka Laylani Addison, která jmenovala do své vlády první Tevarinku Ki Jotal. Národ, který lidé kdysi porazili a vyhnali z domova, má dnes hlas v kabinetu.
+  - kdo: ARCHIVÁŘ
+    text: 'Rok 2956 běží souběžně s naším časem a příběh se stále píše. V soustavách Stanton a Pyro dnes létají lidé jako ty: kurýři, horníci, žoldáci i piráti. Vanduulská hrozba nezmizela, korporace nepolevily a Synthworld stojí nedokončený. Poslední stránka této kroniky zůstává prázdná. Je na tobě, co na ni napíšeš.'
+letka:
+  nazev: Ztracená letka
+  podtitul: Dramatizace · 2884
+  poznamka: Průběh bitvy vychází z oficiální historie. Rozhovory a některé podrobnosti jsou smyšlené.
+  odstavce:
+  - kdo: ARCHIVÁŘ
+    text: 7. července 2884. 04:43 standardního času.
+  - kdo: ARCHIVÁŘ
+    text: Varovné senzory celé soustavy mlčí. Dodnes nikdo přesně neví proč.
+  - kdo: ARCHIVÁŘ
+    text: Poblíž planety Caliban IV letí dva piloti osmdesáté deváté letky. Běžná hlídka.
+  - kdo: HLÍDKA JEDNA
+    text: Hlídko dva, vidíš to za mnou?
+    radio: true
+  - kdo: HLÍDKA DVA
+    text: Mám jeden kontakt. Ne. Tři. Deset.
+    radio: true
+  - kdo: HLÍDKA JEDNA
+    text: Tohle není nájezd. Vysílám nouzový signál.
+    radio: true
+  - kdo: HLÍDKA DVA
+    text: Velíne Crion, tady hlídka dva, hlásím vanduulský kl…
+    radio: true
+  - kdo: ARCHIVÁŘ
+    text: Ani jedna zpráva nebyla dokončena.
+  - kdo: ARCHIVÁŘ
+    text: Letka vzlétla, aniž tušila, proti čemu stojí. Čtyři lodě padly dřív, než se objevil hlavní nepřítel.
+  - kdo: VELITELKA RANDALLOVÁ
+    text: Všem lodím, tady Randallová. Vidím Kingship.
+    radio: true
+  - kdo: VELITELKA RANDALLOVÁ
+    text: Vypusťte komunikační drony. Žádáme o posily.
+    radio: true
+  - kdo: VELÍN CRION
+    text: Velitelko, nejbližší flotila může dorazit až za dva dny.
+    radio: true
+  - kdo: VELITELKA RANDALLOVÁ
+    text: Tak máme dva dny.
+    radio: true
+  - kdo: VELITELKA RANDALLOVÁ
+    text: Přestáváme bránit Crion. Odteď chráníme konvoje. Každá civilní loď, která odstartuje, se dostane ven.
+    radio: true
+  - kdo: ARCHIVÁŘ
+    text: Letka startovala z provizorních ranvejí v okrese Blackwater. Jednotka určená pro logistiku stála proti válečnému klanu.
+  - kdo: CIVILNÍ TRANSPORT
+    text: Tady civilní transport. Na palubě máme tisíce lidí a žádné zbraně.
+    radio: true
+  - kdo: PILOT 89. LETKY
+    text: Leťte a neohlížejte se.
+    radio: true
+  - kdo: ARCHIVÁŘ
+    text: První den. Druhý den. Letka se zmenšovala a konvoje dál odlétaly.
+  - kdo: ARCHIVÁŘ
+    text: Velitelka Sylvie Randallová z bitvy nevyvázla. Její poslední rozkaz platil do konce.
+  - kdo: ARCHIVÁŘ
+    text: Čtyřicet devět hodin po prvním kontaktu dorazila druhá flotila.
+  - kdo: DRUHÁ FLOTILA
+    text: Tady druhá flotila. Crion hoří. Odpovězte. Je tu někdo živý?
+    radio: true
+  - kdo: PILOT 89. LETKY
+    text: Tady osmdesátá devátá.
+    radio: true
+  - kdo: DRUHÁ FLOTILA
+    text: Kolik vás zbývá?
+    radio: true
+  - kdo: PILOT 89. LETKY
+    text: Jeden.
+    radio: true
+  - kdo: ARCHIVÁŘ
+    text: Přes tři miliony lidí unikly. Podle odhadů více než pět a půl milionu zemřelo.
+  - kdo: ARCHIVÁŘ
+    text: Roku 2885 námořnictvo letku vyřadilo ze služby. Lidé jí začali říkat Ztracená letka.
+  - kdo: ARCHIVÁŘ
+    text: Oficiální záznam jméno posledního pilota neuvádí.

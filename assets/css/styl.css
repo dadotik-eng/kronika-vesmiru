@@ -482,3 +482,32 @@ html.prehravac-otevreny { overflow: hidden; }
 .osa-ovladani { padding-top: 0; }
 .era-panel { border-top: 3px solid var(--barva); }
 .op-bod.bez-mista::after { left: -6px; top: 145px; width: 12px; height: 12px; opacity: 1; box-shadow: 0 0 0 3px var(--pozadi, #070f1f); }
+
+/* Detail osoby a společné prvky detailů */
+.osoba h2 a { color: inherit; text-decoration: none; }
+.osoba h2 a:hover { color: var(--akcent); }
+.os-text { display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical; overflow: hidden; }
+.os-vice { margin: 0 0 .8rem; font-family: var(--label); font-size: .92rem; letter-spacing: .04em; }
+.os-vice a { text-decoration: none; }
+.osoba-detail .nadtitul a { color: inherit; text-decoration: none; }
+.od-era { color: var(--barva); }
+.od-roky { font-family: var(--label); color: var(--tlumene); letter-spacing: .04em; margin: -.4rem 0 1.4rem; }
+.od-ilustrace { margin: 0 0 1.6rem; position: relative; border: 1px solid var(--linka); border-radius: 4px; overflow: hidden; }
+.od-ilustrace img { display: block; width: 100%; height: auto; }
+.od-ilustrace figcaption { position: absolute; right: 8px; bottom: 6px; font-size: 11px; color: rgba(230,236,245,.85); background: rgba(7,15,31,.7); padding: 2px 7px; border-radius: 3px; }
+.osoba-detail .text p:first-child::first-letter { color: var(--barva); }
+.souvisi { margin-top: 2rem; }
+.souvisi h2, .prameny h2 { font-size: 1.15rem; }
+.souvisi ul { padding-left: 1.2rem; }
+.prameny-pozn { font-size: .85rem; color: var(--tlumene); margin-top: .6rem; }
+.od-zpet { margin-top: 2rem; font-family: var(--label); letter-spacing: .04em; }
+.od-zpet a { text-decoration: none; }
+
+.dej-telo h2 a { color: inherit; text-decoration: none; }
+.dej-telo h2 a:hover { color: var(--akcent); }
+.dej-cist { margin: .3rem 0 0; font-family: var(--label); font-size: .92rem; letter-spacing: .04em; }
+.dej-cist a { text-decoration: none; }
+.cteni-dalsi { display: flex; justify-content: space-between; gap: 1rem; margin-top: 2.4rem; padding-top: 1rem; border-top: 1px solid var(--linka); font-family: var(--label); letter-spacing: .04em; }
+.cteni-dalsi a { text-decoration: none; }
+a.os-odkaz { color: inherit; text-decoration: underline dotted var(--akcent); text-underline-offset: 3px; }
+a.os-odkaz:hover { color: var(--akcent); }

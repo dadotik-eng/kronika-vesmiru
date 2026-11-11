@@ -1,0 +1,29 @@
+---
+layout: default
+---
+{% assign o = page %}
+{% assign kat = "vladari:Vládci|politika:Politika|armada:Armáda|objevitele:Objevitelé|veda-technika:Věda a technika|korporace:Korporace|kultura:Kultura a média|zlocin:Zločin|xiani-tevarini:Xi'ani a Tevarinové" | split: "|" %}
+{% assign era = site.data.ery | where: "id", o.obdobi | first %}
+<article class="kapitola osoba-detail" style="--barva: {{ era.barva | default: '#8aa0b8' }}">
+  <p class="nadtitul"><a href="{{ '/osobnosti/' | relative_url }}">Osobnosti</a>{% for p in kat %}{% assign kv = p | split: ":" %}{% if kv[0] == o.kategorie %} · {{ kv[1] }}{% endif %}{% endfor %}{% if era %} · <span class="od-era">{{ era.nazev }}</span>{% elsif o.obdobi == "mimo" %} · mimo lidské dějiny{% endif %}</p>
+  <h1>{{ o.jmeno }}</h1>
+  {% assign nar = o.narozeni | append: "" %}{% assign zem = o.umrti | append: "" %}
+  <p class="od-roky">{% if zem == "žije" %}{% if nar == "neznámo" %}žije{% else %}narozen(a) {{ nar }}, žije{% endif %}{% elsif nar == "neznámo" and zem == "neznámo" %}roky neznámé{% else %}{% if nar == "neznámo" %}?{% else %}{{ nar }}{% endif %} – {% if zem == "neznámo" %}?{% else %}{{ zem }}{% endif %}{% endif %} · {{ o.role }}</p>
+  {% if o.ilustrace %}<figure class="od-ilustrace"><img src="{{ '/assets/osoby/' | append: o.slug | append: '.webp' | relative_url }}" alt="Ilustrace: {{ o.jmeno | escape }}" width="960" height="540"><figcaption>Ilustrační obrázek</figcaption></figure>{% endif %}
+  <div class="text">
+    <p>{{ o.medailonek }}</p>
+  </div>
+  {% if o.rozpor %}<p class="os-rozpor"><b>Rozpor v pramenech:</b> {{ o.rozpor }}</p>{% endif %}
+
+  {% capture souvis %}
+    {% if o.rod == "messer" %}<li><a href="{{ '/rod-messeru/#' | append: o.slug | relative_url }}">Rodokmen Messerů</a></li>{% endif %}
+    {% for k in o.kapitoly %}{% if k == "letka" %}<li><a href="{{ '/pribehy/ztracena-letka/' | relative_url }}">Příběh: Ztracená letka</a> · <a href="{{ '/archiv/#letka' | relative_url }}">▶ poslechnout</a></li>{% else %}{% assign n = k | remove: "kap-" | plus: 0 %}{% assign i = n | minus: 1 %}{% assign d = site.data.dejiny[i] %}<li><a href="{{ '/dejiny/' | append: k | append: '/' | relative_url }}">Kapitola {{ d.rim }}. {{ d.title }}</a> · <a href="{{ '/archiv/#' | append: k | relative_url }}">▶ poslechnout</a></li>{% endif %}{% endfor %}
+    {% assign casti = o.jmeno | remove: "." | split: " " %}{% assign klic = casti | last %}{% if o.rod == "messer" %}{% assign klic = casti | first %}{% endif %}
+    {% if klic.size > 3 %}{% for k in site.kapitoly %}{% if k.content contains klic %}<li><a href="{{ k.url | relative_url }}">Kapitola: {{ k.title }}</a></li>{% endif %}{% endfor %}{% endif %}
+  {% endcapture %}
+  {% assign souvis_s = souvis | strip %}
+  {% if souvis_s != "" %}<section class="souvisi"><h2>Související</h2><ul>{{ souvis }}</ul></section>{% endif %}
+
+  {% include prameny.html seznam=o.zdroje %}
+  <p class="od-zpet"><a href="{{ '/osobnosti/#' | append: o.slug | relative_url }}">← Zpět na rejstřík osob</a></p>
+</article>

@@ -159,6 +159,7 @@
     oznacMenu();
     delete $('main').dataset.vysvetleno;
     vysvetli($('main'));
+    prolinkuj($('main'));
     cestaStranky = location.pathname;
     document.dispatchEvent(new CustomEvent('kronika:stranka'));
   }
@@ -307,7 +308,7 @@
   var pismeno = /[\p{L}\p{N}]/u;
   function vysvetli(root) {
     if (!root || root.dataset.vysvetleno) return;
-    var oblasti = root.querySelectorAll('.text-pojmy, .os-text, .ud-telo p, .kapitola-text p, .era-uvod, .enc-text');
+    var oblasti = root.querySelectorAll('.text-pojmy, .os-text, .ud-telo p, .kapitola-text p, .prolinkovat p, .era-uvod, .enc-text');
     if (!oblasti.length) return;
     root.dataset.vysvetleno = '1';
     nactiPojmy().then(function (seznam) {
@@ -327,6 +328,45 @@
             pouzite[p[2]] = 1; break;
           }
         });
+      });
+    });
+  }
+
+  /* ---------- Jména osob v textech jako odkazy na jejich stránku ---------- */
+  var osobyRe = null;
+  function nactiOsoby() {
+    if (osobyRe) return osobyRe;
+    osobyRe = fetch(ZAKLAD + 'data/osoby.json').then(function (r) { return r.ok ? r.json() : []; }).catch(function () { return []; }).then(function (os) {
+      var kmen = function (w) { return w.length > 4 && /[aeiouyáéíóúůý]$/i.test(w) ? w.slice(0, -1) : w; };
+      return os.map(function (o) {
+        var slova = o.jmeno.replace(/\./g, '').split(/\s+/).filter(function (w) { return !/^[IVXL]+$/.test(w); });
+        if (slova.length < 2) return null;
+        var vzor = slova.map(function (w) { return kmen(w).replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '[a-záčďéěíňóřšťúůýž]{0,3}'; }).join('\\s+');
+        return { id: o.id, re: new RegExp('(^|[^\\p{L}])(' + vzor + ')(?![\\p{L}])', 'u') };
+      }).filter(Boolean);
+    });
+    return osobyRe;
+  }
+  function prolinkuj(root) {
+    var oblasti = root.querySelectorAll('.prolinkovat p, .kapitola-text p, .osoba-detail .text p');
+    if (!oblasti.length) return;
+    nactiOsoby().then(function (seznam) {
+      var ja = location.pathname;
+      seznam.forEach(function (o) {
+        var cil = ZAKLAD + 'osobnosti/' + o.id + '/';
+        if (ja === cil) return;
+        for (var k = 0; k < oblasti.length; k++) {
+          var w = document.createTreeWalker(oblasti[k], NodeFilter.SHOW_TEXT, null), n, hotovo = false;
+          while ((n = w.nextNode())) {
+            if (n.parentNode.closest('a, .pojem, .dr-kdo')) continue;
+            var m = o.re.exec(n.nodeValue); if (!m) continue;
+            var i = m.index + m[1].length, a = document.createElement('a');
+            a.className = 'os-odkaz'; a.href = cil; a.textContent = m[2];
+            var za = n.splitText(i); za.nodeValue = za.nodeValue.slice(m[2].length); n.parentNode.insertBefore(a, za);
+            hotovo = true; break;
+          }
+          if (hotovo) break;
+        }
       });
     });
   }

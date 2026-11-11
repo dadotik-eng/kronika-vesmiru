@@ -24,8 +24,9 @@ popis: Celé vyprávění Hvězdné kroniky k poslechu – prolog, deset kapitol
       <span class="dej-rim">{{ k.rim }}</span>
       <div class="dej-telo">
         <p class="dej-era">{{ k.rozpeti }} · {{ k.era }}</p>
-        <h2>{{ k.title }}</h2>
+        <h2><a href="{{ '/dejiny/' | append: k.hraj | append: '/' | relative_url }}">{{ k.title }}</a></h2>
         <p class="text-pojmy">{{ k.popis }}</p>
+        <p class="dej-cist"><a href="{{ '/dejiny/' | append: k.hraj | append: '/' | relative_url }}">Číst kapitolu →</a></p>
         <p class="dej-stav" hidden></p>
       </div>
       <a class="dej-hraj" href="{{ '/archiv/#' | append: k.hraj | relative_url }}">▶ Přehrát</a>
@@ -35,8 +36,9 @@ popis: Celé vyprávění Hvězdné kroniky k poslechu – prolog, deset kapitol
       <span class="dej-rim">↳</span>
       <div class="dej-telo">
         <p class="dej-era">2884 · odbočka · dramatizace</p>
-        <h2>Ztracená letka</h2>
+        <h2><a href="{{ '/pribehy/ztracena-letka/' | relative_url }}">Ztracená letka</a></h2>
         <p class="text-pojmy">Poslední dva dny pilotů 89. letky, kteří kryli útěk milionů lidí z Calibanu.</p>
+        <p class="dej-cist"><a href="{{ '/pribehy/ztracena-letka/' | relative_url }}">Číst →</a></p>
         <p class="dej-stav" hidden></p>
       </div>
       <a class="dej-hraj" href="{{ '/archiv/#letka' | relative_url }}">▶ Přehrát</a>

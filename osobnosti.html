@@ -34,20 +34,21 @@ popis: Rejstřík osob z dějin vesmíru Star Citizen. Imperátoři, objevitelé
     {% if o.ilustrace %}<figure class="os-ilustrace"><img src="{{ '/assets/osoby/' | append: o.slug | append: '.webp' | relative_url }}" alt="Ilustrace: {{ o.jmeno | escape }}" loading="lazy" width="960" height="540"><figcaption>Ilustrační obrázek</figcaption></figure>{% endif %}
     <header>
       <span class="os-emblem" aria-hidden="true"></span>
-      <h2>{{ o.jmeno }}</h2>
+      <h2><a href="{{ o.url | relative_url }}">{{ o.jmeno }}</a></h2>
       {% assign nar = o.narozeni | append: "" %}{% assign zem = o.umrti | append: "" %}<p class="os-roky">{% if zem == "žije" %}{% if nar == "neznámo" %}žije{% else %}nar. {{ nar }}, žije{% endif %}{% elsif nar == "neznámo" and zem == "neznámo" %}roky neznámé{% else %}{% if nar == "neznámo" %}?{% else %}{{ nar }}{% endif %}{% if zem != "" %} – {% if zem == "neznámo" %}?{% else %}{{ zem }}{% endif %}{% endif %}{% endif %}</p>
       <p class="os-role">{{ o.role }}</p>
       {% for p in kat %}{% assign kv = p | split: ":" %}{% if kv[0] == o.kategorie %}<span class="os-kat" data-kat="{{ kv[0] }}">{{ kv[1] }}</span>{% endif %}{% endfor %}
     </header>
     <p class="os-text">{{ o.medailonek }}</p>
+    <p class="os-vice"><a href="{{ o.url | relative_url }}">Celý medailonek a prameny →</a></p>
     {% if o.rozpor %}<p class="os-rozpor"><b>Rozpor v pramenech:</b> {{ o.rozpor }}</p>{% endif %}
     <footer>
       {% if o.rod == "messer" %}<a href="{{ '/rod-messeru/#' | append: o.slug | relative_url }}">Rodokmen →</a>{% endif %}
-      {% for k in o.kapitoly %}{% if k == "letka" %}<a href="{{ '/archiv/#letka' | relative_url }}">▶ Ztracená letka</a>{% else %}{% assign n = k | remove: "kap-" | plus: 0 | minus: 1 %}{% assign d = site.data.dejiny[n] %}<a href="{{ '/archiv/#' | append: k | relative_url }}">▶ Kapitola {{ d.rim }}</a>{% endif %}{% endfor %}
+      {% for k in o.kapitoly %}{% if k == "letka" %}<a href="{{ '/archiv/#letka' | relative_url }}">▶ Ztracená letka</a>{% else %}{% assign n = k | remove: "kap-" | plus: 0 | minus: 1 %}{% assign d = site.data.dejiny[n] %}<a href="{{ '/dejiny/' | append: k | append: '/' | relative_url }}">◆ Kapitola {{ d.rim }}</a>{% endif %}{% endfor %}
       {% assign casti = o.jmeno | remove: "." | split: " " %}{% assign klic = casti | last %}{% if o.rod == "messer" %}{% assign klic = casti | first %}{% endif %}
       {% if klic.size > 3 %}{% for p in site.data.encyklopedie.pribehy.polozky %}{% if p.text contains klic or p.nazev contains klic %}<a href="{{ '/pribehy/#pribeh-' | append: p.id | relative_url }}">{% if p.prehrat %}▶{% else %}◇{% endif %} Příběh: {{ p.nazev }}</a>{% endif %}{% endfor %}
       {% for k in site.kapitoly %}{% if k.content contains klic %}<a href="{{ k.url | relative_url }}">◆ Kapitola: {{ k.title }}</a>{% endif %}{% endfor %}{% endif %}
-      {% for z in o.zdroje %}<a class="os-zdroj" href="{{ z.url }}" target="_blank" rel="noopener">{{ z.typ }} ↗</a>{% endfor %}
+      
     </footer>
   </article>
 {% endfor %}
