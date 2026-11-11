@@ -588,3 +588,7 @@ a.os-odkaz:hover { color: var(--akcent); }
 .rasy-srovnani { margin: 3rem 0 0; }
 .rasy-srovnani img { width: 100%; height: auto; border-radius: 4px; display: block; }
 .rasy-srovnani figcaption { font-size: .85rem; color: var(--tlumene); margin-top: .5rem; }
+#prepni-linii { background: rgba(11,21,38,.85); color: var(--akcent); border: 1px solid rgba(246,189,75,.6); }
+#prepni-linii:hover { background: rgba(246,189,75,.12); }
+#prepni-linii[aria-pressed="false"] { color: var(--tlumene); border-color: var(--linka); }
+#prepni-linii::before { content: ""; display: inline-block; width: 18px; border-top: 2px dashed currentColor; vertical-align: middle; margin-right: .5rem; }
