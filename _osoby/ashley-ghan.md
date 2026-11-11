@@ -20,3 +20,9 @@ kapitoly: []
 rad: 2311
 obdobi: skoky
 ---
+
+Objev z ní přes noc udělal hrdinku celého impéria. Nabídky rozhovorů s vědci i reklamních smluv ale odmítla.
+
+V lidské stavbě na měsíci Caliban 4f našli vládní průzkumníci bedny vzácných rud, jejichž vytěžení muselo stát spoustu práce, a stopy svědčící o tom, že tam stavba stála už roky. Desítky lidí se pak hlásily, že byla jejich, ale nikdo neměl data o skoku, která by to dokázala. Šířily se fámy: podle jedněch zradila svou bývalou pirátskou posádku, podle jiných byla elitní agentkou, která se rozhodla změnit život.
+
+Rozhovor s Lynn Gale v pořadu One and All v roce 2343 sledovalo tolik lidí, že spadlo několik starších sítí. Ghan v něm působila strojeně a nacvičeně, trvala na svém a spory nerozřešila. Objev pro ni byl požehnáním, které se změnilo v prokletí. Sama prohlásila, že po všech těch tahanicích by možná bylo lepší, kdyby v té boudě prostě žila. Původ stavby se nikdy nepodařilo zjistit.

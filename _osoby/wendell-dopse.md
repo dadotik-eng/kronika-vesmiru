@@ -17,3 +17,9 @@ kapitoly:
 rad: 2399
 obdobi: une
 ---
+
+Zlevněný skokový pohon získal od projektu Far Star, který tehdy po celé Zemi náboral kolonisty a pomáhal průzkumníkům s vybavením lodí. Po instalaci prý loď pečlivě vydrhl, aby byla čistá na začátek Červeného festivalu 25. ledna.
+
+Poslední den svátku šel s rodinou na slavnost lampionů a dlouho s dcerou luštil obzvlášť těžkou hádanku. V tu chvíli prý uviděl ten osamělý lampion, stranou od ostatních. Rozloučil se, běžel k lodi a letěl za ním.
+
+Objev Davienu přinutil vědce přepsat učebnice. Metody skenování, které Dopse při dřívějších výpravách vyvinul, převzali další průzkumníci i vynálezci. Jeho příběh inspiroval další, aby vyráželi právě poslední den festivalu, a přispěl k tomu, že se Červený festival rozšířil po celém impériu.

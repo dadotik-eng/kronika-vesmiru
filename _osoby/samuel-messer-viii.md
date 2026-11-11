@@ -22,3 +22,7 @@ kapitoly:
 rad: 2678
 obdobi: messerove
 ---
+
+Když Illyana VI. náhle zemřela na mrtvici, věrní agenti jejího rodu stihli Samuela, jejího nejmladšího syna a určeného nástupce, propašovat ze Země dřív, než ho Astrid stačila nechat zavraždit. Astrid pak nasadila armádu, aby ho našla, rozšířila cenzuru a dala hromadně zatýkat novináře, kteří se proti válce ozvali. Samuelova strana nakonec udeřila první.
+
+Jako imperátor v represích pokračoval. Jeho starší bratr Galor, kterého matka kdysi vydědila, protože jako dítě vážně onemocněl a lékaři nečekali, že se dožije dvaceti let, nakonec bratra přežil a po jeho vraždě usedl na trůn.
