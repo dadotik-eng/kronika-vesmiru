@@ -20,12 +20,13 @@ popis: Korporace, svátky a slovníček pojmů ze světa Star Citizen.
   <h2 class="pri-nadpis" id="{{ oddil }}">{{ o.nazev }}</h2>
   <p class="enc-uvod">{{ o.uvod }}</p>
   <div class="pri-mrizka">
-    {% for p in o.polozky %}
-    <article class="pri-karta" id="{{ oddil }}-{{ p.id }}">
+    {% assign hesla = site.encyklopedie | where: "sekce", oddil | sort: "poradi" %}
+    {% for p in hesla %}
+    <article class="pri-karta" id="{{ oddil }}-{{ p.slug }}">
       <p class="pri-stitek">{{ p.stitek }}</p>
-      <h3>{{ p.nazev }}</h3>
-      <p class="enc-text">{{ p.text }}</p>
-      {% if p.kapitoly.size > 0 %}<p class="pri-akce">{% for n in p.kapitoly %}{% assign i = n | minus: 1 %}{% assign d = site.data.dejiny[i] %}<a href="{{ '/archiv/#' | append: d.hraj | relative_url }}">▶ Kapitola {{ d.rim }}</a> {% endfor %}</p>{% endif %}
+      <h3><a href="{{ p.url | relative_url }}">{{ p.nazev }}</a></h3>
+      <p class="enc-text">{{ p.perex }}</p>
+      <p class="pri-akce"><a href="{{ p.url | relative_url }}">Číst →</a>{% for n in p.kapitoly %}{% assign i = n | minus: 1 %}{% assign d = site.data.dejiny[i] %} <a href="{{ '/dejiny/' | append: d.hraj | append: '/' | relative_url }}">◆ Kapitola {{ d.rim }}</a>{% endfor %}</p>
     </article>
     {% endfor %}
   </div>

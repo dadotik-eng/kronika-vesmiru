@@ -15,6 +15,9 @@ collections:
   osoby:
     output: true
     permalink: /osobnosti/:name/
+  encyklopedie:
+    output: true
+    permalink: /encyklopedie/:name/
   udalosti:
     output: false
   zasobnik:
@@ -31,6 +34,11 @@ defaults:
       type: osoby
     values:
       layout: osoba
+  - scope:
+      path: ""
+      type: encyklopedie
+    values:
+      layout: heslo
 
 exclude:
   - README.md
