@@ -39,6 +39,10 @@ biologie: 'O těle Vanduulů toho oficiální prameny prozrazují překvapivě m
 
 
   Proč Vanduulové chodí téměř bez oblečení, psané oficiální prameny nevysvětlují. Stejně tak nic neříkají o jejich délce života, stravě ani o tom, jak se rozmnožují. Čas Vanduulů je podle tvůrců hry záhadou i z jiného důvodu: každý, kdo se jich na něj zkusil zeptat, zemřel.'
+obrazek: /assets/rasy/vanduulove.webp
+obrazek_popisek: Koncept art © Cloud Imperium Games
+galerie:
+- /assets/rasy/vanduulove-1.webp
 ---
 
 Lidé se s Vanduuly poprvé setkali roku 2681, když jeden klan přepadl osadu Dell Township na planetě Armitage v soustavě Orion. Přežil jediný osadník. Od té doby skončilo masovým umíráním každé setkání. Po pádu Messerů se nová vláda pokusila navázat diplomatické vztahy – vyslanci byli bez výjimky přivítáni laserovou palbou. Proč Vanduulové lidi tolik nenávidí, nevíme.

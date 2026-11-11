@@ -36,6 +36,8 @@ biologie: 'Banu se umí přizpůsobit prostředí jako žádný jiný známý dr
 
 
   Podrobnější oficiální popis banuského těla v psaných pramenech zatím chybí.'
+obrazek: /assets/rasy/banu.webp
+obrazek_popisek: Koncept art © Cloud Imperium Games
 ---
 
 Odkud Banu pocházejí, nikdo s jistotou neví. Nevedou totiž žádné historické záznamy. Když je lidé poznali, žili už na mnoha světech v různých soustavách. Xenoantropologové se dnes shodují, že jejich domovem je nejspíš oceánský svět Bacchus II, kde většinu pevniny tvoří malé ostrovy. Z aliancí ostrovních národů pak podle nich vyrostl i Banuský protektorát. Banu samotní se tomu tématu obratně vyhýbají.
