@@ -78,7 +78,7 @@ popis: Rodokmen dynastie Messerů, která vládla lidstvu 246 let. Od Ivara Mess
   var RIM = ['I','II','III','IV','V','VI','VII','VIII','IX','X','XI'];
   var trun = DATA.filter(function (m) { return m.cislo && !m.cestny; }).sort(function (a, b) { return RIM.indexOf(a.cislo) - RIM.indexOf(b.cislo); });
   var strom = document.getElementById('strom'), svg = document.getElementById('cary'), lin = document.getElementById('linie');
-  var W = 1180, RADEK = 165, VYSKA = 7 * RADEK;
+  var W = 1180, RADEK = 190, VYSKA = 7 * RADEK;
   strom.style.width = W + 'px'; strom.style.height = VYSKA + 'px';
   [svg, lin].forEach(function (g) { g.setAttribute('viewBox', '0 0 ' + W + ' ' + VYSKA); g.setAttribute('width', W); g.setAttribute('height', VYSKA); });
   var uzly = [].slice.call(strom.querySelectorAll('.uzel'));
