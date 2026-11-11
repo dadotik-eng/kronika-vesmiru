@@ -35,7 +35,7 @@ popis: Rejstřík osob z dějin vesmíru Star Citizen. Imperátoři, objevitelé
     <header>
       <span class="os-emblem" aria-hidden="true"></span>
       <h2>{{ o.jmeno }}</h2>
-      <p class="os-roky">{{ o.narozeni }}{% if o.umrti %} – {{ o.umrti }}{% endif %}</p>
+      {% assign nar = o.narozeni | append: "" %}{% assign zem = o.umrti | append: "" %}<p class="os-roky">{% if zem == "žije" %}{% if nar == "neznámo" %}žije{% else %}nar. {{ nar }}, žije{% endif %}{% elsif nar == "neznámo" and zem == "neznámo" %}roky neznámé{% else %}{% if nar == "neznámo" %}?{% else %}{{ nar }}{% endif %}{% if zem != "" %} – {% if zem == "neznámo" %}?{% else %}{{ zem }}{% endif %}{% endif %}{% endif %}</p>
       <p class="os-role">{{ o.role }}</p>
       {% for p in kat %}{% assign kv = p | split: ":" %}{% if kv[0] == o.kategorie %}<span class="os-kat" data-kat="{{ kv[0] }}">{{ kv[1] }}</span>{% endif %}{% endfor %}
     </header>

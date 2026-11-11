@@ -21,7 +21,7 @@ Hvězdná kronika je český fanouškovský projekt, který tuhle oficiální hi
 - Začni [prologem]({{ '/archiv/#prolog' | relative_url }}). Archivář v něm uvede, o čem kronika je, a pak tě provede kapitolami.
 - [Časová osa]({{ '/casova-osa/' | relative_url }}) řadí události podle období, od prvního kvantového pohonu po současnost.
 - V [rejstříku osobností]({{ '/osobnosti/' | relative_url }}) najdeš imperátory, objevitele, vojáky i zločince s krátkými medailonky.
-- [Příběhy]({{ '/archiv/#pribehy' | relative_url }}) se zaměřují na jednotlivé osudy a události podrobněji.
+- [Příběhy]({{ '/pribehy/' | relative_url }}) se zaměřují na jednotlivé osudy a události podrobněji.
 - Přehrávač dole na stránce hraje dál, i když se mezitím proklikáváš webem.
 - Podtržené pojmy po najetí nebo klepnutí ukážou krátké vysvětlení.
 

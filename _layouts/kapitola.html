@@ -16,7 +16,7 @@ layout: default
     <a class="tlacitko plne male" href="{{ '/archiv/#web-' | append: slug | relative_url }}">▶ Přehrát s Archivářem</a>
   </div>
   {% if page.audio %}
-    <audio class="prehravac" controls preload="none" src="{{ page.audio }}"></audio>
+    <audio class="kapitola-audio" controls preload="none" src="{{ page.audio }}"></audio>
   {% endif %}
   <div class="text kapitola-text">{{ content }}</div>
   {% if page.prameny %}

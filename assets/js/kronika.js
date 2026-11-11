@@ -55,7 +55,7 @@
     pripravFrame().then(function (w) {
       if (!w) { $('#pb-nazev').textContent = 'Přehrávač se nepodařilo načíst'; return; }
       if (rozbalit) { w.__kvViditelny = true; try { w.KRONIKA.fit(); } catch (e) {} }
-      w.KRONIKA.play(id, veta || 0);
+      Promise.resolve(w.KRONIKA.play(id, veta || 0)).then(function (ok) { if (!ok) $('#pb-nazev').textContent = 'Tuto kapitolu se nepodařilo spustit'; });
     });
   }
   function otevritArchiv(sekce) {
@@ -64,7 +64,7 @@
   }
   window.kronikaStav = function (s) {
     stav = s;
-    if (!s || !s.id) { if (s && s.view === 'hub' && !obal.classList.contains('rozbaleny')) {} return; }
+    if (!s || !s.id) return;
     ukaz();
     $('#pb-nazev').textContent = s.label + (s.total ? ' · věta ' + (s.ln + 1) + ' z ' + s.total : '');
     $('#pb-text').textContent = s.text || '';
@@ -157,10 +157,12 @@
   }
   function poNacteni() {
     oznacMenu();
+    delete $('main').dataset.vysvetleno;
     vysvetli($('main'));
+    cestaStranky = location.pathname;
     document.dispatchEvent(new CustomEvent('kronika:stranka'));
   }
-  var nacitani = 0;
+  var nacitani = 0, cestaStranky = location.pathname;
   function jdi(url, bezHistorie) {
     var u = new URL(url, location.href), moje = ++nacitani;
     document.body.classList.remove('menu-otevrene');
@@ -207,7 +209,11 @@
     if (u.pathname === location.pathname && !u.hash) { e.preventDefault(); return; }
     e.preventDefault(); jdi(u.href);
   });
-  window.addEventListener('popstate', function () { jdi(location.href, true); });
+  window.addEventListener('popstate', function () {
+    // Zpět mezi kotvami na stejné stránce: prohlížeč sám vyvolá hashchange, stránku nestahovat znovu.
+    if (location.pathname === cestaStranky) { var c = location.hash && document.getElementById(decodeURIComponent(location.hash.slice(1))); if (c) c.scrollIntoView(); return; }
+    jdi(location.href, true);
+  });
 
   /* ---------- Hledání ---------- */
   var hp = $('#hledat-vse'), vys = $('#vysledky'), index = null;

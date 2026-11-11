@@ -132,10 +132,13 @@ popis: 881 let dějin vesmíru Star Citizen po obdobích. Vyber období a uvidí
     }
     body.forEach(function (b) { var p = poloha(parseFloat(b.dataset.rok)); b.style.left = p.x + '%'; b.style.setProperty('--barva', p.barva);
       b.classList.toggle('vlevo', p.x < 6); b.classList.toggle('vpravo', p.x > 94); });
-    var sirka = pan.querySelector('.op-vnitrek').offsetWidth, posl = -1e9;
-    body.filter(function (b) { return b.classList.contains('klic'); }).sort(function (a, b) { return parseFloat(a.style.left) - parseFloat(b.style.left); }).forEach(function (b) {
-      var px = parseFloat(b.style.left) / 100 * sirka; b.classList.remove('patro');
-      if (px - posl < 150) b.classList.add('patro'); else posl = px;
+    // Popisky ve dvou řadách; každá řada si pamatuje svůj poslední popisek. Když se nevejdou ani nahoru, ukážou se jen po najetí.
+    var sirka = pan.querySelector('.op-vnitrek').offsetWidth, rada = [-1e9, -1e9], MEZ = 160;
+    body.filter(function (b) { return b.classList.contains('klic') || b.classList.contains('bez-mista'); }).sort(function (a, b) { return parseFloat(a.style.left) - parseFloat(b.style.left); }).forEach(function (b) {
+      var px = parseFloat(b.style.left) / 100 * sirka; b.classList.remove('patro', 'bez-mista'); b.classList.add('klic');
+      if (px - rada[0] >= MEZ) rada[0] = px;
+      else if (px - rada[1] >= MEZ) { b.classList.add('patro'); rada[1] = px; }
+      else { b.classList.remove('klic'); b.classList.add('bez-mista'); }
     });
     var roky = pan.querySelector('.op-roky'); roky.innerHTML = '';
     info.forEach(function (e) { var s = document.createElement('span'); s.textContent = e.el.dataset.zacatek; s.style.left = e.x + '%'; roky.appendChild(s); });

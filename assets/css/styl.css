@@ -521,3 +521,4 @@ html.prehravac-otevreny { overflow: hidden; }
 .op-roky span.konec { transform: translateX(-100%); }
 .osa-ovladani { padding-top: 0; }
 .era-panel { border-top: 3px solid var(--barva); }
+.op-bod.bez-mista::after { left: -6px; top: 145px; width: 12px; height: 12px; opacity: 1; box-shadow: 0 0 0 3px var(--pozadi, #070f1f); }
