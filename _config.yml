@@ -13,7 +13,8 @@ collections:
     output: true
     permalink: /kapitoly/:name/
   osoby:
-    output: false
+    output: true
+    permalink: /osobnosti/:name/
   udalosti:
     output: false
   zasobnik:
@@ -25,6 +26,11 @@ defaults:
       type: kapitoly
     values:
       layout: kapitola
+  - scope:
+      path: ""
+      type: osoby
+    values:
+      layout: osoba
 
 exclude:
   - README.md

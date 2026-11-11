@@ -1,0 +1,36 @@
+---
+layout: default
+---
+{% assign t = site.data.texty[page.scena] %}
+{% assign kap = nil %}{% for k in site.data.dejiny %}{% if k.hraj == page.scena %}{% assign kap = k %}{% assign idx = forloop.index0 %}{% endif %}{% endfor %}
+<article class="kapitola cteni">
+  <p class="nadtitul">{% if kap %}<a href="{{ '/dejiny/' | relative_url }}">Dějiny</a> · Kapitola {{ kap.rim }} · {{ kap.rozpeti }} · {{ kap.era }}{% else %}<a href="{{ '/pribehy/' | relative_url }}">Příběhy</a> · {{ t.podtitul }}{% endif %}</p>
+  <h1>{% if kap %}{{ kap.title }}{% else %}{{ t.nazev }}{% endif %}</h1>
+  <div class="radek-stav">
+    <a class="tlacitko plne male" href="{{ '/archiv/#' | append: page.scena | relative_url }}">▶ Přehrát s Archivářem</a>
+  </div>
+  {% if t.poznamka and t.poznamka != "" %}<p class="stav-poznamka">{{ t.poznamka }}</p>{% endif %}
+  <div class="text prolinkovat{% if page.scena == 'letka' %} dramatizace{% endif %}">
+    {% for r in t.odstavce %}
+      {% if r.kdo == "ARCHIVÁŘ" %}<p class="dr-vypravec">{{ r.text }}</p>
+      {% else %}<p class="dr-replika{% if r.radio %} dr-radio{% endif %}"><span class="dr-kdo">{{ r.kdo }}</span>{{ r.text }}</p>{% endif %}
+    {% endfor %}
+  </div>
+
+  {% if kap %}
+  {% capture lide %}{% for o in site.osoby %}{% if o.kapitoly contains page.scena %}<li><a href="{{ o.url | relative_url }}">{{ o.jmeno }}</a> – {{ o.role }}</li>{% endif %}{% endfor %}{% endcapture %}
+  {% assign lide_s = lide | strip %}
+  {% if lide_s != "" %}<section class="souvisi"><h2>Lidé v této kapitole</h2><ul>{{ lide }}</ul></section>{% endif %}
+  {% capture udal %}{% assign n = kap.hraj | remove: "kap-" | plus: 0 %}{% assign uu = site.udalosti | sort: "rok" %}{% for u in uu %}{% if u.kap == n %}<li><a href="{{ '/casova-osa/#' | append: u.slug | relative_url }}">{% if u.datum %}{{ u.datum }}{% else %}{{ u.rok | floor }}{% endif %} – {{ u.titul }}</a></li>{% endif %}{% endfor %}{% endcapture %}
+  {% assign udal_s = udal | strip %}
+  {% if udal_s != "" %}<section class="souvisi"><h2>Na časové ose</h2><ul>{{ udal }}</ul></section>{% endif %}
+  {% include prameny.html seznam=kap.prameny %}
+  <nav class="cteni-dalsi">
+    {% if idx > 0 %}{% assign i = idx | minus: 1 %}{% assign p = site.data.dejiny[i] %}<a href="{{ '/dejiny/' | append: p.hraj | append: '/' | relative_url }}">← {{ p.rim }}. {{ p.title }}</a>{% else %}<span></span>{% endif %}
+    {% assign i = idx | plus: 1 %}{% assign p = site.data.dejiny[i] %}{% if p %}<a href="{{ '/dejiny/' | append: p.hraj | append: '/' | relative_url }}">{{ p.rim }}. {{ p.title }} →</a>{% endif %}
+  </nav>
+  {% else %}
+  {% if page.prameny %}{% include prameny.html seznam=page.prameny %}{% endif %}
+  {% if page.souvisi %}<p class="od-zpet"><a href="{{ page.souvisi.url | relative_url }}">{{ page.souvisi.text }}</a></p>{% endif %}
+  {% endif %}
+</article>

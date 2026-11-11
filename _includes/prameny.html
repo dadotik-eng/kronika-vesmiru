@@ -1,0 +1,13 @@
+{% comment %}Seznam pramenů. Parametr: seznam = pole položek {nazev, typ, url}.{% endcomment %}
+{% if include.seznam and include.seznam.size > 0 %}
+<section class="prameny">
+  <h2>Prameny</h2>
+  <ul>
+    {% for p in include.seznam %}
+      {% assign u = p.url %}{% if u and u.size > 0 %}{% unless u contains "://" %}{% assign u = "https://robertsspaceindustries.com" | append: u %}{% endunless %}{% endif %}
+      <li>{% if u %}<a href="{{ u }}" target="_blank" rel="noopener">{{ p.nazev }}</a>{% else %}{{ p.nazev }}{% endif %}{% if p.typ %} · {{ p.typ }}{% endif %}</li>
+    {% endfor %}
+  </ul>
+  <p class="prameny-pozn">Odkazy vedou na oficiální stránky Roberts Space Industries.</p>
+</section>
+{% endif %}
