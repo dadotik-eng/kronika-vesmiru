@@ -15,12 +15,26 @@ zdroje:
   url: https://robertsspaceindustries.com/galactapedia/article/bmNrgKnZ6l-mars-tragedy
 ---
 
-Stella Fortuna je svátek štěstí a odvahy pustit se do nového. Začala ale jako oslava přežití.
+Stella Fortuna je svátek štěstí, odvahy a nových začátků. Slaví se 15. března a jeho barvami jsou zelená a zlatá. Začala ale jako oslava toho, že lidé na Marsu vůbec přežili.
 
-První kolonie na Marsu zanikla, když se těsně před koncem terraformace zhroutila atmosféra a zahynulo 4 876 lidí. Druhý pokus považovali mnozí za předem prohraný. Novinářka Kelsey Forset tehdy napsala, ať budoucí osadníci „nepokoušejí osud“. Ti si to vzali po svém: škrtli „nepokoušejte“ a z hesla „Pokoušejte osud“ se stalo neoficiální motto marsovských osadníků.
+## Katastrofa a vzdor
 
-V roce 2200 vlády na Zemi oznámily nový svátek na oslavu 45 let lidského života na Marsu. Název vybrali ze soutěže pro marsovské školáky – zvítězila jedenáctiletá Estelle Priya z Port Renatus. První oslava se konala 18. března 2202 s karnevaly, loterií o pozemky na Marsu a zelenozlatým ohňostrojem.
+První kolonie na Marsu zanikla, když se těsně před koncem terraformace zhroutila atmosféra. Zahynulo 4 876 lidí. Druhý pokus o osídlení považovali mnozí za předem prohraný. Novinářka Kelsey Forset tehdy napsala, ať budoucí osadníci „nepokoušejí osud“. Osadníci si to vzali po svém: slovo „ne“ škrtli a z hesla „Pokoušejte osud“ udělali neoficiální motto Marsu. Ten vzdor je v svátku dodnes.
 
-Po půl století se svátek ustálil na 15. březnu. 18. březen nepřipadal v úvahu, protože se v ten den slaví výročí narození prvního člověka na jiné planetě než na Zemi.
+## Školačka, která dala svátku jméno
 
-Dnes je to den, kdy se začínají nové podniky a připíjí se hvězdám před výpravou. Největší oslavy jsou stále na Marsu: průvod alegorických vozů ve tvaru lodí a hvězd, karnevaly, písně a na závěr zelenozlatý ohňostroj – oblíbená chvíle pro obchodní dohody i žádosti o ruku.
+V roce 2200 oznámily vlády na Zemi nový svátek na oslavu 45 let lidského života na Marsu. Jméno vybraly v soutěži pro marsovské školáky. Zvítězila jedenáctiletá Estelle Priya z Port Renatus s návrhem Stella Fortuna – zhruba „hvězdné štěstí“. Ve 23. století bylo zvykem prosit hvězdy o požehnání před cestou mezi planetami, takže název sedl.
+
+První oslava se konala 18. března 2202. Byly při ní karnevaly, loterie o pozemky na Marsu a zelenozlatý ohňostroj.
+
+## Od konjunkce k pevnému datu
+
+Zpočátku se svátek slavil při konjunkci Země a Marsu, takže se jeho datum měnilo. V roce 2257 dostal pevné datum, 15. března. 18. březen nepřipadal v úvahu, protože se v ten den slaví výročí narození prvního člověka na jiné planetě než na Zemi.
+
+## Den, kdy se pokouší osud
+
+Z oslavy přežití se postupně stal svátek štěstí a odvahy. Průzkumníci si před výpravou připíjejí na hvězdy. Podnikatelé zakládají firmy právě 15. března, protože věří, že jim to přinese štěstí. A spousta lidí si ten den nechává na rozhodnutí, která vyžadují odvahu.
+
+## Jak se slaví dnes
+
+Největší oslavy jsou stále na Marsu. Ulicemi projíždí průvod alegorických vozů ve tvaru lodí a hvězd, konají se karnevaly, hostiny a zpívají se písně. Na závěr přichází zelenozlatý ohňostroj – oblíbená chvíle pro uzavírání obchodních dohod i pro žádosti o ruku.
