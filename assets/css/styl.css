@@ -527,7 +527,7 @@ a.os-odkaz:hover { color: var(--akcent); }
 .strom.linie-zap .uzel:not(.imperator) { opacity: .6; }
 .strom.linie-zap .uzel:not(.imperator):hover { opacity: 1; }
 .uzel.s-portretem { padding-top: .5rem; }
-.u-portret { display: block; width: 54px; height: 54px; object-fit: cover; object-position: 50% 22%; border-radius: 50%; border: 2px solid var(--akcent); margin: 0 auto .3rem; }
+.u-portret { display: block; width: 46px; height: 46px; object-fit: cover; object-position: 50% 22%; border-radius: 50%; border: 2px solid var(--akcent); margin: 0 auto .3rem; }
 .u-konec { display: block; font-family: var(--label); font-size: .74rem; letter-spacing: .03em; margin-top: .15rem; }
 .k-smrt { color: #9fb3c8; } .k-abdikace { color: #8fd0c0; } .k-vrazda { color: #f07a6a; } .k-svrzeni { color: #c9a0f0; }
 .legenda .lg.lin { border: 0; border-top: 2px dashed #f6bd4b; height: 0; width: 22px; }
