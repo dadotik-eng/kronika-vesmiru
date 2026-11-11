@@ -11,4 +11,5 @@ zdroje:
   url: https://robertsspaceindustries.com/galactapedia/article/0QleWjn559-emperor-chulee-se-rua
 kapitoly: []
 rad: 1000
+obdobi: mimo
 ---

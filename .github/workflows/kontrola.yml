@@ -1,0 +1,27 @@
+# Strojová kontrola každé žádosti o změnu (např. návrhu od bota):
+# žádné HTML ani skripty, platné hlavičky, období, shoda let s webem.
+name: Kontrola obsahu
+on:
+  pull_request:
+  push:
+    branches: [main]
+permissions:
+  contents: read
+jobs:
+  kontrola:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 0 }
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.12' }
+      - run: pip install pyyaml
+      - name: Zkontrolovat obsah
+        run: |
+          if [ "${{ github.event_name }}" = "pull_request" ]; then
+            ZMENY=$(git diff --name-only origin/${{ github.base_ref }}...HEAD)
+            echo "Změněné soubory:"; echo "$ZMENY"
+            python3 nastroje/kontrola.py $ZMENY
+          else
+            python3 nastroje/kontrola.py
+          fi

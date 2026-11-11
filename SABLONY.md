@@ -23,7 +23,7 @@ zdroje:
 kapitoly: [kap-8]         # kap-1 … kap-10, letka; jinak []
 rozpor: nepovinné – když si prameny odporují
 rad: 2746                 # číslo pro řazení: rok narození, jinak přibližný rok, kdy byl činný
-obdobi: naprava           # období, kdy osoba PŮSOBILA (id z _data/ery.yml: usvit, skoky, une, upe, messerove, naprava, valka); podle něj se řadí na časové ose a ve filtru
+obdobi: naprava           # období, kdy osoba PŮSOBILA (id z _data/ery.yml: usvit, skoky, une, upe, messerove, naprava, valka; mimo = mimo lidské dějiny); podle něj se řadí na časové ose a ve filtru
 rod: messer               # jen u Messerů
 ---
 ```

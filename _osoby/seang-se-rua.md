@@ -14,4 +14,5 @@ zdroje:
   url: https://robertsspaceindustries.com/galactapedia/article/0ODxZEPdoZ-emperor-yaha-se-xyoo
 kapitoly: []
 rad: 1000
+obdobi: mimo
 ---
