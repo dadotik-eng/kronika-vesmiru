@@ -4,10 +4,12 @@
   <script>if (location.hostname.indexOf("beta.") === 0) document.documentElement.classList.add("beta");</script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{% if page.title %}{{ page.title }} · {% endif %}{{ site.title }}</title>
-  <meta name="description" content="{{ page.popis | default: site.description }}">
-  <meta property="og:title" content="{{ page.title | default: site.title }}">
-  <meta property="og:description" content="{{ page.popis | default: site.description }}">
+  {% assign popis_str = page.popis | default: page.perex | default: page.medailonek | default: site.description | strip_html | truncate: 170 %}
+  {% assign nazev_str = page.jmeno | default: page.nazev | default: page.title %}
+  <title>{% if nazev_str %}{{ nazev_str }} · {% endif %}{{ site.title }}</title>
+  <meta name="description" content="{{ popis_str | escape }}">
+  <meta property="og:title" content="{{ nazev_str | default: site.title }}">
+  <meta property="og:description" content="{{ popis_str | escape }}">
   <link rel="stylesheet" href="{{ '/assets/css/pisma.css' | relative_url }}">
   <link rel="stylesheet" href="{{ '/assets/css/styl.css' | relative_url }}?v={{ site.time | date: '%s' }}">
 </head>
