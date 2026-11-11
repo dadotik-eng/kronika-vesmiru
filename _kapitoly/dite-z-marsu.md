@@ -6,7 +6,7 @@ herni_rok: 2157
 era: "Terraformace Marsu"
 system: Sol
 popis: "Abeni Okon, první člověk narozený na jiné planetě než na Zemi, se narodila 18. března 2157 na Marsu, který byl krátce předtím úspěšně terraformován."
-overeni: ověřeno
+overeni: OK
 overeni_poznamka: "Redaktor: OK (kolo 3). Kontrolor: OK – fakta sedí podle Galactapedie (Abeni Okon, Mars Tragedy, Mars Tragedy Memorial, Artemis). Nepotvrzené zůstávají jen dva obrazné detaily: barva marsovské oblohy a přesné načasování příchodu rodičů coby osadníků."
 stitky: [Abeni Okon, Mars, Kinah a Madu Okon, Artemis]
 prameny:
