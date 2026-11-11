@@ -1,0 +1,35 @@
+# Jednorázově stáhne písma (Cinzel, Saira Condensed, Spectral) z balíčků @fontsource
+# a uloží je do assets/fonts, aby web nenačítal nic z Google Fonts (GDPR).
+name: Pisma
+on:
+  workflow_dispatch:
+  push:
+    paths: ['.github/workflows/pisma.yml']
+permissions:
+  contents: write
+jobs:
+  pisma:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 20 }
+      - name: Stáhnout písma
+        run: |
+          mkdir -p /tmp/f && cd /tmp/f && npm init -y >/dev/null
+          npm i @fontsource/cinzel@5 @fontsource/saira-condensed@5 @fontsource/spectral@5 >/dev/null
+          cd "$GITHUB_WORKSPACE" && mkdir -p assets/fonts
+          for spec in "cinzel 500 normal" "cinzel 700 normal" "saira-condensed 400 normal" "saira-condensed 600 normal" "spectral 400 normal" "spectral 600 normal" "spectral 400 italic"; do
+            set -- $spec
+            for sub in latin latin-ext; do
+              cp /tmp/f/node_modules/@fontsource/$1/files/$1-$sub-$2-$3.woff2 assets/fonts/
+            done
+          done
+          ls -la assets/fonts
+      - name: Uložit do repozitáře
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/fonts
+          git diff --cached --quiet || git commit -m "Písma uložená přímo na webu (bez Google Fonts)"
+          git push
