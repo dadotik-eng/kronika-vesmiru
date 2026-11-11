@@ -1,0 +1,39 @@
+# Větev "beta" = ostrý web + návrhy od bota, které čekají na Danielovo schválení.
+# Náhled: https://beta.hvezdna-kronika.pages.dev (zamčený přes Cloudflare Access).
+#  - po každé změně ostrého webu (main) se main přimíchá do bety, aby beta nezastarala,
+#  - ruční spuštění s akcí "zahodit" vrátí betu na stav ostrého webu (zahodí neschválené návrhy).
+# Schválení (beta → main) dělá bot přímo přes GitHub API (merge).
+name: Beta
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+    inputs:
+      akce:
+        description: "obnovit = přimíchat main do bety · zahodit = beta znovu podle main"
+        required: true
+        default: obnovit
+permissions:
+  contents: write
+jobs:
+  beta:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 0 }
+      - run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          AKCE="${{ github.event.inputs.akce || 'obnovit' }}"
+          if [ "$AKCE" = "zahodit" ] || ! git ls-remote --exit-code --heads origin beta >/dev/null; then
+            git push --force origin origin/main:refs/heads/beta
+            echo "Beta nastavena podle main."
+          else
+            git checkout -B beta origin/beta
+            if git merge --no-edit origin/main -m "Beta: přimíchán ostrý web"; then
+              git push origin beta
+            else
+              echo "::error::Main se nedá přimíchat do bety (konflikt). Návrhy v betě je potřeba schválit nebo zahodit."
+              exit 1
+            fi
+          fi
