@@ -514,3 +514,6 @@ a.os-odkaz:hover { color: var(--akcent); }
 .pri-karta h3 a { color: inherit; text-decoration: none; }
 .pri-karta h3 a:hover { color: var(--akcent); }
 .heslo .nadtitul a, .cteni .nadtitul a { color: inherit; text-decoration: none; }
+.zivotopis { margin-top: 1.8rem; }
+.zivotopis h2 { font-size: 1.15rem; }
+.zivotopis .text p:first-child::first-letter { float: none; font-size: inherit; padding: 0; color: inherit; font-family: inherit; }

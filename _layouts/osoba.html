@@ -10,9 +10,11 @@ layout: default
   {% assign nar = o.narozeni | append: "" %}{% assign zem = o.umrti | append: "" %}
   <p class="od-roky">{% if zem == "žije" %}{% if nar == "neznámo" %}žije{% else %}narozen(a) {{ nar }}, žije{% endif %}{% elsif nar == "neznámo" and zem == "neznámo" %}roky neznámé{% else %}{% if nar == "neznámo" %}?{% else %}{{ nar }}{% endif %} – {% if zem == "neznámo" %}?{% else %}{{ zem }}{% endif %}{% endif %} · {{ o.role }}</p>
   {% if o.ilustrace %}<figure class="od-ilustrace"><img src="{{ '/assets/osoby/' | append: o.slug | append: '.webp' | relative_url }}" alt="Ilustrace: {{ o.jmeno | escape }}" width="960" height="540"><figcaption>Ilustrační obrázek</figcaption></figure>{% endif %}
-  <div class="text">
+  <div class="text prolinkovat">
     <p>{{ o.medailonek }}</p>
   </div>
+  {% assign telo = content | strip %}
+  {% if telo != "" %}<section class="zivotopis"><h2>Podrobněji</h2><div class="text prolinkovat">{{ content }}</div></section>{% endif %}
   {% if o.rozpor %}<p class="os-rozpor"><b>Rozpor v pramenech:</b> {{ o.rozpor }}</p>{% endif %}
 
   {% capture souvis %}

@@ -205,7 +205,8 @@
         x.strokeStyle = 'rgba(' + rgb[0] + ',' + rgb[1] + ',' + rgb[2] + ',' + (.25 + .65 * s[3]) + ')'; x.lineWidth = s[2] * 1.1;
         x.beginPath(); x.moveTo(cx + ux * r0, cy + uy * r0); x.lineTo(cx + ux * r1, cy + uy * r1); x.stroke();
       }
-      if (k > .68) { var z = (k - .68) / .32; x.fillStyle = 'rgba(' + Math.round(rgb[0] * .55 + 232 * .45) + ',' + Math.round(rgb[1] * .55 + 242 * .45) + ',' + Math.round(rgb[2] * .55 + 250 * .45) + ',' + (z * .72) + ')'; x.fillRect(0, 0, W, H); }
+      // bez bílého záblesku: konec přechodu jen ztmavne do hlubokého vesmíru
+      if (k > .68) { x.fillStyle = 'rgba(4,9,18,' + ((k - .68) / .32 * .55) + ')'; x.fillRect(0, 0, W, H); }
       x.globalAlpha = 1;
       beh = requestAnimationFrame(kresli);
     }
