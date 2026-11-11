@@ -10,10 +10,33 @@ zdroje:
 - nazev: First Contact Day
   typ: Galactapedie
   url: https://robertsspaceindustries.com/galactapedia/article/01Lvo8ZWxX-first-contact-day
+- nazev: 'Jerry: A History Half-Remembered'
+  typ: Comm-Link
+  url: https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/19597-Jerry-A-History-Half-Remembered
 ---
 
-Den prvního kontaktu připomíná okamžik, kdy lidstvo zjistilo, že ve vesmíru není samo.
+Den prvního kontaktu se slaví 12. června a připomíná okamžik, kdy lidstvo zjistilo, že ve vesmíru není samo. Za slavným datem ale stojí příběh mnohem méně hrdinský, než by se čekalo – a o to lidštější.
 
-12. června 2438 průzkumník Vernon Tar v soustavě Davien narazil na cizí loď. Nejdřív si myslel, že je to jiný člověk, který mapuje stejnou oblast. Brzy ale pochopil, že jde o pilota Banu, a poslal souřadnice vládě Spojených národů Země. Na místo dorazil diplomatický tým generála Neala Socolovicha, aby situaci uklidnil. O dva týdny později navázal Banuský protektorát oficiální kontakt a v říjnu 2438 obě strany podepsaly mezihvězdnou dohodu o míru a obchodu.
+## Výstřely v Davienu
 
-Lidé ten den slaví tak, jak se k němu hodí: vaří nebo kupují jídla mimozemských kultur, pořádají večírky a nakupují v obchodech, které vlastní Banu, Tevarinové nebo Xi'ani.
+12. června 2438 v 3:13 standardního času zapípaly skenery lodi průzkumníka Vernona Tara. Tar hledal v jedné části soustavy Davien nové skokové body a bál se, že mu někdo chce objev ukrást. Na cizí loď proto zahájil palbu. Teprve po prvních výstřelech si všiml, že loď nevypadá jako nic, co kdy viděl. Poslal souřadnice a krátký popis místním úřadům a ty zprávu předaly Spojeným národům Země. Cizí loď k jeho překvapení neutekla a zůstala na místě, jakmile bylo jasné, že Tar už nestřílí.
+
+## Jerry, uprchlík
+
+V lodi seděl Banu jménem Njeri. Lidé mu začali říkat Jerry, a když Njeri zjistil, že to zhruba odpovídá jeho jménu vyslovenému lidskými ústy, přijal to jako čestný titul a chtěl, aby mu tak říkali všichni.
+
+Do Davienu ho nepřivedla zvědavost, ale strach. Jerry byl úředník, který snil o tom, že bude pilotem. Zpronevěřil peníze své Souli, aby si koupil místo v uznávané průzkumné Souli. Když ho přistihli, zpanikařil, utekl v lodi Souli a po několikadenní honičce, se štěstím a trochou talentu, objevil skok do Davienu. Před lidmi neutekl, protože doufal, že objev nového druhu mu otevře cestu domů bez trestu.
+
+## Od setkání k dohodě
+
+Na místo dorazil diplomatický tým generála Neala Socolovicha. Domluvit se s Jerrym bylo skoro nemožné, ale odtajněné dokumenty popisují jeho vstřícnost a ochotu pomáhat. Slavná je historka, kdy mu předložili různá jídla a on snědl všechno – i s obalem od sendviče a tyčinky.
+
+O dva týdny později dorazili do Davienu další Banu a navázali oficiální kontakt. Několik měsíců se obě strany učily rozumět si a v říjnu 2438 podepsaly mezihvězdnou dohodu o míru a obchodu. Jerry ji podepsal čestně.
+
+## Co se stalo s Jerrym
+
+Jerry se vrátil domů v naději, že ho oslaví. Jeho Souli mu ale nedůvěřovala a o vztahy s lidmi neměla zájem. Odešel, založil vlastní Souli pro styk s lidmi, ale ostatní ho předběhly. Bez peněz se nakonec vrátil do Davienu – a tam ho lidé obklopili a chtěli se s ním fotit. „Doma jsem byl jen další Banu, ale tady… tady jsem byl výjimečný,“ řekl později. Naučil se lidsky, cestoval s přednáškami o Banu a jeho přítelkyně z diplomatického týmu Natalia Gordillo o něm v roce 2447 napsala životopis. Jerry zemřel ve svém domě v Davienu 2. listopadu 2456, obklopen lidskými i banuskými přáteli. Banu si ho nepamatují, protože nevedou historické záznamy ani neoslavují slavné osobnosti. Lidé ano.
+
+## Jak se slaví dnes
+
+Lidé ten den vaří nebo kupují jídla mimozemských kultur, pořádají večírky a nakupují v obchodech, které vlastní Banu, Tevarinové nebo Xi'ani.

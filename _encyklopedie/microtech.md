@@ -42,4 +42,4 @@ Chyba při terraformaci udělala ze Stanton IV mnohem chladnější svět, než 
 
 ## Dnes
 
-Magnus Tobin zemřel v roce 2912 a lidé ho oslavovali jako jednu z nejdůležitějších postav 29. století. Jeho největším úspěchem ale možná je, že firma bez něj prosperuje dál. microTech je největším výrobcem počítačů a softwaru v impériu, vlastní vlastní planetu a planetu spravují oddělení firmy – od vodárenství po daně. Hlavní město New Babbage je centrem technologických inovací a sídlem řady firem a start-upů.
+Magnus Tobin zemřel v roce 2912 a lidé ho oslavovali jako jednu z nejdůležitějších postav 29. století. Jeho největším úspěchem ale možná je, že firma bez něj prosperuje dál. microTech je největším výrobcem počítačů a softwaru v impériu, vlastní celou planetu, kterou spravují oddělení firmy – od vodárenství po daně. Hlavní město New Babbage je centrem technologických inovací a sídlem řady firem a start-upů.
