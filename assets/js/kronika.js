@@ -162,8 +162,49 @@
     cestaStranky = location.pathname;
     document.dispatchEvent(new CustomEvent('kronika:stranka'));
   }
+  // Warp mezi záložkami – stejný efekt jako po dohrání prologu v archivu.
+  var warp = (function () {
+    var klid = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var c, x, hvezdy, t0 = 0, konec = 0, beh = 0, DOBA = 620;
+    function priprav() {
+      if (c) return;
+      c = document.createElement('canvas'); c.className = 'warp'; c.setAttribute('aria-hidden', 'true');
+      document.body.appendChild(c); x = c.getContext('2d');
+      hvezdy = []; for (var i = 0; i < 200; i++) hvezdy.push([Math.random(), Math.random(), Math.random() * 1.2 + .3, Math.random()]);
+    }
+    function kresli(ted) {
+      var r = window.devicePixelRatio || 1, W = innerWidth, H = innerHeight;
+      if (c.width !== W * r || c.height !== H * r) { c.width = W * r; c.height = H * r; }
+      x.setTransform(r, 0, 0, r, 0, 0); x.clearRect(0, 0, W, H);
+      var k = Math.min(1, (ted - t0) / DOBA), e = k * k, zhas = konec ? Math.max(0, 1 - (ted - konec) / 420) : 1;
+      if (konec && zhas <= 0) { c.style.display = 'none'; beh = 0; return; }
+      x.globalAlpha = zhas;
+      x.fillStyle = 'rgba(4,9,18,' + (.25 + .6 * e) + ')'; x.fillRect(0, 0, W, H);
+      var cx = W / 2, cy = H / 2; x.lineCap = 'round';
+      for (var i = 0; i < hvezdy.length; i++) {
+        var s = hvezdy[i], px = s[0] * W - cx, py = s[1] * H - cy, d = Math.hypot(px, py) || 1, ux = px / d, uy = py / d;
+        var r0 = d * (1 + e * 2.2), r1 = r0 + e * H * .9 * s[2];
+        x.strokeStyle = 'rgba(222,236,246,' + (.25 + .65 * s[3]) + ')'; x.lineWidth = s[2] * 1.1;
+        x.beginPath(); x.moveTo(cx + ux * r0, cy + uy * r0); x.lineTo(cx + ux * r1, cy + uy * r1); x.stroke();
+      }
+      if (k > .68) { x.fillStyle = 'rgba(232,242,250,' + ((k - .68) / .32 * .7) + ')'; x.fillRect(0, 0, W, H); }
+      x.globalAlpha = 1;
+      beh = requestAnimationFrame(kresli);
+    }
+    return {
+      // vrátí slib, který se splní ve chvíli, kdy je obrazovka „v záblesku“ a dá se vyměnit obsah
+      start: function () {
+        if (klid) return Promise.resolve();
+        priprav(); c.style.display = 'block'; t0 = performance.now(); konec = 0;
+        if (!beh) beh = requestAnimationFrame(kresli);
+        return new Promise(function (ok) { setTimeout(ok, DOBA * .9); });
+      },
+      hotovo: function () { if (c && !konec) konec = performance.now(); }
+    };
+  })();
+
   var nacitani = 0, cestaStranky = location.pathname;
-  function jdi(url, bezHistorie) {
+  function jdi(url, bezHistorie, sWarpem) {
     var u = new URL(url, location.href), moje = ++nacitani;
     document.body.classList.remove('menu-otevrene');
     if (u.pathname === location.pathname && u.hash && !bezHistorie) {
@@ -173,10 +214,11 @@
       return;
     }
     document.body.classList.add('nacita');
+    var cekej = sWarpem ? warp.start() : Promise.resolve();
     fetch(u.href, { credentials: 'same-origin' }).then(function (r) {
       if (!r.ok) throw new Error(r.status);
       return r.text();
-    }).then(function (html) {
+    }).then(function (html) { return cekej.then(function () { return html; }); }).then(function (html) {
       if (moje !== nacitani) return;
       var doc = new DOMParser().parseFromString(html, 'text/html');
       var novy = doc.querySelector('main');
@@ -189,6 +231,7 @@
       if (u.hash) { var c = document.getElementById(decodeURIComponent(u.hash.slice(1))); if (c) c.scrollIntoView(); else window.scrollTo(0, 0); }
       else window.scrollTo(0, 0);
       document.body.classList.remove('nacita');
+      warp.hotovo();
       poNacteni();
     }).catch(function () { location.href = u.href; });
   }
@@ -207,7 +250,7 @@
       return;
     }
     if (u.pathname === location.pathname && !u.hash) { e.preventDefault(); return; }
-    e.preventDefault(); jdi(u.href);
+    e.preventDefault(); jdi(u.href, false, !!a.closest('#hlavni-menu, .logo'));
   });
   window.addEventListener('popstate', function () {
     // Zpět mezi kotvami na stejné stránce: prohlížeč sám vyvolá hashchange, stránku nestahovat znovu.

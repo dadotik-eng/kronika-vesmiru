@@ -294,6 +294,7 @@ html.beta .jen-beta { display: block; }
 .menu-tlacitko { display: none; border-radius: 4px; }
 .pat-odkazy a { color: var(--led); }
 body.nacita main { opacity: .55; transition: opacity .2s; }
+.warp { position: fixed; inset: 0; width: 100vw; height: 100vh; z-index: 9999; pointer-events: none; display: none; }
 
 .pojem { border-bottom: 1px dotted rgba(191,227,245,.8); cursor: help; position: relative; outline: none; }
 .pojem:hover::after, .pojem:focus::after {
