@@ -21,8 +21,9 @@ prameny:
   - nazev: "Galactic Guide: Caliban System"
     typ: Comm-Link
     url: https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/16510-Galactic-Guide-Caliban-System
-  - nazev: "Caliban"
-    typ: Star Map
+  - nazev: "Caliban System"
+    typ: Galactapedie
+    url: https://robertsspaceindustries.com/galactapedia/article/0jGyPQ1r5m-caliban-system
 ---
 Polohu soustavy Caliban prodala vládě roku 2341 dopravkyně Ashley Ghan. Klid ale netrval věčně. Od roku 2739 začaly do systému pronikat vanduulské nájezdy. Vanduulové, válečnický mimozemský rod, se tak stali hrozbou, s níž muselo Impérium v Calibanu napříště počítat.
 
