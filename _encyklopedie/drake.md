@@ -14,10 +14,28 @@ zdroje:
   url: https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/13441-Portfolio-Drake-Interplanetary
 ---
 
-Každý občan Drake zná: křiklavé billboardy, zprávy o vyšetřování napojení na zločince a lodě, které nevypadají zrovna aerodynamicky. Přitom začátek byl nevinný.
+Každý občan zná Drake Interplanetary: kýčovité billboardy, zprávy o vyšetřování napojení na zločince a lodě, které nevypadají zrovna aerodynamicky. Přitom začátek byl nevinný.
 
-V roce 2845 vypsala vláda soutěž na levnou stíhačku, kterou půjde rychle postavit pro domobranu na vzdálených hranicích. Návrh konstruktérky Jan Dredge, loď Cutlass, prohrál se dnes zapomenutou Wildcat. Tým se ale nevzdal a začal Cutlass prodávat civilistům. Šlo ho postavit rychle, z materiálů dostupných skoro na každém obydleném světě a zhruba za tři čtvrtiny ceny konkurence.
+## Lidová stíhačka, která prohrála
 
-Úspěch byl ohromující. Za devět měsíců měla firma šest továren mimo domovský svět, za pět let byla pátým největším výrobcem lodí v impériu. Jan Dredge se stala generální ředitelkou.
+V roce 2845 vypsala vláda soutěž na „lidovou stíhačku“ – levnou, upravitelnou loď, kterou půjde rychle postavit pro domobranu na vzdálených hranicích. Návrh týmu konstruktérky Jan Dredge, loď Cutlass, prohrál se dnes zapomenutou Wildcat. Tým se ale nevzdal a začal Cutlass prodávat civilistům.
 
-Cutlass slouží jako záchranka, těžařská loď i převozník jídla. Proslavil se ale hlavně jako loď těch, kdo obcházejí zákon – a těch, kdo ho rovnou porušují. Pokud má pirátství firemní tvář, je to Drake. Firma trvá na tom, že je poctivá. Jan Dredge odešla z jejího čela v roce 2947 po skandálu kolem svých výroků. Sídlí na planetě Borea (Magnus II) a vyrábí také nákladní Caterpillar, lehký Dragonfly, stíhačku Buccaneer, kurýra Herald a vrakovací loď Vulture.
+Cutlass neměl kožená sedadla Originu ani tvrdou spolehlivost RSI. Šel ale postavit rychle, z materiálů dostupných skoro na každém obydleném světě a zhruba za tři čtvrtiny ceny konkurence. A byl nesmírně odolný – slavná videa ukazují prototyp, jak nebojácně proplouvá polem hvězdných trosek. První zákazníci byli soukromé domobrany: zákony impéria dovolují vlastnit ozbrojenou loď komukoli a oblasti s vysokým pojistným rizikem uvítaly levnou náhradu za ztracené lodě.
+
+Prodeje byly fenomenální. Za devět měsíců měla firma šest továren mimo domovský svět a prodejce v devíti soustavách, za další rok se znovu zčtyřnásobila a za pět let byla pátým největším výrobcem lodí v impériu. Finanční časopisy ji oslavovaly jako malou mašinku, která změní, jak podnikají RSI nebo MISC.
+
+## Jméno, které nic neznamená
+
+Firma se oficiálně založila krátce po uvedení Cutlassu. Generální ředitelkou se stala Jan Dredge a ve vedení zasedli hlavně inženýři z projektu. Jméno Drake nepatřilo nikomu z nich – vybrali ho jen proto, že dobře zní a mělo pomoct prodejům. Bylo to první z mnoha rozhodnutí, kde peníze stály nad vším. Sídlo si firma nezvolila na tradičních světech jako Země nebo Terra, ale v hospodářsky zbídačené soustavě Magnus, na planetě Borea. Pověst psanců tak měla dřív, než první Cutlass sjel z tamní linky.
+
+## Spojenci zločinu?
+
+Na přelomu 30. století bylo v galaxii tak klidno jako nikdy: vanduulské nájezdy byly neorganizované, pohraniční šarvátky malé a armáda zrovna snižovala stavy. Kdo tedy kupoval tisíce a tisíce Cutlassů? Dokud tekly kredity, nikoho ve firmě to moc nezajímalo.
+
+Odpověď byla jasná: zločinci. Pašeráci a piráti, odříznutí od pojištění, do té doby létali na vyřazených vojenských troskách. Teď měli levnou, snadno nahraditelnou loď s velkým nákladovým prostorem, kterou si mohli upravit podle sebe. Cutlassy začaly vozit drogy, přepadat konvoje a stále častěji se pouštět i do policejních hlídek. Hranatá silueta Cutlassu nakonec předefinovala obraz piráta stejně jako piráti obraz Cutlassu.
+
+Oficiální historie firmy mluví o „úžasném úsilí proti pirátství“. Skutečnost je jiná: firma pochopila, že uzavřela smlouvu s ďáblem, a peníze byly příliš dobré na to, aby couvla. Místo omezení prodeje začala navrhovat lodě se stále pirátštějším nádechem – nákladní Caterpillar má víc vlečných paprsků a těžkých zbraní než cokoli ve své třídě – a předváděcí Cutlassy se objevovaly v černých maskovacích barvách s lebkou a zkříženými hnáty. Firma prý utratila miliony za lobbování za přísnější zákony proti pirátům. Cynik ale ví, že víc protipirátských sil znamená, že piráti budou potřebovat víc náhradních lodí.
+
+## Dnes
+
+Drake je pátým největším výrobcem lodí v impériu a sídlí na planetě Borea (Magnus II). Vyrábí řadu Cutlass, nákladní Caterpillar, lehký Dragonfly, stíhačku Buccaneer, kurýra Herald i vrakovací loď Vulture. Jan Dredge odešla z čela firmy v roce 2947 po skandálu s nahrávkou, na níž tvrdila, že firma nenese odpovědnost za lodě v rukou zločinců.
