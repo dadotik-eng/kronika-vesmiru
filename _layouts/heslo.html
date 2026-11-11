@@ -1,0 +1,21 @@
+---
+layout: default
+---
+{% assign enc = site.data.encyklopedie[page.sekce] %}
+<article class="kapitola heslo">
+  <p class="nadtitul"><a href="{{ '/encyklopedie/' | relative_url }}">Encyklopedie</a> · <a href="{{ '/encyklopedie/#' | append: page.sekce | relative_url }}">{{ enc.nazev }}</a> · {{ page.stitek }}</p>
+  <h1>{{ page.nazev }}</h1>
+  <div class="text prolinkovat">{{ content }}</div>
+  {% if page.kapitoly.size > 0 %}
+  <section class="souvisi"><h2>V kronice</h2><ul>
+    {% for n in page.kapitoly %}{% assign i = n | minus: 1 %}{% assign d = site.data.dejiny[i] %}<li><a href="{{ '/dejiny/' | append: d.hraj | append: '/' | relative_url }}">Kapitola {{ d.rim }}. {{ d.title }}</a> · <a href="{{ '/archiv/#' | append: d.hraj | relative_url }}">▶ poslechnout</a></li>{% endfor %}
+  </ul></section>
+  {% endif %}
+  {% include prameny.html seznam=page.zdroje %}
+  {% assign hesla = site.encyklopedie | where: "sekce", page.sekce | sort: "poradi" %}
+  <nav class="cteni-dalsi">
+    {% for h in hesla %}{% if h.url == page.url %}{% assign i = forloop.index0 %}{% endif %}{% endfor %}
+    {% if i > 0 %}{% assign j = i | minus: 1 %}<a href="{{ hesla[j].url | relative_url }}">← {{ hesla[j].nazev }}</a>{% else %}<span></span>{% endif %}
+    {% assign j = i | plus: 1 %}{% if hesla[j] %}<a href="{{ hesla[j].url | relative_url }}">{{ hesla[j].nazev }} →</a>{% endif %}
+  </nav>
+</article>
