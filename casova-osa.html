@@ -21,7 +21,7 @@ popis: 881 let dějin vesmíru Star Citizen po obdobích. Vyber období a uvidí
     {% endfor %}
     <div class="op-cara" aria-hidden="true"></div>
     {% for x in udalosti %}
-    <a class="op-bod{% if x.klic %} klic{% endif %}" href="#{{ x.slug }}" data-rok="{{ x.rok }}"><span class="op-popisek"><b>{{ x.datum | default: x.rok }}</b>{{ x.titul }}</span></a>
+    <a class="op-bod{% if x.klic %} klic{% endif %}{% if x.hra %} hra{% endif %}" href="#{{ x.slug }}" data-rok="{{ x.rok }}"><span class="op-popisek"><b>{{ x.datum | default: x.rok }}</b>{{ x.titul }}</span></a>
     {% endfor %}
     {% for k in kapitoly %}
     <a class="op-bod" href="#kap-{{ k.slug }}" data-rok="{{ k.herni_rok }}"><span class="op-popisek"><b>{{ k.herni_rok }}</b>Nová kapitola: {{ k.title }}</span></a>
@@ -80,9 +80,10 @@ popis: 881 let dějin vesmíru Star Citizen po obdobích. Vyber období a uvidí
     <h3 class="era-data-nadpis">Důležitá data</h3>
     <ol class="udalosti">
     {% for x in udalosti %}{% if x.rok >= e.od %}{% if x.rok < e.do or posledni %}
-      <li class="udalost{% if x.klic %} klic{% endif %}" id="{{ x.slug }}" data-rok="{{ x.rok }}">
+      <li class="udalost{% if x.klic %} klic{% endif %}{% if x.hra %} hra{% endif %}" id="{{ x.slug }}" data-rok="{{ x.rok }}">
         <div class="ud-datum">{{ x.datum | default: x.rok }}</div>
         <div class="ud-telo">
+          {% if x.hra %}<p class="ud-hra">🎮 Hra {{ x.hra }}</p>{% endif %}
           <h3>{{ x.titul }}</h3>
           <p>{{ x.text }}</p>
           {% if x.odkaz %}<a class="ud-odkaz" href="{{ '/archiv/#' | append: x.odkaz | relative_url }}">▶ {% if x.odkaz == 'letka' %}Ztracená letka{% else %}Prolog{% endif %}</a>{% endif %}
