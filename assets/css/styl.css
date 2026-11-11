@@ -581,3 +581,10 @@ a.os-odkaz:hover { color: var(--akcent); }
 .rasa-karty button { background: none; border: 0; border-bottom: 3px solid transparent; color: var(--tlumene); font-family: var(--label); font-size: 1.05rem; letter-spacing: .06em; text-transform: uppercase; padding: .5rem 1rem; cursor: pointer; margin-bottom: -1px; }
 .rasa-karty button.aktivni { color: var(--text); border-bottom-color: var(--barva); }
 .rasa-detail .text p:first-child::first-letter { color: var(--barva); }
+
+.rasa-galerie { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: .6rem; margin: -.8rem 0 1.6rem; }
+.rasa-galerie img { width: 100%; height: 110px; object-fit: cover; border: 1px solid var(--linka); border-radius: 3px; display: block; transition: border-color .2s; }
+.rasa-galerie a:hover img { border-color: var(--barva); }
+.rasy-srovnani { margin: 3rem 0 0; }
+.rasy-srovnani img { width: 100%; height: auto; border-radius: 4px; display: block; }
+.rasy-srovnani figcaption { font-size: .85rem; color: var(--tlumene); margin-top: .5rem; }

@@ -10,7 +10,8 @@ layout: default
     <div><dt>První setkání s lidmi</dt><dd>{{ page.kontakt }}</dd></div>
     <div><dt>Vztah k lidstvu</dt><dd>{{ page.vztah }}</dd></div>
   </dl>
-  {% if page.obrazek %}<figure class="od-ilustrace"><img src="{{ page.obrazek | relative_url }}" alt="{{ page.nazev | escape }}"><figcaption>{{ page.obrazek_popisek | default: "Ilustrační obrázek" }}</figcaption></figure>{% endif %}
+  {% if page.obrazek %}<figure class="od-ilustrace"><a href="{{ page.obrazek | relative_url }}" target="_blank" rel="noopener"><img src="{{ page.obrazek | relative_url }}" alt="{{ page.nazev | escape }} – koncept"></a><figcaption>{{ page.obrazek_popisek | default: "Ilustrační obrázek" }}</figcaption></figure>{% endif %}
+  {% if page.galerie %}<div class="rasa-galerie">{% for g in page.galerie %}<a href="{{ g | relative_url }}" target="_blank" rel="noopener"><img src="{{ g | relative_url }}" alt="{{ page.nazev | escape }} – koncept {{ forloop.index }}" loading="lazy"></a>{% endfor %}</div>{% endif %}
   <p class="perex rasa-perex">{{ page.perex }}</p>
 
   <div class="rasa-karty" role="tablist" aria-label="Části">

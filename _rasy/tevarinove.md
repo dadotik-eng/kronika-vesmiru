@@ -42,6 +42,10 @@ biologie: 'Tevarinové jsou dvounozí. Na svém domovském světě ale zdaleka n
 
 
   Podrobnější oficiální popis tevarinského těla v psaných pramenech zatím chybí.'
+obrazek: /assets/rasy/tevarinove.webp
+obrazek_popisek: Koncept art © Cloud Imperium Games
+galerie:
+- /assets/rasy/tevarinove-1.webp
 ---
 
 Tevarinové pocházejí z planety Kaleeth, kterou lidé přejmenovali na Jalan (Elysium IV). Jejich společnost stála na Rijoře, válečnickém kodexu podobném japonskému bušidó: čest, věrnost a povinnost nade vše. Postup ve společnosti vedl přes vyznamenání v boji a nejvyšším titulem byl vojevůdce. Krvelační ale nebyli – válku ctili jako umění. Kdo nebojoval, obdělával půdu a o každého bylo postaráno.

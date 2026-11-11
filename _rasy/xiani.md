@@ -36,6 +36,12 @@ biologie: 'Xi''ani žijí staletí. Sto xi''anských let odpovídá zhruba 128 s
 
 
   Podrobnější oficiální popis xi''anského těla v psaných pramenech zatím chybí.'
+obrazek: /assets/rasy/xiani.webp
+obrazek_popisek: Koncept art © Cloud Imperium Games
+galerie:
+- /assets/rasy/xiani-1.webp
+- /assets/rasy/xiani-2.webp
+- /assets/rasy/xiani-3.webp
 ---
 
 Xi'ani pocházejí z planety RyiXy'an v soustavě Hyoton. Od prvních letů do vesmíru jim trvalo mnohem déle než lidem, než objevili skokové body. Když se konečně vydali za hranice své domovské soustavy, byla jejich technika o to vyspělejší – proslulí jsou hlavně mistrovstvím v antigravitaci.
