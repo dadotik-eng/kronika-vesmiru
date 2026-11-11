@@ -18,4 +18,5 @@ kapitoly:
 - kap-7
 rad: 2631
 obdobi: messerove
+ilustrace: true
 ---

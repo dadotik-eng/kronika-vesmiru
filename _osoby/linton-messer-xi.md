@@ -18,4 +18,5 @@ kapitoly:
 - kap-8
 rad: 2745
 obdobi: messerove
+ilustrace: true
 ---
