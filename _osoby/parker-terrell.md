@@ -11,4 +11,5 @@ zdroje:
   url: https://robertsspaceindustries.com/galactapedia/article/Rxnza3Qdqd-parker-terrell
 kapitoly: []
 rad: 2888
+obdobi: naprava
 ---

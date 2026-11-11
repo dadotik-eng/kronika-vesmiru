@@ -11,4 +11,5 @@ zdroje:
   url: https://robertsspaceindustries.com/galactapedia/article/bBzPN2lLG9-ghata-veras
 kapitoly: []
 rad: 2887
+obdobi: naprava
 ---

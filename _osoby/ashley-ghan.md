@@ -18,4 +18,5 @@ zdroje:
   url: https://robertsspaceindustries.com/galactapedia/article/0ODddzO7Dq-antoine-lebec
 kapitoly: []
 rad: 2311
+obdobi: skoky
 ---

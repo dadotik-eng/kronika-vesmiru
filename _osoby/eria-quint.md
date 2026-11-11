@@ -11,4 +11,5 @@ zdroje:
   url: https://robertsspaceindustries.com/galactapedia/article/V7gMqNgeOa-eria-quint
 kapitoly: []
 rad: 2901
+obdobi: naprava
 ---

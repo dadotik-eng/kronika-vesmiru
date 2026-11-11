@@ -11,4 +11,5 @@ zdroje:
   url: https://robertsspaceindustries.com/galactapedia/article/0qnNMY2dO1-ita-hurston
 kapitoly: []
 rad: 2512
+obdobi: upe
 ---

@@ -11,4 +11,5 @@ zdroje:
   url: https://robertsspaceindustries.com/galactapedia/article/R5p2mqLvXN-carl-dyson
 kapitoly: []
 rad: 2593
+obdobi: messerove
 ---

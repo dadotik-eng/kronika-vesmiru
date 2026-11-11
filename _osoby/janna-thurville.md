@@ -14,4 +14,5 @@ zdroje:
   url: https://robertsspaceindustries.com/galactapedia/article/bo1LkZwmX7-dyna-lei
 kapitoly: []
 rad: 2895
+obdobi: naprava
 ---

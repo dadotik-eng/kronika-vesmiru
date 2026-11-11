@@ -11,4 +11,5 @@ zdroje:
   url: https://robertsspaceindustries.com/galactapedia/article/bZkAvg8BPE-errol-navis
 kapitoly: []
 rad: 2822
+obdobi: naprava
 ---

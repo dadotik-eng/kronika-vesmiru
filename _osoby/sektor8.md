@@ -11,4 +11,5 @@ zdroje:
   url: https://robertsspaceindustries.com/galactapedia/article/RwZBLBJvY6-sektor8
 kapitoly: []
 rad: 2918
+obdobi: valka
 ---

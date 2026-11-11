@@ -13,4 +13,5 @@ kapitoly:
 - kap-9
 - letka
 rad: 2835
+obdobi: naprava
 ---

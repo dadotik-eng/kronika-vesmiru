@@ -11,4 +11,5 @@ zdroje:
   url: https://robertsspaceindustries.com/galactapedia/article/box5WYgM2A-gal-dougan
 kapitoly: []
 rad: 2868
+obdobi: naprava
 ---

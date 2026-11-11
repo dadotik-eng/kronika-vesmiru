@@ -11,4 +11,5 @@ zdroje:
   url: https://robertsspaceindustries.com/galactapedia/article/RX36PWwe4K-marie-sante
 kapitoly: []
 rad: 2504
+obdobi: upe
 ---

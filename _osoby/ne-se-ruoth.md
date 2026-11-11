@@ -11,4 +11,5 @@ zdroje:
   url: https://robertsspaceindustries.com/galactapedia/article/V8WPAo6xpO-nee-se-ruoth
 kapitoly: []
 rad: 2475
+obdobi: une
 ---

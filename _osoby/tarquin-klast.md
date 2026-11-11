@@ -11,4 +11,5 @@ zdroje:
   url: https://robertsspaceindustries.com/galactapedia/article/0dQ4mGDJYd-tarquin-klast
 kapitoly: []
 rad: 2879
+obdobi: naprava
 ---

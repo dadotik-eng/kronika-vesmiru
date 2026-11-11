@@ -11,4 +11,5 @@ zdroje:
   url: https://robertsspaceindustries.com/galactapedia/article/VDzyygGMQ1-noah-traeger
 kapitoly: []
 rad: 2759
+obdobi: messerove
 ---

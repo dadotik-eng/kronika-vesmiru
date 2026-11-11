@@ -11,4 +11,5 @@ zdroje:
   url: https://robertsspaceindustries.com/galactapedia/article/VpMeGzBPyz-theresa-branaugh
 kapitoly: []
 rad: 2835
+obdobi: naprava
 ---

@@ -30,7 +30,7 @@ popis: Rejstřík osob z dějin vesmíru Star Citizen. Imperátoři, objevitelé
 
 <div class="blok os-mrizka" id="osoby">
 {% for o in osoby %}
-  <article class="osoba{% if o.ilustrace %} ma-ilustraci{% endif %}" id="{{ o.slug }}" data-k="{{ o.kategorie }}" data-rad="{{ o.rad }}" data-hledat="{{ o.jmeno | downcase | escape }} {{ o.role | downcase | escape }}">
+  <article class="osoba{% if o.ilustrace %} ma-ilustraci{% endif %}" id="{{ o.slug }}" data-k="{{ o.kategorie }}" data-rad="{{ o.rad }}" data-obdobi="{{ o.obdobi }}" data-hledat="{{ o.jmeno | downcase | escape }} {{ o.role | downcase | escape }}">
     {% if o.ilustrace %}<figure class="os-ilustrace"><img src="{{ '/assets/osoby/' | append: o.slug | append: '.webp' | relative_url }}" alt="Ilustrace: {{ o.jmeno | escape }}" loading="lazy" width="960" height="540"><figcaption>Ilustrační obrázek</figcaption></figure>{% endif %}
     <header>
       <span class="os-emblem" aria-hidden="true"></span>
@@ -55,13 +55,12 @@ popis: Rejstřík osob z dějin vesmíru Star Citizen. Imperátoři, objevitelé
 
 <script>
 (function () {
-  var karty = [].slice.call(document.querySelectorAll('.osoba')), k = '', q = '', od = null, doo = null;
+  var karty = [].slice.call(document.querySelectorAll('.osoba')), k = '', q = '', era = '';
   var pocet = document.getElementById('pocet');
   function filtr() {
     var n = 0;
     karty.forEach(function (c) {
-      var r = parseFloat(c.dataset.rad);
-      var ok = (!k || c.dataset.k === k) && (!q || c.dataset.hledat.indexOf(q) >= 0) && (od === null || (r >= od && r < doo));
+      var ok = (!k || c.dataset.k === k) && (!q || c.dataset.hledat.indexOf(q) >= 0) && (!era || c.dataset.obdobi === era);
       c.hidden = !ok; if (ok) n++;
     });
     pocet.textContent = n === karty.length ? '' : 'Zobrazeno ' + n + ' z ' + karty.length;
@@ -74,7 +73,7 @@ popis: Rejstřík osob z dějin vesmíru Star Citizen. Imperátoři, objevitelé
     });
   });
   function vyberEru(b) {
-    od = b.dataset.e ? parseFloat(b.dataset.od) : null; doo = b.dataset.e ? parseFloat(b.dataset.do) : null;
+    era = b.dataset.e || '';
     [].forEach.call(document.querySelectorAll('.os-filtr-era button'), function (x) { x.classList.toggle('aktivni', x === b); });
     filtr();
   }
@@ -83,7 +82,7 @@ popis: Rejstřík osob z dějin vesmíru Star Citizen. Imperátoři, objevitelé
   if (pe) { var be = document.querySelector('.os-filtr-era button[data-e="' + pe + '"]'); if (be) vyberEru(be); }
   document.getElementById('hledat').addEventListener('input', function (e) { q = e.target.value.trim().toLowerCase(); filtr(); });
   // Archivní emblém: barva podle období, symbol podle oblasti, iniciály.
-  var ERY = [[2262,'#7fb8d8'],[2380,'#8fd0c0'],[2523,'#a6c97f'],[2546.9,'#d9c46a'],[2792.4,'#e0785c'],[2945,'#b99ae0'],[1e9,'#f6bd4b']];
+  var BARVY = { {% for e in site.data.ery %}'{{ e.id }}': '{{ e.barva }}'{% unless forloop.last %}, {% endunless %}{% endfor %} };
   var SYM = {
     vladari: '<path d="M14 34l-3-15 8 6 5-11 5 11 8-6-3 15z"/>',
     politika: '<path d="M12 33h24M14 30V20M20 30V20M28 30V20M34 30V20M11 18l13-7 13 7z"/>',
@@ -97,8 +96,7 @@ popis: Rejstřík osob z dějin vesmíru Star Citizen. Imperátoři, objevitelé
   };
   karty.forEach(function (c) {
     var e = c.querySelector('.os-emblem'); if (!e) return;
-    var r = parseFloat(c.dataset.rad), barva = '#bfe3f5';
-    if (!isNaN(r)) for (var i = 0; i < ERY.length; i++) if (r < ERY[i][0]) { barva = ERY[i][1]; break; }
+    var barva = BARVY[c.dataset.obdobi] || '#bfe3f5';
     var jm = c.querySelector('h2').textContent.replace(/\b[IVXL]+\.?$/, '').trim().split(/\s+/);
     var ini = (jm[0][0] + (jm.length > 1 ? jm[jm.length - 1][0] : '')).toUpperCase();
     e.innerHTML = '<svg viewBox="0 0 48 60" width="48" height="60"><path d="M24 2l20 11v22L24 46 4 35V13z" fill="rgba(7,15,31,.9)" stroke="' + barva + '" stroke-width="1.6"/>' +

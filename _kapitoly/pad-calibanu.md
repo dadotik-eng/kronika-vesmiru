@@ -4,9 +4,9 @@ date: 2026-11-10
 herni_rok: 2884
 era: Věk nápravy
 system: Caliban
-popis: Jak vanduulský Kingship prolomil obranu Calibanu a jak jedna logistická letka koupila čas pro tři miliony lidí.
-overeni: neověřeno
-overeni_poznamka: verze z první zkoušky, čeká na nové ověření
+popis: Jak vanduulský Kingship proklouzl obranou Calibanu a jak jedna logistická letka koupila čas pro tři miliony lidí.
+overeni: OK
+overeni_poznamka: fakta ověřena proti Galactapedii 11. 11. 2026 (Fall of Caliban, Squadron 89, Sylvie Randall, Caliban System), schválil Daniel
 stitky: [Vanduulové, Caliban, Crion, Kingship, Lost Squad]
 prameny:
   - nazev: "Fall of Caliban"
@@ -28,7 +28,7 @@ Polohu soustavy Caliban prodala vládě roku 2341 dopravkyně Ashley Ghan. Klid 
 
 Rok 2792 přinesl nájezd, který si vyžádal přes sto obětí. Vláda tehdy do systému vyslala 31. bojovou skupinu, aby Caliban bránila. Poslední velký střet této skupiny s Vanduuly je zaznamenán k roku 2859.
 
-Osudný obrat přišel 7. července 2884, krátce před pátou hodinou ranní. Vanduulský klan, vedený vlajkovou lodí typu Kingship, prolomil obranné senzorové majáky. Velitelka Sylvie Randall z 89. logistické letky se rozhodla ustoupit na planetu Crion. Tam se její jednotka postavila mezi útočníky a prchající civilní konvoje. Díky této obraně se podařilo zachránit přes tři miliony obyvatel.
+Osudný obrat přišel 7. července 2884, krátce před pátou hodinou ranní. Vanduulský klan, vedený vlajkovou lodí typu Kingship, nepozorovaně proklouzl kolem obranných senzorových majáků. Velitelka Sylvie Randall z 89. logistické letky se rozhodla ustoupit na planetu Crion. Tam se její jednotka postavila mezi útočníky a prchající civilní konvoje. Díky této obraně se podařilo zachránit přes tři miliony obyvatel.
 
 Byl to statečný čin, ale ne vítězství. O šestnáct dní později, 23. července 2884, padl Crion i zbytek systému. Obrana se zhroutila zcela.
 

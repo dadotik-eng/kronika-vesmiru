@@ -67,9 +67,10 @@ popis: 881 let dějin vesmíru Star Citizen po obdobích. Vyber období a uvidí
       <div class="era-box">
         <p class="era-box-nadpis">Lidé té doby</p>
         {% assign n = 0 %}
-        {% for o in osoby %}{% if o.rad >= e.od %}{% if o.rad < e.do or posledni %}{% if n < 6 %}{% assign n = n | plus: 1 %}
+        {% comment %}Nejdřív lidé, o kterých vyprávějí kapitoly, pak ostatní.{% endcomment %}
+        {% for pruchod in (1..2) %}{% for o in osoby %}{% if o.obdobi == e.id %}{% assign mak = o.kapitoly.size | default: 0 %}{% if mak > 0 %}{% assign skup = 1 %}{% else %}{% assign skup = 2 %}{% endif %}{% if skup == pruchod %}{% if n < 6 %}{% assign n = n | plus: 1 %}
         <a class="era-osoba" href="{{ '/osobnosti/#' | append: o.slug | relative_url }}">{{ o.jmeno }} <small>{{ o.role }}</small></a>
-        {% endif %}{% endif %}{% endif %}{% endfor %}
+        {% endif %}{% endif %}{% endif %}{% endfor %}{% endfor %}
         {% if n == 0 %}<p class="era-nic">Zatím nikdo v rejstříku.</p>{% endif %}
         <a class="era-vice" href="{{ '/osobnosti/?obdobi=' | append: e.id | relative_url }}">Všichni z tohoto období →</a>
         {% if e.id == "messerove" %}<a class="era-vice" href="{{ '/rod-messeru/' | relative_url }}">Rodokmen Messerů →</a>{% endif %}

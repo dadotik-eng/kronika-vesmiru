@@ -11,4 +11,5 @@ zdroje:
   url: https://robertsspaceindustries.com/galactapedia/article/R5pWGMakx9-micah-zahir
 kapitoly: []
 rad: 2460
+obdobi: une
 ---

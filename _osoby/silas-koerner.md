@@ -11,4 +11,5 @@ zdroje:
   url: https://robertsspaceindustries.com/galactapedia/article/V8gJMXjE8o-silas-koerner
 kapitoly: []
 rad: 2899
+obdobi: naprava
 ---

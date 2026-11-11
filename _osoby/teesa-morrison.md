@@ -11,4 +11,5 @@ zdroje:
   url: https://robertsspaceindustries.com/galactapedia/article/01LrNgqDrL-teesa-morrison
 kapitoly: []
 rad: 2492
+obdobi: une
 ---

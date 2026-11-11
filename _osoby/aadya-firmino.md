@@ -11,4 +11,5 @@ zdroje:
   url: https://robertsspaceindustries.com/galactapedia/article/0Nj5o4M9v2-aadya-firmino
 kapitoly: []
 rad: 2692
+obdobi: messerove
 ---

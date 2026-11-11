@@ -11,4 +11,5 @@ zdroje:
   url: https://robertsspaceindustries.com/galactapedia/article/VDz7Be7E33-titus-costigan
 kapitoly: []
 rad: 2909
+obdobi: naprava
 ---

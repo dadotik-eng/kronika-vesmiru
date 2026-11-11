@@ -11,4 +11,5 @@ zdroje:
   url: https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/17862-Battle-Of-Fabela
 kapitoly: []
 rad: 2795
+obdobi: naprava
 ---

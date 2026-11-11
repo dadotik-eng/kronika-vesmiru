@@ -11,4 +11,5 @@ zdroje:
   url: https://robertsspaceindustries.com/galactapedia/article/Rw1KpEJDvp-armistead-perry
 kapitoly: []
 rad: 2458
+obdobi: une
 ---

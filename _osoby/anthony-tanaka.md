@@ -11,4 +11,5 @@ zdroje:
   url: https://robertsspaceindustries.com/galactapedia/article/RwZBdpj2rz-anthony-tanaka
 kapitoly: []
 rad: 2745
+obdobi: messerove
 ---

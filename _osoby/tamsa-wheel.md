@@ -11,4 +11,5 @@ zdroje:
   url: https://robertsspaceindustries.com/galactapedia/article/RXlXOw9WaN-tamsa-wheel
 kapitoly: []
 rad: 2883
+obdobi: naprava
 ---

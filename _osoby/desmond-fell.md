@@ -11,4 +11,5 @@ zdroje:
   url: https://robertsspaceindustries.com/galactapedia/article/RX3dlQ5KON-desmond-fell
 kapitoly: []
 rad: 2846
+obdobi: naprava
 ---

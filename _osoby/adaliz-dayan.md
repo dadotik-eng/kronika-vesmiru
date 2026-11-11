@@ -11,4 +11,5 @@ zdroje:
   url: https://robertsspaceindustries.com/galactapedia/article/Vgg7Ml89dN-adaliz-dayan
 kapitoly: []
 rad: 2279
+obdobi: skoky
 ---

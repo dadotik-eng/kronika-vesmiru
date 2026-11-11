@@ -11,4 +11,5 @@ zdroje:
   url: https://robertsspaceindustries.com/galactapedia/article/RxnPNwAW4M-liston-garrity
 kapitoly: []
 rad: 2248
+obdobi: skoky
 ---

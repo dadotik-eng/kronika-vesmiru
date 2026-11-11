@@ -14,4 +14,5 @@ zdroje:
   url: https://robertsspaceindustries.com/galactapedia/article/Var8a27eW2-janna-thurville
 kapitoly: []
 rad: 2852
+obdobi: naprava
 ---

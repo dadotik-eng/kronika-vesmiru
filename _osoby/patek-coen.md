@@ -11,4 +11,5 @@ zdroje:
   url: https://robertsspaceindustries.com/galactapedia/article/R9vPd4ZjK7-patek-coen
 kapitoly: []
 rad: 2786
+obdobi: naprava
 ---

@@ -11,4 +11,5 @@ zdroje:
   url: https://robertsspaceindustries.com/galactapedia/article/0qnN5w4kmW-arial-hurston
 kapitoly: []
 rad: 2466
+obdobi: une
 ---

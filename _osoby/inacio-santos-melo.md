@@ -11,4 +11,5 @@ zdroje:
   url: https://robertsspaceindustries.com/galactapedia/article/0qnNMa3Mgq-inacio-stanos-melo
 kapitoly: []
 rad: 2513
+obdobi: upe
 ---

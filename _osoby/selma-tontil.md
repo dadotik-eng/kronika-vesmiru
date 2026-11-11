@@ -12,4 +12,5 @@ zdroje:
 kapitoly:
 - kap-2
 rad: 2262
+obdobi: skoky
 ---

@@ -15,4 +15,5 @@ zdroje:
   url: https://robertsspaceindustries.com/galactapedia/article/RkGZqr8yNQ-magnus-tobin
 kapitoly: []
 rad: 2884
+obdobi: naprava
 ---

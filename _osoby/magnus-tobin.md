@@ -12,4 +12,5 @@ zdroje:
 kapitoly:
 - kap-9
 rad: 2756
+obdobi: naprava
 ---
