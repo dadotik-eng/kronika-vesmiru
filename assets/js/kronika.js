@@ -166,7 +166,24 @@
   // Warp mezi záložkami – stejný efekt jako po dohrání prologu v archivu.
   var warp = (function () {
     var klid = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
-    var c, x, hvezdy, t0 = 0, konec = 0, beh = 0, DOBA = 620;
+    var c, x, hvezdy, t0 = 0, konec = 0, beh = 0, DOBA = 620, rgb = [222, 236, 246], ac = null, sum = null;
+    // Barva každé záložky z palety období
+    var BARVY = { domu: '#f6bd4b', dejiny: '#7fb8d8', 'casova-osa': '#e0785c', osobnosti: '#b99ae0', pribehy: '#8fd0c0', encyklopedie: '#a6c97f', 'o-projektu': '#d9c46a' };
+    function naRgb(h) { h = (h || '').replace('#', ''); return h.length === 6 ? [0, 2, 4].map(function (i) { return parseInt(h.substr(i, 2), 16); }) : [222, 236, 246]; }
+    function zvuk() {
+      if (cist('kv-hudba') === '0') return;
+      try {
+        var AC = window.AudioContext || window.webkitAudioContext; if (!AC) return;
+        if (!ac) { ac = new AC(); sum = ac.createBuffer(1, ac.sampleRate * 2, ac.sampleRate); var d = sum.getChannelData(0); for (var i = 0; i < d.length; i++) d[i] = Math.random() * 2 - 1; }
+        if (ac.state === 'suspended') ac.resume();
+        var hl = parseFloat(cist('kv-vol-hudba')); if (!(hl >= 0 && hl <= 1)) hl = .8;
+        var t = ac.currentTime + .01, src = ac.createBufferSource(), f = ac.createBiquadFilter(), g = ac.createGain(), D = DOBA / 1000;
+        src.buffer = sum; src.loop = true; f.type = 'bandpass'; f.Q.value = 1.4;
+        f.frequency.setValueAtTime(180, t); f.frequency.exponentialRampToValueAtTime(5200, t + D * .85); f.frequency.exponentialRampToValueAtTime(260, t + D * 1.5);
+        g.gain.setValueAtTime(.001, t); g.gain.exponentialRampToValueAtTime(Math.max(.002, .35 * hl), t + D * .8); g.gain.exponentialRampToValueAtTime(.001, t + D * 1.55);
+        src.connect(f); f.connect(g); g.connect(ac.destination); src.start(t); src.stop(t + D * 1.6);
+      } catch (e) {}
+    }
     function priprav() {
       if (c) return;
       c = document.createElement('canvas'); c.className = 'warp'; c.setAttribute('aria-hidden', 'true');
@@ -185,17 +202,18 @@
       for (var i = 0; i < hvezdy.length; i++) {
         var s = hvezdy[i], px = s[0] * W - cx, py = s[1] * H - cy, d = Math.hypot(px, py) || 1, ux = px / d, uy = py / d;
         var r0 = d * (1 + e * 2.2), r1 = r0 + e * H * .9 * s[2];
-        x.strokeStyle = 'rgba(222,236,246,' + (.25 + .65 * s[3]) + ')'; x.lineWidth = s[2] * 1.1;
+        x.strokeStyle = 'rgba(' + rgb[0] + ',' + rgb[1] + ',' + rgb[2] + ',' + (.25 + .65 * s[3]) + ')'; x.lineWidth = s[2] * 1.1;
         x.beginPath(); x.moveTo(cx + ux * r0, cy + uy * r0); x.lineTo(cx + ux * r1, cy + uy * r1); x.stroke();
       }
-      if (k > .68) { x.fillStyle = 'rgba(232,242,250,' + ((k - .68) / .32 * .7) + ')'; x.fillRect(0, 0, W, H); }
+      if (k > .68) { var z = (k - .68) / .32; x.fillStyle = 'rgba(' + Math.round(rgb[0] * .55 + 232 * .45) + ',' + Math.round(rgb[1] * .55 + 242 * .45) + ',' + Math.round(rgb[2] * .55 + 250 * .45) + ',' + (z * .72) + ')'; x.fillRect(0, 0, W, H); }
       x.globalAlpha = 1;
       beh = requestAnimationFrame(kresli);
     }
     return {
       // vrátí slib, který se splní ve chvíli, kdy je obrazovka „v záblesku“ a dá se vyměnit obsah
-      start: function () {
+      start: function (sekce) {
         if (klid) return Promise.resolve();
+        rgb = naRgb(BARVY[sekce]); zvuk();
         priprav(); c.style.display = 'block'; t0 = performance.now(); konec = 0;
         if (!beh) beh = requestAnimationFrame(kresli);
         return new Promise(function (ok) { setTimeout(ok, DOBA * .9); });
@@ -215,7 +233,7 @@
       return;
     }
     document.body.classList.add('nacita');
-    var cekej = sWarpem ? warp.start() : Promise.resolve();
+    var cekej = sWarpem ? warp.start(sWarpem) : Promise.resolve();
     fetch(u.href, { credentials: 'same-origin' }).then(function (r) {
       if (!r.ok) throw new Error(r.status);
       return r.text();
@@ -251,7 +269,7 @@
       return;
     }
     if (u.pathname === location.pathname && !u.hash) { e.preventDefault(); return; }
-    e.preventDefault(); jdi(u.href, false, !!a.closest('#hlavni-menu, .logo'));
+    e.preventDefault(); jdi(u.href, false, a.closest('#hlavni-menu, .logo') ? (a.dataset.sekce || 'domu') : false);
   });
   window.addEventListener('popstate', function () {
     // Zpět mezi kotvami na stejné stránce: prohlížeč sám vyvolá hashchange, stránku nestahovat znovu.
