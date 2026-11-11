@@ -59,6 +59,7 @@ main { flex: 1; width: 100%; }
   display: inline-block; padding: .9rem 1.6rem; border: 1px solid var(--akcent); color: var(--akcent);
   font-family: var(--label); font-size: 1.2rem; letter-spacing: .06em; text-decoration: none; border-radius: 3px;
 }
+button.tlacitko { background: transparent; cursor: pointer; }
 .tlacitko:hover { background: rgba(246,189,75,.12); color: var(--akcent); }
 .tlacitko.plne { background: var(--akcent); color: #081a33; font-weight: 600; }
 .tlacitko.plne:hover { background: #ffd27a; color: #081a33; }
