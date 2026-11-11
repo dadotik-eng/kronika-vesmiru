@@ -517,3 +517,43 @@ a.os-odkaz:hover { color: var(--akcent); }
 .zivotopis { margin-top: 1.8rem; }
 .zivotopis h2 { font-size: 1.15rem; }
 .zivotopis .text p:first-child::first-letter { float: none; font-size: inherit; padding: 0; color: inherit; font-family: inherit; }
+
+/* Rodokmen Messerů – portréty, linie trůnu, konce vlád, boční panel */
+.strom-linie { position: absolute; inset: 0; pointer-events: none; opacity: 0; transition: opacity .3s; }
+.strom.linie-zap .strom-linie { opacity: 1; }
+.strom-linie .ln { fill: none; stroke: #f6bd4b; stroke-width: 2.2; stroke-dasharray: 7 5; filter: drop-shadow(0 0 4px rgba(246,189,75,.55)); }
+.strom-linie .ln-krok circle { fill: #0b1526; stroke: #f6bd4b; stroke-width: 1.4; }
+.strom-linie .ln-krok text { fill: #f6bd4b; font-family: var(--label); font-size: 11px; text-anchor: middle; font-weight: 600; }
+.strom.linie-zap .uzel:not(.imperator) { opacity: .6; }
+.strom.linie-zap .uzel:not(.imperator):hover { opacity: 1; }
+.uzel.s-portretem { padding-top: .5rem; }
+.u-portret { display: block; width: 54px; height: 54px; object-fit: cover; object-position: 50% 22%; border-radius: 50%; border: 2px solid var(--akcent); margin: 0 auto .3rem; }
+.u-konec { display: block; font-family: var(--label); font-size: .74rem; letter-spacing: .03em; margin-top: .15rem; }
+.k-smrt { color: #9fb3c8; } .k-abdikace { color: #8fd0c0; } .k-vrazda { color: #f07a6a; } .k-svrzeni { color: #c9a0f0; }
+.legenda .lg.lin { border: 0; border-top: 2px dashed #f6bd4b; height: 0; width: 22px; }
+.legenda.konce { margin-top: .4rem; }
+.lk { display: inline-block; width: 18px; height: 10px; border-radius: 2px; margin-right: .4rem; vertical-align: middle; }
+.lk.k-smrt { background: #9fb3c8; } .lk.k-abdikace { background: #8fd0c0; } .lk.k-vrazda { background: #f07a6a; } .lk.k-svrzeni { background: #c9a0f0; }
+.lk.valka { background: repeating-linear-gradient(45deg, rgba(240,122,106,.5) 0 3px, transparent 3px 6px); border: 1px solid rgba(240,122,106,.6); }
+.vlady { position: relative; }
+.vl-bar.k-smrt { background: rgba(159,179,200,.7); } .vl-bar.k-abdikace { background: rgba(143,208,192,.75); } .vl-bar.k-vrazda { background: rgba(240,122,106,.8); } .vl-bar.k-svrzeni { background: rgba(201,160,240,.8); }
+.vl-bar.vybrany, .vl-bar:hover { background: var(--akcent); }
+.vl-valka { position: absolute; top: 0; bottom: 24px; left: calc(11rem + .8rem + (100% - 11rem - .8rem) * 0); pointer-events: none; }
+.vlady { --sloupec: calc(11rem + .8rem); }
+.vl-valka { left: calc(var(--sloupec) + (100% - var(--sloupec)) * 0); width: calc(100% - var(--sloupec)); }
+.vl-valka::before { content: ""; position: absolute; top: 0; bottom: 0; left: var(--l); width: var(--w); background: repeating-linear-gradient(45deg, rgba(240,122,106,.22) 0 4px, transparent 4px 8px); border-left: 1px solid rgba(240,122,106,.5); border-right: 1px solid rgba(240,122,106,.5); }
+@media (max-width: 640px) { .vlady { --sloupec: calc(7.5rem + .8rem); } }
+.rod-panel { position: fixed; top: 64px; right: 0; bottom: 0; width: min(400px, 92vw); background: rgba(9,17,32,.97); border-left: 2px solid var(--akcent); box-shadow: -10px 0 30px rgba(0,0,0,.5); padding: 1.4rem 1.5rem 6rem; overflow-y: auto; transform: translateX(105%); transition: transform .3s ease; z-index: 60; }
+.rod-panel.otevreny { transform: none; }
+.rod-panel h2 { font-size: 1.7rem; margin: .1rem 0 .2rem; }
+.rod-zavrit { position: absolute; top: .6rem; right: .7rem; background: none; border: 1px solid var(--linka); color: var(--text); border-radius: 50%; width: 32px; height: 32px; cursor: pointer; }
+.rod-portret { margin: 0 0 1rem; position: relative; border-radius: 4px; overflow: hidden; border: 1px solid var(--linka); }
+.rod-portret img { display: block; width: 100%; height: auto; }
+.rod-portret figcaption { position: absolute; right: 6px; bottom: 5px; font-size: 11px; color: rgba(230,236,245,.85); background: rgba(7,15,31,.7); padding: 2px 6px; border-radius: 3px; }
+.rod-vztahy { display: grid; grid-template-columns: auto 1fr; gap: .3rem .9rem; margin: 1.2rem 0 0; padding-top: .9rem; border-top: 1px solid var(--linka); font-size: .95rem; }
+.rod-vztahy dt { font-family: var(--label); color: var(--tlumene); letter-spacing: .04em; }
+.rod-vztahy dd { margin: 0; }
+.rod-odkaz { background: none; border: 0; padding: 0; color: var(--akcent); cursor: pointer; font: inherit; text-decoration: underline dotted; text-underline-offset: 3px; }
+.rod-panel .med-odkazy { display: flex; gap: 1.2rem; flex-wrap: wrap; margin-top: 1.2rem; font-family: var(--label); letter-spacing: .04em; }
+.rod-panel .med-odkazy a { text-decoration: none; }
+.k-text { font-weight: 600; }
