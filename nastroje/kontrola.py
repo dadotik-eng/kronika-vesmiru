@@ -65,6 +65,8 @@ def zkontroluj(soubor):
     for pole in POVINNE.get(slozka, []):
         if fm.get(pole) in (None, ''):
             chyba(soubor, f"chybí povinné pole '{pole}'")
+    if slozka == '_kapitoly' and fm.get('overeni') not in (None, 'OK', 'neověřeno'):
+        chyba(soubor, f"pole 'overeni' musí být OK nebo neověřeno, je {fm.get('overeni')!r}")
     if 'obdobi' in fm and fm['obdobi'] not in ERY:
         chyba(soubor, f"neznámé období '{fm['obdobi']}' (povolené: {', '.join(sorted(ERY))})")
     for pole in ('rok', 'herni_rok', 'rad'):
