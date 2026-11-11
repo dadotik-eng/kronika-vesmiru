@@ -1,0 +1,80 @@
+# Rejstřík výslovnosti Hvězdné kroniky
+# ----------------------------------------------------------------------------
+# Jak se cizí jména a pojmy čtou česky. Používá se:
+#  - v přehrávači: mluvený text (v) kapitol od bota se z psaného textu (t) vytvoří podle tohoto rejstříku,
+#  - pro dabing v ElevenLabs: z rejstříku se vyrobí slovník výslovnosti (alias pravidla),
+#  - Režisér (agent) podle něj kontroluje texty a nová jména hlásí k doplnění.
+#
+# Pole:
+#   psano: jak se slovo píše (kmen – pravidlo platí i pro skloňované tvary: Vanduul → Vanduulové, vanduulský)
+#   cti:   jak se má číst (stejný kmen, koncovky se převezmou z psaného tvaru)
+#   cele:  true = nahrazuje se jen celé slovo / sousloví (zkratky, víceslovné názvy)
+#   tvary: nepravidelné tvary, kde se mění i kmen (Ulyssese → Julisíze)
+#   pozn:  poznámka; „ověřit“ = výslovnost není jistá, potvrdí Daniel
+#
+# Pořadí nehraje roli – delší výrazy se nahrazují dřív než kratší.
+# ----------------------------------------------------------------------------
+
+# Rasy a národy
+- {psano: Vanduul, cti: Vandúl}
+- {psano: Xi’an, cti: Šian, pozn: "předložky se upravují: s Xi’any → se Šiany, z Xi’anů → ze Šianů"}
+- {psano: Xi'an, cti: Šian}
+- {psano: Tevarin, cti: Tevarin}
+- {psano: Banu, cti: Banu}
+
+# Lodě a technika
+- {psano: Kingship, cti: Kingšip}
+- {psano: navjumper, cti: navdžamper}
+- {psano: Synthworld, cti: Sintvorld}
+- {psano: Squadron 42, cti: Skvodron čtyřicet dva, cele: true}
+
+# Firmy
+- {psano: Roberts Space Industries, cti: Roberts Spejs Industrys, cele: true}
+- {psano: RSI, cti: er es í, cele: true}
+- {psano: Crusader Industries, cti: Krusejdr Industrys, cele: true}
+- {psano: Hurston Dynamics, cti: Herston Dajnemiks, cele: true}
+- {psano: ArcCorp, cti: Ark Korp, cele: true}
+- {psano: microTech, cti: majkrotek, cele: true}
+- {psano: Gaia Planet Services, cti: Gaja Planet Sérvisis, cele: true}
+- {psano: Tarsus, cti: Tarsus}
+
+# Soustavy, planety, místa
+- {psano: Stanton, cti: Stenton}
+- {psano: Davien, cti: Dejvien}
+- {psano: Caliban, cti: Kaliban}
+- {psano: Crion, cti: Krajon, pozn: ověřit – ve hře se říká i „Krí-on“}
+- {psano: Croshaw, cti: Krošó}
+- {psano: Garron, cti: Garon}
+- {psano: Kaleeth, cti: Kalít}
+- {psano: Pyro, cti: Pajro, tvary: {Pyra: Pajra, Pyru: Pajru, Pyrem: Pajrem}}
+- {psano: New Corvo, cti: Ňú Korvo, cele: true}
+- {psano: Blackwater, cti: Blekvotr}
+- {psano: Archangel, cti: Arkejndžl}
+- {psano: Fair Chance, cti: Fér Čans, cele: true}
+- {psano: Neso, cti: Neso}
+
+# Operace a události
+- {psano: Mandrake, cti: Mendrejk}
+- {psano: Tide, cti: Tajd, pozn: hnutí Tide (Příliv)}
+
+# Osoby
+- {psano: Nick Croshaw, cti: Nik Krošó, cele: true}
+- {psano: Scott Childress, cti: Skot Čildres, cele: true}
+- {psano: Neal Socolovich, cti: Níl Sokolovič, cele: true}
+- {psano: Assan Kieren, cti: Asan Kíren, cele: true}
+- {psano: Charles, cti: Čárls, tvary: {Charlese: Čárlse, Charlesovi: Čárlsovi}}
+- {psano: Baxter, cti: Baxtr, tvary: {Baxtera: Baxtra, Baxterovi: Baxtrovi, Baxterem: Baxtrem}}
+- {psano: Corath’Thal, cti: Korat Tal, tvary: {Corath’Thala: Korat Tala, Corath’Thalem: Korat Talem, Corath’Thalovi: Korat Talovi}}
+- {psano: Corbyn, cti: Korbin}
+- {psano: Costigan, cti: Kostigan}
+- {psano: Bishop, cti: Bišop}
+- {psano: Illyana, cti: Iljana}
+- {psano: Laylani Addison, cti: Lejlani Edison, cele: true}
+- {psano: Marshall, cti: Maršal}
+- {psano: Terrence, cti: Terens}
+- {psano: Toshi Aaron, cti: Toši Áron, cele: true}
+- {psano: Sylvie, cti: Silvi}
+- {psano: Randall, cti: Rendal, tvary: {Randallová: Rendalová, Randallové: Rendalové, Randallovou: Rendalovou}}
+- {psano: Ulysses, cti: Julisís, tvary: {Ulyssese: Julisíze, Ulyssesovi: Julisízovi, Ulyssesem: Julisízem}}
+- {psano: Toi, cti: Toj, cele: true}
+- {psano: Kr.ē, cti: Krej, pozn: xi’anská jména – rod Kr.ē}

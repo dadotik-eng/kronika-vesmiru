@@ -1,0 +1,5 @@
+---
+layout: null
+permalink: /data/vyslovnost.json
+---
+{{ site.data.vyslovnost | jsonify }}

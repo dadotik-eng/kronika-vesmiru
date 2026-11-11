@@ -294,7 +294,7 @@ function run(){clear();const s=S[sc],l=s.lines[ln],my=++token;
   if(!playing)return;
   const done=()=>{if(my!==token)return;duck(false);if(l.radio&&E&&l.fx!=='cut')E.fx('radio');after((l.h??.35)*1000/SPEED,()=>{if(my===token)next()})};
   if(voiceOn&&canVoice()){let started=false,ended=false;const fin=()=>{if(!ended){ended=true;done()}};
-    const u=new HOST.SpeechSynthesisUtterance(l.v),p=PROF[l.who]||[1,1];u.lang='cs-CZ';u.voice=cz;u.rate=p[0];u.pitch=p[1];u.volume=VOLV;
+    const u=new HOST.SpeechSynthesisUtterance(bezRezie(l.v)),p=PROF[l.who]||[1,1];u.lang='cs-CZ';u.voice=cz;u.rate=p[0];u.pitch=p[1];u.volume=VOLV;
     u.onstart=()=>{started=true;duck(true)};u.onend=fin;u.onerror=e=>{if(e.error==='interrupted'||e.error==='canceled')return;voiceBroken=true;setVT();fin()};
     after(120/SPEED,()=>{if(my===token)syn.speak(u)});
     after(4000,()=>{if(my===token&&!started){voiceBroken=true;setVT();try{syn.cancel()}catch(e){}after(est(l),fin)}});
@@ -560,18 +560,33 @@ function autoVis(t){const s=t.toLowerCase();
 addEventListener('resize',()=>placeNodes());
 function loop(t){if(!EMBED||window.__kvViditelny)draw(t);if(!reduce)requestAnimationFrame(loop)}
 
+/* Rejstřík výslovnosti (_data/vyslovnost.yml) – mluvený text pro kapitoly od bota se tvoří z psaného */
+const reEsc=x=>x.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');
+let VYSL=[];const vyslReady=fetch('../data/vyslovnost.json').then(r=>r.ok?r.json():[]).catch(()=>[]).then(d=>{VYSL=[];(d||[]).forEach(x=>{
+  Object.entries(x.tvary||{}).forEach(([a,b])=>VYSL.push({re:new RegExp('(^|[^\\p{L}])('+reEsc(a)+')(?![\\p{L}])','gu'),fn:()=>b,len:a.length+100}));
+  if(!x.psano||x.cti===undefined)return;
+  const cele=x.cele||/\s/.test(x.psano);
+  VYSL.push({re:new RegExp('(^|[^\\p{L}])('+reEsc(x.psano)+')'+(cele?'(?![\\p{L}])':'(\\p{L}*)'),cele?'gu':'giu'),fn:(m,suf)=>{let c=String(x.cti);if(m[0]!==m[0].toUpperCase())c=c[0].toLowerCase()+c.slice(1);return c+(suf||'')},len:x.psano.length})});
+  VYSL.sort((a,b)=>b.len-a.len)});
+function vyslov(t){let o=t;VYSL.forEach(v=>{o=o.replace(v.re,(all,pre,m,suf)=>pre+v.fn(m,typeof suf==='string'?suf:''))});
+  const RIM={I:'jedna',II:'dvě',III:'tři',IV:'čtyři',V:'pět',VI:'šest',VII:'sedm',VIII:'osm',IX:'devět',X:'deset'};
+  o=o.replace(/(\p{Lu}\p{L}+) (II|III|IV|V|VI|VII|VIII|IX|X)(?![\p{L}.])/gu,(m,w,r)=>w+' '+RIM[r]); /* Caliban IV → čtyři; Messer VI. (panovník) zůstává */
+  return o.replace(/(^|\s)([sSzZ]) (?=[SsŠšZzŽž])/g,'$1$2e ')}
+/* Režijní značky pro dabing ([vážně], [pauza], *důraz*) – náhledový hlas prohlížeče je vynechá */
+const bezRezie=t=>String(t).replace(/\[pauza\]/gi,' … ').replace(/\[[^\]]{1,40}\]/g,'').replace(/\*([^*]+)\*/g,'$1').replace(/\s{2,}/g,' ').trim();
 /* Kapitoly od bota (soubory _kapitoly/*.md na GitHubu) – přidají se mezi Příběhy */
 async function loadWebChapters(){try{
+  await vyslReady;
   const r=await fetch('../kapitoly.json',{cache:'no-store'});if(!r.ok)return;const list=await r.json();if(!Array.isArray(list)||!list.length)return;
   list.sort((a,b)=>String(b.date).localeCompare(String(a.date)));
   const items=[];
   list.forEach(k=>{
     const box=document.createElement('div');box.innerHTML=k.html||'';
     let paras=[...box.querySelectorAll('p')].map(p=>p.textContent.trim()).filter(Boolean);if(!paras.length)paras=(box.textContent||'').split(/\n\s*\n/).map(s=>s.trim()).filter(Boolean);
-    const sent=[];let lastAv=null;paras.forEach((p,pi)=>{const parts=p.split(/(?<=[.!?…]["“”»]?)\s+(?=[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ])/);parts.forEach((s,si)=>{s=s.trim();if(s){const av=autoVis(s),key=av&&JSON.stringify(av);const l={who:'ARCHIVÁŘ',t:s,v:s,p:0,h:si===parts.length-1?.9:.4};if(av&&key!==lastAv){Object.assign(l,av);lastAv=key}sent.push(l)}})});
+    const sent=[];let lastAv=null;paras.forEach((p,pi)=>{const parts=p.split(/(?<=[.!?…]["“”»]?)\s+(?=[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ])/);parts.forEach((s,si)=>{s=s.trim();if(s){const av=autoVis(s),key=av&&JSON.stringify(av);const l={who:'ARCHIVÁŘ',t:s,v:vyslov(s),p:0,h:si===parts.length-1?.9:.4};if(av&&key!==lastAv){Object.assign(l,av);lastAv=key}sent.push(l)}})});
     if(!sent.length)return;
     const id='web-'+k.slug;
-    const head={who:'ARCHIVÁŘ',t:k.title+'.',v:k.title+'.',h:1,fx:'bell'};
+    const head={who:'ARCHIVÁŘ',t:k.title+'.',v:vyslov(k.title)+'.',h:1,fx:'bell'};
     const src=(k.prameny||[]).map(p=>p.nazev+(p.typ?' ('+p.typ+')':'')).join(' · ');
     const note=(k.overeni==='OK'?'Ověřeno proti pramenům':'Čeká na ověření')+(src?'. Prameny: '+src:'');
     S.push({id,label:k.title,sub:[k.era,k.herni_rok].filter(Boolean).join(' · '),type:'lines',mood:'kapitola',vis:'orbit',lines:[head,...sent],note});
