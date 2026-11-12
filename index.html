@@ -23,6 +23,44 @@ sekce: domu
   </aside>
 </section>
 
+{% assign svatky = site.encyklopedie | where: "sekce", "svatky" %}
+<section class="blok domu-svatek" id="domu-svatek" hidden>
+  <a class="svatek-pruh" href="#">
+    <span class="sv-kdy"></span>
+    <span class="sv-nazev"></span>
+    <span class="sv-perex"></span>
+    <span class="sv-dal">Číst o svátku →</span>
+  </a>
+</section>
+<script>
+(function () {
+  var sv = [{% for s in svatky %}{% if s.kdy_od %}{ n: {{ s.nazev | jsonify }}, st: {{ s.stitek | jsonify }}, p: {{ s.perex | truncate: 160 | jsonify }}, u: {{ s.url | relative_url | jsonify }}, od: {{ s.kdy_od | jsonify }}, do: {{ s.kdy_do | default: s.kdy_od | jsonify }} }{% unless forloop.last %},{% endunless %}{% endif %}{% endfor %}];
+  var dnes = new Date(); dnes.setHours(0, 0, 0, 0);
+  function datum(md, rok) { var c = md.split('-'); return new Date(rok, +c[0] - 1, +c[1]); }
+  var nej = null;
+  sv.forEach(function (s) {
+    [dnes.getFullYear() - 1, dnes.getFullYear(), dnes.getFullYear() + 1].forEach(function (r) {
+      var a = datum(s.od, r), b = datum(s.do, r); if (b < a) b = datum(s.do, r + 1);
+      var dni = Math.round((a - dnes) / 864e5);
+      var probiha = dnes >= a && dnes <= b;
+      if (probiha || (dni > 0 && dni <= 45)) {
+        var skore = probiha ? -1 : dni;
+        if (!nej || skore < nej.skore) nej = { s: s, dni: dni, probiha: probiha, skore: skore, rok: a.getFullYear() };
+      }
+    });
+  });
+  var box = document.getElementById('domu-svatek');
+  if (!nej || !box) return;
+  var a = box.querySelector('a');
+  a.href = nej.s.u;
+  function dny(n) { return n === 1 ? 'zítra' : 'za ' + n + (n < 5 ? ' dny' : ' dní'); }
+  box.querySelector('.sv-kdy').textContent = (nej.probiha ? 'Právě slavíme' : 'Blíží se svátek · ' + dny(nej.dni)) + ' · ' + nej.s.st + ' ' + (nej.rok + 930);
+  box.querySelector('.sv-nazev').textContent = nej.s.n;
+  box.querySelector('.sv-perex').textContent = nej.s.p;
+  box.hidden = false;
+})();
+</script>
+
 <section class="blok">
   <h2 class="domu-nadpis">Co je nového</h2>
   <div class="karty domu-karty">

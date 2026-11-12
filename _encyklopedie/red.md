@@ -4,6 +4,8 @@ sekce: svatky
 poradi: 1
 stitek: Konec ledna až začátek února
 perex: Po celém impériu se každoročně schovávají miliony zlatě zdobených červených obálek. Tradici převzali i Banu a schovávají obálky na počest Cassy, patrona štěstí.
+kdy_od: '01-20'
+kdy_do: '02-10'
 kapitoly: []
 zdroje:
 - nazev: Red Festival

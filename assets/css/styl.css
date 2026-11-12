@@ -598,3 +598,13 @@ a.os-odkaz:hover { color: var(--akcent); }
 .udalost.hra { border-left: 3px solid #7fd0ff; padding-left: .8rem; }
 .ud-hra { font-family: var(--label); font-size: .8rem; letter-spacing: .06em; text-transform: uppercase; color: #7fd0ff; margin: 0 0 .2rem; }
 .op-bod.hra::before { background: #7fd0ff !important; border-color: #7fd0ff !important; box-shadow: 0 0 12px rgba(127,208,255,.6) !important; }
+
+/* Blížící se svátek na úvodní stránce */
+.domu-svatek { padding-top: 0; }
+.svatek-pruh { display: grid; grid-template-columns: 1fr auto; gap: .2rem 1.5rem; align-items: center; padding: 1.1rem 1.4rem; border: 1px solid var(--linka); border-left: 4px solid var(--akcent); border-radius: 10px; background: linear-gradient(100deg, rgba(246,189,75,.10), rgba(18,53,95,.45) 55%); color: var(--text); text-decoration: none; transition: border-color .2s, transform .2s; }
+.svatek-pruh:hover { border-color: var(--akcent); transform: translateY(-1px); }
+.sv-kdy { grid-column: 1 / -1; font-family: var(--label); text-transform: uppercase; letter-spacing: .06em; color: var(--akcent); font-size: .95rem; }
+.sv-nazev { font-family: var(--display); font-size: 1.7rem; font-weight: 700; }
+.sv-perex { grid-column: 1; color: var(--tlumene); font-size: 1rem; }
+.sv-dal { grid-column: 2; grid-row: 2 / span 2; font-family: var(--label); color: var(--akcent); white-space: nowrap; }
+@media (max-width: 640px) { .svatek-pruh { grid-template-columns: 1fr; } .sv-dal { grid-column: 1; grid-row: auto; } }

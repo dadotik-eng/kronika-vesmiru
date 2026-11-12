@@ -4,6 +4,8 @@ sekce: svatky
 poradi: 6
 stitek: 22. prosince
 perex: Banuský Festival záře, při kterém hoří obřadní lampy asi dva standardní dny. Lidé se k němu přidali krátce po prvním kontaktu na planetě Cestulus, když je pozvala banuská opravna lodí. Impérium svátek uznalo v roce 2557. Červenou a zelenou mu přidala až úspěšná reklama.
+kdy_od: '12-22'
+kdy_do: '12-23'
 kapitoly:
 - 3
 zdroje:

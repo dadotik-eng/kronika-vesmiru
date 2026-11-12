@@ -4,6 +4,7 @@ sekce: svatky
 poradi: 3
 stitek: 15. března
 perex: Začala jako oslava rané kolonie na Marsu. Název vybrali ze soutěžního návrhu jedenáctileté školačky Estelle Priya z Port Renatus. Dnes je to svátek štěstí a odvahy pokoušet osud, v barvách zlaté a zelené, a oblíbený den pro uzavírání obchodů.
+kdy_od: '03-15'
 kapitoly:
 - 1
 zdroje:
