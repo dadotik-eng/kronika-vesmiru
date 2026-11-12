@@ -107,7 +107,8 @@ popis: Interaktivní mapa 90 hvězdných soustav a skokových bodů vesmíru Sta
       g.children[1].setAttribute('r', vel * 1.9 * k);
       g.children[2].setAttribute('r', vel * k);
       var t = g.children[3];
-      t.setAttribute('x', s.px + (vel + 4) * k); t.setAttribute('y', s.py + 4 * k);
+      var odsaz = g.classList.contains('m-vybrana') || g.classList.contains('m-kronika') ? vel * 1.9 + 3 : vel + 4;
+      t.setAttribute('x', s.px + odsaz * k); t.setAttribute('y', s.py + 4 * k);
       t.setAttribute('font-size', 12.5 * k);
       var ukaz = zoom > 2.1 || g.classList.contains('m-kronika') && zoom > 1.25 || g.classList.contains('m-vybrana') || g.classList.contains('m-soused');
       t.style.display = ukaz ? '' : 'none';
