@@ -53,7 +53,7 @@ popis: Kdo koho svrhl, kdo s kým spolupracoval a kdo komu předal trůn – vzt
   function esc(t) { return String(t == null ? '' : t).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
   function prijmeni(j) { var s = j.replace(/\s+[IVXL]+\.$/, '').split(' '); return s.length > 1 ? s.slice(1).join(' ') : j; }
 
-  fetch(Z + 'data/vztahy.json').then(function (r) { return r.json(); }).then(function (d) {
+  fetch(Z + 'data/vztahy.json?v=' + (document.body.dataset.verze || '')).then(function (r) { return r.json(); }).then(function (d) {
     osoby = d.osoby; vazby = d.vazby; typy = d.typy; pasma = d.pasma;
     osoby.forEach(function (o) { O[o.id] = o; o.vazby = []; });
     vazby.forEach(function (v) { if (O[v.a] && O[v.b]) { O[v.a].vazby.push(v); O[v.b].vazby.push(v); } });
