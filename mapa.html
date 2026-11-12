@@ -30,7 +30,6 @@ popis: Interaktivní mapa 90 hvězdných soustav a skokových bodů vesmíru Sta
   <div class="mapa-rozvrzeni">
     <div class="mapa-plocha" id="mapa-plocha">
       <svg id="mapa-svg" role="img" aria-label="Mapa hvězdných soustav a skokových bodů">
-        <defs id="mapa-defs"></defs>
         <g id="mapa-uzemi"></g>
         <g id="mapa-perry-vrstva"></g>
         <g id="mapa-skoky"></g>
@@ -123,28 +122,53 @@ popis: Interaktivní mapa 90 hvězdných soustav a skokových bodů vesmíru Sta
     if (s.postoupeno) return rok < s.postoupeno ? 'uee' : s.frakce;
     return s.frakce;
   }
-  // Území: každá říše jako sjednocení kruhů kolem jejích soustav – jemná výplň a ostrá hraniční čára (maska vyřízne vnitřek).
-  var R_UZ = 62, gDefs = document.getElementById('mapa-defs');
-  function obarviUzemi(rok) {
-    gUzemi.innerHTML = ''; gDefs.innerHTML = '';
-    Object.keys(UZEMI).forEach(function (fr) {
-      var cleny = soustavy.filter(function (s) { return frakceVRoce(s, rok) === fr && !(rok != null && (!s.objeven || s.objeven > rok)); });
-      if (!cleny.length) return;
-      var barva = FRAKCE[fr][1];
-      var maska = el('mask', { id: 'uz-maska-' + fr, maskUnits: 'userSpaceOnUse', x: -1e5, y: -1e5, width: 2e5, height: 2e5 });
-      maska.appendChild(el('rect', { x: -1e5, y: -1e5, width: 2e5, height: 2e5, fill: '#fff' }));
-      var g = el('g', { 'class': 'm-uz-oblast', 'data-frakce': fr }), vypln = el('g', { 'class': 'm-uz-vypln', fill: barva });
-      var hranice = el('g', { 'class': 'm-uz-hranice', fill: barva, mask: 'url(#uz-maska-' + fr + ')' });
-      cleny.forEach(function (s) {
-        vypln.appendChild(el('circle', { cx: s.px, cy: s.py, r: R_UZ }));
-        hranice.appendChild(el('circle', { cx: s.px, cy: s.py, r: R_UZ }));
-        maska.appendChild(el('circle', { cx: s.px, cy: s.py, r: R_UZ - 2, fill: '#000', 'class': 'm-uz-vnitrek' }));
+  // Území: každé soustavě patří prostor, ke kterému má nejblíž (Voronoi oříznutý kruhem R_UZ).
+  // Říše = sjednocení buněk jejích soustav; hranice se kreslí jen tam, kde sousedí jiná říše nebo prázdno.
+  var R_UZ = 115, bunky = {};
+  function spocitejBunky() {
+    soustavy.forEach(function (s) {
+      var P = [], T = [], n = 40;
+      for (var i = 0; i < n; i++) { var u = i / n * 2 * Math.PI; P.push([s.px + R_UZ * Math.cos(u), s.py + R_UZ * Math.sin(u)]); T.push(null); }
+      soustavy.forEach(function (o) {
+        if (o === s || Math.hypot(o.px - s.px, o.py - s.py) > 2 * R_UZ) return;
+        var mx = (s.px + o.px) / 2, my = (s.py + o.py) / 2, nx = o.px - s.px, ny = o.py - s.py;
+        function uvnitr(p) { return (p[0] - mx) * nx + (p[1] - my) * ny <= 0; }
+        function prusecik(p, q) { var dp = (p[0] - mx) * nx + (p[1] - my) * ny, dq = (q[0] - mx) * nx + (q[1] - my) * ny, k = dp / (dp - dq); return [p[0] + (q[0] - p[0]) * k, p[1] + (q[1] - p[1]) * k]; }
+        var NP = [], NT = [];
+        for (var i = 0; i < P.length; i++) {
+          var c = P[i], d = P[(i + 1) % P.length], ci = uvnitr(c), di = uvnitr(d);
+          if (ci) { NP.push(c); NT.push(T[i]); if (!di) { NP.push(prusecik(c, d)); NT.push(o.kod); } }
+          else if (di) { NP.push(prusecik(c, d)); NT.push(T[i]); }
+        }
+        P = NP; T = NT;
       });
-      gDefs.appendChild(maska); g.appendChild(vypln); g.appendChild(hranice); gUzemi.appendChild(g);
+      bunky[s.kod] = { P: P, T: T };
     });
-    if (vb) sirkaHranic();
   }
-  function sirkaHranic() { var k = meritko(); gDefs.querySelectorAll('.m-uz-vnitrek').forEach(function (c) { c.setAttribute('r', R_UZ - 1.4 * k); }); }
+  function obarviUzemi(rok) {
+    if (!Object.keys(bunky).length) spocitejBunky();
+    gUzemi.innerHTML = '';
+    var fr = {};
+    soustavy.forEach(function (s) { fr[s.kod] = (rok != null && (!s.objeven || s.objeven > rok)) ? null : frakceVRoce(s, rok); });
+    Object.keys(UZEMI).forEach(function (f) {
+      var dVypln = '', dHranice = '';
+      soustavy.forEach(function (s) {
+        if (fr[s.kod] !== f) return;
+        var b = bunky[s.kod], P = b.P; if (P.length < 3) return;
+        dVypln += 'M' + P.map(function (p) { return p[0].toFixed(1) + ' ' + p[1].toFixed(1); }).join('L') + 'Z';
+        for (var i = 0; i < P.length; i++) {
+          if (b.T[i] && fr[b.T[i]] === f) continue;
+          var q = P[(i + 1) % P.length];
+          dHranice += 'M' + P[i][0].toFixed(1) + ' ' + P[i][1].toFixed(1) + 'L' + q[0].toFixed(1) + ' ' + q[1].toFixed(1);
+        }
+      });
+      if (!dVypln) return;
+      var g = el('g', { 'class': 'm-uz-oblast', 'data-frakce': f });
+      g.appendChild(el('path', { 'class': 'm-uz-vypln', d: dVypln, fill: FRAKCE[f][1], stroke: FRAKCE[f][1] }));
+      g.appendChild(el('path', { 'class': 'm-uz-hranice', d: dHranice, stroke: FRAKCE[f][1] }));
+      gUzemi.appendChild(g);
+    });
+  }
 
   // ---------- dějiny na mapě ----------
   var dPanel = document.getElementById('mapa-dejiny'), dRok = document.getElementById('dejiny-rok'), dHraj = document.getElementById('dejiny-hraj');
@@ -204,7 +228,6 @@ popis: Interaktivní mapa 90 hvězdných soustav a skokových bodů vesmíru Sta
     });
     gSkoky.querySelectorAll('line').forEach(function (l) { l.setAttribute('stroke-width', (l.classList.contains('m-aktivni') ? 2.4 : 1.1) * k); });
     gPerry.querySelectorAll('.m-perry-kruh').forEach(function (c) { c.setAttribute('r', 17 * k); c.setAttribute('stroke-width', 1.6 * k); c.setAttribute('stroke-dasharray', (4 * k) + ' ' + (3 * k)); });
-    sirkaHranic();
     if (perry.length) {
       var ps = perry.map(function (x) { return S[x]; }).filter(Boolean), pl = gPerry.querySelector('.m-perry-popisek');
       var cx = ps.reduce(function (a, s) { return a + s.px; }, 0) / ps.length, miny = Math.min.apply(0, ps.map(function (s) { return s.py; }));

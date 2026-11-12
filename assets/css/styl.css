@@ -743,8 +743,8 @@ a.os-odkaz:hover { color: var(--akcent); }
 .mapa-legenda i { width: .6rem; height: .6rem; border-radius: 50%; display: inline-block; }
 .mapa-legenda .leg-kronika { background: transparent; border: 2px solid var(--akcent); width: .7rem; height: .7rem; }
 #mapa-uzemi { pointer-events: none; }
-.m-uz-vypln { opacity: .1; }
-.m-uz-hranice { opacity: .55; }
+.m-uz-vypln { fill-opacity: .09; stroke-width: .6; stroke-opacity: .09; vector-effect: non-scaling-stroke; }
+.m-uz-hranice { fill: none; stroke-width: 1.6; stroke-opacity: .7; stroke-linecap: round; vector-effect: non-scaling-stroke; }
 @media (max-width: 600px) { .mapa-legenda { font-size: .75rem; gap: .1rem .6rem; padding: .35rem .5rem; } .prepinac { font-size: .92rem; padding: .38rem .8rem; } }
 .mapa-filtr { font-family: var(--label); color: var(--tlumene); display: flex; align-items: center; gap: .4rem; cursor: pointer; }
 .mapa-napoveda { position: absolute; left: .9rem; bottom: .6rem; margin: 0; font-family: var(--label); font-size: .85rem; color: var(--tlumene); opacity: .75; pointer-events: none; }
