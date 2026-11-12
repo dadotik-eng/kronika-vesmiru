@@ -172,6 +172,16 @@ def main():
         s['kronika'] = nalez
         if nalez:
             propojeno += 1
+    telesa = json.loads((KOREN / 'nastroje/mapa_telesa.json').read_text(encoding='utf-8'))
+    CESKY = {'Mercury': 'Merkur', 'Venus': 'Venuše', 'Earth': 'Země', 'Uranus': 'Uran', 'Neptune': 'Neptun',
+             'Ganymede': 'Ganymedes', 'Luna': 'Měsíc'}
+    for s in geo['soustavy']:
+        tl = telesa.get(s['kod'])
+        if tl:
+            for pl in tl['planety']:
+                pl['n'] = CESKY.get(pl['n'], pl['n'])
+                pl['m'] = sorted(CESKY.get(m, m) for m in pl['m'])
+            s['telesa'] = tl
     geo['perry'] = PERRY
     geo['milniky'] = MILNIKY
     for s in geo['soustavy']:

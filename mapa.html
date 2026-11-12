@@ -270,6 +270,31 @@ popis: Interaktivní mapa 90 hvězdných soustav a skokových bodů vesmíru Sta
     nastavVB();
     vykresliPanel(s);
   }
+  var BARVA_PL = { 'plynný obr': '#d9b38c', 'ledový obr': '#9fd3e6', 'plynný trpaslík': '#d9c28c', 'super-Jupiter': '#e0a070', 'oceánská planeta': '#5aa7e0', 'ledová planeta': '#cfe8f2', 'lávová planeta': '#e0603a', 'pouštní planeta': '#e0b060', 'smogová planeta': '#b8a070' };
+  function telesaHtml(s) {
+    var tl = s.telesa; if (!tl || !tl.planety.length) return '';
+    var pl = tl.planety.filter(function (p) { return p.d; }), maxD = Math.max.apply(0, pl.map(function (p) { return p.d; }).concat([1]));
+    var W = 300, H = 46, x0 = 18, svgH = '<svg class="mp-schema" viewBox="0 0 ' + W + ' ' + H + '" role="img" aria-label="Schéma soustavy: hvězda a planety podle vzdálenosti">'
+      + '<line x1="' + x0 + '" y1="23" x2="' + (W - 6) + '" y2="23" stroke="rgba(222,236,246,.18)"/>'
+      + '<circle cx="8" cy="23" r="7" fill="#f6d27a"/>';
+    pl.forEach(function (p) {
+      var x = x0 + 8 + Math.log(1 + p.d) / Math.log(1 + maxD) * (W - x0 - 22);
+      var r = /obr|Jupiter/.test(p.t) ? 5.5 : /trpasli|proto/.test(p.t) ? 2.5 : 3.8;
+      svgH += '<circle cx="' + x.toFixed(1) + '" cy="23" r="' + r + '" fill="' + (BARVA_PL[p.t] || '#a9b6c4') + '"' + (p.h ? ' stroke="#6fd3a0" stroke-width="1.5"' : '') + '><title>' + esc((p.n ? p.n + ' (' + p.o + ')' : p.o) + ' – ' + p.t + ', ' + p.d + ' AU') + '</title></circle>';
+    });
+    svgH += '</svg>';
+    var h = '<h3>Planety (' + tl.planety.length + ')</h3>' + svgH
+      + '<p class="mp-hvezda">' + esc(tl.hvezdy.join(' + ') || 'hvězda') + (tl.pasy ? ' · pásy asteroidů: ' + tl.pasy : '') + '</p><ul class="mp-planety">';
+    tl.planety.forEach(function (p) {
+      h += '<li><b>' + esc(p.n || p.o) + '</b>' + (p.n ? ' <span>' + esc(p.o) + '</span>' : '')
+        + ' – ' + esc(p.t) + (p.d ? ', ' + String(p.d).replace('.', ',') + ' AU' : '')
+        + (p.h ? ' <i class="mp-obyv">obyvatelná</i>' : '') + (p.f ? ' <i class="mp-fca">chráněná</i>' : '')
+        + (p.m.length ? '<br><small>měsíce: ' + esc(p.m.join(', ')) + '</small>' : '') + '</li>';
+    });
+    h += '</ul>';
+    if (tl.stanice && tl.stanice.length) h += '<p class="mp-stanice"><span>Stanice:</span> ' + esc(tl.stanice.join(', ')) + '</p>';
+    return h;
+  }
   function vykresliPanel(s) {
     var f = FRAKCE[s.frakce] || FRAKCE.unc;
     var h = '<p class="mp-stitek" style="--barva:' + f[1] + '"><i></i>' + f[0] + ' · ' + (s.typ === 'BINARY' ? 'dvojhvězda' : 'jedna hvězda') + '</p>';
@@ -287,6 +312,7 @@ popis: Interaktivní mapa 90 hvězdných soustav a skokových bodů vesmíru Sta
     if (s.mesice) u.push('<div><dt>Měsíce</dt><dd>' + s.mesice + '</dd></div>');
     if (s.stanice) u.push('<div><dt>Stanice</dt><dd>' + s.stanice + '</dd></div>');
     if (u.length) h += '<dl class="mp-udaje">' + u.join('') + '</dl>';
+    h += telesaHtml(s);
     h += '<h3>Skokové body</h3>';
     h += s.sousede.length ? '<p class="mp-skoky">' + s.sousede.map(function (k) { return S[k]; }).sort(function (a, b) { return a.nazev.localeCompare(b.nazev, 'cs'); }).map(function (n) {
       return '<button type="button" class="mp-skok" data-kod="' + esc(n.kod) + '" style="--barva:' + (FRAKCE[n.frakce] || FRAKCE.unc)[1] + '">' + esc(n.nazev.replace(/\s*\(.*\)$/, '')) + '</button>';
