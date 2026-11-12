@@ -283,27 +283,36 @@
   function nactiIndex() {
     if (index) return index;
     var j = function (u) { return fetch(ZAKLAD + u).then(function (r) { return r.ok ? r.json() : []; }).catch(function () { return []; }); };
-    index = Promise.all([j('data/osoby.json'), j('data/udalosti.json'), j('data/pojmy.json'), j('kapitoly.json'), j('data/dejiny.json')]).then(function (d) {
+    index = Promise.all([j('data/osoby.json'), j('data/udalosti.json'), j('data/pojmy.json'), j('kapitoly.json'), j('data/dejiny.json'), j('novinky.json')]).then(function (d) {
       var vse = [];
-      d[0].forEach(function (o) { vse.push({ t: o.jmeno, p: o.role + (o.narozeni && o.narozeni !== 'neznámo' ? ' · ' + o.narozeni : ''), u: ZAKLAD + 'osobnosti/#' + o.id, k: 'Osoba' }); });
+      d[0].forEach(function (o) { vse.push({ t: o.jmeno, p: o.role + (o.narozeni && o.narozeni !== 'neznámo' ? ' · ' + o.narozeni : ''), u: ZAKLAD + 'osobnosti/' + o.id + '/', k: 'Osoba' }); });
       d[1].forEach(function (u) { vse.push({ t: u.titul, p: (u.datum || Math.floor(u.rok)) + '', u: ZAKLAD + 'casova-osa/#' + u.id, k: 'Událost' }); });
       (d[2] || []).forEach(function (p) { vse.push({ t: p.termin, p: p.vysvetleni, u: ZAKLAD + 'encyklopedie/#pojmy', k: 'Pojem' }); });
       (d[3] || []).forEach(function (k) { vse.push({ t: k.title, p: k.popis || '', u: ZAKLAD + 'kapitoly/' + k.slug + '/', k: 'Kapitola' }); });
-      (d[4] || []).forEach(function (k) { vse.push({ t: (k.rim ? k.rim + '. ' : '') + k.title, p: k.rozpeti || '', u: ZAKLAD + 'archiv/#' + k.hraj, k: 'Poslech' }); });
-      vse.forEach(function (x) { x.h = (x.t + ' ' + x.p).toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, ''); });
+      (d[4] || []).forEach(function (k) { vse.push({ t: (k.rim ? k.rim + '. ' : '') + k.title, p: (k.rozpeti || '') + (k.era ? ' · ' + k.era : ''), u: ZAKLAD + 'dejiny/' + k.hraj + '/', k: 'Dějiny' }); });
+      ((d[5] && d[5].polozky) || []).forEach(function (n) {
+        var u = ZAKLAD + String(n.cesta || '').replace(/^\//, '');
+        if (n.druh === 'heslo') vse.push({ t: n.nazev, p: n.perex || '', u: u, k: 'Heslo' });
+        else if (n.druh === 'rasa') vse.push({ t: n.nazev, p: n.perex || '', u: u, k: 'Rasa' });
+      });
+      vse.forEach(function (x) { x.n = bezDiakritiky(x.t); x.h = x.n + ' ' + bezDiakritiky(x.p); });
       return vse;
     });
     return index;
   }
   hp.addEventListener('focus', nactiIndex);
   hp.addEventListener('input', function () {
-    var q = hp.value.trim().toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');
+    var q = bezDiakritiky(hp.value.trim());
     if (q.length < 2) { vys.hidden = true; return; }
     nactiIndex().then(function (vse) {
-      var slova = q.split(/\s+/), nal = vse.filter(function (x) { return slova.every(function (s) { return x.h.indexOf(s) >= 0; }); }).slice(0, 12);
+      var slova = q.split(/\s+/), vsechny = vse.filter(function (x) { return slova.every(function (s) { return x.h.indexOf(s) >= 0; }); });
+      // Pořadí: název začíná dotazem → název obsahuje všechna slova → shoda jen v popisu
+      function skore(x) { return x.n.indexOf(q) === 0 ? 0 : (slova.every(function (s) { return x.n.indexOf(s) >= 0; }) ? 1 : 2); }
+      vsechny.sort(function (a, b) { return skore(a) - skore(b); });
+      var nal = vsechny.slice(0, 12);
       vys.innerHTML = nal.length ? nal.map(function (x) {
-        return '<a href="' + x.u + '"><span class="v-druh">' + x.k + '</span><b>' + esc(x.t) + '</b><span class="v-pop">' + esc(x.p.slice(0, 90)) + '</span></a>';
-      }).join('') : '<p class="v-nic">Nic jsme nenašli.</p>';
+        return '<a href="' + x.u + '"><span class="v-druh">' + x.k + '</span><b>' + esc(x.t) + '</b><span class="v-pop">' + esc(x.p.slice(0, 90)) + (x.p.length > 90 ? '…' : '') + '</span></a>';
+      }).join('') + (vsechny.length > 12 ? '<p class="v-nic">a dalších ' + (vsechny.length - 12) + ' – zpřesni hledání</p>' : '') : '<p class="v-nic">Nic jsme nenašli.</p>';
       vys.hidden = false;
     });
   });
@@ -312,6 +321,7 @@
     if (e.key === 'Enter') { var a = vys.querySelector('a'); if (a) a.click(); }
   });
   document.addEventListener('click', function (e) { if (!e.target.closest('.hledani')) vys.hidden = true; else if (e.target.closest('.vysledky a')) { vys.hidden = true; hp.value = ''; } });
+  function bezDiakritiky(s) { return String(s || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, ''); }
   function esc(t) { return String(t).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
 
   /* ---------- Vysvětlivky pojmů v textu ---------- */
