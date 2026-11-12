@@ -21,6 +21,7 @@ layout: default
   <section class="text prolinkovat rasa-panel" id="historie" role="tabpanel" aria-labelledby="tab-historie">{{ content }}</section>
   <section class="text prolinkovat rasa-panel" id="biologie" role="tabpanel" aria-labelledby="tab-biologie" hidden>{{ page.biologie | markdownify }}</section>
 
+  {% include na-mape.html url=page.url %}
   {% include prameny.html seznam=page.zdroje %}
   <nav class="cteni-dalsi">
     {% for r in rasy %}{% if r.url == page.url %}{% assign i = forloop.index0 %}{% endif %}{% endfor %}

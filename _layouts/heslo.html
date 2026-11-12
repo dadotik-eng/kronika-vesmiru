@@ -6,6 +6,7 @@ layout: default
   <p class="nadtitul"><a href="{{ '/encyklopedie/' | relative_url }}">Encyklopedie</a> · <a href="{{ '/encyklopedie/#' | append: page.sekce | relative_url }}">{{ enc.nazev }}</a> · {{ page.stitek }}</p>
   <h1>{{ page.nazev }}</h1>
   <div class="text prolinkovat">{{ content }}</div>
+  {% include na-mape.html url=page.url %}
   {% if page.kapitoly.size > 0 %}
   <section class="souvisi"><h2>V kronice</h2><ul>
     {% for n in page.kapitoly %}{% assign i = n | minus: 1 %}{% assign d = site.data.dejiny[i] %}<li><a href="{{ '/dejiny/' | append: d.hraj | append: '/' | relative_url }}">Kapitola {{ d.rim }}. {{ d.title }}</a> · <a href="{{ '/archiv/#' | append: d.hraj | relative_url }}">▶ poslechnout</a></li>{% endfor %}

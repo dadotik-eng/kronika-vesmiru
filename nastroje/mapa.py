@@ -138,6 +138,15 @@ def main():
         if nalez:
             propojeno += 1
     geo['perry'] = PERRY
+    # obrácený rejstřík pro odkazy „Na hvězdné mapě“ na ostatních stránkách: url → [[kód, název], …]
+    rejstrik = {}
+    for s in geo['soustavy']:
+        kratky = re.sub(r'\s*\(.*\)$', '', s['nazev'])
+        for sez in s['kronika'].values():
+            for x in sez:
+                rejstrik.setdefault(x['u'], []).append([s['kod'], kratky])
+    rejstrik = {u: v[:5] for u, v in sorted(rejstrik.items())}
+    (KOREN / '_data/mapa_odkazy.json').write_text(json.dumps(rejstrik, ensure_ascii=False, indent=0) + '\n', encoding='utf-8')
     (KOREN / 'data').mkdir(exist_ok=True)
     (KOREN / 'data/mapa.json').write_text(json.dumps(geo, ensure_ascii=False, separators=(',', ':')) + '\n', encoding='utf-8')
     print(f'Mapa: {len(geo["soustavy"])} soustav, {len(geo["skoky"])} skoků, {propojeno} soustav propojeno s kronikou.')
