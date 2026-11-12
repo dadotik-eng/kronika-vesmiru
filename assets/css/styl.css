@@ -699,3 +699,24 @@ a.os-odkaz:hover { color: var(--akcent); }
 .vz-top { list-style: none; padding: 0; margin: 0; display: grid; gap: .35rem; }
 .vz-top li { display: flex; align-items: center; justify-content: space-between; gap: .5rem; }
 .vz-top span { font-family: var(--label); color: var(--tlumene); }
+
+/* Mapa – území, Perryho linie, trasa */
+#mapa-uzemi { opacity: .2; pointer-events: none; }
+#mapa-perry-vrstva { display: none; pointer-events: none; }
+#mapa-svg.m-ukaz-perry #mapa-perry-vrstva { display: inline; }
+.m-perry-kruh { fill: none; stroke: #f6bd4b; }
+.m-perry-popisek { fill: #f6bd4b; font-family: var(--label); letter-spacing: .12em; text-transform: uppercase; text-anchor: middle; paint-order: stroke; stroke: rgba(7,15,31,.9); stroke-width: 3px; }
+.mp-perry { margin: 0 0 .6rem; padding: .45rem .65rem; border: 1px dashed rgba(246,189,75,.6); border-radius: 8px; font-size: .95rem; color: var(--text); }
+.mp-trasa-tl { display: flex; gap: .4rem; margin: .8rem 0 0; }
+.mapa-trasa { margin: 0 0 1rem; border: 1px solid var(--linka); border-radius: 10px; background: rgba(7,15,31,.45); padding: .3rem 1rem; }
+.mapa-trasa summary { cursor: pointer; font-family: var(--label); text-transform: uppercase; letter-spacing: .08em; color: var(--akcent); padding: .5rem 0; }
+.trasa-radek { display: flex; flex-wrap: wrap; align-items: center; gap: .6rem 1rem; padding: .3rem 0 .6rem; }
+.trasa-radek label { font-family: var(--label); color: var(--tlumene); display: flex; align-items: center; gap: .4rem; }
+.trasa-radek select { background: rgba(7,15,31,.8); color: var(--text); border: 1px solid var(--linka); border-radius: 8px; padding: .4rem .6rem; font: inherit; }
+.trasa-vysledek p { margin: .3rem 0 .6rem; line-height: 2; }
+.trasa-sipka { color: var(--tlumene); margin: 0 .3rem; }
+.trasa-pozor { color: #f0a080; line-height: 1.5 !important; }
+.trasa-pozn { color: var(--tlumene); font-size: .85rem; line-height: 1.4 !important; }
+.m-skok.m-trasa { stroke: #7ff0ff; stroke-dasharray: none; }
+#mapa-svg.m-ma-trasu .m-skok:not(.m-trasa) { opacity: .35; }
+.m-uzel.m-na-trase .m-prstenec { stroke: #7ff0ff; stroke-width: 1.6; fill: rgba(127,240,255,.12); }

@@ -27,6 +27,9 @@ NEJEDNOZNACNE = {
 }
 
 
+# Perryho linie – osm sporných soustav za studené války s Xi'any (Galactapedie: Perry Line).
+PERRY = ['GURZIL', 'HORUS', 'OYA', 'TOHIL', 'HADUR', 'INDRA', 'PALLAS', 'VIRTUS']
+
 # Ruční doplnění tam, kde se jméno soustavy kryje se jménem osoby (text ho nedokáže odlišit).
 DOPLNIT = {
     'CROSHAW': ['/dejiny/kap-2/', '/osobnosti/nick-croshaw/'],
@@ -134,6 +137,7 @@ def main():
         s['kronika'] = nalez
         if nalez:
             propojeno += 1
+    geo['perry'] = PERRY
     (KOREN / 'data').mkdir(exist_ok=True)
     (KOREN / 'data/mapa.json').write_text(json.dumps(geo, ensure_ascii=False, separators=(',', ':')) + '\n', encoding='utf-8')
     print(f'Mapa: {len(geo["soustavy"])} soustav, {len(geo["skoky"])} skoků, {propojeno} soustav propojeno s kronikou.')
