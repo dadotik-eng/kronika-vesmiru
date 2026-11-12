@@ -738,3 +738,15 @@ a.os-odkaz:hover { color: var(--akcent); }
 .m-uzel.m-duch { opacity: .22; }
 .m-uzel.m-duch .m-popisek { display: none; }
 .mp-dejiny { margin: 0 0 .6rem; font-family: var(--label); color: var(--tlumene); font-size: .95rem; }
+
+/* Mapa – planety v panelu */
+.mp-schema { width: 100%; height: auto; display: block; margin: .2rem 0 .3rem; }
+.mp-hvezda { margin: 0 0 .5rem; font-family: var(--label); font-size: .9rem; color: var(--tlumene); }
+.mp-planety { list-style: none; margin: 0; padding: 0; display: grid; gap: .35rem; font-size: .95rem; line-height: 1.35; }
+.mp-planety span { color: var(--tlumene); font-family: var(--label); font-size: .85rem; }
+.mp-planety small { color: var(--tlumene); }
+.mp-obyv, .mp-fca { font-style: normal; font-family: var(--label); font-size: .75rem; text-transform: uppercase; letter-spacing: .06em; padding: .05rem .35rem; border-radius: 4px; margin-left: .2rem; }
+.mp-obyv { color: #6fd3a0; border: 1px solid rgba(111,211,160,.5); }
+.mp-fca { color: #b99ae0; border: 1px solid rgba(185,154,224,.5); }
+.mp-stanice { margin: .6rem 0 0; font-size: .92rem; color: var(--tlumene); }
+.mp-stanice span { font-family: var(--label); text-transform: uppercase; letter-spacing: .06em; font-size: .8rem; color: var(--akcent); }

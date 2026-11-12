@@ -17,6 +17,7 @@ on:
       - 'nastroje/nahledy.py'
       - 'nastroje/mapa.py'
       - 'nastroje/mapa_soustavy.json'
+      - 'nastroje/mapa_telesa.json'
       - '_data/mapa_popisy.yml'
       - '_data/vztahy.yml'
       - 'nastroje/vztahy.py'
