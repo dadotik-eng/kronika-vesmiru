@@ -1,0 +1,201 @@
+---
+layout: default
+title: Hvězdná mapa
+permalink: /mapa/
+sekce: mapa
+popis: Interaktivní mapa 90 hvězdných soustav a skokových bodů vesmíru Star Citizen – s odkazy na kapitoly, události a osobnosti kroniky.
+---
+<section class="blok mapa-blok">
+  <p class="nadtitul">Hvězdná mapa</p>
+  <h1>Kde se to všechno stalo</h1>
+  <p class="perex">90 soustav a 132 skokových tras. Klikni na soustavu – dozvíš se, komu patří, kam z ní vedou skoky a co se v ní v dějinách kroniky odehrálo.</p>
+
+  <div class="mapa-ovladani">
+    <label class="mapa-hledat"><span class="sr">Najít soustavu</span>
+      <select id="mapa-vyber"><option value="">Najít soustavu…</option></select>
+    </label>
+    <label class="mapa-filtr"><input type="checkbox" id="mapa-jen-kronika"> jen soustavy z kroniky</label>
+    <ul class="mapa-legenda" id="mapa-legenda" aria-label="Legenda"></ul>
+  </div>
+
+  <div class="mapa-rozvrzeni">
+    <div class="mapa-plocha" id="mapa-plocha">
+      <svg id="mapa-svg" role="img" aria-label="Mapa hvězdných soustav a skokových bodů">
+        <g id="mapa-skoky"></g>
+        <g id="mapa-uzly"></g>
+      </svg>
+      <div class="mapa-zoom">
+        <button type="button" class="tlacitko" data-zoom="1.4" aria-label="Přiblížit">+</button>
+        <button type="button" class="tlacitko" data-zoom="0.714" aria-label="Oddálit">−</button>
+        <button type="button" class="tlacitko" data-zoom="0" aria-label="Celá mapa">⤢</button>
+      </div>
+      <p class="mapa-napoveda">Táhni pro posun · kolečko nebo dva prsty pro přiblížení</p>
+    </div>
+    <aside class="mapa-panel" id="mapa-panel" aria-live="polite"></aside>
+  </div>
+  <p class="mapa-zdroj">Polohy soustav a skokové body podle oficiální Star Map RSI (data přes api.star-citizen.wiki, archiv Archiváře). Mapa je zjednodušený pohled shora; vzdálenosti jsou orientační. Vanduulské soustavy armáda UEE utajuje.</p>
+</section>
+
+<script>
+(function () {
+  var Z = document.body.dataset.zaklad || '/';
+  var svg = document.getElementById('mapa-svg');
+  if (!svg) return;
+  var gSkoky = document.getElementById('mapa-skoky'), gUzly = document.getElementById('mapa-uzly');
+  var panel = document.getElementById('mapa-panel'), plocha = document.getElementById('mapa-plocha');
+  var vyber = document.getElementById('mapa-vyber'), jenKronika = document.getElementById('mapa-jen-kronika');
+  var NS = 'http://www.w3.org/2000/svg';
+  var FRAKCE = {
+    uee: ['UEE', '#7fb8d8'], xian: ["Xi'ani", '#6fd3a0'], banu: ['Banu', '#f6bd4b'],
+    vncl: ['Vanduulové', '#ef5a5a'], unc: ['Nezabrané', '#b3c4d4'], dev: ['Chráněné (Fair Chance)', '#b99ae0']
+  };
+  var DRUHY = [['kapitola', 'Kapitoly'], ['dejiny', 'Dějiny'], ['udalost', 'Události'], ['osoba', 'Osobnosti'], ['heslo', 'Encyklopedie'], ['rasa', 'Rasy']];
+  var M = 10, S = {}, soustavy = [], skoky = [], vybrana = null, vb = null, cely = null;
+
+  function el(n, a) { var e = document.createElementNS(NS, n); for (var k in a) e.setAttribute(k, a[k]); return e; }
+  function esc(t) { return String(t == null ? '' : t).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
+  function maKroniku(s) { return Object.keys(s.kronika || {}).length > 0; }
+
+  fetch(Z + 'data/mapa.json').then(function (r) { return r.json(); }).then(function (d) {
+    soustavy = d.soustavy; skoky = d.skoky;
+    soustavy.forEach(function (s) { S[s.kod] = s; s.sousede = []; s.px = s.x * M; s.py = -s.y * M; });
+    skoky.forEach(function (e) { var a = S[e[0]], b = S[e[1]]; if (a && b) { a.sousede.push(b.kod); b.sousede.push(a.kod); } });
+    var xs = soustavy.map(function (s) { return s.px; }), ys = soustavy.map(function (s) { return s.py; });
+    var minx = Math.min.apply(0, xs), maxx = Math.max.apply(0, xs), miny = Math.min.apply(0, ys), maxy = Math.max.apply(0, ys);
+    cely = { x: minx - 60, y: miny - 60, w: maxx - minx + 120, h: maxy - miny + 120 };
+    kresli();
+    // legenda a výběr
+    var leg = document.getElementById('mapa-legenda');
+    Object.keys(FRAKCE).forEach(function (k) { leg.insertAdjacentHTML('beforeend', '<li><i style="background:' + FRAKCE[k][1] + '"></i>' + FRAKCE[k][0] + '</li>'); });
+    leg.insertAdjacentHTML('beforeend', '<li><i class="leg-kronika"></i>v kronice</li>');
+    soustavy.slice().sort(function (a, b) { return a.nazev.localeCompare(b.nazev, 'cs'); }).forEach(function (s) {
+      vyber.insertAdjacentHTML('beforeend', '<option value="' + esc(s.kod) + '">' + esc(s.nazev) + (maKroniku(s) ? ' ★' : '') + '</option>');
+    });
+    var start = decodeURIComponent((location.hash || '').slice(1)).toUpperCase();
+    zobrazCely();
+    vyberSoustavu(S[start] ? start : 'SOL', !!S[start]);
+  }).catch(function () { panel.innerHTML = '<p>Mapu se nepodařilo načíst.</p>'; });
+
+  function kresli() {
+    skoky.forEach(function (e) {
+      var a = S[e[0]], b = S[e[1]]; if (!a || !b) return;
+      var l = el('line', { x1: a.px, y1: a.py, x2: b.px, y2: b.py, 'class': 'm-skok' + (a.stav === 'M' || b.stav === 'M' ? ' m-utajeny' : '') });
+      l.dataset.a = a.kod; l.dataset.b = b.kod; gSkoky.appendChild(l);
+    });
+    soustavy.forEach(function (s) {
+      var f = FRAKCE[s.frakce] || FRAKCE.unc;
+      var g = el('g', { 'class': 'm-uzel' + (maKroniku(s) ? ' m-kronika' : '') + (s.stav === 'M' ? ' m-utajena' : '') + (s.stav === 'N' ? ' m-neuplna' : ''), tabindex: 0, role: 'button', 'aria-label': s.nazev });
+      g.dataset.kod = s.kod;
+      var t = el('title', {}); t.textContent = s.nazev + ' · ' + f[0]; g.appendChild(t);
+      g.appendChild(el('circle', { cx: s.px, cy: s.py, r: 1, 'class': 'm-prstenec' }));
+      g.appendChild(el('circle', { cx: s.px, cy: s.py, r: 1, 'class': 'm-bod', fill: f[1] }));
+      var tx = el('text', { x: s.px, y: s.py, 'class': 'm-popisek' }); tx.textContent = s.nazev.replace(/\s*\(.*\)$/, ''); g.appendChild(tx);
+      g.addEventListener('click', function (ev) { if (!tazeno) vyberSoustavu(s.kod, true); ev.stopPropagation(); });
+      g.addEventListener('keydown', function (ev) { if (ev.key === 'Enter' || ev.key === ' ') { ev.preventDefault(); vyberSoustavu(s.kod, true); } });
+      gUzly.appendChild(g);
+    });
+  }
+
+  // ---------- zobrazení, posun, přiblížení ----------
+  function meritko() { var w = svg.clientWidth || 800; return vb.w / w; } // jednotek mapy na pixel
+  function nastavVB() {
+    svg.setAttribute('viewBox', vb.x + ' ' + vb.y + ' ' + vb.w + ' ' + vb.h);
+    var k = meritko(), zoom = cely.w / vb.w;
+    gUzly.querySelectorAll('.m-uzel').forEach(function (g) {
+      var s = S[g.dataset.kod], vel = g.classList.contains('m-kronika') ? 6 : 4.5;
+      if (s.kod === (vybrana && vybrana.kod)) vel = 8;
+      g.children[1].setAttribute('r', vel * 1.9 * k);
+      g.children[2].setAttribute('r', vel * k);
+      var t = g.children[3];
+      t.setAttribute('x', s.px + (vel + 4) * k); t.setAttribute('y', s.py + 4 * k);
+      t.setAttribute('font-size', 12.5 * k);
+      var ukaz = zoom > 2.1 || g.classList.contains('m-kronika') && zoom > 1.25 || g.classList.contains('m-vybrana') || g.classList.contains('m-soused');
+      t.style.display = ukaz ? '' : 'none';
+    });
+    gSkoky.querySelectorAll('line').forEach(function (l) { l.setAttribute('stroke-width', (l.classList.contains('m-aktivni') ? 2.4 : 1.1) * k); });
+  }
+  function zobrazCely() {
+    var w = plocha.clientWidth || 800, h = plocha.clientHeight || 560, pomer = w / h;
+    vb = { x: cely.x, y: cely.y, w: cely.w, h: cely.h };
+    if (vb.w / vb.h > pomer) { var nh = vb.w / pomer; vb.y -= (nh - vb.h) / 2; vb.h = nh; } else { var nw = vb.h * pomer; vb.x -= (nw - vb.w) / 2; vb.w = nw; }
+    nastavVB();
+  }
+  function priblizit(f, cx, cy) {
+    var nw = Math.min(cely.w * 2.2, Math.max(cely.w / 14, vb.w / f)), skut = vb.w / nw;
+    if (cx == null) { cx = vb.x + vb.w / 2; cy = vb.y + vb.h / 2; }
+    vb.x = cx - (cx - vb.x) / skut; vb.y = cy - (cy - vb.y) / skut; vb.w = nw; vb.h = vb.h / skut; nastavVB();
+  }
+  function naMapu(clientX, clientY) { var r = svg.getBoundingClientRect(); return { x: vb.x + (clientX - r.left) * vb.w / r.width, y: vb.y + (clientY - r.top) * vb.h / r.height }; }
+  svg.addEventListener('wheel', function (e) { e.preventDefault(); var p = naMapu(e.clientX, e.clientY); priblizit(e.deltaY < 0 ? 1.18 : 1 / 1.18, p.x, p.y); }, { passive: false });
+  var ukazatele = {}, tah = null, tazeno = false, stin = null;
+  svg.addEventListener('pointerdown', function (e) {
+    ukazatele[e.pointerId] = { x: e.clientX, y: e.clientY }; tazeno = false;
+    var ids = Object.keys(ukazatele);
+    if (ids.length === 1) tah = { x: e.clientX, y: e.clientY, vb: { x: vb.x, y: vb.y } };
+    if (ids.length === 2) { var a = ukazatele[ids[0]], b = ukazatele[ids[1]]; stin = { d: Math.hypot(a.x - b.x, a.y - b.y), w: vb.w }; }
+  });
+  svg.addEventListener('pointermove', function (e) {
+    if (!ukazatele[e.pointerId]) return;
+    ukazatele[e.pointerId] = { x: e.clientX, y: e.clientY };
+    var ids = Object.keys(ukazatele);
+    if (ids.length === 2 && stin) {
+      var a = ukazatele[ids[0]], b = ukazatele[ids[1]], d = Math.hypot(a.x - b.x, a.y - b.y);
+      var p = naMapu((a.x + b.x) / 2, (a.y + b.y) / 2); priblizit((vb.w / stin.w) * (d / stin.d), p.x, p.y); tazeno = true; return;
+    }
+    if (tah) {
+      var dx = e.clientX - tah.x, dy = e.clientY - tah.y;
+      if (Math.abs(dx) + Math.abs(dy) > 4) { tazeno = true; if (!svg.hasPointerCapture(e.pointerId)) svg.setPointerCapture(e.pointerId); }
+      if (tazeno) { var k = meritko(); vb.x = tah.vb.x - dx * k; vb.y = tah.vb.y - dy * k; nastavVB(); }
+    }
+  });
+  function konec(e) { delete ukazatele[e.pointerId]; if (Object.keys(ukazatele).length < 2) stin = null; if (!Object.keys(ukazatele).length) { tah = null; setTimeout(function () { tazeno = false; }, 0); } }
+  svg.addEventListener('pointerup', konec); svg.addEventListener('pointercancel', konec);
+  document.querySelectorAll('.mapa-zoom [data-zoom]').forEach(function (b) {
+    b.addEventListener('click', function () { var f = +b.dataset.zoom; if (f) priblizit(f); else zobrazCely(); });
+  });
+  if (window.ResizeObserver) new ResizeObserver(function () { if (vb) { var w = plocha.clientWidth, h = plocha.clientHeight; vb.h = vb.w * h / w; nastavVB(); } }).observe(plocha);
+
+  // ---------- výběr soustavy ----------
+  function vyberSoustavu(kod, vycentrovat) {
+    var s = S[kod]; if (!s) return;
+    vybrana = s; vyber.value = kod;
+    try { history.replaceState(history.state, '', '#' + kod); } catch (e) {}
+    gUzly.querySelectorAll('.m-uzel').forEach(function (g) {
+      g.classList.toggle('m-vybrana', g.dataset.kod === kod);
+      g.classList.toggle('m-soused', s.sousede.indexOf(g.dataset.kod) >= 0);
+    });
+    gSkoky.querySelectorAll('line').forEach(function (l) { l.classList.toggle('m-aktivni', l.dataset.a === kod || l.dataset.b === kod); });
+    var vybranyUzel = gUzly.querySelector('[data-kod="' + kod.replace(/"/g, '') + '"]'); if (vybranyUzel) gUzly.appendChild(vybranyUzel);
+    if (vycentrovat) { vb.x = s.px - vb.w / 2; vb.y = s.py - vb.h / 2; if (cely.w / vb.w < 1.6) priblizit(1.8, s.px, s.py); }
+    nastavVB();
+    vykresliPanel(s);
+  }
+  function vykresliPanel(s) {
+    var f = FRAKCE[s.frakce] || FRAKCE.unc;
+    var h = '<p class="mp-stitek" style="--barva:' + f[1] + '"><i></i>' + f[0] + ' · ' + (s.typ === 'BINARY' ? 'dvojhvězda' : 'jedna hvězda') + '</p>';
+    h += '<h2>' + esc(s.nazev) + '</h2>';
+    if (s.popis) h += '<p class="mp-popis">' + esc(s.popis) + '</p>';
+    var u = [];
+    if (s.planety) u.push('<div><dt>Planety</dt><dd>' + s.planety + '</dd></div>');
+    if (s.mesice) u.push('<div><dt>Měsíce</dt><dd>' + s.mesice + '</dd></div>');
+    if (s.stanice) u.push('<div><dt>Stanice</dt><dd>' + s.stanice + '</dd></div>');
+    if (u.length) h += '<dl class="mp-udaje">' + u.join('') + '</dl>';
+    h += '<h3>Skokové body</h3>';
+    h += s.sousede.length ? '<p class="mp-skoky">' + s.sousede.map(function (k) { return S[k]; }).sort(function (a, b) { return a.nazev.localeCompare(b.nazev, 'cs'); }).map(function (n) {
+      return '<button type="button" class="mp-skok" data-kod="' + esc(n.kod) + '" style="--barva:' + (FRAKCE[n.frakce] || FRAKCE.unc)[1] + '">' + esc(n.nazev.replace(/\s*\(.*\)$/, '')) + '</button>';
+    }).join('') + '</p>' : '<p class="mp-nic">' + (s.stav === 'N' ? 'Žádný známý skok – soustava je odříznutá nebo nezmapovaná.' : 'Skoky utajuje armáda UEE.') + '</p>';
+    var k = s.kronika || {}, nic = true;
+    var bloky = DRUHY.filter(function (d) { return k[d[0]] && k[d[0]].length; }).map(function (d) {
+      nic = false;
+      return '<div class="mp-skupina"><h4>' + d[1] + '</h4><ul>' + k[d[0]].map(function (x) {
+        return '<li><a href="' + Z + x.u.replace(/^\//, '') + '">' + esc(x.t) + '</a>' + (x.r != null && d[0] === 'udalost' ? ' <span>' + esc(String(x.r).split('.')[0]) + '</span>' : '') + '</li>';
+      }).join('') + '</ul></div>';
+    });
+    h += '<h3>V kronice</h3>' + (nic ? '<p class="mp-nic">O této soustavě kronika zatím nic nevypráví.</p>' : bloky.join(''));
+    panel.innerHTML = h;
+    panel.querySelectorAll('.mp-skok').forEach(function (b) { b.addEventListener('click', function () { vyberSoustavu(b.dataset.kod, true); }); });
+  }
+  vyber.addEventListener('change', function () { if (vyber.value) vyberSoustavu(vyber.value, true); });
+  jenKronika.addEventListener('change', function () { svg.classList.toggle('m-jen-kronika', jenKronika.checked); });
+})();
+</script>
