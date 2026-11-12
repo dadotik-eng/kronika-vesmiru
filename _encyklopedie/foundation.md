@@ -4,6 +4,8 @@ sekce: svatky
 poradi: 5
 stitek: Červenec
 perex: Občanský program, který po celý měsíc povzbuzuje lidi, aby se zapojili jako dobrovolníci v místních i celoimperiálních organizacích.
+kdy_od: '07-01'
+kdy_do: '07-31'
 kapitoly: []
 zdroje:
 - nazev: Foundation Festival

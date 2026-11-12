@@ -1,0 +1,45 @@
+# Po každé změně obsahu na main vyrobí chybějící nebo změněné náhledové karty
+# pro sdílení odkazů (assets/nahledy/*.jpg) a uloží je zpět do repozitáře.
+name: Náhledy
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '_osoby/**'
+      - '_encyklopedie/**'
+      - '_rasy/**'
+      - '_kapitoly/**'
+      - '_data/dejiny.yml'
+      - '_data/ery.yml'
+      - 'assets/osoby/**'
+      - 'assets/rasy/**'
+      - 'nastroje/nahledy.py'
+permissions:
+  contents: write
+concurrency:
+  group: nahledy
+  cancel-in-progress: false
+jobs:
+  nahledy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.12' }
+      - name: Knihovny
+        run: pip install --quiet "pillow>=11" pyyaml
+      - name: Vyrobit náhledy
+        run: python3 nastroje/nahledy.py
+      - name: Uložit do repozitáře
+        run: |
+          if [ -n "$(git status --porcelain assets/nahledy)" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add assets/nahledy
+            git commit -m "Náhledy pro sdílení: aktualizace"
+            git pull --rebase --quiet
+            git push
+          else
+            echo "Beze změn."
+          fi

@@ -4,6 +4,7 @@ sekce: svatky
 poradi: 4
 stitek: 12. června
 perex: Každoroční připomínka setkání s Banu v soustavě Davien 12. června 2438, kdy se lidé poprvé potkali s mimozemskou civilizací.
+kdy_od: '06-12'
 kapitoly:
 - 3
 zdroje:

@@ -4,6 +4,7 @@ sekce: svatky
 poradi: 2
 stitek: 11. února
 perex: Svátek lásky připomíná rok 2486, kdy Yuri Ilyin zmizel při pokusu dostat se zpět ke své milé Corazon Tan. Název i růžovočerné barvy pochází ze slavného filmu. Je to jeden z nejrušnějších cestovních dnů v impériu a někteří lidé toho dne posílají zprávy těm, které ztratili.
+kdy_od: '02-11'
 kapitoly: []
 zdroje:
 - nazev: Coramor
