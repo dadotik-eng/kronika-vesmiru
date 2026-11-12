@@ -55,3 +55,9 @@ exclude:
   - SABLONY.md
   - DABING.md
   - nastroje
+
+# Sociální sítě – vyplň odkaz, jakmile kanál založíš; prázdné = v patičce se neukáže
+socialni_site:
+  discord: ""
+  facebook: ""
+  youtube: ""

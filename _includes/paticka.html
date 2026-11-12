@@ -1,5 +1,9 @@
 <footer class="paticka">
   <p class="pat-odkazy"><a href="{{ '/o-projektu/' | relative_url }}">O projektu</a> · <a href="{{ '/uvod/' | relative_url }}">Poprvé tady?</a> · <a href="{{ '/encyklopedie/#pojmy' | relative_url }}">Slovníček pojmů</a></p>
+  {%- assign ss = site.socialni_site -%}
+  {%- if ss.discord != "" or ss.facebook != "" or ss.youtube != "" %}
+  <p class="pat-site">{% if ss.discord != "" %}<a href="{{ ss.discord }}" target="_blank" rel="noopener">Přidej se na Discord</a>{% endif %}{% if ss.facebook != "" %}{% if ss.discord != "" %} · {% endif %}<a href="{{ ss.facebook }}" target="_blank" rel="noopener">Facebook</a>{% endif %}{% if ss.youtube != "" %}{% if ss.discord != "" or ss.facebook != "" %} · {% endif %}<a href="{{ ss.youtube }}" target="_blank" rel="noopener">YouTube</a>{% endif %}</p>
+  {%- endif %}
   <p><strong>Hvězdná kronika je neoficiální fanouškovský projekt.</strong> Není spojena s Cloud Imperium Games ani jimi schválena.</p>
   <p>Star Citizen®, Squadron 42®, Roberts Space Industries® a RSI® jsou ochranné známky Cloud Imperium Rights LLC. Svět, postavy a události Star Citizenu patří jejich autorům.</p>
   <p>Kapitoly vznikají z oficiálních pramenů RSI (Galactapedie, Comm-Linky, Star Map); jejich znění je vlastní převyprávění.</p>
