@@ -30,6 +30,41 @@ NEJEDNOZNACNE = {
 # Perryho linie – osm sporných soustav za studené války s Xi'any (Galactapedie: Perry Line).
 PERRY = ['GURZIL', 'HORUS', 'OYA', 'TOHIL', 'HADUR', 'INDRA', 'PALLAS', 'VIRTUS']
 
+# Dějiny na mapě: rok, kdy lidstvo soustavu objevilo (Galactapedie „System“ / Star Map),
+# u soustav Banu a Xi'anů rok prvního kontaktu. None = rok neznámý.
+OBJEV = {
+    'SOL': 2075, 'CROSHAW': 2271, 'RHETOR': 2287, 'NUL': 2290, 'CALIBAN': 2341, 'NEMO': 2362, 'CENTAURI': 2365,
+    'VEGA': 2402, 'VIRGIL': 2412, 'DAVIEN': 2430, 'CATHCART': 2438, 'BREMEN': 2441, 'NEXUS': 2445, 'COREL': 2449,
+    'FERRON': 2460, 'CANO': 2463, 'FORA': 2463, 'KILIAN': 2463, 'MIN': 2473, 'TIBER': 2474, 'TARANIS': 2478,
+    'ORETANI': 2481, 'IDRIS': 2493, 'PYRO': 2493, 'MAGNUS': 2499, 'HADES': 2515, 'TERRA': 2516, 'BAKER': 2522,
+    'HADUR': 2529, 'HELIOS': 2529, 'CHARON': 2538, 'GURZIL': 2539, 'CASTRA': 2544, 'NYX': 2582, 'LEIR': 2677,
+    'TOHIL': 2716, 'GARRON': 2784, 'OSIRIS': 2788, 'KELLOG': 2811, 'GENESIS': 2812, 'TYROL': 2823, 'STANTON': 2851,
+    'OSO': 2861, 'KALLIS': 2921, 'TAMSA': 2943,
+}
+KONTAKT = {'banu': 2438, 'xian': 2530}      # soustavy Banu a Xi'anů lidstvo zná od prvního kontaktu
+ZTRACENO = {'ORION': 2712, 'TIBER': 2736, 'VIRGIL': 2737, 'CALIBAN': 2884}   # padly Vanduulům
+POSTOUPENO = {'HADUR': 2793, 'INDRA': 2793, 'PALLAS': 2793, 'VIRTUS': 2793}  # Pakt o Perryho linii → Xi'ani
+MILNIKY = [
+    [2075, 'Začíná lidské dobývání Sluneční soustavy.'],
+    [2125, 'Tragédie na Marsu – zhroutí se rozestavěná atmosféra.'],
+    [2271, 'Nick Croshaw objevuje první skokový bod – lidstvo opouští Sol.'],
+    [2380, 'Vznikají Spojené národy Země; Project Far Star žene průzkum dál.'],
+    [2438, 'První kontakt: Banu v soustavě Davien.'],
+    [2530, 'První setkání s Xi\'any v soustavě Pallas – začíná studená válka.'],
+    [2542, 'Generál Armistead Perry zavádí Perryho linii – osm sporných soustav.'],
+    [2546, 'Ivar Messer se chápe moci – začíná éra Messerů.'],
+    [2681, 'Vanduulové vypálí kolonii na Armitage v Orionu.'],
+    [2712, 'Vanduulská invaze – UEE se vzdává Orionu.'],
+    [2736, 'Po letech obléhání padá Tiber.'],
+    [2737, 'Vanduulové plení Virgil; Vega se ocitá na hranici.'],
+    [2792, 'Masakr na Garronu II svrhne Messery.'],
+    [2793, 'Pakt o Perryho linii: polovina soustav připadá Xi\'anům.'],
+    [2851, 'Objev soustavy Stanton – později ji vláda prodá korporacím.'],
+    [2884, 'Pád Calibanu.'],
+    [2945, 'Vanduulové útočí na Vegu II.'],
+    [2956, 'Dnešek kroniky.'],
+]
+
 # Ruční doplnění tam, kde se jméno soustavy kryje se jménem osoby (text ho nedokáže odlišit).
 DOPLNIT = {
     'CROSHAW': ['/dejiny/kap-2/', '/osobnosti/nick-croshaw/'],
@@ -138,6 +173,13 @@ def main():
         if nalez:
             propojeno += 1
     geo['perry'] = PERRY
+    geo['milniky'] = MILNIKY
+    for s in geo['soustavy']:
+        s['objeven'] = OBJEV.get(s['kod']) or KONTAKT.get(s['frakce'])
+        if s['kod'] in ZTRACENO:
+            s['ztraceno'] = ZTRACENO[s['kod']]
+        if s['kod'] in POSTOUPENO:
+            s['postoupeno'] = POSTOUPENO[s['kod']]
     # obrácený rejstřík pro odkazy „Na hvězdné mapě“ na ostatních stránkách: url → [[kód, název], …]
     rejstrik = {}
     for s in geo['soustavy']:

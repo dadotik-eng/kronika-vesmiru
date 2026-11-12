@@ -19,6 +19,13 @@ popis: Interaktivní mapa 90 hvězdných soustav a skokových bodů vesmíru Sta
     <label class="mapa-filtr"><input type="checkbox" id="mapa-perry"> Perryho linie</label>
     <ul class="mapa-legenda" id="mapa-legenda" aria-label="Legenda"></ul>
   </div>
+  <div class="mapa-dejiny" id="mapa-dejiny">
+    <label class="mapa-filtr"><input type="checkbox" id="dejiny-zap"> Dějiny na mapě</label>
+    <button type="button" class="tlacitko" id="dejiny-hraj" aria-label="Přehrát dějiny" disabled>▶</button>
+    <input type="range" id="dejiny-rok" min="2075" max="2956" step="1" value="2956" disabled aria-label="Rok">
+    <output id="dejiny-vystup">2956</output>
+  </div>
+  <p class="dejiny-milnik" id="dejiny-milnik" hidden></p>
   <details class="mapa-trasa" id="mapa-trasa">
     <summary>Plánovač trasy – jak se dostat z jedné soustavy do druhé</summary>
     <div class="trasa-radek">
@@ -75,7 +82,7 @@ popis: Interaktivní mapa 90 hvězdných soustav a skokových bodů vesmíru Sta
   function maKroniku(s) { return Object.keys(s.kronika || {}).length > 0; }
 
   fetch(Z + 'data/mapa.json').then(function (r) { return r.json(); }).then(function (d) {
-    soustavy = d.soustavy; skoky = d.skoky; perry = d.perry || [];
+    soustavy = d.soustavy; skoky = d.skoky; perry = d.perry || []; milniky = d.milniky || [];
     soustavy.forEach(function (s) { S[s.kod] = s; s.sousede = []; s.px = s.x * M; s.py = -s.y * M; });
     skoky.forEach(function (e) { var a = S[e[0]], b = S[e[1]]; if (a && b) { a.sousede.push(b.kod); b.sousede.push(a.kod); } });
     var xs = soustavy.map(function (s) { return s.px; }), ys = soustavy.map(function (s) { return s.py; });
@@ -98,11 +105,10 @@ popis: Interaktivní mapa 90 hvězdných soustav a skokových bodů vesmíru Sta
   }).catch(function () { panel.innerHTML = '<p>Mapu se nepodařilo načíst.</p>'; });
 
   function kresli() {
-    ['uee', 'xian', 'banu', 'vncl'].forEach(function (fr) {
-      var g = el('g', { 'class': 'm-uzemi-' + fr, fill: FRAKCE[fr][1] });
-      soustavy.forEach(function (s) { if (s.frakce === fr) g.appendChild(el('circle', { cx: s.px, cy: s.py, r: 95 })); });
-      gUzemi.appendChild(g);
+    soustavy.forEach(function (s) {
+      var c = el('circle', { cx: s.px, cy: s.py, r: 95 }); c.dataset.kod = s.kod; gUzemi.appendChild(c);
     });
+    obarviUzemi(null);
     perry.forEach(function (k) {
       var s = S[k]; if (!s) return;
       gPerry.appendChild(el('circle', { cx: s.px, cy: s.py, r: 1, 'class': 'm-perry-kruh' }));
@@ -126,6 +132,60 @@ popis: Interaktivní mapa 90 hvězdných soustav a skokových bodů vesmíru Sta
       gUzly.appendChild(g);
     });
   }
+
+  var UZEMI = { uee: 1, xian: 1, banu: 1, vncl: 1 };
+  function frakceVRoce(s, rok) {
+    if (rok == null) return s.frakce;
+    if (s.ztraceno) return rok < s.ztraceno ? 'uee' : 'vncl';
+    if (s.postoupeno) return rok < s.postoupeno ? 'uee' : s.frakce;
+    return s.frakce;
+  }
+  function obarviUzemi(rok) {
+    gUzemi.querySelectorAll('circle').forEach(function (c) {
+      var s = S[c.dataset.kod], fr = frakceVRoce(s, rok), skryta = rok != null && (!s.objeven || s.objeven > rok);
+      c.setAttribute('fill', UZEMI[fr] && !skryta ? FRAKCE[fr][1] : 'transparent');
+    });
+  }
+
+  // ---------- dějiny na mapě ----------
+  var dZap = document.getElementById('dejiny-zap'), dRok = document.getElementById('dejiny-rok'), dHraj = document.getElementById('dejiny-hraj');
+  var dVyst = document.getElementById('dejiny-vystup'), dMil = document.getElementById('dejiny-milnik'), milniky = [], prehravani = null;
+  function ukazRok() {
+    var zap = dZap.checked, rok = zap ? +dRok.value : null;
+    dVyst.textContent = zap ? dRok.value : '';
+    svg.classList.toggle('m-dejiny', zap);
+    var znamych = 0, viditelne = {};
+    soustavy.forEach(function (s) {
+      var g = gUzly.querySelector('[data-kod="' + s.kod.replace(/"/g, '') + '"]'); if (!g) return;
+      var duch = zap && !s.objeven, skryta = zap && s.objeven && s.objeven > rok;
+      g.classList.toggle('m-duch', duch); g.style.display = skryta ? 'none' : '';
+      if (!skryta && !duch) { znamych++; viditelne[s.kod] = 1; }
+      var fr = frakceVRoce(s, rok); g.children[2].setAttribute('fill', (FRAKCE[fr] || FRAKCE.unc)[1]);
+    });
+    gSkoky.querySelectorAll('line').forEach(function (l) { l.style.display = zap && !(viditelne[l.dataset.a] && viditelne[l.dataset.b]) ? 'none' : ''; });
+    obarviUzemi(rok);
+    if (zap) {
+      var m = milniky.filter(function (x) { return x[0] <= rok; }).pop();
+      dMil.hidden = false;
+      dMil.innerHTML = '<b>' + rok + '</b> · lidstvu známých soustav: ' + znamych + (m ? ' · <span>' + m[0] + ': ' + esc(m[1]) + '</span>' : '');
+    } else dMil.hidden = true;
+  }
+  dZap.addEventListener('change', function () {
+    dRok.disabled = dHraj.disabled = !dZap.checked;
+    if (!dZap.checked && prehravani) { clearInterval(prehravani); prehravani = null; dHraj.textContent = '▶'; }
+    if (dZap.checked && vb) zobrazCely();
+    ukazRok();
+  });
+  dRok.addEventListener('input', ukazRok);
+  dHraj.addEventListener('click', function () {
+    if (prehravani) { clearInterval(prehravani); prehravani = null; dHraj.textContent = '▶'; return; }
+    if (+dRok.value >= 2956) dRok.value = 2075;
+    dHraj.textContent = '❚❚';
+    prehravani = setInterval(function () {
+      var r = Math.min(2956, +dRok.value + 4); dRok.value = r; ukazRok();
+      if (r >= 2956 || !document.body.contains(dRok)) { clearInterval(prehravani); prehravani = null; dHraj.textContent = '▶'; }
+    }, 90);
+  });
 
   // ---------- zobrazení, posun, přiblížení ----------
   function meritko() { var w = svg.clientWidth || 800; return vb.w / w; } // jednotek mapy na pixel
@@ -214,6 +274,11 @@ popis: Interaktivní mapa 90 hvězdných soustav a skokových bodů vesmíru Sta
     var f = FRAKCE[s.frakce] || FRAKCE.unc;
     var h = '<p class="mp-stitek" style="--barva:' + f[1] + '"><i></i>' + f[0] + ' · ' + (s.typ === 'BINARY' ? 'dvojhvězda' : 'jedna hvězda') + '</p>';
     h += '<h2>' + esc(s.nazev) + '</h2>';
+    var dj = [];
+    if (s.objeven && s.objeven > 2075) dj.push((s.frakce === 'banu' || s.frakce === 'xian') && !{HADUR:1}[s.kod] ? 'lidstvu známá od prvního kontaktu (' + s.objeven + ')' : 'objevena ' + s.objeven);
+    if (s.ztraceno) dj.push('ztracena Vanduulům ' + s.ztraceno);
+    if (s.postoupeno) dj.push('postoupena Xi\u2019anům ' + s.postoupeno);
+    if (dj.length) h += '<p class="mp-dejiny">' + dj.join(' · ') + '</p>';
     if (perry.indexOf(s.kod) >= 0) h += '<p class="mp-perry">Jedna z osmi soustav <b>Perryho linie</b> – sporného pohraničí za studené války s Xi\u2019any (2542–2793).</p>';
     if (s.popis) h += '<p class="mp-popis">' + esc(s.popis) + '</p>';
     h += '<p class="mp-trasa-tl"><button type="button" class="mp-skok" data-trasa="od">Trasa odsud</button><button type="button" class="mp-skok" data-trasa="do">Trasa sem</button></p>';

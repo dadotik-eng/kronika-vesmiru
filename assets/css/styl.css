@@ -726,3 +726,15 @@ a.os-odkaz:hover { color: var(--akcent); }
 .na-mape span { text-transform: uppercase; letter-spacing: .08em; font-size: .85rem; color: #6fd3a0; margin-right: .3rem; }
 .na-mape a { color: var(--text); }
 .na-mape.ud-mapa { margin: .4rem 0 0; font-size: .95rem; }
+
+/* Mapa – dějiny s posuvníkem */
+.mapa-dejiny { display: flex; flex-wrap: wrap; align-items: center; gap: .6rem 1rem; margin: 0 0 .6rem; }
+.mapa-dejiny input[type=range] { flex: 1 1 260px; accent-color: var(--akcent); }
+.mapa-dejiny output { font-family: var(--display); font-size: 1.4rem; color: var(--akcent); min-width: 3.5rem; }
+#dejiny-hraj { width: 2.6rem; height: 2.4rem; padding: 0; }
+.dejiny-milnik { margin: 0 0 .8rem; font-family: var(--label); color: var(--tlumene); }
+.dejiny-milnik b { color: var(--akcent); font-family: var(--display); }
+.dejiny-milnik span { color: var(--text); }
+.m-uzel.m-duch { opacity: .22; }
+.m-uzel.m-duch .m-popisek { display: none; }
+.mp-dejiny { margin: 0 0 .6rem; font-family: var(--label); color: var(--tlumene); font-size: .95rem; }
