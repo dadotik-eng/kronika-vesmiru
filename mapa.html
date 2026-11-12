@@ -100,7 +100,7 @@ popis: Interaktivní mapa 90 hvězdných soustav a skokových bodů vesmíru Sta
   function meritko() { var w = svg.clientWidth || 800; return vb.w / w; } // jednotek mapy na pixel
   function nastavVB() {
     svg.setAttribute('viewBox', vb.x + ' ' + vb.y + ' ' + vb.w + ' ' + vb.h);
-    var k = meritko(), zoom = cely.w / vb.w;
+    var k = meritko(), zoom = (cely.w / vb.w) * Math.min(1.4, (svg.clientWidth || 800) / 800);
     gUzly.querySelectorAll('.m-uzel').forEach(function (g) {
       var s = S[g.dataset.kod], vel = g.classList.contains('m-kronika') ? 6 : 4.5;
       if (s.kod === (vybrana && vybrana.kod)) vel = 8;
@@ -154,7 +154,8 @@ popis: Interaktivní mapa 90 hvězdných soustav a skokových bodů vesmíru Sta
   document.querySelectorAll('.mapa-zoom [data-zoom]').forEach(function (b) {
     b.addEventListener('click', function () { var f = +b.dataset.zoom; if (f) priblizit(f); else zobrazCely(); });
   });
-  if (window.ResizeObserver) new ResizeObserver(function () { if (vb) { var w = plocha.clientWidth, h = plocha.clientHeight; vb.h = vb.w * h / w; nastavVB(); } }).observe(plocha);
+  if (window.ResizeObserver) new ResizeObserver(function () { if (vb) { var w = plocha.clientWidth, h = plocha.clientHeight, cy = vb.y + vb.h / 2; vb.h = vb.w * h / w; vb.y = cy - vb.h / 2; nastavVB(); } }).observe(plocha);
+  window.addEventListener('hashchange', function () { var k = decodeURIComponent(location.hash.slice(1)).toUpperCase(); if (document.getElementById('mapa-svg') === svg && S[k] && (!vybrana || vybrana.kod !== k)) vyberSoustavu(k, true); });
 
   // ---------- výběr soustavy ----------
   function vyberSoustavu(kod, vycentrovat) {
