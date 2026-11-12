@@ -104,6 +104,7 @@ popis: Interaktivní mapa 90 hvězdných soustav a skokových bodů vesmíru Sta
     gUzly.querySelectorAll('.m-uzel').forEach(function (g) {
       var s = S[g.dataset.kod], vel = g.classList.contains('m-kronika') ? 6 : 4.5;
       if (s.kod === (vybrana && vybrana.kod)) vel = 8;
+      if ((svg.clientWidth || 800) < 600) vel *= 0.7;
       g.children[1].setAttribute('r', vel * 1.9 * k);
       g.children[2].setAttribute('r', vel * k);
       var t = g.children[3];
