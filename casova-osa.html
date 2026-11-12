@@ -86,6 +86,7 @@ popis: 881 let dějin vesmíru Star Citizen po obdobích. Vyber období a uvidí
           {% if x.hra %}<p class="ud-hra">🎮 Hra {{ x.hra }}</p>{% endif %}
           <h3>{{ x.titul }}</h3>
           <p>{{ x.text }}</p>
+          {% assign ud_url = "/casova-osa/#" | append: x.slug %}{% include na-mape.html url=ud_url trida="ud-mapa" %}
           {% if x.odkaz %}<a class="ud-odkaz" href="{{ '/archiv/#' | append: x.odkaz | relative_url }}">▶ {% if x.odkaz == 'letka' %}Ztracená letka{% else %}Prolog{% endif %}</a>{% endif %}
           {% if x.kap %}{% assign i = x.kap | minus: 1 %}{% assign d = site.data.dejiny[i] %}<a class="ud-odkaz{% if x.odkaz %} vedlejsi{% endif %}" href="{{ '/archiv/#' | append: d.hraj | relative_url }}">▶ Kapitola {{ d.rim }}. {{ d.title }}</a>{% endif %}
         </div>

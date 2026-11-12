@@ -1,0 +1,4 @@
+{%- assign nm = site.data.mapa_odkazy[include.url] -%}
+{%- if nm -%}
+<p class="na-mape{% if include.trida %} {{ include.trida }}{% endif %}"><span>Na hvězdné mapě:</span> {% for s in nm %}<a href="{{ '/mapa/' | relative_url }}#{{ s[0] }}">{{ s[1] }}</a>{% unless forloop.last %}, {% endunless %}{% endfor %}</p>
+{%- endif -%}

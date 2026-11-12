@@ -720,3 +720,9 @@ a.os-odkaz:hover { color: var(--akcent); }
 .m-skok.m-trasa { stroke: #7ff0ff; stroke-dasharray: none; }
 #mapa-svg.m-ma-trasu .m-skok:not(.m-trasa) { opacity: .35; }
 .m-uzel.m-na-trase .m-prstenec { stroke: #7ff0ff; stroke-width: 1.6; fill: rgba(127,240,255,.12); }
+
+/* Odkazy „Na hvězdné mapě“ */
+.na-mape { font-family: var(--label); color: var(--tlumene); margin: 1.4rem 0; }
+.na-mape span { text-transform: uppercase; letter-spacing: .08em; font-size: .85rem; color: #6fd3a0; margin-right: .3rem; }
+.na-mape a { color: var(--text); }
+.na-mape.ud-mapa { margin: .4rem 0 0; font-size: .95rem; }

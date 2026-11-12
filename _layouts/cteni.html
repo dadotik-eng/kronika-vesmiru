@@ -24,6 +24,7 @@ layout: default
   {% capture udal %}{% assign n = kap.hraj | remove: "kap-" | plus: 0 %}{% assign uu = site.udalosti | sort: "rok" %}{% for u in uu %}{% if u.kap == n %}<li><a href="{{ '/casova-osa/#' | append: u.slug | relative_url }}">{% if u.datum %}{{ u.datum }}{% else %}{{ u.rok | floor }}{% endif %} – {{ u.titul }}</a></li>{% endif %}{% endfor %}{% endcapture %}
   {% assign udal_s = udal | strip %}
   {% if udal_s != "" %}<section class="souvisi"><h2>Na časové ose</h2><ul>{{ udal }}</ul></section>{% endif %}
+  {% include na-mape.html url=page.url %}
   {% include prameny.html seznam=kap.prameny %}
   <nav class="cteni-dalsi">
     {% if idx > 0 %}{% assign i = idx | minus: 1 %}{% assign p = site.data.dejiny[i] %}<a href="{{ '/dejiny/' | append: p.hraj | append: '/' | relative_url }}">← {{ p.rim }}. {{ p.title }}</a>{% else %}<span></span>{% endif %}

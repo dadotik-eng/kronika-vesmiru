@@ -27,6 +27,7 @@ layout: default
   {% assign souvis_s = souvis | strip %}
   {% if souvis_s != "" %}<section class="souvisi"><h2>Související</h2><ul>{{ souvis }}</ul></section>{% endif %}
 
+  {% include na-mape.html url=page.url %}
   {% include prameny.html seznam=o.zdroje %}
   <p class="od-zpet"><a href="{{ '/osobnosti/#' | append: o.slug | relative_url }}">← Zpět na rejstřík osob</a></p>
 </article>
