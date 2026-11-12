@@ -15,6 +15,11 @@ on:
       - 'assets/osoby/**'
       - 'assets/rasy/**'
       - 'nastroje/nahledy.py'
+      - 'nastroje/mapa.py'
+      - 'nastroje/mapa_soustavy.json'
+      - '_data/mapa_popisy.yml'
+      - '_udalosti/**'
+      - '_data/texty.yml'
 permissions:
   contents: write
 concurrency:
@@ -31,13 +36,15 @@ jobs:
         run: pip install --quiet "pillow>=11" pyyaml
       - name: Vyrobit náhledy
         run: python3 nastroje/nahledy.py
+      - name: Data hvězdné mapy
+        run: python3 nastroje/mapa.py
       - name: Uložit do repozitáře
         run: |
-          if [ -n "$(git status --porcelain assets/nahledy)" ]; then
+          if [ -n "$(git status --porcelain assets/nahledy data/mapa.json)" ]; then
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add assets/nahledy
-            git commit -m "Náhledy pro sdílení: aktualizace"
+            git add assets/nahledy data/mapa.json
+            git commit -m "Náhledy a data mapy: aktualizace"
             git pull --rebase --quiet
             git push
           else

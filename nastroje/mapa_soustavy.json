@@ -1,0 +1,1975 @@
+{
+"soustavy": [
+{
+"kod": "AYR'KA",
+"nazev": "Ail'ka",
+"x": 139.16,
+"y": -7.99,
+"z": 39.58,
+"frakce": "xian",
+"stav": "P",
+"typ": "SINGLE_STAR",
+"planety": 5,
+"mesice": 0,
+"stanice": 0,
+"populace": 8.8,
+"ekonomika": 3.95,
+"nebezpeci": 0
+},
+{
+"kod": "BACCHUS",
+"nazev": "Bacchus",
+"x": 21.18,
+"y": -67.47,
+"z": 36.86,
+"frakce": "banu",
+"stav": "P",
+"typ": "BINARY",
+"planety": 3,
+"mesice": 0,
+"stanice": 1,
+"populace": 8.54,
+"ekonomika": 3.37,
+"nebezpeci": 0
+},
+{
+"kod": "BAKER",
+"nazev": "Baker",
+"x": 89.54,
+"y": -5.42,
+"z": -39.71,
+"frakce": "uee",
+"stav": "P",
+"typ": "BINARY",
+"planety": 4,
+"mesice": 0,
+"stanice": 1,
+"populace": 7.4,
+"ekonomika": 2.91,
+"nebezpeci": 0
+},
+{
+"kod": "BANSHEE",
+"nazev": "Banshee",
+"x": -14.7,
+"y": -62.06,
+"z": -3.53,
+"frakce": "uee",
+"stav": "P",
+"typ": "SINGLE_STAR",
+"planety": 4,
+"mesice": 0,
+"stanice": 0,
+"populace": 7.58,
+"ekonomika": 1.63,
+"nebezpeci": 0
+},
+{
+"kod": "BRANAUGH",
+"nazev": "Branaugh",
+"x": -3.84,
+"y": 50.27,
+"z": -31.54,
+"frakce": "unc",
+"stav": "P",
+"typ": "SINGLE_STAR",
+"planety": 3,
+"mesice": 0,
+"stanice": 0,
+"populace": 8.27,
+"ekonomika": 1.74,
+"nebezpeci": 0
+},
+{
+"kod": "BREMEN",
+"nazev": "Bremen",
+"x": 13.61,
+"y": 19.08,
+"z": -6.41,
+"frakce": "uee",
+"stav": "P",
+"typ": "SINGLE_STAR",
+"planety": 4,
+"mesice": 0,
+"stanice": 0,
+"populace": 8.58,
+"ekonomika": 1.51,
+"nebezpeci": 0
+},
+{
+"kod": "CALIBAN",
+"nazev": "Caliban",
+"x": -31.41,
+"y": -7.82,
+"z": 3.56,
+"frakce": "vncl",
+"stav": "M",
+"typ": "SINGLE_STAR",
+"planety": 5,
+"mesice": 9,
+"stanice": 0,
+"populace": 7.21,
+"ekonomika": 1.63,
+"nebezpeci": 0
+},
+{
+"kod": "CANO",
+"nazev": "Cano",
+"x": 21.36,
+"y": -8.61,
+"z": 9.85,
+"frakce": "uee",
+"stav": "P",
+"typ": "SINGLE_STAR",
+"planety": 4,
+"mesice": 0,
+"stanice": 0,
+"populace": 7.96,
+"ekonomika": 1.63,
+"nebezpeci": 0
+},
+{
+"kod": "CASTRA",
+"nazev": "Castra",
+"x": 40.19,
+"y": 18.96,
+"z": 21.06,
+"frakce": "uee",
+"stav": "P",
+"typ": "SINGLE_STAR",
+"planety": 2,
+"mesice": 0,
+"stanice": 0,
+"populace": 8.31,
+"ekonomika": 0.93,
+"nebezpeci": 0
+},
+{
+"kod": "CATHCART",
+"nazev": "Cathcart",
+"x": 26.63,
+"y": -21.69,
+"z": 16.41,
+"frakce": "unc",
+"stav": "P",
+"typ": "SINGLE_STAR",
+"planety": 0,
+"mesice": 0,
+"stanice": 1,
+"populace": 0,
+"ekonomika": 1.28,
+"nebezpeci": 0
+},
+{
+"kod": "CENTAURI",
+"nazev": "Centauri",
+"x": -27.05,
+"y": -27.12,
+"z": 22.16,
+"frakce": "uee",
+"stav": "P",
+"typ": "SINGLE_STAR",
+"planety": 5,
+"mesice": 0,
+"stanice": 0,
+"populace": 8.46,
+"ekonomika": 3.37,
+"nebezpeci": 0
+},
+{
+"kod": "CHARON",
+"nazev": "Charon",
+"x": 72.4,
+"y": -48.43,
+"z": 13.66,
+"frakce": "uee",
+"stav": "P",
+"typ": "SINGLE_STAR",
+"planety": 5,
+"mesice": 3,
+"stanice": 0,
+"populace": 8.42,
+"ekonomika": 1.74,
+"nebezpeci": 0
+},
+{
+"kod": "CHRONOS",
+"nazev": "Chronos",
+"x": -18.84,
+"y": 54.18,
+"z": 13.78,
+"frakce": "uee",
+"stav": "P",
+"typ": "SINGLE_STAR",
+"planety": 3,
+"mesice": 0,
+"stanice": 1,
+"populace": 0,
+"ekonomika": 1.98,
+"nebezpeci": 0
+},
+{
+"kod": "COREL",
+"nazev": "Corel",
+"x": 45.35,
+"y": -48.69,
+"z": 19.85,
+"frakce": "uee",
+"stav": "P",
+"typ": "SINGLE_STAR",
+"planety": 6,
+"mesice": 0,
+"stanice": 0,
+"populace": 8.6,
+"ekonomika": 2.21,
+"nebezpeci": 0
+},
+{
+"kod": "CROSHAW",
+"nazev": "Croshaw",
+"x": -0.53,
+"y": -10.88,
+"z": -0.8,
+"frakce": "uee",
+"stav": "P",
+"typ": "SINGLE_STAR",
+"planety": 4,
+"mesice": 0,
+"stanice": 0,
+"populace": 8.79,
+"ekonomika": 3.02,
+"nebezpeci": 0
+},
+{
+"kod": "DAVIEN",
+"nazev": "Davien",
+"x": 13.36,
+"y": -18.61,
+"z": 3.85,
+"frakce": "uee",
+"stav": "P",
+"typ": "SINGLE_STAR",
+"planety": 4,
+"mesice": 1,
+"stanice": 0,
+"populace": 8.7,
+"ekonomika": 1.51,
+"nebezpeci": 0
+},
+{
+"kod": "EEALUS",
+"nazev": "Ē'aluth (Eealus)",
+"x": 44.75,
+"y": 59.45,
+"z": 26.95,
+"frakce": "xian",
+"stav": "P",
+"typ": "SINGLE_STAR",
+"planety": 5,
+"mesice": 0,
+"stanice": 0,
+"populace": 8.08,
+"ekonomika": 2.79,
+"nebezpeci": 0
+},
+{
+"kod": "EL'SIN",
+"nazev": "El'sin",
+"x": 80.76,
+"y": 70.46,
+"z": 24.67,
+"frakce": "xian",
+"stav": "N",
+"typ": "SINGLE_STAR",
+"planety": 0,
+"mesice": 0,
+"stanice": 0,
+"populace": 0,
+"ekonomika": 0,
+"nebezpeci": 0
+},
+{
+"kod": "ELLIS",
+"nazev": "Ellis",
+"x": 45.25,
+"y": -21.55,
+"z": -3.71,
+"frakce": "uee",
+"stav": "P",
+"typ": "SINGLE_STAR",
+"planety": 13,
+"mesice": 2,
+"stanice": 1,
+"populace": 9.01,
+"ekonomika": 7.56,
+"nebezpeci": 0
+},
+{
+"kod": "ELYSIUM",
+"nazev": "Elysium",
+"x": -32.42,
+"y": -40.18,
+"z": -20.8,
+"frakce": "uee",
+"stav": "P",
+"typ": "SINGLE_STAR",
+"planety": 5,
+"mesice": 0,
+"stanice": 0,
+"populace": 7.94,
+"ekonomika": 1.74,
+"nebezpeci": 0
+},
+{
+"kod": "FERRON",
+"nazev": "Ferron",
+"x": -4.65,
+"y": -24.19,
+"z": -4.61,
+"frakce": "uee",
+"stav": "P",
+"typ": "SINGLE_STAR",
+"planety": 4,
+"mesice": 0,
+"stanice": 0,
+"populace": 8.46,
+"ekonomika": 1.28,
+"nebezpeci": 0
+},
+{
+"kod": "FORA",
+"nazev": "Fora",
+"x": 2.66,
+"y": -67.59,
+"z": -50.64,
+"frakce": "uee",
+"stav": "P",
+"typ": "SINGLE_STAR",
+"planety": 5,
+"mesice": 0,
+"stanice": 0,
+"populace": 8.33,
+"ekonomika": 1.86,
+"nebezpeci": 0
+},
+{
+"kod": "GARRON",
+"nazev": "Garron",
+"x": -14.53,
+"y": -45.83,
+"z": -4.35,
+"frakce": "dev",
+"stav": "P",
+"typ": "SINGLE_STAR",
+"planety": 4,
+"mesice": 0,
+"stanice": 1,
+"populace": 8.63,
+"ekonomika": 2.91,
+"nebezpeci": 0
+},
+{
+"kod": "GEDDON",
+"nazev": "Geddon",
+"x": 44.97,
+"y": -59.38,
+"z": 12.84,
+"frakce": "banu",
+"stav": "P",
+"typ": "SINGLE_STAR",
+"planety": 1,
+"mesice": 0,
+"stanice": 0,
+"populace": 7.65,
+"ekonomika": 0.35,
+"nebezpeci": 0
+},
+{
+"kod": "GENESIS",
+"nazev": "Genesis",
+"x": 58.19,
+"y": -45.92,
+"z": 19.33,
+"frakce": "dev",
+"stav": "P",
+"typ": "SINGLE_STAR",
+"planety": 3,
+"mesice": 0,
+"stanice": 0,
+"populace": 7.7,
+"ekonomika": 1.74,
+"nebezpeci": 0
+},
+{
+"kod": "GLIESE",
+"nazev": "Gliese",
+"x": 49.8,
+"y": -73.02,
+"z": 24.55,
+"frakce": "banu",
+"stav": "P",
+"typ": "SINGLE_STAR",
+"planety": 6,
+"mesice": 0,
+"stanice": 1,
+"populace": 8.03,
+"ekonomika": 4.3,
+"nebezpeci": 0
+},
+{
+"kod": "GOSS",
+"nazev": "Goss",
+"x": 85.11,
+"y": -29.7,
+"z": 8.19,
+"frakce": "uee",
+"stav": "P",
+"typ": "BINARY",
+"planety": 3,
+"mesice": 0,
+"stanice": 0,
+"populace": 8.8,
+"ekonomika": 2.56,
+"nebezpeci": 0
+},
+{
+"kod": "GURZIL",
+"nazev": "Gurzil",
+"x": 71.94,
+"y": 26.53,
+"z": 13.95,
+"frakce": "uee",
+"stav": "P",
+"typ": "SINGLE_STAR",
+"planety": 0,
+"mesice": 0,
+"stanice": 0,
+"populace": 0,
+"ekonomika": 0.93,
+"nebezpeci": 0
+},
+{
+"kod": "HADES",
+"nazev": "Hades",
+"x": 26.81,
+"y": -32.33,
+"z": -3.96,
+"frakce": "unc",
+"stav": "P",
+"typ": "SINGLE_STAR",
+"planety": 4,
+"mesice": 0,
+"stanice": 0,
+"populace": 0,
+"ekonomika": 1.05,
+"nebezpeci": 0
+},
+{
+"kod": "HADRIAN",
+"nazev": "Hadrian",
+"x": 67.7,
+"y": 8.08,
+"z": 6.06,
+"frakce": "uee",
+"stav": "P",
+"typ": "SINGLE_STAR",
+"planety": 3,
+"mesice": 0,
+"stanice": 1,
+"populace": 0,
+"ekonomika": 1.74,
+"nebezpeci": 0
+},
+{
+"kod": "HADUR",
+"nazev": "Yā'mon (Hadur)",
+"x": 116.42,
+"y": -5.48,
+"z": -34.91,
+"frakce": "xian",
+"stav": "P",
+"typ": "SINGLE_STAR",
+"planety": 4,
+"mesice": 0,
+"stanice": 0,
+"populace": 0,
+"ekonomika": 2.09,
+"nebezpeci": 0
+},
+{
+"kod": "HELIOS",
+"nazev": "Helios",
+"x": 67.77,
+"y": -35.15,
+"z": 9.04,
+"frakce": "uee",
+"stav": "P",
+"typ": "SINGLE_STAR",
+"planety": 4,
+"mesice": 1,
+"stanice": 1,
+"populace": 8.59,
+"ekonomika": 2.67,
+"nebezpeci": 0
+},
+{
+"kod": "HORUS",
+"nazev": "Horus",
+"x": 89.52,
+"y": 21.22,
+"z": 22.12,
+"frakce": "uee",
+"stav": "P",
+"typ": "SINGLE_STAR",
+"planety": 3,
+"mesice": 0,
+"stanice": 0,
+"populace": 8.12,
+"ekonomika": 2.21,
+"nebezpeci": 0
+},
+{
+"kod": "IDRIS",
+"nazev": "Idris",
+"x": -14.42,
+"y": -35.08,
+"z": -6.47,
+"frakce": "uee",
+"stav": "P",
+"typ": "SINGLE_STAR",
+"planety": 5,
+"mesice": 0,
+"stanice": 0,
+"populace": 8.53,
+"ekonomika": 1.74,
+"nebezpeci": 0
+},
+{
+"kod": "INDRA",
+"nazev": "Kyuk'ya (Indra)",
+"x": 116.43,
+"y": -26.96,
+"z": -9.36,
+"frakce": "xian",
+"stav": "P",
+"typ": "BINARY",
+"planety": 2,
+"mesice": 1,
+"stanice": 0,
+"populace": 1.06,
+"ekonomika": 2.44,
+"nebezpeci": 0
+},
+{
+"kod": "KABAL",
+"nazev": "Kabal",
+"x": -20.53,
+"y": -45.83,
+"z": -7.35,
+"frakce": "uee",
+"stav": "P",
+"typ": "SINGLE_STAR",
+"planety": 3,
+"mesice": 0,
+"stanice": 0,
+"populace": 7.72,
+"ekonomika": 1.16,
+"nebezpeci": 0
+},
+{
+"kod": "KALLIS",
+"nazev": "Kallis",
+"x": 22.29,
+"y": 2.7,
+"z": -3.52,
+"frakce": "dev",
+"stav": "P",
+"typ": "SINGLE_STAR",
+"planety": 9,
+"mesice": 0,
+"stanice": 1,
+"populace": 0,
+"ekonomika": 2.67,
+"nebezpeci": 0
+},
+{
+"kod": "KAYFA",
+"nazev": "Kai'pua (Kayfa)",
+"x": 89.61,
+"y": 48.47,
+"z": -9.27,
+"frakce": "xian",
+"stav": "P",
+"typ": "SINGLE_STAR",
+"planety": 4,
+"mesice": 0,
+"stanice": 0,
+"populace": 8.53,
+"ekonomika": 1.74,
+"nebezpeci": 0
+},
+{
+"kod": "KELLOG",
+"nazev": "Kellog",
+"x": -27.03,
+"y": 37.93,
+"z": -2.59,
+"frakce": "dev",
+"stav": "P",
+"typ": "SINGLE_STAR",
+"planety": 6,
+"mesice": 0,
+"stanice": 2,
+"populace": 8.13,
+"ekonomika": 2.33,
+"nebezpeci": 0
+},
+{
+"kod": "KHABARI",
+"nazev": "K.ap'a'ri (Khabari)",
+"x": 107.75,
+"y": 70.57,
+"z": 10.68,
+"frakce": "xian",
+"stav": "N",
+"typ": "SINGLE_STAR",
+"planety": 0,
+"mesice": 0,
+"stanice": 0,
+"populace": 0,
+"ekonomika": 0,
+"nebezpeci": 0
+},
+{
+"kod": "KIEL",
+"nazev": "Kiel",
+"x": 80.51,
+"y": 5.49,
+"z": -12.5,
+"frakce": "uee",
+"stav": "P",
+"typ": "SINGLE_STAR",
+"planety": 6,
+"mesice": 1,
+"stanice": 0,
+"populace": 8.72,
+"ekonomika": 2.56,
+"nebezpeci": 0
+},
+{
+"kod": "KILIAN",
+"nazev": "Kilian",
+"x": 30.59,
+"y": -13.46,
+"z": 3.15,
+"frakce": "uee",
+"stav": "P",
+"typ": "SINGLE_STAR",
+"planety": 14,
+"mesice": 0,
+"stanice": 0,
+"populace": 8.9,
+"ekonomika": 6.74,
+"nebezpeci": 0
+},
+{
+"kod": "KINS",
+"nazev": "Kins",
+"x": 80.66,
+"y": -64.89,
+"z": 53.8,
+"frakce": "banu",
+"stav": "P",
+"typ": "SINGLE_STAR",
+"planety": 5,
+"mesice": 0,
+"stanice": 0,
+"populace": 8.65,
+"ekonomika": 3.02,
+"nebezpeci": 0
+},
+{
+"kod": "LEIR",
+"nazev": "Leir",
+"x": -37.04,
+"y": -59.36,
+"z": -5.87,
+"frakce": "unc",
+"stav": "P",
+"typ": "SINGLE_STAR",
+"planety": 3,
+"mesice": 0,
+"stanice": 0,
+"populace": 8.23,
+"ekonomika": 1.51,
+"nebezpeci": 0
+},
+{
+"kod": "MAGNUS",
+"nazev": "Magnus",
+"x": 49.62,
+"y": -13.12,
+"z": 2.55,
+"frakce": "uee",
+"stav": "P",
+"typ": "SINGLE_STAR",
+"planety": 3,
+"mesice": 0,
+"stanice": 0,
+"populace": 8.68,
+"ekonomika": 1.05,
+"nebezpeci": 0
+},
+{
+"kod": "MARKAHIL",
+"nazev": "Malkail (Markahil)",
+"x": 121.38,
+"y": 51.43,
+"z": 15.18,
+"frakce": "xian",
+"stav": "N",
+"typ": "SINGLE_STAR",
+"planety": 0,
+"mesice": 0,
+"stanice": 0,
+"populace": 0,
+"ekonomika": 0,
+"nebezpeci": 0
+},
+{
+"kod": "MIN",
+"nazev": "Min",
+"x": 40.15,
+"y": -29.82,
+"z": 17.68,
+"frakce": "unc",
+"stav": "P",
+"typ": "SINGLE_STAR",
+"planety": 1,
+"mesice": 4,
+"stanice": 0,
+"populace": 0,
+"ekonomika": 2.21,
+"nebezpeci": 0
+},
+{
+"kod": "NEMO",
+"nazev": "Nemo",
+"x": 26.74,
+"y": -43.16,
+"z": -11.23,
+"frakce": "uee",
+"stav": "P",
+"typ": "SINGLE_STAR",
+"planety": 3,
+"mesice": 0,
+"stanice": 0,
+"populace": 8.51,
+"ekonomika": 1.28,
+"nebezpeci": 0
+},
+{
+"kod": "NEXUS",
+"nazev": "Nexus",
+"x": 35.16,
+"y": -27.03,
+"z": -11.65,
+"frakce": "uee",
+"stav": "P",
+"typ": "SINGLE_STAR",
+"planety": 5,
+"mesice": 0,
+"stanice": 0,
+"populace": 8.27,
+"ekonomika": 1.51,
+"nebezpeci": 0
+},
+{
+"kod": "NUL",
+"nazev": "Nul",
+"x": -18.15,
+"y": -10.62,
+"z": -2.24,
+"frakce": "unc",
+"stav": "P",
+"typ": "SINGLE_STAR",
+"planety": 5,
+"mesice": 0,
+"stanice": 0,
+"populace": 8.32,
+"ekonomika": 1.63,
+"nebezpeci": 0
+},
+{
+"kod": "NYX",
+"nazev": "Nyx",
+"x": 26.54,
+"y": 27.07,
+"z": -14.52,
+"frakce": "unc",
+"stav": "P",
+"typ": "SINGLE_STAR",
+"planety": 4,
+"mesice": 0,
+"stanice": 0,
+"populace": 5.39,
+"ekonomika": 1.74,
+"nebezpeci": 0
+},
+{
+"kod": "OBERON",
+"nazev": "Oberon",
+"x": -22.98,
+"y": 2.81,
+"z": 4.14,
+"frakce": "unc",
+"stav": "P",
+"typ": "SINGLE_STAR",
+"planety": 7,
+"mesice": 0,
+"stanice": 0,
+"populace": 9.04,
+"ekonomika": 2.09,
+"nebezpeci": 0
+},
+{
+"kod": "ODIN",
+"nazev": "Odin",
+"x": -0.11,
+"y": 37.88,
+"z": -27.75,
+"frakce": "uee",
+"stav": "P",
+"typ": "SINGLE_STAR",
+"planety": 3,
+"mesice": 2,
+"stanice": 0,
+"populace": 0,
+"ekonomika": 2.21,
+"nebezpeci": 0
+},
+{
+"kod": "ORETANI",
+"nazev": "Oretani",
+"x": -12.65,
+"y": -17.19,
+"z": 10.38,
+"frakce": "unc",
+"stav": "N",
+"typ": "SINGLE_STAR",
+"planety": 6,
+"mesice": 0,
+"stanice": 0,
+"populace": 7.8,
+"ekonomika": 0.81,
+"nebezpeci": 0
+},
+{
+"kod": "ORION",
+"nazev": "Orion",
+"x": -45.33,
+"y": 0.06,
+"z": 15.39,
+"frakce": "vncl",
+"stav": "M",
+"typ": "SINGLE_STAR",
+"planety": 4,
+"mesice": 0,
+"stanice": 0,
+"populace": 7.73,
+"ekonomika": 1.28,
+"nebezpeci": 0
+},
+{
+"kod": "OSIRIS",
+"nazev": "Osiris",
+"x": 99.02,
+"y": -21.55,
+"z": -8.51,
+"frakce": "dev",
+"stav": "P",
+"typ": "SINGLE_STAR",
+"planety": 2,
+"mesice": 0,
+"stanice": 1,
+"populace": 7.44,
+"ekonomika": 1.05,
+"nebezpeci": 0
+},
+{
+"kod": "OSO",
+"nazev": "Oso",
+"x": 31.1,
+"y": 13.59,
+"z": -40.18,
+"frakce": "dev",
+"stav": "P",
+"typ": "SINGLE_STAR",
+"planety": 6,
+"mesice": 0,
+"stanice": 1,
+"populace": 7.62,
+"ekonomika": 1.51,
+"nebezpeci": 0
+},
+{
+"kod": "OYA",
+"nazev": "Oya",
+"x": 49.33,
+"y": 35.04,
+"z": -0.55,
+"frakce": "uee",
+"stav": "P",
+"typ": "SINGLE_STAR",
+"planety": 4,
+"mesice": 0,
+"stanice": 0,
+"populace": 8.29,
+"ekonomika": 1.86,
+"nebezpeci": 0
+},
+{
+"kod": "PALLAS",
+"nazev": "Th.us'ūng (Pallas)",
+"x": 103.46,
+"y": 8.13,
+"z": 12.69,
+"frakce": "xian",
+"stav": "P",
+"typ": "SINGLE_STAR",
+"planety": 5,
+"mesice": 0,
+"stanice": 0,
+"populace": 9.73,
+"ekonomika": 3.37,
+"nebezpeci": 0
+},
+{
+"kod": "PYRO",
+"nazev": "Pyro",
+"x": 40.13,
+"y": 8.41,
+"z": -17.22,
+"frakce": "unc",
+"stav": "P",
+"typ": "SINGLE_STAR",
+"planety": 6,
+"mesice": 6,
+"stanice": 2,
+"populace": 8.13,
+"ekonomika": 3.02,
+"nebezpeci": 0
+},
+{
+"kod": "RHETOR",
+"nazev": "Rhetor",
+"x": 13.62,
+"y": -40.26,
+"z": 24.35,
+"frakce": "uee",
+"stav": "P",
+"typ": "SINGLE_STAR",
+"planety": 5,
+"mesice": 0,
+"stanice": 0,
+"populace": 8.49,
+"ekonomika": 2.33,
+"nebezpeci": 0
+},
+{
+"kod": "RIHLAH",
+"nazev": "R.il'a (Rihlah)",
+"x": 71.95,
+"y": 48.63,
+"z": 20.12,
+"frakce": "xian",
+"stav": "P",
+"typ": "SINGLE_STAR",
+"planety": 6,
+"mesice": 0,
+"stanice": 0,
+"populace": 9,
+"ekonomika": 2.56,
+"nebezpeci": 0
+},
+{
+"kod": "SOL",
+"nazev": "Sol",
+"x": 0,
+"y": 0,
+"z": 0,
+"frakce": "uee",
+"stav": "P",
+"typ": "SINGLE_STAR",
+"planety": 9,
+"mesice": 19,
+"stanice": 3,
+"populace": 8.59,
+"ekonomika": 5.58,
+"nebezpeci": 0
+},
+{
+"kod": "STANTON",
+"nazev": "Stanton",
+"x": 49.53,
+"y": -2.63,
+"z": 16.48,
+"frakce": "uee",
+"stav": "P",
+"typ": "SINGLE_STAR",
+"planety": 4,
+"mesice": 12,
+"stanice": 6,
+"populace": 10,
+"ekonomika": 10,
+"nebezpeci": 10
+},
+{
+"kod": "TAL",
+"nazev": "T.āl",
+"x": 121.19,
+"y": 19.19,
+"z": 7.65,
+"frakce": "xian",
+"stav": "P",
+"typ": "SINGLE_STAR",
+"planety": 7,
+"mesice": 0,
+"stanice": 0,
+"populace": 8.86,
+"ekonomika": 4.19,
+"nebezpeci": 0
+},
+{
+"kod": "TAMSA",
+"nazev": "Tamsa",
+"x": -18.82,
+"y": -70.57,
+"z": 15.03,
+"frakce": "uee",
+"stav": "P",
+"typ": "SINGLE_STAR",
+"planety": 2,
+"mesice": 0,
+"stanice": 0,
+"populace": 0,
+"ekonomika": 0.23,
+"nebezpeci": 0
+},
+{
+"kod": "TANGA",
+"nazev": "Tanga",
+"x": -7.11,
+"y": 32.88,
+"z": -15.63,
+"frakce": "unc",
+"stav": "P",
+"typ": "SINGLE_STAR",
+"planety": 2,
+"mesice": 0,
+"stanice": 0,
+"populace": 0,
+"ekonomika": 1.28,
+"nebezpeci": 0
+},
+{
+"kod": "TARANIS",
+"nazev": "Taranis",
+"x": 53.63,
+"y": -32.45,
+"z": -5.81,
+"frakce": "unc",
+"stav": "P",
+"typ": "SINGLE_STAR",
+"planety": 4,
+"mesice": 1,
+"stanice": 0,
+"populace": 7.72,
+"ekonomika": 2.79,
+"nebezpeci": 0
+},
+{
+"kod": "TAYAC",
+"nazev": "Tayac",
+"x": 80.74,
+"y": -16.14,
+"z": -64.06,
+"frakce": "uee",
+"stav": "P",
+"typ": "SINGLE_STAR",
+"planety": 3,
+"mesice": 0,
+"stanice": 1,
+"populace": 2.59,
+"ekonomika": 2.21,
+"nebezpeci": 0
+},
+{
+"kod": "TERRA",
+"nazev": "Terra",
+"x": 67.71,
+"y": -8.13,
+"z": -3.14,
+"frakce": "uee",
+"stav": "P",
+"typ": "SINGLE_STAR",
+"planety": 4,
+"mesice": 4,
+"stanice": 3,
+"populace": 9.1,
+"ekonomika": 5.47,
+"nebezpeci": 0
+},
+{
+"kod": "TIBER",
+"nazev": "Tiber",
+"x": -35.52,
+"y": 10.73,
+"z": 6.15,
+"frakce": "vncl",
+"stav": "M",
+"typ": "SINGLE_STAR",
+"planety": 2,
+"mesice": 0,
+"stanice": 0,
+"populace": 0,
+"ekonomika": 1.05,
+"nebezpeci": 0
+},
+{
+"kod": "TOHIL",
+"nazev": "Tohil",
+"x": 35.62,
+"y": 37.4,
+"z": 12.09,
+"frakce": "uee",
+"stav": "P",
+"typ": "SINGLE_STAR",
+"planety": 4,
+"mesice": 0,
+"stanice": 0,
+"populace": 8.35,
+"ekonomika": 2.79,
+"nebezpeci": 0
+},
+{
+"kod": "TRISE",
+"nazev": "Trise",
+"x": 26.5,
+"y": 65,
+"z": 31.86,
+"frakce": "banu",
+"stav": "P",
+"typ": "SINGLE_STAR",
+"planety": 1,
+"mesice": 0,
+"stanice": 1,
+"populace": 8.65,
+"ekonomika": 1.4,
+"nebezpeci": 0
+},
+{
+"kod": "TYROL",
+"nazev": "Tyrol",
+"x": 80.7,
+"y": -43.28,
+"z": -17.19,
+"frakce": "unc",
+"stav": "P",
+"typ": "SINGLE_STAR",
+"planety": 7,
+"mesice": 1,
+"stanice": 0,
+"populace": 8.74,
+"ekonomika": 3.02,
+"nebezpeci": 0
+},
+{
+"kod": "VAGABOND",
+"nazev": "Vagabond",
+"x": -63.81,
+"y": -21.74,
+"z": 9.63,
+"frakce": "vncl",
+"stav": "M",
+"typ": "SINGLE_STAR",
+"planety": 0,
+"mesice": 0,
+"stanice": 0,
+"populace": 1.08,
+"ekonomika": 0.12,
+"nebezpeci": 0
+},
+{
+"kod": "VANGUARD",
+"nazev": "Vanguard",
+"x": -50.65,
+"y": -45.84,
+"z": -13.39,
+"frakce": "vncl",
+"stav": "M",
+"typ": "SINGLE_STAR",
+"planety": 0,
+"mesice": 0,
+"stanice": 0,
+"populace": 1.08,
+"ekonomika": 0.12,
+"nebezpeci": 0
+},
+{
+"kod": "VECTOR",
+"nazev": "Vector",
+"x": -45.94,
+"y": 37.78,
+"z": -4.56,
+"frakce": "vncl",
+"stav": "M",
+"typ": "SINGLE_STAR",
+"planety": 0,
+"mesice": 0,
+"stanice": 0,
+"populace": 1.08,
+"ekonomika": 0.12,
+"nebezpeci": 0
+},
+{
+"kod": "VEGA",
+"nazev": "Vega",
+"x": -8.54,
+"y": 10.79,
+"z": 17.98,
+"frakce": "uee",
+"stav": "P",
+"typ": "SINGLE_STAR",
+"planety": 4,
+"mesice": 2,
+"stanice": 0,
+"populace": 8.61,
+"ekonomika": 3.02,
+"nebezpeci": 0
+},
+{
+"kod": "VENDETTA",
+"nazev": "Vendetta",
+"x": -40.46,
+"y": -24.25,
+"z": 7.73,
+"frakce": "vncl",
+"stav": "M",
+"typ": "SINGLE_STAR",
+"planety": 0,
+"mesice": 0,
+"stanice": 0,
+"populace": 1.08,
+"ekonomika": 0.12,
+"nebezpeci": 0
+},
+{
+"kod": "VERITAS",
+"nazev": "Veritas",
+"x": -59.47,
+"y": 29.78,
+"z": -9.28,
+"frakce": "vncl",
+"stav": "M",
+"typ": "SINGLE_STAR",
+"planety": 0,
+"mesice": 0,
+"stanice": 0,
+"populace": 1.08,
+"ekonomika": 0.12,
+"nebezpeci": 0
+},
+{
+"kod": "VERMILION",
+"nazev": "Vermilion",
+"x": -77.78,
+"y": 35.24,
+"z": 12.35,
+"frakce": "vncl",
+"stav": "M",
+"typ": "SINGLE_STAR",
+"planety": 0,
+"mesice": 0,
+"stanice": 0,
+"populace": 1.08,
+"ekonomika": 0.12,
+"nebezpeci": 0
+},
+{
+"kod": "VESPER",
+"nazev": "Vesper",
+"x": -54.9,
+"y": -32.33,
+"z": -3.89,
+"frakce": "vncl",
+"stav": "M",
+"typ": "SINGLE_STAR",
+"planety": 0,
+"mesice": 0,
+"stanice": 0,
+"populace": 1.08,
+"ekonomika": 0.12,
+"nebezpeci": 0
+},
+{
+"kod": "VIKING",
+"nazev": "Viking",
+"x": -50.72,
+"y": -13.45,
+"z": -13.44,
+"frakce": "vncl",
+"stav": "M",
+"typ": "SINGLE_STAR",
+"planety": 0,
+"mesice": 0,
+"stanice": 0,
+"populace": 1.08,
+"ekonomika": 0.12,
+"nebezpeci": 0
+},
+{
+"kod": "VIRGIL",
+"nazev": "Virgil",
+"x": -26.95,
+"y": 16.28,
+"z": 3.1,
+"frakce": "vncl",
+"stav": "M",
+"typ": "SINGLE_STAR",
+"planety": 3,
+"mesice": 5,
+"stanice": 0,
+"populace": 7.57,
+"ekonomika": 1.28,
+"nebezpeci": 0
+},
+{
+"kod": "VIRGO",
+"nazev": "Virgo",
+"x": -68.17,
+"y": 2.83,
+"z": 12.56,
+"frakce": "vncl",
+"stav": "M",
+"typ": "SINGLE_STAR",
+"planety": 0,
+"mesice": 0,
+"stanice": 0,
+"populace": 1.08,
+"ekonomika": 0.12,
+"nebezpeci": 0
+},
+{
+"kod": "VIRTUS",
+"nazev": "La'uo (Virtus)",
+"x": 30.94,
+"y": 51.36,
+"z": 17.24,
+"frakce": "xian",
+"stav": "P",
+"typ": "SINGLE_STAR",
+"planety": 4,
+"mesice": 0,
+"stanice": 0,
+"populace": 7.51,
+"ekonomika": 3.37,
+"nebezpeci": 0
+},
+{
+"kod": "VOLT",
+"nazev": "Volt",
+"x": -55.07,
+"y": 54.06,
+"z": 10.78,
+"frakce": "vncl",
+"stav": "M",
+"typ": "SINGLE_STAR",
+"planety": 0,
+"mesice": 0,
+"stanice": 0,
+"populace": 1.08,
+"ekonomika": 0.12,
+"nebezpeci": 0
+},
+{
+"kod": "VOODOO",
+"nazev": "Voodoo",
+"x": -76.36,
+"y": -7.98,
+"z": -14.67,
+"frakce": "vncl",
+"stav": "M",
+"typ": "SINGLE_STAR",
+"planety": 0,
+"mesice": 0,
+"stanice": 0,
+"populace": 1.08,
+"ekonomika": 0.12,
+"nebezpeci": 0
+},
+{
+"kod": "VULTURE",
+"nazev": "Vulture",
+"x": -63.7,
+"y": 0.07,
+"z": 5.99,
+"frakce": "vncl",
+"stav": "M",
+"typ": "SINGLE_STAR",
+"planety": 0,
+"mesice": 0,
+"stanice": 0,
+"populace": 1.08,
+"ekonomika": 0.12,
+"nebezpeci": 0
+},
+{
+"kod": "YULIN",
+"nazev": "Yulin",
+"x": -10.82,
+"y": -75.57,
+"z": 23.03,
+"frakce": "banu",
+"stav": "P",
+"typ": "SINGLE_STAR",
+"planety": 6,
+"mesice": 0,
+"stanice": 2,
+"populace": 8.46,
+"ekonomika": 5,
+"nebezpeci": 0
+}
+],
+"skoky": [
+[
+"AYR'KA",
+"HADUR"
+],
+[
+"AYR'KA",
+"INDRA"
+],
+[
+"BACCHUS",
+"GARRON"
+],
+[
+"BACCHUS",
+"GEDDON"
+],
+[
+"BAKER",
+"HADUR"
+],
+[
+"BAKER",
+"KIEL"
+],
+[
+"BAKER",
+"OSIRIS"
+],
+[
+"BAKER",
+"PALLAS"
+],
+[
+"BAKER",
+"TAYAC"
+],
+[
+"BANSHEE",
+"FORA"
+],
+[
+"BANSHEE",
+"GARRON"
+],
+[
+"BANSHEE",
+"LEIR"
+],
+[
+"BANSHEE",
+"TAMSA"
+],
+[
+"BANSHEE",
+"YULIN"
+],
+[
+"BRANAUGH",
+"CHRONOS"
+],
+[
+"BREMEN",
+"KALLIS"
+],
+[
+"BREMEN",
+"NYX"
+],
+[
+"BREMEN",
+"TANGA"
+],
+[
+"BREMEN",
+"VEGA"
+],
+[
+"CALIBAN",
+"NUL"
+],
+[
+"CALIBAN",
+"OBERON"
+],
+[
+"CALIBAN",
+"ORION"
+],
+[
+"CALIBAN",
+"VIKING"
+],
+[
+"CANO",
+"DAVIEN"
+],
+[
+"CANO",
+"PYRO"
+],
+[
+"CASTRA",
+"HADRIAN"
+],
+[
+"CASTRA",
+"NYX"
+],
+[
+"CASTRA",
+"OSO"
+],
+[
+"CASTRA",
+"OYA"
+],
+[
+"CASTRA",
+"PYRO"
+],
+[
+"CATHCART",
+"DAVIEN"
+],
+[
+"CATHCART",
+"HADES"
+],
+[
+"CATHCART",
+"KILIAN"
+],
+[
+"CATHCART",
+"NEXUS"
+],
+[
+"CENTAURI",
+"ELYSIUM"
+],
+[
+"CENTAURI",
+"NUL"
+],
+[
+"CHARON",
+"GENESIS"
+],
+[
+"CHARON",
+"HELIOS"
+],
+[
+"CHARON",
+"KINS"
+],
+[
+"CHARON",
+"TYROL"
+],
+[
+"CHRONOS",
+"KELLOG"
+],
+[
+"COREL",
+"GEDDON"
+],
+[
+"COREL",
+"GENESIS"
+],
+[
+"COREL",
+"NEMO"
+],
+[
+"CROSHAW",
+"FERRON"
+],
+[
+"CROSHAW",
+"NUL"
+],
+[
+"CROSHAW",
+"RHETOR"
+],
+[
+"CROSHAW",
+"SOL"
+],
+[
+"DAVIEN",
+"FERRON"
+],
+[
+"DAVIEN",
+"KILIAN"
+],
+[
+"DAVIEN",
+"SOL"
+],
+[
+"EEALUS",
+"OYA"
+],
+[
+"EEALUS",
+"RIHLAH"
+],
+[
+"EEALUS",
+"TRISE"
+],
+[
+"EEALUS",
+"VIRTUS"
+],
+[
+"ELLIS",
+"KILIAN"
+],
+[
+"ELLIS",
+"MAGNUS"
+],
+[
+"ELLIS",
+"MIN"
+],
+[
+"ELLIS",
+"NEXUS"
+],
+[
+"ELLIS",
+"TARANIS"
+],
+[
+"ELYSIUM",
+"IDRIS"
+],
+[
+"ELYSIUM",
+"LEIR"
+],
+[
+"ELYSIUM",
+"VANGUARD"
+],
+[
+"FERRON",
+"IDRIS"
+],
+[
+"FORA",
+"NEMO"
+],
+[
+"FORA",
+"RHETOR"
+],
+[
+"GARRON",
+"IDRIS"
+],
+[
+"GARRON",
+"LEIR"
+],
+[
+"GEDDON",
+"GLIESE"
+],
+[
+"GENESIS",
+"TARANIS"
+],
+[
+"GOSS",
+"HELIOS"
+],
+[
+"GOSS",
+"OSIRIS"
+],
+[
+"GOSS",
+"TAYAC"
+],
+[
+"GOSS",
+"TERRA"
+],
+[
+"GOSS",
+"TYROL"
+],
+[
+"GURZIL",
+"HADRIAN"
+],
+[
+"GURZIL",
+"HORUS"
+],
+[
+"GURZIL",
+"OYA"
+],
+[
+"GURZIL",
+"RIHLAH"
+],
+[
+"HADES",
+"NEMO"
+],
+[
+"HADES",
+"NEXUS"
+],
+[
+"HADRIAN",
+"KIEL"
+],
+[
+"HADRIAN",
+"OYA"
+],
+[
+"HADRIAN",
+"PYRO"
+],
+[
+"HADRIAN",
+"TERRA"
+],
+[
+"HADUR",
+"INDRA"
+],
+[
+"HADUR",
+"PALLAS"
+],
+[
+"HELIOS",
+"TARANIS"
+],
+[
+"HELIOS",
+"TYROL"
+],
+[
+"HORUS",
+"KAYFA"
+],
+[
+"HORUS",
+"KIEL"
+],
+[
+"HORUS",
+"RIHLAH"
+],
+[
+"IDRIS",
+"RHETOR"
+],
+[
+"INDRA",
+"KINS"
+],
+[
+"INDRA",
+"OSIRIS"
+],
+[
+"KABAL",
+"LEIR"
+],
+[
+"KALLIS",
+"OSO"
+],
+[
+"KAYFA",
+"RIHLAH"
+],
+[
+"KELLOG",
+"ODIN"
+],
+[
+"KELLOG",
+"VECTOR"
+],
+[
+"KELLOG",
+"VIRGIL"
+],
+[
+"LEIR",
+"VANGUARD"
+],
+[
+"LEIR",
+"YULIN"
+],
+[
+"MAGNUS",
+"STANTON"
+],
+[
+"MAGNUS",
+"TERRA"
+],
+[
+"MIN",
+"NEXUS"
+],
+[
+"NUL",
+"OBERON"
+],
+[
+"NUL",
+"VEGA"
+],
+[
+"NYX",
+"ODIN"
+],
+[
+"NYX",
+"PYRO"
+],
+[
+"NYX",
+"STANTON"
+],
+[
+"NYX",
+"TOHIL"
+],
+[
+"NYX",
+"VIRGIL"
+],
+[
+"OBERON",
+"TIBER"
+],
+[
+"OBERON",
+"VEGA"
+],
+[
+"OBERON",
+"VIRGIL"
+],
+[
+"ODIN",
+"TANGA"
+],
+[
+"ORION",
+"TIBER"
+],
+[
+"ORION",
+"VIKING"
+],
+[
+"OSO",
+"PYRO"
+],
+[
+"OYA",
+"TOHIL"
+],
+[
+"PALLAS",
+"TAL"
+],
+[
+"PYRO",
+"STANTON"
+],
+[
+"PYRO",
+"TERRA"
+],
+[
+"STANTON",
+"TERRA"
+],
+[
+"TARANIS",
+"TERRA"
+],
+[
+"TAYAC",
+"TERRA"
+],
+[
+"TIBER",
+"VECTOR"
+],
+[
+"TIBER",
+"VIRGIL"
+],
+[
+"TOHIL",
+"VIRTUS"
+],
+[
+"TRISE",
+"VIRTUS"
+],
+[
+"VEGA",
+"VIRGIL"
+]
+],
+"zdroj": "Star Map RSI přes api.star-citizen.wiki (archiv Archiváře)"
+}

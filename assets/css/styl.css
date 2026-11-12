@@ -608,3 +608,58 @@ a.os-odkaz:hover { color: var(--akcent); }
 .sv-perex { grid-column: 1; color: var(--tlumene); font-size: 1rem; }
 .sv-dal { grid-column: 2; grid-row: 2 / span 2; font-family: var(--label); color: var(--akcent); white-space: nowrap; }
 @media (max-width: 640px) { .svatek-pruh { grid-template-columns: 1fr; } .sv-dal { grid-column: 1; grid-row: auto; } }
+
+/* ---------- Hvězdná mapa ---------- */
+.mapa-blok { max-width: 1400px; padding-top: 3rem; }
+.mapa-blok h1 { font-size: clamp(2.2rem, 5vw, 3.2rem); }
+.mapa-ovladani { display: flex; flex-wrap: wrap; align-items: center; gap: .8rem 1.4rem; margin: 1.8rem 0 1rem; }
+.mapa-hledat select { background: rgba(7,15,31,.8); color: var(--text); border: 1px solid var(--linka); border-radius: 8px; padding: .5rem .8rem; font: inherit; font-size: 1rem; min-width: 14rem; }
+.mapa-filtr { font-family: var(--label); color: var(--tlumene); display: flex; align-items: center; gap: .4rem; cursor: pointer; }
+.mapa-legenda { list-style: none; display: flex; flex-wrap: wrap; gap: .3rem 1rem; margin: 0; padding: 0; font-family: var(--label); font-size: .95rem; color: var(--tlumene); }
+.mapa-legenda li { display: flex; align-items: center; gap: .4rem; }
+.mapa-legenda i { width: .7rem; height: .7rem; border-radius: 50%; display: inline-block; }
+.mapa-legenda .leg-kronika { background: transparent; border: 2px solid var(--akcent); width: .8rem; height: .8rem; }
+.mapa-rozvrzeni { display: grid; grid-template-columns: minmax(0, 1fr) 360px; gap: 1rem; }
+.mapa-plocha { position: relative; height: min(74vh, 720px); min-height: 420px; border: 1px solid var(--linka); border-radius: 12px; overflow: hidden; background: radial-gradient(ellipse at 55% 45%, rgba(18,53,95,.55), rgba(7,15,31,.95) 70%); touch-action: none; }
+#mapa-svg { width: 100%; height: 100%; display: block; cursor: grab; user-select: none; }
+#mapa-svg:active { cursor: grabbing; }
+.m-skok { stroke: rgba(191,227,245,.28); }
+.m-skok.m-utajeny { stroke-dasharray: 4 4; stroke: rgba(239,90,90,.35); }
+.m-skok.m-aktivni { stroke: var(--akcent); }
+.m-uzel { cursor: pointer; outline: none; }
+.m-prstenec { fill: none; stroke: transparent; vector-effect: non-scaling-stroke; }
+.m-uzel.m-kronika .m-prstenec { stroke: rgba(246,189,75,.75); stroke-width: 1.2; }
+.m-uzel.m-utajena .m-bod { fill-opacity: .45; }
+.m-uzel.m-neuplna .m-bod { fill-opacity: .35; }
+.m-uzel:hover .m-bod, .m-uzel:focus .m-bod { filter: brightness(1.35); }
+.m-uzel.m-vybrana .m-prstenec { stroke: var(--akcent); stroke-width: 2; fill: rgba(246,189,75,.14); }
+.m-popisek { fill: var(--text); font-family: var(--label); paint-order: stroke; stroke: rgba(7,15,31,.9); stroke-width: 3px; stroke-linejoin: round; pointer-events: none; }
+.m-uzel.m-vybrana .m-popisek { fill: var(--akcent); font-weight: 600; }
+#mapa-svg.m-jen-kronika .m-uzel:not(.m-kronika) { opacity: .2; }
+#mapa-svg.m-jen-kronika .m-skok { opacity: .4; }
+.mapa-zoom { position: absolute; right: .8rem; top: .8rem; display: flex; flex-direction: column; gap: .4rem; }
+.mapa-zoom .tlacitko { width: 2.4rem; height: 2.4rem; padding: 0; display: grid; place-items: center; font-size: 1.2rem; background: rgba(7,15,31,.8); }
+.mapa-napoveda { position: absolute; left: .9rem; bottom: .6rem; margin: 0; font-family: var(--label); font-size: .85rem; color: var(--tlumene); opacity: .75; pointer-events: none; }
+.mapa-panel { border: 1px solid var(--linka); border-radius: 12px; background: var(--panel); padding: 1.2rem 1.3rem; max-height: min(74vh, 720px); overflow-y: auto; }
+.mapa-panel h2 { font-size: 1.7rem; margin: .2rem 0 .7rem; }
+.mapa-panel h3 { font-family: var(--label); font-size: .95rem; letter-spacing: .12em; text-transform: uppercase; color: var(--akcent); margin: 1.2rem 0 .5rem; font-weight: 600; }
+.mp-stitek { margin: 0; font-family: var(--label); text-transform: uppercase; letter-spacing: .08em; font-size: .9rem; color: var(--barva); display: flex; align-items: center; gap: .45rem; }
+.mp-stitek i { width: .65rem; height: .65rem; border-radius: 50%; background: var(--barva); }
+.mp-popis { margin: 0; color: var(--tlumene); line-height: 1.55; }
+.mp-udaje { display: flex; gap: 1.4rem; margin: .9rem 0 0; }
+.mp-udaje dt { font-family: var(--label); font-size: .8rem; color: var(--tlumene); text-transform: uppercase; letter-spacing: .08em; }
+.mp-udaje dd { margin: 0; font-family: var(--display); font-size: 1.3rem; }
+.mp-skoky { display: flex; flex-wrap: wrap; gap: .4rem; margin: 0; }
+.mp-skok { font-family: var(--label); font-size: .95rem; color: var(--text); background: rgba(7,15,31,.6); border: 1px solid var(--linka); border-left: 3px solid var(--barva); border-radius: 6px; padding: .25rem .6rem; cursor: pointer; }
+.mp-skok:hover { border-color: var(--akcent); border-left-color: var(--barva); }
+.mp-skupina h4 { margin: .7rem 0 .25rem; font-family: var(--label); font-weight: 400; color: var(--tlumene); font-size: .9rem; }
+.mp-skupina ul { margin: 0; padding-left: 1.1rem; }
+.mp-skupina li { margin: .15rem 0; }
+.mp-skupina li span { color: var(--tlumene); font-size: .9rem; }
+.mp-nic { color: var(--tlumene); font-style: italic; margin: 0; }
+.mapa-zdroj { font-size: .9rem; color: var(--tlumene); margin-top: 1rem; max-width: 60rem; }
+@media (max-width: 900px) {
+  .mapa-rozvrzeni { grid-template-columns: 1fr; }
+  .mapa-plocha { height: 62vh; min-height: 340px; }
+  .mapa-panel { max-height: none; }
+}

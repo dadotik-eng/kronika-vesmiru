@@ -168,7 +168,7 @@
     var klid = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
     var c, x, hvezdy, t0 = 0, konec = 0, beh = 0, DOBA = 620, rgb = [222, 236, 246], ac = null, sum = null;
     // Barva každé záložky z palety období
-    var BARVY = { domu: '#f6bd4b', dejiny: '#7fb8d8', 'casova-osa': '#e0785c', osobnosti: '#b99ae0', pribehy: '#8fd0c0', encyklopedie: '#a6c97f', rasy: '#f06a6a', 'o-projektu': '#d9c46a' };
+    var BARVY = { domu: '#f6bd4b', dejiny: '#7fb8d8', 'casova-osa': '#e0785c', mapa: '#6fd3a0', osobnosti: '#b99ae0', pribehy: '#8fd0c0', encyklopedie: '#a6c97f', rasy: '#f06a6a', 'o-projektu': '#d9c46a' };
     function naRgb(h) { h = (h || '').replace('#', ''); return h.length === 6 ? [0, 2, 4].map(function (i) { return parseInt(h.substr(i, 2), 16); }) : [222, 236, 246]; }
     function zvuk() {
       if (cist('kv-hudba') === '0') return;
