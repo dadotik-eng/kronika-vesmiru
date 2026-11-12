@@ -24,6 +24,7 @@
   <meta name="twitter:card" content="summary_large_image">
   <link rel="stylesheet" href="{{ '/assets/css/pisma.css' | relative_url }}">
   <link rel="stylesheet" href="{{ '/assets/css/styl.css' | relative_url }}?v={{ site.time | date: '%s' }}">
+  {% include statistiky.html %}
 </head>
 <body data-zaklad="{{ '/' | relative_url }}" data-verze="{{ site.time | date: '%s' }}" data-sekce="{{ page.sekce | default: '' }}">
   <div class="hvezdy" aria-hidden="true"></div>
