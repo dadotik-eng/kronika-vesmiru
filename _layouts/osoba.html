@@ -19,6 +19,7 @@ layout: default
 
   {% capture souvis %}
     {% if o.rod == "messer" %}<li><a href="{{ '/rod-messeru/#' | append: o.slug | relative_url }}">Rodokmen Messerů</a></li>{% endif %}
+    {% if site.data.vztahy_index contains o.slug %}<li><a href="{{ '/vztahy/#' | append: o.slug | relative_url }}">Síť osobností – s kým ho spojily dějiny</a></li>{% endif %}
     {% for k in o.kapitoly %}{% if k == "letka" %}<li><a href="{{ '/pribehy/ztracena-letka/' | relative_url }}">Příběh: Ztracená letka</a> · <a href="{{ '/archiv/#letka' | relative_url }}">▶ poslechnout</a></li>{% else %}{% assign n = k | remove: "kap-" | plus: 0 %}{% assign i = n | minus: 1 %}{% assign d = site.data.dejiny[i] %}<li><a href="{{ '/dejiny/' | append: k | append: '/' | relative_url }}">Kapitola {{ d.rim }}. {{ d.title }}</a> · <a href="{{ '/archiv/#' | append: k | relative_url }}">▶ poslechnout</a></li>{% endif %}{% endfor %}
     {% assign casti = o.jmeno | remove: "." | split: " " %}{% assign klic = casti | last %}{% if o.rod == "messer" %}{% assign klic = casti | first %}{% endif %}
     {% if klic.size > 3 %}{% for k in site.kapitoly %}{% if k.content contains klic %}<li><a href="{{ k.url | relative_url }}">Kapitola: {{ k.title }}</a></li>{% endif %}{% endfor %}{% endif %}

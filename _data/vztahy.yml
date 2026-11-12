@@ -1,0 +1,77 @@
+# Ručně ověřené vazby mezi osobnostmi pro Síť osobností (/vztahy/).
+# klíč = dvě id osob v abecedním pořadí oddělená „|“
+# typ: rodina | spoluprace | protivnik | nastupce | vliv | souvislost
+# popis: krátce, co je spojuje – jen podle medailonků a textů na webu
+# Vazby, které skript najde sám a nejsou tady, se zobrazí jako „souvislost“ s větou z textu.
+vazby:
+  "aadya-firmino|oisha-suen": {typ: protivnik, popis: "Firmino si přivlastnila Suenin objev skoku do Tohilu"}
+  "adam-corr|cyrus-ishitaka": {typ: spoluprace, popis: "Corr zaplatil Ishitakovi kauci; oba podezřelí z útoků roku 2546"}
+  "adam-corr|ivar-messer-i": {typ: spoluprace, popis: "Corr bojoval na Idrisu IV pod Messerovým velením"}
+  "adam-corr|sydney-kamarck": {typ: protivnik, popis: "Kamarck ho ve své knize označila za pachatele útoků"}
+  "adelaide-lorris|marsal-cathcart": {typ: protivnik, popis: "Cathcart Lorris pronásledoval a roku 2464 ji zastřelil"}
+  "ahmad-harar|carl-dyson": {typ: spoluprace, popis: "Pilot a střelec – spolu objevili skok z Horu"}
+  "amandeep-vakario|ellroy-cass": {typ: spoluprace, popis: "Cass patřil k Vakariovým slavným klientům"}
+  "amandeep-vakario|magnus-tobin": {typ: spoluprace, popis: "Tobinův klient; pro Tobina namluvil Moments of Clarity"}
+  "antoine-lebec|patek-coen": {typ: vliv, popis: "Lebecova biografie přivedla Coena k navjumpingu"}
+  "astrid-messer-vii|gammon-messer": {typ: rodina, popis: "Dcera a otec"}
+  "astrid-messer-vii|illyana-messer-vi": {typ: rodina, popis: "Neteř a teta – Astrid se po její smrti chopila trůnu"}
+  "astrid-messer-vii|samuel-messer-viii": {typ: rodina, popis: "Sestřenice a bratranec – Astrid ho odstavila od trůnu"}
+  "august-dunlow|linton-messer-xi": {typ: souvislost, popis: "Dunlow koupil firmu, kterou zničila Lintonova obvinění"}
+  "august-dunlow|ulysses-messer-x": {typ: souvislost, popis: "Jako vzorný žák mával imperátorovi u cesty"}
+  "clement-redfield|erin-toi": {typ: spoluprace, popis: "Šéf štábu imperátorky Toi"}
+  "corsen-messer-v|deacon-messer-ii": {typ: rodina, popis: "Syn a otec"}
+  "corsen-messer-v|gammon-messer": {typ: rodina, popis: "Otec a syn – oba otráveni roku 2662"}
+  "corsen-messer-v|illyana-messer-vi": {typ: rodina, popis: "Otec a dcera – podle historiků zosnovala jeho vraždu"}
+  "corsen-messer-v|livia-messer-iii": {typ: rodina, popis: "Sourozenci – Corsen převzal vládu po Livii"}
+  "cyrus-ishitaka|ivar-messer-i": {typ: spoluprace, popis: "Spolubojovník z bitvy o Idris IV"}
+  "cyrus-ishitaka|sydney-kamarck": {typ: protivnik, popis: "Kamarck ho ve své knize označila za pachatele útoků"}
+  "dalton-colabello|juliet-maupin": {typ: vliv, popis: "Colabello postavil Apocalypse Arms na jejích prototypech"}
+  "deacon-messer-ii|ivar-messer-i": {typ: rodina, popis: "Syn a otec – Deacon po něm převzal vládu"}
+  "deacon-messer-ii|livia-messer-iii": {typ: rodina, popis: "Otec a dcera – dobrovolně jí předal vládu"}
+  "deacon-messer-ii|marius-messer-iv": {typ: rodina, popis: "Děd a vnuk – Deacon ho sám vyučoval"}
+  "desmond-fell|theresa-branaugh": {typ: souvislost, popis: "Fell našel její tělo a soustavu pojmenoval po ní"}
+  "dyna-lei|janna-thurville": {typ: souvislost, popis: "Thurville nosila jedny z jejích posledních šatů"}
+  "erin-toi|laylani-addison": {typ: vliv, popis: "Addisonin tým cituje radu, kterou kdysi dostala Toi"}
+  "erin-toi|marshall-leon": {typ: nastupce, popis: "Diplomatický tajemník její vlády a později nástupce"}
+  "erin-toi|terrence-akari": {typ: spoluprace, popis: "Nabídla mu post velvyslance u Xi'anů – odmítl"}
+  "fiona-messer|linton-messer-xi": {typ: rodina, popis: "Sourozenci – Fiona ho nakonec chtěla odstranit"}
+  "fiona-messer|ulysses-messer-x": {typ: rodina, popis: "Dcera a otec – pomohla ho sesadit"}
+  "galor-messer-ix|illyana-messer-vi": {typ: rodina, popis: "Syn a matka – vydědila ho ve prospěch Samuela"}
+  "galor-messer-ix|samuel-messer-viii": {typ: rodina, popis: "Bratři – Galor ho vystřídal na trůnu"}
+  "galor-messer-ix|ulysses-messer-x": {typ: rodina, popis: "Strýc a synovec – Ulysses byl jeho tajemníkem"}
+  "gammon-messer|illyana-messer-vi": {typ: rodina, popis: "Sourozenci"}
+  "gammon-messer|marius-messer-iv": {typ: rodina, popis: "Bratranci – vyrůstali spolu na Zemi"}
+  "gavin-e-hurston|magda-hurston": {typ: rodina, popis: "Syn a matka – vystřídal ji v čele Hurston Dynamics"}
+  "ignacio-assaf|paul-barlow": {typ: spoluprace, popis: "Barlow sklidil slávu za Assafův čin, pravdu přiznal až po letech"}
+  "illyana-messer-vi|samuel-messer-viii": {typ: rodina, popis: "Matka a syn – určila ho za nástupce"}
+  "illyana-sharrad|kelos-costigan": {typ: spoluprace, popis: "Costigan ji jmenoval do úřadu"}
+  "inacio-santos-melo|upsana-dixit": {typ: nastupce, popis: "Nahradil ji roku 2546 jako moderátor pořadu Showdown!"}
+  "ivar-messer-i|janis-rezaian": {typ: protivnik, popis: "Veřejně ho kritizovala"}
+  "ivar-messer-i|mauricio-tusk": {typ: protivnik, popis: "Veřejně ho kritizoval"}
+  "ivar-messer-i|sydney-kamarck": {typ: protivnik, popis: "Kamarck ho viní z bombových útoků roku 2546"}
+  "ivar-messer-i|upsana-dixit": {typ: protivnik, popis: "Odešla na protest proti jeho nástupu k moci"}
+  "j-harris-arnold|leonard-casse": {typ: vliv, popis: "Arnold obdivoval Cassovo dílo a koupil Casse Aerospace"}
+  "janis-rezaian|mauricio-tusk": {typ: spoluprace, popis: "Společně kritizovali Ivara Messera"}
+  "janna-thurville|joona-tzur": {typ: rodina, popis: "Dcera a otec"}
+  "kelos-costigan|titus-costigan": {typ: rodina, popis: "Otec a syn"}
+  "ki-jotal|laylani-addison": {typ: spoluprace, popis: "Jmenovala ji první tevarinskou členkou vlády"}
+  "laylani-addison|suj-kossi": {typ: spoluprace, popis: "Spolupráce na programech pro Tevariny"}
+  "linton-messer-xi|terrence-akari": {typ: protivnik, popis: "Akari se mu jako první vzepřel"}
+  "linton-messer-xi|ulysses-messer-x": {typ: rodina, popis: "Syn a otec – Linton ho svrhl"}
+  "livia-messer-iii|marius-messer-iv": {typ: rodina, popis: "Matka a syn"}
+  "neal-socolovich|vernon-tar": {typ: souvislost, popis: "Socolovichova delegace převzala Tarův první kontakt s Banu"}
+  "terrence-akari|tueng-se-kre": {typ: spoluprace, popis: "Spolu stáli za smlouvou Akari–Kr.ē"}
+vyradit:
+  - "amandeep-vakario|leonard-casse"
+  - "dean-kellar|kellar-lench"
+  - "ellroy-cass|j-harris-arnold"
+  - "ellroy-cass|leonard-casse"
+  - "ellroy-cass|magda-hurston"
+  - "ellroy-cass|noah-traeger"
+  - "ellroy-cass|paul-lesalle"
+  - "eria-quint|upsana-dixit"
+  - "inacio-santos-melo|marie-sante"
+  - "leonard-casse|magda-hurston"
+  - "leonard-casse|marshall-leon"
+  - "leonard-casse|noah-traeger"
+  - "leonard-casse|paul-lesalle"

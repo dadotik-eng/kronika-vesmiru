@@ -1,0 +1,234 @@
+---
+layout: default
+title: Síť osobností
+permalink: /vztahy/
+sekce: osobnosti
+popis: Kdo koho svrhl, kdo s kým spolupracoval a kdo komu předal trůn – vztahy osobností kroniky na časové ose dějin vesmíru.
+---
+<section class="blok mapa-blok vztahy-blok">
+  <p class="nadtitul"><a href="{{ '/osobnosti/' | relative_url }}">Osobnosti</a> · Síť osobností</p>
+  <h1>Kdo s kým</h1>
+  <p class="perex">Rodiny, spojenci, protivníci i ti, kdo se navzájem inspirovali – osobnosti seřazené zleva doprava podle období. Klikni na jméno a uvidíš, s kým ho dějiny spojily a proč.</p>
+
+  <div class="mapa-ovladani">
+    <label class="mapa-hledat"><span class="sr">Najít osobnost</span>
+      <select id="vz-vyber"><option value="">Najít osobnost…</option></select>
+    </label>
+    <label class="mapa-filtr"><input type="checkbox" id="vz-vsichni"> ukázat i osobnosti bez vazeb</label>
+    <ul class="mapa-legenda vz-typy" id="vz-typy" aria-label="Typy vazeb"></ul>
+  </div>
+
+  <div class="mapa-rozvrzeni">
+    <div class="mapa-plocha" id="vz-plocha">
+      <svg id="vz-svg" role="img" aria-label="Síť vztahů mezi osobnostmi">
+        <g id="vz-pasma"></g>
+        <g id="vz-hrany"></g>
+        <g id="vz-uzly"></g>
+      </svg>
+      <div class="mapa-zoom">
+        <button type="button" class="tlacitko" data-zoom="1.4" aria-label="Přiblížit">+</button>
+        <button type="button" class="tlacitko" data-zoom="0.714" aria-label="Oddálit">−</button>
+        <button type="button" class="tlacitko" data-zoom="0" aria-label="Celá síť">⤢</button>
+      </div>
+      <p class="mapa-napoveda">Táhni pro posun · kolečko nebo dva prsty pro přiblížení</p>
+    </div>
+    <aside class="mapa-panel" id="vz-panel" aria-live="polite"></aside>
+  </div>
+  <p class="mapa-zdroj">Vazby vycházejí z medailonků a textů osobností v kronice; u každé je věta, ze které vazba plyne. Kdo v textech nikoho dalšího nejmenuje, zůstává zatím bez vazeb – síť poroste s kronikou. Rodokmen panovníků najdeš v <a href="{{ '/rod-messeru/' | relative_url }}">Rodu Messerů</a>.</p>
+</section>
+
+<script>
+(function () {
+  var Z = document.body.dataset.zaklad || '/';
+  var svg = document.getElementById('vz-svg');
+  if (!svg) return;
+  var gP = document.getElementById('vz-pasma'), gH = document.getElementById('vz-hrany'), gU = document.getElementById('vz-uzly');
+  var panel = document.getElementById('vz-panel'), plocha = document.getElementById('vz-plocha');
+  var vyber = document.getElementById('vz-vyber'), vsichni = document.getElementById('vz-vsichni');
+  var NS = 'http://www.w3.org/2000/svg';
+  var BARVY = { rodina: '#e0785c', spoluprace: '#7fb8d8', protivnik: '#ef5a5a', nastupce: '#f6bd4b', vliv: '#b99ae0', souvislost: '#9aa6b2' };
+  var O = {}, osoby = [], vazby = [], typy = {}, pasma = [], vybrana = null, vb = null, cely = null, skryteTypy = {};
+
+  function el(n, a) { var e = document.createElementNS(NS, n); for (var k in a) e.setAttribute(k, a[k]); return e; }
+  function esc(t) { return String(t == null ? '' : t).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
+  function prijmeni(j) { var s = j.replace(/\s+[IVXL]+\.$/, '').split(' '); return s.length > 1 ? s.slice(1).join(' ') : j; }
+
+  fetch(Z + 'data/vztahy.json').then(function (r) { return r.json(); }).then(function (d) {
+    osoby = d.osoby; vazby = d.vazby; typy = d.typy; pasma = d.pasma;
+    osoby.forEach(function (o) { O[o.id] = o; o.vazby = []; });
+    vazby.forEach(function (v) { if (O[v.a] && O[v.b]) { O[v.a].vazby.push(v); O[v.b].vazby.push(v); } });
+    var minY = Math.min.apply(0, osoby.map(function (o) { return o.y; })), maxY = Math.max.apply(0, osoby.map(function (o) { return o.y; }));
+    cely = { x: -40, y: minY - 140, w: pasma[pasma.length - 1].x1 + 80, h: maxY - minY + 220 };
+    kresli(minY - 120, maxY + 80);
+    var tl = document.getElementById('vz-typy');
+    Object.keys(typy).forEach(function (k) {
+      tl.insertAdjacentHTML('beforeend', '<li><label><input type="checkbox" checked data-typ="' + k + '"> <i style="background:' + BARVY[k] + '"></i>' + esc(typy[k]) + '</label></li>');
+    });
+    tl.querySelectorAll('input').forEach(function (c) { c.addEventListener('change', function () { skryteTypy[c.dataset.typ] = !c.checked; obnovViditelnost(); }); });
+    osoby.slice().sort(function (a, b) { return prijmeni(a.jmeno).localeCompare(prijmeni(b.jmeno), 'cs'); }).forEach(function (o) {
+      vyber.insertAdjacentHTML('beforeend', '<option value="' + esc(o.id) + '">' + esc(o.jmeno) + (o.vazby.length ? ' (' + o.vazby.length + ')' : '') + '</option>');
+    });
+    obnovViditelnost();
+    var start = decodeURIComponent((location.hash || '').slice(1));
+    zobrazCely();
+    if (O[start]) vyberOsobu(start, true); else uvod();
+  }).catch(function () { panel.innerHTML = '<p>Síť se nepodařilo načíst.</p>'; });
+
+  function kresli(y0, y1) {
+    pasma.forEach(function (p, i) {
+      gP.appendChild(el('rect', { x: p.x0, y: y0, width: p.x1 - p.x0, height: y1 - y0, 'class': 'vz-pasmo' + (i % 2 ? ' vz-liche' : '') }));
+      gP.appendChild(el('line', { x1: p.x0, y1: y0, x2: p.x0, y2: y1, 'class': 'vz-hranice' }));
+      var t = el('text', { x: p.x0 + 18, y: y0 + 46, 'class': 'vz-pasmo-nazev', fill: p.barva }); t.textContent = p.nazev; gP.appendChild(t);
+      var r = el('text', { x: p.x0 + 18, y: y0 + 74, 'class': 'vz-pasmo-rozsah' }); r.textContent = p.rozsah; gP.appendChild(r);
+    });
+    vazby.forEach(function (v) {
+      var a = O[v.a], b = O[v.b]; if (!a || !b) return;
+      var mx = (a.x + b.x) / 2, my = (a.y + b.y) / 2 - Math.min(120, Math.abs(a.x - b.x) * 0.12);
+      var p = el('path', { d: 'M' + a.x + ' ' + a.y + ' Q' + mx + ' ' + my + ' ' + b.x + ' ' + b.y, 'class': 'vz-hrana', stroke: BARVY[v.typ] || BARVY.souvislost });
+      p.dataset.a = v.a; p.dataset.b = v.b; p.dataset.typ = v.typ; v.el = p; gH.appendChild(p);
+    });
+    osoby.forEach(function (o) {
+      var era = pasma.filter(function (p) { return p.id === o.obdobi; })[0], barva = era ? era.barva : '#b3c4d4';
+      var g = el('g', { 'class': 'vz-uzel' + (o.vazby.length ? '' : ' vz-sam'), tabindex: 0, role: 'button', 'aria-label': o.jmeno });
+      g.dataset.id = o.id; o.el = g;
+      var t = el('title', {}); t.textContent = o.jmeno + (o.role ? ' – ' + o.role : ''); g.appendChild(t);
+      g.appendChild(el('circle', { cx: o.x, cy: o.y, r: 1, 'class': 'vz-prstenec' }));
+      if (o.ilustrace) {
+        var cid = 'vzc-' + o.id;
+        var cp = el('clipPath', { id: cid }); cp.appendChild(el('circle', { cx: o.x, cy: o.y, r: 1 })); g.appendChild(cp);
+        var im = el('image', { href: Z + 'assets/osoby/' + o.id + '.webp', 'clip-path': 'url(#' + cid + ')', preserveAspectRatio: 'xMidYMid slice' });
+        g.appendChild(im);
+      } else {
+        g.appendChild(el('circle', { cx: o.x, cy: o.y, r: 1, 'class': 'vz-bod', fill: barva }));
+      }
+      var tx = el('text', { x: o.x, y: o.y, 'class': 'vz-popisek' }); tx.textContent = o.jmeno; g.appendChild(tx);
+      g.addEventListener('click', function (ev) { if (!tazeno) vyberOsobu(o.id, false); ev.stopPropagation(); });
+      g.addEventListener('keydown', function (ev) { if (ev.key === 'Enter' || ev.key === ' ') { ev.preventDefault(); vyberOsobu(o.id, true); } });
+      gU.appendChild(g);
+    });
+  }
+
+  function viditelna(o) { return vsichni.checked || o.vazby.length > 0; }
+  function obnovViditelnost() {
+    osoby.forEach(function (o) { o.el.style.display = viditelna(o) ? '' : 'none'; });
+    vazby.forEach(function (v) { if (v.el) v.el.style.display = skryteTypy[v.typ] ? 'none' : ''; });
+    if (vb) nastavVB();
+  }
+
+  // ---------- zobrazení, posun, přiblížení ----------
+  function meritko() { return vb.w / (svg.clientWidth || 800); }
+  function nastavVB() {
+    svg.setAttribute('viewBox', vb.x + ' ' + vb.y + ' ' + vb.w + ' ' + vb.h);
+    var k = meritko(), mobil = (svg.clientWidth || 800) < 600;
+    osoby.forEach(function (o) {
+      var g = o.el, vel = (o.ilustrace ? 13 : 5 + Math.min(5, o.vazby.length)) * (mobil ? 0.8 : 1);
+      if (vybrana && vybrana.id === o.id) vel *= 1.5;
+      var kruhy = g.querySelectorAll('circle'), obr = g.querySelector('image');
+      kruhy.forEach(function (c) { c.setAttribute('r', (c.classList.contains('vz-prstenec') ? vel + 3 : vel) * k); });
+      if (obr) { var r = vel * k; obr.setAttribute('x', o.x - r); obr.setAttribute('y', o.y - r); obr.setAttribute('width', 2 * r); obr.setAttribute('height', 2 * r); }
+      var t = g.querySelector('text');
+      t.setAttribute('x', o.x + (vel + 5) * k); t.setAttribute('y', o.y + 4 * k); t.setAttribute('font-size', 12.5 * k);
+      var priblizeni = cely.w / vb.w * Math.min(1.4, (svg.clientWidth || 800) / 800);
+      var ukaz = priblizeni > 2.6 || (o.vazby.length >= 3 && priblizeni > 1.3) || g.classList.contains('vz-vybrana') || g.classList.contains('vz-soused');
+      t.style.display = ukaz ? '' : 'none';
+    });
+    vazby.forEach(function (v) { if (v.el) v.el.setAttribute('stroke-width', (v.el.classList.contains('vz-aktivni') ? 3 : 1.6) * k); });
+    gP.querySelectorAll('.vz-pasmo-nazev').forEach(function (t) { t.setAttribute('font-size', 16 * k); });
+    gP.querySelectorAll('.vz-pasmo-rozsah').forEach(function (t) { t.setAttribute('font-size', 12 * k); });
+  }
+  function zobrazCely() {
+    var w = plocha.clientWidth || 800, h = plocha.clientHeight || 560, pomer = w / h;
+    vb = { x: cely.x, y: cely.y, w: cely.w, h: cely.h };
+    if (vb.w / vb.h > pomer) { var nh = vb.w / pomer; vb.y -= (nh - vb.h) / 2; vb.h = nh; } else { var nw = vb.h * pomer; vb.x -= (nw - vb.w) / 2; vb.w = nw; }
+    nastavVB();
+  }
+  function priblizit(f, cx, cy) {
+    var nw = Math.min(cely.w * 1.6, Math.max(cely.w / 25, vb.w / f)), skut = vb.w / nw;
+    if (cx == null) { cx = vb.x + vb.w / 2; cy = vb.y + vb.h / 2; }
+    vb.x = cx - (cx - vb.x) / skut; vb.y = cy - (cy - vb.y) / skut; vb.w = nw; vb.h = vb.h / skut; nastavVB();
+  }
+  function naPlochu(cx, cy) { var r = svg.getBoundingClientRect(); return { x: vb.x + (cx - r.left) * vb.w / r.width, y: vb.y + (cy - r.top) * vb.h / r.height }; }
+  svg.addEventListener('wheel', function (e) { e.preventDefault(); var p = naPlochu(e.clientX, e.clientY); priblizit(e.deltaY < 0 ? 1.18 : 1 / 1.18, p.x, p.y); }, { passive: false });
+  var uk = {}, tah = null, tazeno = false, stin = null;
+  svg.addEventListener('pointerdown', function (e) {
+    uk[e.pointerId] = { x: e.clientX, y: e.clientY }; tazeno = false;
+    var ids = Object.keys(uk);
+    if (ids.length === 1) tah = { x: e.clientX, y: e.clientY, vb: { x: vb.x, y: vb.y } };
+    if (ids.length === 2) { var a = uk[ids[0]], b = uk[ids[1]]; stin = { d: Math.hypot(a.x - b.x, a.y - b.y), w: vb.w }; }
+  });
+  svg.addEventListener('pointermove', function (e) {
+    if (!uk[e.pointerId]) return;
+    uk[e.pointerId] = { x: e.clientX, y: e.clientY };
+    var ids = Object.keys(uk);
+    if (ids.length === 2 && stin) { var a = uk[ids[0]], b = uk[ids[1]], d = Math.hypot(a.x - b.x, a.y - b.y), p = naPlochu((a.x + b.x) / 2, (a.y + b.y) / 2); priblizit((vb.w / stin.w) * (d / stin.d), p.x, p.y); tazeno = true; return; }
+    if (tah) {
+      var dx = e.clientX - tah.x, dy = e.clientY - tah.y;
+      if (Math.abs(dx) + Math.abs(dy) > 4) { tazeno = true; if (!svg.hasPointerCapture(e.pointerId)) svg.setPointerCapture(e.pointerId); }
+      if (tazeno) { var k = meritko(); vb.x = tah.vb.x - dx * k; vb.y = tah.vb.y - dy * k; nastavVB(); }
+    }
+  });
+  function konec(e) { delete uk[e.pointerId]; if (Object.keys(uk).length < 2) stin = null; if (!Object.keys(uk).length) { tah = null; setTimeout(function () { tazeno = false; }, 0); } }
+  svg.addEventListener('pointerup', konec); svg.addEventListener('pointercancel', konec);
+  svg.addEventListener('click', function () { if (!tazeno && vybrana) zrusVyber(); });
+  document.querySelectorAll('.vztahy-blok .mapa-zoom [data-zoom]').forEach(function (b) {
+    b.addEventListener('click', function () { var f = +b.dataset.zoom; if (f) priblizit(f); else zobrazCely(); });
+  });
+  if (window.ResizeObserver) new ResizeObserver(function () { if (vb) { var w = plocha.clientWidth, h = plocha.clientHeight, cy = vb.y + vb.h / 2; vb.h = vb.w * h / w; vb.y = cy - vb.h / 2; nastavVB(); } }).observe(plocha);
+  window.addEventListener('hashchange', function () { var id = decodeURIComponent(location.hash.slice(1)); if (document.getElementById('vz-svg') === svg && O[id] && (!vybrana || vybrana.id !== id)) vyberOsobu(id, true); });
+
+  // ---------- výběr osobnosti ----------
+  function zrusVyber() {
+    vybrana = null; vyber.value = ''; svg.classList.remove('vz-zamereno');
+    osoby.forEach(function (o) { o.el.classList.remove('vz-vybrana', 'vz-soused'); });
+    vazby.forEach(function (v) { if (v.el) v.el.classList.remove('vz-aktivni'); });
+    try { history.replaceState(history.state, '', location.pathname); } catch (e) {}
+    nastavVB(); uvod();
+  }
+  function vyberOsobu(id, vycentrovat) {
+    var o = O[id]; if (!o) return;
+    if (!viditelna(o)) { vsichni.checked = true; obnovViditelnost(); }
+    vybrana = o; vyber.value = id; svg.classList.add('vz-zamereno');
+    try { history.replaceState(history.state, '', '#' + id); } catch (e) {}
+    var sousede = {};
+    o.vazby.forEach(function (v) { sousede[v.a === id ? v.b : v.a] = 1; });
+    osoby.forEach(function (x) { x.el.classList.toggle('vz-vybrana', x.id === id); x.el.classList.toggle('vz-soused', !!sousede[x.id]); });
+    vazby.forEach(function (v) { if (v.el) v.el.classList.toggle('vz-aktivni', v.a === id || v.b === id); });
+    gU.appendChild(o.el);
+    if (vycentrovat) { vb.x = o.x - vb.w / 2; vb.y = o.y - vb.h / 2; if (cely.w / vb.w < 2.5) priblizit(3 * vb.w / cely.w, o.x, o.y); }
+    nastavVB();
+    vykresliPanel(o);
+  }
+  function uvod() {
+    var poc = osoby.filter(function (o) { return o.vazby.length; }).length;
+    panel.innerHTML = '<p class="mp-stitek" style="--barva:var(--akcent)"><i></i>Síť osobností</p><h2>Klikni na jméno</h2>'
+      + '<p class="mp-popis">V síti je ' + poc + ' osobností propojených ' + vazby.length + ' vazbami. Barva čáry říká, co je spojuje.</p>'
+      + '<h3>Nejvíc propojení</h3><ul class="vz-top">' + osoby.slice().sort(function (a, b) { return b.vazby.length - a.vazby.length; }).slice(0, 8).map(function (o) {
+        return '<li><button type="button" class="mp-skok" data-id="' + esc(o.id) + '">' + esc(o.jmeno) + '</button> <span>' + o.vazby.length + '</span></li>';
+      }).join('') + '</ul>';
+    panel.querySelectorAll('[data-id]').forEach(function (b) { b.addEventListener('click', function () { vyberOsobu(b.dataset.id, true); }); });
+  }
+  function vykresliPanel(o) {
+    var era = pasma.filter(function (p) { return p.id === o.obdobi; })[0];
+    var roky = [o.narozeni, o.umrti].filter(function (x) { return x && x !== 'None'; });
+    var h = '<p class="mp-stitek" style="--barva:' + (era ? era.barva : '#b3c4d4') + '"><i></i>' + esc(era ? era.nazev : '') + '</p>';
+    h += '<h2>' + esc(o.jmeno) + '</h2>';
+    if (o.role) h += '<p class="mp-popis">' + esc(o.role) + (roky.length ? ' · ' + esc(roky.join(' – ')) : '') + '</p>';
+    h += '<p class="vz-odkaz"><a class="tlacitko" href="' + Z + 'osobnosti/' + o.id + '/">Celý medailonek →</a></p>';
+    h += '<h3>Vazby (' + o.vazby.length + ')</h3>';
+    if (!o.vazby.length) h += '<p class="mp-nic">V textech kroniky zatím nikoho dalšího nejmenuje a nikdo nejmenuje ji.</p>';
+    var poradi = Object.keys(typy);
+    o.vazby.slice().sort(function (a, b) { return poradi.indexOf(a.typ) - poradi.indexOf(b.typ); }).forEach(function (v) {
+      var druhy = O[v.a === o.id ? v.b : v.a];
+      h += '<div class="vz-vazba" style="--barva:' + (BARVY[v.typ] || BARVY.souvislost) + '">'
+        + '<p class="vz-hlava"><button type="button" class="vz-jmeno" data-id="' + esc(druhy.id) + '">' + esc(druhy.jmeno) + '</button><span class="vz-typ">' + esc(typy[v.typ] || v.typ) + '</span></p>'
+        + (v.popis ? '<p class="vz-popis">' + esc(v.popis) + '</p>' : '')
+        + (v.vety && v.vety.length ? '<details><summary>Z textu kroniky</summary>' + v.vety.map(function (x) { return '<blockquote>' + esc(x.v) + '<cite>— medailonek: ' + esc((O[x.z] || {}).jmeno || x.z) + '</cite></blockquote>'; }).join('') + '</details>' : '')
+        + '</div>';
+    });
+    panel.innerHTML = h;
+    panel.querySelectorAll('.vz-jmeno').forEach(function (b) { b.addEventListener('click', function () { vyberOsobu(b.dataset.id, true); }); });
+  }
+  vyber.addEventListener('change', function () { if (vyber.value) vyberOsobu(vyber.value, true); else zrusVyber(); });
+  vsichni.addEventListener('change', obnovViditelnost);
+})();
+</script>
