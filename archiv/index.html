@@ -269,7 +269,8 @@ function openFind(k,btn){const f=D.finds[k];wasPlaying=playing;if(playing)toggle
 let auto=false,viaFork=false;const AUTO_WAIT=5000;
 function autoNext(id,label){if(!auto)return '';after(AUTO_WAIT,()=>go(id));return `<p class="small" id="an" style="margin-bottom:16px">Za chvíli se automaticky spustí: ${label}. <button type="button" id="stopa" style="color:var(--accent);text-decoration:underline">Zastavit</button></p>`}
 function bindStop(){const b=$('#stopa');if(b)b.onclick=()=>{clear();$('#an').remove()}}
-function go(id,from=0){if(id!=='letka')viaFork=false;closeCard(false);clear();cancelAnimationFrame(rafYear);if(!entered)unlock();amb=false;sc=idx(id);ln=from;const s=S[sc];
+function zapocitej(id){try{const k='kv-pocitano-'+id;if(sessionStorage.getItem(k))return;sessionStorage.setItem(k,'1')}catch(e){}if(!/^(prolog|letka|kap-\d+)$/.test(id))return;const f=document.createElement('iframe');f.hidden=true;f.setAttribute('aria-hidden','true');f.tabIndex=-1;f.src='../poslech/'+id+'/';document.body.appendChild(f);setTimeout(()=>f.remove(),15000)}
+function go(id,from=0){zapocitej(id);if(id!=='letka')viaFork=false;closeCard(false);clear();cancelAnimationFrame(rafYear);if(!entered)unlock();amb=false;sc=idx(id);ln=from;const s=S[sc];
   document.body.classList.remove('radio');document.body.dataset.mood=s.mood;chrome('scene');vis.mode=s.vis;vis.reset();
   if(E){curMood=null;mood(s.mood);E.setThreat(0)}
   $('#skip').hidden=id!=='prolog';

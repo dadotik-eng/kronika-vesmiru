@@ -61,3 +61,6 @@ socialni_site:
   discord: ""
   facebook: ""
   youtube: ""
+
+# Cloudflare Web Analytics (veřejný token měřicího skriptu, není tajný)
+statistiky_token: "f77cd50715d74860859487018bcfb7ac"
