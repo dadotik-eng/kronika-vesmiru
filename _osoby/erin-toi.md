@@ -18,6 +18,7 @@ zdroje:
 kapitoly:
 - kap-8
 rad: 2746
+ilustrace: true
 obdobi: naprava
 ---
 
