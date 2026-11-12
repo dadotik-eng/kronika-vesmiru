@@ -113,7 +113,7 @@ def rozlozeni(osoby, vazby):
                     continue
                 dy = Y[i] - Y[j]
                 d2 = dx * dx + dy * dy + 1
-                f = 40000 / d2
+                f = 80000 / d2
                 d = math.sqrt(d2)
                 F[i] += f * dy / d
                 F[j] -= f * dy / d
