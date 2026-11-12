@@ -18,6 +18,8 @@ on:
       - 'nastroje/mapa.py'
       - 'nastroje/mapa_soustavy.json'
       - '_data/mapa_popisy.yml'
+      - '_data/vztahy.yml'
+      - 'nastroje/vztahy.py'
       - '_udalosti/**'
       - '_data/texty.yml'
 permissions:
@@ -38,13 +40,15 @@ jobs:
         run: python3 nastroje/nahledy.py
       - name: Data hvězdné mapy
         run: python3 nastroje/mapa.py
+      - name: Data sítě osobností
+        run: python3 nastroje/vztahy.py
       - name: Uložit do repozitáře
         run: |
-          if [ -n "$(git status --porcelain assets/nahledy data/mapa.json)" ]; then
+          if [ -n "$(git status --porcelain assets/nahledy data/mapa.json data/vztahy.json _data/vztahy_index.yml)" ]; then
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add assets/nahledy data/mapa.json
-            git commit -m "Náhledy a data mapy: aktualizace"
+            git add assets/nahledy data/mapa.json data/vztahy.json _data/vztahy_index.yml
+            git commit -m "Náhledy, mapa a síť osobností: aktualizace"
             git pull --rebase --quiet
             git push
           else

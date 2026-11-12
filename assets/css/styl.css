@@ -663,3 +663,39 @@ a.os-odkaz:hover { color: var(--akcent); }
   .mapa-plocha { height: 62vh; min-height: 340px; }
   .mapa-panel { max-height: none; }
 }
+
+/* ---------- Síť osobností ---------- */
+.vztahy-blok .nadtitul a { color: inherit; }
+.vz-pasmo { fill: rgba(18,53,95,.10); }
+.vz-pasmo.vz-liche { fill: rgba(18,53,95,.22); }
+.vz-hranice { stroke: rgba(222,236,246,.12); vector-effect: non-scaling-stroke; }
+.vz-pasmo-nazev { font-family: var(--display); font-weight: 700; }
+.vz-pasmo-rozsah { font-family: var(--label); fill: var(--tlumene); }
+.vz-hrana { fill: none; opacity: .55; }
+.vz-hrana.vz-aktivni { opacity: 1; }
+#vz-svg.vz-zamereno .vz-hrana:not(.vz-aktivni) { opacity: .08; }
+#vz-svg.vz-zamereno .vz-uzel:not(.vz-vybrana):not(.vz-soused) { opacity: .3; }
+.vz-uzel { cursor: pointer; outline: none; }
+.vz-uzel.vz-sam { opacity: .55; }
+.vz-prstenec { fill: rgba(7,15,31,.85); stroke: rgba(222,236,246,.35); stroke-width: 1; vector-effect: non-scaling-stroke; }
+.vz-uzel.vz-vybrana .vz-prstenec { stroke: var(--akcent); stroke-width: 2.5; }
+.vz-uzel.vz-soused .vz-prstenec { stroke: rgba(246,189,75,.7); }
+.vz-uzel:hover .vz-bod, .vz-uzel:focus .vz-bod { filter: brightness(1.3); }
+.vz-popisek { fill: var(--text); font-family: var(--label); paint-order: stroke; stroke: rgba(7,15,31,.92); stroke-width: 3px; stroke-linejoin: round; pointer-events: none; }
+.vz-uzel.vz-vybrana .vz-popisek { fill: var(--akcent); font-weight: 600; }
+.vz-typy label { display: flex; align-items: center; gap: .35rem; cursor: pointer; }
+.vz-typy i { border-radius: 2px; width: 1rem; height: .25rem; }
+.vz-odkaz { margin: .8rem 0 0; }
+.vz-vazba { border-left: 3px solid var(--barva); padding: .2rem 0 .2rem .7rem; margin: .7rem 0; }
+.vz-hlava { margin: 0; display: flex; align-items: baseline; gap: .6rem; flex-wrap: wrap; }
+.vz-jmeno { background: none; border: 0; padding: 0; color: var(--text); font-family: var(--display); font-weight: 700; font-size: 1.05rem; cursor: pointer; text-align: left; }
+.vz-jmeno:hover { color: var(--akcent); }
+.vz-typ { font-family: var(--label); font-size: .8rem; text-transform: uppercase; letter-spacing: .08em; color: var(--barva); }
+.vz-popis { margin: .2rem 0 0; color: var(--tlumene); line-height: 1.45; }
+.vz-vazba details { margin-top: .3rem; }
+.vz-vazba summary { font-family: var(--label); font-size: .85rem; color: var(--tlumene); cursor: pointer; }
+.vz-vazba blockquote { margin: .4rem 0; padding: .4rem .6rem; background: rgba(7,15,31,.5); border-radius: 6px; font-size: .95rem; line-height: 1.45; }
+.vz-vazba cite { display: block; margin-top: .25rem; font-family: var(--label); font-style: normal; font-size: .8rem; color: var(--tlumene); }
+.vz-top { list-style: none; padding: 0; margin: 0; display: grid; gap: .35rem; }
+.vz-top li { display: flex; align-items: center; justify-content: space-between; gap: .5rem; }
+.vz-top span { font-family: var(--label); color: var(--tlumene); }
