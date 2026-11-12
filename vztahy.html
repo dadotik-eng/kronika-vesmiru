@@ -71,6 +71,9 @@ popis: Kdo koho svrhl, kdo s kým spolupracoval a kdo komu předal trůn – vzt
     obnovViditelnost();
     var start = decodeURIComponent((location.hash || '').slice(1));
     zobrazCely();
+    // úvodní pohled: celá výška, vodorovně na éře Messerů (nejhustší část sítě)
+    var mes = pasma.filter(function (p) { return p.id === 'messerove'; })[0];
+    if (mes && vb.h > cely.h) { var f = vb.h / cely.h; priblizit(Math.min(f, 4), (mes.x0 + mes.x1) / 2, cely.y + cely.h / 2); }
     if (O[start]) vyberOsobu(start, true); else uvod();
   }).catch(function () { panel.innerHTML = '<p>Síť se nepodařilo načíst.</p>'; });
 
@@ -133,8 +136,11 @@ popis: Kdo koho svrhl, kdo s kým spolupracoval a kdo komu předal trůn – vzt
       t.style.display = ukaz ? '' : 'none';
     });
     vazby.forEach(function (v) { if (v.el) v.el.setAttribute('stroke-width', (v.el.classList.contains('vz-aktivni') ? 3 : 1.6) * k); });
-    gP.querySelectorAll('.vz-pasmo-nazev').forEach(function (t) { t.setAttribute('font-size', 16 * k); });
-    gP.querySelectorAll('.vz-pasmo-rozsah').forEach(function (t) { t.setAttribute('font-size', 12 * k); });
+    gP.querySelectorAll('.vz-pasmo-nazev, .vz-pasmo-rozsah').forEach(function (t, i) {
+      var p = pasma[Math.floor(i / 2)], sirkaPx = (p.x1 - p.x0) / k;
+      t.setAttribute('font-size', (t.classList.contains('vz-pasmo-nazev') ? 16 : 12) * k);
+      t.style.display = sirkaPx > (t.classList.contains('vz-pasmo-nazev') ? 170 : 120) ? '' : 'none';
+    });
   }
   function zobrazCely() {
     var w = plocha.clientWidth || 800, h = plocha.clientHeight || 560, pomer = w / h;
