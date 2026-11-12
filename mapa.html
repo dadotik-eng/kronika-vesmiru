@@ -81,7 +81,7 @@ popis: Interaktivní mapa 90 hvězdných soustav a skokových bodů vesmíru Sta
   function esc(t) { return String(t == null ? '' : t).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
   function maKroniku(s) { return Object.keys(s.kronika || {}).length > 0; }
 
-  fetch(Z + 'data/mapa.json').then(function (r) { return r.json(); }).then(function (d) {
+  fetch(Z + 'data/mapa.json?v=' + (document.body.dataset.verze || '')).then(function (r) { return r.json(); }).then(function (d) {
     soustavy = d.soustavy; skoky = d.skoky; perry = d.perry || []; milniky = d.milniky || [];
     soustavy.forEach(function (s) { S[s.kod] = s; s.sousede = []; s.px = s.x * M; s.py = -s.y * M; });
     skoky.forEach(function (e) { var a = S[e[0]], b = S[e[1]]; if (a && b) { a.sousede.push(b.kod); b.sousede.push(a.kod); } });

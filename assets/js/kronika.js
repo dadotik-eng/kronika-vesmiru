@@ -282,7 +282,7 @@
   var hp = $('#hledat-vse'), vys = $('#vysledky'), index = null;
   function nactiIndex() {
     if (index) return index;
-    var j = function (u) { return fetch(ZAKLAD + u).then(function (r) { return r.ok ? r.json() : []; }).catch(function () { return []; }); };
+    var j = function (u) { return fetch(ZAKLAD + u + '?v=' + (document.body.dataset.verze || '')).then(function (r) { return r.ok ? r.json() : []; }).catch(function () { return []; }); };
     index = Promise.all([j('data/osoby.json'), j('data/udalosti.json'), j('data/pojmy.json'), j('kapitoly.json'), j('data/dejiny.json'), j('novinky.json')]).then(function (d) {
       var vse = [];
       d[0].forEach(function (o) { vse.push({ t: o.jmeno, p: o.role + (o.narozeni && o.narozeni !== 'neznámo' ? ' · ' + o.narozeni : ''), u: ZAKLAD + 'osobnosti/' + o.id + '/', k: 'Osoba' }); });
@@ -328,7 +328,7 @@
   var pojmy = null;
   function nactiPojmy() {
     if (pojmy) return pojmy;
-    pojmy = fetch(ZAKLAD + 'data/pojmy.json').then(function (r) { return r.ok ? r.json() : []; }).catch(function () { return []; }).then(function (p) {
+    pojmy = fetch(ZAKLAD + 'data/pojmy.json?v=' + (document.body.dataset.verze || '')).then(function (r) { return r.ok ? r.json() : []; }).catch(function () { return []; }).then(function (p) {
       var s = []; (p || []).forEach(function (x) { (x.tvary || [x.termin]).forEach(function (f) { if (f && f.length > 2) s.push([f, x.vysvetleni, x.termin]); }); });
       return s.sort(function (a, b) { return b[0].length - a[0].length; });
     });
@@ -365,7 +365,7 @@
   var osobyRe = null;
   function nactiOsoby() {
     if (osobyRe) return osobyRe;
-    osobyRe = fetch(ZAKLAD + 'data/osoby.json').then(function (r) { return r.ok ? r.json() : []; }).catch(function () { return []; }).then(function (os) {
+    osobyRe = fetch(ZAKLAD + 'data/osoby.json?v=' + (document.body.dataset.verze || '')).then(function (r) { return r.ok ? r.json() : []; }).catch(function () { return []; }).then(function (os) {
       var kmen = function (w) { return w.length > 4 && /[aeiouyáéíóúůý]$/i.test(w) ? w.slice(0, -1) : w; };
       return os.map(function (o) {
         var slova = o.jmeno.replace(/\./g, '').split(/\s+/).filter(function (w) { return !/^[IVXL]+$/.test(w); });
