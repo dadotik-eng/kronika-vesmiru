@@ -3,7 +3,7 @@ layout: default
 ---
 <article class="kapitola">
   <p class="nadtitul">
-    {% if page.era %}{{ page.era }} · {% endif %}{% if page.herni_rok %}{{ page.herni_rok }}{% endif %}{% if page.system %} · {{ page.system }}{% endif %}
+    {% if page.era %}{{ page.era }} · {% endif %}{% if page.herni_rok %}{{ page.herni_rok }}{% endif %}{% if page.system %} · <a href="{{ '/mapa/' | relative_url }}#{{ page.system | upcase | replace: ' ', '' }}" title="Ukázat na hvězdné mapě">{{ page.system }} ↗</a>{% endif %}
   </p>
   <h1>{{ page.title }}</h1>
   <div class="radek-stav">
