@@ -1,0 +1,31 @@
+---
+layout: null
+permalink: /novinky.json
+---
+{
+  "web": {{ site.title | jsonify }},
+  "vygenerovano": {{ site.time | date_to_xmlschema | jsonify }},
+  "polozky": [
+{%- assign prvni = true -%}
+{%- for k in site.kapitoly -%}
+    {% unless prvni %},{% endunless %}{% assign prvni = false %}
+    {"id": {{ "kapitola:" | append: k.slug | jsonify }}, "druh": "kapitola", "nazev": {{ k.title | jsonify }}, "perex": {{ k.popis | default: "" | jsonify }}, "url": {{ k.url | absolute_url | jsonify }}, "obrazek": null, "datum": {{ k.date | date: "%Y-%m-%d" | jsonify }}}
+{%- endfor -%}
+{%- for o in site.osoby -%}
+    {% unless prvni %},{% endunless %}{% assign prvni = false %}
+    {"id": {{ "osoba:" | append: o.slug | jsonify }}, "druh": "osobnost", "nazev": {{ o.jmeno | jsonify }}, "perex": {{ o.medailonek | default: o.role | jsonify }}, "url": {{ o.url | absolute_url | jsonify }}, "obrazek": {% if o.ilustrace %}{{ '/assets/osoby/' | append: o.slug | append: '.webp' | absolute_url | jsonify }}{% else %}null{% endif %}, "datum": null}
+{%- endfor -%}
+{%- for h in site.encyklopedie -%}
+    {% unless prvni %},{% endunless %}{% assign prvni = false %}
+    {"id": {{ "heslo:" | append: h.slug | jsonify }}, "druh": "heslo", "nazev": {{ h.nazev | jsonify }}, "perex": {{ h.perex | jsonify }}, "url": {{ h.url | absolute_url | jsonify }}, "obrazek": null, "datum": null}
+{%- endfor -%}
+{%- for r in site.rasy -%}
+    {% unless prvni %},{% endunless %}{% assign prvni = false %}
+    {"id": {{ "rasa:" | append: r.slug | jsonify }}, "druh": "rasa", "nazev": {{ r.nazev | jsonify }}, "perex": {{ r.perex | jsonify }}, "url": {{ r.url | absolute_url | jsonify }}, "obrazek": {% if r.obrazek %}{{ r.obrazek | absolute_url | jsonify }}{% else %}null{% endif %}, "datum": null}
+{%- endfor -%}
+{%- for u in site.udalosti -%}
+    {% unless prvni %},{% endunless %}{% assign prvni = false %}
+    {"id": {{ "udalost:" | append: u.slug | jsonify }}, "druh": "udalost", "nazev": {{ u.titul | jsonify }}, "perex": {{ u.text | jsonify }}, "url": {{ '/casova-osa/' | absolute_url | jsonify }}, "obrazek": null, "datum": {{ u.datum | jsonify }}}
+{%- endfor %}
+  ]
+}
