@@ -14,6 +14,7 @@ zdroje:
 kapitoly: []
 rad: 2795
 obdobi: naprava
+ilustrace: true
 ---
 
 Podle Barlowovy pozdější výpovědi začala noc útoku obyčejně. Většina družstva po střídání hlídek pila v kasárnách a hrála hru Trigger, a on jako nejmladší dostal rozkaz zajít pro pivo. Byl už opilý, když nad osadou zahřměly vanduulské bombardéry a srovnaly se zemí kosmodrom i vojenské zázemí.

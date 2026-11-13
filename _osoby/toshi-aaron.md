@@ -15,4 +15,5 @@ kapitoly:
 - kap-9
 rad: 2802
 obdobi: naprava
+ilustrace: true
 ---
