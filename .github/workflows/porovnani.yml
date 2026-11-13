@@ -31,7 +31,7 @@ jobs:
           for d in site-zaklad site-novy; do
             grep -rlZ . $d | xargs -0 sed -i -E 's/(data-verze="|[?&]v=)[0-9a-z]+/\1X/g; s/[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9:+.-]+/CAS/g'
           done
-          echo "### Změněné soubory"; diff -rq site-zaklad site-novy | sed 's#site-##g' | tee /tmp/seznam.txt | head -80
+          echo "### Změněné soubory"; { diff -rq site-zaklad site-novy || true; } | sed 's#site-##g' | tee /tmp/seznam.txt | head -80
           echo; echo "Celkem: $(wc -l < /tmp/seznam.txt)"
           echo; echo "### Ukázka rozdílů (HTML)"
           diff -ru -x assets -x '*.json' site-zaklad site-novy | head -500 || true
