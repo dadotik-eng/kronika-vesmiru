@@ -101,8 +101,15 @@
     $('#pb-text').textContent = 'Věta ' + (p.ln + 1) + (p.total ? ' z ' + p.total : '');
     $('#pb-bar').style.width = p.total ? ((p.ln + 1) / p.total * 100) + '%' : '0';
   })();
-  // Přehrávač načteme v klidu na pozadí, aby se spustil hned.
-  setTimeout(function () { pripravFrame(); }, 1800);
+  // Přehrávač načteme dopředu jen tomu, kdo o zvuk stojí: kdo má rozposlouchanou kapitolu (v klidu na pozadí),
+  // nebo kdo najede / sáhne na přehrávač či odkaz na poslech. Ostatním (hlavně na mobilu) se nic navíc nestahuje.
+  var vKlidu = window.requestIdleCallback || function (f) { return setTimeout(f, 1800); };
+  if (pozice()) vKlidu(function () { pripravFrame(); }, { timeout: 4000 });
+  ['pointerover', 'touchstart', 'focusin'].forEach(function (ud) {
+    document.addEventListener(ud, function (e) {
+      if (!framePripraven && e.target.closest && e.target.closest('#prehravac, a[href*="/archiv/"], [data-prehrat]')) pripravFrame();
+    }, { passive: true });
+  });
 
   /* ---------- Hudba a hlas (zvlášť vypínatelné) ---------- */
   var zv = { hudba: $('#z-hudba'), hlas: $('#z-hlas') };
@@ -250,6 +257,10 @@
       spustSkripty(m);
       if (u.hash) { var c = document.getElementById(decodeURIComponent(u.hash.slice(1))); if (c) c.scrollIntoView(); else window.scrollTo(0, 0); }
       else window.scrollTo(0, 0);
+      // Klávesnice a čtečky: po výměně obsahu přesunout focus na nadpis nové stránky (čtečka ho přečte).
+      var nadpis = m.querySelector('h1') || m;
+      if (!nadpis.hasAttribute('tabindex')) nadpis.setAttribute('tabindex', '-1');
+      try { nadpis.focus({ preventScroll: true }); } catch (e) { nadpis.focus(); }
       document.body.classList.remove('nacita');
       warp.hotovo();
       poNacteni();

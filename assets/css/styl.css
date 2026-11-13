@@ -122,6 +122,7 @@ button.tlacitko { background: transparent; cursor: pointer; }
 .stav-poznamka { font-size: .85rem; color: var(--tlumene); border-left: 2px solid var(--ceka); padding: .3rem .7rem; margin: .6rem 0 0; }
 .jen-beta { display: none; }
 html.beta .jen-beta { display: block; }
+html.beta span.jen-beta { display: inline; }
 .kapitola .text { font-size: 1.3rem; line-height: 1.8; }
 .kapitola .dramatizace p:first-child::first-letter { float: none; font-size: inherit; padding: 0; color: inherit; font-family: inherit; }
 .dr-replika { padding-left: 1rem; border-left: 2px solid var(--linka); }
@@ -748,3 +749,7 @@ a.os-odkaz:hover { color: var(--akcent); }
 .m-uz-vypln { fill-opacity: .09; stroke-width: .6; stroke-opacity: .09; vector-effect: non-scaling-stroke; }
 .m-uz-hranice { fill: none; stroke-width: 1.6; stroke-opacity: .7; stroke-linecap: round; vector-effect: non-scaling-stroke; }
 @media (max-width: 600px) { .mapa-legenda { font-size: .75rem; gap: .1rem .6rem; padding: .35rem .5rem; } .prepinac { font-size: .92rem; padding: .38rem .8rem; } }
+
+/* Přístupnost: jednotný viditelný focus pro klávesnici; nadpis, na který skočí focus po přechodu stránky, rámeček nemá */
+:focus-visible { outline: 2px solid var(--akcent); outline-offset: 2px; }
+main h1[tabindex="-1"]:focus, main[tabindex="-1"]:focus { outline: none; }

@@ -23,7 +23,7 @@ popis: Dramatizace a kapitoly ze skutečných událostí dějin vesmíru Star Ci
     {% endif %}{% endfor %}
     {% for k in nove %}
     <article class="pri-karta" id="kapitola-{{ k.slug }}">
-      <p class="pri-stitek">Kapitola od bota · {{ k.herni_rok }}{% if k.overeni != "OK" %} · čeká na ověření{% endif %}</p>
+      <p class="pri-stitek">Nová kapitola · {{ k.herni_rok }}{% if k.overeni != "OK" %}<span class="jen-beta"> · čeká na ověření</span>{% endif %}</p>
       <h3>{{ k.title }}</h3>
       <p class="text-pojmy">{{ k.popis }}</p>
       <p class="pri-akce"><a class="dej-hraj" href="{{ '/archiv/#web-' | append: k.slug | relative_url }}">▶ Přehrát</a> <a href="{{ k.url | relative_url }}">Číst →</a></p>

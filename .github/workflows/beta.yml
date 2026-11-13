@@ -2,7 +2,8 @@
 # Náhled: https://beta.hvezdna-kronika.pages.dev (zamčený přes Cloudflare Access).
 #  - po každé změně ostrého webu (main) se main přimíchá do bety, aby beta nezastarala,
 #  - ruční spuštění s akcí "zahodit" vrátí betu na stav ostrého webu (zahodí neschválené návrhy).
-# Schválení (beta → main) dělá bot přímo přes GitHub API (merge).
+#  - ruční spuštění s akcí "schvalit" zkontroluje betu podle pravidel ostrého webu (kapitoly jen overeni: OK)
+#    a teprve pak ji sloučí do main; potom spustí Náhledy (push z akce jiné akce sám nespouští).
 name: Beta
 on:
   push:
@@ -10,21 +11,37 @@ on:
   workflow_dispatch:
     inputs:
       akce:
-        description: "obnovit = přimíchat main do bety · zahodit = beta znovu podle main"
+        description: "obnovit = přimíchat main do bety · zahodit = beta znovu podle main · schvalit = zkontrolovat a sloučit betu do main"
         required: true
         default: obnovit
 permissions:
   contents: write
+  actions: write
 jobs:
   beta:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
         with: { fetch-depth: 0 }
-      - run: |
+      - env: { GH_TOKEN: "${{ github.token }}" }
+        run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           AKCE="${{ github.event.inputs.akce || 'obnovit' }}"
+          if [ "$AKCE" = "schvalit" ]; then
+            git checkout -B beta origin/beta
+            pip install -q pyyaml
+            if ! python3 nastroje/kontrola.py --ostry; then
+              echo "::error::Beta neprošla kontrolou pro ostrý web – nic se neschválilo."
+              exit 1
+            fi
+            git checkout -B main origin/main
+            git merge --no-edit origin/beta -m "Schváleno: beta → ostrý web"
+            git push origin main
+            gh workflow run nahledy.yml --ref main
+            echo "Beta schválena a sloučena do main."
+            exit 0
+          fi
           if [ "$AKCE" = "zahodit" ] || ! git ls-remote --exit-code --heads origin beta >/dev/null; then
             git push --force origin origin/main:refs/heads/beta
             echo "Beta nastavena podle main."
