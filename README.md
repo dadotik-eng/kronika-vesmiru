@@ -39,3 +39,8 @@ Surová data Archiváře (databáze, RAW JSONy, stažený archiv) do tohoto repo
 ## Schvalování (beta → ostrý web)
 - Bot píše jen do větve `beta`. Na ostrý web (`main`) se dostane až po Danielově schválení.
 - Schválení = akce **Beta** s volbou `schvalit`: nejdřív `nastroje/kontrola.py --ostry` (kapitola musí mít `overeni: OK`), teprve pak sloučení do `main` a spuštění Náhledů.
+
+## Hlídač zdrojů
+`data/zdroje.json` (generuje Jekyll) obsahuje všechny zdroje kroniky s otiskem verze, podle které se ověřovalo.
+`nastroje/hlidac_zdroju.py` ho porovná s databází Archiváře a vypíše záznamy, jejichž zdroj se na RSI od ověření změnil.
+Kopie skriptu leží u Archiváře (`H:\Kronika`), který výsledek přidává do týdenního reportu v Telegramu.

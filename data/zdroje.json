@@ -1,0 +1,23 @@
+---
+layout: null
+permalink: /data/zdroje.json
+---
+{%- comment -%}
+Všechny zdroje kroniky s otiskem verze, podle které se ověřovalo (formát v2).
+Čte ho hlídač zdrojů (nastroje/hlidac_zdroju.py) – porovná otisky s databází Archiváře.
+{%- endcomment -%}
+{%- assign kolekce = "osoby,encyklopedie,rasy,kapitoly,zasobnik" | split: "," -%}
+[{%- assign prvni = true -%}
+{%- for nazev in kolekce -%}{%- assign docs = site[nazev] -%}{%- for d in docs -%}{%- assign titul = d.title | default: d.jmeno | default: d.nazev -%}{%- for z in d.zdroje -%}
+{%- unless prvni %},{% endunless %}{%- assign prvni = false %}
+{"record_key":{{ z.record_key | jsonify }},"hash":{{ z.hash | jsonify }},"nazev":{{ z.nazev | jsonify }},"url":{{ z.url | jsonify }},"kde":{{ nazev | append: "/" | append: d.slug | jsonify }},"titul":{{ titul | jsonify }},"odkaz":{{ d.url | absolute_url | jsonify }}}
+{%- endfor -%}{%- endfor -%}{%- endfor -%}
+{%- for k in site.data.dejiny -%}{%- for z in k.zdroje -%}
+{%- unless prvni %},{% endunless %}{%- assign prvni = false %}
+{"record_key":{{ z.record_key | jsonify }},"hash":{{ z.hash | jsonify }},"nazev":{{ z.nazev | jsonify }},"url":{{ z.url | jsonify }},"kde":{{ "dejiny/" | append: k.hraj | jsonify }},"titul":{{ k.title | jsonify }},"odkaz":{{ "/dejiny/" | append: k.hraj | append: "/" | absolute_url | jsonify }}}
+{%- endfor -%}{%- endfor -%}
+{%- for p in site.pages -%}{%- for z in p.zdroje -%}
+{%- unless prvni %},{% endunless %}{%- assign prvni = false %}
+{"record_key":{{ z.record_key | jsonify }},"hash":{{ z.hash | jsonify }},"nazev":{{ z.nazev | jsonify }},"url":{{ z.url | jsonify }},"kde":{{ "stranka" | append: p.url | jsonify }},"titul":{{ p.title | jsonify }},"odkaz":{{ p.url | absolute_url | jsonify }}}
+{%- endfor -%}{%- endfor %}
+]

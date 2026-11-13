@@ -37,3 +37,12 @@ jobs:
           diff -ru -x assets -x '*.json' site-zaklad site-novy | head -500 || true
           echo; echo "### Rozdíly v JSON (první řádky)"
           for f in kapitoly.json data/dejiny.json data/zasobnik.json; do echo "== $f"; diff <(python3 -m json.tool site-zaklad/$f) <(python3 -m json.tool site-novy/$f) | head -40; done || true
+      - name: Platnost JSON v nové verzi
+        shell: bash
+        run: |
+          chyb=0
+          for f in $(find site-novy -name '*.json' -not -path '*/assets/*'); do
+            python3 -m json.tool "$f" > /dev/null || { echo "::error::Neplatný JSON: $f"; chyb=1; }
+          done
+          python3 -c "import json;d=json.load(open('site-novy/data/zdroje.json'));print('zdroje.json:',len(d),'zdrojů, s otiskem',sum(1 for z in d if z.get('hash')));print(d[0])" || true
+          exit $chyb
