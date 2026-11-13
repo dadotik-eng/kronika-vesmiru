@@ -2,6 +2,8 @@
 
 Každá osoba, událost a položka zásobníku je **samostatný soubor**. Název souboru = id (malá písmena bez diakritiky, slova oddělená pomlčkou). Bot zakládá nové soubory a upravuje existující – nikdy nepřepisuje celé seznamy.
 
+Zdroje: jen robertsspaceindustries.com (případně archivní kopie RSI na web.archive.org), každý s `record_key`, žádný dvakrát. Kontrolu dělá `nastroje/kontrola.py`.
+
 Přehled toho, co už existuje (bot čte před přidáním, aby nevznikly duplicity):
 - https://dadotik-eng.github.io/kronika-vesmiru/data/osoby.json
 - https://dadotik-eng.github.io/kronika-vesmiru/data/udalosti.json
@@ -16,10 +18,11 @@ umrti: '2873'             # 'žije' nebo 'neznámo'
 role: první imperátorka UEE po pádu Messerů
 kategorie: vladari        # vladari | politika | armada | objevitele | veda-technika | korporace | kultura | zlocin | xiani-tevarini
 medailonek: 3–5 vět česky, vlastními slovy, jen fakta ze zdroje.
-zdroje:
-- nazev: Erin Toi
-  typ: Galactapedie       # Galactapedie | Comm-Link
-  url: https://robertsspaceindustries.com/galactapedia/article/...
+zdroje:                   # formát v2 – stejný ve všech záznamech (viz SABLONA-KAPITOLY.md)
+- record_key: galactapedia:<id z adresy>   # commlink:<číslo> u Comm-Linků
+  typ: Galactapedie       # Galactapedie | Comm-Link | Star Map
+  nazev: Erin Toi
+  url: https://robertsspaceindustries.com/galactapedia/article/<id>-erin-toi
 kapitoly: [kap-8]         # kap-1 … kap-10, letka; jinak []
 rozpor: nepovinné – když si prameny odporují
 rad: 2746                 # číslo pro řazení: rok narození, jinak přibližný rok, kdy byl činný
@@ -48,13 +51,15 @@ nazev: Bitva u Fabely
 nazev_en: Battle of Fabela
 rok: '2825'
 rok_od: 2825              # číslo pro řazení (př. n. l. záporně); u neuvedeno vynech
-era: Věk nápravy          # Před lidskou expanzí | Úsvit Sluneční soustavy | Věk skoků | Spojené národy Země | Spojené planety Země | Éra Messerů | Věk nápravy | Válka s Vanduuly / současnost
+obdobi: naprava           # id z _data/ery.yml: mimo (před lidskou expanzí) | usvit | skoky | une | upe | messerove | naprava | valka
 typ: bitva                # bitva | katastrofa | zločin | objev | politika | osobní příběh | záhada | povídka | korporace
 shrnuti: 2–3 věty česky.
 postavy: [Paul Barlow, Ignacio Assaf]
 zdroje:
 - record_key: commlink:17862
-  rsi_url: https://robertsspaceindustries.com/...
+  typ: Comm-Link
+  nazev: Název článku
+  url: https://robertsspaceindustries.com/...
 forma: dramatizace        # dramatizace | vyprávění
 hodnoceni: 5
 hodnoceni_proc: jedna věta proč
