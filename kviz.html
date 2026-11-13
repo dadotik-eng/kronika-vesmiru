@@ -45,7 +45,7 @@ popis: Pět otázek z 881 let dějin vesmíru Star Citizen. Každý den nový kv
     },
     function () { // kdo byl…
       var o = vyber(OSR, 1, [])[0];
-      return { q: 'Kdo byl(a): ' + o.r + '?', a: o.j, s: vyber(OSR, 3, [o]).map(function (x) { return x.j; }), vic: '', odkaz: Z + 'osobnosti/' + o.id + '/' };
+      return { q: 'Kdo je to: ' + o.r + '?', a: o.j, s: vyber(OSR, 3, [o]).map(function (x) { return x.j; }), vic: '', odkaz: Z + 'osobnosti/' + o.id + '/' };
     },
     function () { // období
       var u = vyber(UD, 1, [])[0], e = eraRoku(u.r);
