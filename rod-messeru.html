@@ -8,9 +8,10 @@ popis: Rodokmen dynastie Messerů, která vládla lidstvu 246 let. Od Ivara Mess
 {% capture portrety %}{% for o in site.osoby %}{% if o.ilustrace %}{{ o.slug }} {% endif %}{% endfor %}{% endcapture %}
 {% capture stranky %}{% for o in site.osoby %}{{ o.slug }} {% endfor %}{% endcapture %}
 <section class="blok osa-hlava">
-  <p class="nadtitul">Éra Messerů · 2546–2792</p>
+  <p class="nadtitul"><a href="{{ '/osobnosti/' | relative_url }}">Osobnosti</a> · Éra Messerů · 2546–2792</p>
   <h1>Rod Messerů</h1>
   <p class="perex">Deset vládnoucích imperátorů a jeden čestný titul, několik vražd v rodině, jedna občanská válka a jeden převrat. Zlatá linie ukazuje, jak putoval trůn. Klikni na kohokoli z rodu.</p>
+  <p class="tlacitka"><a class="tlacitko" href="{{ '/imperatori/' | relative_url }}">Linie imperátorů</a> <a class="tlacitko" href="{{ '/vztahy/' | relative_url }}">Síť osobností – kdo s kým</a></p>
   <p class="tlacitka"><button type="button" class="tlacitko aktivni" id="prepni-linii" aria-pressed="true">Linie trůnu: zapnutá</button></p>
 </section>
 
@@ -153,7 +154,7 @@ popis: Rodokmen dynastie Messerů, která vládla lidstvu 246 let. Od Ivara Mess
       '<p>' + m.text + '</p>' + (m.poznamka_vlada ? '<p class="med-pozn">' + m.poznamka_vlada + '</p>' : '') +
       (m.rozpor ? '<p class="med-pozn"><b>Rozpor v pramenech:</b> ' + m.rozpor + '</p>' : '') +
       (vz ? '<dl class="rod-vztahy">' + vz + '</dl>' : '') +
-      '<p class="med-odkazy">' + (STRANKY.indexOf(id) >= 0 ? '<a href="' + ZAKLAD + 'osobnosti/' + id + '/">Stránka osoby →</a>' : '') +
+      '<p class="med-odkazy">' + (STRANKY.indexOf(id) >= 0 ? '<a class="tlacitko plne" href="' + ZAKLAD + 'osobnosti/' + id + '/">Celý medailonek →</a>' : '') +
       (m.zdroj ? '<a href="' + m.zdroj + '" target="_blank" rel="noopener">Galactapedie ↗</a>' : '') + '</p>';
     panel.classList.add('otevreny'); panel.setAttribute('aria-hidden', 'false');
     if (history.replaceState) history.replaceState(null, '', '#' + id);
