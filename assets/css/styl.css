@@ -782,3 +782,20 @@ main h1[tabindex="-1"]:focus, main[tabindex="-1"]:focus { outline: none; }
 .imp-milnik { position: absolute; transform: translateX(-8px); max-width: 190px; font-family: var(--label); font-size: .85rem; color: var(--tlumene); line-height: 1.2; }
 .imp-milnik b { color: var(--text); margin-right: .35rem; }
 .imp-pozn { color: var(--tlumene); font-family: var(--label); padding-top: 1rem; }
+
+/* Síť osobností na časové ose (/vztahy/) – staví na stylech linie imperátorů (.imp-*) */
+.vz-obal { margin-top: .5rem; }
+.vz-oblouky { position: absolute; left: 0; top: 0; pointer-events: none; }
+.vz-oblouky path { fill: none; stroke-width: 2; opacity: .55; transition: opacity .15s; }
+.vz-platno.vz-zamereno .vz-oblouky path { opacity: .06; }
+.vz-platno.vz-zamereno .vz-oblouky path.vz-aktivni { opacity: 1; stroke-width: 3; }
+.vz-karta { position: absolute; width: 98px; height: 84px; box-sizing: border-box; padding: 5px 4px; border: 1px solid var(--linka); border-radius: 8px; background: rgba(10,25,48,.93); color: var(--text); display: flex; flex-direction: column; align-items: center; gap: 3px; text-align: center; font-family: var(--label); cursor: pointer; transition: opacity .15s, border-color .15s, transform .15s; }
+.vz-karta:hover, .vz-karta:focus-visible { border-color: var(--barva); transform: translateY(-2px); }
+.vz-karta img { width: 42px; height: 42px; border-radius: 50%; object-fit: cover; object-position: 35% 30%; border: 2px solid var(--barva); }
+.vz-karta .imp-hex { width: 42px; height: 42px; font-size: .85rem; }
+.vz-karta b { font-weight: 600; font-size: .82rem; line-height: 1.05; }
+.vz-karta.vz-sam { opacity: .6; }
+.vz-platno.vz-zamereno .vz-karta { opacity: .25; }
+.vz-platno.vz-zamereno .vz-karta.vz-soused { opacity: 1; }
+.vz-platno.vz-zamereno .vz-karta.vz-vybrana { opacity: 1; border-color: var(--akcent); box-shadow: 0 0 0 2px rgba(246,189,75,.35); }
+.vz-panel { max-height: none; margin-top: 1.2rem; }
