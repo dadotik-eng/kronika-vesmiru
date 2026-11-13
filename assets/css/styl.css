@@ -522,7 +522,7 @@ html.prehravac-otevreny { overflow: hidden; }
 .op-roky span { position: absolute; transform: translateX(-50%); font-family: var(--label); font-size: .75rem; letter-spacing: .08em; color: var(--tlumene); }
 .op-roky span:first-child { transform: none; }
 .op-roky span.konec { transform: translateX(-100%); }
-.osa-ovladani { padding-top: 0; }
+.osa-ovladani { padding-top: 0; padding-bottom: 1.2rem; }
 .era-panel { border-top: 3px solid var(--barva); }
 .op-bod.bez-mista::after { left: -6px; top: 145px; width: 12px; height: 12px; opacity: 1; box-shadow: 0 0 0 3px var(--pozadi, #070f1f); }
 
@@ -862,9 +862,15 @@ main h1[tabindex="-1"]:focus, main[tabindex="-1"]:focus { outline: none; }
 }
 
 /* Časová osa: Deset století v kostce */
-.stoleti { padding-bottom: 2.5rem; }
-.stoleti-nadpis { font-size: 1.6rem !important; margin-bottom: .3rem !important; }
-.stoleti-uvod { color: var(--tlumene); margin: 0 0 1.2rem; }
+.stoleti { padding-bottom: 2rem; }
+.stoleti-prepinac { display: flex; align-items: baseline; gap: .9rem; flex-wrap: wrap; cursor: pointer; list-style: none; padding: .8rem 1.1rem; border: 1px solid rgba(246,189,75,.5); border-radius: 6px; background: var(--panel); }
+.stoleti-prepinac::-webkit-details-marker { display: none; }
+.stoleti-prepinac::before { content: "▸"; color: var(--akcent); transition: transform .2s; display: inline-block; }
+.stoleti[open] .stoleti-prepinac::before { transform: rotate(90deg); }
+.stoleti-prepinac span { font-family: var(--display); font-size: 1.25rem; font-weight: 700; }
+.stoleti-prepinac small { font-family: var(--label); letter-spacing: .08em; text-transform: uppercase; color: var(--tlumene); font-size: .85rem; }
+.stoleti-prepinac:hover { border-color: var(--akcent); }
+.stoleti-uvod { color: var(--tlumene); margin: 1rem 0 1rem; }
 .st-seznam { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: .7rem 1.4rem; }
 .st-radek { display: grid; grid-template-columns: 6px 4.6rem 1fr; gap: .9rem; align-items: start; padding: .85rem 1rem .85rem 0; border: 1px solid var(--linka); border-radius: 6px; background: rgba(10,30,58,.55); overflow: hidden; }
 .st-radek:hover { border-color: rgba(246,189,75,.6); }
