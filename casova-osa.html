@@ -23,7 +23,7 @@ popis: 881 let dějin vesmíru Star Citizen po obdobích. Vyber období a uvidí
       <span class="st-pas" aria-hidden="true">{% for e in site.data.ery %}{% if e.od < kon and e.do > zac %}{% assign a = e.od %}{% if zac > a %}{% assign a = zac %}{% endif %}{% assign b = e.do %}{% if kon < b %}{% assign b = kon %}{% endif %}<i style="background:{{ e.barva }};flex:{{ b | minus: a }}"></i>{% endif %}{% endfor %}{% if s.stoleti == 21 %}<i style="background:{{ site.data.ery[0].barva }};flex:1;opacity:.55"></i>{% endif %}</span>
       <b class="st-cislo">{{ s.stoleti }}.<small>století</small></b>
       <div><b class="st-nazev">{{ s.nazev }}</b><p>{{ s.text }}</p>
-        <p class="st-roky">{% for k in s.roky %}{% assign u = site.udalosti | where: "slug", k | first %}{% if u %}<a href="#{{ k }}" title="{{ u.titul }}">{{ u.rok | floor }}</a> {% endif %}{% endfor %}</p></div>
+        <p class="st-roky">{% for k in s.roky %}{% assign u = site.udalosti | where: "slug", k | first %}{% if u %}<a href="#{{ k }}" >{{ u.rok | floor }} · {{ u.titul }}</a> {% endif %}{% endfor %}</p></div>
     </li>
   {% endfor %}
   </ol>
