@@ -9,12 +9,16 @@ kapitoly:
 - 6
 - 8
 zdroje:
-- nazev: Aegis Dynamics
+- record_key: galactapedia:RAdk7jx5Kv
   typ: Galactapedie
+  nazev: Aegis Dynamics
   url: https://robertsspaceindustries.com/galactapedia/article/RAdk7jx5Kv-aegis-dynamics
-- nazev: 'Portfolio: Aegis Dynamics'
+  hash: e58a73e27632838ea78693e5f4a0a337b2eaf74a4312b309202e93f310e89634
+- record_key: commlink:13547
   typ: Comm-Link
+  nazev: 'Portfolio: Aegis Dynamics'
   url: https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/13547-Portfolio-Aegis-Dynamics
+  hash: 5bc3d5eb296a02a6f6d19c2c8d0ee9040f3f9255107d94925c475fee6c481725
 ---
 
 Aegis Dynamics se narodila pro válku. A málem s válkou i zemřela.

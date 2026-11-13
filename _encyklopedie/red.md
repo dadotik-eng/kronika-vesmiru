@@ -8,15 +8,21 @@ kdy_od: '01-20'
 kdy_do: '02-10'
 kapitoly: []
 zdroje:
-- nazev: Red Festival
+- record_key: galactapedia:RAXpZ2z6YY
   typ: Galactapedie
+  nazev: Red Festival
   url: https://robertsspaceindustries.com/galactapedia/article/RAXpZ2z6YY-red-festival
-- nazev: 'Portfolio: Rise of the Red Festival'
+  hash: 7c57de9623ad08991a9cf4c890168543d4cfa8e8e5e1bbfb447900d710c8b073
+- record_key: commlink:19097
   typ: Comm-Link
+  nazev: 'Portfolio: Rise of the Red Festival'
   url: https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/19097-Portfolio-Rise-Of-The-Red-Festival
-- nazev: 'StarWatch: Red Festival Feud'
+  hash: 892067abb051bc8a811c811cffe837e1db84ffefc13792e5c16a642ec8ba68a5
+- record_key: commlink:17998
   typ: Comm-Link
+  nazev: 'StarWatch: Red Festival Feud'
   url: https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/17998-StarWatch-Red-Festival-Feud
+  hash: bc62451d712eab25c513b71dd06b429ddbe875da7b3c642e5d86bf4b0d8b11da
 ---
 
 Red Festival se slaví koncem ledna nebo začátkem února a patří k nejstarším svátkům, které si lidstvo vzalo s sebou ke hvězdám. Každý rok se při něm po celém impériu schovávají miliony zlatě zdobených červených obálek. Kdo nějakou najde, najde v ní žeton pro štěstí nebo pár kreditů – malé znamení, že nadcházející rok bude dobrý.

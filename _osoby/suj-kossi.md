@@ -8,12 +8,16 @@ medailonek: Suj Kossi se v roce 2946 stal prvním Tevarinem, který získal sen�
   pro zapojení Tevarinů do veřejné sféry a v roce 2951 byl znovu zvolen.
 rozpor: Článek o Kossim označuje Jalan za Elysium III, článek o Corath'Thalovi (a odkaz v Kossiho článku) za Elysium IV.
 zdroje:
-- nazev: Suj Kossi
+- record_key: galactapedia:RMNgraDJAA
   typ: Galactapedie
+  nazev: Suj Kossi
   url: https://robertsspaceindustries.com/galactapedia/article/RMNgraDJAA-suj-kossi
-- nazev: 'Terra Gazette: What Does the Future Hold for Suj Kossi?'
+  hash: a957fa442a6620a273b2a96f1fba1d328abbae5142bae1bddf51c0b530b34d57
+- record_key: commlink:18694
   typ: Comm-Link
+  nazev: 'Terra Gazette: What Does the Future Hold for Suj Kossi?'
   url: https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/18694-Terra-Gazette-What-Does-The-Future-Hold-For-Suj-Kossi
+  hash: 5827878080ec27e17c068f3249e76b83644116834dd13cbad79149cdc01b9603
 kapitoly: []
 rad: 2900
 obdobi: naprava

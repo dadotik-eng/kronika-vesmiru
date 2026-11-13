@@ -6,12 +6,16 @@ role: zločinec a pilot, hlavní postava Kellarova útěku
 kategorie: zlocin
 medailonek: 'O původu Deana Kellara se nic jistého neví; poprvé se v záznamech objevil jako dvanáctiletý, když ho policie v soustavě Banshee zadržela při pokusu o loupež v hangáru. Do sedmnácti let měl na kontě sedm odsouzení za násilné činy a po vzpouře v nápravném zařízení skončil na vězeňském světě QuarterDeck, odkud vyšel jako chladnokrevný profesionál: pašoval pro síť Ligo Crew a později plnil zakázkové vraždy pro různé syndikáty. V roce 2931 zastřelil ve stanici Spider v soustavě Cathcart po hádce o manévrovací trysky Anvil muže, který se ukázal být tajným agentem Advokacie. Následná honička, nazvaná Kellarův útěk, se rozšířila do pěti soustav a zapojily se do ní přes tři desítky lidí z obou stran zákona. Skončila 20. května 2931 v soustavě Nexus, kde Kellara po sedmadvacetiminutovém souboji zabila civilistka a bývalá vojačka Anna Flynn.'
 zdroje:
-- nazev: Kellar's Run
+- record_key: galactapedia:RxNxDYYJNd
   typ: Galactapedie
+  nazev: Kellar's Run
   url: https://robertsspaceindustries.com/galactapedia/article/RxNxDYYJNd-kellars-run
-- nazev: 'This Day In History: Kellar''s Run'
+  hash: 029ad883932a4df8025a922af0e3236acdef7140bf1a038adaea1cdb423cf63f
+- record_key: commlink:13885
   typ: Comm-Link
+  nazev: 'This Day In History: Kellar''s Run'
   url: https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/13885-This-Day-In-History-Kellars-Run
+  hash: 99f4214a88ccc9e62e3b0574419d2dbfb0e4ed576deeaaf47ce825149ee67d71
 kapitoly: []
 rad: 2901
 obdobi: naprava

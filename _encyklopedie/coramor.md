@@ -7,12 +7,16 @@ perex: Svátek lásky připomíná rok 2486, kdy Yuri Ilyin zmizel při pokusu d
 kdy_od: '02-11'
 kapitoly: []
 zdroje:
-- nazev: Coramor
+- record_key: galactapedia:RWozkYYxla
   typ: Galactapedie
+  nazev: Coramor
   url: https://robertsspaceindustries.com/galactapedia/article/RWozkYYxla-coramor
-- nazev: Valentine's Day 2020
+  hash: 16fc47031baef6b3e8719663ca467840af952cb8868b2c57714704d939f49623
+- record_key: commlink:17456
   typ: Comm-Link
+  nazev: Valentine's Day 2020
   url: https://robertsspaceindustries.com/comm-link/transmission/17456-Valentines-Day-2020
+  hash: 363022b1782b0aee5a0f49ee6531bb4a65a692d25b6f33ee9ce6acd2b107c852
 ---
 
 Coramor je svátek lásky a slaví se 11. února. Na rozdíl od většiny svátků nevznikl z oslavy, ale ze ztráty. Připomíná příběh dvou lidí, které od sebe oddělil vesmír.

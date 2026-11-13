@@ -1,230 +1,328 @@
 # Hlavní vyprávění (10 kapitol nedělní Ukázky). Přehrává se v archiv/ pod #kap-N.
-# era = název období přesně podle _data/ery.yml
+# obdobi = id období z _data/ery.yml; zdroje ve formátu v2 (record_key, typ, nazev, url, hash)
 # herni_rok = začátek období, podle něj se řadí časová osa.
-- rim: "I"
-  title: "Hvězdy na dosah"
-  rozpeti: "2075–2157"
-  era: "Úsvit Sluneční soustavy"
+- rim: I
+  title: Hvězdy na dosah
+  rozpeti: 2075–2157
+  obdobi: usvit
   herni_rok: 2075
-  hraj: "kap-1"
-  prameny:
-    - nazev: "Scott Childress"
-      typ: Galactapedie
-      url: https://robertsspaceindustries.com/galactapedia/article/R5p68KXk5X-scott-childress
-    - nazev: "Roberts Space Industries (RSI)"
-      typ: Galactapedie
-      url: https://robertsspaceindustries.com/galactapedia/article/RWwZDn2Xrw-rsi
-    - nazev: "Terraforming"
-      typ: Galactapedie
-      url: https://robertsspaceindustries.com/galactapedia/article/V3qgj8vjnj-terraforming
-    - nazev: "Mars Tragedy"
-      typ: Galactapedie
-      url: https://robertsspaceindustries.com/galactapedia/article/bmNrgKnZ6l-mars-tragedy
-    - nazev: "Zeus"
-      typ: Galactapedie
-      url: https://robertsspaceindustries.com/galactapedia/article/VYLd4WxODo-zeus
-    - nazev: "Mars (Sol IV)"
-      typ: Galactapedie
-      url: https://robertsspaceindustries.com/galactapedia/article/Regn8D76xw-mars-sol-iv
-  popis: "První kvantový pohon, terraformace Marsu a tragédie roku 2125."
-- rim: "II"
-  title: "První skok"
-  rozpeti: "2262–2292"
-  era: "Věk skoků"
+  hraj: kap-1
+  zdroje:
+  - record_key: galactapedia:R5p68KXk5X
+    typ: Galactapedie
+    nazev: Scott Childress
+    url: https://robertsspaceindustries.com/galactapedia/article/R5p68KXk5X-scott-childress
+    hash: 37b81ae1ada53919450b7b6c938e8e64c53c19213b20d0fd8c04e4dbd95c087e
+  - record_key: galactapedia:RWwZDn2Xrw
+    typ: Galactapedie
+    nazev: Roberts Space Industries (RSI)
+    url: https://robertsspaceindustries.com/galactapedia/article/RWwZDn2Xrw-rsi
+    hash: 2cfbb7364ba47ff9190b17f105d45c84b9292ff78e918de68c8fb4c18e2b5e76
+  - record_key: galactapedia:V3qgj8vjnj
+    typ: Galactapedie
+    nazev: Terraforming
+    url: https://robertsspaceindustries.com/galactapedia/article/V3qgj8vjnj-terraforming
+    hash: 40cee4aa62acd3f3d0dd97f465499c9590aaedd6e96f7af881332aaf62dbfdbf
+  - record_key: galactapedia:bmNrgKnZ6l
+    typ: Galactapedie
+    nazev: Mars Tragedy
+    url: https://robertsspaceindustries.com/galactapedia/article/bmNrgKnZ6l-mars-tragedy
+    hash: 7ab5d2ea195727da3e380a1368278eba13851948fca60a5e8205a725ab5a860d
+  - record_key: galactapedia:VYLd4WxODo
+    typ: Galactapedie
+    nazev: Zeus
+    url: https://robertsspaceindustries.com/galactapedia/article/VYLd4WxODo-zeus
+    hash: b2a34a7a7843e5ceed84f7804abb7a1252c34bfedbc7b1d99323067308196cb6
+  - record_key: galactapedia:Regn8D76xw
+    typ: Galactapedie
+    nazev: Mars (Sol IV)
+    url: https://robertsspaceindustries.com/galactapedia/article/Regn8D76xw-mars-sol-iv
+    hash: ea301ba5002b738ff78bd0efcffc01896153c3af9ca40ac624e06e174aeb71d5
+  popis: První kvantový pohon, terraformace Marsu a tragédie roku 2125.
+- rim: II
+  title: První skok
+  rozpeti: 2262–2292
+  obdobi: skoky
   herni_rok: 2262
-  hraj: "kap-2"
-  prameny:
-    - nazev: "Nick Croshaw"
-      typ: Galactapedie
-      url: https://robertsspaceindustries.com/galactapedia/article/VyvYkAr7YW-nick-croshaw
-    - nazev: "Croshaw System"
-      typ: Galactapedie
-      url: https://robertsspaceindustries.com/galactapedia/article/0qanKAEJwp-crowshaw-system
-  popis: "Neso trojúhelník, Croshawův první skok a levný pohon Tarsus."
-- rim: "III"
-  title: "Nejsme sami"
-  rozpeti: "2380–2438"
-  era: "Spojené národy Země"
+  hraj: kap-2
+  zdroje:
+  - record_key: galactapedia:VyvYkAr7YW
+    typ: Galactapedie
+    nazev: Nick Croshaw
+    url: https://robertsspaceindustries.com/galactapedia/article/VyvYkAr7YW-nick-croshaw
+    hash: e43d9e57d5b12c437fd648739b28f1b93d24a6ca7db5cfdc7f14d1d510c581fb
+  - record_key: galactapedia:0qanKAEJwp
+    typ: Galactapedie
+    nazev: Croshaw System
+    url: https://robertsspaceindustries.com/galactapedia/article/0qanKAEJwp-crowshaw-system
+    hash: 8674e6d609efb411e24786a959b0c6aff97e459e1da84b74a0f1e1ff4127febb
+  popis: Neso trojúhelník, Croshawův první skok a levný pohon Tarsus.
+- rim: III
+  title: Nejsme sami
+  rozpeti: 2380–2438
+  obdobi: une
   herni_rok: 2380
-  hraj: "kap-3"
-  prameny:
-    - nazev: "United Nations of Earth"
-      typ: Galactapedie
-      url: https://robertsspaceindustries.com/galactapedia/article/R4ZQpY83oO-united-nations-of-earth
-    - nazev: "Davien System"
-      typ: Galactapedie
-      url: https://robertsspaceindustries.com/galactapedia/article/Rz2g71YlkY-davien-system
-    - nazev: "Neal Socolovich"
-      typ: Galactapedie
-      url: https://robertsspaceindustries.com/galactapedia/article/VJX7vxG2BG-neal-socolovich
-    - nazev: "Banu"
-      typ: Galactapedie
-      url: https://robertsspaceindustries.com/galactapedia/article/0NwpYPpNZ4-banu
-    - nazev: "First Contact Day"
-      typ: Galactapedie
-      url: https://robertsspaceindustries.com/galactapedia/article/01Lvo8ZWxX-first-contact-day
-  popis: "Spojené národy Země a první setkání s Banu."
-- rim: "IV"
-  title: "Tři pilíře a první trhlina"
-  rozpeti: "2523–2530"
-  era: "Spojené planety Země"
+  hraj: kap-3
+  zdroje:
+  - record_key: galactapedia:R4ZQpY83oO
+    typ: Galactapedie
+    nazev: United Nations of Earth
+    url: https://robertsspaceindustries.com/galactapedia/article/R4ZQpY83oO-united-nations-of-earth
+    hash: 204ae07678b745ae9a99db85d6ca1bf731d3fb518a661f09341875b393628eca
+  - record_key: galactapedia:Rz2g71YlkY
+    typ: Galactapedie
+    nazev: Davien System
+    url: https://robertsspaceindustries.com/galactapedia/article/Rz2g71YlkY-davien-system
+    hash: ad7de6bc2a52401de3dd094d58870027ce5d3fdc697f77f18069bc9ea5ecfc09
+  - record_key: galactapedia:VJX7vxG2BG
+    typ: Galactapedie
+    nazev: Neal Socolovich
+    url: https://robertsspaceindustries.com/galactapedia/article/VJX7vxG2BG-neal-socolovich
+    hash: 1f651c8d4c009216d7164c61fcfdd28e423869d1071a692e96ddd3f7896bc755
+  - record_key: galactapedia:0NwpYPpNZ4
+    typ: Galactapedie
+    nazev: Banu
+    url: https://robertsspaceindustries.com/galactapedia/article/0NwpYPpNZ4-banu
+    hash: 8649424deab7163be92445fecc1b2feff1d02a82980b0a78adbbe925ca3bac8e
+  - record_key: galactapedia:01Lvo8ZWxX
+    typ: Galactapedie
+    nazev: First Contact Day
+    url: https://robertsspaceindustries.com/galactapedia/article/01Lvo8ZWxX-first-contact-day
+    hash: 26e1b20b81b8c2cb7e998afe2596a9565776631e97fae4c061d6fea9ced62039
+  popis: Spojené národy Země a první setkání s Banu.
+- rim: IV
+  title: Tři pilíře a první trhlina
+  rozpeti: 2523–2530
+  obdobi: upe
   herni_rok: 2523
-  hraj: "kap-4"
-  prameny:
-    - nazev: "United Planets of Earth"
-      typ: Galactapedie
-      url: https://robertsspaceindustries.com/galactapedia/article/0QxBjKP2PN-united-planets-of-earth
-    - nazev: "Tribunal"
-      typ: Galactapedie
-      url: https://robertsspaceindustries.com/galactapedia/article/bZwq5Nr5EL-tribunal
-    - nazev: "Xi'an"
-      typ: Galactapedie
-      url: https://robertsspaceindustries.com/galactapedia/article/ReJwN9KJEj-xian
-  popis: "Spojené planety Země, tři tribuni a začátek studené války s Xi’any."
-- rim: "V"
-  title: "Válka, která stvořila diktátora"
-  rozpeti: "2541–2546"
-  era: "Spojené planety Země"
+  hraj: kap-4
+  zdroje:
+  - record_key: galactapedia:0QxBjKP2PN
+    typ: Galactapedie
+    nazev: United Planets of Earth
+    url: https://robertsspaceindustries.com/galactapedia/article/0QxBjKP2PN-united-planets-of-earth
+    hash: 9d97a29469fa6723637d5729691469d91039dc93298880dc6c13aa19807f8612
+  - record_key: galactapedia:bZwq5Nr5EL
+    typ: Galactapedie
+    nazev: Tribunal
+    url: https://robertsspaceindustries.com/galactapedia/article/bZwq5Nr5EL-tribunal
+    hash: c823d9d02ed43cd6b25fd906d27b10ea27f6ab6ae870be5f72e3b228085d460f
+  - record_key: galactapedia:ReJwN9KJEj
+    typ: Galactapedie
+    nazev: Xi'an
+    url: https://robertsspaceindustries.com/galactapedia/article/ReJwN9KJEj-xian
+    hash: 85bc70ad7cdeee77fa62c41dd3a402ce558a357f627d7b05d6d4fefdc9d3ad0f
+  popis: Spojené planety Země, tři tribuni a začátek studené války s Xi’any.
+- rim: V
+  title: Válka, která stvořila diktátora
+  rozpeti: 2541–2546
+  obdobi: upe
   herni_rok: 2541
-  hraj: "kap-5"
-  prameny:
-    - nazev: "First Tevarin War"
-      typ: Galactapedie
-      url: https://robertsspaceindustries.com/galactapedia/article/bZwQm3meJM-first-tevarin-war
-    - nazev: "Battle of Idris IV"
-      typ: Galactapedie
-      url: https://robertsspaceindustries.com/galactapedia/article/ReJajXKelk-battle-of-idris-iv
-    - nazev: "Ivar Messer I"
-      typ: Galactapedie
-      url: https://robertsspaceindustries.com/galactapedia/article/RXlXYPWk8q-ivar-messer-i
-    - nazev: "Prime Citizen"
-      typ: Galactapedie
-      url: https://robertsspaceindustries.com/galactapedia/article/V7gM82vNmr-prime-citizen
-  popis: "První tevarinská válka a vzestup Ivara Messera."
-- rim: "VI"
-  title: "Dynastie"
-  rozpeti: "2546–2781"
-  era: "Éra Messerů"
+  hraj: kap-5
+  zdroje:
+  - record_key: galactapedia:bZwQm3meJM
+    typ: Galactapedie
+    nazev: First Tevarin War
+    url: https://robertsspaceindustries.com/galactapedia/article/bZwQm3meJM-first-tevarin-war
+    hash: ba1f78c29f6d9c81206e1cce2d5a419c82b85d7566d7f6f765bdae10239e232f
+  - record_key: galactapedia:ReJajXKelk
+    typ: Galactapedie
+    nazev: Battle of Idris IV
+    url: https://robertsspaceindustries.com/galactapedia/article/ReJajXKelk-battle-of-idris-iv
+    hash: 1993062f8105a18ac0ee2f6215c5b15ba1434cac1f7aa8e06e4e4aed60bac69f
+  - record_key: galactapedia:RXlXYPWk8q
+    typ: Galactapedie
+    nazev: Ivar Messer I
+    url: https://robertsspaceindustries.com/galactapedia/article/RXlXYPWk8q-ivar-messer-i
+    hash: fceec3818a5df849d5757b0e194f584499d5db505fcf6d850a4c93720a65a95e
+  - record_key: galactapedia:V7gM82vNmr
+    typ: Galactapedie
+    nazev: Prime Citizen
+    url: https://robertsspaceindustries.com/galactapedia/article/V7gM82vNmr-prime-citizen
+    hash: 557a7d4500688c755f57edcc5bfb52d9eccadd92e748bdbfe177530c36cc2b99
+  popis: První tevarinská válka a vzestup Ivara Messera.
+- rim: VI
+  title: Dynastie
+  rozpeti: 2546–2781
+  obdobi: messerove
   herni_rok: 2547
-  hraj: "kap-6"
-  prameny:
-    - nazev: "Messer Era"
-      typ: Galactapedie
-      url: https://robertsspaceindustries.com/galactapedia/article/V8gJ6ZwGqo-messer-era
-    - nazev: "Second Tevarin War"
-      typ: Galactapedie
-      url: https://robertsspaceindustries.com/galactapedia/article/bE3rPrz3Pv-second-tevarin-war
-    - nazev: "Warlord Corath'Thal"
-      typ: Galactapedie
-      url: https://robertsspaceindustries.com/galactapedia/article/RkGxWGQ2Qp-warlord-coraththal
-    - nazev: "Squadron 42"
-      typ: Galactapedie
-      url: https://robertsspaceindustries.com/galactapedia/article/RWoeByvQap-squadron-42
-    - nazev: "Assan Kieren"
-      typ: Galactapedie
-      url: https://robertsspaceindustries.com/galactapedia/article/RWwZQK774P-assan-kieren
-    - nazev: "Linton Messer XI"
-      typ: Galactapedie
-      url: https://robertsspaceindustries.com/galactapedia/article/RwZBaD4Mdq-linton-messer-xi
-    - nazev: "Fiona Messer"
-      typ: Galactapedie
-      url: https://robertsspaceindustries.com/galactapedia/article/R56nLjJog7-fiona-messer
-  popis: "246 let vlády Messerů, druhá tevarinská válka a Lintonův převrat."
-- rim: "VII"
-  title: "Stín z Orionu"
-  rozpeti: "2681–2736"
-  era: "Éra Messerů"
+  hraj: kap-6
+  zdroje:
+  - record_key: galactapedia:V8gJ6ZwGqo
+    typ: Galactapedie
+    nazev: Messer Era
+    url: https://robertsspaceindustries.com/galactapedia/article/V8gJ6ZwGqo-messer-era
+    hash: f01df7457a8058ed5aec15f65c6f6a97eac6016e6864efe83ee49cd20e4839ab
+  - record_key: galactapedia:bE3rPrz3Pv
+    typ: Galactapedie
+    nazev: Second Tevarin War
+    url: https://robertsspaceindustries.com/galactapedia/article/bE3rPrz3Pv-second-tevarin-war
+    hash: 929194640b4c6b868b0b9102e9b2a866de18f938efddcebdcc293c1089af9942
+  - record_key: galactapedia:RkGxWGQ2Qp
+    typ: Galactapedie
+    nazev: Warlord Corath'Thal
+    url: https://robertsspaceindustries.com/galactapedia/article/RkGxWGQ2Qp-warlord-coraththal
+    hash: 0fb2e26dc02ea8859cfc80314e3ec800788bef839a07e022d0967064a8d46018
+  - record_key: galactapedia:RWoeByvQap
+    typ: Galactapedie
+    nazev: Squadron 42
+    url: https://robertsspaceindustries.com/galactapedia/article/RWoeByvQap-squadron-42
+    hash: 5c8c1b3b74ef3cf346b116506615207b04a4645fefebdaf48d729fdef684fa73
+  - record_key: galactapedia:RWwZQK774P
+    typ: Galactapedie
+    nazev: Assan Kieren
+    url: https://robertsspaceindustries.com/galactapedia/article/RWwZQK774P-assan-kieren
+    hash: 19ba942ce5e0063ec9c55575b193788baff2b1582f34f1dab3523abc69377f5e
+  - record_key: galactapedia:RwZBaD4Mdq
+    typ: Galactapedie
+    nazev: Linton Messer XI
+    url: https://robertsspaceindustries.com/galactapedia/article/RwZBaD4Mdq-linton-messer-xi
+    hash: 5fe498c0a8f924adb5af571f52186e4478336c18221f28761e5fd2badfe0c145
+  - record_key: galactapedia:R56nLjJog7
+    typ: Galactapedie
+    nazev: Fiona Messer
+    url: https://robertsspaceindustries.com/galactapedia/article/R56nLjJog7-fiona-messer
+    hash: 98aa7e6f20232decf326e609bcd50ea1f6b0994b4bfd491d78407b4d7e69cc04
+  popis: 246 let vlády Messerů, druhá tevarinská válka a Lintonův převrat.
+- rim: VII
+  title: Stín z Orionu
+  rozpeti: 2681–2736
+  obdobi: messerove
   herni_rok: 2681
-  hraj: "kap-7"
-  prameny:
-    - nazev: "Armitage (Orion III)"
-      typ: Galactapedie
-      url: https://robertsspaceindustries.com/galactapedia/article/RL6KLK4ylo-armitage-orion-iii
-    - nazev: "Vanduul"
-      typ: Galactapedie
-      url: https://robertsspaceindustries.com/galactapedia/article/VpGPp92gdO-vanduul
-    - nazev: "Vanduul Kingship"
-      typ: Galactapedie
-      url: https://robertsspaceindustries.com/galactapedia/article/V3qWn9Dlvm-vanduul-kingship
-    - nazev: "Orion"
-      typ: Galactapedie
-      url: https://robertsspaceindustries.com/galactapedia/article/VyvYqXEgPv-orion
-    - nazev: "Tiber System"
-      typ: Galactapedie
-      url: https://robertsspaceindustries.com/galactapedia/article/RMNLm97EDj-tiber-system
-    - nazev: "Illyana Messer VI"
-      typ: Galactapedie
-      url: https://robertsspaceindustries.com/galactapedia/article/bZwQBNmWrL-illyana-messer-vi
-    - nazev: "Fall of Virgil"
-      typ: Galactapedie
-      url: https://robertsspaceindustries.com/galactapedia/article/box5moyeoZ-fall-of-virgil
-  popis: "Vanduulové, první Kingship a pád Tiberu."
-- rim: "VIII"
-  title: "Příliv"
-  rozpeti: "2789–2793"
-  era: "Éra Messerů"
+  hraj: kap-7
+  zdroje:
+  - record_key: galactapedia:RL6KLK4ylo
+    typ: Galactapedie
+    nazev: Armitage (Orion III)
+    url: https://robertsspaceindustries.com/galactapedia/article/RL6KLK4ylo-armitage-orion-iii
+    hash: c7c3f99999bb009a3d0bab9a8af30b1b8713cf605383b55059f380ae574fd533
+  - record_key: galactapedia:VpGPp92gdO
+    typ: Galactapedie
+    nazev: Vanduul
+    url: https://robertsspaceindustries.com/galactapedia/article/VpGPp92gdO-vanduul
+    hash: ec9ff6f0b0fc526a7abd6e7ab88ddc7af621d0137a0ba63f9a5446676eadd394
+  - record_key: galactapedia:V3qWn9Dlvm
+    typ: Galactapedie
+    nazev: Vanduul Kingship
+    url: https://robertsspaceindustries.com/galactapedia/article/V3qWn9Dlvm-vanduul-kingship
+    hash: 97941c7d5c1dbbf27dde49bd51f40e846bc6688609577fec6568ab9e8b98dd94
+  - record_key: galactapedia:VyvYqXEgPv
+    typ: Galactapedie
+    nazev: Orion
+    url: https://robertsspaceindustries.com/galactapedia/article/VyvYqXEgPv-orion
+    hash: 074444bcc4be670a686a5fd32364b29767ac1169848ba83b4729fc5671407449
+  - record_key: galactapedia:RMNLm97EDj
+    typ: Galactapedie
+    nazev: Tiber System
+    url: https://robertsspaceindustries.com/galactapedia/article/RMNLm97EDj-tiber-system
+    hash: b9dbb1aa6c20233026349542dcf0c1660f5486cab5a1490b5b91088c824569b5
+  - record_key: galactapedia:bZwQBNmWrL
+    typ: Galactapedie
+    nazev: Illyana Messer VI
+    url: https://robertsspaceindustries.com/galactapedia/article/bZwQBNmWrL-illyana-messer-vi
+    hash: b6eca564fd40cc87615c9238ffdce0666ae38a7c32621a5f576efdda1c61debd
+  - record_key: galactapedia:box5moyeoZ
+    typ: Galactapedie
+    nazev: Fall of Virgil
+    url: https://robertsspaceindustries.com/galactapedia/article/box5moyeoZ-fall-of-virgil
+    hash: 8f4e2de8a17ed531a884a18a39d171162e02146ea9d967031d99241848044684
+  popis: Vanduulové, první Kingship a pád Tiberu.
+- rim: VIII
+  title: Příliv
+  rozpeti: 2789–2793
+  obdobi: messerove
   herni_rok: 2789
-  hraj: "kap-8"
-  prameny:
-    - nazev: "Perry Line"
-      typ: Galactapedie
-      url: https://robertsspaceindustries.com/galactapedia/article/V8gJQMY9mO-perry-line
-    - nazev: "Massacre of Garron II"
-      typ: Galactapedie
-      url: https://robertsspaceindustries.com/galactapedia/article/01dWeqnMr1-massacre-of-garron-ii
-    - nazev: "Tide"
-      typ: Galactapedie
-      url: https://robertsspaceindustries.com/galactapedia/article/RXlXOpwG6k-tide
-    - nazev: "Erin Toi"
-      typ: Galactapedie
-      url: https://robertsspaceindustries.com/galactapedia/article/R4ZG3NxM7Y-erin-toi
-    - nazev: "Perry Line Pact"
-      typ: Galactapedie
-      url: https://robertsspaceindustries.com/galactapedia/article/0Gx9GdvqAQ-perry-line-pact
-  popis: "Akari za Perryho linií, masakr na Garronu II a pád Messerů."
-- rim: "IX"
-  title: "Archa a umělý svět"
-  rozpeti: "2800–2884"
-  era: "Věk nápravy"
+  hraj: kap-8
+  zdroje:
+  - record_key: galactapedia:V8gJQMY9mO
+    typ: Galactapedie
+    nazev: Perry Line
+    url: https://robertsspaceindustries.com/galactapedia/article/V8gJQMY9mO-perry-line
+    hash: 8d39fb8691ca3d46f5b4cc273b418b2443a83a6c8f498366d50547d4bf83076d
+  - record_key: galactapedia:01dWeqnMr1
+    typ: Galactapedie
+    nazev: Massacre of Garron II
+    url: https://robertsspaceindustries.com/galactapedia/article/01dWeqnMr1-massacre-of-garron-ii
+    hash: 4a9d7e22e436df4784bedd43a69e7af217b036504f84535929abfd14b41497ea
+  - record_key: galactapedia:RXlXOpwG6k
+    typ: Galactapedie
+    nazev: Tide
+    url: https://robertsspaceindustries.com/galactapedia/article/RXlXOpwG6k-tide
+    hash: 6a76d38ccc985c24356c5626242e090e35188b346584dba7cb5ea412a062ff2b
+  - record_key: galactapedia:R4ZG3NxM7Y
+    typ: Galactapedie
+    nazev: Erin Toi
+    url: https://robertsspaceindustries.com/galactapedia/article/R4ZG3NxM7Y-erin-toi
+    hash: c040242c0a611572fac3f9ac5779532736467fa917a158e11ce813f09ab8d376
+  - record_key: galactapedia:0Gx9GdvqAQ
+    typ: Galactapedie
+    nazev: Perry Line Pact
+    url: https://robertsspaceindustries.com/galactapedia/article/0Gx9GdvqAQ-perry-line-pact
+    hash: 4068565a521699ddba526b92ef22073b016fb0229d470f4f50b53c056d61ec2c
+  popis: Akari za Perryho linií, masakr na Garronu II a pád Messerů.
+- rim: IX
+  title: Archa a umělý svět
+  rozpeti: 2800–2884
+  obdobi: naprava
   herni_rok: 2800
-  hraj: "kap-9"
-  prameny:
-    - nazev: "Marshall Leon"
-      typ: Galactapedie
-      url: https://robertsspaceindustries.com/galactapedia/article/bZwQBJmZxE-marshall-leon
-    - nazev: "The Ark"
-      typ: Galactapedie
-      url: https://robertsspaceindustries.com/galactapedia/article/0qnNMX5lAk-the-ark
-    - nazev: "Stanton System"
-      typ: Galactapedie
-      url: https://robertsspaceindustries.com/galactapedia/article/RX3lKBA3dq-stanton-system
-    - nazev: "Project Archangel"
-      typ: Galactapedie
-      url: https://robertsspaceindustries.com/galactapedia/article/RLMmAnr4gj-project-archangel
-    - nazev: "Fall of Caliban"
-      typ: Galactapedie
-      url: https://robertsspaceindustries.com/galactapedia/article/0Gz5DNryvE-fall-of-caliban
-  popis: "Imperátor Leon, prodej Stantonu, Projekt Archangel a Caliban."
-- rim: "X"
-  title: "Válka bez konce"
-  rozpeti: "2945–2956"
-  era: "Válka s Vanduuly"
+  hraj: kap-9
+  zdroje:
+  - record_key: galactapedia:bZwQBJmZxE
+    typ: Galactapedie
+    nazev: Marshall Leon
+    url: https://robertsspaceindustries.com/galactapedia/article/bZwQBJmZxE-marshall-leon
+    hash: 51b119b547902b1b61e13da3947cd9c4bdc74367748d6e57217e4df4e7a4de43
+  - record_key: galactapedia:0qnNMX5lAk
+    typ: Galactapedie
+    nazev: The Ark
+    url: https://robertsspaceindustries.com/galactapedia/article/0qnNMX5lAk-the-ark
+    hash: 118dfb5f7e504a40b0ce2487a0fefb86566c3f66715b853bda694696c87fb985
+  - record_key: galactapedia:RX3lKBA3dq
+    typ: Galactapedie
+    nazev: Stanton System
+    url: https://robertsspaceindustries.com/galactapedia/article/RX3lKBA3dq-stanton-system
+    hash: 0b3554ea3d1431ea3e059ad4145f31598d939123b3cbfa0eb73e22f74c850188
+  - record_key: galactapedia:RLMmAnr4gj
+    typ: Galactapedie
+    nazev: Project Archangel
+    url: https://robertsspaceindustries.com/galactapedia/article/RLMmAnr4gj-project-archangel
+    hash: ef926091e490ad019eb6fc8c6d0dfcc41dabf13279e7888ace8208cda8988797
+  - record_key: galactapedia:0Gz5DNryvE
+    typ: Galactapedie
+    nazev: Fall of Caliban
+    url: https://robertsspaceindustries.com/galactapedia/article/0Gz5DNryvE-fall-of-caliban
+    hash: 3175046a31e0a9d7d38ea04d7bc3fc5282d742c4186bbc56629bf4d88526089f
+  popis: Imperátor Leon, prodej Stantonu, Projekt Archangel a Caliban.
+- rim: X
+  title: Válka bez konce
+  rozpeti: 2945–2956
+  obdobi: valka
   herni_rok: 2945
-  hraj: "kap-10"
-  prameny:
-    - nazev: "Operation Mandrake"
-      typ: Galactapedie
-      url: https://robertsspaceindustries.com/galactapedia/article/bZkdG98WNE-operation-mandrake
-    - nazev: "Laylani Addison"
-      typ: Galactapedie
-      url: https://robertsspaceindustries.com/galactapedia/article/VYLvBm6Po1-laylani-addison
-    - nazev: "Ernst Bishop"
-      typ: Galactapedie
-      url: https://robertsspaceindustries.com/galactapedia/article/ReJaavPB3k-ernst-bishop
-    - nazev: "Pyro System"
-      typ: Galactapedie
-      url: https://robertsspaceindustries.com/galactapedia/article/0ODxJM917N-pyro-system
-    - nazev: "Vanduul Raids"
-      typ: Galactapedie
-      url: https://robertsspaceindustries.com/galactapedia/article/Rw1gdnOKBp-vanduul-raids
-  popis: "Útok na Vega II, válka s Vanduuly a současnost."
+  hraj: kap-10
+  zdroje:
+  - record_key: galactapedia:bZkdG98WNE
+    typ: Galactapedie
+    nazev: Operation Mandrake
+    url: https://robertsspaceindustries.com/galactapedia/article/bZkdG98WNE-operation-mandrake
+    hash: 7b1fa074eee8b62b0efb6b9ad0d7c118c29c698164bdcd7d1c573921e3957b08
+  - record_key: galactapedia:VYLvBm6Po1
+    typ: Galactapedie
+    nazev: Laylani Addison
+    url: https://robertsspaceindustries.com/galactapedia/article/VYLvBm6Po1-laylani-addison
+    hash: 59f8496b923c93d0e0a885735394f7375a513e0c4ec490c5f9525d3b8c007728
+  - record_key: galactapedia:ReJaavPB3k
+    typ: Galactapedie
+    nazev: Ernst Bishop
+    url: https://robertsspaceindustries.com/galactapedia/article/ReJaavPB3k-ernst-bishop
+    hash: 842f6e57a79872f6cd16ff0b45ffc0db5d5fe7c863b1235e94280492f500bd2f
+  - record_key: galactapedia:0ODxJM917N
+    typ: Galactapedie
+    nazev: Pyro System
+    url: https://robertsspaceindustries.com/galactapedia/article/0ODxJM917N-pyro-system
+    hash: 7d35ebf1f93215216a6cd34dbb64b04904e40f53ff95034c98dd30ad9f86bea3
+  - record_key: galactapedia:Rw1gdnOKBp
+    typ: Galactapedie
+    nazev: Vanduul Raids
+    url: https://robertsspaceindustries.com/galactapedia/article/Rw1gdnOKBp-vanduul-raids
+    hash: 59d1c9a5d39c93d8fbbafe4b125c91845618d6a9f79a9cd5695fa8367168d833
+  popis: Útok na Vega II, válka s Vanduuly a současnost.

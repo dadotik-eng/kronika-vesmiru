@@ -1,27 +1,48 @@
 ---
+id: dite-z-marsu
 title: Dítě z Marsu
-slug: dite-z-marsu
 date: 2026-11-11
+typ: kronika
 herni_rok: 2157
-era: "Terraformace Marsu"
-system: Sol
-popis: "Abeni Okon, první člověk narozený na jiné planetě než na Zemi, se narodila 18. března 2157 na Marsu, který byl krátce předtím úspěšně terraformován."
+obdobi: usvit
+soustava: SOL
+popis: Abeni Okon, první člověk narozený na jiné planetě než na Zemi, se narodila 18. března 2157 na Marsu, který byl krátce předtím úspěšně terraformován.
+vazby:
+  osoby:
+  - abeni-okon
+  systemy:
+  - SOL
+stitky:
+- Abeni Okon
+- Mars
+- Kinah a Madu Okon
+- Artemis
 overeni: OK
-overeni_poznamka: "Redaktor: OK (kolo 3). Kontrolor: OK – fakta sedí podle Galactapedie (Abeni Okon, Mars Tragedy, Mars Tragedy Memorial, Artemis). Nepotvrzené zůstávají jen dva obrazné detaily: barva marsovské oblohy a přesné načasování příchodu rodičů coby osadníků."
-stitky: [Abeni Okon, Mars, Kinah a Madu Okon, Artemis]
-prameny:
-  - nazev: "Abeni Okon"
-    typ: Galactapedie
-    url: https://robertsspaceindustries.com/galactapedia/article/Rz2DPeZZnk-abeni-okon
-  - nazev: "Mars (Sol IV)"
-    typ: Galactapedie
-    url: https://robertsspaceindustries.com/galactapedia/article/Regn8D76xw-mars-sol-iv
-  - nazev: "Mars Tragedy Memorial"
-    typ: Galactapedie
-    url: https://robertsspaceindustries.com/galactapedia/article/V8gJ6nl7Zx-mars-tragedy-memorial
-  - nazev: "2157: Blue Skies on Mars"
-    typ: Comm-Link
-    url: https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/12675-2157-Blue-Skies-On-Mars
+overeno_kdy: '2026-11-11'
+overeno_kym: Kontrolor
+overeni_poznamka: 'Redaktor: OK (kolo 3). Kontrolor: OK – fakta sedí podle Galactapedie (Abeni Okon, Mars Tragedy, Mars Tragedy Memorial, Artemis). Nepotvrzené zůstávají jen dva obrazné detaily: barva marsovské oblohy a přesné načasování příchodu rodičů coby osadníků.'
+slug: dite-z-marsu
+zdroje:
+- record_key: galactapedia:Rz2DPeZZnk
+  typ: Galactapedie
+  nazev: Abeni Okon
+  url: https://robertsspaceindustries.com/galactapedia/article/Rz2DPeZZnk-abeni-okon
+  hash: b54b51b3e41af1196f71f09538e2506d67cddafae0429f253dddc31641fd50f4
+- record_key: galactapedia:Regn8D76xw
+  typ: Galactapedie
+  nazev: Mars (Sol IV)
+  url: https://robertsspaceindustries.com/galactapedia/article/Regn8D76xw-mars-sol-iv
+  hash: ea301ba5002b738ff78bd0efcffc01896153c3af9ca40ac624e06e174aeb71d5
+- record_key: galactapedia:V8gJ6nl7Zx
+  typ: Galactapedie
+  nazev: Mars Tragedy Memorial
+  url: https://robertsspaceindustries.com/galactapedia/article/V8gJ6nl7Zx-mars-tragedy-memorial
+  hash: a4d5b635092febe20632a4627149404ea7f0d722a9e37c3413f83a64fa7f3a8f
+- record_key: commlink:12675
+  typ: Comm-Link
+  nazev: '2157: Blue Skies on Mars'
+  url: https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/12675-2157-Blue-Skies-On-Mars
+  hash: 66aab852f00c3ec654332d7807133ec8c186ceef576853da0c45ee3b89c49573
 ---
 
 Osmnáctého března roku 2157 se nad Marsem nerozlévalo žádné rudé nebe. Toho roku už bylo modré. Planeta, která lidstvu dlouho ukazovala jen prach a bouře, byla v polovině 50. let 22. století konečně úspěšně terraformována. Trvalo to roky a stálo to oběti – ten první pokus o terraformaci skončil katastrofou, která si v roce 2125 vyžádala tisíce životů. Mars se poučil. A pod tím nově modrým nebem se narodila Abeni Okon.

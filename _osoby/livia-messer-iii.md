@@ -7,9 +7,11 @@ kategorie: vladari
 rod: messer
 medailonek: 'Livia Messer III. vládla Spojenému impériu Země (UEE) v letech 2628 až 2643 poté, co jí otec Deacon II. dobrovolně přenechal úřad. Navázala na jeho právní reformy: zvýšila horní hranice trestů a změnila definici věznic, což jí umožnilo zřídit politické věznice na planetě Charon III. Posílila také vládní dohled nad médii, čímž fakticky vznikl neoficiální úřad propagandy, a z bezpečnostních důvodů omezila cestování. V roce 2641 přežila havárii raketoplánu nad Moskvou, při níž zahynuli její manžel Daniel Scota a syn Marius. V roce 2643 odešla z úřadu, synovi udělila čestný titul Marius IV. a v roce 2661 zemřela ve spánku, měsíc před svým otcem.'
 zdroje:
-- nazev: Livia Messer III
+- record_key: galactapedia:01dWwaQkrL
   typ: Galactapedie
+  nazev: Livia Messer III
   url: https://robertsspaceindustries.com/galactapedia/article/01dWwaQkrL-livia-messer-iii
+  hash: 93919a1a8f8ce3bdba27df30e2aff103a0eeb002267f5e07211840e6149dfd2b
 kapitoly:
 - kap-6
 rad: 2593

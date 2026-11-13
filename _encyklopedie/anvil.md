@@ -7,12 +7,16 @@ perex: Založil ji konstruktér J. Harris Arnold, který trval na tom, že osobn
 kapitoly:
 - 8
 zdroje:
-- nazev: Anvil Aerospace
+- record_key: galactapedia:0qnN6Od6YD
   typ: Galactapedie
+  nazev: Anvil Aerospace
   url: https://robertsspaceindustries.com/galactapedia/article/0qnN6Od6YD-anvil-aerospace
-- nazev: 'Portfolio: Anvil Aerospace'
+  hash: 6ef60bc0aa88a948692ee4b46f38014be3610aaed0d49cb2f0fde1e9d24f79c7
+- record_key: commlink:12970
   typ: Comm-Link
+  nazev: 'Portfolio: Anvil Aerospace'
   url: https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/12970-Portfolio-Anvil-Aerospace
+  hash: ceeb0209abea8d84f1076b1015483fc2266e0ab3e8c26488c9c9f467e5ec9686
 ---
 
 Anvil Aerospace je jedním z prvních velkých úspěchů planety Terra a skoro dvě století dodává námořnictvu vojenské lodě.

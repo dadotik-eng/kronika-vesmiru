@@ -8,15 +8,21 @@ kapitoly:
 - 1
 - 2
 zdroje:
-- nazev: Roberts Space Industries (RSI)
+- record_key: galactapedia:RWwZDn2Xrw
   typ: Galactapedie
+  nazev: Roberts Space Industries (RSI)
   url: https://robertsspaceindustries.com/galactapedia/article/RWwZDn2Xrw-rsi
-- nazev: 'Portfolio: Tarsus Electronics'
+  hash: 2cfbb7364ba47ff9190b17f105d45c84b9292ff78e918de68c8fb4c18e2b5e76
+- record_key: commlink:15371
   typ: Comm-Link
+  nazev: 'Portfolio: Tarsus Electronics'
   url: https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/15371-Portfolio-Tarsus-Electronics
-- nazev: 'Portfolio: RSI'
+  hash: 347a4b0732f05a72ef920f3f3948eade69627cb42d882f17f549672c02020d25
+- record_key: commlink:17268
   typ: Comm-Link
+  nazev: 'Portfolio: RSI'
   url: https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/17268-Portfolio-RSI
+  hash: 8991da8a6bc8a99aef63cfb5af8b3f39f40bb0b2a97e8d20ca9ab502504e0dcb
 ---
 
 Málokterá firma je tak propletená s dějinami lidstva jako Roberts Space Industries. Její stopy najdeš ve vesmíru i na obyčejné ulici – a přitom začínala úplně jinde, než by člověk čekal.

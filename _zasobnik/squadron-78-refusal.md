@@ -2,7 +2,7 @@
 nazev: Torpéda do prázdna
 nazev_en: 'Portfolio: 78th Squadron'
 rok: '2791'
-era: Éra Messerů
+obdobi: messerove
 typ: osobní příběh
 shrnuti: Na počátku roku 2791 dostala bombardovací Letka 78 rozkaz zničit antihmotovými torpédy obydlený měsíc v soustavě Ferron, údajnou základnu povstalců. Velitelka Lisa Cahillier zjistila, že jde o neozbrojené zemědělské středisko s desítkami tisíc uprchlíků, a odmítla střílet bez potvrzeného cíle. Když admirálka Lorna Gestala rozkaz zopakovala, Cahillier nařídila palbu – ale na asteroid za měsícem; letka pak byla celá zatčena.
 postavy:
@@ -11,7 +11,10 @@ postavy:
 - Jaso Iger
 zdroje:
 - record_key: commlink:14618
-  rsi_url: https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/14618-Portfolio-78th-Squadron
+  typ: Comm-Link
+  nazev: 'Portfolio: 78th Squadron'
+  url: https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/14618-Portfolio-78th-Squadron
+  hash: efeb0fb38ab4ebe6195437a7e0bebb047b70bc50a7577bcf67d6d91904451376
 forma: dramatizace
 hodnoceni: 5
 hodnoceni_proc: Silný morální čin v posledních dnech Messerů.

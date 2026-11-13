@@ -8,15 +8,21 @@ vztah: bez kontaktu
 kontakt: lidé se s nimi dosud nesetkali
 perex: Úhlavní nepřátelé Xi'anů, o kterých se lidé dozvěděli teprve nedávno. Nikdo z lidí je zatím neviděl.
 zdroje:
-- nazev: Kr'thak
+- record_key: galactapedia:RxNxDYkqzz
   typ: Galactapedie
+  nazev: Kr'thak
   url: https://robertsspaceindustries.com/galactapedia/article/RxNxDYkqzz-krthak
-- nazev: 'News Update: The Kr''Thak'
+  hash: ab543980edbf19318d81add1af14ba02221a3168ad88787e7859bd46ae888316
+- record_key: commlink:12886
   typ: Comm-Link
+  nazev: 'News Update: The Kr''Thak'
   url: https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/12886-News-Update-The-KrThak
-- nazev: 'Writer''s Guide: Part Six'
+  hash: 99bdf0cece22abe9a65e3901b228d1dba6efe141a5ef55be34f30420d8004805
+- record_key: commlink:12988
   typ: Comm-Link
+  nazev: 'Writer''s Guide: Part Six'
   url: https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/12988-Writers-Guide-Part-Six
+  hash: d750a6f76091f41ec03585288fbae98b7656920fa3ae4ccd0a093f28f91d04f6
 biologie: O biologii Kr'thaků nevíme nic. Žádný člověk je zatím neviděl a Xi'ani informace nesdílejí.
 ---
 

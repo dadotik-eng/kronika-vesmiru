@@ -8,24 +8,36 @@ vztah: opatrné spojenectví
 kontakt: 2530, soustava Pallas (Th.us'ūng)
 perex: Starobylá říše trpělivých diplomatů, kteří žijí staletí a plánují na desetiletí dopředu. Kdysi strašák lidstva, dnes obchodní partner.
 zdroje:
-- nazev: Xi'an
+- record_key: galactapedia:ReJwN9KJEj
   typ: Galactapedie
+  nazev: Xi'an
   url: https://robertsspaceindustries.com/galactapedia/article/ReJwN9KJEj-xian
-- nazev: Xi'an Clothing
+  hash: 85bc70ad7cdeee77fa62c41dd3a402ce558a357f627d7b05d6d4fefdc9d3ad0f
+- record_key: galactapedia:VJXkBwlKDn
   typ: Galactapedie
+  nazev: Xi'an Clothing
   url: https://robertsspaceindustries.com/galactapedia/article/VJXkBwlKDn-xian-clothing
-- nazev: Meet the Xi'an
+  hash: 900967ebb697073658f29c5b3375f2b62453d601544d3ca7c712933a1f1b95fd
+- record_key: commlink:12756
   typ: Comm-Link
+  nazev: Meet the Xi'an
   url: https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/12756-Meet-The-Xian
-- nazev: 'Writer''s Guide: Part Six'
+  hash: 869a077ea46cc93ece2ff8782b32f24649ba48e2d0ca606a33ec2d3dde1f25c6
+- record_key: commlink:12988
   typ: Comm-Link
+  nazev: 'Writer''s Guide: Part Six'
   url: https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/12988-Writers-Guide-Part-Six
-- nazev: Kr'thak
+  hash: d750a6f76091f41ec03585288fbae98b7656920fa3ae4ccd0a093f28f91d04f6
+- record_key: galactapedia:RxNxDYkqzz
   typ: Galactapedie
+  nazev: Kr'thak
   url: https://robertsspaceindustries.com/galactapedia/article/RxNxDYkqzz-krthak
-- nazev: 'Loremakers: Community Questions (vnímání mimozemšťanů)'
+  hash: ab543980edbf19318d81add1af14ba02221a3168ad88787e7859bd46ae888316
+- record_key: commlink:18297
   typ: Comm-Link
+  nazev: 'Loremakers: Community Questions (vnímání mimozemšťanů)'
   url: https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/18297-Loremakers-Community-Questions
+  hash: 65318bc78a23b2fda17782435c057d6736bde90cdab0e071a4d7c60fc78be0e0
 biologie: 'Xi''ani žijí staletí. Sto xi''anských let odpovídá zhruba 128 standardním pozemským rokům a císař Kr.ē vládne už od roku 2643. Kvůli dlouhému životu vláda pečlivě hlídá a řídí, kolik se rodí dětí, aby říše nebyla přelidněná. Dlouhověkost formuje i jejich myšlení: jednají s výhledem na desetiletí, ne na roky, a jejich klid si lidé často pletou s lhostejností.
 
 

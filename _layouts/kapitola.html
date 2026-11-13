@@ -3,7 +3,8 @@ layout: default
 ---
 <article class="kapitola">
   <p class="nadtitul">
-    {% if page.era %}{{ page.era }} · {% endif %}{% if page.herni_rok %}{{ page.herni_rok }}{% endif %}{% if page.system %} · <a href="{{ '/mapa/' | relative_url }}#{{ page.system | upcase | replace: ' ', '' }}" title="Ukázat na hvězdné mapě">{{ page.system }} ↗</a>{% endif %}
+    {% assign era = site.data.ery | where: "id", page.obdobi | first %}{% assign sous_kod = page.soustava | default: page.system | upcase | replace: ' ', '' %}{% assign sous_nazev = site.data.soustavy[sous_kod] | default: page.system %}
+    {% if era %}{{ era.nazev }} · {% elsif page.era %}{{ page.era }} · {% endif %}{% if page.herni_rok %}{{ page.herni_rok }}{% endif %}{% if sous_kod != "" %} · <a href="{{ '/mapa/' | relative_url }}#{{ sous_kod }}" title="Ukázat na hvězdné mapě">{{ sous_nazev }} ↗</a>{% endif %}
   </p>
   <h1>{{ page.title }}</h1>
   <div class="radek-stav">
@@ -20,17 +21,7 @@ layout: default
     <audio class="kapitola-audio" controls preload="none" src="{{ page.audio }}"></audio>
   {% endif %}
   <div class="text kapitola-text">{{ content }}</div>
-  {% if page.prameny %}
-  <section class="prameny">
-    <h2>Prameny</h2>
-    <ul>
-      {% for p in page.prameny %}
-        {% assign u = p.url %}{% if u and u.size > 0 %}{% unless u contains "://" %}{% assign u = "https://robertsspaceindustries.com" | append: u %}{% endunless %}{% endif %}
-        <li>{% if u %}<a href="{{ u }}" rel="noopener">{{ p.nazev }}</a>{% else %}{{ p.nazev }}{% endif %}{% if p.typ %} · {{ p.typ }}{% endif %}</li>
-      {% endfor %}
-    </ul>
-  </section>
-  {% endif %}
+  {% include prameny.html seznam=page.zdroje %}{% unless page.zdroje %}{% include prameny.html seznam=page.prameny %}{% endunless %}
   {% if page.stitky %}
   <p class="stitky">{% for s in page.stitky %}<span>{{ s }}</span>{% endfor %}</p>
   {% endif %}

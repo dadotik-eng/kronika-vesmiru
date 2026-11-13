@@ -8,30 +8,46 @@ vztah: součást UEE
 kontakt: 2541, soustava Elysium
 perex: Hrdý válečnický národ, který lidstvo dvakrát porazilo. Ztratil domov i víru, ale po staletích se vrací ke svým kořenům.
 zdroje:
-- nazev: Tevarin
+- record_key: galactapedia:V8gJv3nB3X
   typ: Galactapedie
+  nazev: Tevarin
   url: https://robertsspaceindustries.com/galactapedia/article/V8gJv3nB3X-tevarin
-- nazev: Tevarin-Human First Contact
+  hash: 2e2d5d8971e191ef3feda43bbef713803f5f007f415c2e00bbc2037572733d8a
+- record_key: galactapedia:Vgg7YGkaEw
   typ: Galactapedie
+  nazev: Tevarin-Human First Contact
   url: https://robertsspaceindustries.com/galactapedia/article/Vgg7YGkaEw-tevarin-human-first-contact
-- nazev: Second Tevarin War
+  hash: 1af94938ed6166bc32eb2ecd11901fddc4e44295a99dc9e4032a9b8182757c2a
+- record_key: galactapedia:bE3rPrz3Pv
   typ: Galactapedie
+  nazev: Second Tevarin War
   url: https://robertsspaceindustries.com/galactapedia/article/bE3rPrz3Pv-second-tevarin-war
-- nazev: Tevarin Purge
+  hash: 929194640b4c6b868b0b9102e9b2a866de18f938efddcebdcc293c1089af9942
+- record_key: galactapedia:R6dWB877Nn
   typ: Galactapedie
+  nazev: Tevarin Purge
   url: https://robertsspaceindustries.com/galactapedia/article/R6dWB877Nn-tevarin-purge
-- nazev: Tevarin Diaspora
+  hash: ee79b17617f190364b68ce3c1cabf0c09675c1aa009ea8f0b546f672d01a8fa1
+- record_key: galactapedia:VY4WjwXngx
   typ: Galactapedie
+  nazev: Tevarin Diaspora
   url: https://robertsspaceindustries.com/galactapedia/article/VY4WjwXngx-tevarin-diaspora
-- nazev: 'Writer''s Guide: Part Seven'
+  hash: ab628cfcf471e202271c9c7bee0078297386687575ae92f1429c8a547b08099e
+- record_key: commlink:12996
   typ: Comm-Link
+  nazev: 'Writer''s Guide: Part Seven'
   url: https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/12996-Writers-Guide-Part-Seven
-- nazev: 'Loremakers: Community Questions (predátoři Kaleethu)'
+  hash: 936eb3efe14c01e6aa720724d78b88845cd712a7391569a9483b2ef562b6e12f
+- record_key: commlink:18471
   typ: Comm-Link
+  nazev: 'Loremakers: Community Questions (predátoři Kaleethu)'
   url: https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/18471-Loremakers-Community-Questions
-- nazev: 'Loremakers: Community Questions (vnímání mimozemšťanů)'
+  hash: b90bf556a1bc41f4393dba360f23f8fd08186e667e7c271af09d70027e1f8086
+- record_key: commlink:18297
   typ: Comm-Link
+  nazev: 'Loremakers: Community Questions (vnímání mimozemšťanů)'
   url: https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/18297-Loremakers-Community-Questions
+  hash: 65318bc78a23b2fda17782435c057d6736bde90cdab0e071a4d7c60fc78be0e0
 biologie: 'Tevarinové jsou dvounozí. Na svém domovském světě ale zdaleka nestáli na vrcholu potravního řetězce. Jejich tělo je dělalo zranitelnými vůči velkým dravcům, takže vydat se někam o samotě bylo smrtelně nebezpečné. Museli držet pospolu a dravce přechytračit.
 
 

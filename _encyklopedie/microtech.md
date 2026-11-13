@@ -7,15 +7,21 @@ perex: Elektronická společnost koupila mrazivou planetu Stanton IV a její chl
 kapitoly:
 - 9
 zdroje:
-- nazev: microTech (Company)
+- record_key: galactapedia:bE3rBB4j7J
   typ: Galactapedie
+  nazev: microTech (Company)
   url: https://robertsspaceindustries.com/galactapedia/article/bE3rBB4j7J-microtech
-- nazev: microTech (Stanton IV)
+  hash: feb7783487534985acdbe3363308d682f2c42b5f8b876a0a9b2d23df64ee8c72
+- record_key: galactapedia:VYL46xl5Z1
   typ: Galactapedie
+  nazev: microTech (Stanton IV)
   url: https://robertsspaceindustries.com/galactapedia/article/VYL46xl5Z1-microtech-stanton-iv
-- nazev: 'Portfolio: microTech'
+  hash: 05289ae209c9f90a16d88d162bedbecbc1f442bc79ad371c5ca90110580d5c93
+- record_key: commlink:17941
   typ: Comm-Link
+  nazev: 'Portfolio: microTech'
   url: https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/17941-Portfolio-MicroTech
+  hash: 9be5af332b0d34e56f679d041202322aa39fb1191f8ec998047c2ae9054c460a
 ---
 
 Inspirativní, vizionářský, nemilosrdný. O zakladateli microTechu Magnusi Tobinovi se toho napsalo hodně – a málokdy celá pravda.

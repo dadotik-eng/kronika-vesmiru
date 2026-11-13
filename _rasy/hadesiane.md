@@ -8,9 +8,11 @@ vztah: vyhynulí
 kontakt: soustava objevena 2515
 perex: Civilizace, která dobyla vlastní soustavu a pak zmizela. Zbyly po ní jen ruiny a radiace neznámé zbraně.
 zdroje:
-- nazev: Hadesians
+- record_key: galactapedia:RPPxMqdkpE
   typ: Galactapedie
+  nazev: Hadesians
   url: https://robertsspaceindustries.com/galactapedia/article/RPPxMqdkpE-hadesians
+  hash: ecd3d2ac73b69a6a29a4b2e705deae23563ee61ae822cccfc0be7abc1b75f60b
 biologie: O tom, jak Hadesiané vypadali a jak žili, oficiální prameny nic neuvádějí.
 ---
 
