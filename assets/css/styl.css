@@ -561,7 +561,9 @@ a.os-odkaz:hover { color: var(--akcent); }
 .rod-vztahy dd { margin: 0; }
 .rod-odkaz { background: none; border: 0; padding: 0; color: var(--akcent); cursor: pointer; font: inherit; text-decoration: underline dotted; text-underline-offset: 3px; }
 .rod-panel .med-odkazy { display: flex; gap: 1.2rem; flex-wrap: wrap; margin-top: 1.2rem; font-family: var(--label); letter-spacing: .04em; }
+.rod-panel .med-odkazy { align-items: center; }
 .rod-panel .med-odkazy a { text-decoration: none; }
+.rod-panel .med-odkazy .tlacitko { margin: 0; padding: .6rem 1.1rem; font-size: 1.05rem; }
 .k-text { font-weight: 600; }
 
 /* Mimozemské rasy */
