@@ -18,6 +18,9 @@ vazby:
   "astrid-messer-vii|samuel-messer-viii": {typ: rodina, popis: "Sestřenice a bratranec – Astrid ho odstavila od trůnu"}
   "august-dunlow|linton-messer-xi": {typ: souvislost, popis: "Dunlow koupil firmu, kterou zničila Lintonova obvinění"}
   "august-dunlow|ulysses-messer-x": {typ: souvislost, popis: "Jako vzorný žák mával imperátorovi u cesty"}
+  "cal-mason|ryan-enright": {typ: spoluprace, popis: "Mason létá ve 42. letce pod Enrightovým velením"}
+  "cara-webster|noah-white": {typ: spoluprace, popis: "Hlavní mechanička jeho lodi UEES Stanton"}
+  "cedric-cochran|ernst-bishop": {typ: spoluprace, popis: "Cochran ohlásil vítězství Bishopovy úderné skupiny v operaci Mandrake"}
   "clement-redfield|erin-toi": {typ: spoluprace, popis: "Šéf štábu imperátorky Toi"}
   "corsen-messer-v|deacon-messer-ii": {typ: rodina, popis: "Syn a otec"}
   "corsen-messer-v|gammon-messer": {typ: rodina, popis: "Otec a syn – oba otráveni roku 2662"}
@@ -34,6 +37,7 @@ vazby:
   "erin-toi|laylani-addison": {typ: vliv, popis: "Addisonin tým cituje radu, kterou kdysi dostala Toi"}
   "erin-toi|marshall-leon": {typ: nastupce, popis: "Diplomatický tajemník její vlády a později nástupce"}
   "erin-toi|terrence-akari": {typ: spoluprace, popis: "Nabídla mu post velvyslance u Xi'anů – odmítl"}
+  "ernst-bishop|rachel-maclaren": {typ: spoluprace, popis: "MacLarenová a její Gauntlet bojují u Vegy II pod Bishopovým velením"}
   "fiona-messer|linton-messer-xi": {typ: rodina, popis: "Sourozenci – Fiona ho nakonec chtěla odstranit"}
   "fiona-messer|ulysses-messer-x": {typ: rodina, popis: "Dcera a otec – pomohla ho sesadit"}
   "galor-messer-ix|illyana-messer-vi": {typ: rodina, popis: "Syn a matka – vydědila ho ve prospěch Samuela"}
@@ -53,6 +57,8 @@ vazby:
   "j-harris-arnold|leonard-casse": {typ: vliv, popis: "Arnold obdivoval Cassovo dílo a koupil Casse Aerospace"}
   "janis-rezaian|mauricio-tusk": {typ: spoluprace, popis: "Společně kritizovali Ivara Messera"}
   "janna-thurville|joona-tzur": {typ: rodina, popis: "Dcera a otec"}
+  "jax-mccleary|jimmy": {typ: spoluprace, popis: "Moderátor Whitley's Guide a jeho producent a kaskadérský pilot"}
+  "julian-wexler|randall-graves": {typ: spoluprace, popis: "Ředitel a šéf bezpečnosti základny Archon"}
   "kelos-costigan|titus-costigan": {typ: rodina, popis: "Otec a syn"}
   "ki-jotal|laylani-addison": {typ: spoluprace, popis: "Jmenovala ji první tevarinskou členkou vlády"}
   "laylani-addison|suj-kossi": {typ: spoluprace, popis: "Spolupráce na programech pro Tevariny"}
@@ -60,6 +66,9 @@ vazby:
   "linton-messer-xi|ulysses-messer-x": {typ: rodina, popis: "Syn a otec – Linton ho svrhl"}
   "livia-messer-iii|marius-messer-iv": {typ: rodina, popis: "Matka a syn"}
   "neal-socolovich|vernon-tar": {typ: souvislost, popis: "Socolovichova delegace převzala Tarův první kontakt s Banu"}
+  "noah-white|sophia-kelly": {typ: spoluprace, popis: "Kapitán a jeho první důstojnice na UEES Stanton"}
+  "noah-white|steve-colton": {typ: spoluprace, popis: "Kapitán a letecký instruktor lodi UEES Stanton"}
+  "randall-graves|steve-colton": {typ: spoluprace, popis: "Létali spolu ve 118. letce 2. flotily"}
   "terrence-akari|tueng-se-kre": {typ: spoluprace, popis: "Spolu stáli za smlouvou Akari–Kr.ē"}
 vyradit:
   - "amandeep-vakario|leonard-casse"

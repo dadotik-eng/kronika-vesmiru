@@ -60,8 +60,9 @@ def zkontroluj_zdroje(soubor, zdroje):
         if w:
             if z.get('typ') != 'Komunitní wiki':
                 chyba(soubor, f"zdroj {i + 1}: zdroj ze starcitizen.tools musí mít typ 'Komunitní wiki'")
-            if klic and str(klic).replace(' ', '_') != 'scwiki:' + w.group(1).replace(' ', '_'):
-                chyba(soubor, f"zdroj {i + 1}: record_key {klic} nesedí s adresou wiki (má být scwiki:{w.group(1)})")
+            ident_w = str(klic or '').partition(':')[2]
+            if klic and not ident_w.isdigit() and str(klic).replace(' ', '_') != 'scwiki:' + w.group(1).replace(' ', '_'):
+                chyba(soubor, f"zdroj {i + 1}: record_key {klic} nesedí s adresou wiki (má být scwiki:{w.group(1)} nebo scwiki:<číslo stránky> z Archiváře)")
         elif str(klic or '').startswith('scwiki:'):
             chyba(soubor, f"zdroj {i + 1}: record_key scwiki: patří jen ke zdroji ze starcitizen.tools")
         if not klic:

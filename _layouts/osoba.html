@@ -8,7 +8,7 @@ layout: default
   <p class="nadtitul"><a href="{{ '/osobnosti/' | relative_url }}">Osobnosti</a>{% for p in kat %}{% assign kv = p | split: ":" %}{% if kv[0] == o.kategorie %} · {{ kv[1] }}{% endif %}{% endfor %}{% if era %} · <span class="od-era">{{ era.nazev }}</span>{% elsif o.obdobi == "mimo" %} · mimo lidské dějiny{% endif %}</p>
   <h1>{{ o.jmeno }}</h1>
   {% assign nar = o.narozeni | append: "" %}{% assign zem = o.umrti | append: "" %}
-  <p class="od-roky">{% if zem == "žije" %}{% if nar == "neznámo" %}žije{% else %}narozen(a) {{ nar }}, žije{% endif %}{% elsif nar == "neznámo" and zem == "neznámo" %}roky neznámé{% else %}{% if nar == "neznámo" %}?{% else %}{{ nar }}{% endif %} – {% if zem == "neznámo" %}?{% else %}{{ zem }}{% endif %}{% endif %} · {{ o.role }}</p>
+  <p class="od-roky">{% if zem == "žije" %}{% if nar == "neznámo" %}žije{% else %}narozen(a) {{ nar }}, žije{% endif %}{% elsif nar == "neznámo" and zem == "neznámo" %}roky neznámé{% else %}{% if nar == "neznámo" %}?{% else %}{{ nar }}{% endif %} – {% if zem == "neznámo" %}?{% else %}{{ zem }}{% endif %}{% endif %} · {{ o.role }}{% if o.hra == "squadron42" %} <span class="os-hra" title="Postava ze hry Squadron 42">Squadron 42</span>{% endif %}</p>
   {% if o.ilustrace %}<figure class="od-ilustrace"><img src="{{ '/assets/osoby/' | append: o.slug | append: '.webp' | relative_url }}" alt="{% if o.ilustrace_popisek %}{{ o.jmeno | escape }}{% else %}Ilustrace: {{ o.jmeno | escape }}{% endif %}" width="960" height="540"><span class="il-jmeno" aria-hidden="true">{{ o.jmeno }}</span><figcaption>{{ o.ilustrace_popisek | default: "Ilustrační obrázek" }}</figcaption></figure>{% endif %}
   <div class="text prolinkovat">
     <p>{{ o.medailonek }}</p>

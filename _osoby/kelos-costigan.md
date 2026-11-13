@@ -21,4 +21,5 @@ kapitoly:
 rad: 2855
 ilustrace: true
 obdobi: valka
+hra: squadron42
 ---
