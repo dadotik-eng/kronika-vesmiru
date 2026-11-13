@@ -20,7 +20,7 @@ overeni_poznamka:           # volitelné, vidí jen Daniel v betě
 audio:                      # volitelné, odkaz na namluvenou verzi (mp3/ogg)
 zdroje:                     # formát v2 – stejný ve všech záznamech
   - record_key: galactapedia:0Gz5DNryvE   # klíč v databázi Archiváře (galactapedia:<id z adresy>, commlink:<číslo>)
-    typ: Galactapedie       # Galactapedie | Comm-Link | Star Map
+    typ: Galactapedie       # Galactapedie | Comm-Link | Star Map | Komunitní wiki (jen když oficiální text chybí; url https://starcitizen.tools/<Stránka>, record_key scwiki:<Stránka>)
     nazev: Fall of Caliban
     url: https://robertsspaceindustries.com/galactapedia/article/0Gz5DNryvE-fall-of-caliban
     hash:                   # volitelné; content_hash verze, podle které se ověřovalo (doplní Archivář)

@@ -18,7 +18,7 @@ KOREN = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 os.chdir(KOREN)
 
 TYP_PODLE_KLICE = {'galactapedia': 'Galactapedie', 'commlink': 'Comm-Link', 'system': 'Star Map',
-                   'object': 'Star Map', 'location': 'Star Map', 'scwiki': 'Star Citizen Wiki'}
+                   'object': 'Star Map', 'location': 'Star Map', 'scwiki': 'Komunitní wiki'}
 
 
 def record_key(url):
@@ -26,6 +26,8 @@ def record_key(url):
     if m: return 'galactapedia:' + m.group(1)
     m = re.search(r'comm-link/[^/]+/(\d+)', url or '')
     if m: return 'commlink:' + m.group(1)
+    m = re.match(r'https://starcitizen\.tools/([^?#]+)', url or '')
+    if m: return 'scwiki:' + m.group(1)
     return None
 
 

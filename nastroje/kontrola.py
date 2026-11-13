@@ -41,7 +41,8 @@ import json
 SOUSTAVY = set(json.load(open('_data/soustavy.json', encoding='utf-8'))) if os.path.exists('_data/soustavy.json') else set()
 ID = {d: {os.path.basename(s)[:-3] for s in glob.glob(f'_{d}/*.md')} for d in ('osoby', 'rasy', 'udalosti', 'kapitoly', 'encyklopedie')}
 PREDPONY = {'galactapedia', 'commlink', 'system', 'object', 'location', 'scwiki'}
-POVOLENE = re.compile(r'^https://(?:robertsspaceindustries\.com/|web\.archive\.org/web/\d+/https?://(?:www\.)?robertsspaceindustries\.com/)')
+POVOLENE = re.compile(r'^https://(?:robertsspaceindustries\.com/|starcitizen\.tools/|web\.archive\.org/web/\d+/https?://(?:www\.)?robertsspaceindustries\.com/)')
+WIKI = re.compile(r'^https://starcitizen\.tools/([^?#]+)')
 TYPY_KAPITOL = {'kronika', 'dramatizace', 'dokument'}
 STARA_POLE = {'era': 'obdobi (id období)', 'system': 'soustava (kód ze Star Map)', 'prameny': 'zdroje'}
 
@@ -54,7 +55,15 @@ def zkontroluj_zdroje(soubor, zdroje):
         if 'rsi_url' in z:
             (chyba if OSTRY else varuj)(soubor, f"zdroj {i + 1}: pole rsi_url → url (formát v2)")
         if url and not POVOLENE.match(url):
-            chyba(soubor, f"zdroj {i + 1}: nepovolená doména ({url[:60]}) – jen robertsspaceindustries.com nebo archivní kopie RSI na web.archive.org")
+            chyba(soubor, f"zdroj {i + 1}: nepovolená doména ({url[:60]}) – jen robertsspaceindustries.com, archivní kopie RSI na web.archive.org nebo komunitní wiki starcitizen.tools")
+        w = WIKI.match(url or '')
+        if w:
+            if z.get('typ') != 'Komunitní wiki':
+                chyba(soubor, f"zdroj {i + 1}: zdroj ze starcitizen.tools musí mít typ 'Komunitní wiki'")
+            if klic and str(klic).replace(' ', '_') != 'scwiki:' + w.group(1).replace(' ', '_'):
+                chyba(soubor, f"zdroj {i + 1}: record_key {klic} nesedí s adresou wiki (má být scwiki:{w.group(1)})")
+        elif str(klic or '').startswith('scwiki:'):
+            chyba(soubor, f"zdroj {i + 1}: record_key scwiki: patří jen ke zdroji ze starcitizen.tools")
         if not klic:
             (chyba if OSTRY else varuj)(soubor, f"zdroj {i + 1} ({z.get('nazev')}): chybí record_key")
         else:

@@ -929,3 +929,4 @@ main h1[tabindex="-1"]:focus, main[tabindex="-1"]:focus { outline: none; }
 .vz-retez li::before { counter-increment: krok; content: counter(krok); position: absolute; left: -.85rem; top: .5rem; width: 1.4rem; height: 1.4rem; border-radius: 50%; background: var(--barva); color: #081a33; font: 600 .8rem/1.4rem var(--label); text-align: center; }
 .vz-retez .vz-typ { margin-left: .6rem; }
 @media (max-width: 640px) { .vz-cesta select { max-width: 100%; flex: 1 1 100%; } .vz-cesta > span { display: none; } }
+.zdroj-wiki { font-family: var(--label); font-size: .8rem; letter-spacing: .06em; text-transform: uppercase; color: #e8a06a; border: 1px solid rgba(232,160,106,.55); border-radius: 99px; padding: 0 .5rem; }

@@ -20,7 +20,7 @@ kategorie: vladari        # vladari | politika | armada | objevitele | veda-tech
 medailonek: 3–5 vět česky, vlastními slovy, jen fakta ze zdroje.
 zdroje:                   # formát v2 – stejný ve všech záznamech (viz SABLONA-KAPITOLY.md)
 - record_key: galactapedia:<id z adresy>   # commlink:<číslo> u Comm-Linků
-  typ: Galactapedie       # Galactapedie | Comm-Link | Star Map
+  typ: Galactapedie       # Galactapedie | Comm-Link | Star Map | Komunitní wiki (jen když oficiální text chybí; url https://starcitizen.tools/<Stránka>, record_key scwiki:<Stránka>)
   nazev: Erin Toi
   url: https://robertsspaceindustries.com/galactapedia/article/<id>-erin-toi
 kapitoly: [kap-8]         # kap-1 … kap-10, letka; jinak []
