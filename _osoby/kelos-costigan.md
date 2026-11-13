@@ -19,5 +19,6 @@ zdroje:
 kapitoly:
 - kap-10
 rad: 2855
+ilustrace: true
 obdobi: valka
 ---

@@ -20,6 +20,7 @@ zdroje:
 kapitoly:
 - kap-8
 rad: 2737
+ilustrace: true
 obdobi: messerove
 ---
 
