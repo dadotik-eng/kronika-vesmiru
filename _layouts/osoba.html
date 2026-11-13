@@ -9,7 +9,7 @@ layout: default
   <h1>{{ o.jmeno }}</h1>
   {% assign nar = o.narozeni | append: "" %}{% assign zem = o.umrti | append: "" %}
   <p class="od-roky">{% if zem == "žije" %}{% if nar == "neznámo" %}žije{% else %}narozen(a) {{ nar }}, žije{% endif %}{% elsif nar == "neznámo" and zem == "neznámo" %}roky neznámé{% else %}{% if nar == "neznámo" %}?{% else %}{{ nar }}{% endif %} – {% if zem == "neznámo" %}?{% else %}{{ zem }}{% endif %}{% endif %} · {{ o.role }}</p>
-  {% if o.ilustrace %}<figure class="od-ilustrace"><img src="{{ '/assets/osoby/' | append: o.slug | append: '.webp' | relative_url }}" alt="Ilustrace: {{ o.jmeno | escape }}" width="960" height="540"><figcaption>Ilustrační obrázek</figcaption></figure>{% endif %}
+  {% if o.ilustrace %}<figure class="od-ilustrace"><img src="{{ '/assets/osoby/' | append: o.slug | append: '.webp' | relative_url }}" alt="{% if o.ilustrace_popisek %}{{ o.jmeno | escape }}{% else %}Ilustrace: {{ o.jmeno | escape }}{% endif %}" width="960" height="540"><figcaption>{{ o.ilustrace_popisek | default: "Ilustrační obrázek" }}</figcaption></figure>{% endif %}
   <div class="text prolinkovat">
     <p>{{ o.medailonek }}</p>
   </div>
