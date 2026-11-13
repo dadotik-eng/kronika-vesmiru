@@ -17,7 +17,7 @@ popis: Dramatizace a kapitoly ze skutečných událostí dějin vesmíru Star Ci
     <article class="pri-karta" id="pribeh-{{ p.id }}">
       <p class="pri-stitek">{{ p.stitek }}</p>
       <h3>{{ p.nazev }}</h3>
-      {% assign era = site.data.ery | where: "id", p.obdobi | first %}{% assign t = site.data.texty[p.prehrat] %}{% assign slov = t.odstavce | join: " " | number_of_words %}{% assign minut = slov | plus: 70 | divided_by: 140 %}
+      {% assign era = site.data.ery | where: "id", p.obdobi | first %}{% assign t = site.data.texty[p.prehrat] %}{% assign slov = t.odstavce | map: "text" | join: " " | number_of_words %}{% assign minut = slov | plus: 70 | divided_by: 140 %}
       {% if p.rok %}<p class="pri-meta"><span>{{ p.rok }}</span>{% if p.soustava %}<a href="{{ '/mapa/' | relative_url }}#{{ p.soustava }}" title="Ukázat na hvězdné mapě">{{ site.data.soustavy[p.soustava] }}</a>{% endif %}{% if era %}<span>{{ era.nazev }}</span>{% endif %}{% if minut > 0 %}<span>{{ minut }} min poslechu</span>{% endif %}</p>{% endif %}
       <p class="text-pojmy">{{ p.text }}</p>
       <p class="pri-akce"><a class="dej-hraj" href="{{ '/archiv/#' | append: p.prehrat | relative_url }}">▶ Přehrát</a>{% if p.cist %} <a href="{{ p.cist | relative_url }}">Číst →</a>{% endif %}</p>
