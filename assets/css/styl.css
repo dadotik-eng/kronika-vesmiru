@@ -394,6 +394,10 @@ html.prehravac-otevreny { overflow: hidden; }
 .pri-karta.pripravujeme { opacity: .8; border-style: dashed; }
 .pri-stitek { font-family: var(--label); font-size: .8rem; letter-spacing: .12em; text-transform: uppercase; color: var(--akcent); margin: 0 0 .3rem; }
 .pri-karta h3 { font-size: 1.25rem; margin: 0 0 .5rem; }
+.pri-karta .pri-meta { display: flex; flex-wrap: wrap; gap: .1rem 0; margin: -.2rem 0 .7rem; font-family: var(--label); font-size: .9rem; color: var(--tlumene); }
+.pri-meta > * + *::before { content: "·"; margin: 0 .45rem; color: var(--linka); }
+.pri-meta a { color: var(--led); text-decoration: none; }
+.pri-meta a:hover { text-decoration: underline; }
 .pri-karta p { margin: 0 0 .8rem; color: var(--tlumene); }
 .pri-karta .dej-hraj { display: inline-block; }
 .pri-akce { display: flex; flex-wrap: wrap; gap: .6rem 1rem; align-items: center; }

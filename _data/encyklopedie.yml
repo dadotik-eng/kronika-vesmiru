@@ -11,7 +11,10 @@ pribehy:
   polozky:
   - id: letka
     nazev: Ztracená letka
-    stitek: Hotová dramatizace · 2884
+    stitek: Dramatizace
+    rok: 2884
+    soustava: CALIBAN
+    obdobi: naprava
     text: Poslední dva dny pilotů, kteří kryli útěk milionů lidí z Calibanu.
     kapitoly:
     - 9

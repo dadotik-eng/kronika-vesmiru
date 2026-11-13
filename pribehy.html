@@ -17,14 +17,18 @@ popis: Dramatizace a kapitoly ze skutečných událostí dějin vesmíru Star Ci
     <article class="pri-karta" id="pribeh-{{ p.id }}">
       <p class="pri-stitek">{{ p.stitek }}</p>
       <h3>{{ p.nazev }}</h3>
+      {% assign era = site.data.ery | where: "id", p.obdobi | first %}{% assign t = site.data.texty[p.prehrat] %}{% assign slov = t.odstavce | join: " " | number_of_words %}{% assign minut = slov | plus: 70 | divided_by: 140 %}
+      {% if p.rok %}<p class="pri-meta"><span>{{ p.rok }}</span>{% if p.soustava %}<a href="{{ '/mapa/' | relative_url }}#{{ p.soustava }}" title="Ukázat na hvězdné mapě">{{ site.data.soustavy[p.soustava] }}</a>{% endif %}{% if era %}<span>{{ era.nazev }}</span>{% endif %}{% if minut > 0 %}<span>{{ minut }} min poslechu</span>{% endif %}</p>{% endif %}
       <p class="text-pojmy">{{ p.text }}</p>
       <p class="pri-akce"><a class="dej-hraj" href="{{ '/archiv/#' | append: p.prehrat | relative_url }}">▶ Přehrát</a>{% if p.cist %} <a href="{{ p.cist | relative_url }}">Číst →</a>{% endif %}</p>
     </article>
     {% endif %}{% endfor %}
     {% for k in nove %}
     <article class="pri-karta" id="kapitola-{{ k.slug }}">
-      <p class="pri-stitek">Nová kapitola · {{ k.herni_rok }}{% if k.overeni != "OK" %}<span class="jen-beta"> · čeká na ověření</span>{% endif %}</p>
+      {% assign era = site.data.ery | where: "id", k.obdobi | first %}{% assign slov = k.content | strip_html | number_of_words %}{% assign minut = slov | plus: 70 | divided_by: 140 %}{% if minut < 1 %}{% assign minut = 1 %}{% endif %}
+      <p class="pri-stitek">{% case k.typ %}{% when "dramatizace" %}Dramatizace{% when "dokument" %}Dokument{% else %}Kronika{% endcase %}{% if k.overeni != "OK" %}<span class="jen-beta"> · čeká na ověření</span>{% endif %}</p>
       <h3>{{ k.title }}</h3>
+      <p class="pri-meta">{% if k.herni_rok %}<span>{{ k.herni_rok }}</span>{% endif %}{% if k.soustava %}<a href="{{ '/mapa/' | relative_url }}#{{ k.soustava }}" title="Ukázat na hvězdné mapě">{{ site.data.soustavy[k.soustava] | default: k.soustava }}</a>{% endif %}{% if era %}<span>{{ era.nazev }}</span>{% endif %}<span>{{ minut }} min poslechu</span></p>
       <p class="text-pojmy">{{ k.popis }}</p>
       <p class="pri-akce"><a class="dej-hraj" href="{{ '/archiv/#web-' | append: k.slug | relative_url }}">▶ Přehrát</a> <a href="{{ k.url | relative_url }}">Číst →</a></p>
     </article>
