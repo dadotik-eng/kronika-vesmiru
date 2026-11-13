@@ -15,4 +15,6 @@ kapitoly:
 - kap-10
 rad: 2880
 obdobi: valka
+ilustrace: true
+ilustrace_popisek: Snímek ze hry Star Citizen · © Cloud Imperium Games
 ---
