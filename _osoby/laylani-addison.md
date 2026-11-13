@@ -16,6 +16,26 @@ zdroje:
   nazev: 'New United: Imperator Addison Still Settling into New Role'
   url: https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/17951-New-United-Imperator-Addison-Still-Settling-Into-New-Role
   hash: b828a0809bb22602aafcf42fbc844cddb0441e22857d07e36fc2dc53c7151176
+- record_key: commlink:17782
+  typ: Comm-Link
+  nazev: 2950 Imperator Election
+  url: https://robertsspaceindustries.com/comm-link/transmission/17782-2950-Imperator-Election
+  hash: 07ef839c576522693d335724388d4d51b1d47f022740e5bc552cc9ae33b1fd51
+- record_key: commlink:17851
+  typ: Comm-Link
+  nazev: 2950 Imperator Election Results
+  url: https://robertsspaceindustries.com/comm-link/transmission/17851-2950-Imperator-Election-Results
+  hash: caea7e3bb307b0051f8d57941660ca0d6bf8ec09d829bf557bce00c52679a400
+- record_key: commlink:17778
+  typ: Comm-Link
+  nazev: 'Clean Shot: Laylani Addison Interview'
+  url: https://robertsspaceindustries.com/comm-link/spectrum-dispatch/17778-Clean-Shot-Laylani-Addison-Interview
+  hash: 01e3f06cf1df64732e12b60213208c2d4ead8a4969fde73e9b783e2725ee44fe
+- record_key: commlink:17855
+  typ: Comm-Link
+  nazev: 'Plain Truth: Who Is Addison Beholden To?'
+  url: https://robertsspaceindustries.com/comm-link/spectrum-dispatch/17855-Plain-Truth-Who-Is-Addison-Beholden-To
+  hash: 8389f8195c21420efb4259ecdbb9b095e37526bb6abedcd7fa9338f96a0d5a57
 kapitoly:
 - kap-10
 rad: 2889
@@ -23,7 +43,9 @@ ilustrace: true
 obdobi: valka
 ---
 
-Addison vyrostla v soustavě Oya a do politiky přišla zvenčí – před zvolením nikdy nezastávala žádný úřad a kandidovala jako nezávislá. Její vítězství bylo překvapením.
+Addison vyrůstala na planetě Oya III, hned vedle jediného kousku xi’anského svrchovaného území uvnitř UEE – je tak první imperátorkou, která prožila dětství mezi xi’anskými sousedy. Sama vzpomíná, jak jako malá holka na tamním kosmodromu ohromeně pozorovala první xi’anskou loď; ten zážitek v ní podle jejích slov probudil celoživotní zájem o učení a přesvědčení, že poznání vede k porozumění. Na Oya III poznala i svého manžela Jesseho Baigenta, rodáka z Terry, který tam vedl poradenskou firmu na podporu obchodu mezi lidmi a Xi’any. Když se její akademická dráha přesunula do soustavy Rhetor, přestěhovali firmu s sebou; Baigent ji vedl až do chvíle, kdy se stal manažerem její kampaně. Mají dceru Finley.
+
+Do politiky přišla zvenčí – před zvolením nikdy nezastávala žádný úřad. Místo děkanky opustila roku 2947, aby se mohla věnovat kampani, a kandidovala jako nezávislá s heslem vzdělání, inovace a věda na prvním místě; podpořily ji organizace Educators United, Institut pro mezidruhový mír a Vědecká společnost UEE. Po závěrečném hlasování v říjnu 2950 ji komisař Imperiálního volebního úřadu Tyrone Salonen na slavnostním ceremoniálu v Moskvě vyhlásil zvolenou imperátorkou. Její vítězství bylo překvapením.
 
 První týdny ve funkci byly chaotické: trapná chyba v seznamu hostů na inauguračním plese, vlažný potlesk senátorů po prvním projevu a potíže s obsazením klíčových míst ve vládě. Kandidátku na náměstkyni ministerstva dopravy Maryann Althoff musela stáhnout, když vyšly najevo její urážlivé výroky o vysokých velitelích armády.
 
