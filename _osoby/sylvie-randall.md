@@ -16,4 +16,5 @@ kapitoly:
 - letka
 rad: 2835
 obdobi: naprava
+ilustrace: true
 ---

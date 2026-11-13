@@ -15,4 +15,5 @@ kapitoly:
 - kap-1
 rad: 2032
 obdobi: usvit
+ilustrace: true
 ---
