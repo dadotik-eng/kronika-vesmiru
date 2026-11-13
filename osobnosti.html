@@ -20,6 +20,7 @@ popis: Rejstřík osob z dějin vesmíru Star Citizen. Imperátoři, objevitelé
     {% for p in kat %}{% assign kv = p | split: ":" %}
     <button type="button" data-k="{{ kv[0] }}">{{ kv[1] }}</button>
     {% endfor %}
+    <button type="button" data-k="sq42" class="os-filtr-sq42">Squadron 42</button>
   </div>
   <div class="ery-cipy os-filtr-era" role="group" aria-label="Filtr podle období">
     <button type="button" class="aktivni" data-e="">Všechna období</button>
@@ -30,14 +31,14 @@ popis: Rejstřík osob z dějin vesmíru Star Citizen. Imperátoři, objevitelé
 
 <div class="blok os-mrizka" id="osoby">
 {% for o in osoby %}
-  <article class="osoba{% if o.ilustrace %} ma-ilustraci{% endif %}" id="{{ o.slug }}" data-k="{{ o.kategorie }}" data-rad="{{ o.rad }}" data-obdobi="{{ o.obdobi }}" data-hledat="{{ o.jmeno | downcase | escape }} {{ o.role | downcase | escape }}">
+  <article class="osoba{% if o.ilustrace %} ma-ilustraci{% endif %}" id="{{ o.slug }}" data-k="{{ o.kategorie }}" data-rad="{{ o.rad }}" data-obdobi="{{ o.obdobi }}" data-hra="{{ o.hra }}" data-hledat="{{ o.jmeno | downcase | escape }} {{ o.role | downcase | escape }}">
     {% if o.ilustrace %}<figure class="os-ilustrace"><img src="{{ '/assets/osoby/' | append: o.slug | append: '.webp' | relative_url }}" alt="{% if o.ilustrace_popisek %}{{ o.jmeno | escape }}{% else %}Ilustrace: {{ o.jmeno | escape }}{% endif %}" loading="lazy" width="960" height="540"><span class="il-jmeno" aria-hidden="true">{{ o.jmeno }}</span><figcaption>{{ o.ilustrace_popisek | default: "Ilustrační obrázek" }}</figcaption></figure>{% endif %}
     <header>
       <span class="os-emblem" aria-hidden="true"></span>
       <h2><a href="{{ o.url | relative_url }}">{{ o.jmeno }}</a></h2>
       {% assign nar = o.narozeni | append: "" %}{% assign zem = o.umrti | append: "" %}<p class="os-roky">{% if zem == "žije" %}{% if nar == "neznámo" %}žije{% else %}nar. {{ nar }}, žije{% endif %}{% elsif nar == "neznámo" and zem == "neznámo" %}roky neznámé{% else %}{% if nar == "neznámo" %}?{% else %}{{ nar }}{% endif %}{% if zem != "" %} – {% if zem == "neznámo" %}?{% else %}{{ zem }}{% endif %}{% endif %}{% endif %}</p>
       <p class="os-role">{{ o.role }}</p>
-      {% for p in kat %}{% assign kv = p | split: ":" %}{% if kv[0] == o.kategorie %}<span class="os-kat" data-kat="{{ kv[0] }}">{{ kv[1] }}</span>{% endif %}{% endfor %}
+      {% for p in kat %}{% assign kv = p | split: ":" %}{% if kv[0] == o.kategorie %}<span class="os-kat" data-kat="{{ kv[0] }}">{{ kv[1] }}</span>{% endif %}{% endfor %}{% if o.hra == "squadron42" %} <span class="os-hra">Squadron 42</span>{% endif %}
     </header>
     <p class="os-text">{{ o.medailonek }}</p>
     <p class="os-vice"><a href="{{ o.url | relative_url }}">Celý medailonek a prameny →</a></p>
@@ -61,7 +62,7 @@ popis: Rejstřík osob z dějin vesmíru Star Citizen. Imperátoři, objevitelé
   function filtr() {
     var n = 0;
     karty.forEach(function (c) {
-      var ok = (!k || c.dataset.k === k) && (!q || c.dataset.hledat.indexOf(q) >= 0) && (!era || c.dataset.obdobi === era);
+      var ok = (!k || c.dataset.k === k || (k === 'sq42' && c.dataset.hra === 'squadron42')) && (!q || c.dataset.hledat.indexOf(q) >= 0) && (!era || c.dataset.obdobi === era);
       c.hidden = !ok; if (ok) n++;
     });
     pocet.textContent = n === karty.length ? '' : 'Zobrazeno ' + n + ' z ' + karty.length;
