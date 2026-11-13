@@ -16,12 +16,13 @@ jobs:
         with: { ref: "${{ inputs.novy }}", path: novy }
       - uses: actions/checkout@v4
         with: { ref: "${{ inputs.zaklad }}", path: zaklad }
+      - run: mkdir gems && cp novy/Gemfile gems/   # balíčky mimo zdroj webu, jinak by je Jekyll sestavoval jako stránky
       - uses: ruby/setup-ruby@v1
-        with: { ruby-version: '3.3', bundler-cache: true, working-directory: novy }
+        with: { ruby-version: '3.3', bundler-cache: true, working-directory: gems }
       - name: Sestavit obě verze
         run: |
           for d in zaklad novy; do
-            (cd $d && BUNDLE_GEMFILE=$GITHUB_WORKSPACE/novy/Gemfile bundle exec jekyll build -q -d $GITHUB_WORKSPACE/site-$d --baseurl /kronika-vesmiru)
+            (cd $d && BUNDLE_GEMFILE=$GITHUB_WORKSPACE/gems/Gemfile bundle exec jekyll build -q -d $GITHUB_WORKSPACE/site-$d --baseurl /kronika-vesmiru)
           done
       - name: Rozdíly
         shell: bash
