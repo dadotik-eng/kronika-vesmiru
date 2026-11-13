@@ -3,6 +3,9 @@ description: Česká kronika dějin vesmíru Star Citizen – vyprávěná z ov�
 lang: cs
 url: "https://dadotik-eng.github.io"
 baseurl: "/kronika-vesmiru"
+# Adresa ostrého webu – jediné místo, odkud se skládají odkazy pro sdílení (og:url, náhledy, kanonická adresa).
+# Platí i v betě na Cloudflare, která se staví bez /kronika-vesmiru, aby sdílený odkaz vždy vedl na ostrý web.
+ostry_web: "https://dadotik-eng.github.io/kronika-vesmiru"
 permalink: pretty
 markdown: kramdown
 kramdown:
