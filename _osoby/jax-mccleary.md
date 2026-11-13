@@ -25,6 +25,6 @@ zdroje:
 kapitoly: []
 rad: 2887
 ilustrace: true
-ilustrace_popisek: Snímek ze hry Star Citizen (upraveno) · © Cloud Imperium Games
+ilustrace_popisek: Snímek ze hry Star Citizen · © Cloud Imperium Games
 obdobi: valka
 ---
