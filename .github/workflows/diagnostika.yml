@@ -1,0 +1,20 @@
+# Ruční diagnostika ostrého webu: vypíše adresy a meta značky, které vidí sdílení (Messenger, Facebook…).
+name: Diagnostika webu
+on:
+  workflow_dispatch:
+    inputs:
+      cesty: { description: "Cesty oddělené mezerou", required: true, default: "/ pribehy/ mapa/ osobnosti/erin-toi/" }
+permissions: {}
+jobs:
+  diag:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          for c in ${{ inputs.cesty }}; do
+            u="https://dadotik-eng.github.io/kronika-vesmiru/${c#/}"
+            echo "=== $u"
+            curl -sS -o /tmp/s.html -w "HTTP %{http_code}\n" "$u"
+            grep -oE '<(meta|link)[^>]*(og:url|og:image|canonical|twitter:url)[^>]*>' /tmp/s.html || echo "(žádné)"
+            grep -oE 'data-zaklad="[^"]*"' /tmp/s.html
+          done
+          echo "=== bez základní cesty"; curl -sS -o /dev/null -w "HTTP %{http_code}\n" https://dadotik-eng.github.io/pribehy/
