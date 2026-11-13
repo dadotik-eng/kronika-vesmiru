@@ -891,3 +891,10 @@ main h1[tabindex="-1"]:focus, main[tabindex="-1"]:focus { outline: none; }
 .il-jmeno ~ figcaption { bottom: auto; top: 6px; }
 .os-ilustrace .il-jmeno { font-size: .95rem; padding: 1.2rem .7rem .45rem; }
 .rod-portret .il-jmeno { font-size: 1rem; }
+
+/* Příběh týdne */
+.domu-karty .karta-tyden { padding: 0 0 1.2rem; overflow: hidden; }
+.karta-tyden[hidden] { display: none !important; }
+.karta-tyden img { display: block; width: 100%; aspect-ratio: 16 / 9; height: auto; object-fit: cover; margin-bottom: .9rem; }
+.karta-tyden .karta-stitek, .karta-tyden h3, .karta-tyden p { margin-left: 1.4rem; margin-right: 1.4rem; }
+.karta-tyden .karta-stitek { display: block; }

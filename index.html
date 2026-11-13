@@ -98,11 +98,15 @@ sekce: domu
       <p>{{ k.popis }}</p>
     </a>
     {% endif %}
-    <a class="karta" href="{{ '/archiv/#letka' | relative_url }}">
-      <span class="karta-stitek">Příběh k poslechu</span>
-      <h3>Ztracená letka</h3>
-      <p>Dramatizace: 49 hodin, kdy 89. letka kryla útěk milionů lidí z Calibanu.</p>
+    {% assign obrazky = " " %}{% for o in site.osoby %}{% if o.ilustrace %}{% assign obrazky = obrazky | append: o.slug | append: " " %}{% endif %}{% endfor %}
+    {% for p in site.data.pribeh_tydne %}{% assign u = site.udalosti | where: "slug", p.udalost | first %}{% if u %}{% assign hledany = " " | append: p.obrazek | append: " " %}
+    <a class="karta karta-tyden" data-tyden="{{ forloop.index0 }}" href="{% if p.odkaz %}{{ p.odkaz | relative_url }}{% else %}{{ '/casova-osa/' | relative_url }}#{{ p.udalost }}{% endif %}"{% unless forloop.first %} hidden{% endunless %}>
+      {% if obrazky contains hledany %}<img src="{{ '/assets/osoby/' | append: p.obrazek | append: '.webp' | relative_url }}" alt="" loading="lazy" width="960" height="540">{% endif %}
+      <span class="karta-stitek">Příběh týdne · {{ u.rok | floor }}</span>
+      <h3>{{ u.titul }}</h3>
+      <p>{{ u.text }}</p>
     </a>
+    {% endif %}{% endfor %}
     <a class="karta" id="osobnost-dne" href="{{ '/osobnosti/' | relative_url }}">
       <span class="karta-stitek">Osobnost dne</span>
       <h3>Rejstřík osob</h3>
@@ -123,6 +127,9 @@ sekce: domu
     if (p.total) box.querySelector('.dp-prubeh i').style.width = ((p.ln + 1) / p.total * 100) + '%';
     var a = box.querySelector('a'); a.textContent = '▶ Pokračovat'; a.href = Z + 'archiv/#' + p.id + '@' + p.ln;
   }
+  // Příběh týdne: každý týden jiný.
+  var tydny = document.querySelectorAll('.karta-tyden');
+  if (tydny.length) { var t = Math.floor((Date.now() / 864e5 + 3) / 7) % tydny.length; [].forEach.call(tydny, function (el, i) { el.hidden = i !== t; }); }
   // Osobnost dne: každý den jiná osoba z rejstříku.
   fetch(Z + 'data/osoby.json').then(function (r) { return r.json(); }).then(function (o) {
     if (!o.length) return;

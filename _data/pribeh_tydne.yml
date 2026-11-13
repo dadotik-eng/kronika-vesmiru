@@ -1,0 +1,19 @@
+# Příběh týdne na titulní stránce. Každý týden jiný (pořadí podle čísla týdne).
+# udalost = soubor v _udalosti/, obrazek = ilustrace z assets/osoby/, odkaz = kam karta vede (výchozí: událost v časové ose).
+- udalost: r2271
+  obrazek: nick-croshaw
+- udalost: r2438
+  obrazek: vernon-tar
+- udalost: r2546
+  obrazek: ivar-messer-i
+- udalost: r2789
+  obrazek: terrence-akari
+- udalost: r2792
+  obrazek: linton-messer-xi
+- udalost: r2872
+  obrazek: corbyn-salehi
+- udalost: r2884
+  obrazek: sylvie-randall
+  odkaz: /archiv/#letka
+- udalost: r2951
+  obrazek: laylani-addison
