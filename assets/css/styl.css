@@ -860,3 +860,21 @@ main h1[tabindex="-1"]:focus, main[tabindex="-1"]:focus { outline: none; }
   .hledani input { width: 3.4rem; }
   .hledani:focus-within input { width: 6.5rem; }
 }
+
+/* Časová osa: Deset století v kostce */
+.stoleti { padding-bottom: 2.5rem; }
+.stoleti-nadpis { font-size: 1.6rem !important; margin-bottom: .3rem !important; }
+.stoleti-uvod { color: var(--tlumene); margin: 0 0 1.2rem; }
+.st-seznam { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: .7rem 1.4rem; }
+.st-radek { display: grid; grid-template-columns: 6px 4.6rem 1fr; gap: .9rem; align-items: start; padding: .85rem 1rem .85rem 0; border: 1px solid var(--linka); border-radius: 6px; background: rgba(10,30,58,.55); overflow: hidden; }
+.st-radek:hover { border-color: rgba(246,189,75,.6); }
+.st-pas { display: flex; flex-direction: column; align-self: stretch; margin: -.85rem 0; }
+.st-pas i { display: block; }
+.st-cislo { font-family: var(--display); font-size: 1.9rem; line-height: 1; color: var(--akcent); text-align: right; }
+.st-cislo small { display: block; font-family: var(--label); font-size: .75rem; letter-spacing: .12em; text-transform: uppercase; color: var(--tlumene); margin-top: .25rem; }
+.st-nazev { font-family: var(--display); font-size: 1.15rem; }
+.st-radek p { margin: .15rem 0 0; color: var(--tlumene); font-size: .98rem; line-height: 1.45; }
+.st-roky { display: flex; gap: .4rem; flex-wrap: wrap; margin-top: .45rem !important; }
+.st-roky a { font-family: var(--label); font-size: .9rem; text-decoration: none; color: var(--akcent); border: 1px solid rgba(246,189,75,.4); border-radius: 99px; padding: 0 .6rem; }
+.st-roky a:hover { background: rgba(246,189,75,.14); }
+@media (max-width: 800px) { .st-seznam { grid-template-columns: 1fr; } .st-radek { grid-template-columns: 5px 3.4rem 1fr; gap: .7rem; } .st-cislo { font-size: 1.5rem; } }

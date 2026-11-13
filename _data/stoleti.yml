@@ -1,0 +1,41 @@
+# Přehled po stoletích na začátku Časové osy. roky = kotvy událostí z _udalosti/ (název souboru).
+- stoleti: 21
+  nazev: Vesmír na dosah
+  text: Roku 2075 vznikl první kvantový pohon a Sluneční soustava se najednou zmenšila.
+  roky: [r2075]
+- stoleti: 22
+  nazev: Mars
+  text: Terraformace stála tisíce životů, ale roku 2157 se na modrém Marsu narodilo první dítě jiného světa.
+  roky: [r2125, r2157]
+- stoleti: 23
+  nazev: Skoky ke hvězdám
+  text: U Neptunu mizely lodě, Nick Croshaw prolétl prvním skokovým bodem a levný skokový pohon otevřel hvězdy každému.
+  roky: [r2262, r2271, r2292]
+- stoleti: 24
+  nazev: Jedna vláda
+  text: Kolonie se rozrostly a lidstvo roku 2380 poprvé dostalo společnou vládu.
+  roky: [r2380]
+- stoleti: 25
+  nazev: Nejsme sami
+  text: Setkání s Banu a první mezihvězdná mírová a obchodní dohoda.
+  roky: [r2438, r2438b]
+- stoleti: 26
+  nazev: Války a diktátor
+  text: Spory s Xi’any, válka s Tevariny a roku 2546 nástup Ivara Messera.
+  roky: [r2530, r2546]
+- stoleti: 27
+  nazev: Pod Messery
+  text: Konec tevarinských válek a roku 2681 první krvavé setkání s Vanduuly.
+  roky: [r2610, r2681]
+- stoleti: 28
+  nazev: Pád dynastie
+  text: Vanduulové berou Tiber, Garron II odhaluje zločiny trůnu a roku 2792 Messerové padají.
+  roky: [r2736, r2792, r2792b]
+- stoleti: 29
+  nazev: Věk nápravy
+  text: Imperátor Leon napravuje škody, Stanton se prodává korporacím a Ztracená letka kupuje čas.
+  roky: [r2801, r2865, r2884]
+- stoleti: 30
+  nazev: Dnešek
+  text: Otevřená válka s Vanduuly, imperátorka Addison a příběh, který se stále píše.
+  roky: [r2945, r2951, r2956]
