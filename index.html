@@ -107,6 +107,11 @@ sekce: domu
       <p>{{ u.text }}</p>
     </a>
     {% endif %}{% endfor %}
+    <a class="karta" href="{{ '/kviz/' | relative_url }}">
+      <span class="karta-stitek">Kvíz dne</span>
+      <h3>Kolik víš o dějinách?</h3>
+      <p>Pět otázek z kroniky, každý den nové. Imperátoři, objevy, války.</p>
+    </a>
     <a class="karta" id="osobnost-dne" href="{{ '/osobnosti/' | relative_url }}">
       <span class="karta-stitek">Osobnost dne</span>
       <h3>Rejstřík osob</h3>

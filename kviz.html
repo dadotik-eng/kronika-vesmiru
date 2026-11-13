@@ -1,0 +1,110 @@
+---
+layout: default
+title: Kvíz z dějin
+permalink: /kviz/
+sekce: casova-osa
+popis: Pět otázek z 881 let dějin vesmíru Star Citizen. Každý den nový kvíz – kolik toho víš o imperátorech, objevech a válkách?
+---
+{% assign udalosti = site.udalosti | sort: "rok" %}
+<section class="blok uzky kviz">
+  <p class="nadtitul">Kvíz dne · <span id="kv-datum"></span></p>
+  <h1>Kvíz z dějin</h1>
+  <p class="perex">Pět otázek z kroniky. Dnešní kvíz je pro všechny stejný – porovnej se s kamarády.</p>
+
+  <div class="kv-postup" aria-hidden="true"><i id="kv-bar"></i></div>
+  <div id="kv-otazka" class="kv-otazka" aria-live="polite"></div>
+  <div id="kv-konec" class="kv-konec" hidden></div>
+  <noscript><p>Kvíz potřebuje zapnutý JavaScript.</p></noscript>
+</section>
+
+<script>
+(function () {
+  var Z = document.body.dataset.zaklad || '/';
+  var UD = [{% for x in udalosti %}{% unless x.hra %}{ id: {{ x.slug | jsonify }}, rok: {{ x.rok | floor }}, r: {{ x.rok }}, t: {{ x.titul | jsonify }}, x: {{ x.text | jsonify }} }{% unless forloop.last %},{% endunless %}{% endunless %}{% endfor %}].filter(Boolean);
+  var OS = [{% for o in site.osoby %}{ id: {{ o.slug | jsonify }}, j: {{ o.jmeno | jsonify }}, r: {{ o.role | jsonify }} }{% unless forloop.last %},{% endunless %}{% endfor %}];
+  var ERY = [{% for e in site.data.ery %}{ id: {{ e.id | jsonify }}, n: {{ e.nazev | jsonify }}, od: {{ e.od }}, do: {{ e.do }} }{% unless forloop.last %},{% endunless %}{% endfor %}];
+  var IMP = [{% for v in site.data.imperatori.vlady %}{% if v.id and v.id != "samuel-messer-viii" %}{% assign os = site.osoby | where: "slug", v.id | first %}{% if os %}{ j: {{ os.jmeno | jsonify }}, od: {{ v.od }} },{% endif %}{% endif %}{% endfor %}].filter(Boolean);
+
+  // Role, které má jen jedna osoba (jinak by otázka měla víc správných odpovědí)
+  var pocet = {}; OS.forEach(function (o) { if (o.r) pocet[o.r] = (pocet[o.r] || 0) + 1; });
+  var OSR = OS.filter(function (o) { return o.r && pocet[o.r] === 1 && o.r.length < 90; });
+
+  // Náhoda se semínkem: stejný den = stejný kvíz
+  function generator(s) { return function () { s |= 0; s = s + 0x6D2B79F5 | 0; var t = Math.imul(s ^ s >>> 15, 1 | s); t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t; return ((t ^ t >>> 14) >>> 0) / 4294967296; }; }
+  var rnd;
+  function vyber(pole, n, krome) { var p = pole.filter(function (x) { return krome.indexOf(x) < 0; }), out = []; while (out.length < n && p.length) out.push(p.splice(Math.floor(rnd() * p.length), 1)[0]); return out; }
+  function zamichej(a) { for (var i = a.length - 1; i > 0; i--) { var j = Math.floor(rnd() * (i + 1)), t = a[i]; a[i] = a[j]; a[j] = t; } return a; }
+  function eraRoku(r) { for (var i = 0; i < ERY.length; i++) if (r >= ERY[i].od && r < ERY[i].do) return ERY[i]; return ERY[ERY.length - 1]; }
+
+  var TYPY = [
+    function () { // rok události
+      var u = vyber(UD, 1, [])[0];
+      var spatne = vyber(UD.filter(function (x) { return Math.abs(x.rok - u.rok) > 8; }), 3, []).map(function (x) { return String(x.rok); });
+      spatne = spatne.filter(function (v, i) { return spatne.indexOf(v) === i; });
+      return { q: 'Ve kterém roce se stala událost „' + u.t + '“?', a: String(u.rok), s: spatne, vic: u.x, odkaz: Z + 'casova-osa/#' + u.id };
+    },
+    function () { // kdo byl…
+      var o = vyber(OSR, 1, [])[0];
+      return { q: 'Kdo byl(a): ' + o.r + '?', a: o.j, s: vyber(OSR, 3, [o]).map(function (x) { return x.j; }), vic: '', odkaz: Z + 'osobnosti/' + o.id + '/' };
+    },
+    function () { // období
+      var u = vyber(UD, 1, [])[0], e = eraRoku(u.r);
+      return { q: 'Do kterého období patří událost „' + u.t + '“ (' + u.rok + ')?', a: e.n, s: vyber(ERY, 3, [e]).map(function (x) { return x.n; }), vic: u.x, odkaz: Z + 'casova-osa/#' + u.id };
+    },
+    function () { // co se stalo v roce
+      var u = vyber(UD, 1, [])[0];
+      var spatne = vyber(UD.filter(function (x) { return x.rok !== u.rok; }), 3, []).map(function (x) { return x.t; });
+      return { q: 'Co se stalo v roce ' + u.rok + '?', a: u.t, s: spatne, vic: u.x, odkaz: Z + 'casova-osa/#' + u.id };
+    },
+    function () { // pořadí imperátorů
+      if (IMP.length < 4) return null;
+      var c = vyber(IMP, 4, []), nej = c.slice().sort(function (a, b) { return a.od - b.od; })[0];
+      return { q: 'Kdo z nich usedl na trůn jako první?', a: nej.j, s: c.filter(function (x) { return x !== nej; }).map(function (x) { return x.j; }), vic: nej.j + ' – na trůnu od roku ' + nej.od + '.', odkaz: Z + 'imperatori/' };
+    }
+  ];
+
+  function sestav(seminko) {
+    rnd = generator(seminko);
+    var otazky = [], poradi = zamichej([0, 1, 2, 3, 4, 0, 1, 3]), pouzite = {};
+    for (var i = 0; otazky.length < 5 && i < 40; i++) {
+      var q = TYPY[poradi[i % poradi.length]]();
+      if (!q || q.s.length < 3 || pouzite[q.q]) continue;
+      pouzite[q.q] = 1; q.moznosti = zamichej([q.a].concat(q.s.slice(0, 3))); otazky.push(q);
+    }
+    return otazky;
+  }
+
+  var dnes = new Date(), den = Math.floor((dnes.getTime() - dnes.getTimezoneOffset() * 6e4) / 864e5);
+  document.getElementById('kv-datum').textContent = dnes.toLocaleDateString('cs-CZ', { day: 'numeric', month: 'long', year: 'numeric' });
+  var box = document.getElementById('kv-otazka'), konec = document.getElementById('kv-konec'), bar = document.getElementById('kv-bar');
+  var otazky, i, body, dalsiSeminko = den * 7919;
+
+  function esc(s) { return String(s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
+  function start(seminko) { otazky = sestav(seminko); i = 0; body = 0; konec.hidden = true; box.hidden = false; ukaz(); }
+  function ukaz() {
+    var q = otazky[i]; bar.style.width = (i / otazky.length * 100) + '%';
+    box.innerHTML = '<p class="kv-cislo">Otázka ' + (i + 1) + ' z ' + otazky.length + '</p><h2>' + esc(q.q) + '</h2><div class="kv-moznosti">' +
+      q.moznosti.map(function (m, k) { return '<button type="button" class="kv-moznost" data-k="' + k + '">' + esc(m) + '</button>'; }).join('') + '</div><div class="kv-vysledek" hidden></div>';
+  }
+  box.addEventListener('click', function (e) {
+    var b = e.target.closest('.kv-moznost'); if (!b || box.querySelector('.kv-moznost[disabled]')) return;
+    var q = otazky[i], dobre = q.moznosti[+b.dataset.k] === q.a;
+    if (dobre) body++;
+    [].forEach.call(box.querySelectorAll('.kv-moznost'), function (x, k) { x.disabled = true; if (q.moznosti[k] === q.a) x.classList.add('spravne'); });
+    if (!dobre) b.classList.add('spatne');
+    var v = box.querySelector('.kv-vysledek'); v.hidden = false;
+    v.innerHTML = '<p><b>' + (dobre ? 'Správně!' : 'Kdepak – správně je: ' + esc(q.a)) + '</b>' + (q.vic ? ' ' + esc(q.vic) : '') + ' <a href="' + q.odkaz + '">Více v kronice →</a></p>' +
+      '<button type="button" class="tlacitko plne kv-dal">' + (i < otazky.length - 1 ? 'Další otázka →' : 'Výsledek') + '</button>';
+  });
+  box.addEventListener('click', function (e) {
+    if (!e.target.closest('.kv-dal')) return;
+    i++; if (i < otazky.length) { ukaz(); box.querySelector('.kv-moznost').focus(); return; }
+    bar.style.width = '100%'; box.hidden = true; konec.hidden = false;
+    var hodnoceni = ['Archivář se mračí. Zkus to znovu!', 'Začátek je udělaný.', 'Slušné! Pár kapitol ještě čeká.', 'Výborně, znáš dějiny.', 'Skoro dokonalé!', 'Dokonalé! Jsi skutečný kronikář.'][body];
+    konec.innerHTML = '<p class="kv-skore">' + body + ' / ' + otazky.length + '</p><h2>' + hodnoceni + '</h2><p class="tlacitka"><button type="button" class="tlacitko plne" id="kv-znovu">Další kvíz</button> <a class="tlacitko" href="' + Z + 'casova-osa/">Projít časovou osu</a></p>';
+    try { localStorage.setItem('kv-kviz-' + den, String(body)); } catch (x) {}
+  });
+  konec.addEventListener('click', function (e) { if (e.target.id === 'kv-znovu') { dalsiSeminko += 104729; start(dalsiSeminko); } });
+  start(den * 7919);
+})();
+</script>
