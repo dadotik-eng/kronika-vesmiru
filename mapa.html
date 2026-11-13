@@ -321,6 +321,7 @@ popis: Interaktivní mapa 90 hvězdných soustav a skokových bodů vesmíru Sta
     var h = '<p class="mp-stitek" style="--barva:' + f[1] + '"><i></i>' + f[0] + ' · ' + (s.typ === 'BINARY' ? 'dvojhvězda' : 'jedna hvězda') + '</p>';
     h += '<h2>' + esc(s.nazev) + '</h2>';
     var dj = [];
+    if (!s.objeven) dj.push(s.stav === 'M' ? 'rok objevu utajuje armáda UEE' : 'rok objevu oficiální prameny neuvádějí');
     if (s.objeven && s.objeven > 2075) dj.push((s.frakce === 'banu' || s.frakce === 'xian') && !{HADUR:1}[s.kod] ? 'lidstvu známá od prvního kontaktu (' + s.objeven + ')' : 'objevena ' + s.objeven);
     if (s.ztraceno) dj.push('ztracena Vanduulům ' + s.ztraceno);
     if (s.postoupeno) dj.push('postoupena Xi\u2019anům ' + s.postoupeno);

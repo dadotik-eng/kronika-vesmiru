@@ -40,6 +40,16 @@ OBJEV = {
     'HADUR': 2529, 'HELIOS': 2529, 'CHARON': 2538, 'GURZIL': 2539, 'CASTRA': 2544, 'NYX': 2582, 'LEIR': 2677,
     'TOHIL': 2716, 'GARRON': 2784, 'OSIRIS': 2788, 'KELLOG': 2811, 'GENESIS': 2812, 'TYROL': 2823, 'STANTON': 2851,
     'OSO': 2861, 'KALLIS': 2921, 'TAMSA': 2943,
+    # doplněno 13. 11. 2026 z databáze Archiváře (Galactapedie „<X> System“ a Comm-Linky „Galactic Guide“):
+    'BANSHEE': 2317, 'OBERON': 2356, 'HADRIAN': 2510, 'KIEL': 2514, 'TAYAC': 2524, 'HORUS': 2528,
+    'ODIN': 2532,
+    'ELYSIUM': 2541,   # Dr. Kellar Lench objevil skok do Elysia → první kontakt s Tevariny
+    'OYA': 2587,       # Xi'ané ji znali od 2566; lidé až po objevu skoku z Castry (poručík Eli Price)
+    'ORION': 2650, 'CHRONOS': 2863, 'BRANAUGH': 2877,
+    'KABAL': 2941,     # skok z Leiru objevila Usuni Colo (ICC); opuštěná tevarinská města
+    # Banshee (Galactic Guide: „since its discovery in 2317“) a Odin („first discovered in 2532“) nemají na dnešní mapě
+    # skoků dřív objeveného souseda – rok je z pramene doslova, cesta, kudy se k nim tehdy došlo, není známá.
+    # Ellis, Goss, Tanga: oficiální prameny rok objevu neuvádějí. Vanduulské soustavy (stav M) utajuje armáda UEE.
 }
 KONTAKT = {'banu': 2438, 'xian': 2530}      # soustavy Banu a Xi'anů lidstvo zná od prvního kontaktu
 ZTRACENO = {'ORION': 2712, 'TIBER': 2736, 'VIRGIL': 2737, 'CALIBAN': 2884}   # padly Vanduulům
@@ -52,6 +62,7 @@ MILNIKY = [
     [2438, 'První kontakt: Banu v soustavě Davien.'],
     [2530, 'První setkání s Xi\'any v soustavě Pallas – začíná studená válka.'],
     [2542, 'Generál Armistead Perry zavádí Perryho linii – osm sporných soustav.'],
+    [2541, 'První kontakt s Tevariny v Elysiu – začíná první tevarinská válka.'],
     [2546, 'Ivar Messer se chápe moci – začíná éra Messerů.'],
     [2681, 'Vanduulové vypálí kolonii na Armitage v Orionu.'],
     [2712, 'Vanduulská invaze – UEE se vzdává Orionu.'],
