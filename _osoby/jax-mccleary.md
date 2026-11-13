@@ -24,5 +24,7 @@ zdroje:
   record_key: commlink:15542
 kapitoly: []
 rad: 2887
+ilustrace: true
+ilustrace_popisek: Snímek ze hry Star Citizen · © Cloud Imperium Games
 obdobi: valka
 ---
