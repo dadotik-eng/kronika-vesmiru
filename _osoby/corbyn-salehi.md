@@ -14,5 +14,6 @@ zdroje:
 kapitoly:
 - kap-9
 rad: 2829
+ilustrace: true
 obdobi: naprava
 ---
