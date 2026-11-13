@@ -918,3 +918,14 @@ main h1[tabindex="-1"]:focus, main[tabindex="-1"]:focus { outline: none; }
 .kv-skore { font-family: var(--display); font-size: 4.5rem; line-height: 1; color: var(--akcent); margin: 0 0 .6rem; }
 .kv-konec .tlacitka { justify-content: center; }
 @media (max-width: 640px) { .kv-moznosti { grid-template-columns: 1fr; } }
+
+/* Síť osobností: Jak spolu souvisí */
+.vz-cesta { display: flex; flex-wrap: wrap; align-items: center; gap: .6rem .8rem; margin-top: 1rem; padding: .8rem 1rem; border: 1px solid rgba(246,189,75,.4); border-radius: 6px; background: var(--panel); }
+.vz-cesta b { font-family: var(--label); letter-spacing: .12em; text-transform: uppercase; color: var(--akcent); font-weight: 600; }
+.vz-cesta select { background: #0b1d36; color: var(--text); border: 1px solid var(--linka); border-radius: 4px; padding: .45rem .6rem; font: inherit; max-width: 15rem; }
+.vz-cesta .tlacitko { margin: 0; padding: .5rem 1rem; font-size: 1rem; }
+.vz-retez { list-style: none; margin: .8rem 0 0; padding: 0; counter-reset: krok; }
+.vz-retez li { position: relative; padding: .55rem 0 .55rem 2.2rem; border-left: 3px solid var(--barva); margin-left: .6rem; }
+.vz-retez li::before { counter-increment: krok; content: counter(krok); position: absolute; left: -.85rem; top: .5rem; width: 1.4rem; height: 1.4rem; border-radius: 50%; background: var(--barva); color: #081a33; font: 600 .8rem/1.4rem var(--label); text-align: center; }
+.vz-retez .vz-typ { margin-left: .6rem; }
+@media (max-width: 640px) { .vz-cesta select { max-width: 100%; flex: 1 1 100%; } .vz-cesta > span { display: none; } }
