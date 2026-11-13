@@ -332,7 +332,7 @@ html.prehravac-otevreny { overflow: hidden; }
 .pb-otevrit:hover, .pb-zavrit:hover { color: var(--text); border-color: var(--led); }
 .pb-zavrit { padding: .45rem .6rem; }
 
-@media (max-width: 1100px) {
+@media (max-width: 1300px) {
   .menu-tlacitko { display: grid; order: 3; }
   .hlavicka nav {
     display: none; position: absolute; left: 0; right: 0; top: 100%; flex-direction: column; align-items: stretch; gap: 0;
@@ -801,3 +801,25 @@ main h1[tabindex="-1"]:focus, main[tabindex="-1"]:focus { outline: none; }
 .vz-platno.vz-zamereno .vz-karta.vz-soused { opacity: 1; }
 .vz-platno.vz-zamereno .vz-karta.vz-vybrana { opacity: 1; border-color: var(--akcent); box-shadow: 0 0 0 2px rgba(246,189,75,.35); }
 .vz-panel { max-height: none; margin-top: 1.2rem; }
+
+/* Hlavička: na notebooku menu v jednom řádku, na telefonu nic nepřetéká do strany */
+@media (max-width: 1500px) and (min-width: 1301px) {
+  .hlavicka { gap: .75rem 1.2rem; }
+  .hlavicka nav { gap: .95rem; }
+  .hlavicka nav a { font-size: .92rem; letter-spacing: .07em; }
+  .hledani input { width: 8.5rem; }
+}
+@media (max-width: 640px) {
+  .hlavicka { gap: .5rem; padding: .8rem 4%; }
+  .logo { flex: 0 1 auto; min-width: 0; font-size: 1.02rem; line-height: 1.25; }
+  .nastroje { gap: .35rem; flex: none; }
+  .ztlumit, .menu-tlacitko { width: 34px; height: 34px; }
+  .hledani { padding: .3rem .5rem; }
+  .hledani input { width: 4.6rem; }
+  .hledani:focus-within input { width: 8rem; }
+}
+@media (max-width: 420px) {
+  .logo { font-size: .95rem; }
+  .hledani input { width: 3.4rem; }
+  .hledani:focus-within input { width: 6.5rem; }
+}
