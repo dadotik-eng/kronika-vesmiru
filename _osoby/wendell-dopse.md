@@ -6,12 +6,16 @@ role: průzkumník, objevitel soustavy Davien
 kategorie: objevitele
 medailonek: Wendell Dopse koncem roku 2429 požádal v šanghajské kanceláři projektu Far Star o zlevněný skokový pohon a v polovině ledna 2430 ho dostal. Podle legendy strávil dva týdny Červeného festivalu s rodinou a váhal, zda ji má opustit; poslední den svátku prý uviděl osamělý červený lampion stoupající k obloze, vzal to jako znamení a vydal se jeho směrem. O několik dní později objevil skokový bod ze Sluneční soustavy do soustavy Davien, kterou pojmenoval po svém tchánovi. Objev vyvrátil tehdejší předpoklad vědců, že ve Sluneční soustavě už žádný další skokový bod není, a urychlil vývoj technologií pro vyhledávání skoků. Skeptici však legendu o lampionu zpochybňují a upozorňují na jeho dřívější výpravy, při nichž zdokonaloval nové skenovací metody.
 zdroje:
-- nazev: 'Galactic Guide: Davien System'
+- record_key: commlink:13564
   typ: Comm-Link
+  nazev: 'Galactic Guide: Davien System'
   url: https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/13564-Galactic-Guide-Davien-System
-- nazev: 'Portfolio: Rise of the Red Festival'
+  hash: 1db2176e04a476a585b20006bd757e875838802238745e78be8a7b41026000c6
+- record_key: commlink:19097
   typ: Comm-Link
+  nazev: 'Portfolio: Rise of the Red Festival'
   url: https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/19097-Portfolio-Rise-Of-The-Red-Festival
+  hash: 892067abb051bc8a811c811cffe837e1db84ffefc13792e5c16a642ec8ba68a5
 kapitoly:
 - kap-3
 rad: 2399

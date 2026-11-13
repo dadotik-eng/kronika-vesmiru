@@ -6,12 +6,16 @@ stitek: 2845 · Levné lodě
 perex: Když návrh konstruktérky Jan Dredge prohrál soutěž o levnou stíhačku pro impérium, firma začala loď Cutlass prodávat civilistům. Firma tvrdí, že je legitimní, ale její lodě se staly oblíbeným nástrojem pirátů. Dredge odešla z čela firmy v roce 2947 po skandálu kolem svých výroků.
 kapitoly: []
 zdroje:
-- nazev: Drake Interplanetary
+- record_key: galactapedia:RLMm9KeZed
   typ: Galactapedie
+  nazev: Drake Interplanetary
   url: https://robertsspaceindustries.com/galactapedia/article/RLMm9KeZed-drake-interplanetary
-- nazev: 'Portfolio: Drake Interplanetary'
+  hash: 99e14cc6fa35cf569bd61ab6b975b1381f5c316884d9addc5051023d0bc91cc9
+- record_key: commlink:13441
   typ: Comm-Link
+  nazev: 'Portfolio: Drake Interplanetary'
   url: https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/13441-Portfolio-Drake-Interplanetary
+  hash: 062e6935e42e088276ae30c2ccd1c90605e54b0196c317954e4318bed3061d9b
 ---
 
 Každý občan zná Drake Interplanetary: kýčovité billboardy, zprávy o vyšetřování napojení na zločince a lodě, které nevypadají zrovna aerodynamicky. Přitom začátek byl nevinný.

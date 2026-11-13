@@ -116,10 +116,11 @@ def zminky(s, text):
 def obsah():
     """Všechny texty kroniky: (druh, titulek, url, rok, text)."""
     out = []
+    nazvy = {s['kod']: s['nazev'] for s in json.loads((KOREN / 'nastroje/mapa_soustavy.json').read_text(encoding='utf-8'))['soustavy']}
     for p in sorted((KOREN / '_kapitoly').glob('*.md')):
         fm, telo = front_matter(p)
         out.append(('kapitola', fm.get('title', p.stem), f'/kapitoly/{p.stem}/', fm.get('herni_rok'),
-                    ' '.join([str(fm.get('system') or ''), str(fm.get('popis') or ''), telo])))
+                    ' '.join([str(fm.get('system') or '')] + [nazvy.get(k, '') + ' soustava' for k in (fm.get('vazby') or {}).get('systemy') or ([fm['soustava']] if fm.get('soustava') else [])] + [str(fm.get('popis') or ''), telo])))
     texty = yaml.safe_load((KOREN / '_data/texty.yml').read_text(encoding='utf-8')) or {}
     for k in yaml.safe_load((KOREN / '_data/dejiny.yml').read_text(encoding='utf-8')):
         t = texty.get(k['hraj'])
@@ -200,6 +201,8 @@ def main():
     rejstrik = {u: v[:5] for u, v in sorted(rejstrik.items())}
     (KOREN / '_data/mapa_odkazy.json').write_text(json.dumps(rejstrik, ensure_ascii=False, indent=0) + '\n', encoding='utf-8')
     (KOREN / 'data').mkdir(exist_ok=True)
+    # Kód → český název soustavy pro šablony webu (kapitola má jen kód `soustava: CALIBAN`)
+    (KOREN / '_data/soustavy.json').write_text(json.dumps({s['kod']: s['nazev'] for s in geo['soustavy']}, ensure_ascii=False, indent=0, sort_keys=True) + '\n', encoding='utf-8')
     (KOREN / 'data/mapa.json').write_text(json.dumps(geo, ensure_ascii=False, separators=(',', ':')) + '\n', encoding='utf-8')
     print(f'Mapa: {len(geo["soustavy"])} soustav, {len(geo["skoky"])} skoků, {propojeno} soustav propojeno s kronikou.')
 

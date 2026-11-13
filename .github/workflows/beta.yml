@@ -2,7 +2,7 @@
 # Náhled: https://beta.hvezdna-kronika.pages.dev (zamčený přes Cloudflare Access).
 #  - po každé změně ostrého webu (main) se main přimíchá do bety, aby beta nezastarala,
 #  - ruční spuštění s akcí "zahodit" vrátí betu na stav ostrého webu (zahodí neschválené návrhy).
-#  - ruční spuštění s akcí "schvalit" zkontroluje betu podle pravidel ostrého webu (kapitoly jen overeni: OK)
+#  - ruční spuštění s akcí "schvalit" převede betu na formát v2 (nastroje/prevod_v2.py), zkontroluje ji podle pravidel ostrého webu (kapitoly jen overeni: OK)
 #    a teprve pak ji sloučí do main; potom spustí Náhledy (push z akce jiné akce sám nespouští).
 name: Beta
 on:
@@ -31,6 +31,11 @@ jobs:
           if [ "$AKCE" = "schvalit" ]; then
             git checkout -B beta origin/beta
             pip install -q pyyaml
+            # Přechodně: co bot zapsal ve starém formátu, se převede na formát v2 (record_key z adres, ID období a soustav)
+            python3 nastroje/prevod_v2.py
+            if ! git diff --quiet; then
+              git commit -qam "Převod na formát záznamů v2 (při schválení)" && git push origin beta
+            fi
             if ! python3 nastroje/kontrola.py --ostry; then
               echo "::error::Beta neprošla kontrolou pro ostrý web – nic se neschválilo."
               exit 1

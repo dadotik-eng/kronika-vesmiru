@@ -7,12 +7,16 @@ perex: Rodinná zbrojařská firma koupila planetu Stanton I a hned na ní rozje
 kapitoly:
 - 9
 zdroje:
-- nazev: Hurston Dynamics
+- record_key: galactapedia:RxNxAZpWlQ
   typ: Galactapedie
+  nazev: Hurston Dynamics
   url: https://robertsspaceindustries.com/galactapedia/article/RxNxAZpWlQ-hurston-dynamics
-- nazev: 'Portfolio: Hurston Dynamics'
+  hash: 9551558ab24c19f4775da5a59d2e3f1670ebe99879988bfc3f8b973a1e4713f9
+- record_key: commlink:13152
   typ: Comm-Link
+  nazev: 'Portfolio: Hurston Dynamics'
   url: https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/13152-Portfolio-Hurston-Dynamics
+  hash: ca3d34fd42f129102e4b2565f0b8a198f2e2b19244d29fe369bb0c05f961d983
 ---
 
 Hurston Dynamics je jednou z nejstarších nepřetržitě fungujících rodinných firem v impériu, s historií přes pět set let a patnácti generacemi Hurstonů. A jednou ze čtyř firem, které vlastní celou planetu.

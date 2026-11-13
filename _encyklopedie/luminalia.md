@@ -9,15 +9,21 @@ kdy_do: '12-23'
 kapitoly:
 - 3
 zdroje:
-- nazev: Luminalia
+- record_key: galactapedia:0KxWxZwaBD
   typ: Galactapedie
+  nazev: Luminalia
   url: https://robertsspaceindustries.com/galactapedia/article/0KxWxZwaBD-luminalia
-- nazev: 'Portfolio: 34,000 Beats'
+  hash: 376fcde268672cf022a88df68fa8a2f4495c7ed56d11859d261b637065830465
+- record_key: commlink:20340
   typ: Comm-Link
+  nazev: 'Portfolio: 34,000 Beats'
   url: https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/20340-Portfolio-34-000-Beats
-- nazev: 'Far From Home: Luminalia Enlightenment'
+  hash: ea2796f984385166a2a1dfafd13563e77d88dffaa07da8838bcc10076e0b9c2c
+- record_key: commlink:17938
   typ: Comm-Link
+  nazev: 'Far From Home: Luminalia Enlightenment'
   url: https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/17938-Far-From-Home-Luminalia-Enlightenment
+  hash: afadb229d84b2d837309ee74a21ffd89da571c9e98e0db65c52343b8164ba7a6
 ---
 
 Luminalia se slaví 22. prosince a je to svátek, který lidé převzali od Banu. Jeho banuský název tsikti efanga znamená Festival záře. Trvá přesně 34 000 úderů, tedy zhruba dva standardní dny – a proč právě tolik, je jedna z malých záhad impéria.

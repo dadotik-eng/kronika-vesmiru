@@ -1,29 +1,56 @@
 ---
+id: pad-calibanu
 title: Pád Calibanu
 date: 2026-11-10
+typ: kronika
 herni_rok: 2884
-era: Věk nápravy
-system: Caliban
+obdobi: naprava
+soustava: CALIBAN
 popis: Jak vanduulský Kingship proklouzl obranou Calibanu a jak jedna logistická letka koupila čas pro tři miliony lidí.
+vazby:
+  osoby:
+  - ashley-ghan
+  - sylvie-randall
+  systemy:
+  - CALIBAN
+  rasy:
+  - vanduulove
+stitky:
+- Vanduulové
+- Caliban
+- Crion
+- Kingship
+- Lost Squad
 overeni: OK
+overeno_kdy: '2026-11-11'
+overeno_kym: Daniel
 overeni_poznamka: fakta ověřena proti Galactapedii 11. 11. 2026 (Fall of Caliban, Squadron 89, Sylvie Randall, Caliban System), schválil Daniel
-stitky: [Vanduulové, Caliban, Crion, Kingship, Lost Squad]
-prameny:
-  - nazev: "Fall of Caliban"
-    typ: Galactapedie
-    url: https://robertsspaceindustries.com/galactapedia/article/0Gz5DNryvE-fall-of-caliban
-  - nazev: "Caliban III"
-    typ: Galactapedie
-    url: https://robertsspaceindustries.com/galactapedia/article/VgEljZZ8PN-caliban-iii
-  - nazev: "Crion (Caliban II)"
-    typ: Galactapedie
-    url: https://robertsspaceindustries.com/galactapedia/article/bEzvPwYZ96-crion-caliban-ii
-  - nazev: "Galactic Guide: Caliban System"
-    typ: Comm-Link
-    url: https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/16510-Galactic-Guide-Caliban-System
-  - nazev: "Caliban System"
-    typ: Galactapedie
-    url: https://robertsspaceindustries.com/galactapedia/article/0jGyPQ1r5m-caliban-system
+zdroje:
+- record_key: galactapedia:0Gz5DNryvE
+  typ: Galactapedie
+  nazev: Fall of Caliban
+  url: https://robertsspaceindustries.com/galactapedia/article/0Gz5DNryvE-fall-of-caliban
+  hash: 3175046a31e0a9d7d38ea04d7bc3fc5282d742c4186bbc56629bf4d88526089f
+- record_key: galactapedia:VgEljZZ8PN
+  typ: Galactapedie
+  nazev: Caliban III
+  url: https://robertsspaceindustries.com/galactapedia/article/VgEljZZ8PN-caliban-iii
+  hash: 5b4aabca7be780a546261ce0eda8d31e1cb3f533bd864e0c51f742092cd2d48b
+- record_key: galactapedia:bEzvPwYZ96
+  typ: Galactapedie
+  nazev: Crion (Caliban II)
+  url: https://robertsspaceindustries.com/galactapedia/article/bEzvPwYZ96-crion-caliban-ii
+  hash: 2e7175fe71cc4ed0b2e720535c6ea571c70cf668a9e7ac145328b760f972998b
+- record_key: commlink:16510
+  typ: Comm-Link
+  nazev: 'Galactic Guide: Caliban System'
+  url: https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/16510-Galactic-Guide-Caliban-System
+  hash: 9d536c5b0bdb097b20dad63b6d74edf27e66266cc99ddbea63c4f1528b80ae9e
+- record_key: galactapedia:0jGyPQ1r5m
+  typ: Galactapedie
+  nazev: Caliban System
+  url: https://robertsspaceindustries.com/galactapedia/article/0jGyPQ1r5m-caliban-system
+  hash: 3682f1bf57bb2eae538e76dbfaf60c305f11f638980f1d343741a4a5737c84bd
 ---
 Polohu soustavy Caliban prodala vládě roku 2341 dopravkyně Ashley Ghan. Klid ale netrval věčně. Od roku 2739 začaly do systému pronikat vanduulské nájezdy. Vanduulové, válečnický mimozemský rod, se tak stali hrozbou, s níž muselo Impérium v Calibanu napříště počítat.
 

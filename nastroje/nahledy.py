@@ -200,15 +200,15 @@ def polozky():
                         obrazek=(KOREN / ob.lstrip('/')) if ob else None))
     for p in sorted((KOREN / '_kapitoly').glob('*.md')):
         fm = front_matter(p)
-        era = ery_nazev.get(fm.get('era'))
+        era = ery.get(fm.get('obdobi')) or ery_nazev.get(fm.get('era'))
         out.append(dict(klic=f'kapitoly-{p.stem}',
                         stitek='Kapitola' + (f' · rok {fm["herni_rok"]}' if fm.get('herni_rok') else ''),
                         nazev=fm.get('title', p.stem), perex=ciste(fm.get('popis')),
                         barva=hex_rgb(era['barva']) if era else AKCENT, obrazek=None))
     for k in yaml.safe_load((KOREN / '_data/dejiny.yml').read_text(encoding='utf-8')):
-        era = ery_nazev.get(k.get('era'))
+        era = ery.get(k.get('obdobi')) or ery_nazev.get(k.get('era'))
         out.append(dict(klic=f'dejiny-{k["hraj"]}', stitek=f'Dějiny · {k.get("rim", "")}. kapitola · {k.get("rozpeti", "")}',
-                        nazev=k['title'], perex=ciste(k.get('era')),
+                        nazev=k['title'], perex=ciste(era['nazev'] if era else k.get('era')),
                         barva=hex_rgb(era['barva']) if era else AKCENT, obrazek=None))
     out.append(dict(klic='web', stitek='Kronika dějin vesmíru', nazev='Hvězdná kronika',
                     perex='Od terraformace Marsu po válku s Vanduuly – kapitoly, osobnosti, '

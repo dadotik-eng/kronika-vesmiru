@@ -6,9 +6,11 @@ role: historička, autorka knihy The Path to Prime Citizen
 kategorie: veda-technika
 medailonek: Sydney Kamarck byla historička politických systémů lidstva na Rhetorské univerzitě, proslavená knihou The Path to Prime Citizen z roku 2812. Vycházela z tisíců osobních i úředních záznamů rodu Messerů, které v roce 2806 zveřejnila Komise pro pravdu a smíření. Při jejich studiu dospěla k závěru, že za sérií bombových útoků, které v roce 2546 zabily tisíce lidí, mohl stát Ivar Messer I. Ve své knize tvrdila, že útoky nejspíš provedli jeho bývalí spolubojovníci Adam Corr a Cyrus Ishitaka, a to na Messerův rozkaz.
 zdroje:
-- nazev: Sydney Kamarck
+- record_key: galactapedia:VaZwNWd7lm
   typ: Galactapedie
+  nazev: Sydney Kamarck
   url: https://robertsspaceindustries.com/galactapedia/article/VaZwNWd7lm-sydney-kamarck
+  hash: f7f73e53eda6b323717c4ed20b74e31ecff5511f55de9720567896b8a7167089
 kapitoly: []
 rad: 2761
 obdobi: messerove

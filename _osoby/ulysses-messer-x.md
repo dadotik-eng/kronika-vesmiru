@@ -7,9 +7,11 @@ kategorie: vladari
 rod: messer
 medailonek: Ulysses Messer X. byl od roku 2722 vrchním tajemníkem svého strýce Galora IX., dohlížel na přestavbu vládních budov v metabarokním stylu a se zhoršujícím se zdravím imperátora přebíral stále víc jeho každodenních povinností. Po nástupu na trůn v roce 2751 věnoval většinu prostředků UEE dokončení těchto staveb. Během své vlády osekal ochranu životního prostředí, zvýšil daně, snížil minimální věk pro práci na deset let, pozastavil minimální mzdu, oslabil státní dohled nad průmyslem, rozšířil pravomoci policie a přepsal zákony o vlastizradě. V roce 2781 proti němu provedl převrat jeho syn Linton XI. a Ulysses spáchal sebevraždu dřív, než se k němu Lintonovi agenti dostali.
 zdroje:
-- nazev: Ulysses Messer X
+- record_key: galactapedia:bBp6YZPOGO
   typ: Galactapedie
+  nazev: Ulysses Messer X
   url: https://robertsspaceindustries.com/galactapedia/article/bBp6YZPOGO-ulysses-messer-x
+  hash: f5f49b869d068ef3fc27f2375c89701e4c753e433d9447ad3fa1d87b1d083d24
 kapitoly:
 - kap-6
 rad: 2702

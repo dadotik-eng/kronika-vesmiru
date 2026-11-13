@@ -6,9 +6,11 @@ role: folková zpěvačka
 kategorie: kultura
 medailonek: Gal Dougan byla folková zpěvačka, která začínala jako hornice v rodinném těžařském podniku. Proslavila se elegantními aranžmá, dělnickou poezií v textech a osobitým pěveckým stylem, kterému hudební tisk říká „ten zvuk Gal Dougan“. Na čtyřech albech zpívala o radostech a strastech práce, lásky a rodiny bez příkras, což odráželo její bouřlivé dospívání v chudé hornické rodině. Po koncertě v roce 2931 zmizela a dodnes se neví, kde je.
 zdroje:
-- nazev: Gal Dougan
+- record_key: galactapedia:box5WYgM2A
   typ: Galactapedie
+  nazev: Gal Dougan
   url: https://robertsspaceindustries.com/galactapedia/article/box5WYgM2A-gal-dougan
+  hash: cb294b557cc8eab70f53cd3d7496b0094dd68f59d029d470508463dd5da7dcbe
 kapitoly: []
 rad: 2868
 obdobi: naprava

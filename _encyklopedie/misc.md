@@ -6,12 +6,16 @@ stitek: 2805 · Průmyslové lodě
 perex: Vznikla spojením krachující firmy Hato Electronics a designérského studia Musashi. V roce 2910 uzavřela s Xi’any tajnou dohodu o sdílení technologií, jejíž podrobnosti zůstávají obchodním tajemstvím.
 kapitoly: []
 zdroje:
-- nazev: Musashi Industrial and Starflight Concern (MISC)
+- record_key: galactapedia:bE3rB7YJDv
   typ: Galactapedie
+  nazev: Musashi Industrial and Starflight Concern (MISC)
   url: https://robertsspaceindustries.com/galactapedia/article/bE3rB7YJDv-misc
-- nazev: 'Portfolio: MISC'
+  hash: 49acee77d78bf2efdeb134454cb66f210681c9e01673ca522745e3d384274612
+- record_key: commlink:13435
   typ: Comm-Link
+  nazev: 'Portfolio: MISC'
   url: https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/13435-Portfolio-MISC
+  hash: 096276c2c2feafcf53e8c4dc96d8ed260323041f632b37a10f4b74e51986061a
 ---
 
 MISC vznikla z dohodnuté svatby dvou firem a stala se páteří lidské nákladní dopravy – a mostem k Xi'anům.

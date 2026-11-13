@@ -8,27 +8,41 @@ vztah: válka
 kontakt: 2681, Armitage (Orion III)
 perex: Kočovné válečnické klany bez domova a bez vlády. Každé setkání s nimi skončilo masovým umíráním a nikdo neví, proč lidi tak nenávidí.
 zdroje:
-- nazev: Vanduul
+- record_key: galactapedia:VpGPp92gdO
   typ: Galactapedie
+  nazev: Vanduul
   url: https://robertsspaceindustries.com/galactapedia/article/VpGPp92gdO-vanduul
-- nazev: Vanduul Clans
+  hash: ec9ff6f0b0fc526a7abd6e7ab88ddc7af621d0137a0ba63f9a5446676eadd394
+- record_key: galactapedia:R9vzjxmEBx
   typ: Galactapedie
+  nazev: Vanduul Clans
   url: https://robertsspaceindustries.com/galactapedia/article/R9vzjxmEBx-vanduul-clans
-- nazev: Vanduul Raids
+  hash: 5746f3bb0eaa617e278aea0bcdca2a144a304901851d77a2cff5c5a455aa890d
+- record_key: galactapedia:Rw1gdnOKBp
   typ: Galactapedie
+  nazev: Vanduul Raids
   url: https://robertsspaceindustries.com/galactapedia/article/Rw1gdnOKBp-vanduul-raids
-- nazev: Vanduul Kingship
+  hash: 59d1c9a5d39c93d8fbbafe4b125c91845618d6a9f79a9cd5695fa8367168d833
+- record_key: galactapedia:V3qWn9Dlvm
   typ: Galactapedie
+  nazev: Vanduul Kingship
   url: https://robertsspaceindustries.com/galactapedia/article/V3qWn9Dlvm-vanduul-kingship
-- nazev: 'Writer''s Guide: Part Seven'
+  hash: 97941c7d5c1dbbf27dde49bd51f40e846bc6688609577fec6568ab9e8b98dd94
+- record_key: commlink:12996
   typ: Comm-Link
+  nazev: 'Writer''s Guide: Part Seven'
   url: https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/12996-Writers-Guide-Part-Seven
-- nazev: Vanduul Warship Analysis
+  hash: 936eb3efe14c01e6aa720724d78b88845cd712a7391569a9483b2ef562b6e12f
+- record_key: commlink:12991
   typ: Comm-Link
+  nazev: Vanduul Warship Analysis
   url: https://robertsspaceindustries.com/en/comm-link/transmission/12991-Vanduul-Warship-Analysis
-- nazev: 'Loremakers: Community Questions (vnímání mimozemšťanů)'
+  hash: 55f3e632901d1121cc504f5914e4371df36669cb2d0f3b7663c80cf30e559ed8
+- record_key: commlink:18297
   typ: Comm-Link
+  nazev: 'Loremakers: Community Questions (vnímání mimozemšťanů)'
   url: https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/18297-Loremakers-Community-Questions
+  hash: 65318bc78a23b2fda17782435c057d6736bde90cdab0e071a4d7c60fc78be0e0
 biologie: 'O těle Vanduulů toho oficiální prameny prozrazují překvapivě málo. Nikdo z nich nepřežil zajetí – podle rozvědky se Vanduulové raději zničí sami, než by padli do rukou nepřítele.
 
 

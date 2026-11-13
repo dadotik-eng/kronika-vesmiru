@@ -2,4 +2,6 @@
 layout: null
 permalink: /data/dejiny.json
 ---
-{{ site.data.dejiny | jsonify }}
+[{% for k in site.data.dejiny %}{% assign era = site.data.ery | where: "id", k.obdobi | first %}
+{"rim":{{ k.rim | jsonify }},"title":{{ k.title | jsonify }},"rozpeti":{{ k.rozpeti | jsonify }},"obdobi":{{ k.obdobi | jsonify }},"era":{{ era.nazev | jsonify }},"herni_rok":{{ k.herni_rok | jsonify }},"hraj":{{ k.hraj | jsonify }},"popis":{{ k.popis | jsonify }},"zdroje":{{ k.zdroje | jsonify }}}{% unless forloop.last %},{% endunless %}{% endfor %}
+]

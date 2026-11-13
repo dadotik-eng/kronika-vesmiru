@@ -8,12 +8,16 @@ kdy_od: '06-12'
 kapitoly:
 - 3
 zdroje:
-- nazev: First Contact Day
+- record_key: galactapedia:01Lvo8ZWxX
   typ: Galactapedie
+  nazev: First Contact Day
   url: https://robertsspaceindustries.com/galactapedia/article/01Lvo8ZWxX-first-contact-day
-- nazev: 'Jerry: A History Half-Remembered'
+  hash: 26e1b20b81b8c2cb7e998afe2596a9565776631e97fae4c061d6fea9ced62039
+- record_key: commlink:19597
   typ: Comm-Link
+  nazev: 'Jerry: A History Half-Remembered'
   url: https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/19597-Jerry-A-History-Half-Remembered
+  hash: 9022ee7dce5eb6b686653782d523dceeee642aa867b15f5121d39a51e72216af
 ---
 
 Den prvního kontaktu se slaví 12. června a připomíná okamžik, kdy lidstvo zjistilo, že ve vesmíru není samo. Za slavným datem ale stojí příběh mnohem méně hrdinský, než by se čekalo – a o to lidštější.

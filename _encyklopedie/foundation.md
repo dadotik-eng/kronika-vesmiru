@@ -8,12 +8,16 @@ kdy_od: '07-01'
 kdy_do: '07-31'
 kapitoly: []
 zdroje:
-- nazev: Foundation Festival
+- record_key: galactapedia:RAXKmZQAMy
   typ: Galactapedie
+  nazev: Foundation Festival
   url: https://robertsspaceindustries.com/galactapedia/article/RAXKmZQAMy-fountation-festival
-- nazev: Foundation Festival 2950
+  hash: 36fb49828ea7889f36889c543b61ee9877a1179c9195d6be132682ce7d55e8de
+- record_key: commlink:17662
   typ: Comm-Link
+  nazev: Foundation Festival 2950
   url: https://robertsspaceindustries.com/en/comm-link/transmission/17662-Foundation-Festival-2950
+  hash: e5d4b7bb07ca00e8fdb0d26819f26a045152e8141bbe96f4b10fd166a0ebe394
 ---
 
 Foundation Festival není jeden den, ale celý měsíc. Každý červenec povzbuzuje lidi v impériu, aby věnovali čas druhým. Jeho myšlenka je jednoduchá: když se lidé navzájem podpoří, zesílí celé společenství – jako stavba, která stojí na pevném základu. Odtud i název.

@@ -7,15 +7,21 @@ perex: Její planeta Stanton III je téměř celá zastavěná a je to nejvíc u
 kapitoly:
 - 9
 zdroje:
-- nazev: ArcCorp (Company)
+- record_key: galactapedia:0dQ47zYd6O
   typ: Galactapedie
+  nazev: ArcCorp (Company)
   url: https://robertsspaceindustries.com/galactapedia/article/0dQ47zYd6O-arccorp
-- nazev: ArcCorp (Stanton III)
+  hash: 8020ad5be8a124c4f868b6f91c4a56a36b5f7570a4141f4d37cf01874b0d9f2f
+- record_key: galactapedia:bBzpNY6ANd
   typ: Galactapedie
+  nazev: ArcCorp (Stanton III)
   url: https://robertsspaceindustries.com/galactapedia/article/bBzpNY6ANd-arccorp-stanton-iii
-- nazev: 'Portfolio: ArcCorp'
+  hash: d0c2ce42cfb3d3d8c468a47835ee0b67a01141ccc2651c0d7234a845b9c3f06e
+- record_key: commlink:14556
   typ: Comm-Link
+  nazev: 'Portfolio: ArcCorp'
   url: https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/14556-Portfolio-ArcCorp
+  hash: eaf69c48efe9b641c403de00b26c6ecfe1cb4560b74f38446e251aa964c2b063
 ---
 
 ArcCorp je jednou z největších korporací impéria – „megakorporátní monstrum“, jak ji nazval list Terra Gazette. A přitom začínala v přepravním kontejneru.

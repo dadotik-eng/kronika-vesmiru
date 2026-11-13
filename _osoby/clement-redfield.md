@@ -6,15 +6,21 @@ role: šéf štábu imperátorky Erin Toi, ideový otec Transitionalistické str
 kategorie: politika
 medailonek: Clement Redfield byl šéfem štábu Erin Toi, první imperátorky po pádu Messerů. Opakovaně jí radil soustředit se na to, co se dá skutečně prosadit, a jeho věta, že kampaň se vede se snem, ale vládne se podle skutečnosti, se v impériu cituje dodnes. Patřil k terranským aktivistům, kteří chtěli stát přestavět od základů a přesunout hlavní město ze Země na Terru. Po neúspěchu zákona o modernizaci vlády v roce 2793 odstoupil, kandidoval do Senátu za Terru a těsně prohrál. Jeho program se ale stal ideovým základem dnešní Transitionalistické strany a historici ho považují za jejího prvního kandidáta.
 zdroje:
-- nazev: 'This Day in History: Governance Modernization Act'
+- record_key: commlink:17063
   typ: Comm-Link
+  nazev: 'This Day in History: Governance Modernization Act'
   url: https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/17063-This-Day-In-History-Governance-Modernization-Act
-- nazev: 'New United: Imperator Addison Still Settling into New Role'
+  hash: c4f9906847c2ef188db74afd677794a5443489f94cb20163d5ab7fcabbb90b8e
+- record_key: commlink:17951
   typ: Comm-Link
+  nazev: 'New United: Imperator Addison Still Settling into New Role'
   url: https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/17951-New-United-Imperator-Addison-Still-Settling-Into-New-Role
-- nazev: 'Loremakers: Community Questions (Terra jako hlavní město)'
+  hash: b828a0809bb22602aafcf42fbc844cddb0441e22857d07e36fc2dc53c7151176
+- record_key: commlink:20364
   typ: Comm-Link
+  nazev: 'Loremakers: Community Questions (Terra jako hlavní město)'
   url: https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/20364-Loremakers-Community-Questions
+  hash: 9d3f6ddbc20e5c93afef791fa717df63845f6ac4117320e93a7d1d304dd5bc73
 kapitoly:
 - kap-8
 rad: 2793

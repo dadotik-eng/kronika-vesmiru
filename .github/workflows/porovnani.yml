@@ -1,0 +1,38 @@
+# Ruční porovnání dvou verzí webu: postaví obě (stejně jako GitHub Pages) a vypíše rozdíly ve výsledném HTML.
+# Slouží ke kontrole velkých změn (např. převodu obsahu), než jdou na ostrý web.
+name: Porovnání sestavení
+on:
+  workflow_dispatch:
+    inputs:
+      zaklad: { description: "Výchozí větev / commit", required: true, default: main }
+      novy: { description: "Nová větev / commit", required: true, default: format-v2 }
+permissions:
+  contents: read
+jobs:
+  porovnej:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with: { ref: "${{ inputs.novy }}", path: novy }
+      - uses: actions/checkout@v4
+        with: { ref: "${{ inputs.zaklad }}", path: zaklad }
+      - uses: ruby/setup-ruby@v1
+        with: { ruby-version: '3.3', bundler-cache: true, working-directory: novy }
+      - name: Sestavit obě verze
+        run: |
+          for d in zaklad novy; do
+            (cd $d && BUNDLE_GEMFILE=$GITHUB_WORKSPACE/novy/Gemfile bundle exec jekyll build -q -d $GITHUB_WORKSPACE/site-$d --baseurl /kronika-vesmiru)
+          done
+      - name: Rozdíly
+        shell: bash
+        run: |
+          # verze webu (cache busting) a čas sestavení se mění vždy – sjednotit
+          for d in site-zaklad site-novy; do
+            grep -rlZ . $d | xargs -0 sed -i -E 's/(data-verze="|[?&]v=)[0-9a-z]+/\1X/g; s/[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9:+.-]+/CAS/g'
+          done
+          echo "### Změněné soubory"; diff -rq site-zaklad site-novy | sed 's#site-##g' | tee /tmp/seznam.txt | head -80
+          echo; echo "Celkem: $(wc -l < /tmp/seznam.txt)"
+          echo; echo "### Ukázka rozdílů (HTML)"
+          diff -ru -x assets -x '*.json' site-zaklad site-novy | head -500 || true
+          echo; echo "### Rozdíly v JSON (první řádky)"
+          for f in kapitoly.json data/dejiny.json data/zasobnik.json; do echo "== $f"; diff <(python3 -m json.tool site-zaklad/$f) <(python3 -m json.tool site-novy/$f) | head -40; done || true

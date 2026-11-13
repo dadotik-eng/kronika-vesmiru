@@ -8,21 +8,31 @@ vztah: přátelský obchod
 kontakt: 12. června 2438, soustava Davien
 perex: Obchodníci vesmíru a první mimozemšťané, se kterými se lidstvo setkalo. Nevedou dějiny, zato vedou obchod se všemi.
 zdroje:
-- nazev: Banu
+- record_key: galactapedia:0NwpYPpNZ4
   typ: Galactapedie
+  nazev: Banu
   url: https://robertsspaceindustries.com/galactapedia/article/0NwpYPpNZ4-banu
-- nazev: Banu Protectorate
+  hash: 8649424deab7163be92445fecc1b2feff1d02a82980b0a78adbbe925ca3bac8e
+- record_key: galactapedia:Vgg795z2a3
   typ: Galactapedie
+  nazev: Banu Protectorate
   url: https://robertsspaceindustries.com/galactapedia/article/Vgg795z2a3-banu-protectorate
-- nazev: Banu-Human First Contact
+  hash: 2cd714c121b06c5ec8619a7ea60d3aa7aa2e921e1e2f056e8c57c2a4a95c1e60
+- record_key: galactapedia:VY4Wnv7ZgW
   typ: Galactapedie
+  nazev: Banu-Human First Contact
   url: https://robertsspaceindustries.com/galactapedia/article/VY4Wnv7ZgW-banu-human-first-contact
-- nazev: 'Writer''s Guide: Part Six'
+  hash: 8934e394d49539867135f641e49e1bb35a18cff196bb97d2a712be29efdb8631
+- record_key: commlink:12988
   typ: Comm-Link
+  nazev: 'Writer''s Guide: Part Six'
   url: https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/12988-Writers-Guide-Part-Six
-- nazev: 'Loremakers: Community Questions (vnímání mimozemšťanů)'
+  hash: d750a6f76091f41ec03585288fbae98b7656920fa3ae4ccd0a093f28f91d04f6
+- record_key: commlink:18297
   typ: Comm-Link
+  nazev: 'Loremakers: Community Questions (vnímání mimozemšťanů)'
   url: https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/18297-Loremakers-Community-Questions
+  hash: 65318bc78a23b2fda17782435c057d6736bde90cdab0e071a4d7c60fc78be0e0
 biologie: 'Banu se umí přizpůsobit prostředí jako žádný jiný známý druh. Dýchají pohodlně v různých atmosférách a snesou podmínky, ve kterých by lidé, Tevarinové ani Xi''ani dlouho nevydrželi. I to jim pomohlo osídlit tolik různých světů.
 
 

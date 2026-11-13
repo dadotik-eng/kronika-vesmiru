@@ -4,7 +4,7 @@ layout: default
 {% assign t = site.data.texty[page.scena] %}
 {% assign kap = nil %}{% for k in site.data.dejiny %}{% if k.hraj == page.scena %}{% assign kap = k %}{% assign idx = forloop.index0 %}{% endif %}{% endfor %}
 <article class="kapitola cteni">
-  <p class="nadtitul">{% if kap %}<a href="{{ '/dejiny/' | relative_url }}">Dějiny</a> · Kapitola {{ kap.rim }} · {{ kap.rozpeti }} · {{ kap.era }}{% else %}<a href="{{ '/pribehy/' | relative_url }}">Příběhy</a> · {{ t.podtitul }}{% endif %}</p>
+  <p class="nadtitul">{% if kap %}<a href="{{ '/dejiny/' | relative_url }}">Dějiny</a> · {% assign era = site.data.ery | where: "id", kap.obdobi | first %}Kapitola {{ kap.rim }} · {{ kap.rozpeti }} · {{ era.nazev | default: kap.era }}{% else %}<a href="{{ '/pribehy/' | relative_url }}">Příběhy</a> · {{ t.podtitul }}{% endif %}</p>
   <h1>{% if kap %}{{ kap.title }}{% else %}{{ t.nazev }}{% endif %}</h1>
   <div class="radek-stav">
     <a class="tlacitko plne male" href="{{ '/archiv/#' | append: page.scena | relative_url }}">▶ Přehrát s Archivářem</a>
@@ -25,13 +25,13 @@ layout: default
   {% assign udal_s = udal | strip %}
   {% if udal_s != "" %}<section class="souvisi"><h2>Na časové ose</h2><ul>{{ udal }}</ul></section>{% endif %}
   {% include na-mape.html url=page.url %}
-  {% include prameny.html seznam=kap.prameny %}
+  {% include prameny.html seznam=kap.zdroje %}
   <nav class="cteni-dalsi">
     {% if idx > 0 %}{% assign i = idx | minus: 1 %}{% assign p = site.data.dejiny[i] %}<a href="{{ '/dejiny/' | append: p.hraj | append: '/' | relative_url }}">← {{ p.rim }}. {{ p.title }}</a>{% else %}<span></span>{% endif %}
     {% assign i = idx | plus: 1 %}{% assign p = site.data.dejiny[i] %}{% if p %}<a href="{{ '/dejiny/' | append: p.hraj | append: '/' | relative_url }}">{{ p.rim }}. {{ p.title }} →</a>{% endif %}
   </nav>
   {% else %}
-  {% if page.prameny %}{% include prameny.html seznam=page.prameny %}{% endif %}
+  {% if page.zdroje %}{% include prameny.html seznam=page.zdroje %}{% elsif page.prameny %}{% include prameny.html seznam=page.prameny %}{% endif %}
   {% if page.souvisi %}<p class="od-zpet"><a href="{{ page.souvisi.url | relative_url }}">{{ page.souvisi.text }}</a></p>{% endif %}
   {% endif %}
 </article>

@@ -6,12 +6,16 @@ role: zakladatel Crusader Industries, odpůrce Messerů
 kategorie: korporace
 medailonek: August Dunlow založil společnost Crusader Industries a vedl ji s přesvědčením, že zisk má smysl jen tehdy, když vede ke společenskému pokroku. Jako jedenáctiletý přežil 12. srpna 2781 výbuch stadionu Khanos ve městě Angeli, který odstartoval Lintonův převrat; zahynula při něm jeho matka a otec později zemřel v bídě. Z ulice ho dostal útulek pro mladé bezdomovce a Dunlow se stal zapáleným odpůrcem Messerů. Po pádu režimu převzal malého výrobce raketoplánů Seraphim Systems, z něhož v roce 2799 vznikla Crusader Industries, a od roku 2801 věnoval velkou část zisků na dobročinnost. Firma dnes patří k nejštědřejším dárcům v impériu.
 zdroje:
-- nazev: 'Portfolio: Crusader Industries'
+- record_key: commlink:16513
   typ: Comm-Link
+  nazev: 'Portfolio: Crusader Industries'
   url: https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/16513-Portfolio-Crusader-Industries
-- nazev: 'Loremakers: Community Questions (Crusader)'
+  hash: 51e894d78fcb2490b19e0176de6e81dd0807dfcc28198d62bf9e118e7bfa77a0
+- record_key: commlink:19850
   typ: Comm-Link
+  nazev: 'Loremakers: Community Questions (Crusader)'
   url: https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/19850-Loremakers-Community-Questions
+  hash: cc5255bb11db7e092aad802d6b7c33bcdc3eff78b1e2543645f84595aa3bb581
 kapitoly: []
 rad: 2770
 obdobi: naprava

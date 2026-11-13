@@ -8,12 +8,16 @@ kdy_od: '03-15'
 kapitoly:
 - 1
 zdroje:
-- nazev: Stella Fortuna
+- record_key: galactapedia:0qn8vv3Aw1
   typ: Galactapedie
+  nazev: Stella Fortuna
   url: https://robertsspaceindustries.com/galactapedia/article/0qn8vv3Aw1-stella-fortuna
-- nazev: Mars Tragedy
+  hash: 3f855c7bf062a03951843702d0775a51158fa58f1af9c4929619faefe573a532
+- record_key: galactapedia:bmNrgKnZ6l
   typ: Galactapedie
+  nazev: Mars Tragedy
   url: https://robertsspaceindustries.com/galactapedia/article/bmNrgKnZ6l-mars-tragedy
+  hash: 7ab5d2ea195727da3e380a1368278eba13851948fca60a5e8205a725ab5a860d
 ---
 
 Stella Fortuna je svátek štěstí, odvahy a nových začátků. Slaví se 15. března a jeho barvami jsou zelená a zlatá. Začala ale jako oslava toho, že lidé na Marsu vůbec přežili.

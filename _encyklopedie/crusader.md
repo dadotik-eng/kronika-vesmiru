@@ -7,12 +7,16 @@ perex: Získala plynného obra Stanton II a jeho nedostavěné loděnice, ve kte
 kapitoly:
 - 9
 zdroje:
-- nazev: Crusader Industries
+- record_key: galactapedia:0OaBkLLG1N
   typ: Galactapedie
+  nazev: Crusader Industries
   url: https://robertsspaceindustries.com/galactapedia/article/0OaBkLLG1N-crusader-industries
-- nazev: 'Portfolio: Crusader Industries'
+  hash: a7111cb124d8b9b76231d7ff58ce62bfd7c10dbf4f2bdda35176da0ad9038064
+- record_key: commlink:16513
   typ: Comm-Link
+  nazev: 'Portfolio: Crusader Industries'
   url: https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/16513-Portfolio-Crusader-Industries
+  hash: 51e894d78fcb2490b19e0176de6e81dd0807dfcc28198d62bf9e118e7bfa77a0
 ---
 
 Příběh Crusader Industries začíná tragédií a pokračuje přesvědčením, že zisk má smysl jen tehdy, když vede k lepšímu světu.

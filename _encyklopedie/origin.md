@@ -6,12 +6,16 @@ stitek: 2747 · Luxusní lodě
 perex: Výrobce luxusních lodí, založený v Kolíně nad Rýnem. V roce 2913 přesídlil do města New Austin na planetě Terra. Model M50 z roku 2920 se proslavil tím, že je to v podstatě motor s kokpitem.
 kapitoly: []
 zdroje:
-- nazev: Origin Jumpworks
+- record_key: galactapedia:VY4WOMoj2v
   typ: Galactapedie
+  nazev: Origin Jumpworks
   url: https://robertsspaceindustries.com/galactapedia/article/VY4WOMoj2v-origin-jumpworks
-- nazev: 'Portfolio: Origin Jumpworks'
+  hash: 465a7b0b0656c6e3cfe7a0df1b571c20a96da8a5e95eccafad80e387828f7177
+- record_key: commlink:13157
   typ: Comm-Link
+  nazev: 'Portfolio: Origin Jumpworks'
   url: https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/13157-Portfolio-Origin-Jumpworks
+  hash: e411c1dbbb2bc7e13b84370b7b5bde20a777da839d7506254837409bf37910e6
 ---
 
 Jestli dokáže nějaká firma spojit eleganci s riziky letů vesmírem a chladnokrevností soubojů, je to Origin Jumpworks. Její obchodníci rádi říkají, že s lodí Origin si nekupuješ loď, ale životní styl.

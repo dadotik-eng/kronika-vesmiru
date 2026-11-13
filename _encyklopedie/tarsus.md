@@ -7,9 +7,11 @@ perex: Dva mechanici z malé čerpací stanice přišli na to, že drahý skokov
 kapitoly:
 - 2
 zdroje:
-- nazev: 'Portfolio: Tarsus Electronics'
+- record_key: commlink:15371
   typ: Comm-Link
+  nazev: 'Portfolio: Tarsus Electronics'
   url: https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/15371-Portfolio-Tarsus-Electronics
+  hash: 347a4b0732f05a72ef920f3f3948eade69627cb42d882f17f549672c02020d25
 ---
 
 Když Nick Croshaw v roce 2271 poprvé proletěl skokovým bodem, otevřely se lidem hvězdy. Jenže jen některým.
