@@ -1,0 +1,68 @@
+---
+layout: default
+title: Linie imperátorů
+permalink: /imperatori/
+sekce: osobnosti
+popis: Všichni známí imperátoři Spojeného impéria Země od Ivara Messera I. (2546) po Laylani Addison – na časové ose období a zlomových událostí.
+---
+<section class="blok osa-hlava">
+  <p class="nadtitul"><a href="{{ '/osobnosti/' | relative_url }}">Osobnosti</a> · 2546–2956</p>
+  <h1>Linie imperátorů</h1>
+  <p class="perex">Imperátoři Spojeného impéria Země zasazení do období dějin. Délka pruhu odpovídá délce vlády a má barvu svého období; pod osou jsou zlomové události. Kde prameny imperátora nejmenují, zůstává mezera.</p>
+  <p class="tlacitka"><a class="tlacitko" href="{{ '/rod-messeru/' | relative_url }}">Rodokmen Messerů</a> <a class="tlacitko" href="{{ '/vztahy/' | relative_url }}">Síť osobností – kdo s kým</a></p>
+</section>
+
+<div class="imp-obal" id="imp-obal"><div class="imp-platno" id="imp-platno" aria-label="Časová osa imperátorů"></div></div>
+<p class="imp-pozn blok">Táhni do strany pro posun v čase. Kliknutím na kartu se otevře stránka osobnosti. Šestiúhelník = osobnost zatím bez ilustrace.</p>
+
+{% capture portrety %}{% for o in site.osoby %}{% if o.ilustrace %}{{ o.slug }} {% endif %}{% endfor %}{% endcapture %}
+<script>
+(function () {
+  var platno = document.getElementById('imp-platno'); if (!platno) return;
+  var Z = document.body.dataset.zaklad || '/';
+  var VLADY = [{% for v in site.data.imperatori.vlady %}{% assign o = site.osoby | where: "slug", v.id | first %}{% assign hl = v.id | append: " " %}
+    {id: {{ v.id | jsonify }}, jmeno: {{ o.jmeno | jsonify }}, od: {{ v.od }}, do: {{ v.do }}, roky: {{ v.roky | jsonify }}, pozn: {{ v.poznamka | jsonify }}, skryta: {{ v.skryta | default: false }}, portret: {% if v.id and portrety contains hl %}true{% else %}false{% endif %}}{% unless forloop.last %},{% endunless %}{% endfor %}];
+  var MILNIKY = {{ site.data.imperatori.milniky | jsonify }};
+  var ERY = [{% for e in site.data.ery %}{% if e.do > 2547 %}{nazev: {{ e.nazev | jsonify }}, od: {{ e.od }}, do: {{ e.do }}, barva: {{ e.barva | jsonify }}},{% endif %}{% endfor %}];
+  var OD = 2540, DO = 2960, X0 = 40, OSA = 500;
+  var PX = window.innerWidth < 700 ? 5.4 : 7.2;
+  function x(r) { return X0 + (r - OD) * PX; }
+  function era(r) { for (var i = 0; i < ERY.length; i++) if (r >= ERY[i].od && r < ERY[i].do) return ERY[i]; return ERY[ERY.length - 1]; }
+  function esc(t) { return String(t == null ? '' : t).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
+  var h = '';
+  ERY.forEach(function (e) {
+    var od = Math.max(e.od, 2546), konec = Math.min(e.do, 2956);
+    h += '<div class="imp-pasmo" style="left:' + x(od) + 'px;width:' + (x(konec) - x(od)) + 'px;--barva:' + e.barva + '"><span' + (konec >= 2956 ? ' class="vpravo"' : '') + '>' + esc(e.nazev) + '</span></div>';
+  });
+  h += '<div class="imp-osa" style="top:' + OSA + 'px"></div>';
+  for (var r = 2550; r <= 2950; r += 50) h += '<span class="imp-rok" style="left:' + x(r) + 'px;top:' + (OSA - 30) + 'px">' + r + '</span>';
+  var i = 0;
+  VLADY.forEach(function (v) {
+    if (!v.id) {
+      if (!v.skryta) h += '<div class="imp-mezera" style="left:' + x(v.od) + 'px;width:' + (x(v.do) - x(v.od)) + 'px;top:' + (OSA - 7) + 'px"><span>neznámí imperátoři · ' + v.od + '–' + v.do + '<br><small>' + esc(v.pozn) + '</small></span></div>';
+      return;
+    }
+    var e = era((v.od + v.do) / 2), stred = (x(v.od) + x(v.do)) / 2, y = OSA - 40 - 132 - (i % 3) * 142;
+    h += '<div class="imp-vlada" style="left:' + x(v.od) + 'px;width:' + Math.max(4, x(v.do) - x(v.od) - 2) + 'px;top:' + (OSA - 7) + 'px;background:' + e.barva + '" title="' + esc(v.jmeno) + '"></div>';
+    var inic = (v.jmeno || '').replace(/\./g, '').split(' ').slice(0, 2).map(function (s) { return s[0]; }).join('');
+    var foto = v.portret ? '<img src="' + Z + 'assets/osoby/' + v.id + '.webp" alt="" loading="lazy">' : '<span class="imp-hex">' + esc(inic) + '</span>';
+    var roky = v.roky || (v.od + '–' + v.do);
+    h += '<a class="imp-karta" href="' + Z + 'osobnosti/' + v.id + '/" style="left:' + (stred - 56) + 'px;top:' + y + 'px;--barva:' + e.barva + '">' + foto + '<b>' + esc(v.jmeno) + '</b><i>' + esc(roky) + '</i>' + (v.pozn ? '<small>' + esc(v.pozn) + '</small>' : '') + '</a>';
+    h += '<span class="imp-tyc" style="left:' + stred + 'px;top:' + (y + 132) + 'px;height:' + (OSA - 7 - y - 132) + 'px;background:' + e.barva + '"></span>';
+    i++;
+  });
+  MILNIKY.forEach(function (m, j) {
+    var dy = (j % 3) * 44;
+    h += '<span class="imp-mtyc" style="left:' + x(m[0]) + 'px;top:' + (OSA + 8) + 'px;height:' + (32 + dy) + 'px"></span>';
+    h += '<div class="imp-milnik" style="left:' + x(m[0]) + 'px;top:' + (OSA + 40 + dy) + 'px"><b>' + m[0] + '</b><span>' + esc(m[1]) + '</span></div>';
+  });
+  platno.style.width = (x(DO) + 40) + 'px';
+  platno.style.height = (OSA + 230) + 'px';
+  platno.innerHTML = h;
+  // tažení myší (na dotyku funguje nativní posun)
+  var obal = document.getElementById('imp-obal'), tah = null;
+  obal.addEventListener('pointerdown', function (ev) { if (ev.pointerType === 'mouse' && !ev.target.closest('a')) tah = { x: ev.clientX, s: obal.scrollLeft }; });
+  window.addEventListener('pointermove', function (ev) { if (tah) obal.scrollLeft = tah.s - (ev.clientX - tah.x); });
+  window.addEventListener('pointerup', function () { tah = null; });
+})();
+</script>

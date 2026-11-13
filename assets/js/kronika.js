@@ -149,7 +149,7 @@
   function oznacMenu() {
     var cesta = location.pathname.slice(ZAKLAD.length).split('/')[0] || 'domu';
     if (cesta === 'kapitoly') cesta = 'dejiny';
-    if (cesta === 'rod-messeru') cesta = 'osobnosti';
+    if (cesta === 'rod-messeru' || cesta === 'imperatori' || cesta === 'vztahy') cesta = 'osobnosti';
     if (cesta === 'uvod') cesta = 'o-projektu';
     [].forEach.call(menu.querySelectorAll('a'), function (a) {
       if (a.dataset.sekce === cesta) a.setAttribute('aria-current', 'page'); else a.removeAttribute('aria-current');
