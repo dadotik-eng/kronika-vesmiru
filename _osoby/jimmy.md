@@ -1,17 +1,17 @@
 ---
 jmeno: Jimmy
-narozeni: 'neznámo'
-umrti: 'neznámo'
+narozeni: neznámo
+umrti: neznámo
 role: producent, kaskadérský pilot a řidič pořadu Whitley's Guide
 kategorie: kultura
-medailonek: "Jimmy je podle komunitní wiki producent, kaskadérský pilot a řidič pořadu Whitley's Guide, který vysílá televize Spectrum. Na obrazovce nikdy nesundává bílou helmu s neprůhledným černým visorem a bývá prezentován jako němý. Během Intergalactic Aerospace Expo 2951 krátce vedl jednu epizodu pořadu jako hlavní moderátor. Oficiální Galactapedie o něm nemá zmínku, proto jde o nejistý a neoficiální údaj. Plné jméno ani další životní údaje nejsou známy."
+medailonek: Jimmy je producent, kaskadérský pilot a řidič pořadu Whitley's Guide, který se vysílá na Spectru, a stálý parťák moderátora Jaxe McClearyho. Na obrazovce nikdy nesundává bílou helmu s neprůhledným černým hledím, kterou má prý už od dětství, a skoro nikdy nepromluví – Jax mu přesto vždycky rozumí. Je to zdatný pilot, ale když během výstavy Intergalactic Aerospace Expo 2951 jednu epizodu pořadu sám moderoval, dostal se za kniplem do potíží. Celé jméno ani životní data nejsou známa.
 zdroje:
-- nazev: "Jimmy"
+- nazev: Jimmy
   typ: Komunitní wiki
   url: https://starcitizen.tools/Jimmy
-  record_key: scwiki:Jimmy
+  record_key: scwiki:46305
+  hash: 06b7f94b61f80cbb099e922efbcf976114cc8fa915cf8dc9688f44e35ccfbb3c
 kapitoly: []
-rozpor: "Galactapedie označuje Jax McCleary za jedinou volbu moderátora, zatímco wiki uvádí, že Jimmy jednu epizodu hostoval."
 rad: 2950
 obdobi: valka
 ---
