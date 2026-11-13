@@ -1,0 +1,31 @@
+---
+layout: null
+permalink: /data/hledani.json
+---
+{%- comment -%} Jeden malý index pro hledání v hlavičce: k = druh, t = název, p = popis (zkrácený), u = cesta bez základu webu. {%- endcomment -%}
+[
+{%- assign os = site.osoby | sort: "jmeno" -%}
+{%- for o in os -%}
+{"k":"Osoba","t":{{ o.jmeno | jsonify }},"p":{% capture p %}{{ o.role }}{% if o.narozeni and o.narozeni != "neznámo" %} · {{ o.narozeni }}{% endif %}{% endcapture %}{{ p | jsonify }},"u":{{ "osobnosti/" | append: o.slug | append: "/" | jsonify }}},
+{%- endfor -%}
+{%- assign ud = site.udalosti | sort: "rok" -%}
+{%- for x in ud -%}
+{"k":"Událost","t":{{ x.titul | jsonify }},"p":{% capture p %}{% if x.datum %}{{ x.datum }}{% else %}{{ x.rok | floor }}{% endif %}{% endcapture %}{{ p | jsonify }},"u":{{ "casova-osa/#" | append: x.slug | jsonify }}},
+{%- endfor -%}
+{%- for x in site.data.pojmy -%}
+{"k":"Pojem","t":{{ x.termin | jsonify }},"p":{{ x.vysvetleni | truncate: 120 | jsonify }},"u":"encyklopedie/#pojmy"},
+{%- endfor -%}
+{%- for k in site.kapitoly -%}
+{"k":"Kapitola","t":{{ k.title | jsonify }},"p":{{ k.popis | truncate: 120 | jsonify }},"u":{{ "kapitoly/" | append: k.slug | append: "/" | jsonify }}},
+{%- endfor -%}
+{%- for k in site.data.dejiny -%}{%- assign era = site.data.ery | where: "id", k.obdobi | first -%}
+{"k":"Dějiny","t":{% capture t %}{% if k.rim %}{{ k.rim }}. {% endif %}{{ k.title }}{% endcapture %}{{ t | jsonify }},"p":{% capture p %}{{ k.rozpeti }}{% if era %} · {{ era.nazev }}{% endif %}{% endcapture %}{{ p | jsonify }},"u":{{ "dejiny/" | append: k.hraj | append: "/" | jsonify }}},
+{%- endfor -%}
+{%- for h in site.encyklopedie -%}
+{"k":"Heslo","t":{{ h.nazev | jsonify }},"p":{{ h.perex | truncate: 120 | jsonify }},"u":{{ h.url | remove_first: "/" | jsonify }}},
+{%- endfor -%}
+{%- for r in site.rasy -%}
+{"k":"Rasa","t":{{ r.nazev | jsonify }},"p":{{ r.perex | truncate: 120 | jsonify }},"u":{{ r.url | remove_first: "/" | jsonify }}},
+{%- endfor -%}
+{"k":"Stránka","t":"Kvíz z dějin","p":"Pět otázek z kroniky, každý den nové","u":"kviz/"}
+]

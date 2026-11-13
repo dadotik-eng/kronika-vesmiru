@@ -294,18 +294,8 @@
   function nactiIndex() {
     if (index) return index;
     var j = function (u) { return fetch(ZAKLAD + u + '?v=' + (document.body.dataset.verze || '')).then(function (r) { return r.ok ? r.json() : []; }).catch(function () { return []; }); };
-    index = Promise.all([j('data/osoby.json'), j('data/udalosti.json'), j('data/pojmy.json'), j('kapitoly.json'), j('data/dejiny.json'), j('novinky.json')]).then(function (d) {
-      var vse = [];
-      d[0].forEach(function (o) { vse.push({ t: o.jmeno, p: o.role + (o.narozeni && o.narozeni !== 'neznámo' ? ' · ' + o.narozeni : ''), u: ZAKLAD + 'osobnosti/' + o.id + '/', k: 'Osoba' }); });
-      d[1].forEach(function (u) { vse.push({ t: u.titul, p: (u.datum || Math.floor(u.rok)) + '', u: ZAKLAD + 'casova-osa/#' + u.id, k: 'Událost' }); });
-      (d[2] || []).forEach(function (p) { vse.push({ t: p.termin, p: p.vysvetleni, u: ZAKLAD + 'encyklopedie/#pojmy', k: 'Pojem' }); });
-      (d[3] || []).forEach(function (k) { vse.push({ t: k.title, p: k.popis || '', u: ZAKLAD + 'kapitoly/' + k.slug + '/', k: 'Kapitola' }); });
-      (d[4] || []).forEach(function (k) { vse.push({ t: (k.rim ? k.rim + '. ' : '') + k.title, p: (k.rozpeti || '') + (k.era ? ' · ' + k.era : ''), u: ZAKLAD + 'dejiny/' + k.hraj + '/', k: 'Dějiny' }); });
-      ((d[5] && d[5].polozky) || []).forEach(function (n) {
-        var u = ZAKLAD + String(n.cesta || '').replace(/^\//, '');
-        if (n.druh === 'heslo') vse.push({ t: n.nazev, p: n.perex || '', u: u, k: 'Heslo' });
-        else if (n.druh === 'rasa') vse.push({ t: n.nazev, p: n.perex || '', u: u, k: 'Rasa' });
-      });
+    index = j('data/hledani.json').then(function (vse) {
+      vse.forEach(function (x) { x.u = ZAKLAD + x.u; x.p = x.p || ''; });
       vse.forEach(function (x) { x.n = bezDiakritiky(x.t); x.h = x.n + ' ' + bezDiakritiky(x.p); });
       return vse;
     });
