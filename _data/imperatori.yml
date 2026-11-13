@@ -2,7 +2,7 @@
 # id = soubor v _osoby (karta s portrétem a odkazem); bez id = mezera, kde prameny imperátora nejmenují.
 # od/do = roky vlády; poznamka = krátký text pod roky; roky = vlastní text místo „od–do“.
 vlady:
-  - {id: ivar-messer-i, od: 2546, do: 2592, poznamka: první imperátor}
+  - {id: ivar-messer-i, od: 2546, do: 2592, poznamka: zvolen 2546 · imperátor od 2547}
   - {id: deacon-messer-ii, od: 2592, do: 2628}
   - {id: livia-messer-iii, od: 2628, do: 2643}
   - {id: corsen-messer-v, od: 2643, do: 2662}
@@ -22,7 +22,7 @@ vlady:
   - {id: kelos-costigan, od: 2941, do: 2950}
   - {id: laylani-addison, od: 2951, do: 2956, roky: od 2951, poznamka: vládne dodnes}
 milniky:
-  - [2546, Ivar Messer se chápe moci]
+  - [2546, Ivar Messer zvolen – v roce 2547 se prohlásí imperátorem]
   - [2681, Vanduulové útočí na Orion]
   - [2792, Masakr na Garronu – pád Messerů]
   - [2793, Pakt o Perryho linii]

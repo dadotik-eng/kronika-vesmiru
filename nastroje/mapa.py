@@ -63,7 +63,7 @@ MILNIKY = [
     [2530, 'První setkání s Xi\'any v soustavě Pallas – začíná studená válka.'],
     [2542, 'Generál Armistead Perry zavádí Perryho linii – osm sporných soustav.'],
     [2541, 'První kontakt s Tevariny v Elysiu – začíná první tevarinská válka.'],
-    [2546, 'Ivar Messer se chápe moci – začíná éra Messerů.'],
+    [2546, 'Ivar Messer zvolen v mimořádných volbách – začíná éra Messerů (imperátorem se prohlásí 2547).'],
     [2681, 'Vanduulové vypálí kolonii na Armitage v Orionu.'],
     [2712, 'Vanduulská invaze – UEE se vzdává Orionu.'],
     [2736, 'Po letech obléhání padá Tiber.'],

@@ -54,7 +54,7 @@ popis: Všichni známí imperátoři Spojeného impéria Země od Ivara Messera 
   MILNIKY.forEach(function (m, j) {
     var dy = (j % 3) * 44;
     h += '<span class="imp-mtyc" style="left:' + x(m[0]) + 'px;top:' + (OSA + 8) + 'px;height:' + (32 + dy) + 'px"></span>';
-    h += '<div class="imp-milnik" style="left:' + x(m[0]) + 'px;top:' + (OSA + 40 + dy) + 'px"><b>' + m[0] + '</b><span>' + esc(m[1]) + '</span></div>';
+    h += '<div class="imp-milnik" style="left:' + x(m[0]) + 'px;top:' + (OSA + 40 + dy) + 'px"><b>' + m[0] + '</b> <span>' + esc(m[1]) + '</span></div>';
   });
   platno.style.width = (x(DO) + 40) + 'px';
   platno.style.height = (OSA + 230) + 'px';

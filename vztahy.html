@@ -34,7 +34,7 @@ popis: Kdo koho svrhl, kdo s kým spolupracoval a kdo komu předal trůn – vzt
   var vyber = document.getElementById('vz-vyber'), vsichni = document.getElementById('vz-vsichni');
   var BARVY = { rodina: '#e0785c', spoluprace: '#7fb8d8', protivnik: '#ef5a5a', nastupce: '#f6bd4b', vliv: '#b99ae0', souvislost: '#9aa6b2' };
   var ERY = [{% for e in site.data.ery %}{id: {{ e.id | jsonify }}, nazev: {{ e.nazev | jsonify }}, od: {{ e.od }}, do: {{ e.do }}, barva: {{ e.barva | jsonify }}}{% unless forloop.last %},{% endunless %}{% endfor %}];
-  var MILNIKY = [[2271, 'Croshaw prolétá prvním skokem'], [2380, 'Vznikají Spojené národy Země'], [2438, 'První kontakt s Banu'], [2530, 'Setkání s Xi’any'], [2546, 'Ivar Messer se chápe moci'], [2681, 'Vanduulové útočí na Orion'], [2792, 'Pád Messerů'], [2884, 'Pád Calibanu'], [2945, 'Útok na Vegu II']];
+  var MILNIKY = [[2271, 'Croshaw prolétá prvním skokem'], [2380, 'Vznikají Spojené národy Země'], [2438, 'První kontakt s Banu'], [2530, 'Setkání s Xi’any'], [2546, 'Ivar Messer zvolen – v roce 2547 se prohlásí imperátorem'], [2681, 'Vanduulové útočí na Orion'], [2792, 'Pád Messerů'], [2884, 'Pád Calibanu'], [2945, 'Útok na Vegu II']];
   var OD = 2250, DO = 2965, X0 = 30, CW = 98, CH = 84, LANE = 92;
   var PX = window.innerWidth < 700 ? 4.4 : 5.2;
   var O = {}, osoby = [], vazby = [], typy = {}, vybrana = null, skryteTypy = {}, OSA = 0;
@@ -98,7 +98,7 @@ popis: Kdo koho svrhl, kdo s kým spolupracoval a kdo komu předal trůn – vzt
     });
     MILNIKY.forEach(function (m, j) {
       var dy = (j % 3) * 40;
-      h += '<span class="imp-mtyc" style="left:' + x(m[0]) + 'px;top:' + (OSA + 30) + 'px;height:' + (24 + dy) + 'px"></span><div class="imp-milnik" style="left:' + x(m[0]) + 'px;top:' + (OSA + 56 + dy) + 'px"><b>' + m[0] + '</b>' + esc(m[1]) + '</div>';
+      h += '<span class="imp-mtyc" style="left:' + x(m[0]) + 'px;top:' + (OSA + 30) + 'px;height:' + (24 + dy) + 'px"></span><div class="imp-milnik" style="left:' + x(m[0]) + 'px;top:' + (OSA + 56 + dy) + 'px"><b>' + m[0] + '</b> ' + esc(m[1]) + '</div>';
     });
     platno.style.width = sirka + 'px'; platno.style.height = vyska + 'px';
     platno.innerHTML = h;
