@@ -357,15 +357,43 @@ html.prehravac-otevreny { overflow: hidden; }
 /* ===== Nové stránky: Domů, Dějiny, Příběhy, Encyklopedie, Časová osa po obdobích ===== */
 .tlacitko.plne { background: var(--akcent); color: #070f1f; }
 .tlacitko.plne:hover { filter: brightness(1.08); color: #070f1f; }
-.domu-hero { display: grid; grid-template-columns: 1fr minmax(18rem, 26rem); gap: 3rem; align-items: center; padding-top: 4rem; }
-.domu-hero h1 { font-size: clamp(3rem, 8vw, 5.2rem); line-height: 1; }
+.domu-hero { display: grid; grid-template-columns: 1.05fr 1fr; gap: 2.5rem; align-items: center; padding-top: 2.2rem; padding-bottom: 0; }
+.domu-hero h1 { font-size: clamp(2.8rem, 6vw, 4.8rem); line-height: 1; }
+.domu-hero .perex { font-size: 1.22rem; }
 .domu-novacek { margin-top: 1.4rem; color: var(--tlumene); }
-.domu-pokracovat { padding: 1.6rem 1.7rem; border: 1px solid rgba(246,189,75,.55); border-radius: 6px; background: var(--panel); }
-.domu-pokracovat h2 { font-size: 1.6rem; margin: 0 0 .4rem; }
-.dp-stav { color: var(--tlumene); margin: 0 0 1rem; }
-.dp-prubeh { height: 4px; background: var(--linka); border-radius: 2px; margin-bottom: 1.2rem; }
+.domu-pokracovat { display: grid; grid-template-columns: 1fr auto; align-items: center; gap: .4rem 1rem; margin-top: 1.5rem; padding: .8rem 1rem; border: 1px solid rgba(246,189,75,.45); border-radius: 6px; background: var(--panel); max-width: 36rem; }
+.domu-pokracovat .nadtitul { margin: 0 0 .15rem; font-size: .85rem; }
+.domu-pokracovat h2 { font-size: 1.15rem !important; margin: 0 !important; }
+.dp-stav { color: var(--tlumene); margin: .1rem 0 0; font-size: .95rem; }
+.dp-prubeh { grid-column: 1 / -1; height: 3px; background: var(--linka); border-radius: 2px; }
 .dp-prubeh i { display: block; height: 100%; background: var(--akcent); border-radius: 2px; }
-.domu-pokracovat .tlacitko { margin: 0; }
+.domu-pokracovat .tlacitko { margin: 0; padding: .55rem 1rem; font-size: 1.05rem; }
+.domu-kolaz { position: relative; height: 340px; }
+.dk { position: absolute; display: block; border: 1px solid rgba(246,189,75,.5); border-radius: 6px; overflow: hidden; box-shadow: 0 18px 40px rgba(0,0,0,.55); background: #0b1d36; color: var(--text); text-decoration: none; transition: transform .25s, border-color .25s; }
+.dk img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.dk span { position: absolute; left: 0; right: 0; bottom: 0; padding: .5rem .8rem; font-family: var(--label); letter-spacing: .06em; font-size: .9rem; background: linear-gradient(transparent, rgba(5,12,26,.92)); }
+.dk span b { display: block; font-family: var(--display); letter-spacing: 0; font-size: 1.05rem; }
+.dk:hover { border-color: var(--akcent); z-index: 5; }
+.dk1 { left: 0; top: 30px; width: 58%; height: 230px; transform: rotate(-2.5deg); z-index: 2; }
+.dk2 { right: 0; top: 0; width: 52%; height: 200px; transform: rotate(2deg); }
+.dk2 span { top: 0; bottom: auto; text-align: right; background: linear-gradient(rgba(5,12,26,.92), transparent); }
+.dk3 { right: 6%; bottom: 0; width: 56%; height: 210px; transform: rotate(-1deg); z-index: 3; }
+.dk1:hover { transform: rotate(-2.5deg) scale(1.03); } .dk2:hover { transform: rotate(2deg) scale(1.03); } .dk3:hover { transform: rotate(-1deg) scale(1.03); }
+.domu-osa { padding-top: 1.8rem; padding-bottom: 1.6rem; }
+.domu-osa .nadtitul { text-align: center; color: var(--tlumene); }
+.domu-pas { display: flex; gap: 3px; height: 74px; }
+.domu-era { display: flex; flex-direction: column; justify-content: flex-end; min-width: 0; padding: .4rem .45rem; border-top: 4px solid var(--b); border-radius: 0 0 4px 4px; background: linear-gradient(color-mix(in srgb, var(--b) 26%, transparent), color-mix(in srgb, var(--b) 6%, transparent)); color: var(--text); text-decoration: none; }
+.domu-era:hover { background: color-mix(in srgb, var(--b) 38%, transparent); }
+.domu-era span { font-family: var(--label); font-size: .95rem; line-height: 1.1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.domu-era i { font-style: normal; font-family: var(--label); font-size: .8rem; color: var(--tlumene); }
+.domu-roky { display: flex; justify-content: space-between; margin-top: .3rem; font-family: var(--label); font-size: .85rem; color: var(--tlumene); }
+.domu-oddily { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; padding-top: 0; }
+.domu-oddil { display: flex; flex-direction: column; gap: .35rem; padding: 1.15rem 1.2rem 1.1rem; border: 1px solid var(--linka); border-radius: 6px; background: rgba(10,30,58,.62); color: var(--text); text-decoration: none; }
+.domu-oddil:hover { border-color: var(--akcent); color: var(--text); }
+.domu-oddil svg { color: var(--akcent); margin-bottom: .2rem; }
+.domu-oddil b { font-family: var(--display); font-size: 1.3rem; }
+.domu-oddil span { color: var(--tlumene); font-size: .95rem; line-height: 1.4; }
+.domu-oddil i { margin-top: auto; font-style: normal; font-family: var(--label); font-size: .85rem; letter-spacing: .1em; text-transform: uppercase; color: var(--akcent); }
 .domu-nadpis { font-family: var(--label); font-size: 1rem !important; letter-spacing: .16em; text-transform: uppercase; color: var(--tlumene); }
 .domu-karty { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 17rem), 1fr)); gap: 1.1rem; }
 .domu-karty .karta { display: block; padding: 1.3rem 1.4rem; border: 1px solid var(--linka); border-radius: 5px; background: var(--panel); color: var(--text); text-decoration: none; }
@@ -373,7 +401,16 @@ html.prehravac-otevreny { overflow: hidden; }
 .karta-stitek { font-family: var(--label); font-size: .8rem; letter-spacing: .12em; text-transform: uppercase; color: var(--akcent); }
 .domu-karty h3 { font-size: 1.3rem; margin: .35rem 0 .4rem; }
 .domu-karty p { margin: 0; color: var(--tlumene); }
-@media (max-width: 800px) { .domu-hero { grid-template-columns: 1fr; gap: 2rem; padding-top: 2.5rem; } }
+@media (max-width: 800px) {
+  .domu-hero { grid-template-columns: 1fr; gap: 1.2rem; padding-top: 1.6rem; }
+  .domu-kolaz { order: -1; height: 170px; }
+  .dk1 { top: 10px; width: 62%; height: 150px; } .dk2 { display: none; } .dk3 { right: 0; top: 20px; bottom: auto; width: 46%; height: 140px; }
+  .dk span { font-size: .75rem; } .dk span b { font-size: .85rem; }
+  .domu-pas { flex-direction: column; height: auto; gap: 4px; }
+  .domu-era { flex: none !important; flex-direction: row; justify-content: space-between; align-items: center; border-top: 0; border-left: 4px solid var(--b); border-radius: 0 4px 4px 0; padding: .45rem .7rem; }
+  .domu-roky { display: none; }
+  .domu-oddily { grid-template-columns: 1fr 1fr; }
+}
 
 .dejiny-seznam { list-style: none; padding: 0; margin: 2rem 0 1.5rem; }
 .dej-polozka { display: grid; grid-template-columns: 3.4rem 1fr auto; gap: 1.2rem; align-items: center; padding: 1.1rem 1.2rem; border: 1px solid var(--linka); border-radius: 5px; margin-bottom: .7rem; background: rgba(10,25,48,.6); }

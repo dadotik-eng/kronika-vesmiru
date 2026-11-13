@@ -3,25 +3,51 @@ layout: default
 sekce: domu
 ---
 {% assign nove = site.kapitoly | sort: "date" | reverse %}
+{% assign osoba_ivar = site.osoby | where: "slug", "ivar-messer-i" | first %}
+{% assign osoba_akari = site.osoby | where: "slug", "terrence-akari" | first %}
+{% assign osoba_laylani = site.osoby | where: "slug", "laylani-addison" | first %}
 <section class="blok domu-hero">
   <div class="domu-uvod">
     <p class="nadtitul">Neoficiální fanouškovská kronika</p>
-    <h1>Hvězdná<br>kronika</h1>
-    <p class="perex">881 let dějin vesmíru Star Citizen. Archivář vypráví v liště dole a hraje dál, ať klikáš kamkoli.</p>
+    <h1>Hvězdná kronika</h1>
+    <p class="perex">881 let dějin vesmíru Star Citizen – česky, k poslechu i čtení. Vyber si období, Archivář ti ho přečte.</p>
     <p class="tlacitka">
       <a class="tlacitko plne" href="{{ '/archiv/#prolog' | relative_url }}" data-rozbalit="1">▶ Začít prologem</a>
-      <a class="tlacitko" href="{{ '/casova-osa/' | relative_url }}">Projít časovou osu</a>
+      <a class="tlacitko" href="{{ '/uvod/' | relative_url }}">Poprvé tady?</a>
     </p>
-    <p class="domu-novacek">Poprvé tady? <a href="{{ '/uvod/' | relative_url }}">Co je Star Citizen a tahle kronika →</a></p>
+    <div class="domu-pokracovat" id="pokracovat">
+      <div>
+        <p class="nadtitul">Začni tady</p>
+        <h2>I. Hvězdy na dosah</h2>
+        <p class="dp-stav">První kvantový pohon a terraformace Marsu.</p>
+      </div>
+      <a class="tlacitko plne" href="{{ '/archiv/#kap-1' | relative_url }}">▶ Přehrát</a>
+      <div class="dp-prubeh"><i style="width:0"></i></div>
+    </div>
   </div>
-  <aside class="domu-pokracovat" id="pokracovat">
-    <p class="nadtitul">Začni tady</p>
-    <h2>I. Hvězdy na dosah</h2>
-    <p class="dp-stav">První kvantový pohon, terraformace Marsu a tragédie roku 2125.</p>
-    <div class="dp-prubeh"><i style="width:0"></i></div>
-    <a class="tlacitko plne" href="{{ '/archiv/#kap-1' | relative_url }}">▶ Přehrát</a>
-  </aside>
+  <div class="domu-kolaz">
+    <a class="dk dk2" href="{{ osoba_akari.url | relative_url }}"><img src="{{ '/assets/osoby/terrence-akari.webp' | relative_url }}" alt="" width="960" height="540"><span><b>{{ osoba_akari.jmeno }}</b>vyjednal mír s Xi’any</span></a>
+    <a class="dk dk1" href="{{ osoba_ivar.url | relative_url }}"><img src="{{ '/assets/osoby/ivar-messer-i.webp' | relative_url }}" alt="" width="960" height="540" fetchpriority="high"><span><b>Ivar Messer I.</b>2546 · první imperátor</span></a>
+    <a class="dk dk3" href="{{ osoba_laylani.url | relative_url }}"><img src="{{ '/assets/osoby/laylani-addison.webp' | relative_url }}" alt="" width="960" height="540"><span><b>{{ osoba_laylani.jmeno }}</b>od 2951 · imperátorka</span></a>
+  </div>
 </section>
+
+<section class="blok domu-osa" aria-label="Období dějin">
+  <p class="nadtitul">Časová osa · klikni na období</p>
+  <div class="domu-pas">
+    {% for e in site.data.ery %}{% assign delka = e.do | minus: e.od %}{% if delka < 80 %}{% assign delka = 80 %}{% endif %}
+    <a class="domu-era" href="{{ '/casova-osa/' | relative_url }}#{{ e.id }}" style="--b:{{ e.barva }};flex:{{ delka }}"><span>{{ e.nazev }}</span><i>{{ e.rozsah | default: e.od | append: '' }}{% unless e.rozsah %}–{{ e.do }}{% endunless %}</i></a>
+    {% endfor %}
+  </div>
+  <div class="domu-roky"><span>2075</span><span>2546 · Messerové</span><span>2956</span></div>
+</section>
+
+<nav class="blok domu-oddily" aria-label="Hlavní oddíly">
+  <a class="domu-oddil" href="{{ '/dejiny/' | relative_url }}"><svg aria-hidden="true" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 5h7a2 2 0 0 1 2 2v13a2 2 0 0 0-2-2H4zM20 5h-7a2 2 0 0 0-2 2v13a2 2 0 0 1 2-2h7z"/></svg><b>Dějiny</b><span>Kapitoly od Marsu po Vanduuly.</span><i>{{ site.data.dejiny | size }} kapitol →</i></a>
+  <a class="domu-oddil" href="{{ '/mapa/' | relative_url }}"><svg aria-hidden="true" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="6" cy="7" r="2"/><circle cx="18" cy="6" r="2"/><circle cx="12" cy="17" r="2"/><path d="M8 7.5l8-1M7 9l4 6.5M17 8l-4 7"/></svg><b>Mapa</b><span>Soustavy, skoky a hranice říší v čase.</span><i>Otevřít mapu →</i></a>
+  <a class="domu-oddil" href="{{ '/osobnosti/' | relative_url }}"><svg aria-hidden="true" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="8" r="4"/><path d="M4 21c1-4 4.5-6 8-6s7 2 8 6"/></svg><b>Osobnosti</b><span>Imperátoři, hrdinové i zločinci.</span><i>{{ site.osoby | size }} osob →</i></a>
+  <a class="domu-oddil" href="{{ '/pribehy/' | relative_url }}"><svg aria-hidden="true" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 12a9 9 0 1 0 18 0 9 9 0 0 0-18 0z"/><path d="M10 8.5v7l6-3.5z"/></svg><b>Příběhy</b><span>Dramatizace k poslechu.</span><i>Poslechnout →</i></a>
+</nav>
 
 {% assign svatky = site.encyklopedie | where: "sekce", "svatky" %}
 <section class="blok domu-svatek" id="domu-svatek" hidden>
