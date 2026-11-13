@@ -59,7 +59,7 @@ popis: 881 let dějin vesmíru Star Citizen po obdobích. Vyber období a uvidí
         <a class="era-hraj" href="{{ '/archiv/#' | append: k.hraj | relative_url }}">▶ {{ k.rim }}. {{ k.title }}</a>
         {% endif %}{% endif %}{% endfor %}
         {% for k in kapitoly %}{% if k.herni_rok >= e.od %}{% if k.herni_rok < e.do or posledni %}{% assign nic = false %}
-        <a class="era-hraj" href="{{ '/archiv/#web-' | append: k.slug | relative_url }}">▶ {{ k.title }} <small>(od bota)</small></a>
+        <a class="era-hraj" href="{{ '/archiv/#web-' | append: k.slug | relative_url }}">▶ {{ k.title }} <small>(nová kapitola)</small></a>
         {% endif %}{% endif %}{% endfor %}
         {% if e.id == "naprava" %}<a class="era-hraj" href="{{ '/archiv/#letka' | relative_url }}">▶ Ztracená letka <small>(dramatizace)</small></a>{% assign nic = false %}{% endif %}
         {% if nic %}<p class="era-nic">Toto období zatím nemá vlastní kapitolu.</p>{% endif %}

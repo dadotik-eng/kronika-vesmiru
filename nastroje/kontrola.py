@@ -8,7 +8,8 @@ Kontroluje soubory v _kapitoly, _osoby, _udalosti, _zasobnik a _data:
   - shoda let s tím, co už na webu je (stejná událost / osoba nesmí mít jiný rok),
   - jména v textu, která chybí v rejstříku výslovnosti (jen upozornění).
 
-Použití:  python3 nastroje/kontrola.py [soubory…]   (bez parametrů zkontroluje vše)
+Použití:  python3 nastroje/kontrola.py [--ostry] [soubory…]   (bez souborů zkontroluje vše)
+  --ostry = pravidla ostrého webu (main): každá kapitola musí mít overeni: OK.
 Návratový kód 1 = chyba (žádost o změnu se nesmí schválit), 0 = v pořádku.
 """
 import glob, os, re, sys, yaml
@@ -16,6 +17,8 @@ import glob, os, re, sys, yaml
 KOREN = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 os.chdir(KOREN)
 
+OSTRY = '--ostry' in sys.argv
+if OSTRY: sys.argv.remove('--ostry')
 chyby, varovani = [], []
 def chyba(soubor, zprava): chyby.append(f"CHYBA  {soubor}: {zprava}")
 def varuj(soubor, zprava): varovani.append(f"POZOR  {soubor}: {zprava}")
@@ -73,6 +76,8 @@ def zkontroluj(soubor):
                 varovani.append(f"UPOZORNĚNÍ  {soubor}: pramen '{pr.get('nazev')}' nemá odkaz (url)")
     if slozka == '_kapitoly' and fm.get('overeni') not in (None, 'OK', 'neověřeno'):
         chyba(soubor, f"pole 'overeni' musí být OK nebo neověřeno, je {fm.get('overeni')!r}")
+    if OSTRY and slozka == '_kapitoly' and fm.get('overeni') != 'OK':
+        chyba(soubor, "na ostrý web smí jen ověřená kapitola (overeni: OK) – zůstává v betě, dokud ji Daniel neověří")
     if 'obdobi' in fm and fm['obdobi'] not in ERY:
         chyba(soubor, f"neznámé období '{fm['obdobi']}' (povolené: {', '.join(sorted(ERY))})")
     for pole in ('rok', 'herni_rok', 'rad'):
