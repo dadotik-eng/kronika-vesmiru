@@ -14,6 +14,10 @@ on:
         description: "obnovit = přimíchat main do bety · zahodit = beta znovu podle main · schvalit = zkontrolovat a sloučit betu do main"
         required: true
         default: obnovit
+      popis:
+        description: "U schválení: krátký popis, co se schvaluje (do zprávy commitu)"
+        required: false
+        default: ""
 permissions:
   contents: write
   actions: write
@@ -41,7 +45,8 @@ jobs:
               exit 1
             fi
             git checkout -B main origin/main
-            git merge --no-edit origin/beta -m "Schváleno: beta → ostrý web"
+            POPIS="${{ github.event.inputs.popis }}"
+            git merge --no-edit origin/beta -m "Schváleno Danielem: ${POPIS:-beta → ostrý web}"
             git push origin main
             gh workflow run nahledy.yml --ref main
             echo "Beta schválena a sloučena do main."
