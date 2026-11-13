@@ -37,7 +37,7 @@ Země 21. století byla přelidněná a zmítaly jí války o jídlo, vodu a ene
 
 V roce 2061 narazil Roberts na doktorskou práci čerstvého absolventa Scotta Childresse o levnějších pohonech pro vesmírné lodě. Probudila v něm dávný sen. Sestavil kolem Childresse tým a v roce 2075 RSI představila prototyp kvantového pohonu. Cesty vesmírem najednou přestaly být fantazií a i státy, které si je dřív nemohly dovolit, začaly posílat vlastní výpravy.
 
-Roberts ale věděl, že tím přelidnění nevyřeší. Jeho posedlostí se stala terraformace – přetvoření celé planety. Úspěchu se nedožil, zemřel v roce 2108. Jeho nástupci ale v jeho duchu pokračovali a 21. dubna 2113 RSI oznámila průlom, který položil základy terraformace. Vlády, firmy i vědci se spojili, aby přestavěli Mars. Projekt trval desítky let a stál životy téměř pěti tisíc osadníků při Marsovské tragédii. Při něm vznikla i loď Zeus – tým RSI ji vyvinul, aby vozil suroviny na Mars, a stala se první lodí, kterou si mohl koupit kdokoli.
+Roberts ale věděl, že tím přelidnění nevyřeší. Jeho posedlostí se stala terraformace – přetvoření celé planety. Úspěchu se nedožil, zemřel v roce 2108. Jeho nástupci ale v jeho duchu pokračovali a 21. dubna 2113 RSI oznámila průlom, který položil základy terraformace. Vlády, firmy i vědci se spojili, aby přestavěli Mars. Projekt trval desítky let a stál životy téměř pěti tisíc osadníků při Marsovské tragédii. Při něm vznikla i loď Zeus – tým RSI ji vyvinul, aby vozila suroviny na Mars, a stala se první lodí, kterou si mohl koupit kdokoli.
 
 ## Temná doba Messerů
 

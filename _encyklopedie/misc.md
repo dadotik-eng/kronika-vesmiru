@@ -18,7 +18,7 @@ zdroje:
   hash: 096276c2c2feafcf53e8c4dc96d8ed260323041f632b37a10f4b74e51986061a
 ---
 
-MISC vznikla z dohodnuté svatby dvou firem a stala se páteří lidské nákladní dopravy – a mostem k Xi'anům.
+MISC vznikla z dohodnuté svatby dvou firem a stala se páteří lidské nákladní dopravy – a mostem k Xi’anům.
 
 ## Spojení výroby a designu
 
@@ -26,17 +26,17 @@ V roce 2805 se krachující Hato Electronics Corporation, která měla obří s�
 
 Továrny MISC jsou proslulé: každý díl lodi s naprostou přesností skládají roboti a identické modulární výrobní linky stojí na desítkách světů.
 
-## Těžký průmysl a Xi'ani
+## Těžký průmysl a Xi’ani
 
 Většinu peněz firmě po celou její historii vydělávala divize těžkého průmyslu MISC-HI. Její modulární nákladní trupy – od úsporného MISC-A po obří MISC-D – tvoří základ většiny firemní dopravy lidí a potkáš je všude v impériu.
 
-Nečekaně si je oblíbili i Xi'ani, a za hranicí se dokonce objevili napodobitelé. Z obliby vyrostl neobvyklý obchodní vztah: v roce 2910 uzavřela MISC na neveřejném jednání s Xi'any dohodu o pronájmu technologií, jako jediná lidská lodní firma. Podrobnosti jsou přísně tajné, podle zasvěcených se ale xi'anská technika výrazně promítla do vývoje lodi Freelancer a na hraničních stanicích přibývá trupů MISC-D, které vypadají jako vyrobené Xi'any. Divočejší fámy tvrdí, že další lodě MISC dostanou upravené xi'anské trysky.
+Nečekaně si je oblíbili i Xi’ani, a za hranicí se dokonce objevili napodobitelé. Z obliby vyrostl neobvyklý obchodní vztah: v roce 2910 uzavřela MISC na neveřejném jednání s Xi’any dohodu o pronájmu technologií, jako jediná lidská lodní firma. Podrobnosti jsou přísně tajné, podle zasvěcených se ale xi’anská technika výrazně promítla do vývoje lodi Freelancer a na hraničních stanicích přibývá trupů MISC-D, které vypadají jako vyrobené Xi’any. Divočejší fámy tvrdí, že další lodě MISC dostanou upravené xi’anské trysky.
 
 ## Freelancer – loď, o které se hádají všichni
 
 Freelancer přenáší modulárnost těžkých trupů na menší, osobitou loď. Původně se prodával jako úsporná obchodní loď pro dálkové cesty, rychle se ale stal oblíbenou lodí průzkumníků – má dolet dopravní lodi a místo pro pokročilé skenery i skokovou techniku. Jeho kapitáni v posledních letech zmapovali řadu nových skokových bodů.
 
-Žádná jiná loď nevyvolává tolik sporů. Odpůrci tvrdí, že je ošklivá, z kokpitu je špatný výhled a na papíře se nehodí na to, k čemu se používá. Příznivci odpovídají, že je tajemstvím jejich úspěchu – levná loď, která zvládne mnoho z toho co RSI Constellation, ale s mnohem menší posádkou. Obraz odvážných kapitánů na hranicích přitom kontrastuje s přísně organizovanou firmou za ní. Pravdou je, že bez té organizace by Freelancer nevznikl: každý detail, od umístění radaru po tvarované držáky na hrnky, prošel statisíci hodin výzkumu a zkoušek.
+Žádná jiná loď nevyvolává tolik sporů. Odpůrci tvrdí, že je ošklivá, z kokpitu je špatný výhled a na papíře se nehodí na to, k čemu se používá. Příznivci odpovídají, že je tajemstvím jejich úspěchu – levná loď, která zvládne mnoho z toho, co RSI Constellation, ale s mnohem menší posádkou. Obraz odvážných kapitánů na hranicích přitom kontrastuje s přísně organizovanou firmou za ní. Pravdou je, že bez té organizace by Freelancer nevznikl: každý detail, od umístění radaru po tvarované držáky na hrnky, prošel statisíci hodin výzkumu a zkoušek.
 
 ## Starfarer – tankovací loď galaxie
 

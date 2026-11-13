@@ -24,7 +24,7 @@ Stella Fortuna je svátek štěstí, odvahy a nových začátků. Slaví se 15. 
 
 ## Katastrofa a vzdor
 
-První kolonie na Marsu zanikla, když se těsně před koncem terraformace zhroutila atmosféra. Zahynulo 4 876 lidí. Druhý pokus o osídlení považovali mnozí za předem prohraný. Novinářka Kelsey Forset tehdy napsala, ať budoucí osadníci „nepokoušejí osud“. Osadníci si to vzali po svém: slovo „ne“ škrtli a z hesla „Pokoušejte osud“ udělali neoficiální motto Marsu. Ten vzdor je v svátku dodnes.
+První kolonie na Marsu zanikla, když se těsně před koncem terraformace zhroutila atmosféra. Zahynulo 4 876 lidí. Druhý pokus o osídlení považovali mnozí za předem prohraný. Novinářka Kelsey Forset tehdy napsala, ať budoucí osadníci „nepokoušejí osud“. Osadníci si to vzali po svém: slovo „ne“ škrtli a z hesla „Pokoušejte osud“ udělali neoficiální motto Marsu. Ten vzdor je ve svátku dodnes.
 
 ## Školačka, která dala svátku jméno
 

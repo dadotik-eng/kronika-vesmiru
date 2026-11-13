@@ -36,11 +36,11 @@ Rozhodli se tedy zkusit štěstí jinde a zbylé peníze vložili do těžby. Ř
 
 Na počátku 28. století začala ArcCorp spolupracovat s gigantem terraformačního průmyslu BCK. ArcCorp získávala práva na terraformaci a BCK planety rychle a levně přestavěla. K překvapení všech, včetně BCK, pak ArcCorp použila rekordní zisky k nepřátelskému převzetí svého partnera. Pomohly tomu uniklé dokumenty o skandálech šéfa BCK; pozdější žaloba tvrdila, že ArcCorp informátora zaplatila, aby obvinění vymyslel. Obvinění nakonec padla, ale BCK už byla zdiskreditovaná. Nebylo to naposledy, co ArcCorp čelila podezření z nečistých praktik.
 
-V roce 2771 koupila malého výrobce trysek NovaLight, který měl skvělé inženýry, ale neuměl vyrábět ve velkém. Pozorovatelé to považovali za přehnanou expanzi. Jenže trysky značky ArcElite se díky šeptandě rychle staly oblíbenými mezi piloty a jejich technika je dodnes standardem. Ředitelka Carol Han pak skupovala jednu firmu za druhou. V 2810. letech začala ArcCorp vyrábět i fúzní motory, které jsou dnes standardem pro lodě delší než sto metrů.
+V roce 2771 koupila malého výrobce trysek NovaLight, který měl skvělé inženýry, ale neuměl vyrábět ve velkém. Pozorovatelé to považovali za přehnanou expanzi. Jenže trysky značky ArcElite se díky šeptandě rychle staly oblíbenými mezi piloty a jejich technika je dodnes standardem. Ředitelka Carol Han pak skupovala jednu firmu za druhou. V 10. letech 29. století začala ArcCorp vyrábět i fúzní motory, které jsou dnes standardem pro lodě delší než sto metrů.
 
 ## Planeta na prodej
 
-Vrcholem expanze byl rok 2865, kdy ArcCorp koupila od impéria planetu Stanton III – jeden z největších nákupů v dějinách korporací. Stavba začala okamžitě a vycházela z xi'anských teorií městského plánování a stavebních postupů, podle kterých Xi'ani budují své tovární světy. Fungovaly tak dobře, že pečlivě propočítané zásobování nestíhalo tempo stavby.
+Vrcholem expanze byl rok 2865, kdy ArcCorp koupila od impéria planetu Stanton III – jeden z největších nákupů v dějinách korporací. Stavba začala okamžitě a vycházela z xi’anských teorií městského plánování a stavebních postupů, podle kterých Xi’ani budují své tovární světy. Fungovaly tak dobře, že pečlivě propočítané zásobování nestíhalo tempo stavby.
 
 Dnes je to jeden z nejprůmyslovějších světů impéria. Kolem oceánů a pohoří se táhne síť mrakodrapů, továren, skladů, kanceláří a obytných center. Z oběžné dráhy to vypadá jako chaos, ale za vším stojí promyšlené plánování dopravy a zásobování. Výroba se střídá mezi provozy, aby šla pořád, a část továren vždy čeká v záloze pro náhlý nárůst poptávky.
 

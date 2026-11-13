@@ -13,7 +13,7 @@ zdroje:
   nazev: Osoians
   url: https://robertsspaceindustries.com/galactapedia/article/0NwpEy2LNM-osoians
   hash: 9ac6b135d8fd79c6b2dff4ca2350978fd533db5eeac1e65533bfee5f68ea52d5
-biologie: 'Osoiané jsou zajímaví hlavně pro jazykovědce: nedorozumívají se zvuky, ale záblesky barev, které vytvářejí kůží na čele. Další oficiální údaje o jejich těle zatím chybí.'
+biologie: 'Osoiané jsou zajímaví hlavně pro jazykovědce: dorozumívají se nikoli zvuky, ale záblesky barev, které vytvářejí kůží na čele. Další oficiální údaje o jejich těle zatím chybí.'
 ---
 
 Osoiané jsou rozvíjející se civilizace z planety Oso II. Jsou na začátku své cesty: znají nástroje a zbraně a staví vesnice se samostatně stojícími obydlími.

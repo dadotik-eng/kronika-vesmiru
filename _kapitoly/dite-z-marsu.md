@@ -20,7 +20,7 @@ stitky:
 overeni: OK
 overeno_kdy: '2026-11-11'
 overeno_kym: Kontrolor
-overeni_poznamka: 'Redaktor: OK (kolo 3). Kontrolor: OK – fakta sedí podle Galactapedie (Abeni Okon, Mars Tragedy, Mars Tragedy Memorial, Artemis). Nepotvrzené zůstávají jen dva obrazné detaily: barva marsovské oblohy a přesné načasování příchodu rodičů coby osadníků.'
+overeni_poznamka: 'Redaktor: OK (kolo 3). Kontrolor: OK – fakta sedí podle Galactapedie (Abeni Okon, Mars Tragedy, Mars Tragedy Memorial, Artemis). Původně nepotvrzené detaily doplněny 14. 11.: modrou oblohu roku 2157 uvádí Comm-Link 2157: Blue Skies on Mars, práci rodičů na projektu Comm-Link The Extraterrestrial Child.'
 slug: dite-z-marsu
 zdroje:
 - record_key: galactapedia:Rz2DPeZZnk
@@ -43,16 +43,21 @@ zdroje:
   nazev: '2157: Blue Skies on Mars'
   url: https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/12675-2157-Blue-Skies-On-Mars
   hash: 66aab852f00c3ec654332d7807133ec8c186ceef576853da0c45ee3b89c49573
+- record_key: commlink:13640
+  typ: Comm-Link
+  nazev: 'This Day in History: The Extraterrestrial Child'
+  url: https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/13640-This-Day-In-History-The-Extraterrestrial-Child
+  hash: 4e2f06317026f774695338e68be33121ea2078626c360dd05900a2d0cab4d48f
 ---
 
 Osmnáctého března roku 2157 se nad Marsem nerozlévalo žádné rudé nebe. Toho roku už bylo modré. Planeta, která lidstvu dlouho ukazovala jen prach a bouře, byla v polovině 50. let 22. století konečně úspěšně terraformována. Trvalo to roky a stálo to oběti – ten první pokus o terraformaci skončil katastrofou, která si v roce 2125 vyžádala tisíce životů. Mars se poučil. A pod tím nově modrým nebem se narodila Abeni Okon.
 
-Stala se první, která se narodila na jiné planetě než na Zemi – první dcerou jiného světa. Její rodiče, Kinah a Madu Okon, patřili mezi první osadníky Marsu – lidi, kteří přišli dřív, než bylo jasné, jestli to vůbec půjde.
+Stala se první, která se narodila na jiné planetě než na Zemi – první dcerou jiného světa. Její rodiče, Kinah a Madu Okon, patřili mezi první osadníky Marsu a na projektu terraformace pracovali už několik let.
 
-Dá se jen tušit, jaké to pro ni bylo – stát se symbolem dřív, než se naučila chodit. Média si ji vzala za svou okamžitě. Rodiče ji před tou pozorností podle všeho chránili, jak to jen šlo. Dětství podle všeho klidné nebylo – být první znamenalo být sledovaná. Koncem dospívání si slávu podle všeho naplno užívala, utrácela, žila na výsluní, které si nevybrala, ale zdědila narozením.
+Dá se jen tušit, jaké to pro ni bylo – stát se symbolem dřív, než se naučila chodit. Média si ji vzala za svou okamžitě. Rodiče ji před tou pozorností chránili, jak to jen šlo, ale klidné dětství to nebylo – být první znamenalo být sledovaná. Koncem dospívání si slávu naplno užívala, utrácela, žila na výsluní, které si nevybrala, ale zdědila narozením.
 
 A pak, koncem dvacítky, zmizela. Ne doslova – stáhla se z veřejného života a začala pracovat v komunitních programech. Proč, to prameny neříkají.
 
-Naposledy se objevila na veřejnosti roku 2232, jako čestný host při vypouštění lodi Artemis. Pak už jen ticho záznamů, dokud se v nich neobjevilo poslední datum – rok 2252, kdy zemřela přirozenou smrtí. Je pohřbená na Marsu, planetě, na níž se narodila jako první.
+Naposledy se objevila na veřejnosti roku 2232 jako čestný host při vypouštění lodi Artemis. Pak už jen ticho záznamů, dokud se v nich neobjevilo poslední datum – rok 2252, kdy zemřela přirozenou smrtí. Je pohřbená na Marsu, planetě, na níž se narodila jako první.
 
 Dodnes se osmnáctý březen slaví jako lidský svátek. Nejvíc právě na Marsu. Tam, kde kdysi bylo nebe rudé a pak se stalo modrým, a kde se jedna malá holčička stala důkazem, že lidstvo už není vázané na jedinou kolébku.

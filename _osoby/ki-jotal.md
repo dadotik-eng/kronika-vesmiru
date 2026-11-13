@@ -4,7 +4,7 @@ narozeni: neznámo
 umrti: žije
 role: ředitelka Ministerstva dopravy a navigace, první Tevarinka v kabinetu
 kategorie: xiani-tevarini
-medailonek: Ki Jotal je Tevarinka, kterou imperátorka Laylani Addison jmenovala ředitelkou Ministerstva dopravy a navigace Spojeného impéria Země (UEE). Stala se tak vůbec prvním Tevarinem v kabinetu. Příznivci imperátorky její jmenování uvádějí mezi hlavními úspěchy nové vlády, která slíbila posílit hlas Tevarinů ve státní správě. Addisonina administrativa navíc jmenovala do vládních funkcí víc Tevarinů než kterákoli vláda předtím.
+medailonek: Ki Jotal je Tevarinka, kterou imperátorka Laylani Addison jmenovala ředitelkou Ministerstva dopravy a navigace Spojeného impéria Země (UEE). Stala se tak vůbec první Tevarinkou v kabinetu. Příznivci imperátorky její jmenování uvádějí mezi hlavními úspěchy nové vlády, která slíbila posílit hlas Tevarinů ve státní správě. Addisonina administrativa navíc jmenovala do vládních funkcí víc Tevarinů než kterákoli vláda předtím.
 zdroje:
 - record_key: commlink:18694
   typ: Comm-Link

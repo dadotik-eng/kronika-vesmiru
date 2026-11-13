@@ -54,11 +54,11 @@ zdroje:
 ---
 Polohu soustavy Caliban prodala vládě roku 2341 dopravkyně Ashley Ghan. Klid ale netrval věčně. Od roku 2739 začaly do systému pronikat vanduulské nájezdy. Vanduulové, válečnický mimozemský rod, se tak stali hrozbou, s níž muselo Impérium v Calibanu napříště počítat.
 
-Rok 2792 přinesl nájezd, který si vyžádal přes sto obětí. Vláda tehdy do systému vyslala 31. bojovou skupinu, aby Caliban bránila. Poslední velký střet této skupiny s Vanduuly je zaznamenán k roku 2859.
+Rok 2792 přinesl nájezd, který si vyžádal přes sto obětí. Vláda tehdy do systému vyslala 31. bojovou skupinu, aby Caliban bránila. Poslední velký střet této skupiny s Vanduuly proběhl v roce 2859.
 
 Osudný obrat přišel 7. července 2884, krátce před pátou hodinou ranní. Vanduulský klan, vedený vlajkovou lodí typu Kingship, nepozorovaně proklouzl kolem obranných senzorových majáků. Velitelka Sylvie Randall z 89. logistické letky se rozhodla ustoupit na planetu Crion. Tam se její jednotka postavila mezi útočníky a prchající civilní konvoje. Díky této obraně se podařilo zachránit přes tři miliony obyvatel.
 
-Byl to statečný čin, ale ne vítězství. O šestnáct dní později, 23. července 2884, padl Crion i zbytek systému. Obrana se zhroutila zcela.
+Byl to statečný čin, ale ne vítězství. O šestnáct dní později, 23. července 2884, padl Crion i zbytek systému. Obrana se zcela zhroutila.
 
 Oficiální čísla mrtvých Impérium nikdy nezveřejnilo. Odhady hovoří o více než pěti a půl milionu obětí. Je to jedna z nejtemnějších kapitol válek s Vanduuly.
 

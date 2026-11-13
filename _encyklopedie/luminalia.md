@@ -32,7 +32,7 @@ Luminalia se slaví 22. prosince a je to svátek, který lidé převzali od Banu
 
 Banu při Luminalii zapalují obřadní lampy, které hoří, dokud jim nedojde olej. Po tu dobu jsou všichni Banu, ať jsou kdekoli, jedna velká Souli, rodina. Zvou do svých domovů přátele, obchodní partnery i náhodné kolemjdoucí a dávají jim dárky, aby měli vždy co prodat. Hosté mají na oplátku přinést jídlo a pití. A když nemají, hostitel jim je ochotně prodá.
 
-Původ svátku je neznámý, protože Banu nevedou historické záznamy. Je ale přinejmenším tak starý jako jejich styky s jinými civilizacemi. Už xi'anští diplomaté na planetě Trise I v roce 1927 xi'anského letopočtu žasli, jak si při něm vyměňují dárky i zapřisáhlí rivalové.
+Původ svátku je neznámý, protože Banu nevedou historické záznamy. Je ale přinejmenším tak starý jako jejich styky s jinými civilizacemi. Už xi’anští diplomaté na planetě Trise I v roce 1927 xi’anského letopočtu žasli, jak si při něm vyměňují dárky i zapřisáhlí rivalové.
 
 ## Jak se k němu přidali lidé
 

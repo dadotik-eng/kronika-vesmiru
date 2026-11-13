@@ -40,8 +40,8 @@ O dva týdny později dorazili do Davienu další Banu a navázali oficiální k
 
 ## Co se stalo s Jerrym
 
-Jerry se vrátil domů v naději, že ho oslaví. Jeho Souli mu ale nedůvěřovala a o vztahy s lidmi neměla zájem. Odešel, založil vlastní Souli pro styk s lidmi, ale ostatní ho předběhly. Bez peněz se nakonec vrátil do Davienu – a tam ho lidé obklopili a chtěli se s ním fotit. „Doma jsem byl jen další Banu, ale tady… tady jsem byl výjimečný,“ řekl později. Naučil se lidsky, cestoval s přednáškami o Banu a jeho přítelkyně z diplomatického týmu Natalia Gordillo o něm v roce 2447 napsala životopis. Jerry zemřel ve svém domě v Davienu 2. listopadu 2456, obklopen lidskými i banuskými přáteli. Banu si ho nepamatují, protože nevedou historické záznamy ani neoslavují slavné osobnosti. Lidé ano.
+Jerry se vrátil domů v naději, že ho oslaví. Jeho Souli mu ale nedůvěřovala a o vztahy s lidmi neměla zájem. Odešel, založil vlastní Souli pro styk s lidmi, ale ostatní ho předběhly. Bez peněz se nakonec vrátil do Davienu – a tam ho lidé obklopili a chtěli se s ním fotit. „Doma jsem byl jen další Banu, ale tady… tady jsem byl výjimečný,“ řekl později. Naučil se lidsky, cestoval s přednáškami o Banu a jeho přítelkyně z diplomatického týmu Natalia Gordillo o něm v roce 2447 napsala životopis. Jerry zemřel ve svém domě v Davienu 2. listopadu 2456, obklopen lidskými i banuskými přáteli. Banu si ho nepamatují – historické záznamy nevedou, a jeho příběh se tak mezi nimi neuchoval tak jako mezi lidmi. Lidé ano.
 
 ## Jak se slaví dnes
 
-Lidé ten den vaří nebo kupují jídla mimozemských kultur, pořádají večírky a nakupují v obchodech, které vlastní Banu, Tevarinové nebo Xi'ani.
+Lidé ten den vaří nebo kupují jídla mimozemských kultur, pořádají večírky a nakupují v obchodech, které vlastní Banu, Tevarinové nebo Xi’ani.

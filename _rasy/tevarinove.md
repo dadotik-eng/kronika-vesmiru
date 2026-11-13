@@ -6,7 +6,7 @@ barva: '#e0785c'
 domov: Kaleeth, dnes Jalan (Elysium IV)
 vztah: součást UEE
 kontakt: 2541, soustava Elysium
-perex: Hrdý válečnický národ, který lidstvo dvakrát porazilo. Ztratil domov i víru, ale po staletích se vrací ke svým kořenům.
+perex: Hrdý válečnický národ, který lidstvo porazilo ve dvou válkách. Ztratil domov i víru, ale po staletích se vrací ke svým kořenům.
 zdroje:
 - record_key: galactapedia:V8gJv3nB3X
   typ: Galactapedie
@@ -70,6 +70,6 @@ Roku 2541 objevil doktor Kellar Lench z institutu New Horizons skokový bod do s
 
 Roku 2603 se z temnoty vynořil vojevůdce Corath'Thal s novou flotilou a chtěl jediné: vrátit Tevarinům domov. Druhá tevarinská válka trvala sedm let a vedla se partyzánsky. Po porážce u Centauri v roce 2610 Corath'Thal se zbytkem pilotů odstranil tepelné štíty a vrhl se do atmosféry Jalanu. Jejich lodě shořely.
 
-Tahle oběť zlomila ducha celého národa. Následovala Očista: Tevarinové sami zničili záznamy, zavrhli Rijoru, strhli chrámy a splynuli s impériem. Většina záznamů o jejich dřívějším životě přežila jen díky lidem a Xi'anům. Jazyk se nikdy úplně neztratil – UEE se ho naučilo pro válečné účely a dodnes se jím mluví na Branaugh II, kde žije největší tevarinská komunita.
+Tato oběť zlomila ducha celého národa. Následovala Očista: Tevarinové sami zničili záznamy, zavrhli Rijoru, strhli chrámy a splynuli s impériem. Většina záznamů o jejich dřívějším životě přežila jen díky lidem a Xi’anům. Jazyk se nikdy úplně neztratil – UEE se ho naučilo pro válečné účely a dodnes se jím mluví na Branaugh II, kde žije největší tevarinská komunita.
 
-Po staletí je sociální a ekonomické podmínky tlačily k zločinu. Od počátku 30. století ale sílí hnutí za návrat ke kořenům. V systému Kabal se našly opuštěné osady, roku 2946 se Suj Kossi stal prvním tevarinským senátorem a imperátorka Addison jmenovala Ki Jotal první tevarinskou členkou vlády.
+Po staletí je nepříznivé sociální a ekonomické podmínky tlačily ke kriminalitě. Od počátku 30. století ale sílí hnutí za návrat ke kořenům. V systému Kabal se našly opuštěné osady, roku 2946 se Suj Kossi stal prvním tevarinským senátorem a imperátorka Addison jmenovala Ki Jotal první tevarinskou členkou vlády.

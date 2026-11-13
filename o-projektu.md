@@ -15,7 +15,7 @@ Deset hlavních kapitol si můžeš **poslechnout** v [archivu]({{ '/archiv/' | 
 
 1. **Rešerše** – fakta se dohledávají v oficiálních pramenech Roberts Space Industries: Galactapedie, Comm-Linky a Star Map.
 2. **Vyprávění** – z nalezených faktů vznikne kapitola. Vypravěč smí přidat atmosféru, ale žádná nová jména, data ani události.
-3. **Ověření** – kapitola se znovu porovná s prameny. Každá stránka ukazuje, zda ověřením prošla.
+3. **Ověření** – kapitola se znovu porovná s prameny. U samostatných kapitol je uvedeno, zda prošly ověřením.
 4. **Schválení** – nic se nezveřejní bez lidské kontroly.
 
 Když se prameny rozcházejí, kronika to přizná a uvede obě verze.

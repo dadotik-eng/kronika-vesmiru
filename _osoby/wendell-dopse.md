@@ -22,7 +22,7 @@ rad: 2399
 obdobi: une
 ---
 
-Zlevněný skokový pohon získal od projektu Far Star, který tehdy po celé Zemi náboral kolonisty a pomáhal průzkumníkům s vybavením lodí. Po instalaci prý loď pečlivě vydrhl, aby byla čistá na začátek Červeného festivalu 25. ledna.
+Zlevněný skokový pohon získal od projektu Far Star, který tehdy po celé Zemi nabíral kolonisty a pomáhal průzkumníkům s vybavením lodí. Po instalaci prý loď pečlivě vydrhl, aby byla čistá na začátek Červeného festivalu 25. ledna.
 
 Poslední den svátku šel s rodinou na slavnost lampionů a dlouho s dcerou luštil obzvlášť těžkou hádanku. V tu chvíli prý uviděl ten osamělý lampion, stranou od ostatních. Rozloučil se, běžel k lodi a letěl za ním.
 

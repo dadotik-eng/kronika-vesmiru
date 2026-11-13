@@ -4,7 +4,7 @@ narozeni: '2867'
 umrti: žije
 role: výkonný ředitel Hurston Dynamics
 kategorie: korporace
-medailonek: '„Plukovník“ Gavin E. Hurston je současným výkonným ředitelem společnosti Hurston Dynamics. V roce 2915 vystřídal v čele firmy svou matku Magdu Hurston, z jejíž iniciativy firma koupila planetu Stanton I od Spojeného impéria Země (UEE). Pokračuje v politice svých předchůdců: planetu dál drancuje povrchovou těžbou a místo běžných pracovních poměrů používá smlouvy typu Life/Labor.'
+medailonek: '„Plukovník“ Gavin E. Hurston je současným výkonným ředitelem společnosti Hurston Dynamics. V roce 2915 vystřídal v čele firmy svou matku Magdu Hurston, z jejíž iniciativy firma koupila planetu Stanton I od Spojeného impéria Země (UEE). Pokračuje v politice svých předchůdců: pokračuje v rozsáhlé povrchové těžbě a místo běžných pracovních poměrů používá smlouvy typu Life/Labor.'
 zdroje:
 - record_key: galactapedia:RzPoAdZpEl
   typ: Galactapedie

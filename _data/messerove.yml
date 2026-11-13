@@ -11,6 +11,7 @@ clenove:
     jmeno: Ivar Messer I.
     zivot: 2516–2592
     vlada: 2546–2592
+    poznamka_vlada: Prvním občanem od 15. prosince 2546, imperátorem od počátku roku 2547.
     cislo: I
     gen: 0
     x: 590
@@ -117,7 +118,7 @@ clenove:
     zdroj: https://robertsspaceindustries.com/galactapedia/article/RkZ9W2L2NB-samuel-messer-viii
     jmeno: Samuel Messer VIII.
     zivot: 2678–2715
-    vlada: 2697–2715
+    vlada: 2697/2701–2715
     cislo: VIII
     gen: 4
     x: 1000

@@ -33,6 +33,6 @@ Víc o tom, jak kronika vzniká, se dočteš v části [O projektu]({{ '/o-proje
 - Lidé nejsou ve vesmíru sami. **Banu** jsou obchodníci a první civilizace, kterou potkali. S **Xi’any** vedli dlouhou studenou válku, s **Tevariny** dvě skutečné. **Vanduulové** jsou nepřátelské klany, se kterými se dodnes bojuje.
 - Mezi hvězdami se cestuje přes **skokové body**, přirozené tunely do jiných soustav. Nové body hledají a mapují **navjumpeři**.
 - V letech 2546–2792 vládli impériu **Messerové**, dynastie diktátorů. Jejich pád otevřel cestu k obnově demokracie a dodnes se z jejich spisů odhaluje, co se tehdy skutečně dělo.
-- Herní rok **2956** je přítomnost. Běží souběžně s naším časem a příběh se stále píše.
+- Současným herním rokem je **2956**. Běží souběžně s naším časem a příběh se stále píše.
 
 </article>

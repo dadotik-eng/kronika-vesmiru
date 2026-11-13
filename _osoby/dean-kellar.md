@@ -21,7 +21,7 @@ rad: 2901
 obdobi: naprava
 ---
 
-Odkud Kellar pocházel, se neví; jedni tvrdí, že z Terry, jiní že ze slumů Angeli. Při té první zadržené loupeži v hangáru ho policie našla, jak se pokouší vystřelit raketami z cizí lodi na zapečetěná vrata. Soudci v něm dlouho viděli vzteklého kluka, kterého jde převychovat, a on toho rád zneužíval. Jedinou věc měl opravdu rád: lodě. Hltal o nich všechno, co našel.
+Odkud Kellar pocházel, se neví; jedni tvrdí, že z Terry, jiní že ze slumů Angeli. Při prvním pokusu o loupež, při němž byl zadržen, ho policie našla v hangáru, jak se pokouší vystřelit raketami z cizí lodi na zapečetěná vrata. Soudci v něm dlouho viděli vzteklého kluka, kterého jde převychovat, a on toho rád zneužíval. Jedinou věc měl opravdu rád: lodě. Hltal o nich všechno, co našel.
 
 Na QuarterDeck ho poslali po krvavé vzpouře v nápravném zařízení Kiritov, kterou sám rozpoutal. Vrátil se změněný – místo vzteku a touhy po adrenalinu chladný profesionál. U pašerácké sítě Ligo Crew se poprvé dostal do kokpitu a ukázal se jako vynikající pilot. Ve volném čase lovil konkurenci a poškozoval jejich lodě tak, aby je chytily úřady. Nakonec Ligo Crew sám zničil po „rozdílu názorů“ na její směřování a putoval od syndikátu k syndikátu jako nájemný zabiják.
 

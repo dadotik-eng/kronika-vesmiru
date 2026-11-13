@@ -8,11 +8,16 @@ out = {}
 for sc in D['scenes']:
     if not (sc['id'].startswith('kap-') or sc['id'] in ('letka', 'prolog')):
         continue
-    odst, posl = [], None
+    odst, posl, byl_p = [], None, False
     for l in sc['lines']:
         kdo, t = l.get('who', 'ARCHIVÁŘ'), l['t']
-        if sc['id'].startswith('kap-') and 'p' not in l:
+        if sc['id'].startswith('kap-') and 'p' not in l and not byl_p:
             continue  # úvodní věta „Kapitola první. …“
+        if 'p' in l: byl_p = True
+        # věta bez čísla odstavce po začátku kapitoly = pokračování předchozího odstavce (kap. IX)
+        if kdo == 'ARCHIVÁŘ' and 'p' not in l and byl_p and posl is not None and posl['kdo'] == 'ARCHIVÁŘ':
+            posl['text'] += ' ' + t
+            continue
         if kdo == 'ARCHIVÁŘ' and 'p' in l and posl is not None and posl.get('p') == l['p'] and posl['kdo'] == 'ARCHIVÁŘ':
             posl['text'] += ' ' + t
             continue

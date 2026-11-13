@@ -3,7 +3,7 @@ nazev: Red Festival
 sekce: svatky
 poradi: 1
 stitek: Konec ledna až začátek února
-perex: Po celém impériu se každoročně schovávají miliony zlatě zdobených červených obálek. Tradici převzali i Banu a schovávají obálky na počest Cassy, patrona štěstí.
+perex: Po celém impériu se každoročně schovávají miliony zlatě zdobených červených obálek. Tradici převzali i Banu a schovávají obálky na počest Cassy, božstva štěstí.
 kdy_od: '01-20'
 kdy_do: '02-10'
 kapitoly: []
@@ -45,8 +45,8 @@ Dopseho úspěch inspiroval další, aby to zkusili taky a odstartovali posledn�
 
 ## Banu a schované obálky
 
-V 25. století se jedna z největších oslav mimo Zemi konala v soustavě Davien, kde lidé v roce 2438 poprvé potkali Banu. Banuští obchodníci brzy pochopili, že kolem svátku mají mít na lodích zásobu červeného zboží a zlacených obálek. Nikdo neví, kdo jako první schoval obálku, aby ji našel kdokoli. Tradice ale vznikla v Davienu a Banu ji nadšeně přijali na počest Cassy, svého patrona štěstí. Na začátku 26. století se hledání obálek rozšířilo po celém impériu – obálka může ležet v odhozeném časopise nebo na skříňce na konci tmavé chodby vesmírné stanice.
+V 25. století se jedna z největších oslav mimo Zemi konala v soustavě Davien, kde lidé v roce 2438 poprvé potkali Banu. Banuští obchodníci brzy pochopili, že kolem svátku mají mít na lodích zásobu červeného zboží a zlacených obálek. Nikdo neví, kdo jako první schoval obálku, aby ji našel kdokoli. Tradice ale vznikla v Davienu a Banu ji nadšeně přijali na počest Cassy, svého božstva štěstí. Na začátku 26. století se hledání obálek rozšířilo po celém impériu – obálka může ležet v odhozeném časopise nebo na skříňce na konci tmavé chodby vesmírné stanice.
 
 ## Jak se slaví dnes
 
-Red Festival je dnes oblíbenější než kdykoli předtím a slaví se v celém impériu i v Banuském protektorátu. Lidé nosí červenou a zlatou, jedí dlouhá jídla, třeba červeně obarvené nudle nebo dušená chapadla calosska, a hledají schované obálky. Pořádají se i okázalé dobročinné večírky, kde se slaví lunární nový rok, vzpomíná na zesnulé blízké a přeje si štěstí. Někteří hosté věří, že kdo najde nejvíc obálek, bude mít úspěšný rok – a kvůli tomu se tam občas strhne i pořádná hádka.
+Red Festival je dnes oblíbenější než kdykoli předtím a slaví se v celém impériu i v Banuském protektorátu. Lidé nosí červenou a zlatou, jedí jídla podlouhlého tvaru, třeba červeně obarvené nudle nebo dušená chapadla calosska, a hledají schované obálky. Pořádají se i okázalé dobročinné večírky, kde se slaví lunární nový rok, vzpomíná na zesnulé blízké a přeje si štěstí. Někteří hosté věří, že kdo najde nejvíc obálek, bude mít úspěšný rok – a kvůli tomu se tam občas strhne i pořádná hádka.

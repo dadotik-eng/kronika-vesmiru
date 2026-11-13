@@ -6,7 +6,7 @@ barva: '#f06a6a'
 domov: neznámý
 vztah: válka
 kontakt: 2681, Armitage (Orion III)
-perex: Kočovné válečnické klany bez domova a bez vlády. Každé setkání s nimi skončilo masovým umíráním a nikdo neví, proč lidi tak nenávidí.
+perex: Kočovné válečnické klany bez domova a bez vlády. Dosavadní střetnutí s nimi měla ničivé následky a nikdo neví, proč lidi tak nenávidí.
 zdroje:
 - record_key: galactapedia:VpGPp92gdO
   typ: Galactapedie
@@ -59,12 +59,12 @@ galerie:
 - /assets/rasy/vanduulove-1.webp
 ---
 
-Lidé se s Vanduuly poprvé setkali roku 2681, když jeden klan přepadl osadu Dell Township na planetě Armitage v soustavě Orion. Přežil jediný osadník. Od té doby skončilo masovým umíráním každé setkání. Po pádu Messerů se nová vláda pokusila navázat diplomatické vztahy – vyslanci byli bez výjimky přivítáni laserovou palbou. Proč Vanduulové lidi tolik nenávidí, nevíme.
+Lidé se s Vanduuly poprvé setkali roku 2681, když jeden klan přepadl osadu Dell Township na planetě Armitage v soustavě Orion. Přežil jediný osadník. Od té doby měla ozbrojená střetnutí s nimi ničivé následky. Po pádu Messerů se nová vláda pokusila navázat diplomatické vztahy – vyslanci byli bez výjimky přivítáni laserovou palbou. Proč Vanduulové lidi tolik nenávidí, nevíme.
 
 Jejich domovský svět nikdo nezná. Někteří vědci se domnívají, že byl zničen nebo opuštěn a klany se od té doby toulají vesmírem. Ústřední vládu nemají. Každý klan je samostatná společnost s vlastními zákony a zvyky, které určuje náčelník, a funguje jako válečnická meritokracie: jsi tím, co získáš. Mírovou smlouvu s Vanduuly jako celkem proto nejspíš uzavřít nejde. Válčí stejně ochotně spolu navzájem jako s ostatními.
 
-Klany se živí nájezdy na osady i na sebe navzájem. Menší nájezdy jsou rychlé útoky z úkrytu, ty velké nasazují obří těžební stroje zvané Harvestery, které vysávají suroviny z povrchu planet. Časté nájezdy bývají předzvěstí invaze. Naučili se i lidskou infrastrukturu: nejdřív ničí komunikační stanice, pak přistávací plochy, a nakonec procházejí osadou pěšky. Úmyslně nenechávají přeživší. Nejmocnější klany vlastní obří lodě, kterým lidé říkají Kingship. Jedna z nich roku 2712 dobyla Orion, jiná roku 2884 Caliban. Teprve roku 2945 u Vegy II se lidem poprvé podařilo jednu zničit.
+Klany se živí nájezdy na osady i na sebe navzájem. Menší nájezdy jsou rychlé útoky z úkrytu, ty velké nasazují obří těžební stroje zvané Harvestery, které vysávají suroviny z povrchu planet. Časté nájezdy bývají předzvěstí invaze. Naučili se také systematicky útočit na lidskou infrastrukturu: nejdřív ničí komunikační stanice, pak přistávací plochy, a nakonec procházejí osadou pěšky. Úmyslně nezanechávají přeživší. Nejmocnější klany vlastní obří lodě, kterým lidé říkají Kingship. Jedna z nich roku 2712 dobyla Orion, jiná roku 2884 Caliban. Teprve roku 2945 u Vegy II se lidem poprvé podařilo jednu zničit.
 
-Nejvíc lidé zjistili z ukořistěné válečné lodi, které rozvědka říkala X12. Nikdo z posádky výslech nepřežil. Na palubě se ale našly trofeje – banuské vázy, xi'anské prsteny a na stěnách kapitánovy kajuty desítky vybělených lidských kostí z paží. Byla tam i místnost s nástěnnými malbami růžově kvetoucích stromů, posilovnou a bazénem a „kaple“ s vitrážemi nožů. Jejich písmo připomíná směs hieroglyfů a Braillova písma a nikdo ho zatím nerozluštil.
+Nejvíc lidé zjistili z ukořistěné válečné lodi, které rozvědka říkala X12. Nikdo z posádky výslech nepřežil. Na palubě se ale našly trofeje – banuské vázy, xi’anské prsteny a na stěnách kapitánovy kajuty desítky vybělených lidských kostí z paží. Byla tam i místnost s nástěnnými malbami růžově kvetoucích stromů, posilovnou a bazénem a „kaple“ s vitrážemi nožů. Jejich písmo připomíná směs hieroglyfů a Braillova písma a nikdo ho zatím nerozluštil.
 
-Ústřední roli v jejich životě hraje nůž. V dospělosti, zhruba ve třinácti či čtrnácti lidských letech, je každý Vanduul vyhnán z rodiny. Rodiče mu na cestu vyrobí nůž a ten je jeho jediným majetkem – žádné peníze, dědictví ani pomoc. Všechno, co v životě získá, začíná tím nožem. Kdo nůž ukradne nebo koupí, o ten ho Vanduulové připraví tím nejbolestivějším způsobem. Náboženství nemají; nejblíž k němu mají obdiv k jednotlivcům, kteří vlastními silami něčeho dosáhli. Při obchodu, který s nimi provozují jen některé banuské planety, jsou strohí a zdvořilosti považují za ztrátu času i urážku.
+Ústřední roli v jejich životě hraje nůž. V dospělosti, zhruba ve třinácti či čtrnácti lidských letech, je každý Vanduul vyhnán z rodiny. Rodiče mu na cestu vyrobí nůž a ten je jeho jediným majetkem – žádné peníze, dědictví ani pomoc. Všechno, co v životě získá, začíná tím nožem. Kdo si nůž opatří krádeží nebo koupí, toho o něj Vanduulové připraví tím nejbolestivějším způsobem. Náboženství nemají; nejblíž k němu mají obdiv k jednotlivcům, kteří vlastními silami něčeho dosáhli. Při obchodu, který s nimi provozují jen některé banuské planety, jsou strohí a zdvořilosti považují za ztrátu času i urážku.

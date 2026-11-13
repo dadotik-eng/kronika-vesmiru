@@ -43,7 +43,7 @@ Pak se stalo něco nečekaného. Civilisté si začali vojenské lodě Aegis upr
 
 **Reclaimer** je dnes nejprodávanější vojenskou lodí firmy – těžká vrakovací loď pro podporu v boji s drony, vlečnými paprsky a skokovým pohonem dlouhého dosahu. Na hranicích ho civilisté používají k vrakování i k průzkumu.
 
-**Idris** je korveta, dnes jedna z největších lodí Aegis (dřív firma stavěla i bitevní křižníky). Vojenská Idris-M slouží v námořnictvu na hlídky, průzkum nebezpečných skokových bodů i k přepadům. Lehčí Idris-P bez hlavního děla používají domobrany proti pašerákům. V omezeném počtu se prodává i civilistům a stala se luxusním zbožím – být kapitánem Idris je prestiž a o každý kus se soupeří.
+**Idris** je fregata (původní zadání z roku 2545 počítalo s korvetou), dnes jedna z největších lodí Aegis (dřív firma stavěla i bitevní křižníky). Vojenská Idris-M slouží v námořnictvu na hlídky, průzkum nebezpečných skokových bodů i k přepadům. Lehčí Idris-P bez hlavního děla používají domobrany proti pašerákům. V omezeném počtu se prodává i civilistům a stala se luxusním zbožím – být kapitánem Idris je prestiž a o každý kus se soupeří.
 
 ## Dnes
 
