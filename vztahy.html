@@ -14,8 +14,8 @@ popis: Kdo koho svrhl, kdo s kým spolupracoval a kdo komu předal trůn – vzt
     <label class="mapa-hledat"><span class="sr">Najít osobnost</span>
       <select id="vz-vyber"><option value="">Najít osobnost…</option></select>
     </label>
-    <label class="mapa-filtr"><input type="checkbox" id="vz-vsichni"> ukázat i osobnosti bez vazeb</label>
-    <ul class="mapa-legenda vz-typy" id="vz-typy" aria-label="Typy vazeb"></ul>
+    <div class="mapa-prepinace vz-typy" id="vz-typy" role="group" aria-label="Typy vazeb"></div>
+    <button type="button" class="prepinac" id="vz-vsichni" aria-pressed="false">I osobnosti bez vazeb</button>
   </div>
 
   <div class="mapa-rozvrzeni">
@@ -30,7 +30,6 @@ popis: Kdo koho svrhl, kdo s kým spolupracoval a kdo komu předal trůn – vzt
         <button type="button" class="tlacitko" data-zoom="0.714" aria-label="Oddálit">−</button>
         <button type="button" class="tlacitko" data-zoom="0" aria-label="Celá síť">⤢</button>
       </div>
-      <p class="mapa-napoveda">Táhni pro posun · kolečko nebo dva prsty pro přiblížení</p>
     </div>
     <aside class="mapa-panel" id="vz-panel" aria-live="polite"></aside>
   </div>
@@ -62,9 +61,9 @@ popis: Kdo koho svrhl, kdo s kým spolupracoval a kdo komu předal trůn – vzt
     kresli(minY - 120, maxY + 80);
     var tl = document.getElementById('vz-typy');
     Object.keys(typy).forEach(function (k) {
-      tl.insertAdjacentHTML('beforeend', '<li><label><input type="checkbox" checked data-typ="' + k + '"> <i style="background:' + BARVY[k] + '"></i>' + esc(typy[k]) + '</label></li>');
+      tl.insertAdjacentHTML('beforeend', '<button type="button" class="prepinac vz-typ-tl" aria-pressed="true" data-typ="' + k + '" style="--barva:' + BARVY[k] + '"><i></i>' + esc(typy[k]) + '</button>');
     });
-    tl.querySelectorAll('input').forEach(function (c) { c.addEventListener('change', function () { skryteTypy[c.dataset.typ] = !c.checked; obnovViditelnost(); }); });
+    tl.querySelectorAll('[data-typ]').forEach(function (c) { c.addEventListener('click', function () { var zap = c.getAttribute('aria-pressed') !== 'true'; c.setAttribute('aria-pressed', zap); skryteTypy[c.dataset.typ] = !zap; obnovViditelnost(); }); });
     osoby.slice().sort(function (a, b) { return prijmeni(a.jmeno).localeCompare(prijmeni(b.jmeno), 'cs'); }).forEach(function (o) {
       vyber.insertAdjacentHTML('beforeend', '<option value="' + esc(o.id) + '">' + esc(o.jmeno) + (o.vazby.length ? ' (' + o.vazby.length + ')' : '') + '</option>');
     });
@@ -111,7 +110,7 @@ popis: Kdo koho svrhl, kdo s kým spolupracoval a kdo komu předal trůn – vzt
     });
   }
 
-  function viditelna(o) { return vsichni.checked || o.vazby.length > 0; }
+  function viditelna(o) { return vsichni.getAttribute('aria-pressed') === 'true' || o.vazby.length > 0; }
   function obnovViditelnost() {
     osoby.forEach(function (o) { o.el.style.display = viditelna(o) ? '' : 'none'; });
     vazby.forEach(function (v) { if (v.el) v.el.style.display = skryteTypy[v.typ] ? 'none' : ''; });
@@ -192,7 +191,7 @@ popis: Kdo koho svrhl, kdo s kým spolupracoval a kdo komu předal trůn – vzt
   }
   function vyberOsobu(id, vycentrovat) {
     var o = O[id]; if (!o) return;
-    if (!viditelna(o)) { vsichni.checked = true; obnovViditelnost(); }
+    if (!viditelna(o)) { vsichni.setAttribute('aria-pressed', 'true'); obnovViditelnost(); }
     vybrana = o; vyber.value = id; svg.classList.add('vz-zamereno');
     try { history.replaceState(history.state, '', '#' + id); } catch (e) {}
     var sousede = {};
@@ -235,6 +234,6 @@ popis: Kdo koho svrhl, kdo s kým spolupracoval a kdo komu předal trůn – vzt
     panel.querySelectorAll('.vz-jmeno').forEach(function (b) { b.addEventListener('click', function () { vyberOsobu(b.dataset.id, true); }); });
   }
   vyber.addEventListener('change', function () { if (vyber.value) vyberOsobu(vyber.value, true); else zrusVyber(); });
-  vsichni.addEventListener('change', obnovViditelnost);
+  vsichni.addEventListener('click', function () { vsichni.setAttribute('aria-pressed', vsichni.getAttribute('aria-pressed') !== 'true'); obnovViditelnost(); });
 })();
 </script>
