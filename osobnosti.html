@@ -31,7 +31,7 @@ popis: Rejstřík osob z dějin vesmíru Star Citizen. Imperátoři, objevitelé
 <div class="blok os-mrizka" id="osoby">
 {% for o in osoby %}
   <article class="osoba{% if o.ilustrace %} ma-ilustraci{% endif %}" id="{{ o.slug }}" data-k="{{ o.kategorie }}" data-rad="{{ o.rad }}" data-obdobi="{{ o.obdobi }}" data-hledat="{{ o.jmeno | downcase | escape }} {{ o.role | downcase | escape }}">
-    {% if o.ilustrace %}<figure class="os-ilustrace"><img src="{{ '/assets/osoby/' | append: o.slug | append: '.webp' | relative_url }}" alt="{% if o.ilustrace_popisek %}{{ o.jmeno | escape }}{% else %}Ilustrace: {{ o.jmeno | escape }}{% endif %}" loading="lazy" width="960" height="540"><figcaption>{{ o.ilustrace_popisek | default: "Ilustrační obrázek" }}</figcaption></figure>{% endif %}
+    {% if o.ilustrace %}<figure class="os-ilustrace"><img src="{{ '/assets/osoby/' | append: o.slug | append: '.webp' | relative_url }}" alt="{% if o.ilustrace_popisek %}{{ o.jmeno | escape }}{% else %}Ilustrace: {{ o.jmeno | escape }}{% endif %}" loading="lazy" width="960" height="540"><span class="il-jmeno" aria-hidden="true">{{ o.jmeno }}</span><figcaption>{{ o.ilustrace_popisek | default: "Ilustrační obrázek" }}</figcaption></figure>{% endif %}
     <header>
       <span class="os-emblem" aria-hidden="true"></span>
       <h2><a href="{{ o.url | relative_url }}">{{ o.jmeno }}</a></h2>

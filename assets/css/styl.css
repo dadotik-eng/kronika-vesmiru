@@ -884,3 +884,10 @@ main h1[tabindex="-1"]:focus, main[tabindex="-1"]:focus { outline: none; }
 .st-roky a { font-family: var(--label); font-size: .9rem; text-decoration: none; color: var(--akcent); border: 1px solid rgba(246,189,75,.4); border-radius: 99px; padding: 0 .6rem; }
 .st-roky a:hover { background: rgba(246,189,75,.14); }
 @media (max-width: 800px) { .st-seznam { grid-template-columns: 1fr; } .st-radek { grid-template-columns: 5px 3.4rem 1fr; gap: .7rem; } .st-cislo { font-size: 1.5rem; } }
+
+/* Jméno osoby přes spodní okraj ilustrace */
+.od-ilustrace, .os-ilustrace, .rod-portret { position: relative; }
+.il-jmeno { position: absolute; left: 0; right: 0; bottom: 0; padding: 1.6rem .9rem .55rem; font-family: var(--display); font-weight: 700; font-size: 1.15rem; letter-spacing: .03em; color: #f6f1e4; text-shadow: 0 1px 6px rgba(0,0,0,.8); background: linear-gradient(transparent, rgba(5,12,26,.88)); pointer-events: none; }
+.il-jmeno ~ figcaption { bottom: auto; top: 6px; }
+.os-ilustrace .il-jmeno { font-size: .95rem; padding: 1.2rem .7rem .45rem; }
+.rod-portret .il-jmeno { font-size: 1rem; }
