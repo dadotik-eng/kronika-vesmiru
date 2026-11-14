@@ -199,7 +199,7 @@
   popis: Loď Artemis, Nesův trojúhelník, Croshawův skok a levný pohon Tarsus.
 - rim: III
   title: Nejsme sami
-  rozpeti: 2380–2438
+  rozpeti: 2380–2456
   obdobi: une
   herni_rok: 2380
   hraj: kap-3
@@ -229,7 +229,42 @@
     nazev: First Contact Day
     url: https://robertsspaceindustries.com/galactapedia/article/01Lvo8ZWxX-first-contact-day
     hash: 26e1b20b81b8c2cb7e998afe2596a9565776631e97fae4c061d6fea9ced62039
-  popis: Spojené národy Země a první setkání s Banu.
+  - record_key: commlink:12687
+    typ: Comm-Link
+    nazev: "2380: Together We Rise"
+    url: https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/12687-2380-Together-We-Rise
+    hash: d4aab10eef173ac5e21501bc0ab5bc113bb36759ae9536a3565340dfe68ff490
+  - record_key: commlink:12690
+    typ: Comm-Link
+    nazev: "2438: Hello"
+    url: https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/12690-2438-Hello
+    hash: 4f02bb5a8ca6ce68e65554656aeab59457af10fabf29b5d46bc81d3f6ee2325a
+  - record_key: commlink:19597
+    typ: Comm-Link
+    nazev: "Jerry: A History Half-Remembered"
+    url: https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/19597-Jerry-A-History-Half-Remembered
+    hash: 9022ee7dce5eb6b686653782d523dceeee642aa867b15f5121d39a51e72216af
+  - record_key: commlink:13564
+    typ: Comm-Link
+    nazev: "Galactic Guide: Davien System"
+    url: https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/13564-Galactic-Guide-Davien-System
+    hash: 1db2176e04a476a585b20006bd757e875838802238745e78be8a7b41026000c6
+  - record_key: galactapedia:VYLwadeGEp
+    typ: Galactapedie
+    nazev: "Njeri"
+    url: https://robertsspaceindustries.com/galactapedia/article/VYLwadeGEp-njeri
+    hash: 83b36253fcad455ad16b53f1e7bfcce8eb57d9c0dc10c503afb5efd6e717c44f
+  - record_key: galactapedia:VY4Wnv7ZgW
+    typ: Galactapedie
+    nazev: "Banu-Human First Contact"
+    url: https://robertsspaceindustries.com/galactapedia/article/VY4Wnv7ZgW-banu-human-first-contact
+    hash: 8934e394d49539867135f641e49e1bb35a18cff196bb97d2a712be29efdb8631
+  - record_key: galactapedia:0qanKAEJwp
+    typ: Galactapedie
+    nazev: "Croshaw System"
+    url: https://robertsspaceindustries.com/galactapedia/article/0qanKAEJwp-crowshaw-system
+    hash: 8674e6d609efb411e24786a959b0c6aff97e459e1da84b74a0f1e1ff4127febb
+  popis: Spojené národy Země, Tarův kontakt v Davienu a příběh banuského uprchlíka Jerryho.
 - rim: IV
   title: Tři pilíře a první trhlina
   rozpeti: 2523–2530
