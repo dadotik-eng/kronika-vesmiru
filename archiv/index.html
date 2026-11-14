@@ -204,6 +204,11 @@ function duck(on){if(!E||ducked===on)return;ducked=on;E.duck.gain.setTargetAtTim
 function mood(m){if(!E)return;E.ctx.resume();if(curMood!==m){curMood=m;E.setMood(m)}E.schedule(E.ctx.currentTime+3)}
 const fx=n=>{if(E)E.fx(n)};
 
+/* Nahrávky (ElevenLabs, hlas Honza Bílek): assets/audio/<scéna>/index.json = [{i,f,v}].
+   Věta se přehraje z nahrávky, jen když nahrávka patří k jejímu současnému mluvenému textu (v); jinak hlas prohlížeče. */
+let curA=null;const NAHR={};
+function nahrSceny(id){if(NAHR[id])return;NAHR[id]='nacita';NAHR['_od_'+id]=Date.now();fetch('../assets/audio/'+id+'/index.json',{cache:'no-cache'}).then(r=>r.ok?r.json():[]).then(a=>{const m={};(a||[]).forEach(x=>{m[x.i]=x});NAHR[id]=m}).catch(()=>{NAHR[id]={}})}
+function nahravka(id,i,l){const m=NAHR[id];if(!m||m==='nacita')return null;const r=m[i];return r&&r.v===l.v?new URL('../assets/audio/'+id+'/'+r.f,location.href).href:null}
 /* Hlas: dočasný náhled ze syntézy prohlížeče. */
 const syn=HOST.speechSynthesis;let cz=null,voiceOn=true,voiceBroken=false;
 const PROF={"ARCHIVÁŘ":[.93,.82],"HLÍDKA JEDNA":[1.14,1.05],"HLÍDKA DVA":[1.22,1.22],"VELITELKA RANDALLOVÁ":[1.02,1.18],"VELÍN CRION":[1.1,.95],"CIVILNÍ TRANSPORT":[1.14,.86],"PILOT 89. LETKY":[.86,1.02],"DRUHÁ FLOTILA":[1,.76]};
@@ -216,7 +221,7 @@ function unlock(){entered=true;audioStart();if(syn)try{const u=new HOST.SpeechSy
 
 /* Navigace */
 let sc=-1,ln=0,playing=false,token=0,timers=[],rafYear=0,view='gate';
-const clear=()=>{timers.forEach(clearTimeout);timers=[];if(syn)try{syn.cancel()}catch(e){}};
+const clear=()=>{timers.forEach(clearTimeout);timers=[];if(syn)try{syn.cancel()}catch(e){}if(curA){try{curA.pause()}catch(e){}curA=null}};
 const after=(ms,f)=>timers.push(setTimeout(f,ms));
 const idx=id=>S.findIndex(s=>s.id===id);
 function chrome(v){view=v;setTimeout(stav,0);const film=v==='scene'||v==='gate'||v==='end';const st=$('#stage');st.className='stage'+(film?' film':'')+(v==='hub'?' hubv':'')+(v==='list'?' scroll':'');
@@ -270,7 +275,7 @@ let auto=false,viaFork=false;const AUTO_WAIT=5000;
 function autoNext(id,label){if(!auto)return '';after(AUTO_WAIT,()=>go(id));return `<p class="small" id="an" style="margin-bottom:16px">Za chvíli se automaticky spustí: ${label}. <button type="button" id="stopa" style="color:var(--accent);text-decoration:underline">Zastavit</button></p>`}
 function bindStop(){const b=$('#stopa');if(b)b.onclick=()=>{clear();$('#an').remove()}}
 function zapocitej(id){try{const k='kv-pocitano-'+id;if(sessionStorage.getItem(k))return;sessionStorage.setItem(k,'1')}catch(e){}if(!/^(prolog|letka|kap-\d+)$/.test(id))return;const f=document.createElement('iframe');f.hidden=true;f.setAttribute('aria-hidden','true');f.tabIndex=-1;f.src='../poslech/'+id+'/';document.body.appendChild(f);setTimeout(()=>f.remove(),15000)}
-function go(id,from=0){zapocitej(id);if(id!=='letka')viaFork=false;closeCard(false);clear();cancelAnimationFrame(rafYear);if(!entered)unlock();amb=false;sc=idx(id);ln=from;const s=S[sc];
+function go(id,from=0){zapocitej(id);nahrSceny(id);if(id!=='letka')viaFork=false;closeCard(false);clear();cancelAnimationFrame(rafYear);if(!entered)unlock();amb=false;sc=idx(id);ln=from;const s=S[sc];
   document.body.classList.remove('radio');document.body.dataset.mood=s.mood;chrome('scene');vis.mode=s.vis;vis.reset();
   if(E){curMood=null;mood(s.mood);E.setThreat(0)}
   $('#skip').hidden=id!=='prolog';
@@ -292,7 +297,15 @@ function run(){clear();const s=S[sc],l=s.lines[ln],my=++token;
   if(E&&playing){if(l.radio)E.fx('radio');if(l.fx)E.fx(l.fx)}
   if(!playing)return;
   const done=()=>{if(my!==token)return;duck(false);if(l.radio&&E&&l.fx!=='cut')E.fx('radio');after((l.h??.35)*1000/SPEED,()=>{if(my===token)next()})};
-  if(voiceOn&&canVoice()){let started=false,ended=false;const fin=()=>{if(!ended){ended=true;done()}};
+  if(voiceOn&&NAHR[s.id]==='nacita'&&Date.now()-NAHR['_od_'+s.id]<2500){after(120,()=>{if(my===token)run()});return}
+  const nUrl=voiceOn?nahravka(s.id,ln,l):null;
+  if(nUrl){let ended=false;const fin=()=>{if(!ended){ended=true;if(curA===a)curA=null;done()}};
+    const a=new HOST.Audio(nUrl);a.volume=VOLV;try{a.playbackRate=SPEED}catch(e){}
+    a.onplay=()=>duck(true);a.onended=fin;a.onerror=()=>after(est(l),fin);
+    after(120/SPEED,()=>{if(my===token){curA=a;a.play().catch(()=>after(est(l),fin))}});
+    const dalsi=s.lines[ln+1]?nahravka(s.id,ln+1,s.lines[ln+1]):null;if(dalsi){const p=new HOST.Audio();p.preload='auto';p.src=dalsi}
+    after(est(l)*3+6000,()=>{if(my===token)fin()});
+  }else if(voiceOn&&canVoice()){let started=false,ended=false;const fin=()=>{if(!ended){ended=true;done()}};
     const u=new HOST.SpeechSynthesisUtterance(bezRezie(l.v)),p=PROF[l.who]||[1,1];u.lang='cs-CZ';u.voice=cz;u.rate=p[0];u.pitch=p[1];u.volume=VOLV;
     u.onstart=()=>{started=true;duck(true)};u.onend=fin;u.onerror=e=>{if(e.error==='interrupted'||e.error==='canceled')return;voiceBroken=true;setVT();fin()};
     after(120/SPEED,()=>{if(my===token)syn.speak(u)});
