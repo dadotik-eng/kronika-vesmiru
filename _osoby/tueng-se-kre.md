@@ -1,5 +1,6 @@
 ---
 jmeno: T.uēng se Kr.ē
+vyslovnost: Tuejng se Krej
 narozeni: neznámo
 umrti: žije
 role: současný císař Xi’anů

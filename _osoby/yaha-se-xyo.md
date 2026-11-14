@@ -1,5 +1,6 @@
 ---
 jmeno: Y.ah'a se Xy.ō
+vyslovnost: Ja-ha se Šó
 narozeni: neznámo
 umrti: neznámo
 role: první xi’anská císařovna Druhého imperiálního věku

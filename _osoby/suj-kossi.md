@@ -1,5 +1,6 @@
 ---
 jmeno: Suj Kossi
+vyslovnost: Sudž Kosi
 narozeni: '2900'
 umrti: žije
 role: první tevarinský senátor (za Jalan)

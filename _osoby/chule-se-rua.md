@@ -1,5 +1,6 @@
 ---
 jmeno: Ch.ul'ē se Ru'a
+vyslovnost: Čulej se Ru-a
 narozeni: neznámo
 umrti: neznámo
 role: xi’anská císařovna Prvního imperiálního věku

@@ -1,5 +1,6 @@
 ---
 jmeno: Nē" se Ruoth
+vyslovnost: Nej se Ruot
 narozeni: '2475'
 umrti: '2898'
 role: xi’anská průzkumnice a historička
