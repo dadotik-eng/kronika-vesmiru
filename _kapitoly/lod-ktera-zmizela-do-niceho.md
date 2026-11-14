@@ -15,6 +15,95 @@ obrazek:
   vyska: 351
   alt: "Mapa posledních chvil lodi Goodman: trasa, místo srážky a poslední známá pozice před zmizením"
   popisek: "Poslední známá pozice lodi Goodman – obrázek z Comm-Linku 2262: The Neso Triangle · © Cloud Imperium Games"
+animace:
+  - veta: "Osm lidí na palubě"
+    vis: ship
+    lbl: "Goodman · osm lidí"
+  - veta: "Obyčejná trasa"
+    vis: orbit
+    lbl: "Neptun · srpen 2262"
+  - veta: "Pak přišla troska"
+    vis: signal
+    lbl: "Srážka s troskou"
+    o: {red: 1}
+  - veta: "Žádná katastrofa"
+    vis: jump
+    lbl: "Drift"
+    o: {s: anomaly}
+  - veta: "Posádka bojovala"
+    vis: ship
+    lbl: "Pomalý pohyb"
+  - veta: "Poslední, co po sobě"
+    vis: signal
+    lbl: "Poslední přenos"
+  - veta: "A pak ticho"
+    vis: silence
+    lbl: "Ticho"
+    o: {cut: 1, red: 1}
+  - veta: "Na poslední známé pozici"
+    vis: radar
+    lbl: "Pátrání"
+  - veta: "Loď prostě zmizela"
+    vis: record
+    lbl: "Zmizela"
+  - veta: "Během pár měsíců"
+    vis: toll
+    lbl: "Další dvě lodě"
+  - veta: "Úřady udělaly"
+    vis: jump
+    lbl: "Zakázaná oblast"
+    o: {s: anomaly, closed: 1}
+  - veta: "Lidé jí začali říkat"
+    vis: jump
+    lbl: "Neso Triangle"
+    o: {s: anomaly}
+  - veta: "Jméno, které dnes"
+    vis: jump
+    lbl: "Sol–Croshaw"
+    o: {s: through}
+  - veta: "O devět let později"
+    vis: jump
+    lbl: "Nick Croshaw · 2271"
+    o: {s: through}
+  - veta: "Systém po něm"
+    vis: map
+    lbl: "Croshaw"
+    o: {n: 2}
+  - veta: "Prameny se tu ovšem"
+    vis: record
+    lbl: "Dva záznamy"
+  - veta: "Na záhadu se čekalo"
+    vis: silence
+    lbl: "682 let"
+  - veta: "Vyřešila ji až náhoda"
+    vis: radar
+    lbl: "Icarus Cluster · 2944"
+  - veta: "Amatérská archeoložka"
+    vis: signal
+    lbl: "Nouzový maják"
+  - veta: "Paměť majáku"
+    vis: record
+    lbl: "Poškozená paměť"
+  - veta: "Ganesh souřadnice"
+    vis: map
+    lbl: "Mapa roku 2262"
+    o: {n: 2}
+  - veta: "Loď, co odešla"
+    vis: ship
+    lbl: "682 let bez cíle"
+  - veta: "Dnes stojí vrak"
+    vis: memorial
+    lbl: "Mōhio Museum"
+  - veta: "A doufá se"
+    vis: radar
+    lbl: "Další vraky?"
+  - veta: "Impérium má rádo"
+    vis: blank
+    lbl: "Uzavřený příběh"
+  - veta: "Vesmír je má radši"
+    vis: jump
+    lbl: "Rozpitvaný vesmír"
+    o: {s: anomaly}
 nahravka:
   soubor: /assets/audio/kapitoly/goodman-posledni-prenos.mp3
   pred: "A pak ticho."
