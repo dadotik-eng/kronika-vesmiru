@@ -936,3 +936,6 @@ main h1[tabindex="-1"]:focus, main[tabindex="-1"]:focus { outline: none; }
 .kapitola-nahravka { margin: 1.4rem 0; padding: .8rem 1rem; border: 1px solid var(--linka); border-left: 3px solid var(--akcent); border-radius: 6px; background: rgba(255,255,255,.03); }
 .kapitola-nahravka audio { width: 100%; }
 .kapitola-nahravka figcaption { margin-top: .4rem; font-size: .85rem; color: var(--tlumene); }
+.kapitola-obrazek { margin: 1.2rem 0 1.6rem; }
+.kapitola-obrazek img { display: block; width: 100%; height: auto; border-radius: 6px; border: 1px solid var(--linka); }
+.kapitola-obrazek figcaption { margin-top: .4rem; font-size: .85rem; color: var(--tlumene); }
