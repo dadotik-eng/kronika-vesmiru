@@ -1,0 +1,7 @@
+---
+layout: null
+permalink: /data/osoby-cteni.json
+---
+[{% for o in site.osoby %}{% assign era = site.data.ery | where: "id", o.obdobi | first %}
+{"slug":{{ o.slug | jsonify }},"jmeno":{{ o.jmeno | jsonify }},"vyslovnost":{{ o.vyslovnost | jsonify }},"narozeni":{{ o.narozeni | append: "" | jsonify }},"umrti":{{ o.umrti | append: "" | jsonify }},"role":{{ o.role | jsonify }},"era":{{ era.nazev | jsonify }},"medailonek":{{ o.medailonek | jsonify }},"html":{{ o.content | jsonify }},"zdroje":{{ o.zdroje | jsonify }}}{% unless forloop.last %},{% endunless %}{% endfor %}
+]
