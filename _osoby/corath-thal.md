@@ -1,5 +1,6 @@
 ---
 jmeno: Corath'Thal
+vyslovnost: Korat-tal
 narozeni: neznámo
 umrti: neznámo
 role: tevarinský válečný vůdce

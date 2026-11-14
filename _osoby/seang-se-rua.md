@@ -1,5 +1,6 @@
 ---
 jmeno: Se'ang se Ru'a
+vyslovnost: Se-ang se Ru-a
 narozeni: neznámo
 umrti: neznámo
 role: poslední xi’anský císař z rodu Ru'a

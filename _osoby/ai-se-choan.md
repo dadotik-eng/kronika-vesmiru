@@ -1,5 +1,6 @@
 ---
 jmeno: Āi se Cho'an
+vyslovnost: Áj se Čo-an
 narozeni: '2386'
 umrti: 2577?
 role: xi’anská navjumperka, objevitelka soustavy Yā'mon

@@ -1,5 +1,6 @@
 ---
 jmeno: Ki Jotal
+vyslovnost: Ki Džotal
 narozeni: neznámo
 umrti: žije
 role: ředitelka Ministerstva dopravy a navigace, první Tevarinka v kabinetu

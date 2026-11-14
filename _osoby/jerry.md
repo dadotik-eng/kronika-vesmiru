@@ -1,5 +1,6 @@
 ---
 jmeno: Njeri (Jerry)
+vyslovnost: Ňeri
 narozeni: asi 2396
 umrti: '2456'
 role: banuský uprchlík, první Banu, se kterým se setkali lidé

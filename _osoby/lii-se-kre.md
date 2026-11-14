@@ -1,5 +1,6 @@
 ---
 jmeno: Lii" se Kr.ē
+vyslovnost: Lí se Krej
 narozeni: neznámo
 umrti: neznámo
 role: císařovna Xi’anů (2372–2643)
