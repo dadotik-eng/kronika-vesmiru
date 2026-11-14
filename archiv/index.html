@@ -401,7 +401,7 @@ $('#share').onclick=e=>{if(sc<0)return;const u=location.origin+location.pathname
 /* Ovládání z hlavního webu (přehrávač vložený do stránky) */
 window.KRONIKA={play:(id,l)=>{if(idx(id)>=0){go(id,l||0);return true}
   /* kapitoly od bota se načítají později – počkat na ně */
-  if(/^web-/.test(id)&&typeof webReady!=='undefined')return webReady.then(()=>{if(idx(id)<0)return false;go(id,l||0);return true});return false},toggle:()=>{if(sc>=0)toggle()},pause:()=>{if(playing)toggle()},
+  if(/^(web|osoba)-/.test(id)&&typeof webReady!=='undefined')return webReady.then(()=>{if(idx(id)<0)return false;go(id,l||0);return true});return false},toggle:()=>{if(sc>=0)toggle()},pause:()=>{if(playing)toggle()},
   stop:()=>{stopScene();hub()},nav:h=>{location.hash=h},hudba:on=>hudba(!!on),hlas:on=>hlas(!!on),zvuk:()=>({musicOn,voiceOn,VOLM,VOLV}),stav:()=>stav(),fit:()=>{fit();placeNodes()}};
 
 /* Vizualizace */
@@ -771,7 +771,26 @@ async function loadWebChapters(){try{
   D.cats.pribehy.items=[...items,...D.cats.pribehy.items];
   if(view==='hub'||view==='list')route();
 }catch(e){}}
-const webReady=loadWebChapters();webReady.then(()=>{const w=wanted();const b=$('#go');if(w&&b){b.textContent='Přehrát: '+S[idx(w)].label}});
+/* Osobnosti z webu (data/osoby-cteni.json) – přehrávají se přes #osoba-<slug>, do seznamu příběhů se nepřidávají */
+async function loadPeople(){try{
+  await vyslReady;
+  const r=await fetch('../data/osoby-cteni.json',{cache:'no-store'});if(!r.ok)return;const list=await r.json();if(!Array.isArray(list))return;
+  const roky=o=>{const n=o.narozeni,u=o.umrti;if(u==='žije')return n&&n!=='neznámo'?'Narozen v roce '+n+', žije.':'';if((!n||n==='neznámo')&&(!u||u==='neznámo'))return '';return (n&&n!=='neznámo'?n:'?')+' až '+(u&&u!=='neznámo'?u:'?')+'.'};
+  list.forEach(o=>{if(!o||!o.slug||!o.jmeno)return;
+    const jm=String(o.jmeno),cti=o.vyslovnost?String(o.vyslovnost):null;
+    const hlas=s=>{let v=vyslov(s);if(cti){v=v.split(jm).join(cti);const bez=jm.replace(/\s*\(.*?\)\s*/g,' ').trim();if(bez&&bez!==jm)v=v.split(bez).join(cti)}return v};
+    const box=new DOMParser().parseFromString('<div>'+(o.html||'')+'</div>','text/html').body.firstChild;
+    const paras=[String(o.medailonek||'').trim(),...[...box.querySelectorAll('p,li')].map(p=>p.textContent.trim())].filter(Boolean);
+    const sent=[];let lastAv=null;
+    paras.forEach(p=>{const parts=p.split(/(?<=[.!?…]["“”»]?)\s+(?=[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ])/);parts.forEach((s,si)=>{s=s.trim();if(!s)return;const av=autoVis(s),key=av&&JSON.stringify(av);const l={who:'ARCHIVÁŘ',t:s,v:hlas(s),p:0,h:si===parts.length-1?.9:.4};if(av&&key!==lastAv){Object.assign(l,av);lastAv=key}sent.push(l)})});
+    if(!sent.length)return;
+    const head={who:'ARCHIVÁŘ',t:jm+'.',v:(cti||vyslov(jm.replace(/\s*\(.*?\)\s*/g,' ').trim()))+'.',h:.8,fx:'bell',vis:'voice',lbl:jm};
+    const lines=[head];const rk=roky(o);if(o.role)lines.push({who:'ARCHIVÁŘ',t:String(o.role).replace(/^./,c=>c.toUpperCase())+'.',v:hlas(String(o.role).replace(/^./,c=>c.toUpperCase()))+'.',h:.6});if(rk)lines.push({who:'ARCHIVÁŘ',t:rk,v:vyslov(rk),h:.7});
+    const src=(o.zdroje||[]).map(p=>p.nazev+(p.typ?' ('+p.typ+')':'')).join(' · ');
+    S.push({id:'osoba-'+o.slug,label:jm,sub:['Osobnosti',o.era].filter(Boolean).join(' · '),type:'lines',mood:'kapitola',vis:'orbit',lines:[...lines,...sent],note:src?'Prameny: '+src:''});
+  });
+}catch(e){}}
+const webReady=Promise.all([loadWebChapters(),loadPeople()]);webReady.then(()=>{const w=wanted();const b=$('#go');if(w&&b){b.textContent='Přehrát: '+S[idx(w)].label}});
 fit();route();if(reduce)draw(0);else requestAnimationFrame(loop);
 </script>
 </body>
