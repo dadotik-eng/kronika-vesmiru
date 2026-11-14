@@ -31,6 +31,13 @@ Platí pro Spisovatele, Redaktora, Režiséra (agenty v n8n) i pro ruční úpra
 ## Hlasy (rejstřík hlasů – doplní se po výběru)
 | Role (`who`) | Hlas | Poznámka |
 |---|---|---|
-| ARCHIVÁŘ | (vybere se) | vypravěč: mužský, starší, klidný, s vahou |
+| ARCHIVÁŘ | **Honza Bílek** (ElevenLabs, voice_id `kOWmvbNszhdJeaeyEzJB`, model `eleven_v4`) | vypravěč: mužský, starší, klidný, s vahou – vybráno 14. 11. 2026 |
 | rádiová hlášení (`radio`) | (vybere se) | jiný hlas, rádiový filtr |
 | postavy v citacích | podle potřeby | |
+
+## Nahrávky na webu (od 14. 11. 2026)
+- Soubory: `assets/audio/<scéna>/<věta>-<otisk>.mp3` a seznam `assets/audio/<scéna>/index.json` = `[{i, f, v}]`.
+- Přehrávač (`archiv/index.html`) přehraje nahrávku, jen když její `v` souhlasí se současným mluveným textem věty; jinak použije hlas prohlížeče. Po úpravě textu se tak stará nahrávka nepustí a stačí scénu namluvit znovu – přenamluví se jen změněné věty.
+- Vyrábí je workflow n8n **„Namluvit scénu (Hvězdná kronika)“** (`jWsIlOB021Lqo5lX`): načte scénu z přehrávače, vynechá hotové věty, každou pošle do ElevenLabs a mp3 uloží přes GitHub API. Vstup `scena` (prolog, kap-1 … kap-10, letka).
+- Zatím jen ARCHIVÁŘ; rádiová hlášení a postavy v dramatizaci (letka) mluví dál hlasem prohlížeče, dokud pro ně nevybereme hlasy.
+- Cena: zhruba 1 kredit ElevenLabs za znak (celá kronika ≈ 15 000 kreditů).
