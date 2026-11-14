@@ -21,6 +21,10 @@ on:
 permissions:
   contents: write
   actions: write
+concurrency:
+  group: beta
+  cancel-in-progress: false
+
 jobs:
   beta:
     runs-on: ubuntu-latest
