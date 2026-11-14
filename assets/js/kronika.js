@@ -276,7 +276,7 @@
     if (cesta.indexOf('archiv') === 0) {
       e.preventDefault();
       var h = decodeURIComponent(u.hash.slice(1)), dily = h.split('@');
-      if (/^(prolog|kap-\d+|letka|web-.+)$/.test(dily[0])) prehrat(dily[0], +dily[1] || 0, a.dataset.rozbalit === '1' || dily[0] === 'prolog');
+      if (/^(prolog|kap-\d+|letka|web-.+|osoba-.+)$/.test(dily[0])) prehrat(dily[0], +dily[1] || 0, a.dataset.rozbalit === '1' || dily[0] === 'prolog');
       else otevritArchiv(h || 'domu');
       return;
     }
