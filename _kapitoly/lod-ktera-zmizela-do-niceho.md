@@ -27,6 +27,7 @@ zdroje:
   - nazev: "Croshaw"
     typ: Star Map
     url: https://robertsspaceindustries.com/starmap?location=CROSHAW
+    record_key: system:CROSHAW
   - nazev: "Goodman"
     typ: Komunitní wiki
     url: https://starcitizen.tools/Goodman
