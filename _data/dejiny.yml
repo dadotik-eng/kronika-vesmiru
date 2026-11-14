@@ -78,6 +78,41 @@
     nazev: "Abeni Okon"
     url: https://robertsspaceindustries.com/galactapedia/article/Rz2DPeZZnk-abeni-okon
     hash: b54b51b3e41af1196f71f09538e2506d67cddafae0429f253dddc31641fd50f4
+  - record_key: commlink:15330
+    typ: Comm-Link
+    nazev: "Portfolio: 999th Test Squadron"
+    url: https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/15330-Portfolio-999th-Test-Squadron
+    hash: c4f4e4b2b8fde15935aec42fd3e8b2f741fbf56a8b8f91a535b08a5a564fc6a2
+  - record_key: commlink:12977
+    typ: Comm-Link
+    nazev: "News Update: WILL WE NEVER LEARN?"
+    url: https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/12977-News-Update-WILL-WE-NEVER-LEARN
+    hash: 10fb131788759952820fd0ea2a609e786099c11672df8230985bde39b5bc138c
+  - record_key: commlink:18297
+    typ: Comm-Link
+    nazev: "Loremakers: Community Questions"
+    url: https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/18297-Loremakers-Community-Questions
+    hash: 65318bc78a23b2fda17782435c057d6736bde90cdab0e071a4d7c60fc78be0e0
+  - record_key: commlink:17268
+    typ: Comm-Link
+    nazev: "Portfolio: RSI"
+    url: https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/17268-Portfolio-RSI
+    hash: 8991da8a6bc8a99aef63cfb5af8b3f39f40bb0b2a97e8d20ca9ab502504e0dcb
+  - record_key: galactapedia:RxNxLk4yNz
+    typ: Galactapedie
+    nazev: "Human Overpopulation Era"
+    url: https://robertsspaceindustries.com/galactapedia/article/RxNxLk4yNz-human-overpopulation-era
+    hash: c2d5bad076471135d2fdcaf0f5505e48297171cc87d7cc71f8e98280f8fe52a9
+  - record_key: galactapedia:bZkLx7GxXO
+    typ: Galactapedie
+    nazev: "Michelle Saleno"
+    url: https://robertsspaceindustries.com/galactapedia/article/bZkLx7GxXO-michelle-saleno
+    hash: b61224c8faebfe50417cba87cb78453c91dbc84eb8b1216ec01850d50b10dbbb
+  - record_key: galactapedia:0qa16drQN1
+    typ: Galactapedie
+    nazev: "999th Test Squadron"
+    url: https://robertsspaceindustries.com/galactapedia/article/0qa16drQN1-test-squadron-999
+    hash: b839bd81b81966bce855f09e2e3465eadd0c78eb05ee4e53e86edd618207f5b9
   popis: První kvantový pohon, terraformace Marsu a tragédie roku 2125.
 - rim: II
   title: První skok
