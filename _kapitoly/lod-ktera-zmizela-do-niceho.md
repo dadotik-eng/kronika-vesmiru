@@ -9,6 +9,10 @@ obdobi: skoky
 soustava: CROSHAW
 popis: "Nákladní loď Goodman zmizela v srpnu 2262 nedaleko Neptunu. Až v roce 2944 ji amatérská archeoložka našla driftovat v systému Croshaw."
 overeni: OK
+nahravka:
+  soubor: /assets/audio/kapitoly/goodman-posledni-prenos.mp3
+  pred: "A pak ticho."
+  popisek: "Poslední přenos lodi Goodman – záznam z Comm-Linku 2262: The Neso Triangle, s českým dabingem · © Cloud Imperium Games"
 overeni_poznamka: "Po dodatečné kontrole opraveny nepřesnosti (maják zapuštěný v asteroidu, staletí pátrání v Croshaw). Redaktor: OK. Kontrolor: OK."
 stitky: [Goodman, Neso Triangle, Croshaw, Nick Croshaw, Kamelia Ganesh, Mōhio Museum]
 zdroje:

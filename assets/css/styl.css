@@ -933,3 +933,6 @@ main h1[tabindex="-1"]:focus, main[tabindex="-1"]:focus { outline: none; }
 .os-hra { display: inline-block; font-family: var(--label); font-size: .78rem; letter-spacing: .08em; text-transform: uppercase; color: #bfe3f5; border: 1px solid rgba(191,227,245,.5); border-radius: 99px; padding: 0 .55rem; vertical-align: middle; }
 
 .vyslovnost { font-family: var(--text-font); font-size: .6em; font-weight: 400; font-style: italic; letter-spacing: 0; text-transform: none; color: var(--tlumene); white-space: nowrap; }
+.kapitola-nahravka { margin: 1.4rem 0; padding: .8rem 1rem; border: 1px solid var(--linka); border-left: 3px solid var(--akcent); border-radius: 6px; background: rgba(255,255,255,.03); }
+.kapitola-nahravka audio { width: 100%; }
+.kapitola-nahravka figcaption { margin-top: .4rem; font-size: .85rem; color: var(--tlumene); }

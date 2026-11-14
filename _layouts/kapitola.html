@@ -20,7 +20,8 @@ layout: default
   {% if page.audio %}
     <audio class="kapitola-audio" controls preload="none" src="{{ page.audio }}"></audio>
   {% endif %}
-  <div class="text kapitola-text">{{ content }}</div>
+  {% assign obsah = content %}{% if page.nahravka %}{% capture nahr %}<figure class="kapitola-nahravka"><audio controls preload="none" src="{{ page.nahravka.soubor | relative_url }}"></audio><figcaption>{{ page.nahravka.popisek }}</figcaption></figure>{% endcapture %}{% assign kotva = '<p>' | append: page.nahravka.pred | append: '</p>' %}{% if page.nahravka.pred and content contains kotva %}{% assign vlozit = nahr | append: kotva %}{% assign obsah = content | replace_first: kotva, vlozit %}{% else %}{% assign obsah = nahr | append: content %}{% endif %}{% endif %}
+  <div class="text kapitola-text">{{ obsah }}</div>
   {% include prameny.html seznam=page.zdroje %}{% unless page.zdroje %}{% include prameny.html seznam=page.prameny %}{% endunless %}
   {% if page.stitky %}
   <p class="stitky">{% for s in page.stitky %}<span>{{ s }}</span>{% endfor %}</p>
