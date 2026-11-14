@@ -8,8 +8,8 @@ typ: kronika
 obdobi: skoky
 soustava: CROSHAW
 popis: "Nákladní loď Goodman zmizela v srpnu 2262 nedaleko Neptunu. Až v roce 2944 ji amatérská archeoložka našla driftovat v systému Croshaw."
-overeni: neověřeno
-overeni_poznamka: "Redaktor vrátil text kvůli tvrzení o přežití Nicka Croshawa (ve finálním textu už není), jeho verdikt je VRÁTIT. Kontrolor dal OK."
+overeni: OK
+overeni_poznamka: "Po dodatečné kontrole opraveny nepřesnosti (maják zapuštěný v asteroidu, staletí pátrání v Croshaw). Redaktor: OK. Kontrolor: OK."
 stitky: [Goodman, Neso Triangle, Croshaw, Nick Croshaw, Kamelia Ganesh, Mōhio Museum]
 zdroje:
   - nazev: "2262: The Neso Triangle"
@@ -45,13 +45,11 @@ Nebyla sama. Během pár měsíců zmizely na stejném místě stejným způsobe
 
 O devět let později, kolem roku 2271, proletěl stejným místem vědec jménem Nick Croshaw. Stal se první známou osobou, která přeletěla skokový bod do nového systému. Systém po něm dostal jméno. Prameny se tu ovšem rozcházejí: jiný záznam tvrdí, že Goodman byla jednou z úplně prvních lodí, co kdy skokovým bodem prošla – a to už v roce 2262. Rozpor se dá vysvětlit jediným slůvkem: známý. Croshaw byl první, o kom se vědělo. Goodman tam možná byla dřív. Jen o tom nikdo nevěděl.
 
-Na Goodman se přitom nikdy nezapomnělo. Stala se jednou z největších nevyřešených záhad lidstva, hned po slavnější ztrátě lodi Artemis. Lidé ji hledali od chvíle, kdy začali Croshaw opravdu zkoumat. Trvalo to 682 let, než se záhadu podařilo rozluštit.
+Na záhadu se čekalo dlouho. Vyřešila ji až náhoda, roku 2944.
 
-Rok 2944. Amatérská archeoložka Kamelia Ganesh prohledávala asteroidy v pásu Icarus Cluster, když zachytila slabý signál. Nouzový maják, zapuštěný hluboko do horniny. Profesor z muzea v Kevric City mu odhadl stáří na půl tisíciletí. Paměť majáku byla poškozená – zbylo jen torzo registračního čísla a souřadnice, které nikam nevedly, protože byly zapsané podle dávno opuštěné metody mapování ze Sol.
+Amatérská archeoložka Kamelia Ganesh prohledávala asteroidy ve shluku Icarus Cluster, když zachytila slabý signál. Nouzový maják, zapuštěný v jednom z menších okrajových asteroidů shluku. Paměť majáku byla poškozená – zbylo jen torzo registračního čísla a souřadnice zapsané starou metodou mapování podle Sol, jakou loď kdysi používala. Goodman se přitom v Croshaw hledala po staletí, ale pátračům unikala, protože se tehdy odchýlila od obvyklých letových tras.
 
-Trvalo další pátrání, než někdo poznal na majáku starý emblém – ne UNE, Spojených národů Země, ale zapomenuté Severoamerické aliance. S tím klíčem se číslo konečně spojilo se jménem. Goodman.
-
-Ganesh přenastavila mapu na rok 2262, dohledala signaturu – a tam, uprostřed systému Croshaw, byla. Loď, co odešla jednoho srpnového dne a od té doby jen tiše plula vesmírem, 682 let bez cíle.
+Ganesh souřadnice převedla do dnešního standardu, nastavila mapu na rok 2262, dohledala signaturu – a tam, uprostřed systému Croshaw, byla. Loď, co odešla jednoho srpnového dne a od té doby jen tiše plula vesmírem, 682 let bez cíle.
 
 Dnes stojí vrak v Mōhio Museum. Tichý exponát za sklem. A doufá se, že se v Croshaw najdou i další vraky lodí, které tehdy zmizely v Neso Triangle.
 
