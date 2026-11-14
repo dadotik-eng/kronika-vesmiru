@@ -408,7 +408,7 @@
   popis: Tevarinové, bitva o Idris IV, atentát v Jatě a cesta Ivara Messera k moci.
 - rim: VI
   title: Dynastie
-  rozpeti: 2546–2781
+  rozpeti: 2547–2781
   obdobi: messerove
   herni_rok: 2547
   hraj: kap-6
@@ -448,7 +448,82 @@
     nazev: Fiona Messer
     url: https://robertsspaceindustries.com/galactapedia/article/R56nLjJog7-fiona-messer
     hash: 98aa7e6f20232decf326e609bcd50ea1f6b0994b4bfd491d78407b4d7e69cc04
-  popis: 246 let vlády Messerů, druhá tevarinská válka a Lintonův převrat.
+  - record_key: commlink:12705
+    typ: Comm-Link
+    nazev: "2610: Tears of Fire"
+    url: https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/12705-2610-Tears-Of-Fire
+    hash: 98c4f37e889f28f1f1455204411fba06fdc24f52d831a9f37c3d708e08a1e1eb
+  - record_key: commlink:12706
+    typ: Comm-Link
+    nazev: "2638: A Call for Sovereignty"
+    url: https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/12706-2638-A-Call-For-Sovereignty
+    hash: 4683d1f274e568637de0b8e371c0479988fc2f7a305471969045f100a1dc7835
+  - record_key: commlink:15897
+    typ: Comm-Link
+    nazev: "May 2947 Subscriber Flair!"
+    url: https://robertsspaceindustries.com/en/comm-link/transmission/15897-May-2947-Subscriber-Flair
+    hash: 6f8506e56bb4067e07f55315ae04db7569ba51b401c3bd6608b8855678ab5bc1
+  - record_key: galactapedia:VlM1yqjoNv
+    typ: Galactapedie
+    nazev: "Battle of Centauri"
+    url: https://robertsspaceindustries.com/galactapedia/article/VlM1yqjoNv-battle-of-centauri
+    hash: b7caf2cfe47d014dc8b99e2ce0eb201a39c56a0f9b0980a80e842dc574acf745
+  - record_key: galactapedia:R6dWB877Nn
+    typ: Galactapedie
+    nazev: "Tevarin Purge"
+    url: https://robertsspaceindustries.com/galactapedia/article/R6dWB877Nn-tevarin-purge
+    hash: ee79b17617f190364b68ce3c1cabf0c09675c1aa009ea8f0b546f672d01a8fa1
+  - record_key: galactapedia:0j46m4BYge
+    typ: Galactapedie
+    nazev: "Deacon Messer II"
+    url: https://robertsspaceindustries.com/galactapedia/article/0j46m4BYge-deacon-messer-ii
+    hash: cfcfdf285590c5da47e59510fc9936651c463dcb01da50b5d7309b5268cd13c9
+  - record_key: galactapedia:01dWwaQkrL
+    typ: Galactapedie
+    nazev: "Livia Messer III"
+    url: https://robertsspaceindustries.com/galactapedia/article/01dWwaQkrL-livia-messer-iii
+    hash: 93919a1a8f8ce3bdba27df30e2aff103a0eeb002267f5e07211840e6149dfd2b
+  - record_key: galactapedia:0OaB8O6awO
+    typ: Galactapedie
+    nazev: "Corsen Messer V"
+    url: https://robertsspaceindustries.com/galactapedia/article/0OaB8O6awO-corsen-messer-v
+    hash: 701a3685240ff662664b0083bbf4888bf0b5a22ecb699f77fe88426468605de3
+  - record_key: galactapedia:bZwQBNmWrL
+    typ: Galactapedie
+    nazev: "Illyana Messer VI"
+    url: https://robertsspaceindustries.com/galactapedia/article/bZwQBNmWrL-illyana-messer-vi
+    hash: b6eca564fd40cc87615c9238ffdce0666ae38a7c32621a5f576efdda1c61debd
+  - record_key: galactapedia:0KnA1D5nQM
+    typ: Galactapedie
+    nazev: "Astrid Messer VII"
+    url: https://robertsspaceindustries.com/galactapedia/article/0KnA1D5nQM-astrid-messer-vii
+    hash: 42c7a803edf0323ff7eff8d4eb4c1f13b09202d633ed3eff29c9d8cc1e25e3cb
+  - record_key: galactapedia:RkZ9W2L2NB
+    typ: Galactapedie
+    nazev: "Samuel Messer VIII"
+    url: https://robertsspaceindustries.com/galactapedia/article/RkZ9W2L2NB-samuel-messer-viii
+    hash: 77af054069f4bc956bd10c61cf0d38aecf69897d842ab7dcdae727cddf39b224
+  - record_key: galactapedia:VyvYAGKxAz
+    typ: Galactapedie
+    nazev: "Galor Messer IX"
+    url: https://robertsspaceindustries.com/galactapedia/article/VyvYAGKxAz-galor-messer-ix
+    hash: 1019c73cccc2b11b1510923adf2d383c32015f8420e9cf26c343e58120741509
+  - record_key: galactapedia:bBp6YZPOGO
+    typ: Galactapedie
+    nazev: "Ulysses Messer X"
+    url: https://robertsspaceindustries.com/galactapedia/article/bBp6YZPOGO-ulysses-messer-x
+    hash: f5f49b869d068ef3fc27f2375c89701e4c753e433d9447ad3fa1d87b1d083d24
+  - record_key: galactapedia:RwZBdpj2rz
+    typ: Galactapedie
+    nazev: "Anthony Tanaka"
+    url: https://robertsspaceindustries.com/galactapedia/article/RwZBdpj2rz-anthony-tanaka
+    hash: 6203abdafa99887c5e032d5e03b55f540bc832bc3318f4439ab2766590b9fc17
+  - record_key: galactapedia:RXlXYPWk8q
+    typ: Galactapedie
+    nazev: "Ivar Messer I"
+    url: https://robertsspaceindustries.com/galactapedia/article/RXlXYPWk8q-ivar-messer-i
+    hash: fceec3818a5df849d5757b0e194f584499d5db505fcf6d850a4c93720a65a95e
+  popis: Druhá tevarinská válka a Squadron 42, Assan Kieren, vraždy v rodině Messerů a Anthony Tanaka.
 - rim: VII
   title: Stín z Orionu
   rozpeti: 2681–2736
