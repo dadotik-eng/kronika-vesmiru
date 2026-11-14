@@ -1,6 +1,6 @@
 ---
 id: lod-ktera-zmizela-do-niceho
-title: Loď, která zmizela do ničeho
+title: Zmizení lodi Goodman
 slug: lod-ktera-zmizela-do-niceho
 date: 2026-11-14
 herni_rok: 2262
