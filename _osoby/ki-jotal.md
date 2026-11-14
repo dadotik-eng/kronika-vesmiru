@@ -20,4 +20,5 @@ kapitoly:
 - kap-10
 rad: 2900
 obdobi: valka
+ilustrace: true
 ---
