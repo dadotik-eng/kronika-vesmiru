@@ -17,6 +17,7 @@ layout: default
     <a class="tlacitko plne male" href="{{ '/archiv/#web-' | append: slug | relative_url }}">▶ Přehrát s Archivářem</a>
   </div>
   {% if page.overeni_poznamka %}<p class="stav-poznamka jen-beta">Poznámka z kontroly (vidíš jen v betě): {{ page.overeni_poznamka }}</p>{% endif %}
+  {% if page.obrazek %}<figure class="kapitola-obrazek"><img src="{{ page.obrazek.soubor | relative_url }}" alt="{{ page.obrazek.alt | default: page.title | escape }}"{% if page.obrazek.sirka %} width="{{ page.obrazek.sirka }}" height="{{ page.obrazek.vyska }}"{% endif %}><figcaption>{{ page.obrazek.popisek }}</figcaption></figure>{% endif %}
   {% if page.audio %}
     <audio class="kapitola-audio" controls preload="none" src="{{ page.audio }}"></audio>
   {% endif %}

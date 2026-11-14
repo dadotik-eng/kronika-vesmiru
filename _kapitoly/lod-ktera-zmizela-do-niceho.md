@@ -9,6 +9,12 @@ obdobi: skoky
 soustava: CROSHAW
 popis: "Nákladní loď Goodman zmizela v srpnu 2262 nedaleko Neptunu. Až v roce 2944 ji amatérská archeoložka našla driftovat v systému Croshaw."
 overeni: OK
+obrazek:
+  soubor: /assets/kapitoly/goodman.webp
+  sirka: 1118
+  vyska: 351
+  alt: "Mapa posledních chvil lodi Goodman: trasa, místo srážky a poslední známá pozice před zmizením"
+  popisek: "Poslední známá pozice lodi Goodman – obrázek z Comm-Linku 2262: The Neso Triangle · © Cloud Imperium Games"
 nahravka:
   soubor: /assets/audio/kapitoly/goodman-posledni-prenos.mp3
   pred: "A pak ticho."
