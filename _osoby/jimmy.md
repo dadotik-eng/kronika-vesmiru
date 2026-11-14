@@ -14,4 +14,5 @@ zdroje:
 kapitoly: []
 rad: 2950
 obdobi: valka
+ilustrace: true
 ---
