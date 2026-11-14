@@ -604,7 +604,7 @@
   popis: Masakr v Dellu, první Kingship v Orionu, čtyři roky obléhání Tiberu a pád Virgilu.
 - rim: VIII
   title: Příliv
-  rozpeti: 2789–2793
+  rozpeti: 2775–2795
   obdobi: messerove
   herni_rok: 2789
   hraj: kap-8
@@ -634,7 +634,62 @@
     nazev: Perry Line Pact
     url: https://robertsspaceindustries.com/galactapedia/article/0Gx9GdvqAQ-perry-line-pact
     hash: 4068565a521699ddba526b92ef22073b016fb0229d470f4f50b53c056d61ec2c
-  popis: Akari za Perryho linií, masakr na Garronu II a pád Messerů.
+  - record_key: commlink:12712
+    typ: Comm-Link
+    nazev: "2789: A Cold War Thaws"
+    url: https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/12712-2789-A-Cold-War-Thaws
+    hash: ee3fd91a737ac96118321b27b4bdf4f7747fea6ff200250edca154155e225bbb
+  - record_key: commlink:12715
+    typ: Comm-Link
+    nazev: "2792: The Tide Rises"
+    url: https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/12715-2792-The-Tide-Rises
+    hash: 5b082c5317d9d0050c93356cea0457697ff9255891bd242d6b2ae30a739f0547
+  - record_key: commlink:12717
+    typ: Comm-Link
+    nazev: "2795: A Kinder, Gentler Human"
+    url: https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/12717-2795-A-Kinder-Gentler-Human
+    hash: f9625aa896435711a9c5a549c7e489e7fadbd6b7443f79017d1a563d902f58d4
+  - record_key: galactapedia:bE3rKrl5z6
+    typ: Galactapedie
+    nazev: "Akari-Kr.ē Treaty"
+    url: https://robertsspaceindustries.com/galactapedia/article/bE3rKrl5z6-akari-kree-treaty
+    hash: f5a47795094e630ffaee4fbd95c9aaa8e6b5f02650e7d6834548f7f4ae5c8d3c
+  - record_key: galactapedia:RL6ZQLwnko
+    typ: Galactapedie
+    nazev: "Terrence Akari"
+    url: https://robertsspaceindustries.com/galactapedia/article/RL6ZQLwnko-terrence-akari
+    hash: 737938531f1779cf7a7ffb829a7f1170cc4d8198b6bb1582ec01e5aba4c3df59
+  - record_key: galactapedia:VlMGMLM1lL
+    typ: Galactapedie
+    nazev: "Garron II"
+    url: https://robertsspaceindustries.com/galactapedia/article/VlMGMLM1lL-garron-ii
+    hash: e52c93751ce6e11425d5d8722100cf9b2cb85a469e154dbb0eb7faa85ce0518d
+  - record_key: galactapedia:bE3rKa32P7
+    typ: Galactapedie
+    nazev: "Anti-Messer Revolution"
+    url: https://robertsspaceindustries.com/galactapedia/article/bE3rKa32P7-anti-messer-revolution
+    hash: 9fe9227eab143cee4c74509890eaea2e17e1507ed762fed6dadf9c476f975cab
+  - record_key: galactapedia:V8gJ66mw9x
+    typ: Galactapedie
+    nazev: "Messer Era War Crimes Trials"
+    url: https://robertsspaceindustries.com/galactapedia/article/V8gJ66mw9x-messer-era-war-crimes-trials
+    hash: 4e0d51da5133aef4c5e1019b305a6b1cc5bd08980407e705b23aebd8c6782e2f
+  - record_key: galactapedia:RXlXmnaYGP
+    typ: Galactapedie
+    nazev: "Fair Chance Act"
+    url: https://robertsspaceindustries.com/galactapedia/article/RXlXmnaYGP-fair-chance-act
+    hash: ad7f3a680738849fb91e29fb47c738b4b12f27d1d16e451fce4b87e5bbeca90e
+  - record_key: galactapedia:RwZBaD4Mdq
+    typ: Galactapedie
+    nazev: "Linton Messer XI"
+    url: https://robertsspaceindustries.com/galactapedia/article/RwZBaD4Mdq-linton-messer-xi
+    hash: 5fe498c0a8f924adb5af571f52186e4478336c18221f28761e5fd2badfe0c145
+  - record_key: galactapedia:R56nLjJog7
+    typ: Galactapedie
+    nazev: "Fiona Messer"
+    url: https://robertsspaceindustries.com/galactapedia/article/R56nLjJog7-fiona-messer
+    hash: 98aa7e6f20232decf326e609bcd50ea1f6b0994b4bfd491d78407b4d7e69cc04
+  popis: Tajná smlouva Akariho s císařem Kr.ē, masakr na Garronu II, vysílání Tide a pád Messerů.
 - rim: IX
   title: Archa a umělý svět
   rozpeti: 2800–2884
