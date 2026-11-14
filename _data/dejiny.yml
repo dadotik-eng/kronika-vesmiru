@@ -116,7 +116,7 @@
   popis: První kvantový pohon, terraformace Marsu a tragédie roku 2125.
 - rim: II
   title: První skok
-  rozpeti: 2262–2292
+  rozpeti: 2232–2292
   obdobi: skoky
   herni_rok: 2262
   hraj: kap-2
@@ -131,7 +131,72 @@
     nazev: Croshaw System
     url: https://robertsspaceindustries.com/galactapedia/article/0qanKAEJwp-crowshaw-system
     hash: 8674e6d609efb411e24786a959b0c6aff97e459e1da84b74a0f1e1ff4127febb
-  popis: Nesův trojúhelník, Croshawův první skok a levný pohon Tarsus.
+  - record_key: commlink:12680
+    typ: Comm-Link
+    nazev: "2232: The First Push"
+    url: https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/12680-2232-The-First-Push
+    hash: 2f811ba171d526b70551ec9f2743de6766fbbf501bb18c976f4e14111ad05b49
+  - record_key: galactapedia:0jGxngnLzm
+    typ: Galactapedie
+    nazev: "Artemis"
+    url: https://robertsspaceindustries.com/galactapedia/article/0jGxngnLzm-artemis
+    hash: 98f10aea2995241958ea037211e791a91725d841ee6700e9811b0648f0e3e840
+  - record_key: galactapedia:VDzOvEdNyd
+    typ: Galactapedie
+    nazev: "Janus"
+    url: https://robertsspaceindustries.com/galactapedia/article/VDzOvEdNyd-janus
+    hash: 67b45115b3f3549c148d611e0828d26577a5957c450efb0b6e3c421c4ea60b89
+  - record_key: galactapedia:Rz2DPeZZnk
+    typ: Galactapedie
+    nazev: "Abeni Okon"
+    url: https://robertsspaceindustries.com/galactapedia/article/Rz2DPeZZnk-abeni-okon
+    hash: b54b51b3e41af1196f71f09538e2506d67cddafae0429f253dddc31641fd50f4
+  - record_key: commlink:12676
+    typ: Comm-Link
+    nazev: "2214: The March of Progress"
+    url: https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/12676-2214-The-March-Of-Progress
+    hash: a8fb763d77272a8876c8d3f4a4cbca4980c453d260604c3e350083a92980cc93
+  - record_key: commlink:12682
+    typ: Comm-Link
+    nazev: "2262: The Neso Triangle"
+    url: https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/12682-2262-The-Neso-Triangle
+    hash: 64d52c646ec3480a38e21c9991272dedd417145e18ab3b5704a6f8634b19e9c0
+  - record_key: commlink:12685
+    typ: Comm-Link
+    nazev: "2271: One Small Jump for Man"
+    url: https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/12685-2271-One-Small-Jump-For-Man
+    hash: 39981a7cccb023987496b539e19b75516a60a97202cfa67bab0cce9d3eb5f528
+  - record_key: commlink:12833
+    typ: Comm-Link
+    nazev: "UEE Queries: Jump-Points"
+    url: https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/12833-UEE-Queries-Jump-Points
+    hash: 6905810139c7d8b7a5812db642715150c42e3780333d0beab0c3ba130b181c8d
+  - record_key: commlink:15019
+    typ: Comm-Link
+    nazev: "Galactic Guide: Croshaw System"
+    url: https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/15019-Galactic-Guide-Croshaw-System
+    hash: f7ef6d854558b5aeb307b455a0b9cc8f9de3b59ed0f5255f7c80c31fe9caf38c
+  - record_key: galactapedia:RWooPaXwE2
+    typ: Galactapedie
+    nazev: "Freeman Act"
+    url: https://robertsspaceindustries.com/galactapedia/article/RWooPaXwE2-freeman-act
+    hash: 5f8fdfc74d232995be63a893124dfe10b8c3569eefaa6e179dcb330870f6a74e
+  - record_key: galactapedia:0rqzJPaMpY
+    typ: Galactapedie
+    nazev: "Jump Point"
+    url: https://robertsspaceindustries.com/galactapedia/article/0rqzJPaMpY-jump-point
+    hash: 2c20cad4652e7f4a146012deaef3d34163b5b579d1653cb466eed75999e19bae
+  - record_key: commlink:15371
+    typ: Comm-Link
+    nazev: "Portfolio: Tarsus Electronics"
+    url: https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/15371-Portfolio-Tarsus-Electronics
+    hash: 347a4b0732f05a72ef920f3f3948eade69627cb42d882f17f549672c02020d25
+  - record_key: galactapedia:bmGyM6NED9
+    typ: Galactapedie
+    nazev: "AI Research and Production Restriction Act"
+    url: https://robertsspaceindustries.com/galactapedia/article/bmGyM6NED9-airpra
+    hash: 1ac73533ce529cd7ccc297d24894ff1789b58a263cf37476fe771d37c4be31a6
+  popis: Loď Artemis, Nesův trojúhelník, Croshawův skok a levný pohon Tarsus.
 - rim: III
   title: Nejsme sami
   rozpeti: 2380–2438
