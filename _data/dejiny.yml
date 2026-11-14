@@ -755,7 +755,7 @@
   popis: Archa Marshalla Leona, objev a prodej Stantonu, projekt Synthworld a cesta k pádu Calibanu.
 - rim: X
   title: Válka bez konce
-  rozpeti: 2945–2956
+  rozpeti: 2884–2956
   obdobi: valka
   herni_rok: 2945
   hraj: kap-10
@@ -785,4 +785,74 @@
     nazev: Vanduul Raids
     url: https://robertsspaceindustries.com/galactapedia/article/Rw1gdnOKBp-vanduul-raids
     hash: 59d1c9a5d39c93d8fbbafe4b125c91845618d6a9f79a9cd5695fa8367168d833
-  popis: Útok na Vega II, válka s Vanduuly a současnost.
+  - record_key: galactapedia:0Gz5mkprmg
+    typ: Galactapedie
+    nazev: "Battle of Vega II"
+    url: https://robertsspaceindustries.com/galactapedia/article/0Gz5mkprmg-battle-of-vega-ii
+    hash: 2a22b08770b7bbfc2c16c5c15203e38b5f860873b844b54d3c8167d1adeaacfa
+  - record_key: galactapedia:RkGGjdOwQz
+    typ: Galactapedie
+    nazev: "Aremis (Vega II)"
+    url: https://robertsspaceindustries.com/galactapedia/article/RkGGjdOwQz-aremis-vega-ii
+    hash: 76143630c634096322c3cc339e71c082644a2d5621c35da00c1228cab805cf54
+  - record_key: galactapedia:RWwZqmP1w4
+    typ: Galactapedie
+    nazev: "New Corvo"
+    url: https://robertsspaceindustries.com/galactapedia/article/RWwZqmP1w4-new-corvo
+    hash: 6f28735dd1a70da3323cff885ce5bf0769f7155fa76363fd7e91cbec8fd5420f
+  - record_key: commlink:12722
+    typ: Comm-Link
+    nazev: "2920: The Money Pit"
+    url: https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/12722-2920-The-Money-Pit
+    hash: 14c638d267caab7a20f4cae6918da458198aede6d48952dc396bcd46e942e0d8
+  - record_key: commlink:12725
+    typ: Comm-Link
+    nazev: "2928: Campaign Promises"
+    url: https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/12725-2928-Campaign-Promises
+    hash: 1f2bd512fdae9bc062e290363d4cbb6255a7d618ceda7fb33458a0bb7ac367f1
+  - record_key: galactapedia:VJOzBxdJ28
+    typ: Galactapedie
+    nazev: "Kelos Costigan"
+    url: https://robertsspaceindustries.com/galactapedia/article/VJOzBxdJ28-kelos-costigan
+    hash: badb1473f95173f0ba4549612203025084c0f347393021f5678c3dd757c773af
+  - record_key: galactapedia:0OaB8KmBKq
+    typ: Galactapedie
+    nazev: "Historical Truth Act of 2941"
+    url: https://robertsspaceindustries.com/galactapedia/article/0OaB8KmBKq-historical-truth-act-of-2941
+    hash: 32873e20d4e3b041970d7882f7f116c3b602b9717ff73767e696aaad140ff9b6
+  - record_key: commlink:15049
+    typ: Comm-Link
+    nazev: "Congress Now"
+    url: https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/15049-Congress-Now
+    hash: 8d783c92d03f678771bb84ce3156beca125425feebf3b15bfb940dbb10a666e0
+  - record_key: commlink:15273
+    typ: Comm-Link
+    nazev: "Empire Report: Victory on the Vanduul Front"
+    url: https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/15273-Empire-Report-Victory-On-The-Vanduul-Front
+    hash: b2c8defea5cf4e17ca8167e8cabfbe198def6e6e99b19242fa997d37ccb80bef
+  - record_key: galactapedia:01LvKoLvZ8
+    typ: Galactapedie
+    nazev: "Human-Xi'an Trade Initiative (HuXa)"
+    url: https://robertsspaceindustries.com/galactapedia/article/01LvKoLvZ8-human-xian-trade-initiative-huxa
+    hash: 063f91affb04dba4f258e0c1af49d5206d502c42e3c5ebaf2a020d22130153be
+  - record_key: commlink:18209
+    typ: Comm-Link
+    nazev: "Loremakers: Community Questions"
+    url: https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/18209-Loremakers-Community-Questions
+    hash: 9c4eef6157ed15902edd39670da49d1218ad8703ab2889be03c1a2317b8005bf
+  - record_key: commlink:19375
+    typ: Comm-Link
+    nazev: "Loremakers: Community Questions"
+    url: https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/19375-Loremakers-Community-Questions
+    hash: 3150938e049f7d2306e1f4d8dcc6c53d285d0baf647d33114925dc49c48da038
+  - record_key: commlink:18694
+    typ: Comm-Link
+    nazev: "Terra Gazette: What Does the Future Hold for Suj Kossi?"
+    url: https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/18694-Terra-Gazette-What-Does-The-Future-Hold-For-Suj-Kossi
+    hash: 5827878080ec27e17c068f3249e76b83644116834dd13cbad79149cdc01b9603
+  - record_key: galactapedia:bZkyrEPLra
+    typ: Galactapedie
+    nazev: "Synthworld (Chronos III)"
+    url: https://robertsspaceindustries.com/galactapedia/article/bZkyrEPLra-synthworld-chronos-iii
+    hash: 88b5b10d3ce42f71977844a517314e7d24b314c0fb06c88fd2a89392cc601aaf
+  popis: Bitva o Vegu II, vyhlášení války Vanduulům, operace Mandrake, atentát na Costigana a imperátorka Addison.
