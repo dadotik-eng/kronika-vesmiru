@@ -10,6 +10,7 @@ layout: default
     <a class="tlacitko plne male" href="{{ '/archiv/#' | append: page.scena | relative_url }}">▶ Přehrát s Archivářem</a>
   </div>
   {% if t.poznamka and t.poznamka != "" %}<p class="stav-poznamka">{{ t.poznamka }}</p>{% endif %}
+  {% if kap.shrnuti %}<details class="blok shrnuti-kap"><summary>Kapitola ve zkratce <span class="mdl">· asi 2 minuty čtení</span></summary>{% for o in kap.shrnuti %}<p>{{ o }}</p>{% endfor %}</details>{% endif %}
   <div class="text prolinkovat{% if page.scena == 'letka' %} dramatizace{% endif %}">
     {% for r in t.odstavce %}
       {% if r.kdo == "ARCHIVÁŘ" %}<p class="dr-vypravec">{{ r.text }}</p>
