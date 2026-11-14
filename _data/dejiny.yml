@@ -340,7 +340,7 @@
   popis: Vzduch, který dýcháte, objev Terry, Tribunál, zajatí terraformátoři u Xi’anů a Perryho linie.
 - rim: V
   title: Válka, která stvořila diktátora
-  rozpeti: 2541–2546
+  rozpeti: 2541–2547
   obdobi: upe
   herni_rok: 2541
   hraj: kap-5
@@ -365,7 +365,47 @@
     nazev: Prime Citizen
     url: https://robertsspaceindustries.com/galactapedia/article/V7gM82vNmr-prime-citizen
     hash: 557a7d4500688c755f57edcc5bfb52d9eccadd92e748bdbfe177530c36cc2b99
-  popis: První tevarinská válka a vzestup Ivara Messera.
+  - record_key: commlink:12700
+    typ: Comm-Link
+    nazev: "2541: Awfully Crowded in My Sky"
+    url: https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/12700-2541-Awfully-Crowded-In-My-Sky
+    hash: 26b5f94c47a2f2bb0b7765a6e5335b3973914267b10d699b0801d3528c485de0
+  - record_key: commlink:13295
+    typ: Comm-Link
+    nazev: "News Update: This Day in History"
+    url: https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/13295-News-Update-This-Day-In-History
+    hash: bba5e361ed216fc141dc4d0b04eb3842746dab186690750e35df79e908299424
+  - record_key: commlink:12702
+    typ: Comm-Link
+    nazev: "2546: A Leader Rises"
+    url: https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/12702-2546-A-Leader-Rises
+    hash: 541af41416e2cae2f6f6da9fa4cd77500d0e799d43b6fc88d491b4163455d468
+  - record_key: commlink:15117
+    typ: Comm-Link
+    nazev: "This Day in History: The Path to Prime Citizen"
+    url: https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/15117-This-Day-In-History-The-Path-To-Prime-Citizen
+    hash: 9f49af87aa32b2a8dc8dde890d029340bc8c45ebb4987177782c57722d355075
+  - record_key: galactapedia:Vgg7YGkaEw
+    typ: Galactapedie
+    nazev: "Tevarin-Human First Contact"
+    url: https://robertsspaceindustries.com/galactapedia/article/Vgg7YGkaEw-tevarin-human-first-contact
+    hash: 1af94938ed6166bc32eb2ecd11901fddc4e44295a99dc9e4032a9b8182757c2a
+  - record_key: galactapedia:V8gJv3nB3X
+    typ: Galactapedie
+    nazev: "Tevarin"
+    url: https://robertsspaceindustries.com/galactapedia/article/V8gJv3nB3X-tevarin
+    hash: 2e2d5d8971e191ef3feda43bbef713803f5f007f415c2e00bbc2037572733d8a
+  - record_key: galactapedia:0Gz5GgEvkj
+    typ: Galactapedie
+    nazev: "Atrocity at Jata"
+    url: https://robertsspaceindustries.com/galactapedia/article/0Gz5GgEvkj-atrocity-at-jata
+    hash: 895aa759bd766d402b773bb51560ab7a1d06e55dbe4fb72bdf40de9add5e64c3
+  - record_key: galactapedia:0QxBjKP2PN
+    typ: Galactapedie
+    nazev: "United Planets of Earth"
+    url: https://robertsspaceindustries.com/galactapedia/article/0QxBjKP2PN-united-planets-of-earth
+    hash: 9d97a29469fa6723637d5729691469d91039dc93298880dc6c13aa19807f8612
+  popis: Tevarinové, bitva o Idris IV, atentát v Jatě a cesta Ivara Messera k moci.
 - rim: VI
   title: Dynastie
   rozpeti: 2546–2781
