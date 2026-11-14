@@ -692,7 +692,7 @@
   popis: Tajná smlouva Akariho s císařem Kr.ē, masakr na Garronu II, vysílání Tide a pád Messerů.
 - rim: IX
   title: Archa a umělý svět
-  rozpeti: 2800–2884
+  rozpeti: 2793–2884
   obdobi: naprava
   herni_rok: 2800
   hraj: kap-9
@@ -722,7 +722,37 @@
     nazev: Fall of Caliban
     url: https://robertsspaceindustries.com/galactapedia/article/0Gz5DNryvE-fall-of-caliban
     hash: 3175046a31e0a9d7d38ea04d7bc3fc5282d742c4186bbc56629bf4d88526089f
-  popis: Imperátor Leon, prodej Stantonu, Projekt Archangel a Caliban.
+  - record_key: commlink:12720
+    typ: Comm-Link
+    nazev: "2800: The Neutral Zone"
+    url: https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/12720-2800-The-Neutral-Zone
+    hash: a225a246d67e81edd9a9537d5eb778a5696cad226b5f0b81780764f6dd213b52
+  - record_key: commlink:12721
+    typ: Comm-Link
+    nazev: "2872: Behold Sisyphus"
+    url: https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/12721-2872-Behold-Sisyphus
+    hash: edbbbba514ac942427ae86e40102f4a6f13ea45c1dc46383e769a3efb507906f
+  - record_key: galactapedia:VJO4JGZQv7
+    typ: Galactapedie
+    nazev: "Truth and Reconciliation Commission"
+    url: https://robertsspaceindustries.com/galactapedia/article/VJO4JGZQv7-truth-and-reconciliation-commission
+    hash: d2c35d7d606664b65f424851abcaa73fb06d495814980f47b3e38d8a922d4266
+  - record_key: galactapedia:0NjkMMlGXD
+    typ: Galactapedie
+    nazev: "Toshi Aaron"
+    url: https://robertsspaceindustries.com/galactapedia/article/0NjkMMlGXD-toshi-aaron
+    hash: 392b881a7ce9da64d9e47d28d59ba098432ffd56505122fba9642b22b0a79b8e
+  - record_key: galactapedia:RL65p7Qpdr
+    typ: Galactapedie
+    nazev: "Corbyn Salehi"
+    url: https://robertsspaceindustries.com/galactapedia/article/RL65p7Qpdr-corbyn-salehi
+    hash: 5f714162ce92ef38b3ff6dc4fb40963ad4665eeb47720427a7651cd3fad24297
+  - record_key: galactapedia:bZkyrEPLra
+    typ: Galactapedie
+    nazev: "Synthworld (Chronos III)"
+    url: https://robertsspaceindustries.com/galactapedia/article/bZkyrEPLra-synthworld-chronos-iii
+    hash: 88b5b10d3ce42f71977844a517314e7d24b314c0fb06c88fd2a89392cc601aaf
+  popis: Archa Marshalla Leona, objev a prodej Stantonu, projekt Synthworld a cesta k pádu Calibanu.
 - rim: X
   title: Válka bez konce
   rozpeti: 2945–2956
