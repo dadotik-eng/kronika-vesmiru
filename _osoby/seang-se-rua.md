@@ -19,4 +19,5 @@ zdroje:
 kapitoly: []
 rad: 1000
 obdobi: mimo
+ilustrace: true
 ---
