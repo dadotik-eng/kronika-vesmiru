@@ -21,6 +21,7 @@ zdroje:
 kapitoly: []
 rad: 2900
 obdobi: naprava
+ilustrace: true
 ---
 
 Kossi byl druhým nejmladším ze šesti dětí Sei Kossiho a Qy Rusfy. Celá rozvětvená rodina, která s nimi žila v kopcích u Gemmy, se živila vykrádáním domů a odlehlých stanic. Od deseti let chodil na méně riskantní nájezdy, od patnácti i na ty nebezpečné. Smrt nejstarší sestry Fef Rusfy u Nedily v roce 2919 pro něj byla zlomem: měl pocit, že zemřela pro nic a že on sám promarnil život.
