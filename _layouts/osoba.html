@@ -2,7 +2,7 @@
 layout: default
 ---
 {% assign o = page %}
-{% assign kat = "vladari:Vládci|politika:Politika|armada:Armáda|objevitele:Objevitelé|veda-technika:Věda a technika|korporace:Korporace|kultura:Kultura a média|zlocin:Zločin|xiani-tevarini:Xi'ani a Tevarinové" | split: "|" %}
+{% assign kat = "vladari:Vládci|politika:Politika|armada:Armáda|objevitele:Objevitelé|veda-technika:Věda a technika|korporace:Korporace|kultura:Kultura a média|zlocin:Zločin|xiani-tevarini:Mimozemšťané" | split: "|" %}
 {% assign era = site.data.ery | where: "id", o.obdobi | first %}
 <article class="kapitola osoba-detail" style="--barva: {{ era.barva | default: '#8aa0b8' }}">
   <p class="nadtitul"><a href="{{ '/osobnosti/' | relative_url }}">Osobnosti</a>{% for p in kat %}{% assign kv = p | split: ":" %}{% if kv[0] == o.kategorie %} · {{ kv[1] }}{% endif %}{% endfor %}{% if era %} · <span class="od-era">{{ era.nazev }}</span>{% elsif o.obdobi == "mimo" %} · mimo lidské dějiny{% endif %}</p>
