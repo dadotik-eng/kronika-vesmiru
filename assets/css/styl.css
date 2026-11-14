@@ -932,8 +932,3 @@ main h1[tabindex="-1"]:focus, main[tabindex="-1"]:focus { outline: none; }
 .zdroj-wiki { font-family: var(--label); font-size: .8rem; letter-spacing: .06em; text-transform: uppercase; color: #e8a06a; border: 1px solid rgba(232,160,106,.55); border-radius: 99px; padding: 0 .5rem; }
 .os-hra { display: inline-block; font-family: var(--label); font-size: .78rem; letter-spacing: .08em; text-transform: uppercase; color: #bfe3f5; border: 1px solid rgba(191,227,245,.5); border-radius: 99px; padding: 0 .55rem; vertical-align: middle; }
 
-/* Kapitola ve zkratce (krátká verze nad plným vyprávěním) */
-.shrnuti-kap{margin:1.2rem 0 1.6rem;padding:.2rem 1.1rem;border-left:3px solid var(--akcent)}
-.shrnuti-kap summary{cursor:pointer;padding:.7rem 0;font-weight:600;letter-spacing:.02em}
-.shrnuti-kap summary .mdl{font-weight:400;opacity:.65}
-.shrnuti-kap p{margin:.2rem 0 .9rem;opacity:.9}
