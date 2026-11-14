@@ -776,9 +776,10 @@ async function loadPeople(){try{
   await vyslReady;
   const r=await fetch('../data/osoby-cteni.json',{cache:'no-store'});if(!r.ok)return;const list=await r.json();if(!Array.isArray(list))return;
   const roky=o=>{const n=o.narozeni,u=o.umrti;if(u==='žije')return n&&n!=='neznámo'?'Narozen v roce '+n+', žije.':'';if((!n||n==='neznámo')&&(!u||u==='neznámo'))return '';return (n&&n!=='neznámo'?n:'?')+' až '+(u&&u!=='neznámo'?u:'?')+'.'};
+  const CTI=[];list.forEach(o=>{if(o&&o.jmeno&&o.vyslovnost){const j=String(o.jmeno);CTI.push([j,String(o.vyslovnost)]);const b=j.replace(/\s*\(.*?\)\s*/g,' ').trim();if(b&&b!==j)CTI.push([b,String(o.vyslovnost)])}});CTI.sort((a,b)=>b[0].length-a[0].length);
   list.forEach(o=>{if(!o||!o.slug||!o.jmeno)return;
     const jm=String(o.jmeno),cti=o.vyslovnost?String(o.vyslovnost):null;
-    const hlas=s=>{let v=vyslov(s);if(cti){v=v.split(jm).join(cti);const bez=jm.replace(/\s*\(.*?\)\s*/g,' ').trim();if(bez&&bez!==jm)v=v.split(bez).join(cti)}return v};
+    const hlas=s=>{let v=vyslov(s);CTI.forEach(([j,c])=>{v=v.split(j).join(c)});return v};
     const box=new DOMParser().parseFromString('<div>'+(o.html||'')+'</div>','text/html').body.firstChild;
     const paras=[String(o.medailonek||'').trim(),...[...box.querySelectorAll('p,li')].map(p=>p.textContent.trim())].filter(Boolean);
     const sent=[];let lastAv=null;
