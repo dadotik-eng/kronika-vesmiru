@@ -267,7 +267,7 @@
   popis: Spojené národy Země, Tarův kontakt v Davienu a příběh banuského uprchlíka Jerryho.
 - rim: IV
   title: Tři pilíře a první trhlina
-  rozpeti: 2523–2530
+  rozpeti: 2460–2542
   obdobi: upe
   herni_rok: 2523
   hraj: kap-4
@@ -287,7 +287,57 @@
     nazev: Xi'an
     url: https://robertsspaceindustries.com/galactapedia/article/ReJwN9KJEj-xian
     hash: 85bc70ad7cdeee77fa62c41dd3a402ce558a357f627d7b05d6d4fefdc9d3ad0f
-  popis: Spojené planety Země, tři tribuni a začátek studené války s Xi’any.
+  - record_key: commlink:12691
+    typ: Comm-Link
+    nazev: "2460: Breathe Free"
+    url: https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/12691-2460-Breathe-Free
+    hash: d435e8161c9d642abc4ac705e18318b21bf968a6ffe776877d6e7b74a16e57e9
+  - record_key: commlink:12692
+    typ: Comm-Link
+    nazev: "2516: A Better Earth"
+    url: https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/12692-2516-A-Better-Earth
+    hash: 97d6759fa833e9ef78d79f777e149b4755eba691b67586dc1db5d8333e77d532
+  - record_key: commlink:13158
+    typ: Comm-Link
+    nazev: "Galactic Guide: Terra System"
+    url: https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/13158-Galactic-Guide-Terra-System
+    hash: 927e8008075894938fd712f091122bc7d21a32b3760d8f4fa1edbc2cbd321936
+  - record_key: galactapedia:0qnNAD6YKa
+    typ: Galactapedie
+    nazev: "Project Far Star"
+    url: https://robertsspaceindustries.com/galactapedia/article/0qnNAD6YKa-project-far-star
+    hash: 8881078220ed0b1924a636834e6bb1765a2c130f0b2f76530389f9b3cf22ddfa
+  - record_key: commlink:12695
+    typ: Comm-Link
+    nazev: "2523: The Three Pillars"
+    url: https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/12695-2523-The-Three-Pillars
+    hash: 5ac22ae90305ce02f2ebf10be3e709404cef2f2befb4efb79a69b3a59abb825b
+  - record_key: commlink:12697
+    typ: Comm-Link
+    nazev: "2530: The Galaxy Gets Bigger"
+    url: https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/12697-2530-The-Galaxy-Gets-Bigger
+    hash: d18c916409fffd575c4bea2ee994b406d693ad6166a241460c20e0a81bc089e2
+  - record_key: galactapedia:V8WeExnJge
+    typ: Galactapedie
+    nazev: "Th.us'ūng System"
+    url: https://robertsspaceindustries.com/galactapedia/article/V8WeExnJge-thusuung-system
+    hash: f37d4d8bda1fe9f47a497a802c585ef49c5e47fa7792caa033d9c522db043a56
+  - record_key: galactapedia:RXlLjDewkZ
+    typ: Galactapedie
+    nazev: "Xi'an-Human Cold War"
+    url: https://robertsspaceindustries.com/galactapedia/article/RXlLjDewkZ-xian-human-cold-war
+    hash: 36c94e001a46f705d665780cc230e75bc0d439260db9cfbeabf91ce06364adcc
+  - record_key: galactapedia:Rw1KpEJDvp
+    typ: Galactapedie
+    nazev: "Armistead Perry"
+    url: https://robertsspaceindustries.com/galactapedia/article/Rw1KpEJDvp-armistead-perry
+    hash: 4bb56fe663dc12193e6211918c6b80f4f12d1a885b4b63a91f025e520c1615ce
+  - record_key: galactapedia:V8gJQMY9mO
+    typ: Galactapedie
+    nazev: "Perry Line"
+    url: https://robertsspaceindustries.com/galactapedia/article/V8gJQMY9mO-perry-line
+    hash: 8d39fb8691ca3d46f5b4cc273b418b2443a83a6c8f498366d50547d4bf83076d
+  popis: Vzduch, který dýcháte, objev Terry, Tribunál, zajatí terraformátoři u Xi’anů a Perryho linie.
 - rim: V
   title: Válka, která stvořila diktátora
   rozpeti: 2541–2546
