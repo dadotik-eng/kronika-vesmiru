@@ -93,6 +93,7 @@ sekce: domu
     {% assign k = nove | first %}
     {% if k %}
     <a class="karta" href="{{ k.url | relative_url }}">
+      {% if k.obrazek %}<img src="{{ k.obrazek.soubor | relative_url }}" alt="" loading="lazy" width="960" height="540">{% endif %}
       <span class="karta-stitek">Nová kapitola · {{ k.herni_rok }}</span>
       <h3>{{ k.title }}</h3>
       <p>{{ k.popis }}</p>
@@ -107,7 +108,7 @@ sekce: domu
       <p>{{ u.text }}</p>
     </a>
     {% endif %}{% endfor %}
-    <a class="karta" href="{{ '/kviz/' | relative_url }}">
+    <a class="karta" id="kviz-dne" href="{{ '/kviz/' | relative_url }}">
       <span class="karta-stitek">Kvíz dne</span>
       <h3>Kolik víš o dějinách?</h3>
       <p>Pět otázek z kroniky, každý den nové. Imperátoři, objevy, války.</p>
@@ -140,6 +141,10 @@ sekce: domu
     if (!o.length) return;
     var d = Math.floor(Date.now() / 864e5), x = o[(d * 37) % o.length], el = document.getElementById('osobnost-dne');
     if (!el) return;
+    function obr(karta, slug) { if (!karta || karta.querySelector('img')) return; var i = new Image(); i.src = Z + 'assets/osoby/' + slug + '.webp'; i.alt = ''; i.width = 960; i.height = 540; i.loading = 'lazy'; karta.insertBefore(i, karta.firstChild); }
+    var s = o.filter(function (q) { return q.il; });
+    if (s.length) obr(document.getElementById('kviz-dne'), s[(d * 53 + 11) % s.length].id);
+    if (x.il) obr(el, x.id);
     el.href = Z + 'osobnosti/#' + x.id;
     el.querySelector('h3').textContent = x.jmeno;
     el.querySelector('p').textContent = x.role + (x.narozeni && x.narozeni !== 'neznámo' ? ' · ' + x.narozeni + (x.umrti ? '–' + x.umrti : '') : '');
