@@ -14,4 +14,6 @@ zdroje:
 kapitoly: []
 rad: 2909
 obdobi: naprava
+ilustrace: true
+ilustrace_popisek: Obrázek od CIG · © Cloud Imperium Games
 ---

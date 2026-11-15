@@ -19,4 +19,6 @@ zdroje:
 rad: 2741
 obdobi: messerove
 rod: hurston
+ilustrace: true
+ilustrace_popisek: Ilustrace podle portrétu ze hry Star Citizen · © Cloud Imperium Games
 ---
