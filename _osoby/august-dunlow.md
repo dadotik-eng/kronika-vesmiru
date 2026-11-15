@@ -19,6 +19,7 @@ zdroje:
 kapitoly: []
 rad: 2770
 obdobi: naprava
+ilustrace: true
 ---
 
 Na stadionu Khanos byl Dunlow jedním z vybraných vzorných žáků, kteří měli u cesty mávat imperátorovi Ulyssesovi X. Jeho rodiče, stejně jako mnoho obyvatel Angeli, museli být na slavnostním otevření stadionu povinně. Po výbuchu Dunlow odešel ze školy a nejdřív pomáhal odklízet trosky. Když práce skončila, ocitl se s otcem bez domova a otec bez peněz na léky zemřel. O svém roce a půl na ulici nikdy s nikým nemluvil. Pomohl mu až útulek Angeli's Angels.

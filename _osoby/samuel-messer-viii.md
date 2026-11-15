@@ -27,6 +27,7 @@ kapitoly:
 - kap-6
 rad: 2678
 obdobi: messerove
+ilustrace: true
 ---
 
 Když Illyana VI. náhle zemřela na mrtvici, věrní agenti jejího rodu stihli Samuela, jejího nejmladšího syna a určeného nástupce, propašovat ze Země dřív, než ho Astrid stačila nechat zavraždit. Astrid pak nasadila armádu, aby ho našla, rozšířila cenzuru a dala hromadně zatýkat novináře, kteří se proti válce ozvali. Samuelova strana nakonec udeřila první.

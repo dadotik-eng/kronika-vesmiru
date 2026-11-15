@@ -298,6 +298,43 @@ OSOBY = {
         ('zar', (.28, .0, .72, .5), 1.0, .25, TEPLA, 0),
         ('paprsky', (.3, .0, .7, .6), .2, .4)],
         cast=[('prach', .0, .0, 1, .9, 30)]),
+    'tamsa-wheel': dict(kam=[.27, .55, .07, 34], ef=[
+        ('zar', (.5, .0, .82, .75), 1.0, .25, TEPLA, 0),
+        ('zar', (.05, .45, .12, .52), 1.5, .3, TEPLA, 0)],
+        cast=[('prach', .3, .0, 1, .9, 35)]),
+    'august-dunlow': dict(kam=[.2, .2, .07, 34], ef=[
+        ('mrak', (.42, .0, .95, .35), .003, .0, .004),
+        ('zar', (.82, .65, .92, .82), 2.5, .45, TEPLA, 0),
+        ('zar', (.22, .45, .3, .55), 2.0, .4, TEPLA, 0)],
+        cast=[('jiskry', .87, .73), ('jiskry', .26, .5), ('lode', .5, .15, .8, .1, 3, .5, 1)]),
+    'daniel-penselin': dict(kam=[.38, .3, .07, 34], ef=[
+        ('zar', (.0, .05, .15, .45), 1.6, .3, MODRA, 0),
+        ('mrak', (.55, .15, 1.0, .6), .002, .0, .003),
+        ('zar', (.6, .6, 1.0, .85), 1.2, .25, TEPLA, 1)],
+        cast=[]),
+    'adaliz-dayan': dict(kam=[.35, .3, .07, 34], ef=[
+        ('mrak', (.6, .0, 1.0, .85), .003, .001, .006),
+        ('zar', (.62, .0, 1.0, .7), .9, .3, (.75, .55, 1.0), 0)],
+        cast=[('prach', .6, .0, 1, .9, 25)]),
+    'samuel-messer-viii': dict(kam=[.3, .25, .07, 34], ef=[
+        ('zar', (.68, .4, .98, .78), 2.0, .4, TEPLA, 0),
+        ('paprsky', (.72, .1, 1.0, .5), .2, .6),
+        ('mrak', (.66, .3, 1.0, .6), .003, -.001, .005)],
+        cast=[('para', .78, .45, .6), ('para', .9, .5, .5)]),
+    'gayatri-deomana': dict(kam=[.6, .3, .06, 34], ef=[
+        ('zar', (.4, .0, 1.0, .25), .8, .2, TEPLA, 0),
+        ('voda', (.62, .3, .82, .45), .004)],
+        cast=[('lupeny', .0, .0, .5, .5, 15)]),
+    'jan-dredge': dict(kam=[.23, .2, .07, 34], ef=[
+        ('mrak', (.35, .1, .85, .6), .003, -.001, .006),
+        ('zar', (.55, .0, 1.0, .1), 1.2, .25, TEPLA, 0)],
+        cast=[('para', .7, .5, .7), ('prach', .35, .0, 1, .7, 20)]),
+    'marcus-fayel': dict(kam=[.22, .15, .07, 34], ef=[
+        ('zar', (.66, .0, .8, .15), 1.5, .3, TEPLA, 0),
+        ('paprsky', (.55, .0, 1.0, .5), .25, .4),
+        ('mrak', (.0, .0, .6, .25), .003, .0, .004),
+        ('teplo', (.4, .3, 1.0, .6), .003)],
+        cast=[('prach', .4, .1, 1, .6, 20)]),
 }
 
 TYPY = {'vir': 1, 'mrak': 2, 'voda': 3, 'zar': 4, 'paprsky': 5, 'radar': 6, 'teplo': 7}
@@ -320,6 +357,14 @@ def prevod(k):
 # Chráněné části (nesmí se deformovat): obdélník (x0, y0, x1, y1) nebo mnohoúhelník [(x, y), …].
 # Navíc se automaticky chrání ostré hrany (lodě, rámy oken, zábradlí, postavy) – kromě vírů.
 CHRAN = {
+    'tamsa-wheel': [(.2, .4, .34, 1), (.45, .0, .9, .8)],
+    'august-dunlow': [(0, .05, .35, 1), (.48, .2, 1, .7)],
+    'daniel-penselin': [(.15, .05, .72, 1)],
+    'adaliz-dayan': [(.0, .05, .5, 1)],
+    'samuel-messer-viii': [(0, 0, .6, 1)],
+    'gayatri-deomana': [(0, .1, 1, 1)],
+    'jan-dredge': [(.08, 0, .42, 1), (.35, .2, .82, .62)],
+    'marcus-fayel': [(.15, .0, .32, .55), (0, .45, 1, 1)],
     'solomon-hurston': [(.28, .05, .72, 1)],
     'isiah-hurston': [(.22, .05, .72, 1)],
     'arial-hurston': [(.35, .05, .85, 1)],
