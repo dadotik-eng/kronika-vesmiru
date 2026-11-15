@@ -14,7 +14,8 @@ popis: Dramatizace a kapitoly ze skutečných událostí dějin vesmíru Star Ci
   <h2 class="pri-nadpis">K poslechu</h2>
   <div class="pri-mrizka">
     {% for p in enc %}{% if p.prehrat %}
-    <article class="pri-karta" id="pribeh-{{ p.id }}">
+    <article class="pri-karta{% if p.obrazek %} ma-obrazek{% endif %}" id="pribeh-{{ p.id }}">
+      {% if p.obrazek %}<a class="pri-obrazek" href="{{ p.cist | default: '/pribehy/' | relative_url }}"><img src="{{ p.obrazek | relative_url }}" alt="Ilustrace: {{ p.nazev | escape }}" loading="lazy" width="960" height="540"></a>{% endif %}
       <p class="pri-stitek">{{ p.stitek }}</p>
       <h3>{{ p.nazev }}</h3>
       {% assign era = site.data.ery | where: "id", p.obdobi | first %}{% assign t = site.data.texty[p.prehrat] %}{% assign slov = t.odstavce | map: "text" | join: " " | number_of_words %}{% assign minut = slov | plus: 70 | divided_by: 140 %}
