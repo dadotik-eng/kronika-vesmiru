@@ -20,6 +20,7 @@ kapitoly:
 - kap-4
 rad: 2500
 obdobi: upe
+ilustrace: true
 ---
 
 Gaia Planet Services brala povolení jako zbytečnou byrokracii; v jedné zprávě firma napsala, že radši zaplatí pokutu, než aby ztrácela čas. Baxterův tým proto zamířil rovnou na Pallas III a začal vybírat místa pro terraformační zařízení.
