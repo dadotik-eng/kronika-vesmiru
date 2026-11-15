@@ -127,6 +127,22 @@ animace:
   - veta: "Od roku 2915"
     vis: dynasty
     lbl: "Gavin Hurston · 2915"
+  - veta: "Planetu firma získala"
+    vis: decree
+    lbl: "50 bilionů kreditů"
+  - veta: "Spokojenost zaměstnanců"
+    vis: toll
+    lbl: "Spokojenost 0,5 / 10"
+  - veta: "Hurston Dynamics vyrábí"
+    vis: ship
+    lbl: "Spectrum a Magnitude"
+  - veta: "A na konec jedna konspirace"
+    vis: redact
+    lbl: "Třetí řada zbraní?"
+  - veta: "Mnozí čekají"
+    vis: signal
+    lbl: "Zbraň na antihmotu"
+    o: {red: 1}
   - veta: "Dnes je Hurston Dynamics"
     vis: map
     lbl: "Hurston dnes"
@@ -201,5 +217,11 @@ V roce 2853 představil tým inženýra Aberdeena Hurstona první antihmotovou h
 Hurstonovi planetu po menší terraformaci obsadili a začali z ní vracet investici. Na vlastní planetě nemusela firma dodržovat přísné zákony impéria, takže doly a rafinerie, které by se jinde stavěly roky, rostly během měsíců. Těžba a průmysl bez omezení od té doby silně znečistily ovzduší a obyvatelé sledují index kvality vzduchu. Z dělnické ubytovny s označením LOR, místní pracovní rezidence, vyrostlo Lorville, největší město planety. Nad ním se tyčí sídlo firmy, věž Central, která vrhá na domy pod sebou věčný stín.
 
 V roce 2883 zemřel Chesterfield a vedení převzala Magda. Prodloužila pracovní dobu dělníkům se smlouvami Life/Labor a rozšířila těžbu i výrobu antihmotových zbraní. V roce 2897 unesli radikální členové odborů United Workers of Hurston nákladní loď Lastal, nad Lorville z ní vyhodili pilota a při zásahu ochranky zahynuli všichni únosci i tři rukojmí. Firma pak odbory prohlásila za teroristickou organizaci. Od roku 2915 vede firmu Magdin syn, plukovník Gavin Hurston.
+
+Planetu firma získala od vlády za peníze a akcie v odhadované hodnotě padesáti bilionů kreditů. Předtím sídlila na Zemi a doly i zkušební střelnice měla roztroušené po celé galaxii; během posledního půlstoletí je soustředila na Stanton. Návštěvníky vítá nablýskaný předváděcí sál a strojeně formální pilotní bar Viola's, zbytek planety ale firma vědomě drancuje: co nepatří továrnám, se těží nebo rozstřeluje při zbraňových zkouškách. Ovzduší je plné sazí a smogu, takže dělníci venku potřebují dýchací přístroje. Spokojenost zaměstnanců na Hurstonu prý dosahuje ohromujících 0,5 bodu z deseti a jen málokterý horník vydrží víc než jeden náborový turnus. Plukovník se navíc chlubí, kolik původních druhů firma vyhubila, a obývací pokoj si zdobí trofejemi z místní fauny. Militantní ekologové proto občas přepadají konvoje Hurstonu.
+
+Hurston Dynamics vyrábí kvantové kaskádové lasery a elektronová děla a její suroviny a součástky najdeme skoro v každé lodi, která dnes létá. Lasery řady Spectrum se používají už téměř sto let; Spectrum 7 doporučuje Cech lovců odměn jako zlatý standard pro začátečníky. Elektronová děla řady Magnitude jsou zbraní pro specialisty – v rukou zkušeného pilota přesná a ničivá, v rukou nováčka skoro k ničemu. Tvary a nástroje Hurstonu se kopírují po celé galaxii a nelegální kopie se dostaly až do xi’anských továren.
+
+A na konec jedna konspirace. Ve zbraňových laboratořích na Hurstonu se prý vyvíjí třetí řada zbraní. Zvěsti zesílily, když firma vypsala rekordní odměnu deset milionů kreditů, podle všeho na žoldáka, který jí ukradl zkušební prototyp. Jestli byla odměna vyplacena a prototyp vrácen, se neví. Pozorovatelům je ale divné, že Hurston vyrábí běžné i antihmotové hlavice, a přitom nemá vlastní zbraň, která by je vystřelila. Mnozí čekají, že firma jednou představí zcela nový typ zbraně na antihmotu – a ten by mohl změnit poměr sil mezi piloty i průběh války s Vanduuly.
 
 Dnes je Hurston Dynamics jednou z nejmocnějších firem impéria a planeta Hurston nese její jméno. Ekologové i obránci práv dělníků proti ní protestují, rodina ale svou historii vypráví jako příběh tvrdé práce a obchodního génia. Vyhrává ten, kdo vypráví.
