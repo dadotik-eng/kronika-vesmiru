@@ -28,6 +28,63 @@ obrazek:
   vyska: 540
   alt: 'Ilustrace: rodiče Okonovi s novorozenou Abeni u okna osady, venku Mars pod modrým nebem'
   popisek: Ilustrační obrázek
+animace:
+  - veta: "Osmnáctého března"
+    vis: planet
+    lbl: "Mars · 18. 3. 2157"
+    o: {s: green}
+  - veta: "Planeta, která lidstvu"
+    vis: planet
+    lbl: "Terraformace Marsu"
+    o: {s: forming}
+  - veta: "Trvalo to roky"
+    vis: toll
+    lbl: "Mars · 2125"
+  - veta: "Mars se poučil"
+    vis: planet
+    lbl: "Nové nebe"
+    o: {s: green}
+  - veta: "A pod tím nově"
+    vis: signal
+    lbl: "Abeni Okon"
+  - veta: "Stala se první"
+    vis: record
+    lbl: "První dítě jiného světa"
+  - veta: "Její rodiče"
+    vis: lab
+    lbl: "Kinah a Madu Okon"
+    o: {s: on}
+  - veta: "Média si ji vzala"
+    vis: signal
+    lbl: "Média"
+    o: {red: 1}
+  - veta: "Koncem dospívání"
+    vis: orbit
+    lbl: "Výsluní"
+    o: {traffic: 1}
+  - veta: "A pak, koncem dvacítky"
+    vis: silence
+    lbl: "Zmizela"
+  - veta: "Ne doslova"
+    vis: blank
+    lbl: "Komunitní programy"
+    o: {write: 1}
+  - veta: "Naposledy se objevila"
+    vis: ship
+    lbl: "Artemis · 2232"
+  - veta: "Pak už jen ticho"
+    vis: silence
+    lbl: "2252"
+  - veta: "Je pohřbená na Marsu"
+    vis: memorial
+    lbl: "Mars"
+  - veta: "Dodnes se osmnáctý"
+    vis: planet
+    lbl: "18. březen"
+    o: {s: green}
+  - veta: "Tam, kde kdysi bylo"
+    vis: orbit
+    lbl: "Země · Mars"
 zdroje:
 - record_key: galactapedia:Rz2DPeZZnk
   typ: Galactapedie

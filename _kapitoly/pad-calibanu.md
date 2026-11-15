@@ -31,6 +31,80 @@ obrazek:
   vyska: 351
   alt: Zničená osada na Calibanu pod kouřem a ohněm
   popisek: Pád Calibanu – obrázek od CIG · © Cloud Imperium Games
+animace:
+  - veta: "Polohu soustavy Caliban"
+    vis: map
+    lbl: "Caliban · 2341"
+    o: {n: 6}
+  - veta: "Klid ale netrval"
+    vis: silence
+    lbl: "Klid"
+  - veta: "Od roku 2739"
+    vis: radar
+    lbl: "Nájezdy · 2739"
+  - veta: "Vanduulové, válečnický"
+    vis: map
+    lbl: "Hrozba z Vanduulského prostoru"
+    o: {border: 1, red: 1}
+  - veta: "Rok 2792 přinesl"
+    vis: toll
+    lbl: "Caliban · 2792"
+  - veta: "Vláda tehdy do systému"
+    vis: radar
+    lbl: "31. bojová skupina"
+  - veta: "Poslední velký střet"
+    vis: radar
+    lbl: "Pás asteroidů · 2859"
+  - veta: "Osudný obrat přišel"
+    vis: signal
+    lbl: "7. 7. 2884 · 04:43"
+    o: {red: 1}
+  - veta: "Vanduulský klan, vedený"
+    vis: kingship
+    lbl: "Kingship"
+  - veta: "Velitelka Sylvie Randall"
+    vis: radar
+    lbl: "89. logistická letka"
+  - veta: "Tam se její jednotka"
+    vis: oneway
+    lbl: "Konvoje z Crionu"
+  - veta: "Díky této obraně"
+    vis: toll
+    lbl: "Přes 3 000 000 zachráněných"
+    o: {saved: 0.35}
+  - veta: "O šestnáct dní později"
+    vis: planet
+    lbl: "Crion · 23. 7. 2884"
+    o: {s: burn}
+  - veta: "Oficiální čísla mrtvých"
+    vis: redact
+    lbl: "Utajená čísla"
+  - veta: "Odhady hovoří"
+    vis: toll
+    lbl: "Přes 5 500 000 obětí"
+  - veta: "Z 89. letky přežil"
+    vis: record
+    lbl: "Jediný přeživší"
+  - veta: "Roku 2885 ji námořnictvo"
+    vis: memorial
+    lbl: "Ztracená letka"
+  - veta: "O sedm let později"
+    vis: senate
+    lbl: "Rozhodnutí · 2891"
+  - veta: "Ticho, které po tomto"
+    vis: silence
+    lbl: "Ticho"
+  - veta: "Dnes je Crion"
+    vis: planet
+    lbl: "Crion dnes"
+    o: {s: collapse}
+  - veta: "Caliban je podle současných"
+    vis: map
+    lbl: "Vanduulský prostor"
+    o: {erase: 1}
+  - veta: "Z místa, kde kdysi"
+    vis: blank
+    lbl: "Jméno v kronikách"
 zdroje:
 - record_key: galactapedia:0Gz5DNryvE
   typ: Galactapedie
