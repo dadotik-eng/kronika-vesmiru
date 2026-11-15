@@ -17,4 +17,21 @@ kapitoly:
 rad: 2666
 obdobi: messerove
 ilustrace: true
+animace:
+  - veta: "Galor Messer IX. vládl"
+    vis: dynasty
+    lbl: "Imperátor · 2715–2751"
+  - veta: "V dětství vážně"
+    vis: lab
+    lbl: "Nemoc"
+    o: {s: on}
+  - veta: "Na trůn usedl"
+    vis: toll
+    lbl: "Smrt Samuela"
+  - veta: "Měnu UEE přejmenoval"
+    vis: pillars
+    lbl: "Imperiály a metabaroko"
+  - veta: "Zemřel v úřadu"
+    vis: memorial
+    lbl: "2751"
 ---

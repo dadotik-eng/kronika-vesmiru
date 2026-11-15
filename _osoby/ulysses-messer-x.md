@@ -17,4 +17,17 @@ kapitoly:
 rad: 2702
 obdobi: messerove
 ilustrace: true
+animace:
+  - veta: "Ulysses Messer X. byl"
+    vis: pillars
+    lbl: "Metabarokní stavby"
+  - veta: "Po nástupu na trůn"
+    vis: dynasty
+    lbl: "Imperátor · 2751"
+  - veta: "Během své vlády osekal"
+    vis: decree
+    lbl: "Tvrdé zákony"
+  - veta: "V roce 2781 proti němu"
+    vis: toll
+    lbl: "Převrat · 2781"
 ---

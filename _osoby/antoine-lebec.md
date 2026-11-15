@@ -15,4 +15,17 @@ kapitoly: []
 rad: 2258
 obdobi: skoky
 ilustrace: true
+animace:
+  - veta: "Antoine Lebec se narodil"
+    vis: jump
+    lbl: "Inspirace: Croshaw"
+  - veta: "Pilotní výcvik"
+    vis: ship
+    lbl: "Vlastní loď · 2282"
+  - veta: "V roce 2290 objevil"
+    vis: blank
+    lbl: "Nul · 2290"
+  - veta: "V roce 2307 zmizel"
+    vis: silence
+    lbl: "Zmizel · 2307"
 ---

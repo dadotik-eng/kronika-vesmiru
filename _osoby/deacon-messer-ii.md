@@ -23,4 +23,18 @@ kapitoly:
 rad: 2567
 obdobi: messerove
 ilustrace: true
+animace:
+  - veta: "Deacon Messer II., jediný"
+    vis: dynasty
+    lbl: "Imperátor · 2592–2628"
+  - veta: "Za jeho vlády proběhla"
+    vis: map
+    lbl: "Druhá tevarinská válka"
+    o: {border: 1, red: 1}
+  - veta: "V roce 2628 dobrovolně"
+    vis: decree
+    lbl: "Předání vlády Livii"
+  - veta: "V roce 2643 se spolu"
+    vis: silence
+    lbl: "Ústraní"
 ---

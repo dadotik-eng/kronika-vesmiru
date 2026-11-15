@@ -18,4 +18,21 @@ kapitoly:
 rad: 2768
 obdobi: messerove
 ilustrace: true
+animace:
+  - veta: "Fiona Messer byla"
+    vis: dynasty
+    lbl: "Poslední z rodu"
+  - veta: "Nejprve pomohla bratrovi"
+    vis: decree
+    lbl: "Sesazení Ulyssese X."
+  - veta: "Informace, které předávala"
+    vis: signal
+    lbl: "Odboj Tide"
+    o: {red: 1}
+  - veta: "Když po úniku záznamu"
+    vis: record
+    lbl: "Garron II"
+  - veta: "Historici se domnívají"
+    vis: oneway
+    lbl: "Útěk"
 ---

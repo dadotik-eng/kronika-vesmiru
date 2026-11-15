@@ -783,8 +783,9 @@ async function loadPeople(){try{
     const box=new DOMParser().parseFromString('<div>'+(o.html||'')+'</div>','text/html').body.firstChild;
     const paras=[String(o.medailonek||'').trim(),...[...box.querySelectorAll('p,li')].map(p=>p.textContent.trim())].filter(Boolean);
     const sent=[];let lastAv=null;
-    paras.forEach(p=>{const parts=p.split(/(?<=[.!?…]["“”»]?)\s+(?=[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ])/);parts.forEach((s,si)=>{s=s.trim();if(!s)return;const av=autoVis(s),key=av&&JSON.stringify(av);const l={who:'ARCHIVÁŘ',t:s,v:hlas(s),p:0,h:si===parts.length-1?.9:.4};if(av&&key!==lastAv){Object.assign(l,av);lastAv=key}sent.push(l)})});
+    paras.forEach(p=>{const parts=p.split(/(?<=[.!?…]["“”»]?)\s+(?=[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ])/);parts.forEach((s,si)=>{s=s.trim();if(!s)return;const ruc=Array.isArray(o.animace)&&o.animace.length;const av=ruc?null:autoVis(s),key=av&&JSON.stringify(av);const l={who:'ARCHIVÁŘ',t:s,v:hlas(s),p:0,h:si===parts.length-1?.9:.4};if(av&&key!==lastAv){Object.assign(l,av);lastAv=key}sent.push(l)})});
     if(!sent.length)return;
+    if(Array.isArray(o.animace))o.animace.forEach(a=>{if(!a||!/^(orbit|radar|ship|planet|jump|contact|map|senate|pillars|signal|dynasty|kingship|ark|decree|redact|release|voice|timeline|mosaic|paths|lab|toll|memorial|oneway|silence|blank|record)$/.test(a.vis))return;const z=String(a.veta||'').trim();const l=z?sent.find(x=>x.t.startsWith(z)):null;if(!l)return;l.vis=a.vis;if(a.lbl)l.lbl=String(a.lbl);if(a.o&&typeof a.o==='object')l.o=a.o});
     const head={who:'ARCHIVÁŘ',t:jm+'.',v:(cti||vyslov(jm.replace(/\s*\(.*?\)\s*/g,' ').trim()))+'.',h:.8,fx:'bell',vis:'voice',lbl:jm};
     const lines=[head];const rk=roky(o);if(o.role)lines.push({who:'ARCHIVÁŘ',t:String(o.role).replace(/^./,c=>c.toUpperCase())+'.',v:hlas(String(o.role).replace(/^./,c=>c.toUpperCase()))+'.',h:.6});if(rk)lines.push({who:'ARCHIVÁŘ',t:rk,v:vyslov(rk),h:.7});
     const src=(o.zdroje||[]).map(p=>p.nazev+(p.typ?' ('+p.typ+')':'')).join(' · ');

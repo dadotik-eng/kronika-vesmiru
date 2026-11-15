@@ -19,4 +19,20 @@ zdroje:
 rad: 2943
 obdobi: naprava
 ilustrace: true
+animace:
+  - veta: "Kofi Baféuma, banusky"
+    vis: jump
+    lbl: "Objev soustavy Tamsa · 2943"
+  - veta: "Její polohu prodal"
+    vis: decree
+    lbl: "Prodej polohy UEE"
+  - veta: "Když UEE souhlasilo"
+    vis: mosaic
+    lbl: "Pojmenována po Tamse Wheel"
+  - veta: "To se mu v roce 2945"
+    vis: contact
+    lbl: "Setkání · 2945"
+  - veta: "Tamsa je jediná"
+    vis: orbit
+    lbl: "Dvě planety kolem černé díry"
 ---
