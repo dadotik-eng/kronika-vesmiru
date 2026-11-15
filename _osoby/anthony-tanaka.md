@@ -14,4 +14,6 @@ zdroje:
 kapitoly: []
 rad: 2745
 obdobi: messerove
+ilustrace: true
+ilustrace_popisek: Obrázek od CIG · © Cloud Imperium Games
 ---

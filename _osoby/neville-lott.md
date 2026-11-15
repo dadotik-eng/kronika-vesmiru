@@ -14,4 +14,6 @@ zdroje:
 kapitoly: []
 rad: 2851
 obdobi: naprava
+ilustrace: true
+ilustrace_popisek: Snímek ze hry Star Citizen · © Cloud Imperium Games
 ---

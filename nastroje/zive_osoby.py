@@ -592,6 +592,14 @@ OSOBY = {
         ('mrak', (.5, .0, 1.0, .35), .004, -.002, .006),
         ('zar', (.75, .25, 1.0, .35), 1.6, .4, TEPLA, 0)],
         cast=[('para', .78, .25, 1.0), ('para', .93, .22, .8), ('popel', 20)]),
+    'neville-lott': dict(kam=[.5, .3, .05, 36], ef=[], cast=[('prach', .0, .0, 1, 1, 12)]),
+    'cedric-cochran': dict(kam=[.5, .3, .05, 36], ef=[], cast=[('prach', .0, .0, 1, 1, 12)]),
+    'anthony-tanaka': dict(kam=[.5, .3, .05, 36], ef=[], cast=[('prach', .0, .0, 1, 1, 12)]),
+    'titus-costigan': dict(kam=[.5, .3, .05, 36], ef=[], cast=[('prach', .0, .0, 1, 1, 12)]),
+    'olivia-hurston': dict(kam=[.5, .3, .06, 34], ef=[
+        ('mrak', (.05, .05, .4, .6), .003, .0, .005),
+        ('mrak', (.62, .05, .95, .6), .003, .0, .005)],
+        cast=[('para', .25, .3, .8), ('para', .75, .3, .8)]),
 }
 
 TYPY = {'vir': 1, 'mrak': 2, 'voda': 3, 'zar': 4, 'paprsky': 5, 'radar': 6, 'teplo': 7}
@@ -614,6 +622,11 @@ def prevod(k):
 # Chráněné části (nesmí se deformovat): obdélník (x0, y0, x1, y1) nebo mnohoúhelník [(x, y), …].
 # Navíc se automaticky chrání ostré hrany (lodě, rámy oken, zábradlí, postavy) – kromě vírů.
 CHRAN = {
+    'neville-lott': [(0, 0, 1, 1)],
+    'cedric-cochran': [(0, 0, 1, 1)],
+    'anthony-tanaka': [(0, 0, 1, 1)],
+    'titus-costigan': [(0, 0, 1, 1)],
+    'olivia-hurston': [(.35, .1, .65, 1), (0, .65, 1, 1)],
     'assan-kieren': [(0, .0, .45, 1), (.4, .5, 1, 1)],
     'daniela-argen': [(.05, .0, .45, 1), (0, .1, 1, .4)],
     'ghata-veras': [(0, .1, 1, 1)],
