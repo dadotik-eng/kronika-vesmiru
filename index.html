@@ -137,7 +137,7 @@ sekce: domu
   var tydny = document.querySelectorAll('.karta-tyden');
   if (tydny.length) { var t = Math.floor((Date.now() / 864e5 + 3) / 7) % tydny.length; [].forEach.call(tydny, function (el, i) { el.hidden = i !== t; }); }
   // Osobnost dne: každý den jiná osoba z rejstříku.
-  fetch(Z + 'data/osoby.json').then(function (r) { return r.json(); }).then(function (o) {
+  fetch(Z + 'data/osoby.json?v={{ site.time | date: '%s' }}').then(function (r) { return r.json(); }).then(function (o) {
     if (!o.length) return;
     var d = Math.floor(Date.now() / 864e5), x = o[(d * 37) % o.length], el = document.getElementById('osobnost-dne');
     if (!el) return;
