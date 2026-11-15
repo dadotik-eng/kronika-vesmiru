@@ -1,5 +1,4 @@
 ---
-ilustrace: true
 jmeno: Ivar Messer I.
 narozeni: '2516'
 umrti: '2592'
@@ -24,4 +23,6 @@ kapitoly:
 - kap-6
 rad: 2516
 obdobi: messerove
+ilustrace: true
+ilustrace_popisek: Obrázek od CIG · © Cloud Imperium Games
 ---
