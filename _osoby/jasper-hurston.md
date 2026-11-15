@@ -19,6 +19,7 @@ zdroje:
 rad: 2799
 obdobi: naprava
 rod: hurston
+ilustrace: true
 ---
 
 V Lorville ho nepřipomíná žádná deska ani socha. S vlastním synem Chesterfieldem se přel – i té noci, kdy zmizel – a někteří proto spekulují, že rodina o jeho osudu ví víc, než přiznává.

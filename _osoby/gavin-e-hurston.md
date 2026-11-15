@@ -20,4 +20,5 @@ kapitoly: []
 rad: 2867
 obdobi: naprava
 rod: hurston
+ilustrace: true
 ---

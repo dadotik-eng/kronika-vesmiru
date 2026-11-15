@@ -19,6 +19,7 @@ zdroje:
 rad: 2786
 obdobi: messerove
 rod: hurston
+ilustrace: true
 ---
 
 Podle pozdějšího svědectví mu Maria tehdy pohrozila, že zveřejní, jak firma otrávila jezero na planetě Asura. Alton ji prý varoval, že by to firmu poškodilo, ale manžele by zničily soudní spory. Jasper už pro firmu nikdy nepracoval.
