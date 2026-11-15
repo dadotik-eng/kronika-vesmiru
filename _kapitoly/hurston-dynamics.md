@@ -193,6 +193,12 @@ zdroje:
   nazev: United Workers of Hurston
   url: https://starcitizen.tools/United_Workers_of_Hurston
   hash: 738eb31ea20f7b2595f54a81d5a90220b81d9a97096b2995db7b69ee403b097b
+obrazek:
+  soubor: /assets/kapitoly/hurston-dynamics.webp
+  sirka: 1280
+  vyska: 612
+  alt: Logo Hurston Dynamics
+  popisek: Hurston Dynamics · © Cloud Imperium Games
 ---
 Říká se, že kdykoli v impériu padne výstřel, je dost možné, že za ním stojí Hurston. Hurston Dynamics je dnes největším výrobcem standardních hlavic pro armádní zakázky a třetím největším zpracovatelem surovin pro antihmotu. Je to také jedna z nejstarších nepřetržitě fungujících rodinných firem v impériu a jedna z mála, které patří celá planeta.
 

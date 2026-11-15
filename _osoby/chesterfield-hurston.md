@@ -19,6 +19,8 @@ zdroje:
 rad: 2843
 obdobi: naprava
 rod: hurston
+ilustrace: true
+ilustrace_popisek: Ilustrace podle portrétu ze hry Star Citizen · © Cloud Imperium Games
 ---
 
 S otcem Jasperem se dlouhodobě přel. Kritici tvrdí, že pojmenování nemocnice po matce byl promyšlený tah, kterým se přihlásil k jejímu odkazu místo otcova.

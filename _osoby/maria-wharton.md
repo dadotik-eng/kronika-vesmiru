@@ -19,6 +19,8 @@ zdroje:
 rad: 2799
 obdobi: naprava
 rod: hurston
+ilustrace: true
+ilustrace_popisek: Ilustrace podle portrétu ze hry Star Citizen · © Cloud Imperium Games
 ---
 
 Dodnes se vedou spory, jestli dala přednost vlastní pověsti před skutečnými změnami, nebo jestli ze špatné situace vytěžila maximum a pomohla dělníkům víc než kdokoli jiný své doby. Jisté je, že si lidé pamatují její jméno: syn Chesterfield po její smrti pojmenoval novou nemocnici v Lorville Maria Pure of Heart a před budovou stojí její socha.
