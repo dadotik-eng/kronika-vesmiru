@@ -383,6 +383,24 @@
 "Sol"
 ]
 ],
+"/kapitoly/hurston-dynamics/": [
+[
+"BREMEN",
+"Bremen"
+],
+[
+"DAVIEN",
+"Davien"
+],
+[
+"SOL",
+"Sol"
+],
+[
+"STANTON",
+"Stanton"
+]
+],
 "/kapitoly/pad-calibanu/": [
 [
 "CALIBAN",
@@ -519,12 +537,6 @@
 "Vega"
 ]
 ],
-"/osobnosti/cara-webster/": [
-[
-"STANTON",
-"Stanton"
-]
-],
 "/osobnosti/carl-dyson/": [
 [
 "HORUS",
@@ -549,6 +561,12 @@
 [
 "PALLAS",
 "Th.us'ūng"
+]
+],
+"/osobnosti/chesterfield-hurston/": [
+[
+"STANTON",
+"Stanton"
 ]
 ],
 "/osobnosti/chule-se-rua/": [
@@ -599,12 +617,6 @@
 "R.il'a"
 ]
 ],
-"/osobnosti/dalton-colabello/": [
-[
-"DAVIEN",
-"Davien"
-]
-],
 "/osobnosti/daniel-penselin/": [
 [
 "DAVIEN",
@@ -647,6 +659,16 @@
 [
 "CHRONOS",
 "Chronos"
+]
+],
+"/osobnosti/eduard-hurston/": [
+[
+"BREMEN",
+"Bremen"
+],
+[
+"SOL",
+"Sol"
 ]
 ],
 "/osobnosti/eli-price/": [
@@ -737,6 +759,12 @@
 "Terra"
 ]
 ],
+"/osobnosti/jasper-hurston/": [
+[
+"TERRA",
+"Terra"
+]
+],
 "/osobnosti/jerry/": [
 [
 "DAVIEN",
@@ -799,10 +827,6 @@
 [
 "RHETOR",
 "Rhetor"
-],
-[
-"TERRA",
-"Terra"
 ]
 ],
 "/osobnosti/linton-messer-xi/": [
@@ -933,6 +957,12 @@
 [
 "TOHIL",
 "Tohil"
+]
+],
+"/osobnosti/olivia-hurston/": [
+[
+"DAVIEN",
+"Davien"
 ]
 ],
 "/osobnosti/patek-coen/": [
