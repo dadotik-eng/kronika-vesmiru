@@ -35,7 +35,9 @@ stitky:
 - Lorville
 - Life/Labor
 - Stanton
-overeni: neověřeno
+overeni: OK
+overeno_kdy: '2026-11-15'
+overeno_kym: Daniel
 animace:
   - veta: "Říká se, že kdykoli"
     vis: signal
