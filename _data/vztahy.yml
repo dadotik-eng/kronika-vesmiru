@@ -13,6 +13,8 @@ vazby:
   "amandeep-vakario|ellroy-cass": {typ: spoluprace, popis: "Cass patřil k Vakariovým slavným klientům"}
   "amandeep-vakario|magnus-tobin": {typ: spoluprace, popis: "Tobinův klient; pro Tobina namluvil Moments of Clarity"}
   "antoine-lebec|patek-coen": {typ: vliv, popis: "Lebecova biografie přivedla Coena k navjumpingu"}
+  "arial-hurston|magda-hurston": {typ: souvislost, popis: "Oba vedli Hurston Dynamics; měsíc Arial a planeta Hurston připomínají jejich rod"}
+  "ashley-ghan|sylvie-randall": {typ: souvislost, popis: "Ghan objevila soustavu Caliban, Randall ji roku 2884 bránila před Vanduuly"}
   "astrid-messer-vii|gammon-messer": {typ: rodina, popis: "Dcera a otec"}
   "astrid-messer-vii|illyana-messer-vi": {typ: rodina, popis: "Neteř a teta – Astrid se po její smrti chopila trůnu"}
   "astrid-messer-vii|samuel-messer-viii": {typ: rodina, popis: "Sestřenice a bratranec – Astrid ho odstavila od trůnu"}
@@ -21,6 +23,7 @@ vazby:
   "cal-mason|ryan-enright": {typ: spoluprace, popis: "Mason létá ve 42. letce pod Enrightovým velením"}
   "cara-webster|noah-white": {typ: spoluprace, popis: "Hlavní mechanička jeho lodi UEES Stanton"}
   "cedric-cochran|ernst-bishop": {typ: spoluprace, popis: "Cochran ohlásil vítězství Bishopovy úderné skupiny v operaci Mandrake"}
+  "chule-se-rua|seang-se-rua": {typ: rodina, popis: "Matka a syn – Se’ang byl jejím jediným dědicem"}
   "clement-redfield|erin-toi": {typ: spoluprace, popis: "Šéf štábu imperátorky Toi"}
   "corsen-messer-v|deacon-messer-ii": {typ: rodina, popis: "Syn a otec"}
   "corsen-messer-v|gammon-messer": {typ: rodina, popis: "Otec a syn – oba otráveni roku 2662"}
@@ -50,6 +53,7 @@ vazby:
   "illyana-messer-vi|samuel-messer-viii": {typ: rodina, popis: "Matka a syn – určila ho za nástupce"}
   "illyana-sharrad|kelos-costigan": {typ: spoluprace, popis: "Costigan ji jmenoval do úřadu"}
   "inacio-santos-melo|upsana-dixit": {typ: nastupce, popis: "Nahradil ji roku 2546 jako moderátor pořadu Showdown!"}
+  "ita-hurston|kellar-lench": {typ: souvislost, popis: "Lenchův objev vedl k první tevarinské válce, v níž Ita Hurston padla"}
   "ivar-messer-i|janis-rezaian": {typ: protivnik, popis: "Veřejně ho kritizovala"}
   "ivar-messer-i|mauricio-tusk": {typ: protivnik, popis: "Veřejně ho kritizoval"}
   "ivar-messer-i|sydney-kamarck": {typ: protivnik, popis: "Kamarck ho viní z bombových útoků roku 2546"}
@@ -57,20 +61,24 @@ vazby:
   "j-harris-arnold|leonard-casse": {typ: vliv, popis: "Arnold obdivoval Cassovo dílo a koupil Casse Aerospace"}
   "janis-rezaian|mauricio-tusk": {typ: spoluprace, popis: "Společně kritizovali Ivara Messera"}
   "janna-thurville|joona-tzur": {typ: rodina, popis: "Dcera a otec"}
+  "jax-mccleary|jimmy": {typ: spoluprace, popis: "Moderátor Whitley's Guide a jeho producent a kaskadérský pilot"}
   "jerry|neal-socolovich": {typ: spoluprace, popis: "Spolu prolomili jazykovou bariéru mezi lidmi a Banu"}
   "jerry|vernon-tar": {typ: souvislost, popis: "Tar na Jerryho loď zahájil palbu, Jerry ji neopětoval"}
-  "jax-mccleary|jimmy": {typ: spoluprace, popis: "Moderátor Whitley's Guide a jeho producent a kaskadérský pilot"}
   "julian-wexler|randall-graves": {typ: spoluprace, popis: "Ředitel a šéf bezpečnosti základny Archon"}
   "kelos-costigan|titus-costigan": {typ: rodina, popis: "Otec a syn"}
   "ki-jotal|laylani-addison": {typ: spoluprace, popis: "Jmenovala ji první tevarinskou členkou vlády"}
+  "kofi-bafeuma|tamsa-wheel": {typ: vliv, popis: "Kofi po ní pojmenoval soustavu Tamsa a roku 2945 se s ní setkal"}
   "laylani-addison|suj-kossi": {typ: spoluprace, popis: "Spolupráce na programech pro Tevariny"}
   "linton-messer-xi|terrence-akari": {typ: protivnik, popis: "Akari se mu jako první vzepřel"}
   "linton-messer-xi|ulysses-messer-x": {typ: rodina, popis: "Syn a otec – Linton ho svrhl"}
   "livia-messer-iii|marius-messer-iv": {typ: rodina, popis: "Matka a syn"}
+  "magda-hurston|toshi-aaron": {typ: souvislost, popis: "Aaron objevila soustavu Stanton, Magda Hurston v ní pro firmu koupila planetu Stanton I"}
+  "michelle-saleno|scott-childress": {typ: souvislost, popis: "Childressův tým v RSI sestrojil první kvantový pohon; Saleno s kvantovým pohonem jako první doletěla za Jupiter a pak pro RSI zachránila loď Zeus"}
   "neal-socolovich|vernon-tar": {typ: souvislost, popis: "Socolovichova delegace převzala Tarův první kontakt s Banu"}
   "noah-white|sophia-kelly": {typ: spoluprace, popis: "Kapitán a jeho první důstojnice na UEES Stanton"}
   "noah-white|steve-colton": {typ: spoluprace, popis: "Kapitán a letecký instruktor lodi UEES Stanton"}
   "randall-graves|steve-colton": {typ: spoluprace, popis: "Létali spolu ve 118. letce 2. flotily"}
+  "seang-se-rua|yaha-se-xyo": {typ: nastupce, popis: "Se’ang odstoupil, aby mohla nastoupit Y.ah’a; spolu terraformovali R.aip’uāng"}
   "terrence-akari|tueng-se-kre": {typ: spoluprace, popis: "Spolu stáli za smlouvou Akari–Kr.ē"}
 vyradit:
   - "amandeep-vakario|leonard-casse"
