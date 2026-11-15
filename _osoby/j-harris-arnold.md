@@ -15,6 +15,7 @@ zdroje:
 kapitoly: []
 rad: 2742
 obdobi: messerove
+ilustrace: true
 ---
 
 Arnold byl jediným synem Paxe Harrise a Ndilimeke Arnold. U Aegis Dynamics se podílel na projektu Monitor, z něhož vzešla loď Hammerhead. Jeho návrh byl vybrán mezi šest prototypů, ale při prvních zkušebních letech neuspěl a námořnictvu nikdy nebyl dodán. Od nadřízených pak nedostával žádnou zpětnou vazbu, nové návrhy mu opakovaně zamítali, a tak si ve volném čase kreslil lodě podle svého oblíbeného Leonarda Casseho.
