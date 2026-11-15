@@ -15,7 +15,7 @@
     'float n(vec2 p){vec2 i=floor(p),f=fract(p);f=f*f*(3.-2.*f);return mix(mix(h(i),h(i+vec2(1,0)),f.x),mix(h(i+vec2(0,1)),h(i+1.),f.x),f.y);}' +
     'float fb(vec2 p){float s=0.,a=.5;for(int i=0;i<5;i++){s+=a*n(p);p*=2.03;a*=.5;}return s;}' +
     'float tw(vec2 u){return sin(t*2.4+h(floor(u*480.))*6.283)*.5+.5;}';
-  var HLAVA = 'precision highp float;varying vec2 v;uniform sampler2D I,M;uniform float t,sd;uniform vec3 cam;uniform vec4 cr;' + NOISE +
+  var HLAVA = 'precision highp float;varying vec2 v;uniform sampler2D I,M;uniform float t,sd;uniform vec3 cam;uniform vec4 cr;uniform vec4 eA[8],eB[8],eC[8];' + NOISE + 'vec2 rot(vec2 p,float a){float c=cos(a),s=sin(a);return vec2(c*p.x-s*p.y,s*p.x+c*p.y);}' +
     'void main(){vec2 u=cr.xy+v*cr.zw;u=(u-cam.xy)/cam.z+cam.xy;vec4 m=texture2D(M,u);vec2 o=vec2(0);';
 
   /* ---------- scény ---------- */
@@ -40,7 +40,14 @@
     fx.fillStyle = g; fx.fillRect(p[0] - r, p[1] - r, r * 2, r * 2);
   }
 
+  function novaLod(c, f) { return { f: f, v: 1 / (25 + R() * 35), ox: (R() - .5) * .04, oy: (R() - .5) * .04, s: .6 + R() * .8, bl: R() * 5 }; }
+  function novaPara(c) { var s = c[3] || 1; return { x: c[1] + (R() - .5) * .004, y: c[2], vx: (R() - .3) * .006, vy: -(.01 + R() * .01), r: 2.5 * s, l: 0, L: 3 + R() * 3 }; }
+  function novaJiskra(c) { return { x: c[1] + (R() - .5) * .03, y: c[2] + R() * .02, vx: (R() - .3) * .01, vy: -(.02 + R() * .04), l: 0, L: 1.5 + R() * 2.5 }; }
+  function novaBublina(c, dole) { return { x: c[1] + R() * (c[3] - c[1]), y: dole ? c[4] : c[2] + R() * (c[4] - c[2]), v: .01 + R() * .02, s: .5 + R() * .8, f: R() * 7 }; }
+  function novyLupen(c, kde) { var b = ['rgba(255,250,235,.75)', 'rgba(210,235,170,.7)', 'rgba(255,215,225,.7)'][(R() * 3) | 0]; return { x: c[1] + R() * (c[3] - c[1]), y: kde ? c[2] + R() * (c[4] - c[2] + .6) : c[2] - R() * .1, v: .02 + R() * .025, vx: .006 + R() * .01, s: .6 + R() * .8, f: R() * 7, bar: b }; }
+
   var SCENY = {
+
     /* Obecná scéna pro portréty: R = plápolající světla, G = třpytivé body. */
     zakladni: {
       cam: function (sd) { return [.35 + sd * .3, .42, .09, 30 + sd * 10]; },
@@ -54,6 +61,87 @@
       init: function (s) { prach(s, 30, .03, .97, .03, .95); },
       krok: prachKrok,
       kresli: function (s, fx, P, z, k) { prachKresli(s, fx, P, z, k * 1.6, .4); }
+    },
+
+    /* Portrét s ručním nastavením (nastroje/zive_osoby.py). */
+    osoba: {
+      cam: function (sd, k) { return k.kam; },
+      pan: .012,
+      fs: 'float T=8.;float pa=fract(t/T),pb=fract(t/T+.5);vec2 oa=vec2(0),ob=vec2(0);vec3 ad=vec3(0);float bm=0.;' +
+        'for(int i=0;i<8;i++){vec4 A=eA[i],B=eB[i],C=eC[i];if(B.x<.5)break;' +
+        'vec2 c=(A.xy+A.zw)*.5,r=max((A.zw-A.xy)*.5,vec2(.001));vec2 q=(u-c)/r;float d=length(q);float e=smoothstep(1.,.55,d);' +
+        'if(B.x<1.5){float f=pow(max(1.-d,0.),1.3);oa+=c+rot(q,(pa-.5)*T*B.y*f)*r-u;ob+=c+rot(q,(pb-.5)*T*B.y*f)*r-u;}' +
+        'else if(B.x<2.5){vec2 nz=(vec2(fb(u*6.+vec2(t*.05,0.)),fb(u*6.+vec2(3.,t*.04)))-.5)*B.w;oa+=e*(-B.yz*(pa-.5)*T+nz);ob+=e*(-B.yz*(pb-.5)*T+nz);}' +
+        'else if(B.x<3.5){vec2 w=vec2((sin(u.y*700.+t*1.7)*.5+n(u*vec2(25.,300.)+t*.6)-.5)*B.y,0.);oa+=e*w;ob+=e*w;}' +
+        'else if(B.x<4.5){float s=B.w>.5?step(.55,fract(t*B.y*.5)):(.5+.5*sin(t*B.y));ad+=C.rgb*exp(-d*d*2.5)*B.z*(.35+.65*s);}' +
+        'else if(B.x<5.5){bm+=e*(n(vec2(u.x*14.-t*B.z,t*.2))-.5)*2.*B.y;}' +
+        'else if(B.x<6.5){float an=atan(q.y,q.x);float df=mod(mod(t*B.y*6.283,6.283)-an+6.283,6.283);ad+=C.rgb*exp(-df*2.5)*step(d,1.)*(1.-d*.5)*.35;}' +
+        'else{vec2 w=(vec2(n(u*vec2(90.,40.)+vec2(0.,-t*2.5)),n(u*vec2(80.,60.)+vec2(3.,-t*2.)))-.5)*B.y;oa+=e*w;ob+=e*w;}}' +
+        'float wa=1.-abs(2.*pa-1.);vec3 col=mix(texture2D(I,u+ob).rgb,texture2D(I,u+oa).rgb,wa);' +
+        'float lu=dot(col,vec3(.3,.59,.11));col*=1.+bm*smoothstep(.25,.8,lu);' +
+        'col+=col*m.g*(tw(u)-.3)*2.4;' +
+        'float fl=fb(u*vec2(40.,25.)+vec2(sd*9.,-t*2.4))*.9+.25*sin(t*10.+u.x*60.);col+=col*m.r*(fl-.4)*1.1;' +
+        'col+=ad*(1.-lu*.5);col*=1.+.03*sin(t*.5+sd*6.);gl_FragColor=vec4(col,1.);}',
+      init: function (s, pol) {
+        s.sys = [];
+        (pol.def.k.cast || []).forEach(function (c) {
+          var typ = c[0], o = { typ: typ, c: c, p: [] }, i;
+          if (typ === 'lode') for (i = 0; i < c[5]; i++) o.p.push(novaLod(c, R()));
+          if (typ === 'para') for (i = 0; i < 12; i++) { var q = novaPara(c); q.l = R() * q.L; o.p.push(q); }
+          if (typ === 'jiskry') for (i = 0; i < 18; i++) { var j = novaJiskra(c); j.l = R() * j.L; o.p.push(j); }
+          if (typ === 'prach') prach(o, c[5], c[1], c[3], c[2], c[4]);
+          if (typ === 'bubliny') for (i = 0; i < c[5]; i++) o.p.push(novaBublina(c, 0));
+          if (typ === 'lupeny') for (i = 0; i < c[5]; i++) o.p.push(novyLupen(c, 1));
+          if (typ === 'popel') for (i = 0; i < c[1]; i++) o.p.push({ x: R(), y: R(), vx: .01 + R() * .015, vy: .02 + R() * .03, s: .5 + R() * 1.2, f: R() * 7, sv: R() < .3 });
+          s.sys.push(o);
+        });
+      },
+      krok: function (s, dt, t) {
+        s.sys.forEach(function (o) {
+          var c = o.c;
+          if (o.typ === 'lode') o.p.forEach(function (l, i) { l.f += l.v * dt; l.bl += dt; if (l.f > 1) o.p[i] = novaLod(c, 0); });
+          if (o.typ === 'para') o.p.forEach(function (q, i) { q.x += q.vx * dt; q.y += q.vy * dt; q.l += dt; if (q.l > q.L) o.p[i] = novaPara(c); });
+          if (o.typ === 'jiskry') o.p.forEach(function (j, i) { j.x += j.vx * dt + Math.sin(t * 2 + i) * .0003; j.y += j.vy * dt; j.l += dt; if (j.l > j.L) o.p[i] = novaJiskra(c); });
+          if (o.typ === 'prach') prachKrok(o, dt, t);
+          if (o.typ === 'bubliny') o.p.forEach(function (b, i) { b.y -= b.v * dt; b.f += dt; if (b.y < c[2]) o.p[i] = novaBublina(c, 1); });
+          if (o.typ === 'lupeny') o.p.forEach(function (b, i) { b.y += b.v * dt; b.x += (b.vx + Math.sin(t * .8 + b.f) * .01) * dt; b.f += dt; if (b.y > c[4] + .6) o.p[i] = novyLupen(c, 0); });
+          if (o.typ === 'popel') o.p.forEach(function (a) { a.x += (a.vx + Math.sin(t + a.f) * .004) * dt; a.y += a.vy * dt; a.f += dt; if (a.y > 1.02 || a.x > 1.02) { a.x = R() * 1.1 - .1; a.y = -.02; } });
+        });
+      },
+      kresli: function (s, fx, P, z, k) {
+        s.sys.forEach(function (o) {
+          var c = o.c;
+          if (o.typ === 'lode') o.p.forEach(function (l) {
+            var x = c[1] + (c[3] - c[1]) * l.f + l.ox, y = c[2] + (c[4] - c[2]) * l.f + l.oy, p = P(x, y), al = Math.min(1, l.f * 8, (1 - l.f) * 8) * .85;
+            var a0 = P(c[1], c[2]), a1 = P(c[3], c[4]), ang = Math.atan2(a1[1] - a0[1], a1[0] - a0[0]), d = Math.max(1.2, 2.6 * c[6] * l.s * k);
+            fx.save(); fx.translate(p[0], p[1]); fx.rotate(ang);
+            fx.fillStyle = c[7] ? 'rgba(200,205,215,' + al * .8 + ')' : 'rgba(22,20,24,' + al + ')';
+            fx.beginPath(); fx.ellipse(0, 0, d, d * .38, 0, 0, 7); fx.fill();
+            fx.globalCompositeOperation = 'lighter';
+            var r = d * .9, g = fx.createRadialGradient(-d, 0, 0, -d, 0, r);
+            g.addColorStop(0, c[7] ? 'rgba(170,210,255,' + al + ')' : 'rgba(255,150,70,' + al * .9 + ')'); g.addColorStop(1, 'rgba(0,0,0,0)');
+            fx.fillStyle = g; fx.fillRect(-d - r, -r, r * 2, r * 2);
+            if (Math.sin(l.bl * 3) > .9) { fx.fillStyle = 'rgba(255,90,80,' + al + ')'; fx.fillRect(d * .6, -.5, Math.max(1, k), Math.max(1, k)); }
+            fx.globalCompositeOperation = 'source-over'; fx.restore();
+          });
+          if (o.typ === 'para') o.p.forEach(function (q) { var e = q.l / q.L; zar(fx, P(q.x, q.y), Math.max(1.5, q.r * (1 + e * 3.5) * z * k), Math.sin(Math.PI * Math.min(1, e * 1.4)) * .35 * (1 - e), '245,245,248', '245,245,248'); });
+          if (o.typ === 'jiskry') { fx.globalCompositeOperation = 'lighter'; o.p.forEach(function (j) { zar(fx, P(j.x, j.y), Math.max(1, 1.2 * z * k), Math.sin(Math.PI * j.l / j.L), '255,210,140', '255,90,20'); }); fx.globalCompositeOperation = 'source-over'; }
+          if (o.typ === 'prach') prachKresli(o, fx, P, z, k * 1.4, .4);
+          if (o.typ === 'bubliny') o.p.forEach(function (b) {
+            var h = c[4] - c[2], p = P(b.x + Math.sin(b.f * 1.5) * .004, b.y), r = Math.max(1, c[6] * b.s * k), al = Math.max(0, Math.min(1, (b.y - c[2]) / h * 4, (c[4] - b.y) / h * 6 + .2)) * .55;
+            fx.strokeStyle = 'rgba(255,245,225,' + al + ')'; fx.lineWidth = Math.max(.6, r * .12); fx.beginPath(); fx.arc(p[0], p[1], r, 0, 7); fx.stroke();
+            fx.fillStyle = 'rgba(255,255,255,' + al * .5 + ')'; fx.beginPath(); fx.arc(p[0] - r * .35, p[1] - r * .35, r * .22, 0, 7); fx.fill();
+          });
+          if (o.typ === 'lupeny') o.p.forEach(function (b) {
+            var p = P(b.x, b.y), d = Math.max(1, 1.6 * b.s * k); fx.save(); fx.translate(p[0], p[1]); fx.rotate(b.f * 1.7);
+            fx.fillStyle = b.bar; fx.beginPath(); fx.ellipse(0, 0, d, d * .45 * Math.abs(Math.sin(b.f * 2)) + .3, 0, 0, 7); fx.fill(); fx.restore();
+          });
+          if (o.typ === 'popel') o.p.forEach(function (a) {
+            var p = P(a.x, a.y); fx.fillStyle = a.sv ? 'rgba(170,165,160,.35)' : 'rgba(20,18,18,.55)';
+            fx.save(); fx.translate(p[0], p[1]); fx.rotate(a.f); fx.fillRect(-a.s * k, -a.s * k * .5, Math.max(1, a.s * 2 * k), Math.max(.6, a.s * k)); fx.restore();
+          });
+        });
+      }
     },
 
     'ztracena-letka': {
@@ -175,7 +263,7 @@
     g.attachShader(p, shader(g.FRAGMENT_SHADER, HLAVA + SCENY[jm].fs));
     g.linkProgram(p);
     if (!g.getProgramParameter(p, g.LINK_STATUS)) return (programy[jm] = null);
-    var u = {}; ['t', 'sd', 'cam', 'cr', 'I', 'M'].forEach(function (k) { u[k] = g.getUniformLocation(p, k); });
+    var u = {}; ['t', 'sd', 'cam', 'cr', 'I', 'M', 'eA', 'eB', 'eC'].forEach(function (k) { u[k] = g.getUniformLocation(p, k); });
     if (!buf) { buf = g.createBuffer(); g.bindBuffer(g.ARRAY_BUFFER, buf); g.bufferData(g.ARRAY_BUFFER, new Float32Array([-1, -1, 1, -1, -1, 1, 1, 1]), g.STATIC_DRAW); }
     return (programy[jm] = { p: p, u: u, a: g.getAttribLocation(p, 'p') });
   }
@@ -200,14 +288,14 @@
     if (!def || !SCENY[def.s]) return;
     img.__zivy = 1;
     var pol = { img: img, def: def, sc: SCENY[def.s], sd: R(), s: {}, tp: R() * 30, vidim: false, cv: null, nacteno: null };
-    pol.sc.init(pol.s);
+    pol.sc.init(pol.s, pol);
     polozky.push(pol);
     pozoruj.observe(img);
   }
   function vytvorPlatno(pol) {
     var img = pol.img, rodic = img.parentNode;
     if (getComputedStyle(rodic).position === 'static') rodic.style.position = 'relative';
-    var cv = document.createElement('canvas'); cv.className = 'zivy-platno'; cv.setAttribute('aria-hidden', 'true');
+    var cv = document.createElement('canvas'); cv.className = 'zivy-platno'; cv.setAttribute('aria-hidden', 'true'); cv.style.position = 'absolute'; cv.style.pointerEvents = 'none';
     var st = getComputedStyle(img); cv.style.borderRadius = st.borderRadius;
     rodic.insertBefore(cv, img.nextSibling);
     pol.cv = cv; pol.ctx = cv.getContext('2d');
@@ -259,6 +347,15 @@
     spust();
   }, { rootMargin: '150px' });
 
+  function efekty(pol) {
+    if (pol.E) return pol.E;
+    var a = new Float32Array(32), b = new Float32Array(32), c = new Float32Array(32);
+    ((pol.def.k && pol.def.k.ef) || []).slice(0, 8).forEach(function (e, i) {
+      a.set([e[1], e[2], e[3], e[4]], i * 4); b.set([e[0], e[5], e[6], e[7]], i * 4); c.set([e[8], e[9], e[10], 0], i * 4);
+    });
+    return (pol.E = [a, b, c]);
+  }
+
   /* ---------- smyčka ---------- */
   var bezi = false, last = 0;
   function spust() { if (!bezi && !stop && aktivni.length) { bezi = true; last = 0; requestAnimationFrame(snimek); } }
@@ -270,12 +367,13 @@
       var pr = program(pol.def.s); if (!pr) return;
       var W = pol.cv.width, H = pol.cv.height;
       if (glc.width < W) glc.width = W; if (glc.height < H) glc.height = H;
-      pol.tp += dt; var t = pol.tp, cm = pol.sc.cam(pol.sd), z = 1.02 + cm[2] * (.5 - .5 * Math.cos(t * Math.PI * 2 / cm[3])), cr = pol.cr;
+      pol.tp += dt; var t = pol.tp, cm = pol.sc.cam(pol.sd, pol.def.k), z = 1.02 + cm[2] * (.5 - .5 * Math.cos(t * Math.PI * 2 / cm[3])), cr = pol.cr;
       if (pol.sc.pan) { var ph = Math.sin(t * Math.PI * 2 / (cm[3] * 1.7)); cm = [cm[0] + pol.sc.pan * ph, cm[1] + pol.sc.pan * .4 * Math.cos(t * Math.PI * 2 / (cm[3] * 2.3)), cm[2], cm[3]]; }
       g.useProgram(pr.p); g.bindBuffer(g.ARRAY_BUFFER, buf); g.enableVertexAttribArray(pr.a); g.vertexAttribPointer(pr.a, 2, g.FLOAT, false, 0, 0);
       g.activeTexture(g.TEXTURE0); g.bindTexture(g.TEXTURE_2D, pol.nacteno.I); g.uniform1i(pr.u.I, 0);
       g.activeTexture(g.TEXTURE1); g.bindTexture(g.TEXTURE_2D, pol.nacteno.M); g.uniform1i(pr.u.M, 1);
       g.uniform1f(pr.u.t, t); g.uniform1f(pr.u.sd, pol.sd); g.uniform3f(pr.u.cam, cm[0], cm[1], z); g.uniform4f(pr.u.cr, cr[0], cr[1], cr[2], cr[3]);
+      if (pr.u.eA) { var E = efekty(pol); g.uniform4fv(pr.u.eA, E[0]); g.uniform4fv(pr.u.eB, E[1]); g.uniform4fv(pr.u.eC, E[2]); }
       g.viewport(0, 0, W, H); g.drawArrays(g.TRIANGLE_STRIP, 0, 4);
       var fx = pol.ctx; fx.clearRect(0, 0, W, H); fx.drawImage(glc, 0, glc.height - H, W, H, 0, 0, W, H);
       pol.sc.krok(pol.s, dt, t);

@@ -4,6 +4,8 @@ Obecná maska (scéna 'zakladni'):  R = plápolající světla/oheň, G = třpyt
 Ruční masky (letka, dite-z-marsu, pad-calibanu, goodman) se nepřepisují, pokud existují.
 Spuštění: python3 nastroje/zive_masky.py"""
 import glob, json, os, sys
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from zive_osoby import OSOBY, prevod
 import numpy as np
 from PIL import Image, ImageFilter
 
@@ -86,7 +88,11 @@ for f in sorted(glob.glob('assets/osoby/*.webp')):  # rasy se neanimují (přán
     slozka = f.split('/')[1]
     cil = f'assets/zive/{slozka}/{jm}.png'
     obecna(f, cil)
-    seznam['/' + f] = {'s': 'zakladni', 'm': '/' + cil}
+    if jm in OSOBY:
+        seznam['/' + f] = {'s': 'osoba', 'm': '/' + cil, 'k': prevod(OSOBY[jm])}
+    else:
+        print('Bez ručního nastavení (obecný pohyb):', jm)
+        seznam['/' + f] = {'s': 'zakladni', 'm': '/' + cil}
 with open('assets/zive/seznam.js', 'w') as o:
     o.write('/* Vytvořeno nastroje/zive_masky.py – neupravovat ručně. */\nwindow.ZIVE_SEZNAM=' + json.dumps(seznam, ensure_ascii=False, separators=(',', ':')) + ';\n')
 print(len(seznam), 'obrázků')

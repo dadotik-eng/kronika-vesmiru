@@ -1,0 +1,202 @@
+"""Ruční nastavení pohybu pro každý portrét osobnosti (souřadnice 0–1 v obrázku: x0, y0, x1, y1).
+
+kam:   [střed x, střed y, síla přiblížení, perioda s] – kamera míří k obličeji
+ef:    efekty v oblastech (elipsa vepsaná do obdélníku):
+       ('vir', oblast, rychlost)                    – vír / skokový bod se otáčí
+       ('mrak', oblast, dx, dy, neklid)             – mraky, mlhovina, kouř se pomalu valí
+       ('voda', oblast, síla)                       – odlesky na vodě / mokré podlaze se vlní
+       ('teplo', oblast, síla)                      – tetelení vzduchu
+       ('zar', oblast, rychlost, síla, barva, blik) – pulzující světlo (slunce, lampa, obrazovka); blik=1 → maják
+       ('paprsky', oblast, síla, rychlost)          – sluneční paprsky / reflektory se chvějí
+       ('radar', oblast, rychlost, barva)           – otáčející se paprsek radaru
+cast:  částice:
+       ('lode', x0, y0, x1, y1, počet, velikost, světlé)  – vzdálené lodě letí z bodu 0 do bodu 1
+       ('para', x, y, velikost)       – pára / kouř z bodu
+       ('jiskry', x, y)               – jiskry z ohně
+       ('prach', x0, y0, x1, y1, počet) – prach ve světle
+       ('bubliny', x0, y0, x1, y1, počet, velikost) – stoupající bubliny / koule
+       ('lupeny', x0, y0, x1, y1, počet) – padající lístky
+       ('popel', počet)               – padající popel
+"""
+TEPLA = (1.0, .75, .4)
+BILA = (1.0, .95, .85)
+MODRA = (.55, .75, 1.0)
+CERVENA = (1.0, .15, .1)
+ZELENA = (.4, 1.0, .7)
+
+OSOBY = {
+    'ai-se-choan': dict(kam=[.3, .3, .08, 34], ef=[
+        ('vir', (.62, .0, 1.0, .85), .35),
+        ('zar', (.8, .38, .92, .52), .8, .35, BILA, 0),
+        ('zar', (.65, .7, 1.0, 1.0), 1.3, .12, TEPLA, 0)],
+        cast=[('prach', .4, .1, 1, .9, 25)]),
+    'chule-se-rua': dict(kam=[.3, .25, .07, 36], ef=[
+        ('voda', (.55, .1, 1.0, .5), .004),
+        ('mrak', (.0, .0, .3, .55), .0, .0, .004),
+        ('paprsky', (.4, .0, 1.0, .6), .12, .4)],
+        cast=[('lupeny', .0, -.05, 1, .3, 26), ('prach', .3, .1, 1, .8, 20)]),
+    'corath-thal': dict(kam=[.3, .3, .08, 34], ef=[
+        ('mrak', (.48, .32, 1.0, .8), .006, .0, .006),
+        ('zar', (.85, .25, .98, .42), .6, .35, BILA, 0),
+        ('zar', (.48, .62, .62, .72), 2.5, .25, TEPLA, 0)],
+        cast=[('lode', .35, .2, 1.05, .08, 6, .9, 1), ('lode', 1.05, .55, .5, .45, 4, .7, 1)]),
+    'corbyn-salehi': dict(kam=[.25, .25, .08, 32], ef=[
+        ('mrak', (.35, .12, 1.0, .98), .006, -.002, .008),
+        ('zar', (.55, .0, .66, .2), 1.5, .3, (1., .55, .2), 0),
+        ('zar', (.6, .4, 1.0, .9), 1.0, .12, (1., .45, .15), 0)],
+        cast=[('lode', 1.05, .7, .85, 1.05, 5, 1.4, 0), ('jiskry', .62, .15)]),
+    'corsen-messer-v': dict(kam=[.4, .3, .08, 36], ef=[
+        ('mrak', (.62, .05, 1.0, .62), .004, .0, .004),
+        ('zar', (.03, .32, .14, .45), 3.0, .3, TEPLA, 0),
+        ('voda', (.38, .74, 1.0, 1.0), .004)],
+        cast=[('jiskry', .08, .38), ('lode', .5, .12, 1.05, .2, 4, .7, 1)]),
+    'ellroy-cass': dict(kam=[.45, .25, .07, 30], ef=[
+        ('paprsky', (.0, .0, 1.0, .65), .35, 1.2),
+        ('zar', (.0, .7, 1.0, .9), 2.2, .12, MODRA, 0)],
+        cast=[('bubliny', .0, .0, 1.0, .75, 10, 7), ('prach', .1, .0, .9, .7, 25)]),
+    'erin-toi': dict(kam=[.2, .18, .07, 36], ef=[
+        ('paprsky', (.28, .0, .95, .5), .25, .5),
+        ('mrak', (.42, .02, .92, .35), .004, .0, .003)],
+        cast=[('prach', .3, .05, .92, .6, 40)]),
+    'ernst-bishop': dict(kam=[.5, .3, .06, 36], ef=[
+        ('zar', (.72, .1, .98, .32), .8, .3, MODRA, 0),
+        ('zar', (.14, .8, .2, .9), 1.5, .9, CERVENA, 1)],
+        cast=[('prach', .0, .0, 1, 1, 15)]),
+    'illyana-messer-vi': dict(kam=[.32, .15, .08, 34], ef=[
+        ('mrak', (.5, .0, .9, .32), .005, .001, .008),
+        ('zar', (.02, .5, .14, .6), 3.0, .25, TEPLA, 0)],
+        cast=[('lode', .45, .3, 1.05, .22, 4, .7, 1), ('jiskry', .08, .55)]),
+    'ivar-messer-i': dict(kam=[.4, .3, .08, 34], ef=[
+        ('mrak', (.58, .48, 1.0, .98), .005, .0, .006),
+        ('zar', (.9, .48, 1.05, .68), .5, .45, BILA, 0)],
+        cast=[('lode', .5, .38, .98, .2, 5, .8, 1)]),
+    'jax-mccleary': dict(kam=[.6, .25, .06, 34], ef=[
+        ('zar', (.0, .55, .55, .68), 1.0, .2, MODRA, 0),
+        ('zar', (.6, .45, .95, .95), .7, .12, MODRA, 0)],
+        cast=[('prach', .0, .0, 1, 1, 15)]),
+    'jerry': dict(kam=[.3, .2, .08, 34], ef=[
+        ('mrak', (.78, .45, 1.0, .78), .004, .0, .005),
+        ('zar', (.45, .85, .85, 1.0), 2.0, .2, TEPLA, 0)],
+        cast=[('lode', .4, .3, 1.05, .1, 5, .7, 1)]),
+    'jimmy': dict(kam=[.5, .3, .06, 32], ef=[
+        ('zar', (.93, .72, 1.0, .84), 3.5, .35, TEPLA, 0),
+        ('zar', (.02, .45, .14, .58), 1.0, .25, TEPLA, 0),
+        ('paprsky', (.38, .1, .6, .45), .25, .8)],
+        cast=[('prach', .1, .0, 1, .8, 20)]),
+    'kelos-costigan': dict(kam=[.38, .15, .08, 36], ef=[
+        ('mrak', (.5, .0, 1.0, .25), .006, .0, .005),
+        ('voda', (.68, .22, 1.0, .45), .004),
+        ('zar', (.14, .64, .24, .72), 1.2, .25, MODRA, 0)],
+        cast=[('lode', .48, .12, 1.05, .18, 7, .8, 0), ('lode', 1.05, .3, .5, .25, 5, .7, 1)]),
+    'ki-jotal': dict(kam=[.38, .15, .08, 34], ef=[
+        ('mrak', (.5, .0, .92, .42), .005, .0, .005),
+        ('zar', (.35, .8, .95, 1.0), 1.2, .25, MODRA, 0)],
+        cast=[('lode', .48, .3, .95, .2, 5, .8, 0), ('prach', .35, .75, .95, 1, 15)]),
+    'laylani-addison': dict(kam=[.35, .15, .07, 34], ef=[
+        ('zar', (.55, .0, 1.0, .5), .7, .2, MODRA, 0),
+        ('zar', (.82, .35, .95, .5), 2.0, .25, TEPLA, 0),
+        ('radar', (.62, .05, .98, .45), .35, MODRA)],
+        cast=[('prach', .5, .3, 1, .9, 20)]),
+    'lii-se-kre': dict(kam=[.17, .15, .07, 34], ef=[
+        ('zar', (.38, .32, 1.0, .48), .6, .25, MODRA, 0),
+        ('mrak', (.4, .42, 1.0, .9), .004, .0, .004)],
+        cast=[('lode', .3, .25, 1.05, .35, 10, .8, 1), ('lode', 1.05, .1, .45, .05, 6, .6, 1)]),
+    'linton-messer-xi': dict(kam=[.55, .15, .07, 34], ef=[
+        ('zar', (.0, .55, .5, .65), 1.5, .2, TEPLA, 0),
+        ('voda', (.0, .8, 1.0, 1.0), .003)],
+        cast=[('lode', .0, .15, .5, .1, 4, .6, 1), ('prach', .4, .1, 1, .9, 20)]),
+    'marshall-leon': dict(kam=[.35, .2, .07, 34], ef=[
+        ('zar', (.84, .52, .98, .74), 1.6, .45, (.7, .85, 1.), 0),
+        ('zar', (.0, .1, .14, .6), .4, .12, BILA, 0)],
+        cast=[('prach', .4, .0, 1, .9, 35)]),
+    'michelle-saleno': dict(kam=[.3, .12, .08, 34], ef=[
+        ('zar', (.86, .2, 1.0, .4), .5, .4, TEPLA, 0),
+        ('mrak', (.62, .0, 1.0, .3), .006, .0, .004),
+        ('voda', (.0, .66, 1.0, 1.0), .005),
+        ('teplo', (.6, .35, 1.0, .65), .0025)],
+        cast=[('prach', .3, .2, 1, .9, 25), ('lode', .65, .12, 1.05, .2, 2, .7, 0)]),
+    'ne-se-ruoth': dict(kam=[.4, .15, .08, 34], ef=[
+        ('mrak', (.55, .0, 1.0, .42), .004, .001, .006),
+        ('zar', (.48, .5, .72, .62), .5, .4, TEPLA, 0)],
+        cast=[('prach', .3, .5, 1, .95, 30)]),
+    'neal-socolovich': dict(kam=[.38, .15, .07, 34], ef=[
+        ('zar', (.85, .32, 1.0, .52), .5, .45, TEPLA, 0),
+        ('teplo', (.68, .4, 1.0, .72), .003),
+        ('paprsky', (.35, .05, .95, .8), .15, .4),
+        ('zar', (.0, .32, .07, .48), 3.0, .3, TEPLA, 0)],
+        cast=[('prach', .35, .05, .95, .8, 40)]),
+    'nick-croshaw': dict(kam=[.25, .2, .08, 34], ef=[
+        ('vir', (.62, .0, 1.04, .66), .4),
+        ('mrak', (.24, .1, .5, .52), .004, .0, .004),
+        ('zar', (.55, .7, 1.0, 1.0), 2.0, .2, TEPLA, 0)],
+        cast=[('prach', .0, .0, .6, 1, 15)]),
+    'paul-barlow': dict(kam=[.35, .2, .08, 32], ef=[
+        ('mrak', (.55, .0, 1.0, .55), .003, -.008, .01),
+        ('voda', (.55, .74, 1.0, 1.0), .005),
+        ('zar', (.1, .06, .17, .2), 3.0, .3, TEPLA, 0)],
+        cast=[('popel', 60), ('jiskry', .82, .5), ('jiskry', .7, .62)]),
+    'scott-childress': dict(kam=[.3, .15, .07, 34], ef=[
+        ('zar', (.52, .12, .84, .58), 1.2, .35, TEPLA, 0),
+        ('voda', (.3, .76, 1.0, 1.0), .004),
+        ('mrak', (.0, .2, .15, .75), .004, .0, .003)],
+        cast=[('jiskry', .68, .35), ('prach', .3, .1, 1, .8, 25)]),
+    'seang-se-rua': dict(kam=[.48, .15, .07, 34], ef=[
+        ('zar', (.0, .28, .18, .5), .5, .45, TEPLA, 0),
+        ('paprsky', (.0, .0, .7, .7), .2, .4),
+        ('voda', (.0, .65, 1.0, 1.0), .005)],
+        cast=[('prach', .0, .1, .7, .8, 40)]),
+    'selma-tontil': dict(kam=[.45, .18, .07, 34], ef=[
+        ('zar', (.0, .25, .1, .4), 2.0, .25, TEPLA, 0),
+        ('voda', (.65, .32, 1.0, .5), .003)],
+        cast=[('lode', .65, .12, 1.05, .05, 3, .9, 0), ('lode', 1.05, .3, .66, .32, 3, .5, 0)]),
+    'suj-kossi': dict(kam=[.35, .15, .07, 34], ef=[
+        ('paprsky', (.5, .0, 1.0, .58), .25, .4)],
+        cast=[('prach', .45, .0, 1, .7, 45)]),
+    'sylvie-randall': dict(kam=[.38, .25, .07, 32], ef=[
+        ('zar', (.08, .02, .19, .14), 1.6, .9, CERVENA, 1),
+        ('zar', (.14, .24, .22, .34), 1.6, .7, CERVENA, 1),
+        ('mrak', (.6, .08, 1.0, .85), .004, .0, .004)],
+        cast=[('lode', .6, .3, 1.05, .55, 8, .9, 1)]),
+    'terrence-akari': dict(kam=[.3, .2, .08, 34], ef=[
+        ('zar', (.76, .12, .88, .28), .6, .5, BILA, 0),
+        ('mrak', (.38, .0, .85, .45), .004, .001, .006),
+        ('zar', (.5, .55, 1.0, .75), 2.0, .15, TEPLA, 0)],
+        cast=[('lode', .4, .4, 1.05, .32, 2, .6, 1)]),
+    'toshi-aaron': dict(kam=[.4, .3, .08, 32], ef=[
+        ('vir', (.72, .0, .88, .26), .6),
+        ('radar', (.6, .45, .82, .8), .9, ZELENA),
+        ('zar', (.4, .55, 1.0, 1.0), 2.5, .15, TEPLA, 0)],
+        cast=[('lode', .95, .18, .7, .3, 6, 1.3, 0)]),
+    'tueng-se-kre': dict(kam=[.35, .12, .07, 34], ef=[
+        ('zar', (.74, .34, .9, .5), .5, .4, TEPLA, 0),
+        ('mrak', (.55, .0, 1.0, .4), .005, .0, .005),
+        ('voda', (.55, .74, 1.0, 1.0), .004)],
+        cast=[('lode', .55, .25, 1.05, .2, 6, .7, 0)]),
+    'vernon-tar': dict(kam=[.3, .25, .08, 34], ef=[
+        ('zar', (.76, .12, .88, .28), .6, .5, BILA, 0),
+        ('mrak', (.42, .0, 1.0, .45), .004, .001, .006),
+        ('zar', (.3, .6, .75, .85), 2.2, .2, TEPLA, 0)],
+        cast=[('lode', .45, .1, 1.05, .2, 3, .6, 1)]),
+    'yaha-se-xyo': dict(kam=[.35, .25, .07, 34], ef=[
+        ('zar', (.47, .13, .61, .42), 1.2, .3, TEPLA, 0),
+        ('mrak', (.82, .35, 1.0, .62), .002, .0, .004),
+        ('paprsky', (.6, .0, 1.0, .7), .15, .4)],
+        cast=[('bubliny', .49, .22, .59, .38, 12, 1.2), ('prach', .3, .0, 1, .8, 25)]),
+}
+
+TYPY = {'vir': 1, 'mrak': 2, 'voda': 3, 'zar': 4, 'paprsky': 5, 'radar': 6, 'teplo': 7}
+
+
+def prevod(k):
+    """Převede nastavení na kompaktní tvar pro JS: ef = [typ, x0, y0, x1, y1, p1, p2, p3, r, g, b]."""
+    ef = []
+    for e in k['ef']:
+        typ, obl, *p = e
+        barva = (0, 0, 0)
+        if typ == 'zar':
+            p1, p2, barva, blik = p; p = [p1, p2, blik]
+        elif typ == 'radar':
+            p1, barva = p; p = [p1, 0, 0]
+        p = (list(p) + [0, 0, 0])[:3]
+        ef.append([TYPY[typ], *obl, *p, *barva])
+    return {'kam': k['kam'], 'ef': ef, 'cast': [list(c) for c in k['cast']]}
