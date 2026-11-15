@@ -39,8 +39,9 @@ zdroje:
 kapitoly:
 - kap-10
 rad: 2889
-ilustrace: true
 obdobi: valka
+ilustrace: true
+ilustrace_popisek: Snímek ze hry Star Citizen · © Cloud Imperium Games
 ---
 
 Addison vyrůstala na planetě Oya III, hned vedle jediné enklávy xi’anského svrchovaného území uvnitř UEE – je tak první imperátorkou, která prožila dětství mezi xi’anskými sousedy. Sama vzpomíná, jak jako malá holka na tamním kosmodromu ohromeně pozorovala první xi’anskou loď; ten zážitek v ní podle jejích slov probudil celoživotní zájem o učení a přesvědčení, že poznání vede k porozumění. Na Oya III poznala i svého manžela Jesseho Baigenta, rodáka z Terry, který tam vedl poradenskou firmu na podporu obchodu mezi lidmi a Xi’any. Když se její akademická dráha přesunula do soustavy Rhetor, přestěhovali firmu s sebou; Baigent ji vedl až do chvíle, kdy se stal manažerem její kampaně. Mají dceru Finley.

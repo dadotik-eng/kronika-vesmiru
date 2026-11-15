@@ -16,6 +16,7 @@ kapitoly:
 rad: 2096
 obdobi: usvit
 ilustrace: true
+ilustrace_popisek: Snímek ze hry Star Citizen · © Cloud Imperium Games
 ---
 
 Saleno vyrůstala na venkově na Zemi a se sourozenci se učila doma; nejvíc ji bavila fyzika a strojírenství. Rodiče jí brzy dovolili létat s jejich letadlem i na zakázky a sama to později označila za začátek celoživotní lásky k létání. Ve volném čase studovala vysokoškolské kurzy, takže v osmnácti měla dost kreditů i nalétaných hodin pro vojenský výcvik.
