@@ -22,6 +22,12 @@ overeno_kdy: '2026-11-11'
 overeno_kym: Kontrolor
 overeni_poznamka: 'Redaktor: OK (kolo 3). Kontrolor: OK – fakta sedí podle Galactapedie (Abeni Okon, Mars Tragedy, Mars Tragedy Memorial, Artemis). Původně nepotvrzené detaily doplněny 14. 11.: modrou oblohu roku 2157 uvádí Comm-Link 2157: Blue Skies on Mars, práci rodičů na projektu Comm-Link The Extraterrestrial Child.'
 slug: dite-z-marsu
+obrazek:
+  soubor: /assets/kapitoly/dite-z-marsu.webp
+  sirka: 960
+  vyska: 540
+  alt: "Ilustrace: rodiče Okonovi s novorozenou Abeni u okna osady, venku Mars pod modrým nebem"
+  popisek: "Ilustrační obrázek"
 zdroje:
 - record_key: galactapedia:Rz2DPeZZnk
   typ: Galactapedie
