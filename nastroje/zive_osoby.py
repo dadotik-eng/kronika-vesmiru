@@ -280,7 +280,7 @@ OSOBY = {
         ('zar', (.1, .2, .37, .7), 1.4, .3, ZELENA, 0),
         ('zar', (.77, .15, .87, .3), 1.0, .3, BILA, 0)],
         cast=[('prach', .0, .0, 1, .8, 15)]),
-    'gavin-e-hurston': dict(kam=[.47, .2, .07, 34], ef=[
+    'constantine-hurston': dict(kam=[.47, .2, .07, 34], ef=[
         ('zar', (.05, .0, .38, .45), 1.3, .3, ZELENA, 0),
         ('zar', (.58, .1, .9, .55), 1.3, .3, ZELENA, 0),
         ('mrak', (.35, .05, 1.0, .5), .003, .0, .004)],
@@ -715,7 +715,7 @@ CHRAN = {
     'magda-hurston': [(.35, .05, .65, 1), (0, .6, 1, .85)],
     'desmond-hurston': [(.28, .05, .8, 1)],
     'chesterfield-hurston': [(.15, .05, .72, 1), (.58, .1, .9, .65)],
-    'gavin-e-hurston': [(.12, .05, .62, 1), (.6, .55, 1, 1)],
+    'constantine-hurston': [(.12, .05, .62, 1), (.6, .55, 1, 1)],
     'maria-wharton': [(.05, .05, .98, 1)],
     'ulysses-messer-x': [(0, 0, .45, 1)],
     'galor-messer-ix': [(0, 0, .68, 1)],

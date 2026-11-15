@@ -14,4 +14,6 @@ zdroje:
 rad: 2950
 obdobi: valka
 rod: hurston
+ilustrace: true
+ilustrace_popisek: Ilustrace podle portrétu ze hry Star Citizen · © Cloud Imperium Games
 ---
