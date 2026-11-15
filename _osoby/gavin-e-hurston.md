@@ -20,4 +20,6 @@ kapitoly: []
 rad: 2867
 obdobi: naprava
 rod: hurston
+ilustrace: true
+ilustrace_popisek: Ilustrace podle portrétu ze hry Star Citizen · © Cloud Imperium Games
 ---

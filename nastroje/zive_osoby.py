@@ -249,6 +249,55 @@ OSOBY = {
         ('mrak', (.82, .35, 1.0, .62), .002, .0, .004),
         ('paprsky', (.6, .0, 1.0, .7), .15, .4)],
         cast=[('bubliny', .49, .22, .59, .38, 12, 1.2), ('prach', .3, .0, 1, .8, 25)]),
+    'solomon-hurston': dict(kam=[.5, .2, .07, 34], ef=[
+        ('zar', (.6, .25, .73, .5), 1.0, .3, MODRA, 0),
+        ('zar', (.18, .55, .3, .7), 1.6, .25, TEPLA, 0)],
+        cast=[('prach', .0, .0, 1, .8, 20)]),
+    'isiah-hurston': dict(kam=[.5, .22, .07, 34], ef=[
+        ('mrak', (.1, .0, .4, .5), .004, .0, .004),
+        ('zar', (.8, .65, .95, .85), 1.4, .3, MODRA, 0)],
+        cast=[('lode', .05, .25, .4, .1, 4, .5, 1)]),
+    'arial-hurston': dict(kam=[.55, .2, .07, 34], ef=[
+        ('zar', (.0, .1, .4, .5), 1.0, .2, BILA, 0)],
+        cast=[('prach', .0, .0, .5, .9, 25)]),
+    'ita-hurston': dict(kam=[.5, .3, .07, 34], ef=[
+        ('zar', (.05, .25, .18, .4), 1.6, .35, TEPLA, 0),
+        ('zar', (.68, .3, .8, .5), 1.2, .25, TEPLA, 0)],
+        cast=[('prach', .55, .1, 1, .9, 20)]),
+    'julius-hurston': dict(kam=[.5, .2, .07, 34], ef=[
+        ('zar', (.0, .05, .3, .7), 1.2, .25, TEPLA, 0),
+        ('mrak', (.72, .1, 1.0, .5), .003, .0, .004)],
+        cast=[('lode', .75, .3, 1.05, .2, 3, .5, 1)]),
+    'archibald-hurston': dict(kam=[.47, .25, .07, 34], ef=[
+        ('zar', (.6, .05, .95, .5), 1.2, .3, MODRA, 0),
+        ('vir', (.79, .18, .91, .4), .3)],
+        cast=[('prach', .6, .1, 1, .8, 15)]),
+    'aberdeen-hurston': dict(kam=[.55, .25, .07, 34], ef=[
+        ('zar', (.12, .5, .25, .7), 2.5, .45, TEPLA, 0),
+        ('zar', (.8, .25, .98, .55), .8, .2, MODRA, 0)],
+        cast=[('para', .18, .6, .6), ('prach', .0, .1, .4, .9, 15)]),
+    'magda-hurston': dict(kam=[.5, .3, .07, 34], ef=[
+        ('mrak', (.6, .0, 1.0, .5), .004, -.002, .006),
+        ('teplo', (.0, .3, 1.0, .65), .004),
+        ('paprsky', (.0, .0, .5, .5), .2, .4)],
+        cast=[('para', .78, .4, 1.0), ('para', .64, .48, .7), ('popel', 20)]),
+    'desmond-hurston': dict(kam=[.5, .25, .07, 34], ef=[
+        ('zar', (.78, .5, .92, .67), 2.2, .4, TEPLA, 0),
+        ('zar', (.85, .0, .95, .1), 1.5, .35, MODRA, 1)],
+        cast=[('lode', .12, .55, .35, .45, 3, .5, 1), ('prach', .1, .0, 1, .8, 20)]),
+    'chesterfield-hurston': dict(kam=[.5, .25, .07, 34], ef=[
+        ('zar', (.1, .2, .37, .7), 1.4, .3, ZELENA, 0),
+        ('zar', (.77, .15, .87, .3), 1.0, .3, BILA, 0)],
+        cast=[('prach', .0, .0, 1, .8, 15)]),
+    'gavin-e-hurston': dict(kam=[.47, .2, .07, 34], ef=[
+        ('zar', (.05, .0, .38, .45), 1.3, .3, ZELENA, 0),
+        ('zar', (.58, .1, .9, .55), 1.3, .3, ZELENA, 0),
+        ('mrak', (.35, .05, 1.0, .5), .003, .0, .004)],
+        cast=[('lode', .45, .2, 1.05, .1, 4, .6, 1)]),
+    'maria-wharton': dict(kam=[.5, .2, .07, 34], ef=[
+        ('zar', (.28, .0, .72, .5), 1.0, .25, TEPLA, 0),
+        ('paprsky', (.3, .0, .7, .6), .2, .4)],
+        cast=[('prach', .0, .0, 1, .9, 30)]),
 }
 
 TYPY = {'vir': 1, 'mrak': 2, 'voda': 3, 'zar': 4, 'paprsky': 5, 'radar': 6, 'teplo': 7}
@@ -271,6 +320,18 @@ def prevod(k):
 # Chráněné části (nesmí se deformovat): obdélník (x0, y0, x1, y1) nebo mnohoúhelník [(x, y), …].
 # Navíc se automaticky chrání ostré hrany (lodě, rámy oken, zábradlí, postavy) – kromě vírů.
 CHRAN = {
+    'solomon-hurston': [(.28, .05, .72, 1)],
+    'isiah-hurston': [(.22, .05, .72, 1)],
+    'arial-hurston': [(.35, .05, .85, 1)],
+    'ita-hurston': [(.22, .05, .62, 1)],
+    'julius-hurston': [(.3, .05, .75, 1)],
+    'archibald-hurston': [(.2, .05, .66, 1)],
+    'aberdeen-hurston': [(.3, .05, .92, 1)],
+    'magda-hurston': [(.35, .05, .65, 1), (0, .6, 1, .85)],
+    'desmond-hurston': [(.28, .05, .8, 1)],
+    'chesterfield-hurston': [(.15, .05, .72, 1), (.58, .1, .9, .65)],
+    'gavin-e-hurston': [(.12, .05, .62, 1), (.6, .55, 1, 1)],
+    'maria-wharton': [(.05, .05, .98, 1)],
     'ulysses-messer-x': [(0, 0, .45, 1)],
     'galor-messer-ix': [(0, 0, .68, 1)],
     'antoine-lebec': [(.165, 0, .62, 1), (0, 0, .26, .065), [(.035, .32), (.2, .32), (.2, .62), (.035, .62)], (0, .43, .06, 1)],

@@ -19,6 +19,8 @@ zdroje:
 rad: 2438
 obdobi: une
 rod: hurston
+ilustrace: true
+ilustrace_popisek: Ilustrace podle portrétu ze hry Star Citizen · © Cloud Imperium Games
 ---
 
 Solomonova matka Janice Delong kdysi založila úspěšnou firmu, ale krátce po synově narození zemřela a rodina z jejího díla nic nezískala. Hurstonovi pak léta sotva vycházeli a Solomon si přísahal, že pokud někdy uspěje, jeho rodina bude vždy zajištěná. Slib dodržel: každou koupenou firmu, důl nebo dodavatele svěřil do vedení někomu z rodiny. Zároveň ale věřil, že si místo u stolu musí každý zasloužit – kdo nepracoval dost tvrdě, mohl z rodinného jmění vypadnout.

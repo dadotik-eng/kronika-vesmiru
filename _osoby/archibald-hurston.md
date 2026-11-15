@@ -19,6 +19,8 @@ zdroje:
 rad: 2640
 obdobi: messerove
 rod: hurston
+ilustrace: true
+ilustrace_popisek: Ilustrace podle portrétu ze hry Star Citizen · © Cloud Imperium Games
 ---
 
 Rodina ho připomíná jako stratéga s nevídaným talentem. Jeden z dnešních Hurstonů, Constantine, ho rád cituje větou „Dělníky musí dokonalosti naučit jejich lepší“.
