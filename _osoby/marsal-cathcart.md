@@ -25,4 +25,5 @@ kapitoly:
 - kap-3
 rad: 2408
 obdobi: une
+ilustrace: true
 ---
