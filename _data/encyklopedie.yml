@@ -20,6 +20,7 @@ pribehy:
     - 9
     prehrat: letka
     cist: /pribehy/ztracena-letka/
+    obrazek: /assets/kapitoly/ztracena-letka.webp
     pripravuje_se: false
   - id: fabela
     nazev: Lež z Fabely
