@@ -19,6 +19,7 @@ zdroje:
 kapitoly: []
 rad: 2901
 obdobi: naprava
+ilustrace: true
 ---
 
 Odkud Kellar pocházel, se neví; jedni tvrdí, že z Terry, jiní že ze slumů Angeli. Při prvním pokusu o loupež, při němž byl zadržen, ho policie našla v hangáru, jak se pokouší vystřelit raketami z cizí lodi na zapečetěná vrata. Soudci v něm dlouho viděli vzteklého kluka, kterého jde převychovat, a on toho rád zneužíval. Jedinou věc měl opravdu rád: lodě. Hltal o nich všechno, co našel.
