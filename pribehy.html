@@ -24,7 +24,8 @@ popis: Dramatizace a kapitoly ze skutečných událostí dějin vesmíru Star Ci
     </article>
     {% endif %}{% endfor %}
     {% for k in nove %}
-    <article class="pri-karta" id="kapitola-{{ k.slug }}">
+    <article class="pri-karta{% if k.obrazek %} ma-obrazek{% endif %}" id="kapitola-{{ k.slug }}">
+      {% if k.obrazek %}<a class="pri-obrazek" href="{{ k.url | relative_url }}"><img src="{{ k.obrazek.soubor | relative_url }}" alt="{{ k.obrazek.alt | default: k.title | escape }}" loading="lazy"{% if k.obrazek.sirka %} width="{{ k.obrazek.sirka }}" height="{{ k.obrazek.vyska }}"{% endif %}>{% if k.obrazek.popisek contains "Cloud Imperium" %}<span class="pri-obrazek-cc">© Cloud Imperium Games</span>{% endif %}</a>{% endif %}
       {% assign era = site.data.ery | where: "id", k.obdobi | first %}{% assign slov = k.content | strip_html | number_of_words %}{% assign minut = slov | plus: 70 | divided_by: 140 %}{% if minut < 1 %}{% assign minut = 1 %}{% endif %}
       <p class="pri-stitek">{% case k.typ %}{% when "dramatizace" %}Dramatizace{% when "dokument" %}Dokument{% else %}Kronika{% endcase %}{% if k.overeni != "OK" %}<span class="jen-beta"> · čeká na ověření</span>{% endif %}</p>
       <h3>{{ k.title }}</h3>
