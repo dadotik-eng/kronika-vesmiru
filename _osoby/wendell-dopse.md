@@ -20,6 +20,7 @@ kapitoly:
 - kap-3
 rad: 2399
 obdobi: une
+ilustrace: true
 ---
 
 Zlevněný skokový pohon získal od projektu Far Star, který tehdy po celé Zemi nabíral kolonisty a pomáhal průzkumníkům s vybavením lodí. Po instalaci prý loď pečlivě vydrhl, aby byla čistá na začátek Červeného festivalu 25. ledna.
