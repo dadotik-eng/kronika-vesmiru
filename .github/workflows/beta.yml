@@ -4,6 +4,9 @@
 #  - ruční spuštění s akcí "zahodit" vrátí betu na stav ostrého webu (zahodí neschválené návrhy).
 #  - ruční spuštění s akcí "schvalit" převede betu na formát v2 (nastroje/prevod_v2.py), zkontroluje ji podle pravidel ostrého webu (kapitoly jen overeni: OK)
 #    a teprve pak ji sloučí do main; potom spustí Náhledy (push z akce jiné akce sám nespouští).
+#  - se vstupem "soubory" (cesty oddělené mezerou/čárkou/novým řádkem) se schvaluje nebo zahazuje JEN vybrané:
+#    schvalit = vybrané soubory z bety se zkopírují na main, převedou na v2, zkontrolují a zveřejní; ostatní návrhy zůstanou v betě,
+#    zahodit  = vybrané soubory se v betě vrátí na stav ostrého webu (nové se smažou); ostatní návrhy zůstanou.
 name: Beta
 on:
   push:
@@ -16,6 +19,10 @@ on:
         default: obnovit
       popis:
         description: "U schválení: krátký popis, co se schvaluje (do zprávy commitu)"
+        required: false
+        default: ""
+      soubory:
+        description: "Jen tyto soubory (např. _kapitoly/goodman.md _osoby/jerry.md). Prázdné = celá beta."
         required: false
         default: ""
 permissions:
@@ -31,11 +38,57 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with: { fetch-depth: 0 }
-      - env: { GH_TOKEN: "${{ github.token }}" }
+      - env:
+          GH_TOKEN: "${{ github.token }}"
+          AKCE: "${{ github.event.inputs.akce || 'obnovit' }}"
+          POPIS: "${{ github.event.inputs.popis }}"
+          SOUBORY: "${{ github.event.inputs.soubory }}"
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          AKCE="${{ github.event.inputs.akce || 'obnovit' }}"
+          # Výběr souborů: jen obsahové složky, jen .md, žádné cesty ven
+          VYBER=""
+          for f in $(echo "$SOUBORY" | tr ',;' '  '); do
+            if ! echo "$f" | grep -Eq '^_(kapitoly|osoby|udalosti|zasobnik)/[A-Za-z0-9._-]+\.md$' || echo "$f" | grep -q '\.\.'; then
+              echo "::error::Nepovolená cesta: $f (jen _kapitoly/, _osoby/, _udalosti/, _zasobnik/ a .md)"; exit 1
+            fi
+            VYBER="$VYBER $f"
+          done
+          if [ -n "$VYBER" ] && [ "$AKCE" = "schvalit" ]; then
+            pip install -q pyyaml
+            git checkout -B main origin/main
+            for f in $VYBER; do
+              if git cat-file -e "origin/beta:$f" 2>/dev/null; then git checkout origin/beta -- "$f"
+              else echo "::error::Soubor $f v betě není."; exit 1; fi
+            done
+            python3 nastroje/prevod_v2.py
+            if ! python3 nastroje/kontrola.py --ostry; then
+              echo "::error::Vybrané soubory neprošly kontrolou pro ostrý web – nic se neschválilo."
+              exit 1
+            fi
+            git add -A
+            if git diff --cached --quiet; then echo "Vybrané soubory už na ostrém webu jsou stejné."; exit 0; fi
+            git commit -qm "Schváleno Danielem: ${POPIS:-$VYBER}"
+            git push origin main
+            # Beta: přimíchat main (při rozdílu ve vybraných souborech vyhraje verze z ostrého webu)
+            git checkout -B beta origin/beta
+            git merge --no-edit -X theirs main -m "Beta: přimíchán ostrý web" && git push origin beta
+            gh workflow run nahledy.yml --ref main
+            echo "Schváleno:$VYBER"
+            exit 0
+          fi
+          if [ -n "$VYBER" ] && [ "$AKCE" = "zahodit" ]; then
+            git checkout -B beta origin/beta
+            for f in $VYBER; do
+              if git cat-file -e "origin/main:$f" 2>/dev/null; then git checkout origin/main -- "$f"
+              else git rm -q --ignore-unmatch -- "$f"; fi
+            done
+            git add -A
+            if git diff --cached --quiet; then echo "Nic k zahození."; exit 0; fi
+            git commit -qm "Beta: zahozeno$VYBER" && git push origin beta
+            echo "Zahozeno:$VYBER"
+            exit 0
+          fi
           if [ "$AKCE" = "schvalit" ]; then
             git checkout -B beta origin/beta
             pip install -q pyyaml
@@ -49,7 +102,6 @@ jobs:
               exit 1
             fi
             git checkout -B main origin/main
-            POPIS="${{ github.event.inputs.popis }}"
             git merge --no-edit origin/beta -m "Schváleno Danielem: ${POPIS:-beta → ostrý web}"
             git push origin main
             gh workflow run nahledy.yml --ref main
