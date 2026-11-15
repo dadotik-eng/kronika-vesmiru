@@ -26,4 +26,17 @@ kapitoly:
 rad: 2408
 obdobi: une
 ilustrace: true
+animace:
+  - veta: "Adelaide Lorris byla"
+    vis: oneway
+    lbl: "Uprchlice"
+  - veta: "Mnozí se domnívají"
+    vis: radar
+    lbl: "Úkryt v Cathcartu"
+  - veta: "Soustavu pojmenovala"
+    vis: toll
+    lbl: "Maršál Cathcart · 2464"
+  - veta: "Protože soustava neměla"
+    vis: map
+    lbl: "Hřbitov lodí"
 ---

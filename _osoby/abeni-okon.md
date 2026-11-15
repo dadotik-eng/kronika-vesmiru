@@ -16,4 +16,21 @@ kapitoly:
 rad: 2157
 obdobi: usvit
 ilustrace: true
+animace:
+  - veta: "Abeni Okon přišla"
+    vis: planet
+    lbl: "Mars · 2157"
+    o: {s: green}
+  - veta: "Média z ní udělala"
+    vis: signal
+    lbl: "Symbol lidstva"
+  - veta: "V mládí si slávu"
+    vis: silence
+    lbl: "Stáhla se z veřejnosti"
+  - veta: "Naposledy se veřejně"
+    vis: ship
+    lbl: "Artemis · 2232"
+  - veta: "Zemřela přirozenou"
+    vis: memorial
+    lbl: "Mars · 2252"
 ---

@@ -16,4 +16,18 @@ kapitoly:
 rad: 2756
 obdobi: naprava
 ilustrace: true
+animace:
+  - veta: "Magnus Tobin po získání"
+    vis: lab
+    lbl: "Začátky"
+    o: {s: on}
+  - veta: "V roce 2782 s počátečním"
+    vis: signal
+    lbl: "microTech · 2782"
+  - veta: "Koupě firmy Empiric"
+    vis: voice
+    lbl: "První mobiGlas"
+  - veta: "Stál také za koupí"
+    vis: planet
+    lbl: "Stanton IV"
 ---

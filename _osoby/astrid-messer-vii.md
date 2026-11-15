@@ -22,4 +22,17 @@ kapitoly:
 rad: 2661
 obdobi: messerove
 ilustrace: true
+animace:
+  - veta: "Astrid Messer VII., jediná"
+    vis: dynasty
+    lbl: "Uchvácení trůnu · 2697"
+  - veta: "Agenti věrní Illyaně"
+    vis: oneway
+    lbl: "Útěk Samuela"
+  - veta: "Jako imperátorka nasadila"
+    vis: radar
+    lbl: "Hon na dědice"
+  - veta: "V roce 2701 ji"
+    vis: toll
+    lbl: "Konec · 2701"
 ---

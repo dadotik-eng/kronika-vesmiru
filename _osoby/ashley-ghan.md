@@ -26,6 +26,32 @@ kapitoly: []
 rad: 2311
 obdobi: skoky
 ilustrace: true
+animace:
+  - veta: "Ashley Ghan byla"
+    vis: map
+    lbl: "Caliban · 2341"
+    o: {n: 6}
+  - veta: "Na zásobovacím letu"
+    vis: radar
+    lbl: "Přepadení v Nulu"
+  - veta: "Soustavu pojmenovala"
+    vis: jump
+    lbl: "Šestá soustava lidstva"
+  - veta: "Vládní průzkumníci"
+    vis: redact
+    lbl: "Stavba na Caliban 4f"
+  - veta: "Objev z ní přes noc"
+    vis: signal
+    lbl: "Hrdinka impéria"
+  - veta: "Šířily se fámy"
+    vis: paths
+    lbl: "Fámy"
+  - veta: "Rozhovor s Lynn Gale"
+    vis: voice
+    lbl: "One and All · 2343"
+  - veta: "Původ stavby"
+    vis: silence
+    lbl: "Záhada"
 ---
 
 Objev z ní přes noc udělal hrdinku celého impéria. Nabídky rozhovorů s vědci i reklamních smluv ale odmítla.

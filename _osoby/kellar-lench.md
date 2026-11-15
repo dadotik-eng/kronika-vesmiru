@@ -16,4 +16,21 @@ kapitoly:
 rad: 2514
 obdobi: upe
 ilustrace: true
+animace:
+  - veta: "Doktor Kellar Lench"
+    vis: lab
+    lbl: "Vědec"
+    o: {s: on}
+  - veta: "Po doktorátu pracoval"
+    vis: silence
+    lbl: "250 dní o samotě"
+  - veta: "Dne 15. listopadu 2541"
+    vis: jump
+    lbl: "Skok z Centauri · 2541"
+  - veta: "Jeho rozhodnutí sdělit"
+    vis: contact
+    lbl: "Tevarinové"
+  - veta: "Později přednášel"
+    vis: lab
+    lbl: "MIST"
 ---

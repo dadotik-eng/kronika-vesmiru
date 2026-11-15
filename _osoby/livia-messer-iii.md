@@ -17,4 +17,20 @@ kapitoly:
 rad: 2593
 obdobi: messerove
 ilustrace: true
+animace:
+  - veta: "Livia Messer III. vládla"
+    vis: dynasty
+    lbl: "Imperátorka · 2628–2643"
+  - veta: "Navázala na jeho"
+    vis: decree
+    lbl: "Politické věznice"
+  - veta: "Posílila také vládní"
+    vis: redact
+    lbl: "Dohled nad médii"
+  - veta: "V roce 2641 přežila"
+    vis: toll
+    lbl: "Havárie nad Moskvou"
+  - veta: "V roce 2643 odešla"
+    vis: silence
+    lbl: "Odchod · 2643"
 ---

@@ -15,4 +15,21 @@ kapitoly: []
 rad: 2835
 obdobi: naprava
 ilustrace: true
+animace:
+  - veta: "Theresa Branaugh byla"
+    vis: lab
+    lbl: "Geoložka"
+    o: {s: on}
+  - veta: "Výpravy financovala"
+    vis: oneway
+    lbl: "Útěky před věřiteli"
+  - veta: "V roce 2873 ji přátelé"
+    vis: silence
+    lbl: "Pohřešovaná · 2873"
+  - veta: "O čtyři roky později"
+    vis: radar
+    lbl: "Nález v jeskyni"
+  - veta: "Fell soustavu na její"
+    vis: memorial
+    lbl: "Soustava Branaugh"
 ---
