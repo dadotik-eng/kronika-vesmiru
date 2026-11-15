@@ -21,4 +21,5 @@ kapitoly:
 - kap-6
 rad: 2625
 obdobi: messerove
+ilustrace: true
 ---
