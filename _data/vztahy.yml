@@ -10,9 +10,13 @@ vazby:
   "adam-corr|sydney-kamarck": {typ: protivnik, popis: "Kamarck ho ve své knize označila za pachatele útoků"}
   "adelaide-lorris|marsal-cathcart": {typ: protivnik, popis: "Cathcart Lorris pronásledoval a roku 2464 ji zastřelil"}
   "ahmad-harar|carl-dyson": {typ: spoluprace, popis: "Pilot a střelec – spolu objevili skok z Horu"}
+  "alton-hurston|jasper-hurston": {typ: rodina, popis: "Otec a syn – roku 2811 ho vyhodil za chystaný převrat"}
+  "alton-hurston|maria-wharton": {typ: protivnik, popis: "Nesouhlasil s jejím sňatkem; přinutila ho rozšířit zdravotní péči"}
+  "alton-hurston|olivia-hurston": {typ: rodina, popis: "Sourozenci – Olivia ho roku 2786 dosadila do čela firmy"}
   "amandeep-vakario|ellroy-cass": {typ: spoluprace, popis: "Cass patřil k Vakariovým slavným klientům"}
   "amandeep-vakario|magnus-tobin": {typ: spoluprace, popis: "Tobinův klient; pro Tobina namluvil Moments of Clarity"}
   "antoine-lebec|patek-coen": {typ: vliv, popis: "Lebecova biografie přivedla Coena k navjumpingu"}
+  "archibald-hurston|constantine-hurston": {typ: vliv, popis: "Constantine rád cituje svého předka Archibalda"}
   "arial-hurston|magda-hurston": {typ: souvislost, popis: "Oba vedli Hurston Dynamics; měsíc Arial a planeta Hurston připomínají jejich rod"}
   "ashley-ghan|sylvie-randall": {typ: souvislost, popis: "Ghan objevila soustavu Caliban, Randall ji roku 2884 bránila před Vanduuly"}
   "astrid-messer-vii|gammon-messer": {typ: rodina, popis: "Dcera a otec"}
@@ -23,6 +27,9 @@ vazby:
   "cal-mason|ryan-enright": {typ: spoluprace, popis: "Mason létá ve 42. letce pod Enrightovým velením"}
   "cara-webster|noah-white": {typ: spoluprace, popis: "Hlavní mechanička jeho lodi UEES Stanton"}
   "cedric-cochran|ernst-bishop": {typ: spoluprace, popis: "Cochran ohlásil vítězství Bishopovy úderné skupiny v operaci Mandrake"}
+  "chesterfield-hurston|jasper-hurston": {typ: rodina, popis: "Syn a otec – dlouhodobě se přeli"}
+  "chesterfield-hurston|magda-hurston": {typ: rodina, popis: "Otec a dcera – na její radu koupil planetu Stanton I"}
+  "chesterfield-hurston|maria-wharton": {typ: rodina, popis: "Syn a matka – pojmenoval po ní nemocnici v Lorville"}
   "chule-se-rua|seang-se-rua": {typ: rodina, popis: "Matka a syn – Se’ang byl jejím jediným dědicem"}
   "clement-redfield|erin-toi": {typ: spoluprace, popis: "Šéf štábu imperátorky Toi"}
   "corsen-messer-v|deacon-messer-ii": {typ: rodina, popis: "Syn a otec"}
@@ -32,10 +39,13 @@ vazby:
   "cyrus-ishitaka|ivar-messer-i": {typ: spoluprace, popis: "Spolubojovník z bitvy o Idris IV"}
   "cyrus-ishitaka|sydney-kamarck": {typ: protivnik, popis: "Kamarck ho ve své knize označila za pachatele útoků"}
   "dalton-colabello|juliet-maupin": {typ: vliv, popis: "Colabello postavil Apocalypse Arms na jejích prototypech"}
+  "darrington-hurston|solomon-hurston": {typ: rodina, popis: "Syn a otec – Solomon ho vyhodil po smrtelné nehodě railgunu"}
   "deacon-messer-ii|ivar-messer-i": {typ: rodina, popis: "Syn a otec – Deacon po něm převzal vládu"}
   "deacon-messer-ii|livia-messer-iii": {typ: rodina, popis: "Otec a dcera – dobrovolně jí předal vládu"}
   "deacon-messer-ii|marius-messer-iv": {typ: rodina, popis: "Děd a vnuk – Deacon ho sám vyučoval"}
   "desmond-fell|theresa-branaugh": {typ: souvislost, popis: "Fell našel její tělo a soustavu pojmenoval po ní"}
+  "desmond-hurston|linton-messer-xi": {typ: spoluprace, popis: "Desmond byl spojkou mezi imperátorem a Hurston Dynamics"}
+  "desmond-hurston|olivia-hurston": {typ: rodina, popis: "Syn a matka – chtěla z něj mít ředitele firmy"}
   "dyna-lei|janna-thurville": {typ: souvislost, popis: "Thurville nosila jedny z jejích posledních šatů"}
   "erin-toi|laylani-addison": {typ: vliv, popis: "Addisonin tým cituje radu, kterou kdysi dostala Toi"}
   "erin-toi|marshall-leon": {typ: nastupce, popis: "Diplomatický tajemník její vlády a později nástupce"}
@@ -53,6 +63,8 @@ vazby:
   "illyana-messer-vi|samuel-messer-viii": {typ: rodina, popis: "Matka a syn – určila ho za nástupce"}
   "illyana-sharrad|kelos-costigan": {typ: spoluprace, popis: "Costigan ji jmenoval do úřadu"}
   "inacio-santos-melo|upsana-dixit": {typ: nastupce, popis: "Nahradil ji roku 2546 jako moderátor pořadu Showdown!"}
+  "isiah-hurston|solomon-hurston": {typ: rodina, popis: "Syn a otec – Isiah převzal firmu roku 2488"}
+  "ita-hurston|julius-hurston": {typ: rodina, popis: "Manželé – na její památku založil nadace"}
   "ita-hurston|kellar-lench": {typ: souvislost, popis: "Lenchův objev vedl k první tevarinské válce, v níž Ita Hurston padla"}
   "ivar-messer-i|janis-rezaian": {typ: protivnik, popis: "Veřejně ho kritizovala"}
   "ivar-messer-i|mauricio-tusk": {typ: protivnik, popis: "Veřejně ho kritizoval"}
@@ -61,6 +73,7 @@ vazby:
   "j-harris-arnold|leonard-casse": {typ: vliv, popis: "Arnold obdivoval Cassovo dílo a koupil Casse Aerospace"}
   "janis-rezaian|mauricio-tusk": {typ: spoluprace, popis: "Společně kritizovali Ivara Messera"}
   "janna-thurville|joona-tzur": {typ: rodina, popis: "Dcera a otec"}
+  "jasper-hurston|maria-wharton": {typ: rodina, popis: "Manželé od roku 2799 – spolu odhalili off-booking"}
   "jax-mccleary|jimmy": {typ: spoluprace, popis: "Moderátor Whitley's Guide a jeho producent a kaskadérský pilot"}
   "jerry|neal-socolovich": {typ: spoluprace, popis: "Spolu prolomili jazykovou bariéru mezi lidmi a Banu"}
   "jerry|vernon-tar": {typ: souvislost, popis: "Tar na Jerryho loď zahájil palbu, Jerry ji neopětoval"}

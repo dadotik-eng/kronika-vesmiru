@@ -949,3 +949,6 @@ main h1[tabindex="-1"]:focus, main[tabindex="-1"]:focus { outline: none; }
 .zivy-platno.zivy-stop { opacity: 0; }
 .zivy-pauza { position: absolute; z-index: 3; width: 1.9rem; height: 1.9rem; border-radius: 50%; border: 1px solid rgba(255,255,255,.35); background: rgba(10,12,18,.55); color: #f6f1e4; font-size: .7rem; line-height: 1; cursor: pointer; opacity: .45; transition: opacity .2s; }
 .zivy-pauza:hover, .zivy-pauza:focus-visible { opacity: 1; }
+/* Rod Hurstonů – seznam ředitelů */
+.rod-vedeni { margin: .4rem 0 1.2rem 1.2rem; line-height: 1.8; }
+.rod-vedeni .rod-odkaz { font-weight: 600; }

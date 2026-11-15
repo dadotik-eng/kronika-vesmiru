@@ -1,0 +1,152 @@
+---
+layout: default
+title: Rod Hurstonů
+permalink: /rod-hurstonu/
+popis: Rodokmen Hurstonů, kteří už pět set let vedou zbrojovku Hurston Dynamics – od zakladatele Solomona po plukovníka Gavina.
+---
+{% assign rod = site.data.hurstonove.clenove %}
+{% capture portrety %}{% for o in site.osoby %}{% if o.ilustrace %}{{ o.slug }} {% endif %}{% endfor %}{% endcapture %}
+{% capture stranky %}{% for o in site.osoby %}{{ o.slug }} {% endfor %}{% endcapture %}
+<section class="blok osa-hlava">
+  <p class="nadtitul"><a href="{{ '/osobnosti/' | relative_url }}">Osobnosti</a> · Korporace · 2438–dnes</p>
+  <h1>Rod Hurstonů</h1>
+  <p class="perex">Patnáct generací jedné rodiny a jedné zbrojovky. Zlatá linie ukazuje, jak putovalo vedení Hurston Dynamics. Mezi známými řediteli mohli být i další, o kterých prameny mlčí. Klikni na kohokoli z rodu.</p>
+  <p class="tlacitka"><a class="tlacitko" href="{{ '/kapitoly/hurston-dynamics/' | relative_url }}">Příběh Hurston Dynamics</a> <a class="tlacitko" href="{{ '/rod-messeru/' | relative_url }}">Rod Messerů</a> <a class="tlacitko" href="{{ '/vztahy/' | relative_url }}">Síť osobností</a></p>
+  <p class="tlacitka"><button type="button" class="tlacitko aktivni" id="prepni-linii" aria-pressed="true">Linie vedení firmy: zapnutá</button></p>
+</section>
+
+<div class="strom-obal" aria-label="Rodokmen Hurstonů">
+  <div class="strom linie-zap" id="strom">
+    <svg class="strom-cary" id="cary" aria-hidden="true"></svg>
+    <svg class="strom-linie" id="linie" aria-hidden="true"></svg>
+    {% for m in rod %}{% assign hledej = m.id | append: " " %}
+    <button type="button" class="uzel{% if m.ceo %} imperator{% endif %}{% if portrety contains hledej %} s-portretem{% endif %}" id="u-{{ m.id }}"
+      data-id="{{ m.id }}" data-gen="{{ m.gen }}" data-x="{{ m.x }}" data-rodic="{{ m.rodic }}" data-partner="{{ m.partner_id }}">
+      {% if portrety contains hledej %}<img class="u-portret" src="{{ '/assets/osoby/' | append: m.id | append: '.webp' | relative_url }}" alt="" loading="lazy">{% endif %}
+      {% if m.cislo %}<span class="u-cislo">{{ m.cislo }}</span>{% endif %}
+      <span class="u-jmeno">{{ m.jmeno }}</span>
+      <span class="u-roky">{{ m.zivot }}</span>
+      {% if m.ceo %}<span class="u-vlada">v čele {{ m.ceo }}</span>{% endif %}
+    </button>
+    {% endfor %}
+  </div>
+</div>
+
+<div class="blok strom-pod">
+  <div class="legenda">
+    <span><i class="lg imp"></i>výkonný ředitel (číslo = pořadí, kde ho prameny uvádějí)</span>
+    <span><i class="lg cl"></i>člen rodu</span>
+    <span><i class="lg lin"></i>linie vedení firmy</span>
+    <span><i class="lg nej"></i>manželé</span>
+  </div>
+  <h2>Kdo vedl firmu</h2>
+  <ol class="rod-vedeni">
+    {% assign ceo = rod | where_exp: "m", "m.ceo" %}
+    {% for m in ceo %}<li><button type="button" class="rod-odkaz" data-id="{{ m.id }}">{{ m.jmeno }}</button> – {{ m.ceo }}</li>{% endfor %}
+  </ol>
+  <p class="poznamka">Rod nemá souvislý seznam všech ředitelů; prameny jmenují jen ty nejvýznamnější. Příbuzenské čáry jsou kreslené jen tam, kde je vztah výslovně uvedený. Zdroje: Galactapedie, Comm-Linky Portfolio: Hurston Dynamics a Life/Labor: The Secret History of Hurston Dynamics, komunitní wiki starcitizen.tools. <a href="{{ '/kapitoly/hurston-dynamics/' | relative_url }}">Celý příběh firmy</a> · <a href="{{ '/archiv/#web-hurston-dynamics' | relative_url }}">▶ poslechnout</a></p>
+</div>
+
+<aside class="rod-panel" id="panel" aria-hidden="true" aria-live="polite">
+  <button type="button" class="rod-zavrit" id="zavrit" aria-label="Zavřít detail">✕</button>
+  <div id="panel-obsah"></div>
+</aside>
+
+<script>
+(function () {
+  var DATA = {{ rod | jsonify }};
+  var PORTRETY = {{ portrety | strip | split: " " | jsonify }}, STRANKY = {{ stranky | strip | split: " " | jsonify }};
+  var ZAKLAD = {{ '/' | relative_url | jsonify }};
+  var byId = {}; DATA.forEach(function (m) { byId[m.id] = m; });
+  var vedeni = DATA.filter(function (m) { return m.ceo; });
+  var strom = document.getElementById('strom'), svg = document.getElementById('cary'), lin = document.getElementById('linie');
+  var W = 1180, VYSKA = 800;
+  strom.style.width = W + 'px';
+  var uzly = [].slice.call(strom.querySelectorAll('.uzel'));
+  function rozloz() {
+    var maxH = [];
+    uzly.forEach(function (u) { var g = parseInt(u.dataset.gen, 10); u.style.left = (parseFloat(u.dataset.x) - 80) + 'px'; maxH[g] = Math.max(maxH[g] || 0, u.offsetHeight); });
+    var top = [12]; for (var g = 1; g < maxH.length; g++) top[g] = top[g - 1] + (maxH[g - 1] || 0) + 46;
+    uzly.forEach(function (u) { u.style.top = top[parseInt(u.dataset.gen, 10)] + 'px'; });
+    VYSKA = top[maxH.length - 1] + maxH[maxH.length - 1] + 30;
+    strom.style.height = VYSKA + 'px';
+    [svg, lin].forEach(function (gg) { gg.setAttribute('viewBox', '0 0 ' + W + ' ' + VYSKA); gg.setAttribute('width', W); gg.setAttribute('height', VYSKA); });
+  }
+  function stred(u) { return [u.offsetLeft + u.offsetWidth / 2, u.offsetTop + u.offsetHeight / 2]; }
+  function cara() {
+    rozloz();
+    var html = '', hotovo = {};
+    uzly.forEach(function (u) {
+      var r = u.dataset.rodic;
+      if (r) {
+        var p = document.getElementById('u-' + r);
+        if (p) {
+          var x1 = p.offsetLeft + p.offsetWidth / 2, y1 = p.offsetTop + p.offsetHeight;
+          var pp = p.dataset.partner && document.getElementById('u-' + p.dataset.partner);
+          if (pp && pp.dataset.gen === p.dataset.gen) { x1 = (x1 + pp.offsetLeft + pp.offsetWidth / 2) / 2; y1 = p.offsetTop + p.offsetHeight / 2; }
+          var x2 = u.offsetLeft + u.offsetWidth / 2, y2 = u.offsetTop, ym = y2 - 23;
+          html += '<path d="M' + x1 + ' ' + y1 + ' V' + ym + ' H' + x2 + ' V' + y2 + '"/>';
+        }
+      }
+      var s = u.dataset.partner, q = s && document.getElementById('u-' + s), k = [u.dataset.id, s].sort().join('|');
+      if (q && !hotovo[k]) {
+        hotovo[k] = 1;
+        var a = u.offsetLeft < q.offsetLeft ? u : q, b = a === u ? q : u, y = a.offsetTop + a.offsetHeight / 2;
+        html += '<path class="nejisty" d="M' + (a.offsetLeft + a.offsetWidth) + ' ' + y + ' H' + b.offsetLeft + '"/>';
+      }
+    });
+    svg.innerHTML = html;
+    var l = '<defs><marker id="sipka" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#f6bd4b"/></marker></defs>';
+    for (var i = 0; i < vedeni.length - 1; i++) {
+      var A0 = document.getElementById('u-' + vedeni[i].id), B0 = document.getElementById('u-' + vedeni[i + 1].id); if (!A0 || !B0) continue;
+      var A = stred(A0), B = stred(B0), dx = B[0] - A[0];
+      var x1 = A[0] + (dx > 40 ? A0.offsetWidth / 2 : dx < -40 ? -A0.offsetWidth / 2 : 52), y1 = Math.abs(dx) <= 40 ? A[1] + A0.offsetHeight / 2 : A[1];
+      var x2 = B[0] + (dx > 40 ? -B0.offsetWidth / 2 : dx < -40 ? B0.offsetWidth / 2 : 52), y2 = Math.abs(dx) <= 40 ? B[1] - B0.offsetHeight / 2 : B[1];
+      var cx = (x1 + x2) / 2 + (Math.abs(dx) <= 40 ? 60 : 0), cy = (y1 + y2) / 2 - (Math.abs(dx) <= 40 ? 0 : 30);
+      l += '<path class="ln" d="M' + x1 + ' ' + y1 + ' Q' + cx + ' ' + cy + ' ' + x2 + ' ' + y2 + '" marker-end="url(#sipka)"/>';
+    }
+    lin.innerHTML = l;
+  }
+  cara(); window.addEventListener('load', cara); window.addEventListener('resize', cara);
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(cara);
+  [].forEach.call(strom.querySelectorAll('img'), function (im) { im.addEventListener('load', cara); });
+
+  var tl = document.getElementById('prepni-linii');
+  tl.addEventListener('click', function () {
+    var zap = !strom.classList.contains('linie-zap'); strom.classList.toggle('linie-zap', zap);
+    tl.setAttribute('aria-pressed', zap); tl.classList.toggle('aktivni', zap); tl.textContent = 'Linie vedení firmy: ' + (zap ? 'zapnutá' : 'vypnutá');
+  });
+
+  var panel = document.getElementById('panel'), obsah = document.getElementById('panel-obsah');
+  function odkaz(id) { var m = byId[id]; return m ? '<button type="button" class="rod-odkaz" data-id="' + id + '">' + m.jmeno + '</button>' : ''; }
+  function ukaz(id) {
+    var m = byId[id]; if (!m) return;
+    uzly.forEach(function (u) { u.classList.toggle('vybrany', u.dataset.id === id); });
+    var deti = DATA.filter(function (x) { return x.rodic === id || (x.rodic && byId[x.rodic] && byId[x.rodic].partner_id === id); }).map(function (x) { return odkaz(x.id); });
+    var vi = vedeni.indexOf(m), pred = vi > 0 ? vedeni[vi - 1] : null, po = vi >= 0 && vi < vedeni.length - 1 ? vedeni[vi + 1] : null;
+    var vz = '';
+    if (m.rodic) vz += '<dt>Rodič</dt><dd>' + odkaz(m.rodic) + (byId[m.rodic] && byId[m.rodic].partner_id ? ', ' + odkaz(byId[m.rodic].partner_id) : '') + '</dd>';
+    if (m.partner_id) vz += '<dt>Manžel/ka</dt><dd>' + odkaz(m.partner_id) + '</dd>';
+    if (m.sourozenec) vz += '<dt>Sourozenec</dt><dd>' + odkaz(m.sourozenec) + '</dd>';
+    if (deti.length) vz += '<dt>Děti</dt><dd>' + deti.join(', ') + '</dd>';
+    if (pred) vz += '<dt>Předchozí známý ředitel</dt><dd>' + odkaz(pred.id) + '</dd>';
+    if (po) vz += '<dt>Další známý ředitel</dt><dd>' + odkaz(po.id) + '</dd>';
+    obsah.innerHTML =
+      (PORTRETY.indexOf(id) >= 0 ? '<figure class="rod-portret"><img src="' + ZAKLAD + 'assets/osoby/' + id + '.webp" alt=""><span class="il-jmeno" aria-hidden="true">' + m.jmeno + '</span><figcaption>Ilustrační obrázek</figcaption></figure>' : '') +
+      '<p class="nadtitul">' + (m.ceo ? (m.cislo ? m.cislo + '. ' : '') + 'výkonný ředitel · v čele ' + m.ceo : 'člen rodu') + '</p>' +
+      '<h2>' + m.jmeno + '</h2><p class="med-roky">' + m.zivot + '</p>' +
+      '<p>' + m.text + '</p>' + (m.rozpor ? '<p class="med-pozn"><b>Rozpor v pramenech:</b> ' + m.rozpor + '</p>' : '') +
+      (vz ? '<dl class="rod-vztahy">' + vz + '</dl>' : '') +
+      '<p class="med-odkazy">' + (STRANKY.indexOf(id) >= 0 ? '<a class="tlacitko plne" href="' + ZAKLAD + 'osobnosti/' + id + '/">Celý medailonek →</a>' : '') +
+      (m.zdroj ? '<a href="' + m.zdroj + '" target="_blank" rel="noopener">Pramen ↗</a>' : '') + '</p>';
+    panel.classList.add('otevreny'); panel.setAttribute('aria-hidden', 'false');
+    if (history.replaceState) history.replaceState(null, '', '#' + id);
+  }
+  function zavri() { panel.classList.remove('otevreny'); panel.setAttribute('aria-hidden', 'true'); uzly.forEach(function (u) { u.classList.remove('vybrany'); }); }
+  document.getElementById('zavrit').addEventListener('click', zavri);
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') zavri(); });
+  document.addEventListener('click', function (e) { var b = e.target.closest('.rod-odkaz'); if (!b) return; ukaz(b.dataset.id); var u = document.getElementById('u-' + b.dataset.id); if (u) u.scrollIntoView({ behavior: 'smooth', block: 'center', inline: 'center' }); });
+  uzly.forEach(function (u) { u.addEventListener('click', function () { ukaz(u.dataset.id); }); });
+  var h = location.hash.slice(1); if (byId[h]) ukaz(h);
+})();
+</script>
