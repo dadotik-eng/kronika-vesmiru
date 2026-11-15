@@ -19,4 +19,5 @@ zdroje:
 kapitoly: []
 rad: 2852
 obdobi: naprava
+ilustrace: true
 ---
