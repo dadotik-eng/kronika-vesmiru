@@ -120,10 +120,6 @@ OSOBY = {
         ('paprsky', (.28, .0, .95, .5), .25, .5),
         ('mrak', (.42, .02, .92, .35), .004, .0, .003)],
         cast=[('prach', .3, .05, .92, .6, 40)]),
-    'ernst-bishop': dict(kam=[.5, .3, .06, 36], ef=[
-        ('zar', (.72, .1, .98, .32), .8, .3, MODRA, 0),
-        ('zar', (.14, .8, .2, .9), 1.5, .9, CERVENA, 1)],
-        cast=[('prach', .0, .0, 1, 1, 15)]),
     'illyana-messer-vi': dict(kam=[.32, .15, .08, 34], ef=[
         ('mrak', (.5, .0, .9, .32), .005, .001, .008),
         ('zar', (.02, .5, .14, .6), 3.0, .25, TEPLA, 0)],
@@ -150,11 +146,6 @@ OSOBY = {
         ('zar', (.66, .05, .98, .5), .7, .25, TEPLA, 0),
         ('zar', (.0, .05, .12, .3), 2.0, .2, TEPLA, 0)],
         cast=[('prach', .3, .1, 1, .8, 25)]),
-    'kelos-costigan': dict(kam=[.38, .15, .08, 36], ef=[
-        ('mrak', (.5, .0, 1.0, .25), .006, .0, .005),
-        ('voda', (.68, .22, 1.0, .45), .004),
-        ('zar', (.14, .64, .24, .72), 1.2, .25, MODRA, 0)],
-        cast=[('lode', .48, .12, 1.05, .18, 7, .8, 0), ('lode', 1.05, .3, .5, .25, 5, .7, 1)]),
     'ki-jotal': dict(kam=[.38, .15, .08, 34], ef=[
         ('mrak', (.5, .0, .92, .42), .005, .0, .005),
         ('zar', (.35, .8, .95, 1.0), 1.2, .25, MODRA, 0)],
@@ -377,6 +368,20 @@ OSOBY = {
         ('voda', (.55, .4, .95, .5), .004),
         ('zar', (.42, .75, .76, .98), 1.0, .25, MODRA, 0)],
         cast=[('lode', .45, .1, 1.05, .15, 4, .4, 1)]),
+    'cal-mason': dict(kam=[.5, .3, .05, 36], ef=[], cast=[('prach', .0, .0, 1, 1, 12)]),
+    'cara-webster': dict(kam=[.5, .3, .05, 36], ef=[], cast=[('prach', .0, .0, 1, 1, 12)]),
+    'julian-wexler': dict(kam=[.5, .3, .05, 36], ef=[], cast=[('prach', .0, .0, 1, 1, 12)]),
+    'noah-white': dict(kam=[.5, .3, .05, 36], ef=[], cast=[('prach', .0, .0, 1, 1, 12)]),
+    'randall-graves': dict(kam=[.5, .3, .05, 36], ef=[], cast=[('prach', .0, .0, 1, 1, 12)]),
+    'rebecca-trejo': dict(kam=[.5, .3, .05, 36], ef=[], cast=[('prach', .0, .0, 1, 1, 12)]),
+    'ryan-enright': dict(kam=[.5, .3, .05, 36], ef=[], cast=[('prach', .0, .0, 1, 1, 12)]),
+    'sophia-kelly': dict(kam=[.5, .3, .05, 36], ef=[], cast=[('prach', .0, .0, 1, 1, 12)]),
+    'steve-colton': dict(kam=[.5, .3, .05, 36], ef=[], cast=[('prach', .0, .0, 1, 1, 12)]),
+    'rachel-maclaren': dict(kam=[.5, .3, .05, 36], ef=[], cast=[('prach', .0, .0, 1, 1, 12)]),
+    'thomas-wade': dict(kam=[.5, .3, .05, 36], ef=[], cast=[('prach', .0, .0, 1, 1, 12)]),
+    'thul-oqquray': dict(kam=[.5, .3, .05, 36], ef=[], cast=[('prach', .0, .0, 1, 1, 12)]),
+    'ernst-bishop': dict(kam=[.5, .3, .05, 36], ef=[], cast=[('prach', .0, .0, 1, 1, 12)]),
+    'kelos-costigan': dict(kam=[.5, .3, .05, 36], ef=[], cast=[('prach', .0, .0, 1, 1, 12)]),
 }
 
 TYPY = {'vir': 1, 'mrak': 2, 'voda': 3, 'zar': 4, 'paprsky': 5, 'radar': 6, 'teplo': 7}
@@ -399,6 +404,20 @@ def prevod(k):
 # Chráněné části (nesmí se deformovat): obdélník (x0, y0, x1, y1) nebo mnohoúhelník [(x, y), …].
 # Navíc se automaticky chrání ostré hrany (lodě, rámy oken, zábradlí, postavy) – kromě vírů.
 CHRAN = {
+    'cal-mason': [(0, 0, 1, 1)],
+    'cara-webster': [(0, 0, 1, 1)],
+    'julian-wexler': [(0, 0, 1, 1)],
+    'noah-white': [(0, 0, 1, 1)],
+    'randall-graves': [(0, 0, 1, 1)],
+    'rebecca-trejo': [(0, 0, 1, 1)],
+    'ryan-enright': [(0, 0, 1, 1)],
+    'sophia-kelly': [(0, 0, 1, 1)],
+    'steve-colton': [(0, 0, 1, 1)],
+    'rachel-maclaren': [(0, 0, 1, 1)],
+    'thomas-wade': [(0, 0, 1, 1)],
+    'thul-oqquray': [(0, 0, 1, 1)],
+    'ernst-bishop': [(0, 0, 1, 1)],
+    'kelos-costigan': [(0, 0, 1, 1)],
     'errol-navis': [(0, .1, .6, 1), (.43, .55, 1, 1)],
     'marie-sante': [(0, 0, .5, 1), (.55, .5, 1, 1), (.05, .05, .2, .2)],
     'liston-garrity': [(.2, .0, .6, 1), (0, .45, 1, 1), (.6, .1, 1, .6)],
@@ -451,7 +470,6 @@ CHRAN = {
     'sylvie-randall': [(.68, .55, .9, .88), (0, 0, .62, 1), (.86, .14, .96, .3)],
     'ki-jotal': [(.62, .1, .95, .3), (.25, .0, .58, 1)],
     'lii-se-kre': [(0, 0, .42, 1)],
-    'kelos-costigan': [(0, 0, .5, 1)],
     'erin-toi': [(0, 0, .3, 1)],
     'tueng-se-kre': [(0, 0, .55, 1)],
     'vernon-tar': [(0, 0, .42, 1), (.4, .48, 1, 1)],
