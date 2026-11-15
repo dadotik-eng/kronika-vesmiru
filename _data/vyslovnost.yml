@@ -33,6 +33,18 @@
 - {psano: RSI, cti: er es í, cele: true}
 - {psano: Crusader Industries, cti: Krusejdr Industrys, cele: true}
 - {psano: Hurston Dynamics, cti: Herston Dajnemiks, cele: true}
+- {psano: Hurston, cti: Herston}
+- {psano: Chesterfield, cti: Česterfíld}
+- {psano: Jasper, cti: Džesper}
+- {psano: Isiah, cti: Ajzaja}
+- {psano: Darrington, cti: Derington}
+- {psano: Alton, cti: Óltn, tvary: {Altona: Óltna, Altonem: Óltnem, Altonovi: Óltnovi, Alton: Óltn}}
+- {psano: Wharton, cti: Vórtn}
+- {psano: Constantine, cti: Konstantajn}
+- {psano: Aberdeen, cti: Ebrdín}
+- {psano: United Workers of Hurston, cti: Junajtyd Vórkrs of Herston, cele: true}
+- {psano: Life/Labor, cti: Lajf lejbr, cele: true}
+- {psano: Lorville, cti: Lórvil}
 - {psano: ArcCorp, cti: Ark Korp, cele: true}
 - {psano: microTech, cti: majkrotek, cele: true}
 - {psano: Gaia Planet Services, cti: Gaja Planet Sérvisis, cele: true}

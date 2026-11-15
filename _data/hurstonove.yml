@@ -1,0 +1,180 @@
+# Rod Hurstonů – rodokmen. Zdroje: Galactapedie, Comm-Linky Portfolio: Hurston Dynamics a Life/Labor, komunitní wiki starcitizen.tools.
+# x = vodorovná poloha uzlu (0–1180), gen = řádek, rodic = id rodiče (jen výslovně uvedené vazby), partner_id = manžel/ka s vlastním uzlem.
+# ceo = období ve vedení firmy (jak ho uvádějí prameny), cislo = pořadí ředitele, jen kde ho prameny uvádějí.
+clenove:
+  - id: janice-delong
+    jmeno: Janice Delong
+    zivot: 25. století
+    gen: 0
+    x: 590
+    text: Solomonova matka. Založila úspěšnou firmu, ale krátce po synově narození zemřela a rodina z jejího díla nic nedostala. Solomon si proto přísahal, že jeho rodina bude vždy zajištěná.
+    zdroj: https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/13152-Portfolio-Hurston-Dynamics
+  - id: solomon-hurston
+    jmeno: Solomon Hurston
+    zivot: † po 2488
+    ceo: 2438–2488
+    cislo: '1'
+    gen: 1
+    x: 590
+    rodic: janice-delong
+    text: Zakladatel. Roku 2438 koupil krachujícího výrobce laserů a udělal z něj Hurston Dynamics. Každou novou firmu svěřil někomu z rodiny, ale místo u stolu si musel každý zasloužit.
+    zdroj: https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/13152-Portfolio-Hurston-Dynamics
+  - id: isiah-hurston
+    jmeno: Isiah Hurston
+    zivot: 2431–2504
+    ceo: od 2488
+    cislo: '2'
+    gen: 2
+    x: 450
+    rodic: solomon-hurston
+    text: Solomonův syn. Převzal firmu roku 2488 a začala jím dynastie, která trvá dodnes.
+    zdroj: https://starcitizen.tools/Isiah_Hurston
+  - id: darrington-hurston
+    jmeno: Darrington Hurston
+    zivot: 25. století
+    gen: 2
+    x: 740
+    rodic: solomon-hurston
+    text: Solomonův syn. Šetřil na kvalitě magnetických rezistorů, vadné součástky způsobily smrtelnou nehodu railgunu a otec ho z firmy vyhodil.
+    zdroj: https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/13152-Portfolio-Hurston-Dynamics
+  - id: arial-hurston
+    jmeno: Arial Hurston
+    zivot: 2466–2537
+    ceo: začátek 26. století
+    cislo: '3'
+    gen: 3
+    x: 170
+    text: Třetí výkonný ředitel. Zavedl smlouvy Life/Labor, které dělníky váží k firmě na celý život. Po něm se jmenuje první měsíc Hurstonu.
+    zdroj: https://robertsspaceindustries.com/galactapedia/article/0qnN5w4kmW-arial-hurston
+  - id: eduard-hurston
+    jmeno: Eduard Hurston
+    zivot: 2486–2573
+    gen: 3
+    x: 400
+    text: Pomohl postavit první továrnu firmy mimo Sluneční soustavu, na planetě Rytif v soustavě Bremen.
+    zdroj: https://starcitizen.tools/Eduard_Hurston
+  - id: julius-hurston
+    jmeno: Julius Hurston
+    zivot: 2487–2573
+    gen: 3
+    x: 640
+    partner_id: ita-hurston
+    text: Finančník firmy. Na památku své ženy Ity, která padla v první tevarinské válce, založil dobročinné nadace.
+    zdroj: https://starcitizen.tools/Julius_Hurston
+  - id: ita-hurston
+    jmeno: Ita Hurston
+    zivot: 2512–2542
+    gen: 3
+    x: 870
+    partner_id: julius-hurston
+    text: Praporčice speciálních sil UPE, padla v první tevarinské válce. Po ní se jmenuje čtvrtý měsíc Hurstonu.
+    zdroj: https://robertsspaceindustries.com/galactapedia/article/0qnNMY2dO1-ita-hurston
+  - id: archibald-hurston
+    jmeno: Archibald Hurston
+    zivot: 2618–2689
+    ceo: 27. století
+    gen: 4
+    x: 590
+    text: Nejmladší výkonný ředitel v dějinách firmy, k moci se dostal nemilosrdným převratem. Jeho zlatá socha stojí v pamětní síni v Lorville.
+    zdroj: https://starcitizen.tools/Archibald_Hurston
+  - id: olivia-hurston
+    jmeno: Olivia Hurston
+    zivot: 2709–2791
+    gen: 5
+    x: 420
+    text: Manažerka a „filozofka“ firmy, autorka bytového programu. Urovnala stávku roku 2741 a roku 2786 dosadila do čela svého mladšího bratra Altona.
+    zdroj: https://starcitizen.tools/Olivia_Hurston
+    sourozenec: alton-hurston
+  - id: alton-hurston
+    jmeno: Alton Hurston
+    zivot: '?'
+    ceo: od 2786
+    gen: 5
+    x: 760
+    text: Měl být jen dočasným ředitelem, vydržel ale dlouho. Nesouhlasil se sňatkem syna Jaspera a roku 2811 ho vyhodil za chystaný převrat.
+    zdroj: https://starcitizen.tools/Alton_Hurston
+    sourozenec: olivia-hurston
+  - id: desmond-hurston
+    jmeno: Desmond Hurston
+    zivot: 2760–2794
+    gen: 6
+    x: 420
+    rodic: olivia-hurston
+    text: Pilot námořnictva UEE a spojka mezi imperátorem Lintonem XI. a firmou. Matka z něj chtěla mít ředitele.
+    zdroj: https://starcitizen.tools/Desmond_Hurston
+  - id: jasper-hurston
+    jmeno: Jasper Hurston
+    zivot: '? – zmizel'
+    gen: 6
+    x: 760
+    rodic: alton-hurston
+    partner_id: maria-wharton
+    text: Navzdory otci si vzal Marii Wharton, s ní odhalil off-booking a roku 2811 byl z firmy vyhozen. Jednoho dne beze stopy zmizel.
+    zdroj: https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/19424-Life-Labor-The-Secret-History-Of-Hurston-Dynamics
+  - id: maria-wharton
+    jmeno: Maria Hurston (Wharton)
+    zivot: 2777–2880
+    gen: 6
+    x: 990
+    partner_id: jasper-hurston
+    text: Aktivistka z rodiny zničené Messery. Prosadila největší rozšíření zdravotní péče pro dělníky firmy. Nese její jméno nemocnice v Lorville.
+    zdroj: https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/19424-Life-Labor-The-Secret-History-Of-Hurston-Dynamics
+  - id: aberdeen-hurston
+    jmeno: Aberdeen Hurston
+    zivot: 2821–2912
+    gen: 7
+    x: 420
+    text: Inženýr, autor první antihmotové hlavice firmy (2853). Po něm se jmenuje druhý měsíc Hurstonu.
+    zdroj: https://robertsspaceindustries.com/galactapedia/article/VlMMykaZKv-aberdeen-hurston
+  - id: chesterfield-hurston
+    jmeno: Chesterfield Hurston
+    zivot: 2803–2883
+    ceo: do 2883
+    gen: 7
+    x: 760
+    rodic: jasper-hurston
+    partner_id: mariah-park-hurston
+    text: Syn Jaspera a Marie, jeden z nejmocnějších mužů rady. Na Magdinu radu schválil koupi planety Stanton I.
+    zdroj: https://starcitizen.tools/Chesterfield_Hurston
+    rozpor: Komunitní wiki uvádí v přehledu rok smrti 2891, podle článku o Magdě Hurston zemřel roku 2883 a Magda ho ve vedení vystřídala.
+  - id: mariah-park-hurston
+    jmeno: Mariah Park Hurston
+    zivot: 29. století
+    gen: 7
+    x: 990
+    partner_id: chesterfield-hurston
+    text: Chesterfieldova manželka, matka Magdy a Bertrama.
+    zdroj: https://starcitizen.tools/Mariah_Park_Hurston
+  - id: magda-hurston
+    jmeno: Magda Hurston
+    zivot: 2833–2921
+    ceo: 2883–2915
+    gen: 8
+    x: 690
+    rodic: chesterfield-hurston
+    text: Prosadila koupi planety Stanton I (2865), postavila Lorville a vedla firmu v letech 2883–2915. Po ní se jmenuje třetí měsíc Hurstonu.
+    zdroj: https://robertsspaceindustries.com/galactapedia/article/V7gMKmw6wa-magda-hurston
+  - id: bertram-hurston
+    jmeno: Bertram Hurston
+    zivot: 29. století
+    gen: 8
+    x: 930
+    rodic: chesterfield-hurston
+    text: Magdin mladší bratr. Prameny o něm víc neuvádějí.
+    zdroj: https://starcitizen.tools/Magda_Hurston
+  - id: gavin-e-hurston
+    jmeno: Gavin E. Hurston
+    zivot: nar. 2867
+    ceo: od 2915
+    gen: 9
+    x: 690
+    rodic: magda-hurston
+    text: „Plukovník“, současný výkonný ředitel. Kancelář si zdobí starými zbraněmi a hlavami vyhubených zvířat.
+    zdroj: https://robertsspaceindustries.com/galactapedia/article/RzPoAdZpEl-gavin-e-hurston
+  - id: constantine-hurston
+    jmeno: Constantine Hurston
+    zivot: současnost
+    gen: 9
+    x: 400
+    text: Mladší manažer outsourcingu v Lorville. Chce se prosadit vlastními silami, ne jménem.
+    zdroj: https://starcitizen.tools/Constantine_Hurston

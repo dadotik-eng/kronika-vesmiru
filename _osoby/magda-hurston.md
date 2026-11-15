@@ -15,6 +15,7 @@ kapitoly:
 - kap-9
 rad: 2833
 obdobi: naprava
+rod: hurston
 ---
 
 Magda vystudovala Haymore School of Economics v Ženevě a její diplomová práce s výmluvným názvem Žít, pracovat a hrát si: produktivita zaměstnanců v kontrolovaném prostředí získala cenu za nejlepší práci akademického roku 2854/55. Po roční stáži na univerzitě UPARQ na planetě Persei nastoupila do rodinné firmy jako mladší provozní analytička.
