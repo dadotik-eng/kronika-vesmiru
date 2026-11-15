@@ -15,4 +15,5 @@ kapitoly: []
 rad: 2888
 obdobi: naprava
 ilustrace: true
+plakat: Obrázek k pořadu Plain Truth · © Cloud Imperium Games
 ---
