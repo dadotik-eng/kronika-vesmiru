@@ -25,6 +25,7 @@ kapitoly:
 - kap-8
 rad: 2793
 obdobi: naprava
+ilustrace: true
 ---
 
 Rozhodující chvíle přišla 30. dubna 2793. Zákon o modernizaci vlády, který měl stát přestavět podle představ terranských reformátorů, propadl v Senátu o tři hlasy. Imperátorka Toi se zavřela v pracovně se dvěma připravenými projevy, jedním pro úspěch a druhým pro porážku. Když Redfield vstoupil, nemusel nic říkat – výsledek byl znát z jeho tváře.
