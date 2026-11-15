@@ -77,7 +77,8 @@
         'else if(B.x<5.5){bm+=e*(n(vec2(u.x*14.-t*B.z,t*.2))-.5)*2.*B.y;}' +
         'else if(B.x<6.5){float an=atan(q.y,q.x);float df=mod(mod(t*B.y*6.283,6.283)-an+6.283,6.283);ad+=C.rgb*exp(-df*2.5)*step(d,1.)*(1.-d*.5)*.35;}' +
         'else{vec2 w=(vec2(n(u*vec2(90.,40.)+vec2(0.,-t*2.5)),n(u*vec2(80.,60.)+vec2(3.,-t*2.)))-.5)*B.y;oa+=e*w;ob+=e*w;}}' +
-        'float wa=1.-abs(2.*pa-1.);vec3 col=mix(texture2D(I,u+ob).rgb,texture2D(I,u+oa).rgb,wa);' +
+        'float wa=1.-abs(2.*pa-1.);oa*=m.b;ob*=m.b;vec3 c0=texture2D(I,u).rgb;' +
+        'vec3 ca=mix(c0,texture2D(I,u+oa).rgb,texture2D(M,u+oa).b),cb=mix(c0,texture2D(I,u+ob).rgb,texture2D(M,u+ob).b);vec3 col=mix(cb,ca,wa);' +
         'float lu=dot(col,vec3(.3,.59,.11));col*=1.+bm*smoothstep(.25,.8,lu);' +
         'col+=col*m.g*(tw(u)-.3)*2.4;' +
         'float fl=fb(u*vec2(40.,25.)+vec2(sd*9.,-t*2.4))*.9+.25*sin(t*10.+u.x*60.);col+=col*m.r*(fl-.4)*1.1;' +

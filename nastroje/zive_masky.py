@@ -5,7 +5,8 @@ Ruční masky (letka, dite-z-marsu, pad-calibanu, goodman) se nepřepisují, pok
 Spuštění: python3 nastroje/zive_masky.py"""
 import glob, json, os, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from zive_osoby import OSOBY, prevod
+from zive_osoby import OSOBY, CHRAN, prevod
+from PIL import ImageDraw
 import numpy as np
 from PIL import Image, ImageFilter
 
@@ -48,9 +49,34 @@ def ohen(R, G, B):
     return blur(m, 2)
 
 
-def obecna(f, cil):
+def povoleni(R, G, B, jm):
+    """B kanál: kde se smí obraz deformovat (mraky, voda, vír). Chrání ostré hrany a ruční oblasti."""
+    H, W = R.shape
+    L = (R + G + B) / 3
+    Ls = np.asarray(Image.fromarray(L.astype('uint8')).filter(ImageFilter.GaussianBlur(1.5))).astype(float)
+    gy, gx = np.gradient(Ls)
+    hrany = np.clip((np.hypot(gx, gy) - 6) / 8, 0, 1)
+    hrany = np.asarray(Image.fromarray((hrany * 255).astype('uint8')).filter(ImageFilter.MaxFilter(9)).filter(ImageFilter.GaussianBlur(4))).astype(float) / 255
+    m = 1 - hrany
+    k = OSOBY.get(jm, {})
+    vir = Image.new('L', (W, H), 0); dv = ImageDraw.Draw(vir)
+    for e in k.get('ef', []):
+        if e[0] == 'vir':
+            x0, y0, x1, y1 = e[1]; dv.ellipse([x0 * W, y0 * H, x1 * W, y1 * H], fill=255)
+    m = np.maximum(m, np.asarray(vir).astype(float) / 255)
+    ch = Image.new('L', (W, H), 0); dc = ImageDraw.Draw(ch)
+    for c in CHRAN.get(jm, []):
+        if isinstance(c, tuple):
+            dc.rectangle([c[0] * W, c[1] * H, c[2] * W, c[3] * H], fill=255)
+        else:
+            dc.polygon([(x * W, y * H) for x, y in c], fill=255)
+    ch = np.asarray(ch.filter(ImageFilter.GaussianBlur(5))).astype(float) / 255
+    return blur(m * (1 - ch), 2)
+
+
+def obecna(f, cil, jm=None):
     R, G, B = nacti(f)
-    uloz([ohen(R, G, B), body(R, G, B), np.zeros_like(R)], cil)
+    uloz([ohen(R, G, B), body(R, G, B), povoleni(R, G, B, jm) if jm in OSOBY else np.zeros_like(R)], cil)
 
 
 def pad_calibanu(f, cil):
@@ -87,7 +113,7 @@ for f in sorted(glob.glob('assets/osoby/*.webp')):  # rasy se neanimují (přán
         continue
     slozka = f.split('/')[1]
     cil = f'assets/zive/{slozka}/{jm}.png'
-    obecna(f, cil)
+    obecna(f, cil, jm)
     if jm in OSOBY:
         seznam['/' + f] = {'s': 'osoba', 'm': '/' + cil, 'k': prevod(OSOBY[jm])}
     else:
