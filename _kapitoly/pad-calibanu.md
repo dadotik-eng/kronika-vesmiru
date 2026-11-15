@@ -29,8 +29,8 @@ obrazek:
   soubor: /assets/kapitoly/pad-calibanu.webp
   sirka: 1118
   vyska: 351
-  alt: "Zničená osada na Calibanu pod kouřem a ohněm"
-  popisek: "Pád Calibanu – obrázek od CIG · © Cloud Imperium Games"
+  alt: Zničená osada na Calibanu pod kouřem a ohněm
+  popisek: Pád Calibanu – obrázek od CIG · © Cloud Imperium Games
 zdroje:
 - record_key: galactapedia:0Gz5DNryvE
   typ: Galactapedie

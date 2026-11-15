@@ -1,136 +1,161 @@
 ---
 id: lod-ktera-zmizela-do-niceho
 title: Zmizení lodi Goodman
-slug: lod-ktera-zmizela-do-niceho
 date: 2026-11-14
-herni_rok: 2262
 typ: kronika
+herni_rok: 2262
 obdobi: skoky
 soustava: CROSHAW
-popis: "Nákladní loď Goodman zmizela v srpnu 2262 nedaleko Neptunu. Až v roce 2944 ji amatérská archeoložka našla driftovat v systému Croshaw."
+popis: Nákladní loď Goodman zmizela v srpnu 2262 nedaleko Neptunu. Až v roce 2944 ji amatérská archeoložka našla driftovat v systému Croshaw.
+vazby:
+  osoby:
+  - nick-croshaw
+  systemy:
+  - CROSHAW
+stitky:
+- Goodman
+- Neso Triangle
+- Croshaw
+- Nick Croshaw
+- Kamelia Ganesh
+- Mōhio Museum
 overeni: OK
+overeno_kdy: '2026-11-14'
+overeno_kym: Kontrolor
+overeni_poznamka: 'Po dodatečné kontrole opraveny nepřesnosti (maják zapuštěný v asteroidu, staletí pátrání v Croshaw). Redaktor: OK. Kontrolor: OK.'
+slug: lod-ktera-zmizela-do-niceho
 obrazek:
   soubor: /assets/kapitoly/goodman.webp
   sirka: 1118
   vyska: 351
-  alt: "Mapa posledních chvil lodi Goodman: trasa, místo srážky a poslední známá pozice před zmizením"
-  popisek: "Poslední známá pozice lodi Goodman – obrázek z Comm-Linku 2262: The Neso Triangle · © Cloud Imperium Games"
+  alt: 'Mapa posledních chvil lodi Goodman: trasa, místo srážky a poslední známá pozice před zmizením'
+  popisek: 'Poslední známá pozice lodi Goodman – obrázek z Comm-Linku 2262: The Neso Triangle · © Cloud Imperium Games'
 animace:
-  - veta: "Osm lidí na palubě"
-    vis: ship
-    lbl: "Goodman · osm lidí"
-  - veta: "Obyčejná trasa"
-    vis: orbit
-    lbl: "Neptun · srpen 2262"
-  - veta: "Pak přišla troska"
-    vis: signal
-    lbl: "Srážka s troskou"
-    o: {red: 1}
-  - veta: "Žádná katastrofa"
-    vis: jump
-    lbl: "Drift"
-    o: {s: anomaly}
-  - veta: "Posádka bojovala"
-    vis: ship
-    lbl: "Pomalý pohyb"
-  - veta: "Poslední, co po sobě"
-    vis: signal
-    lbl: "Poslední přenos"
-  - veta: "A pak ticho"
-    vis: silence
-    lbl: "Ticho"
-    o: {cut: 1, red: 1}
-  - veta: "Na poslední známé pozici"
-    vis: radar
-    lbl: "Pátrání"
-  - veta: "Loď prostě zmizela"
-    vis: record
-    lbl: "Zmizela"
-  - veta: "Během pár měsíců"
-    vis: toll
-    lbl: "Další dvě lodě"
-  - veta: "Úřady udělaly"
-    vis: jump
-    lbl: "Zakázaná oblast"
-    o: {s: anomaly, closed: 1}
-  - veta: "Lidé jí začali říkat"
-    vis: jump
-    lbl: "Neso Triangle"
-    o: {s: anomaly}
-  - veta: "Jméno, které dnes"
-    vis: jump
-    lbl: "Sol–Croshaw"
-    o: {s: through}
-  - veta: "O devět let později"
-    vis: jump
-    lbl: "Nick Croshaw · 2271"
-    o: {s: through}
-  - veta: "Systém po něm"
-    vis: map
-    lbl: "Croshaw"
-    o: {n: 2}
-  - veta: "Prameny se tu ovšem"
-    vis: record
-    lbl: "Dva záznamy"
-  - veta: "Na záhadu se čekalo"
-    vis: silence
-    lbl: "682 let"
-  - veta: "Vyřešila ji až náhoda"
-    vis: radar
-    lbl: "Icarus Cluster · 2944"
-  - veta: "Amatérská archeoložka"
-    vis: signal
-    lbl: "Nouzový maják"
-  - veta: "Paměť majáku"
-    vis: record
-    lbl: "Poškozená paměť"
-  - veta: "Ganesh souřadnice"
-    vis: map
-    lbl: "Mapa roku 2262"
-    o: {n: 2}
-  - veta: "Loď, co odešla"
-    vis: ship
-    lbl: "682 let bez cíle"
-  - veta: "Dnes stojí vrak"
-    vis: memorial
-    lbl: "Mōhio Museum"
-  - veta: "A doufá se"
-    vis: radar
-    lbl: "Další vraky?"
-  - veta: "Impérium má rádo"
-    vis: blank
-    lbl: "Uzavřený příběh"
-  - veta: "Vesmír je má radši"
-    vis: jump
-    lbl: "Rozpitvaný vesmír"
-    o: {s: anomaly}
+- veta: Osm lidí na palubě
+  vis: ship
+  lbl: Goodman · osm lidí
+- veta: Obyčejná trasa
+  vis: orbit
+  lbl: Neptun · srpen 2262
+- veta: Pak přišla troska
+  vis: signal
+  lbl: Srážka s troskou
+  o:
+    red: 1
+- veta: Žádná katastrofa
+  vis: jump
+  lbl: Drift
+  o:
+    s: anomaly
+- veta: Posádka bojovala
+  vis: ship
+  lbl: Pomalý pohyb
+- veta: Poslední, co po sobě
+  vis: signal
+  lbl: Poslední přenos
+- veta: A pak ticho
+  vis: silence
+  lbl: Ticho
+  o:
+    cut: 1
+    red: 1
+- veta: Na poslední známé pozici
+  vis: radar
+  lbl: Pátrání
+- veta: Loď prostě zmizela
+  vis: record
+  lbl: Zmizela
+- veta: Během pár měsíců
+  vis: toll
+  lbl: Další dvě lodě
+- veta: Úřady udělaly
+  vis: jump
+  lbl: Zakázaná oblast
+  o:
+    s: anomaly
+    closed: 1
+- veta: Lidé jí začali říkat
+  vis: jump
+  lbl: Neso Triangle
+  o:
+    s: anomaly
+- veta: Jméno, které dnes
+  vis: jump
+  lbl: Sol–Croshaw
+  o:
+    s: through
+- veta: O devět let později
+  vis: jump
+  lbl: Nick Croshaw · 2271
+  o:
+    s: through
+- veta: Systém po něm
+  vis: map
+  lbl: Croshaw
+  o:
+    n: 2
+- veta: Prameny se tu ovšem
+  vis: record
+  lbl: Dva záznamy
+- veta: Na záhadu se čekalo
+  vis: silence
+  lbl: 682 let
+- veta: Vyřešila ji až náhoda
+  vis: radar
+  lbl: Icarus Cluster · 2944
+- veta: Amatérská archeoložka
+  vis: signal
+  lbl: Nouzový maják
+- veta: Paměť majáku
+  vis: record
+  lbl: Poškozená paměť
+- veta: Ganesh souřadnice
+  vis: map
+  lbl: Mapa roku 2262
+  o:
+    n: 2
+- veta: Loď, co odešla
+  vis: ship
+  lbl: 682 let bez cíle
+- veta: Dnes stojí vrak
+  vis: memorial
+  lbl: Mōhio Museum
+- veta: A doufá se
+  vis: radar
+  lbl: Další vraky?
+- veta: Impérium má rádo
+  vis: blank
+  lbl: Uzavřený příběh
+- veta: Vesmír je má radši
+  vis: jump
+  lbl: Rozpitvaný vesmír
+  o:
+    s: anomaly
 nahravka:
   soubor: /assets/audio/kapitoly/goodman-posledni-prenos.mp3
-  pred: "A pak ticho."
-  popisek: "Poslední přenos lodi Goodman – záznam z Comm-Linku 2262: The Neso Triangle, s českým dabingem · © Cloud Imperium Games"
-overeni_poznamka: "Po dodatečné kontrole opraveny nepřesnosti (maják zapuštěný v asteroidu, staletí pátrání v Croshaw). Redaktor: OK. Kontrolor: OK."
-stitky: [Goodman, Neso Triangle, Croshaw, Nick Croshaw, Kamelia Ganesh, Mōhio Museum]
+  pred: A pak ticho.
+  popisek: 'Poslední přenos lodi Goodman – záznam z Comm-Linku 2262: The Neso Triangle, s českým dabingem · © Cloud Imperium Games'
 zdroje:
-  - nazev: "2262: The Neso Triangle"
-    typ: Comm-Link
-    url: https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/12682-2262-The-Neso-Triangle
-    record_key: commlink:12682
-  - nazev: "DISCOVERED"
-    typ: Comm-Link
-    url: https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/15692-DISCOVERED
-    record_key: commlink:15692
-  - nazev: "Galactic Guide: Croshaw System"
-    typ: Comm-Link
-    url: https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/15019-Galactic-Guide-Croshaw-System
-    record_key: commlink:15019
-  - nazev: "Croshaw"
-    typ: Star Map
-    url: https://robertsspaceindustries.com/starmap?location=CROSHAW
-    record_key: system:CROSHAW
-  - nazev: "Goodman"
-    typ: Komunitní wiki
-    url: https://starcitizen.tools/Goodman
-    record_key: scwiki:Goodman
+- record_key: commlink:12682
+  typ: Comm-Link
+  nazev: '2262: The Neso Triangle'
+  url: https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/12682-2262-The-Neso-Triangle
+- record_key: commlink:15692
+  typ: Comm-Link
+  nazev: DISCOVERED
+  url: https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/15692-DISCOVERED
+- record_key: commlink:15019
+  typ: Comm-Link
+  nazev: 'Galactic Guide: Croshaw System'
+  url: https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/15019-Galactic-Guide-Croshaw-System
+- record_key: system:CROSHAW
+  typ: Star Map
+  nazev: Croshaw
+  url: https://robertsspaceindustries.com/starmap?location=CROSHAW
+- record_key: scwiki:Goodman
+  typ: Komunitní wiki
+  nazev: Goodman
+  url: https://starcitizen.tools/Goodman
 ---
 
 Osm lidí na palubě. Obyčejný náklad. Obyčejná trasa k orbitální platformě někde u Neptunu. Srpen roku 2262 nevěstil nákladní lodi Goodman nic zvláštního.

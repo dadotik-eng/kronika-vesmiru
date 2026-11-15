@@ -26,8 +26,8 @@ obrazek:
   soubor: /assets/kapitoly/dite-z-marsu.webp
   sirka: 960
   vyska: 540
-  alt: "Ilustrace: rodiče Okonovi s novorozenou Abeni u okna osady, venku Mars pod modrým nebem"
-  popisek: "Ilustrační obrázek"
+  alt: 'Ilustrace: rodiče Okonovi s novorozenou Abeni u okna osady, venku Mars pod modrým nebem'
+  popisek: Ilustrační obrázek
 zdroje:
 - record_key: galactapedia:Rz2DPeZZnk
   typ: Galactapedie
