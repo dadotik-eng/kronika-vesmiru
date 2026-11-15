@@ -9,7 +9,7 @@ from PIL import Image, ImageFilter
 
 KOREN = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 os.chdir(KOREN)
-VYNECHAT = {'banu', 'srovnani-vysky', 'tevarinove', 'tevarinove-1', 'vanduulove-1', 'xiani-1'}  # koncepty / listy postav
+VYNECHAT = set()
 MW, MH = 480, 270
 
 
@@ -79,7 +79,7 @@ for f in sorted(glob.glob('assets/kapitoly/*.webp')):
     elif not os.path.exists(cil):
         obecna(f, cil)
     seznam['/' + f] = {'s': jm if jm in ('ztracena-letka', 'dite-z-marsu', 'pad-calibanu', 'goodman') else 'zakladni', 'm': f'/{cil}'}
-for f in sorted(glob.glob('assets/osoby/*.webp')) + sorted(glob.glob('assets/rasy/*.webp')):
+for f in sorted(glob.glob('assets/osoby/*.webp')):  # rasy se neanimují (přání Daniela)
     jm = os.path.basename(f)[:-5]
     if jm in VYNECHAT:
         continue
