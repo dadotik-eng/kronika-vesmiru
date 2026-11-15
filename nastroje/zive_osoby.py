@@ -464,6 +464,35 @@ OSOBY = {
         ('zar', (.3, .0, .9, .1), 1.0, .2, TEPLA, 0),
         ('zar', (.42, .62, .6, .7), 1.4, .3, TEPLA, 0)],
         cast=[('lode', .0, .1, .3, .05, 3, .4, 1)]),
+    'aadya-firmino': dict(kam=[.3, .2, .06, 34], ef=[
+        ('zar', (.0, .0, .5, .12), 1.6, .3, TEPLA, 0),
+        ('zar', (.4, .1, .55, .2), 1.6, .3, TEPLA, 0)],
+        cast=[('prach', .0, .0, 1, .6, 20)]),
+    'marsal-cathcart': dict(kam=[.27, .15, .06, 34], ef=[
+        ('mrak', (.3, .0, 1.0, .3), .004, .0, .005),
+        ('zar', (.37, .25, .45, .38), 1.6, .3, TEPLA, 0)],
+        cast=[('para', .75, .15, .8), ('para', .5, .55, 1.0)]),
+    'noah-traeger': dict(kam=[.38, .2, .06, 34], ef=[
+        ('voda', (.45, .38, 1.0, .62), .006),
+        ('zar', (.53, .55, .66, .7), 1.6, .35, TEPLA, 0)],
+        cast=[('prach', .0, .0, 1, .5, 15)]),
+    'alberto-vara': dict(kam=[.32, .15, .06, 34], ef=[
+        ('voda', (.0, .2, .3, .35), .004),
+        ('zar', (.4, .0, 1.0, .1), 1.0, .2, TEPLA, 0)],
+        cast=[('prach', .3, .0, 1, .7, 20)]),
+    'sindo-guerrero': dict(kam=[.25, .2, .06, 34], ef=[
+        ('zar', (.53, .22, .63, .35), 1.6, .3, TEPLA, 0),
+        ('voda', (.5, .4, .85, .85), .005),
+        ('mrak', (.2, .0, 1.0, .25), .003, .0, .004)],
+        cast=[('lupeny', .0, .0, .5, .5, 12)]),
+    'parker-terrell': dict(kam=[.38, .25, .06, 34], ef=[
+        ('zar', (.48, .05, 1.0, .65), 1.4, .35, TEPLA, 0),
+        ('zar', (.0, .0, .12, .06), 1.5, .3, BILA, 0)],
+        cast=[]),
+    'desmond-fell': dict(kam=[.5, .3, .06, 34], ef=[
+        ('zar', (.66, .05, .76, .18), 1.6, .3, TEPLA, 0),
+        ('zar', (.42, .2, .48, .3), 2.0, .4, TEPLA, 0)],
+        cast=[('prach', .6, .2, 1, .9, 20)]),
 }
 
 TYPY = {'vir': 1, 'mrak': 2, 'voda': 3, 'zar': 4, 'paprsky': 5, 'radar': 6, 'teplo': 7}
@@ -486,6 +515,13 @@ def prevod(k):
 # Chráněné části (nesmí se deformovat): obdélník (x0, y0, x1, y1) nebo mnohoúhelník [(x, y), …].
 # Navíc se automaticky chrání ostré hrany (lodě, rámy oken, zábradlí, postavy) – kromě vírů.
 CHRAN = {
+    'aadya-firmino': [(0, .05, 1, 1)],
+    'marsal-cathcart': [(.05, .0, .45, 1), (0, .0, .2, .65)],
+    'noah-traeger': [(0, .0, .6, 1), (.8, .3, 1, .4), (0, .5, 1, 1)],
+    'alberto-vara': [(.1, .0, .62, 1), (0, .1, 1, .6)],
+    'sindo-guerrero': [(0, .1, .62, 1)],
+    'parker-terrell': [(.1, .0, .8, 1)],
+    'desmond-fell': [(0, 0, .7, 1), (.7, .4, .92, .6)],
     'armistead-perry': [(.15, .0, .55, 1), (.5, .05, 1, .45)],
     'charles-baxter': [(0, .2, .55, 1), (.4, .0, .95, .4)],
     'gammon-messer': [(.0, .0, 1, 1)],
