@@ -396,6 +396,40 @@ OSOBY = {
     'vat-tagaca': dict(kam=[.5, .3, .05, 36], ef=[], cast=[('prach', .0, .0, 1, 1, 12)]),
     'wallace-klim': dict(kam=[.5, .3, .05, 36], ef=[], cast=[('prach', .0, .0, 1, 1, 12)]),
     'nayara-fell': dict(kam=[.5, .3, .05, 36], ef=[], cast=[('prach', .0, .0, 1, 1, 12)]),
+    'dahunsil-kosoko': dict(kam=[.27, .25, .07, 34], ef=[
+        ('vir', (.72, .0, 1.0, .5), .3),
+        ('zar', (.75, .05, .98, .45), 1.0, .3, TEPLA, 0)],
+        cast=[('prach', .5, .0, 1, .6, 20)]),
+    'teesa-morrison': dict(kam=[.25, .3, .06, 34], ef=[
+        ('zar', (.3, .0, .48, .6), 1.2, .3, TEPLA, 0),
+        ('zar', (.7, .25, .9, .4), 1.6, .4, MODRA, 0)],
+        cast=[('prach', .45, .0, 1, .5, 20)]),
+    'micah-zahir': dict(kam=[.3, .25, .07, 34], ef=[
+        ('zar', (.73, .5, .95, .8), 1.8, .35, TEPLA, 0),
+        ('zar', (.85, .05, .95, .18), 1.4, .3, BILA, 0)],
+        cast=[('lode', .45, .4, .85, .25, 3, .4, 1)]),
+    'juliet-maupin': dict(kam=[.4, .25, .06, 34], ef=[
+        ('zar', (.18, .12, .3, .2), 2.0, .35, TEPLA, 0),
+        ('zar', (.22, .5, .32, .6), 1.6, .3, TEPLA, 0),
+        ('mrak', (.45, .0, 1.0, .35), .003, -.001, .005)],
+        cast=[('prach', .45, .0, 1, .7, 25)]),
+    'leonard-casse': dict(kam=[.45, .25, .06, 34], ef=[
+        ('zar', (.66, .1, .78, .25), 1.6, .3, TEPLA, 0),
+        ('mrak', (.5, .0, 1.0, .2), .003, .0, .004)],
+        cast=[('prach', .0, .0, .5, .6, 20)]),
+    'emil-quast': dict(kam=[.25, .2, .06, 34], ef=[
+        ('zar', (.08, .08, .18, .2), 2.0, .3, TEPLA, 0),
+        ('mrak', (.3, .0, 1.0, .2), .003, .0, .004),
+        ('voda', (.62, .65, .9, .8), .004)],
+        cast=[('lupeny', .0, .0, .4, .6, 12)]),
+    'illyana-sharrad': dict(kam=[.4, .2, .06, 34], ef=[
+        ('zar', (.1, .55, .35, .78), 1.4, .3, MODRA, 0),
+        ('zar', (.62, .15, .72, .28), 1.4, .3, TEPLA, 0),
+        ('voda', (.52, .55, .82, .75), .004)],
+        cast=[]),
+    'janis-rezaian': dict(kam=[.25, .25, .06, 34], ef=[
+        ('zar', (.5, .0, .8, .3), .9, .2, BILA, 0)],
+        cast=[('prach', .3, .0, 1, .7, 25)]),
 }
 
 TYPY = {'vir': 1, 'mrak': 2, 'voda': 3, 'zar': 4, 'paprsky': 5, 'radar': 6, 'teplo': 7}
@@ -418,6 +452,14 @@ def prevod(k):
 # Chráněné části (nesmí se deformovat): obdélník (x0, y0, x1, y1) nebo mnohoúhelník [(x, y), …].
 # Navíc se automaticky chrání ostré hrany (lodě, rámy oken, zábradlí, postavy) – kromě vírů.
 CHRAN = {
+    'dahunsil-kosoko': [(0, 0, .65, 1)],
+    'teesa-morrison': [(0, .1, .72, 1), (.55, .15, .9, .45)],
+    'micah-zahir': [(0, 0, .55, 1), (.45, .2, 1, .35), (.72, .5, 1, .85)],
+    'juliet-maupin': [(.0, .0, .5, 1), (.43, .1, 1, .65)],
+    'leonard-casse': [(0, .1, 1, 1), (.5, .2, .75, .35)],
+    'emil-quast': [(.12, .1, .48, 1), (.35, .3, 1, .65)],
+    'illyana-sharrad': [(.3, .05, .56, 1), (.55, .15, 1, .85)],
+    'janis-rezaian': [(0, .15, 1, 1)],
     'aaron-seetow': [(0, 0, 1, 1)],
     'clovus-darneely': [(0, 0, 1, 1)],
     'duncan-chakma': [(0, 0, 1, 1)],
