@@ -12,7 +12,7 @@ layout: default
   <p class="radek-stav"><a class="tlacitko plne male" href="{{ '/archiv/#osoba-' | append: o.slug | relative_url }}">▶ Přehrát s Archivářem</a></p>
   {% if o.ilustrace %}<figure class="od-ilustrace"><img src="{{ '/assets/osoby/' | append: o.slug | append: '.webp' | relative_url }}" alt="{% if o.ilustrace_popisek %}{{ o.jmeno | escape }}{% else %}Ilustrace: {{ o.jmeno | escape }}{% endif %}" width="960" height="540"><span class="il-jmeno" aria-hidden="true">{{ o.jmeno }}</span><figcaption>{{ o.ilustrace_popisek | default: "Ilustrační obrázek" }}</figcaption></figure>{% endif %}
   <div class="text prolinkovat">
-    {% if o.plakat %}<figure class="od-plakat"><a href="{{ '/assets/osoby/plakaty/' | append: o.slug | append: '.webp' | relative_url }}" target="_blank" rel="noopener"><img src="{{ '/assets/osoby/plakaty/' | append: o.slug | append: '.webp' | relative_url }}" alt="Plakát: {{ o.jmeno | escape }}" width="600" loading="lazy"></a><figcaption>{{ o.plakat }}</figcaption></figure>{% endif %}
+    {% if o.plakat %}<figure class="od-plakat"><a href="{{ '/assets/osoby/plakaty/' | append: o.slug | append: '.webp' | relative_url }}" target="_blank" rel="noopener"><img src="{{ '/assets/osoby/plakaty/' | append: o.slug | append: '.webp' | relative_url }}" alt="Plakát: {{ o.jmeno | escape }}" loading="lazy"></a><figcaption>{{ o.plakat }}</figcaption></figure>{% endif %}
     <p>{{ o.medailonek }}</p>
   </div>
   {% assign telo = content | strip %}
