@@ -15,4 +15,6 @@ kapitoly: []
 rad: 2891
 obdobi: naprava
 ilustrace: true
+ilustrace_popisek: Ilustrace podle plakátu ze hry Star Citizen · © Cloud Imperium Games
+plakat: Volební plakát · © Cloud Imperium Games
 ---
