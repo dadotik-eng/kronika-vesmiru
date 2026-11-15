@@ -4,6 +4,8 @@
 # popis: krátce, co je spojuje – jen podle medailonků a textů na webu
 # Vazby, které skript najde sám a nejsou tady, se zobrazí jako „souvislost“ s větou z textu.
 vazby:
+  "sato-karne|vat-tagaca": {typ: spoluprace, popis: "Tagaca je pirát OMC a vyhrožuje jménem svého šéfa Karneho"}
+  "kelos-costigan|ruto": {typ: protivnik, popis: "Ruto ho nesnáší a na obrazovce se schovává za jeho tvář"}
   "aadya-firmino|oisha-suen": {typ: protivnik, popis: "Firmino si přivlastnila Suenin objev skoku do Tohilu"}
   "adam-corr|cyrus-ishitaka": {typ: spoluprace, popis: "Corr zaplatil Ishitakovi kauci; oba podezřelí z útoků roku 2546"}
   "adam-corr|ivar-messer-i": {typ: spoluprace, popis: "Corr bojoval na Idrisu IV pod Messerovým velením"}

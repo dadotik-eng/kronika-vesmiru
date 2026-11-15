@@ -382,6 +382,20 @@ OSOBY = {
     'thul-oqquray': dict(kam=[.5, .3, .05, 36], ef=[], cast=[('prach', .0, .0, 1, 1, 12)]),
     'ernst-bishop': dict(kam=[.5, .3, .05, 36], ef=[], cast=[('prach', .0, .0, 1, 1, 12)]),
     'kelos-costigan': dict(kam=[.5, .3, .05, 36], ef=[], cast=[('prach', .0, .0, 1, 1, 12)]),
+    'aaron-seetow': dict(kam=[.5, .3, .05, 36], ef=[], cast=[('prach', .0, .0, 1, 1, 12)]),
+    'clovus-darneely': dict(kam=[.5, .3, .05, 36], ef=[], cast=[('prach', .0, .0, 1, 1, 12)]),
+    'duncan-chakma': dict(kam=[.5, .3, .05, 36], ef=[], cast=[('prach', .0, .0, 1, 1, 12)]),
+    'james-herriman': dict(kam=[.5, .3, .05, 36], ef=[], cast=[('prach', .0, .0, 1, 1, 12)]),
+    'lisa-gibbs': dict(kam=[.5, .3, .05, 36], ef=[], cast=[('prach', .0, .0, 1, 1, 12)]),
+    'becca-farneway': dict(kam=[.5, .3, .05, 36], ef=[], cast=[('prach', .0, .0, 1, 1, 12)]),
+    'marcus-correl': dict(kam=[.5, .3, .05, 36], ef=[], cast=[('prach', .0, .0, 1, 1, 12)]),
+    'recco-battaglia': dict(kam=[.5, .3, .05, 36], ef=[], cast=[('prach', .0, .0, 1, 1, 12)]),
+    'ruto': dict(kam=[.5, .3, .05, 36], ef=[], cast=[('prach', .0, .0, 1, 1, 12)]),
+    'spenser-gallo': dict(kam=[.5, .3, .05, 36], ef=[], cast=[('prach', .0, .0, 1, 1, 12)]),
+    'connie-hayes': dict(kam=[.5, .3, .05, 36], ef=[], cast=[('prach', .0, .0, 1, 1, 12)]),
+    'vat-tagaca': dict(kam=[.5, .3, .05, 36], ef=[], cast=[('prach', .0, .0, 1, 1, 12)]),
+    'wallace-klim': dict(kam=[.5, .3, .05, 36], ef=[], cast=[('prach', .0, .0, 1, 1, 12)]),
+    'nayara-fell': dict(kam=[.5, .3, .05, 36], ef=[], cast=[('prach', .0, .0, 1, 1, 12)]),
 }
 
 TYPY = {'vir': 1, 'mrak': 2, 'voda': 3, 'zar': 4, 'paprsky': 5, 'radar': 6, 'teplo': 7}
@@ -404,6 +418,20 @@ def prevod(k):
 # Chráněné části (nesmí se deformovat): obdélník (x0, y0, x1, y1) nebo mnohoúhelník [(x, y), …].
 # Navíc se automaticky chrání ostré hrany (lodě, rámy oken, zábradlí, postavy) – kromě vírů.
 CHRAN = {
+    'aaron-seetow': [(0, 0, 1, 1)],
+    'clovus-darneely': [(0, 0, 1, 1)],
+    'duncan-chakma': [(0, 0, 1, 1)],
+    'james-herriman': [(0, 0, 1, 1)],
+    'lisa-gibbs': [(0, 0, 1, 1)],
+    'becca-farneway': [(0, 0, 1, 1)],
+    'marcus-correl': [(0, 0, 1, 1)],
+    'recco-battaglia': [(0, 0, 1, 1)],
+    'ruto': [(0, 0, 1, 1)],
+    'spenser-gallo': [(0, 0, 1, 1)],
+    'connie-hayes': [(0, 0, 1, 1)],
+    'vat-tagaca': [(0, 0, 1, 1)],
+    'wallace-klim': [(0, 0, 1, 1)],
+    'nayara-fell': [(0, 0, 1, 1)],
     'cal-mason': [(0, 0, 1, 1)],
     'cara-webster': [(0, 0, 1, 1)],
     'julian-wexler': [(0, 0, 1, 1)],
