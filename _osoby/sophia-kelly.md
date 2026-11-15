@@ -15,4 +15,6 @@ kapitoly: []
 rad: 2946
 obdobi: valka
 hra: squadron42
+ilustrace: true
+ilustrace_popisek: Snímek ze hry Star Citizen · © Cloud Imperium Games
 ---

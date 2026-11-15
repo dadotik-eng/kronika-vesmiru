@@ -19,7 +19,8 @@ zdroje:
 kapitoly:
 - kap-10
 rad: 2855
-ilustrace: true
 obdobi: valka
 hra: squadron42
+ilustrace: true
+ilustrace_popisek: Obrázek z Galactapedie · © Cloud Imperium Games
 ---
