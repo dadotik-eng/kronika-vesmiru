@@ -61,7 +61,7 @@ jobs:
               if git cat-file -e "origin/beta:$f" 2>/dev/null; then git checkout origin/beta -- "$f"
               else echo "::error::Soubor $f v betě není."; exit 1; fi
             done
-            python3 nastroje/prevod_v2.py
+            python3 nastroje/prevod_v2.py $VYBER
             if ! python3 nastroje/kontrola.py --ostry; then
               echo "::error::Vybrané soubory neprošly kontrolou pro ostrý web – nic se neschválilo."
               exit 1
