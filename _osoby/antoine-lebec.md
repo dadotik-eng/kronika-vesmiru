@@ -14,4 +14,5 @@ zdroje:
 kapitoly: []
 rad: 2258
 obdobi: skoky
+ilustrace: true
 ---
