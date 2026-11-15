@@ -55,6 +55,9 @@ animace:
   - veta: "Když vláda vyhlásila"
     vis: ship
     lbl: "Lasery pro obranné platformy"
+  - veta: "Solomon si vzal riskantní půjčku"
+    vis: decree
+    lbl: "Koupě firmy · vznik Hurston Dynamics"
   - veta: "Do roku 2460"
     vis: map
     lbl: "Velký dodavatel armády · 2460"
@@ -71,6 +74,7 @@ animace:
   - veta: "V roce 2488 předal"
     vis: dynasty
     lbl: "Isiah · 2488"
+    o: {n: 2}
   - veta: "Na začátku 26. století"
     vis: decree
     lbl: "Smlouva Life/Labor · 2514"
@@ -81,8 +85,12 @@ animace:
     vis: map
     lbl: "Továrna na Rytifu"
   - veta: "O sto let později"
-    vis: pillars
-    lbl: "Archibald Hurston"
+    vis: dynasty
+    lbl: "Archibald · převrat"
+    o: {coup: 1}
+  - veta: "Jeho obří zlatá socha"
+    vis: memorial
+    lbl: "Zlatá socha v Lorville"
   - veta: "V roce 2741"
     vis: senate
     lbl: "Stávka · 2741"
@@ -99,24 +107,29 @@ animace:
   - veta: "Firma ustoupila"
     vis: lab
     lbl: "Zdravotní péče · 2804"
-    o: {s: on}
+    o: {s: "on"}
   - veta: "V roce 2811"
     vis: oneway
     lbl: "Vyhoštění · 2811"
   - veta: "V roce 2853"
     vis: lab
     lbl: "Antihmotová hlavice · 2853"
-    o: {s: on}
+    o: {s: "on"}
+  - veta: "Výroba ale narazila"
+    vis: lab
+    lbl: "Nedostatek antihmoty"
+    o: {s: "locked"}
   - veta: "V roce 2865"
     vis: planet
     lbl: "Stanton I · 2865"
   - veta: "Rada hlasovala"
     vis: senate
     lbl: "5 : 3"
+    o: {vote: 1}
   - veta: "Hurstonovi planetu"
     vis: planet
     lbl: "Hurston"
-    o: {s: burn}
+    o: {s: "burn"}
   - veta: "Z dělnické ubytovny"
     vis: pillars
     lbl: "Lorville"
@@ -126,21 +139,40 @@ animace:
   - veta: "V roce 2897"
     vis: toll
     lbl: "Únos lodi Lastal · 2897"
+  - veta: "Firma pak odbory prohlásila"
+    vis: redact
+    lbl: "Odbory jako teroristé?"
   - veta: "Od roku 2915"
     vis: dynasty
     lbl: "Gavin Hurston · 2915"
+    o: {n: 1}
   - veta: "Planetu firma získala"
     vis: decree
     lbl: "50 bilionů kreditů"
+  - veta: "Ovzduší je plné sazí"
+    vis: planet
+    lbl: "Smog a saze"
+    o: {s: "burn"}
   - veta: "Spokojenost zaměstnanců"
     vis: toll
     lbl: "Spokojenost 0,5 / 10"
+  - veta: "Militantní ekologové proto"
+    vis: ship
+    lbl: "Přepadené konvoje"
+    o: {red: 1}
   - veta: "Hurston Dynamics vyrábí"
     vis: ship
     lbl: "Spectrum a Magnitude"
+  - veta: "Tvary a nástroje Hurstonu"
+    vis: map
+    lbl: "Kopie až u Xi’anů"
   - veta: "A na konec jedna konspirace"
     vis: redact
     lbl: "Třetí řada zbraní?"
+  - veta: "Zvěsti zesílily"
+    vis: signal
+    lbl: "Odměna 10 milionů"
+    o: {red: 1}
   - veta: "Mnozí čekají"
     vis: signal
     lbl: "Zbraň na antihmotu"
