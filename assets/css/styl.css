@@ -537,6 +537,11 @@ html.prehravac-otevreny { overflow: hidden; }
 .od-roky { font-family: var(--label); color: var(--tlumene); letter-spacing: .04em; margin: -.4rem 0 1.4rem; }
 .od-ilustrace { margin: 0 0 1.6rem; position: relative; border: 1px solid var(--linka); border-radius: 4px; overflow: hidden; }
 .od-ilustrace img { display: block; width: 100%; height: auto; }
+.od-plakat { float: right; width: 34%; max-width: 260px; margin: .3rem 0 1rem 1.4rem; }
+.od-plakat img { display: block; width: 100%; height: auto; border: 1px solid var(--linka); border-radius: 4px; }
+.od-plakat figcaption { font-size: 11px; color: var(--tlumene); margin-top: 4px; text-align: center; }
+.osoba-detail .text::after { content: ""; display: table; clear: both; }
+@media (max-width: 600px) { .od-plakat { float: none; width: 70%; max-width: 280px; margin: 0 auto 1.2rem; } }
 .od-ilustrace figcaption { position: absolute; right: 8px; bottom: 6px; font-size: 11px; color: rgba(230,236,245,.85); background: rgba(7,15,31,.7); padding: 2px 7px; border-radius: 3px; }
 .osoba-detail .text p:first-child::first-letter { color: var(--barva); }
 .souvisi { margin-top: 2rem; }
