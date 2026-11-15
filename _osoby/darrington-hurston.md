@@ -14,4 +14,5 @@ zdroje:
 rad: 2460
 obdobi: une
 rod: hurston
+ilustrace: true
 ---

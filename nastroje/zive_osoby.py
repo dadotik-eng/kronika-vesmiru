@@ -600,6 +600,27 @@ OSOBY = {
         ('mrak', (.05, .05, .4, .6), .003, .0, .005),
         ('mrak', (.62, .05, .95, .6), .003, .0, .005)],
         cast=[('para', .25, .3, .8), ('para', .75, .3, .8)]),
+    'gavin-e-hurston': dict(kam=[.4, .2, .06, 34], ef=[
+        ('mrak', (.62, .0, 1.0, .5), .004, -.002, .006),
+        ('zar', (.62, .15, 1.0, .7), 1.2, .3, TEPLA, 0)],
+        cast=[('para', .82, .2, .8), ('para', .97, .25, .7), ('prach', .0, .0, .6, .8, 20)]),
+    'alton-hurston': dict(kam=[.38, .2, .06, 34], ef=[
+        ('zar', (.75, .15, .88, .35), 1.6, .3, TEPLA, 0),
+        ('voda', (.58, .4, 1.0, .6), .004)],
+        cast=[('lode', .6, .1, 1.05, .08, 4, .4, 1)]),
+    'darrington-hurston': dict(kam=[.37, .2, .06, 34], ef=[
+        ('zar', (.78, .05, .92, .25), 2.2, .45, TEPLA, 0),
+        ('zar', (.75, .38, .85, .5), 2.0, .4, TEPLA, 0)],
+        cast=[('jiskry', .85, .15), ('jiskry', .8, .45), ('prach', .6, .0, 1, .6, 20)]),
+    'eduard-hurston': dict(kam=[.3, .15, .06, 34], ef=[
+        ('zar', (.5, .2, .9, .6), 1.4, .3, TEPLA, 0),
+        ('mrak', (.4, .0, 1.0, .25), .003, .0, .004)],
+        cast=[('prach', .4, .0, 1, .7, 25)]),
+    'jasper-hurston': dict(kam=[.42, .2, .06, 34], ef=[
+        ('zar', (.0, .15, .12, .4), 1.6, .3, TEPLA, 0),
+        ('zar', (.38, .5, .66, .78), 1.2, .3, MODRA, 0),
+        ('voda', (.6, .3, 1.0, .5), .004)],
+        cast=[]),
 }
 
 TYPY = {'vir': 1, 'mrak': 2, 'voda': 3, 'zar': 4, 'paprsky': 5, 'radar': 6, 'teplo': 7}
@@ -622,6 +643,11 @@ def prevod(k):
 # Chráněné části (nesmí se deformovat): obdélník (x0, y0, x1, y1) nebo mnohoúhelník [(x, y), …].
 # Navíc se automaticky chrání ostré hrany (lodě, rámy oken, zábradlí, postavy) – kromě vírů.
 CHRAN = {
+    'gavin-e-hurston': [(.12, .05, .58, 1), (0, 0, .25, 1)],
+    'alton-hurston': [(.1, .05, .62, 1), (0, .7, 1, 1)],
+    'darrington-hurston': [(.2, .0, .68, 1), (.6, .45, 1, 1)],
+    'eduard-hurston': [(0, .0, .58, 1), (.5, .5, 1, 1)],
+    'jasper-hurston': [(.2, .0, .75, 1), (0, .5, 1, 1)],
     'neville-lott': [(0, 0, 1, 1)],
     'cedric-cochran': [(0, 0, 1, 1)],
     'anthony-tanaka': [(0, 0, 1, 1)],
