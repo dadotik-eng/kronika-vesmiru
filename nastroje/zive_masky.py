@@ -36,7 +36,7 @@ def body(R, G, B):
     for dy, dx in [(-3, 0), (3, 0), (0, -3), (0, 3), (-2, -2), (2, 2), (-2, 2), (2, -2)]:
         sous = np.maximum(sous, np.roll(np.roll(L, dy, 0), dx, 1))
     okoli = np.asarray(Image.fromarray(L.astype('uint8')).filter(ImageFilter.GaussianBlur(8))).astype(float)
-    m = np.clip((L - sous - 18) / 40, 0, 1) * np.clip((L - 110) / 60, 0, 1) * np.clip((60 - okoli) / 30, 0, 1)
+    m = np.clip((L - sous - 14) / 35, 0, 1) * np.clip((L - 110) / 60, 0, 1) * np.clip((95 - okoli) / 40, 0, 1)
     return blur(m, .8)
 
 

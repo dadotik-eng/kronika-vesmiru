@@ -43,15 +43,17 @@
   var SCENY = {
     /* Obecná scéna pro portréty: R = plápolající světla, G = třpytivé body. */
     zakladni: {
-      cam: function (sd) { return [.5, .45, .045, 40 + sd * 10]; },
+      cam: function (sd) { return [.35 + sd * .3, .42, .09, 30 + sd * 10]; },
+      pan: .025,
       fs: 'vec3 col=texture2D(I,u).rgb;' +
-        'col+=col*m.g*(tw(u)-.35)*1.3;' +
-        'float fl=fb(u*vec2(40.,25.)+vec2(sd*9.,-t*2.))*.9+.2*sin(t*9.+u.x*60.);col+=col*m.r*(fl-.42)*.7;' +
-        'float gx=fract((t+sd*20.)/22.)*2.6-.8;col+=vec3(1.,.96,.88)*exp(-pow((u.x+u.y*.45-gx-.3)/.07,2.))*.045;' +
-        'col*=1.+.025*sin(t*.35+sd*6.);gl_FragColor=vec4(col,1.);}',
-      init: function (s) { prach(s, 14, .05, .95, .05, .9); },
+        'col+=col*m.g*(tw(u)-.3)*2.6;' +
+        'float fl=fb(u*vec2(40.,25.)+vec2(sd*9.,-t*2.4))*.9+.25*sin(t*10.+u.x*60.);col+=col*m.r*(fl-.4)*1.2;' +
+        'float gx=fract((t+sd*20.)/16.)*2.6-.8;col+=vec3(1.,.95,.85)*exp(-pow((u.x+u.y*.45-gx-.3)/.09,2.))*.09;' +
+        'float mlha=fb(u*vec2(2.5,3.5)+vec2(t*.035+sd*5.,t*.012));col+=vec3(.9,.85,.75)*smoothstep(.45,.85,mlha)*.06;' +
+        'col*=1.+.04*sin(t*.5+sd*6.);gl_FragColor=vec4(col,1.);}',
+      init: function (s) { prach(s, 30, .03, .97, .03, .95); },
       krok: prachKrok,
-      kresli: function (s, fx, P, z, k) { prachKresli(s, fx, P, z, k, .22); }
+      kresli: function (s, fx, P, z, k) { prachKresli(s, fx, P, z, k * 1.6, .4); }
     },
 
     'ztracena-letka': {
@@ -269,6 +271,7 @@
       var W = pol.cv.width, H = pol.cv.height;
       if (glc.width < W) glc.width = W; if (glc.height < H) glc.height = H;
       pol.tp += dt; var t = pol.tp, cm = pol.sc.cam(pol.sd), z = 1.02 + cm[2] * (.5 - .5 * Math.cos(t * Math.PI * 2 / cm[3])), cr = pol.cr;
+      if (pol.sc.pan) { var ph = Math.sin(t * Math.PI * 2 / (cm[3] * 1.7)); cm = [cm[0] + pol.sc.pan * ph, cm[1] + pol.sc.pan * .4 * Math.cos(t * Math.PI * 2 / (cm[3] * 2.3)), cm[2], cm[3]]; }
       g.useProgram(pr.p); g.bindBuffer(g.ARRAY_BUFFER, buf); g.enableVertexAttribArray(pr.a); g.vertexAttribPointer(pr.a, 2, g.FLOAT, false, 0, 0);
       g.activeTexture(g.TEXTURE0); g.bindTexture(g.TEXTURE_2D, pol.nacteno.I); g.uniform1i(pr.u.I, 0);
       g.activeTexture(g.TEXTURE1); g.bindTexture(g.TEXTURE_2D, pol.nacteno.M); g.uniform1i(pr.u.M, 1);
