@@ -25,6 +25,7 @@ zdroje:
 kapitoly: []
 rad: 2311
 obdobi: skoky
+ilustrace: true
 ---
 
 Objev z ní přes noc udělal hrdinku celého impéria. Nabídky rozhovorů s vědci i reklamních smluv ale odmítla.

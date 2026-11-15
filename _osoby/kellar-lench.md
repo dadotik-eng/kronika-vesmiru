@@ -15,4 +15,5 @@ kapitoly:
 - kap-5
 rad: 2514
 obdobi: upe
+ilustrace: true
 ---

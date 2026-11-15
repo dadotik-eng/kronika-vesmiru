@@ -17,4 +17,5 @@ kapitoly:
 - kap-8
 rad: 2768
 obdobi: messerove
+ilustrace: true
 ---
