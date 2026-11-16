@@ -95,7 +95,7 @@ h2{font:500 clamp(32px,3.8vw,48px)/1.14 var(--display);margin:.2em 0 .3em;text-w
 #st{flex:1;min-width:0;color:var(--muted)}
 #st b{display:block;color:var(--text);font-weight:600;font-size:18px}
 .tg{border:1px solid var(--line);padding:9px 12px;letter-spacing:.04em;flex:none}
-.vol{display:flex;align-items:center;gap:14px;flex:none}.vl{display:flex;align-items:center;gap:6px;color:var(--muted)}.vl input{width:86px}.vl.vyp{opacity:.4}.topzvuk{display:flex;gap:8px;margin-left:14px;flex:none}.topzvuk .topmute{margin-left:0}.topmute[aria-pressed="false"]{border-color:#ff7a5c;color:#ff9a80;position:relative}.topmute[aria-pressed="false"]::after{content:"";position:absolute;left:8px;right:8px;top:50%;height:2px;background:currentColor;transform:rotate(-40deg)}
+.vol{display:flex;align-items:center;gap:14px;flex:none}.vl{display:flex;align-items:center;gap:6px;color:var(--muted)}.vl input{width:86px}.vl.vyp input{opacity:.4}.vlb{position:relative;display:grid;place-items:center;width:32px;height:32px;padding:0;border:1px solid transparent;border-radius:50%;background:none;color:inherit;cursor:pointer}.vlb:hover{border-color:var(--accent);color:var(--accent)}.vlb[aria-pressed="false"]{color:#ff9a80;border-color:#ff7a5c}.vlb[aria-pressed="false"]::after{content:"";position:absolute;left:6px;right:6px;top:50%;height:2px;background:currentColor;transform:rotate(-40deg)}.topzvuk{display:flex;gap:8px;margin-left:14px;flex:none}.topzvuk .topmute{margin-left:0}.topmute[aria-pressed="false"]{border-color:#ff7a5c;color:#ff9a80;position:relative}.topmute[aria-pressed="false"]::after{content:"";position:absolute;left:8px;right:8px;top:50%;height:2px;background:currentColor;transform:rotate(-40deg)}
 #vol{width:110px;accent-color:var(--accent);cursor:pointer}
 .tg:hover{border-color:var(--accent)}.tg[aria-pressed="false"]{color:var(--muted);text-decoration:line-through}
 .tg[disabled]{opacity:.55;text-decoration:none;cursor:not-allowed}
@@ -145,7 +145,7 @@ h2{font:500 clamp(32px,3.8vw,48px)/1.14 var(--display);margin:.2em 0 .3em;text-w
     <button type="button" class="tg" id="skip" hidden>Přeskočit prolog</button>
     <button type="button" class="tg" id="share" title="Zkopírovat odkaz na tuto větu">Sdílet</button>
     <button type="button" class="tg" id="zmensit" title="Zmenšit přehrávač do lišty a vrátit se na stránku" hidden>Zmenšit ▾</button>
-    <div class="vol"><label class="vl" id="vl-hud" title="Hlasitost hudby"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18V5l11-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="17" cy="16" r="3"/></svg><input type="range" id="volm" min="0" max="100" step="1" value="80" aria-label="Hlasitost hudby"></label><label class="vl" id="vl-hlas" title="Hlasitost hlasu"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3"/></svg><input type="range" id="volv" min="0" max="100" step="1" value="100" aria-label="Hlasitost hlasu"></label></div>
+    <div class="vol"><label class="vl" id="vl-hud" title="Hlasitost hudby"><button type="button" class="vlb" id="vl-hud-b" aria-label="Vypnout hudbu" title="Vypnout hudbu"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18V5l11-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="17" cy="16" r="3"/></svg></button><input type="range" id="volm" min="0" max="100" step="1" value="80" aria-label="Hlasitost hudby"></label><label class="vl" id="vl-hlas" title="Hlasitost hlasu"><button type="button" class="vlb" id="vl-hlas-b" aria-label="Vypnout hlas" title="Vypnout hlas"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3"/></svg></button><input type="range" id="volv" min="0" max="100" step="1" value="100" aria-label="Hlasitost hlasu"></label></div>
   </div>
 </div>
 <div class="scrim" id="scrim" hidden><div class="card" role="dialog" aria-modal="true" aria-labelledby="ct" id="card" tabindex="-1"></div></div>
@@ -356,15 +356,15 @@ let VOLM=.8,VOLV=1;try{const m=parseFloat(localStorage.getItem('kv-vol-hudba')),
 function setVol(){if(E)E.master.gain.setTargetAtTime(.8*(musicOn?VOLM:0),E.ctx.currentTime,.05);
   const m=$('#volm'),v=$('#volv');if(m)m.value=Math.round(VOLM*100);if(v)v.value=Math.round(VOLV*100);
   $('#vl-hud').classList.toggle('vyp',!musicOn);$('#vl-hlas').classList.toggle('vyp',!voiceOn);
-  [['#thud',musicOn,'hudbu'],['#thlas',voiceOn,'hlas']].forEach(([id,on,co])=>{const b=$(id);if(!b)return;b.setAttribute('aria-pressed',on);b.setAttribute('aria-label',(on?'Vypnout ':'Zapnout ')+co);b.title=b.getAttribute('aria-label')});
+  [['#thud',musicOn,'hudbu'],['#thlas',voiceOn,'hlas'],['#vl-hud-b',musicOn,'hudbu'],['#vl-hlas-b',voiceOn,'hlas']].forEach(([id,on,co])=>{const b=$(id);if(!b)return;b.setAttribute('aria-pressed',on);b.setAttribute('aria-label',(on?'Vypnout ':'Zapnout ')+co);b.title=b.getAttribute('aria-label')});
   try{localStorage.setItem('kv-vol-hudba',VOLM);localStorage.setItem('kv-vol-hlas',VOLV);localStorage.setItem('kv-hudba',musicOn?'1':'0');localStorage.setItem('kv-hlas',voiceOn?'1':'0')}catch(e){}
   if(EMBED&&HOST.kronikaZvuk)try{HOST.kronikaZvuk({musicOn,voiceOn})}catch(e){}}
-function hudba(on){musicOn=on;setVol()}
-function hlas(on){const z=voiceOn!==on;voiceOn=on;setVol();if(z&&playing)run()}
+function hudba(on){musicOn=on;if(on&&VOLM<=0)VOLM=.8;setVol()}
+function hlas(on){const z=voiceOn!==on;voiceOn=on;if(on&&VOLV<=0)VOLV=1;setVol();if(z&&playing)run()}
 $('#volm').oninput=e=>{VOLM=e.target.value/100;musicOn=VOLM>0;setVol()};
 $('#volv').oninput=e=>{VOLV=e.target.value/100;voiceOn=VOLV>0;setVol()};
 $('#thud').onclick=()=>hudba(!musicOn);
-$('#thlas').onclick=()=>hlas(!voiceOn);
+$('#thlas').onclick=()=>hlas(!voiceOn);$('#vl-hud-b').onclick=e=>{e.preventDefault();hudba(!musicOn)};$('#vl-hlas-b').onclick=e=>{e.preventDefault();hlas(!voiceOn)};
 setVol();
 $('#pp').onclick=toggle;
 $('#back').onclick=()=>{if(ln>0){ln--;resumeOn();run()}};
