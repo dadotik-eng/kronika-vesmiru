@@ -28,7 +28,16 @@
     return framePripraven;
   }
   // Zvuk musí odemknout klik v hlavní stránce: tady vytvoříme zvukový kontext a „probudíme“ hlas.
+  // iPhone: s přepínačem ticha ztichne Web Audio (hudba, zvuky) i syntéza řeči; tichá smyčka a typ relace „playback“ to obejdou.
+  function relacePrehravani() {
+    try { if (navigator.audioSession) navigator.audioSession.type = 'playback'; } catch (e) {}
+    try {
+      if (!window.__kvTicho) { var a = new Audio('data:audio/wav;base64,UklGRkQDAABXQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YSADAACAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgA=='); a.loop = true; a.setAttribute('playsinline', ''); window.__kvTicho = a; }
+      if (window.__kvTicho.paused) { var pr = window.__kvTicho.play(); if (pr && pr.catch) pr.catch(function () {}); }
+    } catch (e) {}
+  }
   function odemkni() {
+    relacePrehravani();
     try {
       var AC = window.AudioContext || window.webkitAudioContext;
       if (AC && !window.__kvCtx) window.__kvCtx = new AC();
@@ -99,6 +108,7 @@
   $('.pb-info').addEventListener('click', function () { $('#pb-otevrit').click(); });
   $('#pb-zavrit').addEventListener('click', function () {
     var w = okno(); if (w) try { w.KRONIKA.pause(); } catch (e) {}
+    try { if (window.__kvTicho) window.__kvTicho.pause(); } catch (e) {}
     rozbal(false); obal.hidden = true; document.body.classList.remove('s-prehravacem');
   });
   document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && obal.classList.contains('rozbaleny')) rozbal(false); });
