@@ -211,11 +211,13 @@ let curA=null;const NAHR={};
 function nahrSceny(id){if(NAHR[id])return;NAHR[id]='nacita';NAHR['_od_'+id]=Date.now();fetch('../assets/audio/'+id+'/index.json',{cache:'no-cache'}).then(r=>r.ok?r.json():[]).then(a=>{const m={};(a||[]).forEach(x=>{m[x.i]=x});NAHR[id]=m}).catch(()=>{NAHR[id]={}})}
 function nahravka(id,i,l){const m=NAHR[id];if(!m||m==='nacita')return null;const r=m[i];return r&&r.v===l.v?new URL('../assets/audio/'+id+'/'+r.f,location.href).href:null}
 /* Hlas: dočasný náhled ze syntézy prohlížeče. */
-const syn=HOST.speechSynthesis;let cz=null,voiceOn=true,voiceBroken=false;
+const syn=HOST.speechSynthesis;let cz=null,czNat=false,voiceOn=true,voiceBroken=false;
 const PROF={"ARCHIVÁŘ":[.93,.82],"HLÍDKA JEDNA":[1.14,1.05],"HLÍDKA DVA":[1.22,1.22],"VELITELKA RANDALLOVÁ":[1.02,1.18],"VELÍN CRION":[1.1,.95],"CIVILNÍ TRANSPORT":[1.14,.86],"PILOT 89. LETKY":[.86,1.02],"DRUHÁ FLOTILA":[1,.76]};
-function findVoice(){try{const v=syn?syn.getVoices():[];cz=v.find(x=>/^cs/i.test(x.lang))||null}catch(e){cz=null}}
+function findVoice(){try{const v=(syn?syn.getVoices():[]).filter(x=>/^cs/i.test(x.lang));
+  const sk=x=>(/natural|online|neural/i.test(x.name)?100:0)+(/google/i.test(x.name)?50:0)+(/anton[ií]n/i.test(x.name)?20:0)+(/jakub/i.test(x.name)?5:0)+(x.localService?0:3);
+  v.sort((a,b)=>sk(b)-sk(a));cz=v[0]||null;czNat=!!(cz&&/natural|online|neural|google/i.test(cz.name))}catch(e){cz=null}}
 const canVoice=()=>!!(syn&&cz&&!voiceBroken);
-function setVT(){const ok=canVoice(),l=$('#vl-hlas');if(l)l.title=ok?'Hlasitost hlasu':'Tento prohlížeč nenabízí český hlas, běží jen titulky.'}
+function setVT(){const ok=canVoice(),l=$('#vl-hlas');if(l)l.title=ok?'Hlasitost hlasu ('+cz.name.replace(/^Microsoft\s+|\s*-.*$/g,'')+')':'Tento prohlížeč nenabízí český hlas, běží jen titulky.'}
 if(syn){findVoice();try{syn.onvoiceschanged=()=>{findVoice();setVT()}}catch(e){}}
 const est=l=>(l.t.length/14.5+.35)*1000/SPEED;
 function unlock(){entered=true;audioStart();if(syn)try{const u=new HOST.SpeechSynthesisUtterance(' ');u.volume=0;syn.speak(u)}catch(e){}setVT()}
@@ -286,7 +288,7 @@ function openItem(key,btn){const [k,i]=key.split(':'),it=D.cats[k].items[+i];
   if(k==='pribehy'&&it.play)return go(it.play);
   const rel=it.ch.map(n=>{const c=D.chapters[n-1];return `<li><button type="button" data-play="kap-${n}">${c.rom}. ${c.title}</button></li>`}).join('');
   card(`<p class="lab">${D.cats[k].short} · ${it.tag}</p><h2 id="ct">${it.title}</h2><p>${it.text}</p>${rel?`<p class="lab" style="margin-bottom:8px">Související kapitoly</p><ul class="rel">${rel}</ul>`:''}<div class="row">${canVoice()?`<button type="button" class="main" id="lis">Poslechnout</button>`:''}${it.play?`<button type="button" class="alt" data-play="${it.play}">Přehrát příběh</button>`:''}<button type="button" class="alt" id="cc">Zavřít</button></div>`,btn);
-  $('#cc').onclick=()=>closeCard();const l=$('#lis');if(l)l.onclick=()=>{try{syn.cancel();const u=new HOST.SpeechSynthesisUtterance(it.voice);u.lang='cs-CZ';u.voice=cz;u.rate=.95;u.pitch=.85;preview=true;syn.speak(u)}catch(e){}}}
+  $('#cc').onclick=()=>closeCard();const l=$('#lis');if(l)l.onclick=()=>{try{syn.cancel();const u=new HOST.SpeechSynthesisUtterance(it.voice);u.lang='cs-CZ';u.voice=cz;u.rate=czNat?.97:.95;u.pitch=czNat?.95:.85;preview=true;syn.speak(u)}catch(e){}}}
 function openFind(k,btn){const f=D.finds[k];wasPlaying=playing;if(playing)toggle();card(`<p class="lab">Nález · ${f.kind}</p><h2 id="ct">${f.title}</h2><p>${f.text}</p><button type="button" class="main" id="cc">${wasPlaying?'Pokračovat v poslechu':'Zavřít'}</button>`,btn);$('#cc').onclick=()=>closeCard()}
 
 /* Přehrávání */
@@ -331,7 +333,7 @@ function run(){clear();const s=S[sc],l=s.lines[ln],my=++token;
     const dalsi=s.lines[ln+1]?nahravka(s.id,ln+1,s.lines[ln+1]):null;if(dalsi){const p=new HOST.Audio();p.preload='auto';p.src=dalsi}
     after(est(l)*3+6000,()=>{if(my!==token)return;if(skryto()&&a.paused&&!ended){ended=true;odlozeno=true;return}fin()});
   }else if(voiceOn&&canVoice()){let started=false,ended=false;const fin=()=>{if(!ended){ended=true;done()}};
-    const u=new HOST.SpeechSynthesisUtterance(bezRezie(l.v)),p=PROF[l.who]||[1,1];u.lang='cs-CZ';u.voice=cz;u.rate=p[0];u.pitch=p[1];u.volume=VOLV;
+    const u=new HOST.SpeechSynthesisUtterance(bezRezie(l.v)),p=PROF[l.who]||[1,1];u.lang='cs-CZ';u.voice=cz;u.rate=czNat?1+(p[0]-1)*.5:p[0];u.pitch=czNat?1+(p[1]-1)*.35:p[1];u.volume=VOLV;
     u.onstart=()=>{started=true;duck(true)};u.onend=fin;u.onerror=e=>{if(e.error==='interrupted'||e.error==='canceled')return;voiceBroken=true;setVT();fin()};
     after(120/SPEED,()=>{if(my===token)syn.speak(u)});
     after(4000,()=>{if(my===token&&!started){try{syn.cancel()}catch(e){}if(skryto()){ended=true;odlozeno=true;return}voiceBroken=true;setVT();after(est(l),fin)}});
