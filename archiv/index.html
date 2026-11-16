@@ -144,6 +144,7 @@ h2{font:500 clamp(32px,3.8vw,48px)/1.14 var(--display);margin:.2em 0 .3em;text-w
     <div id="st" role="status"></div>
     <button type="button" class="tg" id="skip" hidden>Přeskočit prolog</button>
     <button type="button" class="tg" id="share" title="Zkopírovat odkaz na tuto větu">Sdílet</button>
+    <button type="button" class="tg" id="zmensit" title="Zmenšit přehrávač do lišty a vrátit se na stránku" hidden>Zmenšit ▾</button>
     <div class="vol"><label class="vl" id="vl-hud" title="Hlasitost hudby"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18V5l11-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="17" cy="16" r="3"/></svg><input type="range" id="volm" min="0" max="100" step="1" value="80" aria-label="Hlasitost hudby"></label><label class="vl" id="vl-hlas" title="Hlasitost hlasu"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3"/></svg><input type="range" id="volv" min="0" max="100" step="1" value="100" aria-label="Hlasitost hlasu"></label></div>
   </div>
 </div>
@@ -243,7 +244,7 @@ const clear=()=>{timers.forEach(clearTimeout);timers=[];if(syn)try{syn.cancel()}
 const after=(ms,f)=>timers.push(setTimeout(f,ms));
 const idx=id=>S.findIndex(s=>s.id===id);
 function chrome(v){view=v;setTimeout(stav,0);const film=v==='scene'||v==='gate'||v==='end';const st=$('#stage');st.className='stage'+(film?' film':'')+(v==='hub'?' hubv':'')+(v==='list'?' scroll':'');
-  $('#top').hidden=v==='gate'||(v==='scene'&&S[sc]&&S[sc].id==='prolog');$('#ctl').hidden=v!=='scene';renderTabs()}
+  $('#top').hidden=v==='gate'||(v==='scene'&&S[sc]&&S[sc].id==='prolog');$('#ctl').hidden=v!=='scene';if(EMBED)try{HOST.document.documentElement.classList.toggle('pf-ctl',v==='scene')}catch(e){}renderTabs()}
 function renderTabs(){const on=location.hash.slice(1);$('#tabs').innerHTML=[['dejiny','Dějiny'],...CATKEYS.map(k=>[k,D.cats[k].short])].map(([k,l])=>`<button type="button" data-nav="${k}"${(view==='list'&&on===k)?' aria-current="page"':''}>${l}</button>${k==='dejiny'?'<a href="../casova-osa/">Časová osa</a>':''}`).join('')}
 function stopScene(){viaFork=false;playing=false;odlozeno=false;token++;clear();duck(false);drzObrazovku(false);document.body.classList.remove('radio');document.body.dataset.mood='prolog';sc=-1;cancelAnimationFrame(rafYear)}
 function nav(h){if(h==='osobnosti'){if(EMBED&&HOST.kronikaNav)HOST.kronikaNav('osobnosti/');else location.href='../osobnosti/';return}fx('tick');if(location.hash==='#'+h)route();else location.hash=h}
@@ -259,7 +260,7 @@ function gate(){stopScene();chrome('gate');vis.mode='years';
   $('#col').innerHTML=`<p class="lab">Neoficiální fanouškovský projekt</p><h1>Hvězdná kronika</h1><p class="lead">Dějiny, firmy, svátky a příběhy univerza Star Citizen na jednom místě. Zapni si zvuk.</p><div class="row"><button type="button" class="main" id="go">Vstoupit do archivu</button><button type="button" class="alt" id="dir">Přeskočit prolog</button></div><p class="small">Hudba a zvuky vznikají přímo v prohlížeči. Hlas je dočasný náhled, ve finální verzi tu bude kvalitní AI dabing.</p><p class="small">Hvězdná kronika není spojena s Cloud Imperium Games ani jimi schválena. Star Citizen®, Squadron 42®, Roberts Space Industries® a RSI® jsou ochranné známky Cloud Imperium Rights LLC. <a href="../" style="color:var(--accent)">Hlavní stránka</a> · <a href="../casova-osa/" style="color:var(--accent)">Časová osa</a> · <a href="../o-projektu/" style="color:var(--accent)">O projektu</a></p>`;
   $('#go').onclick=()=>{unlock();const w=wanted();if(w)go(w,wantedLine());else go('prolog')};$('#dir').onclick=()=>{unlock();warpHub()}}
 function doNoveho(cil){stopScene();if(EMBED){if(HOST.kronikaNav)HOST.kronikaNav(cil);else hub()}else location.replace('../'+cil)}
-function warpHub(){if(!EMBED||window.__kvViditelny){doNoveho('dejiny/');return}stopScene();$('#ctl').hidden=true;$('#col').innerHTML='';fx('whoosh');
+function warpHub(){if(!EMBED||window.__kvViditelny){doNoveho('dejiny/');return}stopScene();$('#ctl').hidden=true;if(EMBED)try{HOST.document.documentElement.classList.remove('pf-ctl')}catch(e){}$('#col').innerHTML='';fx('whoosh');
   if(reduce){showHub();return}vis.warp=performance.now();setTimeout(showHub,1120)}
 function showHub(){if(location.hash==='#domu')route();else location.hash='domu'}
 function hub(){chrome('hub');ambient('hub');
@@ -339,7 +340,7 @@ function run(){clear();const s=S[sc],l=s.lines[ln],my=++token;
 function next(){const s=S[sc];if(ln<s.lines.length-1){ln++;run();return}
   document.body.classList.remove('radio');
   if(s.after==='hub')warpHub();else if(s.after==='volba')fork();else endOf(s)}
-function pauseOut(){playing=false;odlozeno=false;token++;clear();duck(false);drzObrazovku(false);$('#ctl').hidden=true;amb=true}
+function pauseOut(){playing=false;odlozeno=false;token++;clear();duck(false);drzObrazovku(false);$('#ctl').hidden=true;if(EMBED)try{HOST.document.documentElement.classList.remove('pf-ctl')}catch(e){}amb=true}
 function fork(){pauseOut();chrome('end');if(E)mood('ticho');viaFork=true;const an=autoNext('kap-10','X. Válka bez konce');
   $('#col').innerHTML=`<p class="lab">Rozcestí · červenec 2884</p><h2>Kudy dál?</h2>${an}<div class="row" style="display:grid;gap:12px;max-width:520px"><button type="button" class="hero" style="margin:0" data-play="letka"><span class="lab">Odbočka · dramatizace</span><b>Ztracená letka</b><span>Poslední dva dny pilotů, kteří kryli útěk milionů lidí.</span></button><button type="button" class="hero" style="margin:0;border-color:var(--line)" data-play="kap-10"><span class="lab">Hlavní cesta</span><b>X. Válka bez konce</b><span>Pokračování příběhu.</span></button></div>`;bindStop()}
 function endOf(s){pauseOut();chrome('end');document.body.dataset.mood='prolog';if(E)mood('ticho');
@@ -398,6 +399,7 @@ document.addEventListener('click',e=>{const a=e.target.closest('.osoba-odkaz');i
 $('#share').onclick=e=>{if(sc<0)return;const u=location.origin+location.pathname+'#'+S[sc].id+'@'+ln,b=e.currentTarget;
   const ok=()=>{b.textContent='Odkaz zkopírován';setTimeout(()=>b.textContent='Sdílet',2000)};
   try{(HOST.navigator.clipboard||navigator.clipboard).writeText(u).then(ok,()=>prompt('Odkaz na tuto větu:',u))}catch(err){prompt('Odkaz na tuto větu:',u)}};
+if(EMBED){const z=$('#zmensit');z.hidden=false;z.onclick=()=>{const b=HOST.document.getElementById('pf-zmensit');if(b)b.click()}}
 /* Ovládání z hlavního webu (přehrávač vložený do stránky) */
 window.KRONIKA={play:(id,l)=>{if(idx(id)>=0){go(id,l||0);return true}
   /* kapitoly od bota se načítají později – počkat na ně */
