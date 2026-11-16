@@ -5,7 +5,7 @@ on:
   workflow_dispatch:
     inputs:
       zaklad: { description: "Výchozí větev / commit", required: true, default: main }
-      novy: { description: "Nová větev / commit", required: true, default: format-v2 }
+      novy: { description: "Nová větev / commit", required: true, default: beta }
 permissions:
   contents: read
 jobs:
