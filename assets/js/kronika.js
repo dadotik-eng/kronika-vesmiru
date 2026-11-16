@@ -40,13 +40,23 @@
       }
     } catch (e) {}
   }
-  function ukaz() { obal.hidden = false; document.body.classList.add('s-prehravacem'); }
+  function ls(k, v) { try { if (v === undefined) return localStorage.getItem(k); localStorage.setItem(k, v); } catch (e) { return null; } }
+  var tip = $('#pb-tip'), tipCas = 0;
+  function skryjTip() { if (tip) tip.hidden = true; clearTimeout(tipCas); }
+  function ukaz() {
+    var bylo = obal.hidden;
+    obal.hidden = false; document.body.classList.add('s-prehravacem');
+    if (ls('kv-animace-videl')) return;
+    obal.classList.add('pb-volat');
+    var n = +(ls('kv-tip-pocet') || 0);
+    if (bylo && tip && n < 3 && !obal.classList.contains('rozbaleny')) { ls('kv-tip-pocet', n + 1); tip.hidden = false; tipCas = setTimeout(skryjTip, 12000); }
+  }
   function rozbal(ano) {
     obal.classList.toggle('rozbaleny', !!ano);
     document.documentElement.classList.toggle('prehravac-otevreny', !!ano);
     var w = okno();
     if (w) { w.__kvViditelny = !!ano; try { w.KRONIKA.fit(); } catch (e) {} }
-    if (ano) { ukaz(); frame.focus(); }
+    if (ano) { ukaz(); skryjTip(); obal.classList.remove('pb-volat'); ls('kv-animace-videl', '1'); frame.focus(); }
   }
   function prehrat(id, veta, rozbalit) {
     odemkni(); ukaz();
@@ -85,6 +95,8 @@
   });
   $('#pb-otevrit').addEventListener('click', function () { odemkni(); rozbal(true); pripravFrame().then(function (w) { if (w && (!stav || !stav.id)) { var p = pozice(); if (p) w.KRONIKA.play(p.id, p.ln); } }); });
   $('#pf-zmensit').addEventListener('click', function () { rozbal(false); });
+  $('#pb-tip-zavrit').addEventListener('click', skryjTip);
+  $('.pb-info').addEventListener('click', function () { $('#pb-otevrit').click(); });
   $('#pb-zavrit').addEventListener('click', function () {
     var w = okno(); if (w) try { w.KRONIKA.pause(); } catch (e) {}
     rozbal(false); obal.hidden = true; document.body.classList.remove('s-prehravacem');
