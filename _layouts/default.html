@@ -35,11 +35,12 @@
   <div class="prehravac" id="prehravac" hidden>
     <iframe id="pf" title="Přehrávač kroniky" tabindex="-1"></iframe>
     <button type="button" class="pf-zmensit" id="pf-zmensit">Zmenšit <span aria-hidden="true">▾</span></button>
+    <div class="pb-tip" id="pb-tip" hidden><span>Kronika teď běží i s <b>animacemi</b>. Uvidíš je po kliknutí na <b>Sledovat animace</b>.</span><button type="button" id="pb-tip-zavrit" aria-label="Zavřít nápovědu">✕</button></div>
     <div class="pb" id="pb" role="region" aria-label="Přehrávač">
       <button type="button" class="pb-pp" id="pb-pp" aria-label="Přehrát">▶</button>
       <div class="pb-info"><b id="pb-nazev">Archivář</b><span id="pb-text"></span></div>
       <div class="pb-prubeh" aria-hidden="true"><i id="pb-bar"></i></div>
-      <button type="button" class="pb-otevrit" id="pb-otevrit">Otevřít přehrávač <span aria-hidden="true">⤢</span></button>
+      <button type="button" class="pb-otevrit" id="pb-otevrit" title="Otevřít přehrávač s animacemi přes celou obrazovku"><span class="pb-ikona" aria-hidden="true">🎬</span><span class="pb-popis">Sledovat animace</span> <span aria-hidden="true">⤢</span></button>
       <button type="button" class="pb-zavrit" id="pb-zavrit" aria-label="Zavřít přehrávač">✕</button>
     </div>
   </div>
