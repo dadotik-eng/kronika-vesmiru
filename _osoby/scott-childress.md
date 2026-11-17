@@ -16,4 +16,5 @@ kapitoly:
 rad: 2032
 obdobi: usvit
 ilustrace: true
+plakat: Scott Childress ve zprávách SSN, 2075 · Obrázek z comm-linku RSI · © Cloud Imperium Games
 ---
