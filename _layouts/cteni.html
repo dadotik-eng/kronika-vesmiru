@@ -15,7 +15,7 @@ layout: default
     {% for r in t.odstavce %}
       {% if r.kdo == "ARCHIVÁŘ" %}<p class="dr-vypravec">{{ r.text }}</p>
       {% else %}<p class="dr-replika{% if r.radio %} dr-radio{% endif %}"><span class="dr-kdo">{{ r.kdo }}</span>{{ r.text }}</p>{% endif %}
-      {% for f in r.obrazky %}<figure class="kapitola-obrazek dejiny-obrazek"><img src="{{ f.src | prepend: '/' | relative_url }}" alt="{{ f.popisek | escape }}" loading="lazy"><figcaption>{% if f.popisek != "" %}<b>{{ f.popisek }}</b> · {% endif %}{{ f.zdroj }}</figcaption></figure>{% endfor %}
+      {% for f in r.obrazky %}<figure class="kapitola-obrazek dejiny-obrazek"><div class="do-ram"><img src="{{ f.src | prepend: '/' | relative_url }}" alt="{{ f.popisek | escape }}" loading="lazy"></div><figcaption>{% if f.popisek != "" %}<b>{{ f.popisek }}</b> · {% endif %}{{ f.zdroj }}</figcaption></figure>{% endfor %}
     {% endfor %}
   </div>
 

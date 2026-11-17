@@ -34,6 +34,14 @@ popis: Rodokmen dynastie Messerů, která vládla lidstvu 246 let. Od Ivara Mess
 </div>
 
 <div class="blok strom-pod">
+  <h2>Další příbuzní</h2>
+  <p class="poznamka">Oficiální texty je zmiňují jako příbuzné Messerů, ale neuvádějí jejich rodiče, a tak nemají ve stromu přesné místo.</p>
+  <div class="pribuzni">
+    {% for m in site.data.messerove.pribuzni %}
+    <button type="button" class="uzel pribuzny" data-id="{{ m.id }}"><span class="u-jmeno">{{ m.jmeno }}</span><span class="u-roky">{{ m.vztah }}</span></button>
+    {% endfor %}
+  </div>
+
   <div class="legenda">
     <span><i class="lg imp"></i>imperátor (pořadí)</span>
     <span><i class="lg cl"></i>člen rodu bez trůnu</span>
@@ -72,10 +80,10 @@ popis: Rodokmen dynastie Messerů, která vládla lidstvu 246 let. Od Ivara Mess
 
 <script>
 (function () {
-  var DATA = {{ rod | jsonify }};
+  var DATA = {{ rod | jsonify }}, PRIB = {{ site.data.messerove.pribuzni | jsonify }};
   var PORTRETY = {{ portrety | strip | split: " " | jsonify }}, STRANKY = {{ stranky | strip | split: " " | jsonify }};
   var ZAKLAD = {{ '/' | relative_url | jsonify }};
-  var byId = {}; DATA.forEach(function (m) { byId[m.id] = m; });
+  var byId = {}; DATA.concat(PRIB).forEach(function (m) { byId[m.id] = m; });
   var RIM = ['I','II','III','IV','V','VI','VII','VIII','IX','X','XI'];
   var trun = DATA.filter(function (m) { return m.cislo && !m.cestny; }).sort(function (a, b) { return RIM.indexOf(a.cislo) - RIM.indexOf(b.cislo); });
   var strom = document.getElementById('strom'), svg = document.getElementById('cary'), lin = document.getElementById('linie');
@@ -138,6 +146,7 @@ popis: Rodokmen dynastie Messerů, která vládla lidstvu 246 let. Od Ivara Mess
   function ukaz(id) {
     var m = byId[id]; if (!m) return;
     uzly.forEach(function (u) { u.classList.toggle('vybrany', u.dataset.id === id); });
+    [].forEach.call(document.querySelectorAll('.pribuzny'), function (u) { u.classList.toggle('vybrany', u.dataset.id === id); });
     [].forEach.call(document.querySelectorAll('.vl-bar'), function (b) { b.classList.toggle('vybrany', b.dataset.id === id); });
     var deti = DATA.filter(function (x) { return x.rodic === id; }).map(function (x) { return odkaz(x.id); });
     var ti = trun.indexOf(m), pred = ti > 0 ? trun[ti - 1] : null, po = ti >= 0 && ti < trun.length - 1 ? trun[ti + 1] : null;
@@ -149,13 +158,13 @@ popis: Rodokmen dynastie Messerů, která vládla lidstvu 246 let. Od Ivara Mess
     if (po) vz += '<dt>Nástupce</dt><dd>' + odkaz(po.id) + '</dd>';
     obsah.innerHTML =
       (PORTRETY.indexOf(id) >= 0 ? '<figure class="rod-portret"><img src="' + ZAKLAD + 'assets/osoby/' + id + '.webp" alt=""><span class="il-jmeno" aria-hidden="true">' + m.jmeno + '</span><figcaption>Ilustrační obrázek</figcaption></figure>' : '') +
-      '<p class="nadtitul">' + (m.cislo && !m.cestny ? m.cislo + '. imperátor · vláda ' + m.vlada : m.cestny ? 'čestný titul imperátora' : 'člen rodu') + '</p>' +
+      '<p class="nadtitul">' + (m.cislo && !m.cestny ? m.cislo + '. imperátor · vláda ' + m.vlada : m.cestny ? 'čestný titul imperátora' : m.vztah ? m.vztah : 'člen rodu') + '</p>' +
       '<h2>' + m.jmeno + '</h2><p class="med-roky">' + m.zivot + (m.konec_text ? ' · <span class="k-text k-' + m.konec + '">' + m.konec_text + '</span>' : '') + '</p>' +
       '<p>' + m.text + '</p>' + (m.poznamka_vlada ? '<p class="med-pozn">' + m.poznamka_vlada + '</p>' : '') +
       (m.rozpor ? '<p class="med-pozn"><b>Rozpor v pramenech:</b> ' + m.rozpor + '</p>' : '') +
       (vz ? '<dl class="rod-vztahy">' + vz + '</dl>' : '') +
       '<p class="med-odkazy">' + (STRANKY.indexOf(id) >= 0 ? '<a class="tlacitko plne" href="' + ZAKLAD + 'osobnosti/' + id + '/">Celý medailonek →</a>' : '') +
-      (m.zdroj ? '<a href="' + m.zdroj + '" target="_blank" rel="noopener">Galactapedie ↗</a>' : '') + '</p>';
+      (m.zdroj ? '<a href="' + m.zdroj + '" target="_blank" rel="noopener">' + (m.zdroj_nazev || 'Galactapedie') + ' ↗</a>' : '') + '</p>';
     panel.classList.add('otevreny'); panel.setAttribute('aria-hidden', 'false');
     if (history.replaceState) history.replaceState(null, '', '#' + id);
   }
@@ -164,7 +173,7 @@ popis: Rodokmen dynastie Messerů, která vládla lidstvu 246 let. Od Ivara Mess
   document.addEventListener('keydown', function (e) { if (e.key === 'Escape') zavri(); });
   obsah.addEventListener('click', function (e) { var b = e.target.closest('.rod-odkaz'); if (!b) return; ukaz(b.dataset.id); var u = document.getElementById('u-' + b.dataset.id); if (u) u.scrollIntoView({ behavior: 'smooth', block: 'center', inline: 'center' }); });
   uzly.forEach(function (u) { u.addEventListener('click', function () { ukaz(u.dataset.id); }); });
-  [].forEach.call(document.querySelectorAll('.vl-bar'), function (b) { b.addEventListener('click', function () { ukaz(b.dataset.id); }); });
+  [].forEach.call(document.querySelectorAll('.vl-bar, .pribuzny'), function (b) { b.addEventListener('click', function () { ukaz(b.dataset.id); }); });
 
   // Pruhy vlád: 2546–2792
   var A = 2546, B = 2792, pct = function (r) { return ((r - A) / (B - A) * 100) + '%'; };

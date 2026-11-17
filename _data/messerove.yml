@@ -150,6 +150,7 @@ clenove:
     gen: 6
     x: 900
     rodic: ulysses-messer-x
+    poznamka_vlada: Revoluce ho svrhla 3. května 2792.
     text: Poslední imperátor z rodu Messerů. K moci se dostal převratem proti otci. Prodal práva na terraformaci Garronu II, přestože věděl, že tam žijí vnímající bytosti. Zveřejnění masakru odstartovalo revoluci, během níž byl roku 2792 zabit.
   - id: fiona-messer
     zdroj: https://robertsspaceindustries.com/galactapedia/article/R56nLjJog7-fiona-messer
@@ -159,3 +160,35 @@ clenove:
     x: 1090
     rodic: ulysses-messer-x
     text: Lintonova mladší sestra. Pomohla mu svrhnout otce, pak ale tajně spolupracovala s odbojem a předávala informace skupině Tide. Když vypukla revoluce, zmizela a dodnes se neví, co se s ní stalo.
+
+# Další příbuzní: oficiální zdroje je zmiňují, ale neuvádějí jejich rodiče, takže nemají místo ve stromu.
+pribuzni:
+  - id: aemilia
+    jmeno: Aemilia
+    zivot: roky neznámé
+    vztah: sestřenice Livie III.
+    zdroj: https://robertsspaceindustries.com/galactapedia/article/RAX3p8oKpY-aemelia-kiel-3a
+    zdroj_nazev: Galactapedie
+    text: Sestřenice imperátorky Livie III. Je po ní pojmenován malý měsíc Aemilia (Kiel 3a), na jehož ledových pláních armáda UEE až do revoluce roku 2792 cvičila pozemní boj.
+    rozpor: Galactapedie píše jméno měsíce jako Aemelia, hvězdná mapa hry jako Aemilia.
+  - id: lane-corpos
+    jmeno: Lane Corpos
+    zivot: roky neznámé
+    vztah: vzdálený bratranec imperátora
+    zdroj: https://robertsspaceindustries.com/comm-link/spectrum-dispatch/13412-This-Day-In-History-Anthony-Tanaka
+    zdroj_nazev: Comm-link This Day in History
+    text: Vzdálený bratranec tehdejšího imperátora (roku 2757 vládl Ulysses X.). Roku 2757 se stal správcem soustavy Magnus a proslul krutostí. Dětským dělníkům v továrně Airbol zrušil vzdělávací program a nutil je pracovat celý týden. Právě tam o pár měsíců později vypukla vzpoura Anthonyho Tanaky.
+  - id: ellis-netemi
+    jmeno: Ellis Netemi
+    zivot: roky neznámé
+    vztah: bratranec Lintona XI.
+    zdroj: https://robertsspaceindustries.com/comm-link/spectrum-dispatch/17113-Galactic-Guide-Garron-System
+    zdroj_nazev: Comm-link Galactic Guide
+    text: Bratranec a hlavní rádce imperátora Lintona XI. Porušil karanténu planety Garron II a osobně provedl zástupce firem po jejím povrchu, aby rozpoutal dražbu. Pak prodal těžební práva nejvyšší nabídce a planetu, na níž žil vnímající druh, terraformovali.
+  - id: val-messer
+    jmeno: Val Messer
+    zivot: roky neznámé
+    vztah: člen rodu, vazba neznámá
+    zdroj: https://robertsspaceindustries.com/comm-link/spectrum-dispatch/12715-2792-The-Tide-Rises
+    zdroj_nazev: Comm-link 2792 The Tide Rises
+    text: Člen rodu Messerů. Na jaře 2792 zprávy řešily jeho blížící se svatbu s Celií Carterovou, když vysílání přerušil odboj Tide se záběry z Garronu II. Tím začala revoluce. Jak byl příbuzný s imperátory, prameny neuvádějí.

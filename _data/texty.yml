@@ -25,6 +25,10 @@ kap-1:
   odstavce:
   - kdo: ARCHIVÁŘ
     text: 'Ráno 3. května 2075 začalo jako každé jiné. Malá Rebecca seděla u jídelního stolu a kreslila si, zatímco její matka sledovala ranní zprávy. Pak na hologramu uviděla tátu. Stál vedle prezidenta, měl nový plnovous a mluvil o vesmíru. Dlouho ho neviděli. Kdykoli odcházel do práce, ptala se ho, proč musí pořád pracovat. A on jí vždycky odpověděl stejně: snaží se jí dát hvězdy. Ta slova si zapsala do deníku. Toho rána se začala plnit.'
+    obrazky:
+    - src: assets/dejiny/rebecca-hologram.webp
+      popisek: 3. 5. 2075 · ranní zprávy
+      zdroj: Obrázek z comm-linku RSI · © Cloud Imperium Games
   - kdo: ARCHIVÁŘ
     text: Jejím otcem byl doktor Scott Childress, hlavní inženýr společnosti Roberts Space Industries. Firmu založil v roce 2038 vynálezce Chris Roberts. Slovo vesmír v jejím názvu bylo dlouho jen přáním. Prvním výrobkem byl úsporný měnič baterií pro auta, pak přišly čističky vody a dokonce chov cvrčků. V roce 2061 narazil Roberts na disertaci čerstvého absolventa o dostupnějších motorech pro kosmické lodě. Probudila v něm dávný sen a jejího autora Scotta Childresse hned přijal. Čtrnáct let nato dokončil se svým týmem první soběstačný kvantový pohon. Loď s ním dosáhla setiny rychlosti světla. Sluneční soustava se najednou zmenšila a lidstvo ji poprvé mohlo prozkoumávat takovou rychlostí. Do té doby byl vesmír místem, kam se vysílaly mise. Po roce 2075 se začal stávat místem, kam se jednou budou stěhovat lidé. Jenže hvězdy, které Scott sliboval své dceři, zatím patřily jen vládám, armádě, velkým korporacím a nejbohatším.
     obrazky:
@@ -37,15 +41,24 @@ kap-1:
     - src: assets/dejiny/terraformace.webp
       popisek: Terraformace · 2113
       zdroj: Obrázek z komunitní wiki · © Cloud Imperium Games
+    - src: assets/dejiny/united-times.webp
+      popisek: United Times · 21. 4. 2113
+      zdroj: Obrázek z comm-linku RSI · © Cloud Imperium Games
   - kdo: ARCHIVÁŘ
     text: Lidstvo přesto pokračovalo. Mělo pro to vážný důvod. Země se dusila přelidněním. Docházelo jídlo, voda i energie a kvůli nim propukaly války. Chráněné přírodní divy padly pod buldozery, aby uvolnily místo osadám a polím, a vymíraly celé druhy zvířat i rostlin. Lidé potřebovali nový domov a nejbližším kandidátem byl Mars. V roce 2120 spojily vlády světa své znalosti i peníze a pustily se do první přeměny celé planety. Na povrch odletěly týmy průzkumníků. Mapovaly terén, vybíraly místa pro atmosférické procesory a zkoumaly vzorky půdy, aby nic neohrozilo nový vzduch. Byla to první opravdu důkladná výprava na naši nejbližší planetu a vlády nechtěly nic ponechat náhodě.
     obrazky:
     - src: assets/dejiny/zeme.webp
       popisek: Země
       zdroj: Obrázek z Galactapedie · © Cloud Imperium Games
+    - src: assets/dejiny/new-york.webp
+      popisek: Přelidněná Země
+      zdroj: Obrázek z comm-linku RSI · © Cloud Imperium Games
     - src: assets/dejiny/mars.webp
       popisek: Mars
       zdroj: Obrázek z Galactapedie · © Cloud Imperium Games
+    - src: assets/dejiny/mars-pruzkum.webp
+      popisek: Průzkum Marsu · 2120
+      zdroj: Obrázek z comm-linku RSI · © Cloud Imperium Games
   - kdo: ARCHIVÁŘ
     text: 'V září roku 2125 byl Mars v závěrečné fázi přeměny. Už dva týdny tam existovalo prostředí, ve kterém se dalo dýchat. Vědci systém ještě prověřovali, ale od oficiálního prohlášení, že je planeta bezpečná, je dělily jen dva dny. Lidé na povrchu proto pracovali bez dýchacích přístrojů. Porušovali tím předpisy, ale nic nenasvědčovalo tomu, že by vzduch nebyl stabilní. 13. září 2125, ve 4.38 ráno, se atmosféra zhroutila. Stalo se to tak rychle, že nikdo nestihl spustit poplach ani utěsnit ventilaci základen. Nový vzduch se rozplynul a 4 876 lidí se udusilo. Úředník, který nechtěl být jmenován, to novinářům shrnul jedinou větou: Atmosféra nevydržela. Podle prvních zpráv šlo o chemickou chybu v atmosférických procesorech.'
     obrazky:
@@ -67,6 +80,9 @@ kap-1:
     - src: assets/dejiny/michelle-saleno.webp
       popisek: Michelle Saleno
       zdroj: Obrázek z Galactapedie · © Cloud Imperium Games
+    - src: assets/dejiny/letka-999.webp
+      popisek: 999. zkušební letka
+      zdroj: Obrázek z komunitní wiki · © Cloud Imperium Games
     - src: assets/dejiny/zeus-reklama.webp
       popisek: RSI Zeus · 2140
       zdroj: Obrázek z Galactapedie · © Cloud Imperium Games
@@ -103,6 +119,9 @@ kap-2:
     - src: assets/dejiny/neptun.webp
       popisek: Goodman · Neptun · 2262
       zdroj: Obrázek z Galactapedie · © Cloud Imperium Games
+    - src: assets/dejiny/nesuv-trojuhelnik.webp
+      popisek: Nesův trojúhelník · 2262
+      zdroj: Obrázek z comm-linku RSI · © Cloud Imperium Games
   - kdo: ARCHIVÁŘ
     text: 'Jeden muž se ale bát nechtěl. Astrofyzik a pilot Nick Croshaw strávil téměř deset let studiem místa, které pohlcovalo lodě. Byl přesvědčený, že za zmizeními stojí dosud neznámý druh vesmírné anomálie. Postupně přišel na to, jak ji otevřít. Záleželo na rychlosti a úhlu přiblížení a hlavně na záření odhaleného fúzního jádra. Upravil si vlastní kvantový pohon a vydal se tam sám. 10. dubna 2271 vletěl do anomálie a vynořil se v cizí soustavě. Stal se prvním člověkem, který objevil a prolétl skokovým bodem, a prvním, kdo navštívil jinou planetární soustavu. Ta dodnes nese jeho jméno: Croshaw. Jeho příběh se pak vyprávěl ve filmech i v písních a lidé ho znali nazpaměť.'
     obrazky:
@@ -124,6 +143,9 @@ kap-2:
     - src: assets/dejiny/skokovy-tunel.webp
       popisek: Skokový tunel
       zdroj: Obrázek z komunitní wiki · © Cloud Imperium Games
+    - src: assets/dejiny/jumper-review.webp
+      popisek: Jumpeři
+      zdroj: Obrázek z comm-linku RSI · © Cloud Imperium Games
   - kdo: ARCHIVÁŘ
     text: Pořádek do toho vnesl až výbor, který jmenoval Světový summit, setkání vůdců Země. Jeho mistrovským tahem byl Freeman Act z roku 2281. Zákon zavedl loterii o půdu a práva na nerosty a prodej jednosměrných letenek na planety, které se teprve přetvářely. Kdo si letenku koupil, měl jistý domov. Zároveň svými penězi platil terraformaci. Prodej šel zpočátku pomalu. Život na jiné planetě si lidé už dovedli představit, ale život v úplně jiné soustavě je děsil. Teprve rozsáhlé kampaně a svědectví z nové soustavy jejich strach rozptýlily. Vznikla celá vrstva lidí, kteří odpočítávali dny, než se stanou prvními mezihvězdnými osadníky.
   - kdo: ARCHIVÁŘ
@@ -131,6 +153,19 @@ kap-2:
   - kdo: ARCHIVÁŘ
     text: Dva z nich, Tara Dilione a Alfonsus Carbrino, pracovali jako mechanici na malé čerpací stanici u skokového bodu mezi Croshawem a Solem. Jednou u nich nouzově přistál transport plný cestujících. Selhal mu skokový pohon a majitel si nemohl dovolit letět do servisu RSI u Marsu. Šlo jen o drobnou opravu kabeláže. Oba mechanici si ale vymysleli složitou historku a celý den si pohon prohlíželi kus po kusu. A pochopili. Část, která ohýbala prostor, byla stejná jako v obyčejném kvantovém pohonu. RSI nevynalezla nic převratného. Jen zdokonalila nick. Dvacet sedm měsíců a skoro všechny své peníze pak dali do modulu, který z kvantového pohonu udělal skokový. První verze zabíraly většinu nákladového prostoru. Pojmenovali ho Tarsus podle svých křestních jmen. Prý to bylo to nejbližší dítěti, co kdy budou mít. Urovnali si všechny záležitosti a 7. listopadu 2292, jedenadvacet let po Croshawově skoku, vletěli do skokového bodu. Věděli proč. Mnoho lidí se před nimi vydalo do skoku s upraveným pohonem
       a už se nevrátilo. Tara a Alfonsus mohli být další. Vynořili se v pořádku. Zpráva se mezi jumpery rozletěla a každý chtěl modul pro sebe. Jedna z nich, právnička Selma Tontil, poznala, co to znamená, a přiměla oba vynálezce, aby si modul nechali patentovat. S její pomocí vznikla firma Tarsus. RSI se ji pokusila zažalovat, ale Tontil právo upravovat pohony uhájila. Za půl roku už RSI prodávala vlastní skokový modul. Za zlomek ceny si teď mohl skokový pohon pořídit každý, kdo vlastnil loď. Croshawův objev změnil i mapy. Hodnota planety už nezávisela jen na vzdálenosti od Země, ale na tom, jaké skokové body má poblíž. Nevýznamná soustava se mohla přes noc změnit v křižovatku. Nick Croshaw objevil cestu. Tarsus ji otevřel davům. A s každým novým skokem se vracela otázka stará jako lidstvo samo. Jsme tu sami?
+    obrazky:
+    - src: assets/dejiny/skokovy-modul.webp
+      popisek: Modul Tarsus
+      zdroj: Obrázek z komunitní wiki · © Cloud Imperium Games
+    - src: assets/dejiny/skokovy-bod-vstup.webp
+      popisek: Skok · 7. 11. 2292
+      zdroj: Obrázek z komunitní wiki · © Cloud Imperium Games
+    - src: assets/dejiny/tarsus.webp
+      popisek: Tarsus
+      zdroj: Obrázek z comm-linku RSI · © Cloud Imperium Games
+    - src: assets/dejiny/angeli-mesto.webp
+      popisek: Angeli, soustava Croshaw · dnes
+      zdroj: Obrázek z comm-linku RSI · © Cloud Imperium Games
 kap-3:
   nazev: III. Nejsme sami
   podtitul: 2380–2438
@@ -138,22 +173,61 @@ kap-3:
   odstavce:
   - kdo: ARCHIVÁŘ
     text: 12. června 2438, tři hodiny a třináct minut standardního času. Šestatřicetiletý průzkumník Vernon Tar se sám unášel tmou soustavy Davien a hledal nové skokové body. Jedinou společnost mu dělalo bzučení dálkových skenerů. Pak se ozval signál. Nebyl to skokový bod. Byla to loď. Tar si myslel, že jde o jiného jumpera, který mu chce ukrást objev. A začal střílet. Teprve po prvních výstřelech si všiml, že tvar té lodi nepřipomíná nic, co kdy viděl. Cizí loď palbu neopětovala. Zůstala stát na místě. Aby bylo jasné, proč na té chvíli tolik záleželo, musíme se vrátit o téměř šedesát let.
+    obrazky:
+    - src: assets/dejiny/vernon-tar.webp
+      popisek: Vernon Tar · Davien
+      zdroj: Ilustrační obrázek
   - kdo: ARCHIVÁŘ
     text: 'Na jaře 2380 se lidstvu dařilo. Na planetách soustavy Croshaw probíhala terraformace a vědci našli tři nové skokové body. Vůdci vlád se sešli na Světovém summitu. Novináři osm dní každý večer v šest čekali na ohlášení, které nepřicházelo. Pak je 23. dubna 2380 jeden z asistentů odvedl hluboko do komplexu, do sálu Valného shromáždění. Seděli tam delegáti všech vlád světa. U řečnického pultu stál delegát Ivan Tsang. Řekl, že summit si nekladl otázku, kam dál, ale jak dál. Do vesmíru se nedá vyrazit s přetahováním národních, politických ani obchodních zájmů. A oznámil vznik jediné vlády pro tuto i všechny další planety: Spojených národů Země. Země se pak ještě roky přely. Když se ke Spojeným národům přidaly velmoci, ostatní je následovaly. Lidstvo mělo poprvé jedinou vládu. Vznikl první Senát, začal první velký boom terraformace a první vlny vystěhovalců opouštěly Zemi.'
+    obrazky:
+    - src: assets/dejiny/senat.webp
+      popisek: Valné shromáždění · 23. 4. 2380
+      zdroj: Obrázek z Galactapedie · © Cloud Imperium Games
+    - src: assets/dejiny/une-shromazdeni.webp
+      popisek: Valné shromáždění · 23. 4. 2380
+      zdroj: Obrázek z comm-linku RSI · © Cloud Imperium Games
   - kdo: ARCHIVÁŘ
     text: Soustavu Davien zmapoval roku 2430 Wendell Dopse a pojmenoval ji po svém tchánovi. Vědci do té doby tvrdili, že ze Sluneční soustavy už žádný další skokový bod nevede. Učebnice se musely přepsat. Jinak to ale byla nezajímavá soustava. Čtyři planety kolem malé oranžové hvězdy, žádné vzácné suroviny, žádný strategický význam. Velení tamní posádky převzal ten rok generál Neal Socolovich. Narodil se na Angeli, druhé planetě soustavy Croshaw, a proslul tím, že dokázal urovnat spory s psanci bez jediného výstřelu. O osm let později to bude potřeba víc než kdy dřív.
+    obrazky:
+    - src: assets/dejiny/davien.webp
+      popisek: Soustava Davien
+      zdroj: Obrázek z Galactapedie · © Cloud Imperium Games
+    - src: assets/dejiny/neal-socolovich.webp
+      popisek: Generál Neal Socolovich
+      zdroj: Ilustrační obrázek
   - kdo: ARCHIVÁŘ
     text: Tar nahlásil své souřadnice a Socolovich se svým týmem okamžitě vyrazil. Ve svém hlášení napsal, že cizinec byl palbou zjevně otřesený a rozzlobený. Vojáci ho uklidňovali pantomimou a technické oddělení začalo stavět překladač. Armáda spojení izolovala a novinářům vydala jen to nejnutnější. Na rozhovor s tiskem za Tara poslala jednoho ze svých lidí. Samotnému Tarovi dal Socolovich na vybranou bez okolků. Když bude mlčet, zapíše se do dějin jako hrdina prvního kontaktu. Když ne, jako hlupák, který málem rozpoutal první mezihvězdnou válku. Tar pochopil.
   - kdo: ARCHIVÁŘ
     text: O dva týdny později se v Davienu objevila další cizí loď. Přiletěla oficiální delegace civilizace, která si říkala Banu. Byli stejně zvědaví jako lidé. Také oni teprve začínali objevovat vesmír. Měsíce trvalo, než obě strany prolomily jazykovou bariéru a opatrně se dohodly. V říjnu 2438 podepsaly první mezihvězdnou dohodu o míru a obchodu. Lidstvo slavilo. Nebyli jsme sami a první setkání s cizinci dopadlo mírem.
+    obrazky:
+    - src: assets/dejiny/banu.webp
+      popisek: Banu
+      zdroj: Obrázek z Galactapedie · © Cloud Imperium Games
+    - src: assets/dejiny/banu-pismo.webp
+      popisek: Jazyková bariéra
+      zdroj: Obrázek z Galactapedie · © Cloud Imperium Games
+    - src: assets/dejiny/prvni-kontakt.webp
+      popisek: Lidstvo slavilo · 2438
+      zdroj: Obrázek z Galactapedie · © Cloud Imperium Games
   - kdo: ARCHIVÁŘ
     text: 'Ironii celé události lidé odhalili až po letech. Davien vůbec neležel poblíž banuského území. A loď, na kterou Tar střílel, nepatřila průzkumníkovi ani vyslanci. Patřila uprchlíkovi. Jmenoval se Njeri. Když dospěl, prodali ho do úřednického soulu, banuského společenství, kde musel na smlouvu léta třídit data. Byl nešťastný a špatně placený. Snil o tom, že bude pilotovat vlastní loď. Začal proto z peněz svého soulu tajně odklánět, aby si mohl koupit místo u průzkumníků. Když na to vedení přišlo, ukradl v panice jednu z jejich lodí a utekl. Pronásledovali ho přes několik soustav. Když ho dostihovali, zachytil čirou náhodou signál neznámého skokového bodu. Měl na výběr: trest, nebo možnou smrt v tunelu, který nikdo neznal. Vybral si tunel. V Davienu na něj skoro okamžitě začala střílet loď neznámého tvaru. Jeho loď palbu přestála. A Njeri pochopil, že ten cizinec může být jeho vstupenkou z problémů. Proto nestřílel zpátky. Historici dnes upozorňují, že kdyby Tarovu loď zničil, mohl
       začít válku mezi lidmi a Banu.'
+    obrazky:
+    - src: assets/dejiny/banu-role.webp
+      popisek: Banuské soully
+      zdroj: Obrázek z komunitní wiki · © Cloud Imperium Games
+    - src: assets/dejiny/njeri-lod.webp
+      popisek: Njeriho útěk
+      zdroj: Obrázek z comm-linku RSI · © Cloud Imperium Games
   - kdo: ARCHIVÁŘ
     text: Lidé mu začali říkat Jerry. Když později zjistil, že to zní podobně jako jeho jméno, přijal ho s hrdostí a nechtěl slyšet jiné. Ochotně pomáhal s překladem. Odtajněné dokumenty zmiňují i to, že když mu lidé nabídli jídlo, snědl všechno, včetně obalů od sendviče. Mírovou dohodu nakonec podepsal i on, jako čestný signatář. Mohl v Davienu zůstat. Vrátil se ale domů, aby si odsloužil zbytek smlouvy. Čekal oslavy. Místo toho ho přijali s opovržením jako zloděje a únosce lodi a posadili ho k datům pod přísný dohled. Když se smlouvy zbavil, chtěl založit vlastní soul pro styky s lidmi. Trh už ale byl plný jiných, kteří uměli lidskou řeč mnohem lépe. S posledními úsporami se tedy vrátil tam, kde byl nejšťastnější. Do Davienu. Teprve tam zjistil, že je mezi lidmi slavný. Jerry, Banu, díky kterému první kontakt dopadl mírem. Jeho přítelkyně z delegace Natalia Gordillo o něm napsala knihu. Vyšla v roce 2447 a stala se bestsellerem. Jerry zemřel 2. listopadu 2456 ve svém domě v Davienu, obklopený
       lidskými i banuskými přáteli. Banu, kteří slavné postavy svých dějin neuctívají, na něj zapomněli. Lidé si ho pamatují dodnes.
   - kdo: ARCHIVÁŘ
     text: Stejná událost přitom pro obě strany neznamenala totéž. Pro lidi se Jerry stal hrdinou. Pro jeho vlastní společnost byl dlouho hlavně tím, kdo porušil pravidla soulu a utekl s cizím majetkem. Lidské učebnice nejsou neutrální pohled na vesmír. A čím víc civilizací lidé potkají, tím častěji zjistí, že jejich verze dějin není jediná. Davien se mezitím proměnil k nepoznání. Stal se bránou k obchodu s Banu a zaplavili ho lidé všeho druhu. První kontakt neskončil vítězstvím ani dobytím. Skončil obchodem. První setkání s cizí civilizací tedy lidstvo zvládlo díky někomu, kdo před ní sám utíkal. Stačilo přitom několik jiných rozhodnutí a rok 2438 mohl být začátkem války. Místo toho se stal začátkem obchodu. Druhé takové štěstí mít nemělo.
+    obrazky:
+    - src: assets/dejiny/darek-pro-babu.webp
+      popisek: Obchod s Banu
+      zdroj: Obrázek z komunitní wiki · © Cloud Imperium Games
 kap-4:
   nazev: IV. Tři pilíře a první trhlina
   podtitul: 2523–2530
@@ -163,16 +237,55 @@ kap-4:
     text: Rok 2530. Předák Charles Baxter stál na hřebeni neznámé planety a vyhlížel, kam postavit stroje na terraformaci. Čekali tři transporty, takže když zaslechl první loď, nijak ho to nepřekvapilo. Pak ji uviděl. Hned věděl, že není lidská. Nepodobala se ani žádné banuské lodi, kterou znal. A pak se lodě objevily ze všech stran. Jak se lidé ocitli tak daleko od domova, na planetě, kam vůbec neměli přistát?
   - kdo: ARCHIVÁŘ
     text: 'O sedmdesát let dřív byla Země znovu přeplněná. Ve vesmíru čekalo obrovské množství přetvořených území, ale lidé se z domova stěhovat nechtěli. Změnila to až reklamní kampaň RSI s názvem Vzduch, který dýcháte. Její autoři si nad ní položili jednoduchou otázku: kdy jste naposledy seděli v opravdovém poli? Země vždycky bude Zemí, ale její zdroje lidé vyčerpali. Nová planeta slibovala čistší vzduch, prostor a šanci začít znovu. A lidé se začali stěhovat.'
+    obrazky:
+    - src: assets/dejiny/breathe-free.webp
+      popisek: Vzduch, který dýcháte · 2460
+      zdroj: Obrázek z Galactapedie · © Cloud Imperium Games
   - kdo: ARCHIVÁŘ
     text: Spojené národy Země financovaly program Far Star. Terraformační společnosti a navjumpeři, kteří hledali nové soustavy směrem od Virgilu, dostávali peníze přednostně. Lidstvo už obývalo dvanáct soustav a těm nejvzdálenějším začínala Země připadat opravdu daleko. V roce 2516 narazila hlavní průzkumnice Wei-Yin Song na soustavu, ze které vedly čtyři skokové body a možná i pátý. Na její třetí planetě byla přirozená kyslíková atmosféra, vegetace, rozlehlé oceány a mírné podnebí. Tým ji pro podobnost se Zemí pojmenoval Terra. Na jejím jižním kontinentu pak osadníci objevili obrovské kamenné ruiny, které jasně ukazovaly na inteligentní život. Kdo je postavil, se dodnes neví. Terra se stala základnou pro celou východní část lidského území. Rostla na ní města a rodila se nová kultura.
+    obrazky:
+    - src: assets/dejiny/terra-soustava.webp
+      popisek: Soustava 342A · 2516
+      zdroj: Obrázek z Galactapedie · © Cloud Imperium Games
+    - src: assets/dejiny/terra.webp
+      popisek: Terra · 2516
+      zdroj: Obrázek z Galactapedie · © Cloud Imperium Games
+    - src: assets/dejiny/terra-mesto.webp
+      popisek: Terra · nová kultura
+      zdroj: Obrázek z comm-linku RSI · © Cloud Imperium Games
   - kdo: ARCHIVÁŘ
     text: 'Stará vláda národů přestávala stačit. Několik desítek planet se už počtem obyvatel blížilo Zemi a jejich lidé chtěli být zastoupeni. V roce 2523 se proto Spojené národy proměnily ve Spojené planety Země. Do Kongresu teď delegáty nevysílaly národy, ale planety. Lidstvo zavedlo i jednotnou měnu. Výkonnou moc si rozdělili tři vysocí úředníci, Tribunál. Vysoký sekretář spravoval infrastrukturu, vysoký generál armádu a vysoký advokát zákon. Byla to pojistka. Jeden člověk už neměl být schopen ovládnout celý stát. Systém měl ale slabinu. Byl pomalý. A v době rychlých krizí se pomalost dá snadno vydávat za slabost. Ne všem se to líbilo. V jedné televizní debatě tehdy zaznělo varování: kdykoli se moc mnohých soustředí do rukou několika, někdo se ji naučí zneužít. Ostatní hosté to odbyli jako přehánění.'
+    obrazky:
+    - src: assets/dejiny/showdown-tribunal.webp
+      popisek: Showdown · 2523
+      zdroj: Obrázek z comm-linku RSI · © Cloud Imperium Games
   - kdo: ARCHIVÁŘ
     text: Ve vesmíru mezitím propukla zlatá horečka. Prospektoři se předháněli, kdo si zabere ještě nepřetvořené planety. Většina dodržovala pravidla. Někteří ne. Navjumperka Kathryn Segovia objevila skokový bod do soustavy, kterou lidé neznali, a jeho polohu prodala firmě Gaia Planet Services. Firma ho vládě nenahlásila, aby si vynahradila, co za něj zaplatila. Neměla povolení a planetu pořádně neprověřila. Na místo vyslala 276 lidí. Nevěděli, že soustava už někomu patří. Soustava se jmenovala Th.us'ūng a xi’anská vláda ji používala k pokusům s terraformací. Lidé se tak setkali s druhou mimozemskou civilizací. Xi’ani zajali celý tým.
+    obrazky:
+    - src: assets/dejiny/thusung.webp
+      popisek: Th.us'ūng
+      zdroj: Obrázek z Galactapedie · © Cloud Imperium Games
+    - src: assets/dejiny/xian.webp
+      popisek: Xi’ani
+      zdroj: Obrázek z Galactapedie · © Cloud Imperium Games
   - kdo: ARCHIVÁŘ
     text: 'Na znamení dobré vůle propustili jediného člověka. Předáka Charlese Baxtera. Na Zemi ho vyslechli všichni tři tribuni a výbor senátorů. Vysoký generál Volder se ho zeptal, jestli před přistáním vůbec prováděli průzkum. Baxter odpověděl, že spíš ne. Kdo tam venku čeká moc dlouho, toho předběhne jiná firma. Volder chtěl mít připravený vojenský plán. Tribunál ho ale brzdil: nikdo zatím nerozhodl, že je potřeba zasáhnout silou. Armáda obklíčila skokový bod. Patnáct dní trvalo, než se obě strany vůbec domluvily, jak spolu mluvit. Pak začalo napjaté vyjednávání. Xi’ani byli ve svých požadavcích velmi pečliví. Rukojmí se vrátila po více než padesáti sedmi dnech. Válce se lidé vyhnuli. Dobrá vůle ale dlouho nevydržela.'
+    obrazky:
+    - src: assets/dejiny/baxter-vyslech.webp
+      popisek: Výslech · 2530
+      zdroj: Obrázek z comm-linku RSI · © Cloud Imperium Games
+    - src: assets/dejiny/xian-mesto.webp
+      popisek: Xi’ani · jednání
+      zdroj: Obrázek z komunitní wiki · © Cloud Imperium Games
   - kdo: ARCHIVÁŘ
     text: Začala studená válka, která trvala přes dvě a půl století. Nikdo ji nevyhlásil a velké bitvy nepřišly. Hraniční soustavy se ale proměnily ve vojenská pásma. Jejím architektem se stala generálka Armistead Perry. Desítky let chytala pašeráky na hranicích. V roce 2531 přišla při střetu s velkým pašeráckým gangem o nohu a byla povýšena na generálku. V roce 2542 navrhla nárazníkové pásmo mezi lidmi a Xi’any. Po měsících jednání Tribunál souhlasil a vybral osm soustav. Zakázal v nich lety a udělal z nich vojenská nástupiště. Každou pojmenovali po bohu války. A celé pásmo dostalo jméno po generálce. Perryho linie. Patřila do ní i soustava Th.us'ūng, kde všechno začalo. Perryho linie problém nevyřešila. Jen ho zmrazila. Každá chyba pilota a každý špatně vyhodnocený kontakt mohly spustit něco mnohem většího.
+    obrazky:
+    - src: assets/dejiny/studena-valka.webp
+      popisek: Studená válka
+      zdroj: Obrázek z komunitní wiki · © Cloud Imperium Games
+    - src: assets/dejiny/perryho-linie.webp
+      popisek: Perryho linie · 2542
+      zdroj: Obrázek z komunitní wiki · © Cloud Imperium Games
   - kdo: ARCHIVÁŘ
     text: Pozdější vládci navíc pochopili, jak užitečný je nepřítel za hranicí. Strach z Xi’anů se stal jedním z nejsilnějších nástrojů moci v lidských dějinách. Tribunál vznikl jako pojistka proti soustředění moci. Jenže každá pojistka funguje jen tak dlouho, dokud lidé věří, že je důležitější než pohodlí. Zatímco ale generálové hlídali hranici s Xi’any, skutečná válka přišla odjinud.
 kap-5:
@@ -182,19 +295,68 @@ kap-5:
   odstavce:
   - kdo: ARCHIVÁŘ
     text: 1. října 2544. Planeta Idris IV. Na kopci uprostřed tevarinské loděnice se drželi poslední vojáci 112. pěšího praporu. Jejich plukovníka i celý štáb zabila antihmotová bomba z tevarinské stíhačky. Major, který řídil jejich ústup, padl o chvíli později. Zasáhl ho odstřelovač, kterého nikdo neviděl. Velení po něm převzal jeho zástupce. Mladý a ctižádostivý kapitán Ivar Messer. V té chvíli nebyl hlavou státu. Byl důstojníkem uprostřed bitvy, která se obracela proti jeho straně. O tři roky později bude vládnout celému lidstvu. Jak se lidstvo do té války dostalo?
+    obrazky:
+    - src: assets/dejiny/idris-krajina.webp
+      popisek: Idris IV · 1. 10. 2544
+      zdroj: Obrázek z komunitní wiki · © Cloud Imperium Games
+    - src: assets/dejiny/talon.webp
+      popisek: Tevarinská stíhačka Talon
+      zdroj: Obrázek z Galactapedie · © Cloud Imperium Games
   - kdo: ARCHIVÁŘ
     text: 15. listopadu 2541 objevil doktor Kellar Lench skokový bod do soustavy Elysium. Zjistil, že je obydlená vyspělou civilizací. Aby ji nevyrušil, poslal tam jen průzkumnou sondu. Na čtvrté planetě, kterou její obyvatelé nazývali Kaleeth, žili Tevarinové. Uměli létat vesmírem, znali kvantový pohon a měli mimořádně vyspělé štíty. Jinak byli za lidmi technicky asi o sto let pozadu. Žili podle přísného válečnického kodexu Rijora. Nebyli krvežízniví, ale boj pro ně byl uměním a povinnost ctností. Lench doporučil navázat kontakt a přivést je do moderní doby. Tevarinové o lidskou diplomacii ani techniku nestáli. Neuměli terraformovat a jejich svět byl přelidněný. Zajímaly je lidské soustavy. A tak první válka mezi dvěma druhy začala jako většina válek. Kvůli území. Armáda se bála, že by Xi’ani na východě mohli válku na západě využít, a zavedla povinnou vojenskou službu.
+    obrazky:
+    - src: assets/dejiny/elysium.webp
+      popisek: Elysium · 15. 11. 2541
+      zdroj: Obrázek z Galactapedie · © Cloud Imperium Games
+    - src: assets/dejiny/jalan.webp
+      popisek: Kaleeth (Elysium IV)
+      zdroj: Obrázek z Galactapedie · © Cloud Imperium Games
+    - src: assets/dejiny/tevarin.webp
+      popisek: Tevarinové · kodex Rijora
+      zdroj: Obrázek z komunitní wiki · © Cloud Imperium Games
   - kdo: ARCHIVÁŘ
     text: Do roku 2544 zatlačili Tevarinové lidské síly ze soustavy Centauri až do Ferronu. Vysoký generál Trevor Borland se bál, že válka zamrzne v nekonečném opotřebování. Chtěl Tevariny vyvést z rovnováhy. Tak vznikla operace Nemesis. Cílem byla tevarinská loděnice na povrchu Idrisu IV, odkud startovala většina jejich stíhaček. Kolem planety Tevarinové navíc stavěli jakési záhadné stavby. Nikdo nevěděl, k čemu slouží. Operace začala 30. září 2544 ve 13.45. Flotila ignorovala tevarinské velké lodě a hnala se přímo k planetě. Po šesti hodinách bojů vojáci loděnici, které říkali Kopec, dobyli. Vypadalo to na drtivé vítězství. Pak se ty záhadné stavby probudily. Byla to prototypová planetární obrana. Dvě letadlové lodě zmizely během několika sekund. Nová torpéda selhávala, vybuchovala přímo v odpalovacích trubicích. Flotila se rozprchla a vojáci na Kopci zůstali sami. Tím se vracíme na Kopec.
+    obrazky:
+    - src: assets/dejiny/bitva-idris.webp
+      popisek: Operace Nemesis · 30. 9. 2544
+      zdroj: Obrázek z Galactapedie · © Cloud Imperium Games
   - kdo: ARCHIVÁŘ
     text: Messer začal k vlastním pozicím navádět bombardéry Retaliator, nebezpečně blízko svých mužů. Hodiny dopadaly bomby na Tevariny, kteří se stahovali ke Kopci, a přeživší vojáci mezitím chystali zálohy. Pak vyslal malý oddíl vedený seržantem Adamem Correm. To jméno si zapamatujte. Oddíl ukradl sestřelený tevarinský člun, proklouzl liniemi a ovládl srdce planetární obrany. Obrátil ji proti tevarinské flotile a držel ji tak dlouho, dokud nedorazily posily. Tevarinové začali ustupovat. Když se kouř rozplynul, obě strany přišly o přes sto velkých lodí, tisíce stíhaček a sedmdesát tisíc životů. Kopec ale zůstal v lidských rukou. A Ivar Messer se stal hrdinou.
+    obrazky:
+    - src: assets/dejiny/retaliator.webp
+      popisek: Retaliatory nad Kopcem
+      zdroj: Obrázek z Galactapedie · © Cloud Imperium Games
+    - src: assets/dejiny/prowler.webp
+      popisek: Ukradený tevarinský člun
+      zdroj: Obrázek z Galactapedie · © Cloud Imperium Games
   - kdo: ARCHIVÁŘ
     text: Vláda potřebovala hrdinu a udělala z Messera tvář války. Jeho obličej zval mladé lidi do armády. Vítězství na Idrisu IV zvedlo náladu, nábor i tah na tevarinské soustavy. V roce 2546 Tevarinové prohráli. Lidé jejich soustavy připojili k Spojeným planetám a na domovském světě Tevarinů založili osady. Přeživší se buď přizpůsobili, nebo se rozptýlili po vesmíru. Messer mezitím zúročil svou slávu. Stal se vysokým generálem, jedním ze tří tribunů. Tribunál podle něj ale byl bezzubý a zastaralý. Všechno se v něm donekonečna probíralo a nic se nerozhodlo. Chtěl jediný úřad s plnou mocí. Prvního občana.
+    obrazky:
+    - src: assets/dejiny/messer-plakat.webp
+      popisek: Tvář války
+      zdroj: Obrázek z Galactapedie · © Cloud Imperium Games
   - kdo: ARCHIVÁŘ
     text: 23. srpna 2546 přesně v poledne otřásl výbuch kopulí města Jata na planetě Cestulus v soustavě Davien. Lidé se seběhli k troskám a zpravodajství začalo vysílat živě. Pak přišel druhý výbuch. A třetí. Nálože byly rozmístěné přesně. Kopule se zhroutila a pohřbila tisíce lidí. Všichni se báli, že za tím stojí tevarinští spáči. Vyšetřovatelé ale zjistili, že součástky bomb pocházejí od Xi’anů. Messer se místo s ostatními tribuny sešel s novináři. Prohlásil, že má plán, jak viníky dopadnout. Kdyby existoval první občan, už by se podle něj dávno plnil. Takhle se musí čekat, až se Tribunál sejde a dohodne. Xi’any přímo neobvinil. Komu to dává za vinu, ale bylo jasné. Zbylí dva tribuni, Janis Rezaian a Mauricio Tusk, mu veřejně vytkli štvavé řeči. Vláda se zadrhla v hádkách. O dva měsíce později zabil výbuch na planetě Tram téměř sedm set lidí. Bomba obsahovala stejnou xi’anskou techniku. Během dalších týdnů přišly ještě čtyři útoky. Celkem zahynulo téměř pět tisíc civilistů a vyšetřovatelé
       nikoho nedopadli. Na pietním shromáždění za oběti Messer řekl, že další válku nechce. Ale že by každou soustavu i každý skokový bod obehnal štíty.
+    obrazky:
+    - src: assets/dejiny/jata.webp
+      popisek: Jata · 23. 8. 2546
+      zdroj: Obrázek z Galactapedie · © Cloud Imperium Games
+    - src: assets/dejiny/tram.webp
+      popisek: Tram · 2546
+      zdroj: Obrázek z Galactapedie · © Cloud Imperium Games
   - kdo: ARCHIVÁŘ
     text: Lidé měli pocit, že vláda nedokáže občany chránit. A v takové chvíli začala myšlenka jednoho silného vůdce působit méně jako hrozba a víc jako řešení. Občané odhlasovali, že Tribunál nahradí jediný první občan. 15. prosince 2546 vyhrál mimořádné volby drtivou většinou Ivar Messer. Jedním z jeho prvních kroků bylo posílit armádu v hustě obydlených oblastech. Žádný další útok už nepřišel a učebnice to připsaly jeho pevné ruce. Pak Messer rozpustil Tribunál a Spojené planety přejmenoval na Spojené impérium Země. Na začátku roku 2547 se prohlásil imperátorem. Varování z té televizní debaty se naplnilo. Tři pilíře padly bez jediného výstřelu.
+    obrazky:
+    - src: assets/dejiny/messer-vzestup.webp
+      popisek: První občan · 15. 12. 2546
+      zdroj: Obrázek z comm-linku RSI · © Cloud Imperium Games
+    - src: assets/dejiny/uee.webp
+      popisek: Spojené impérium Země
+      zdroj: Obrázek z Galactapedie · © Cloud Imperium Games
+    - src: assets/dejiny/den-imperatora.webp
+      popisek: Imperátor · 2547
+      zdroj: Obrázek z komunitní wiki · © Cloud Imperium Games
   - kdo: ARCHIVÁŘ
     text: 'Pravdu o Jatě začal někdo hledat až o dvě a půl století později. V roce 2806 vydala komise pro pravdu a smíření tajné dokumenty z doby Messerů. Historička Sydney Kamarck v nich pátrala celé roky. Narazila na záznam o zatčení jistého Cyruse Ishitaky. Pár dní před útokem ho policie v Jatě sebrala při zátahu na dealery drog. Propustili ho bez obvinění. Jako důvod stálo jen jméno: Pat Mora. Pat Mora byla vojenská přezdívka Adama Corra. Toho seržanta z Kopce. Ishitaka byl pyrotechnik a na Idrisu IV bojoval po Messerově boku také. Kamarck zjistila, že ve dnech před výbuchy byl ve čtyřech z pěti zasažených soustav. Pár dní po posledním útoku ho našli mrtvého v uličce v New Yorku. Policie to uzavřela jako vyřizování účtů mezi dealery. Adam Corr se mezitím ztratil. Znovu se objevil, až když byl Messer zvolen. Dostal vysoké místo v armádě. Nikdo to nikdy s jistotou neprokázal. Stopy ale vedou k možnosti, že útoky, které Messera vynesly k moci, nechal připravit on sám. Diktatura nemusí začít
       tím, že někdo zruší volby. Někdy začíná tím, že lidé v dobré víře svěří víc a víc moci člověku, kterému v krizi důvěřují. Možná lidstvo k diktatuře nedovedla jen válka. Možná si svůj strach nechalo vyrobit. Rod Messerů měl lidstvu vládnout dvě stě čtyřicet šest let.'
@@ -207,19 +369,61 @@ kap-6:
     text: 24. června 2610, večer. Planeta Elysium IV. Malíř Aaron Fring se vydal na procházku krajinou, jako už tolikrát předtím. Chtěl si vyčistit hlavu. Z vrcholu kopce uviděl na obloze něco, na co nikdy nezapomněl. Do atmosféry se řítila celá flotila. A hořela. Aby bylo jasné, co tehdy viděl, musíme se vrátit k muži, který si udělal z demokracie dědictví.
   - kdo: ARCHIVÁŘ
     text: Ivar Messer udělal z úřadu imperátora doživotní a dědičnou funkci. V roce 2571 se oženil s technickou ředitelkou Delií Hassan a narodil se jim syn Deacon. Když Ivar v roce 2592 zemřel, nastoupil po něm. Messerové byli zpočátku oblíbení. Každý další z nich ale vládl tvrději, válčil ochotněji a víc kradl. Deacon Messer II. zvýšil výdaje na armádu, rozšířil pravomoci Advokacie, státní policie, a prodloužil tresty. Zároveň ale zdražil daně bohatým a ulevil chudým. Žádný Messer nebyl jen černý nebo bílý. Systém jako celek se ale s každou generací dal kontrolovat hůř a politický nesouhlas se pomalu měnil ve zločin.
+    obrazky:
+    - src: assets/dejiny/messer-nabor.webp
+      popisek: Rod Messerů · náborový plakát
+      zdroj: Obrázek z komunitní wiki · © Cloud Imperium Games
+    - src: assets/dejiny/advokacie.webp
+      popisek: Advokacie
+      zdroj: Obrázek z Galactapedie · © Cloud Imperium Games
   - kdo: ARCHIVÁŘ
     text: 'V roce 2603 se z temnoty vynořila přestavěná tevarinská flotila. Vedl ji válečník Corath’Thal. Sjednotil Tevariny rozptýlené po první válce a chtěl jediné: vrátit jim domovský svět. Na velkou válku neměl dost lodí. Vedl proto partyzánský boj, nenápadně se přesouval a udeřil vždy tam, kde armáda zrovna nebyla. Impérium nedokázalo odhadnout, kam zaútočí příště. Osadníci na Elysiu IV se chopili zbraní, aby bránili své domovy. Pro Tevariny to byl ukradený svět. Pro lidi, kteří se tam narodili, už to byl jediný domov, který znali. Válka trvala sedm let. Tevarinů ubývalo a nikdo je nemohl nahradit.'
+    obrazky:
+    - src: assets/dejiny/tevarin-valecnici.webp
+      popisek: Tevarinové · Corath’Thal
+      zdroj: Obrázek z komunitní wiki · © Cloud Imperium Games
   - kdo: ARCHIVÁŘ
     text: Konec přinesla jednotka, se kterou nikdo nepočítal. Letka 42 vznikla jako trestná jednotka pro piloty, kteří neposlechli rozkazy. Nová velitelka, kapitánka Alexandra Dunlevy, si ale všimla, jak jsou její piloti talentovaní, a nechala je rozhodovat podle sebe. Přišla jedna úspěšná mise za druhou. A ty letku nakonec přivedly do cesty Corath’Thalovi. 24. června 2610 přepadla letka v soustavě Centauri jeho flotilu, když se tlačila do skokového bodu k Elysiu, a vyřadila jí štíty. Velké lodě námořnictva pak tevarinskou armádu rozdrtily. Corath’Thal pochopil, že je prohráno. Se zbytkem věrných pilotů se vydal k domovskému světu. Cestou přišel o dalších sedmdesát procent lodí. Zbytek ale doletěl až do atmosféry. Tam Tevarinové sklopili tepelné štíty a vrhli se k povrchu. To bylo to, co Aaron Fring viděl z kopce. Namaloval to a obraz Slzy ohně patří k nejslavnějším obrazům té války. Sám o něm řekl, že ten okamžik byl tak krásný a tak smutný. Tevarinové se potom zřekli kultury, která je
       zklamala. Ničili své záznamy, bourali chrámy, zavrhli kodex Rijora a splynuli s impériem. Většina toho, co o jejich dávném životě víme, se zachovala jen díky lidem a Xi’anům.
+    obrazky:
+    - src: assets/dejiny/centauri.webp
+      popisek: Centauri · 24. 6. 2610
+      zdroj: Obrázek z Galactapedie · © Cloud Imperium Games
+    - src: assets/dejiny/tevarin-strmhlav.webp
+      popisek: Slzy ohně
+      zdroj: Obrázek z komunitní wiki · © Cloud Imperium Games
+    - src: assets/dejiny/slzy-ohne.webp
+      popisek: Slzy ohně · Aaron Fring
+      zdroj: Obrázek z komunitní wiki · © Cloud Imperium Games
+    - src: assets/dejiny/fring-galerie.webp
+      popisek: Slzy ohně · galerie
+      zdroj: Obrázek z comm-linku RSI · © Cloud Imperium Games
   - kdo: ARCHIVÁŘ
     text: V roce 2628 Deacon dobrovolně předal vládu dceři Livii. Livia nechala na planetě Charon III postavit politické vězníce. Zpřísnila dohled nad médii a fakticky zřídila úřad pro propagandu. V roce 2641 se nad Moskvou zřítil raketoplán. Livia přežila, její manžel a syn ne. O dva roky později odešla z veřejného života a vlády se ujal její bratr Corsen. Rozšířil trest smrti, zrušil soudy pro politické zločince a otevíral další vězení. Dal postavit monumentální budovy a starou stanici Icarus One mezi Zemí a Marsem nechal zničit jako přežitek.
+    obrazky:
+    - src: assets/dejiny/charon-iii.webp
+      popisek: Charon III
+      zdroj: Obrázek z Galactapedie · © Cloud Imperium Games
+    - src: assets/dejiny/moskva.webp
+      popisek: Moskva · 2641
+      zdroj: Obrázek z komunitní wiki · © Cloud Imperium Games
   - kdo: ARCHIVÁŘ
     text: 'Ne každý nepřítel ale přicházel zvenčí. 12. března 2638 vystoupil na předvolebním mítinku guvernér Terry Assan Kieren. Ohlásil, že Terra a sousední soustavy budou hlasovat o odtržení od impéria. Imperátorka podle něj žila v době, kdy se cizích civilizací bylo třeba bát. Na Terře ale lidé potkávali Banu i Xi’any každý den a věděli, že nejsou nepřátelé. Připomněl starou větu: kdo žije v očekávání války, dřív nebo později ji dostane. Státní propaganda se do něj pustila. Hlasování v květnu dopadlo proti němu. Pak se na Kierena začala sypat obvinění z nevěry, drog a korupce. Kieren tvrdil, že má důkazy o zfalšovaném hlasování, a podal žalobu na samotnou imperátorku. V listopadu Advokacie ohlásila, že odhalila síť xi’anských a lidských teroristů. Zatkla desítky lidí. Kierenova politická kariéra skončila. Další listopad zmizel. Co se s ním stalo, nikdo nikdy nezjistil.'
+    obrazky:
+    - src: assets/dejiny/terra-prime.webp
+      popisek: Terra · 12. 3. 2638
+      zdroj: Obrázek z komunitní wiki · © Cloud Imperium Games
+    - src: assets/dejiny/terra-noviny.webp
+      popisek: Terra · květen 2638
+      zdroj: Obrázek z comm-linku RSI · © Cloud Imperium Games
   - kdo: ARCHIVÁŘ
     text: Největší nebezpečí pro Messery ale vyrůstalo v jejich vlastním domě. V roce 2662 zemřeli otráveni imperátor Corsen a jeho starší syn. Vrah se nikdy nenašel. Historici se ale shodují, že za tím stála Corsenova dcera Illyana. Illyana pak propagandu paradoxně zmírnila. Za její vlády směla média vládu kritizovat bez trestu. Za nástupce určila mladšího syna Samuela, aby se děti nehádaly. Nepomohlo to. Když v roce 2697 zemřela, zmocnila se trůnu její neteř Astrid a dala Samuela hledat, aby ho zabila. Věrní ho stihli propašovat ze Země. Následovaly čtyři roky ozbrojených bojů mezi stoupenci obou stran. Novináře, kteří válku kritizovali, Astrid hromadně zatýkala. V roce 2701 ji zabili Samuelovi agenti. Samuel pak sám tvrdě potlačoval protesty, až ho v roce 2715 kdosi ubodal v posteli. Vlády se ujal jeho starší bratr Galor. Jako dítě vážně onemocněl a lékaři mu nedávali víc než dvacet let. Zemřel jako imperátor v pětaosmdesáti.
   - kdo: ARCHIVÁŘ
     text: V roce 2751 nastoupil jeho synovec Ulysses. Zrušil ochranu přírody i minimální mzdu, rozšířil pravomoci policie, přepsal zákony o velezradě a snížil věk, od kterého smějí děti pracovat, na deset let. Anthony Tanaka musel do továrny na munici už v sedmi letech. 3. prosince 2757, po šestnáctihodinové směně, odmítl zaskočit za spolupracovníka, který dostal anafylaktický šok. Bylo mu dvanáct. Agent Advokacie, který v továrně dělal ostrahu, ho za to zastřelil přímo u linky. Záznam vraždy se podařilo propašovat ven. Anthony se stal symbolem odporu proti Messerům a dodnes se na něj vzpomíná zvláštním svátkem. Jeho příběh zapůsobil právě proto, že nebyl abstraktní. Nebyl to graf ani statistika. Bylo to dítě.
+    obrazky:
+    - src: assets/dejiny/tanaka-pomnik.webp
+      popisek: Den Anthonyho Tanaky
+      zdroj: Obrázek z Galactapedie · © Cloud Imperium Games
   - kdo: ARCHIVÁŘ
     text: V roce 2781 přišel konec i pro Ulyssese. Svrhl ho vlastní syn Linton spolu se svou sestrou Fionou. Než se k němu Lintonovi agenti dostali, Ulysses si vzal život. Linton využil revoluční nálady, aby se dostal k moci. Jeho převrat ale ještě nebyl revolucí. Jeden Messer odstranil jiného a instituce, které umožnily zneužití moci, zůstaly na místě. Skutečná revoluce měla přijít, až se lidé přestanou ptát, který Messer má vládnout, a začnou se ptát, proč má vládnout nějaký Messer vůbec. Netušil, že stejné hnutí jednou přijde i pro něj.
 kap-7:
@@ -229,18 +433,62 @@ kap-7:
   odstavce:
   - kdo: ARCHIVÁŘ
     text: Osada Dell na planetě Armitage v soustavě Orion sloužila k čištění vody. Žilo v ní 638 lidí. V srpnu 2681 s ní přestalo fungovat spojení. Trvalo týdny, než se tam někdo vypravil zjistit proč. Osadu našli v popelu. Advokacie poslala na místo vyšetřovatele. Jeho hlášení se zachovalo. Útočníci podle něj osadu ostřelovali z mnoha malých lodí a z mnoha směrů. Pak přistáli a prošli dům po domu. Zabili všechno a všechny. Některé věci byly zvláštní. Komunikační věž nebyla hlavním cílem, přestože by si ji obyčejní piráti vybrali jako první. Útočníci odnesli bezcenné drobnosti a cennosti nechali ležet. A nábojnice rozházené po osadě nevypadaly, že by je vyrobili lidé. Mezi mrtvými chyběl jediný člověk. Osmatřicetiletý farmář John Phillips. Malá kamera, která útok nějak přežila, zachytila jediný použitelný snímek jednoho z útočníků. Ten tvor nebyl člověk. Lidé mu začali říkat Vanduul.
+    obrazky:
+    - src: assets/dejiny/orion-krajina.webp
+      popisek: Armitage, Orion · 2681
+      zdroj: Obrázek z comm-linku RSI · © Cloud Imperium Games
+    - src: assets/dejiny/orion-trosky.webp
+      popisek: Dell · v popelu
+      zdroj: Obrázek z comm-linku RSI · © Cloud Imperium Games
+    - src: assets/dejiny/vanduul-zaznam.webp
+      popisek: Jediný snímek
+      zdroj: Obrázek z Galactapedie · © Cloud Imperium Games
+    - src: assets/dejiny/vanduul.webp
+      popisek: Vanduul
+      zdroj: Obrázek z Galactapedie · © Cloud Imperium Games
   - kdo: ARCHIVÁŘ
     text: Úřady nejdřív věřily, že osadu vyplenili psanci. S prvním vanduulským klanem se armáda střetla až 15. září 2681. Vanduulové nemají společnou vládu ani velení. Každý klan si vládne sám a jejich domovský svět nikdo nezná. Impérium jim proto nemohlo vyhlásit válku ani s nimi uzavřít mír. Všechny pokusy o jednání selhaly a každé další setkání skončilo masovým zabíjením. Nájezdy se opakovaly. Kvůli nim se zastavil růst soustavy Virgil, odkud vyráželi průzkumníci dál do neznáma, a odložilo se i hledání nových světů.
+    obrazky:
+    - src: assets/dejiny/vanduul-klany.webp
+      popisek: Vanduulské klany
+      zdroj: Obrázek z komunitní wiki · © Cloud Imperium Games
+    - src: assets/dejiny/vanduul-najezd.webp
+      popisek: Nájezdy
+      zdroj: Obrázek z Galactapedie · © Cloud Imperium Games
+    - src: assets/dejiny/virgil-mraky.webp
+      popisek: Virgil
+      zdroj: Obrázek z comm-linku RSI · © Cloud Imperium Games
   - kdo: ARCHIVÁŘ
     text: Nejhorší přišlo 16. února 2712. Z dosud neznámého skokového bodu se do Orionu vyhrnuly tisíce vanduulských lodí. Uprostřed nich byla obří loď, jakou lidé nikdy předtím neviděli. Námořnictvo jí začalo říkat Kingship. Je to obrněná bitevní loď, letadlová loď, velitelské centrum i výsadková loď v jednom. Pro klan je symbolem moci a síly. Bitva skončila prakticky dřív, než začala. Po dvou dnech muselo impérium Orion vydat. Byla to největší porážka od ztráty Idrisu za první tevarinské války. Námořnictvo ustoupilo do sousední soustavy Tiber. A čekalo na další úder. Ten ale nepřišel. Vanduulové zůstali v Orionu přes rok, vytěžili jeho planety a pak se stáhli. Právě to bylo možná nejnebezpečnější. Vláda začala věřit, že Vanduulům jde hlavně o kořist a že když ji dostanou, zastaví se. V roce 2715 dal imperátor Samuel Messer soustavu Orion i skoky do ní vymazat ze všech nevojenských map. Prý pro veřejné blaho.
+    obrazky:
+    - src: assets/dejiny/kingship.webp
+      popisek: Kingship
+      zdroj: Obrázek z komunitní wiki · © Cloud Imperium Games
+    - src: assets/dejiny/tiber-soustava.webp
+      popisek: Tiber
+      zdroj: Obrázek z Galactapedie · © Cloud Imperium Games
   - kdo: ARCHIVÁŘ
     text: V Tiberu mezitím rostla obrana. Vláda usoudila, že tak velký útok spojených klanů se už nebude opakovat. Čtrnáct let se nic nedělo. Teprve 4. února 2726 vyletěla ze skokového bodu z Orionu jediná vanduulská stíhačka. Do konce roku už klany Tiber napadaly pravidelně. 19. dubna 2732 obsadil velký klan skokový bod z Orionu. Začalo obléhání Tiberu. Velkoadmirál Tesca Halimeade přivedl čtyři bitevní skupiny. Zakázal ale na Vanduuly útočit. Doufal, že obrana je zdrží a on mezitím najde cestu k jednání. Velké lodě zůstaly v docích. Klany, které boje do Tiberu přitáhly, se mezitím rvaly mezi sebou o stanice a základny. Na začátku roku 2734 prorazily tři vítězné klany obranu planety Tiber II, vysadily obří těžební stroje a postavily na ní tábory. Halimeade musel změnit taktiku. Vlajkovou lodí Aquilon lákal Vanduuly z planety do boje a bombardéry mezitím ničily jejich nechráněné tábory. Fungovalo to. Jenže za každý poražený klan přiletěl nový. 4. listopadu 2735 vlétl Halimeade do léčky.
       Z dalšího neznámého skokového bodu se vyhrnuly stovky Vanduulů. Aquilon zanikl i s celou posádkou. Admirálka Mira Triolo útočila přímo a ztráty prudce rostly. Za každý zničený těžební stroj Vanduulové shodili dva nové a morálka se hroutila. V září 2736 nařídil imperátor Galor Messer srovnat Tiber II se zemí. Bombardování v listopadu zničilo všechny vanduulské tábory na planetě. Impérium planetu dobylo zpět. Dvě bitevní skupiny odletěly na opravy. Vítězství se zdálo na dosah.
+    obrazky:
+    - src: assets/dejiny/tiber-obleh.webp
+      popisek: Tiber II · 2734
+      zdroj: Obrázek z Galactapedie · © Cloud Imperium Games
   - kdo: ARCHIVÁŘ
     text: 29. prosince 2736 vlétl z Orionu do Tiberu další Kingship. Za půl dne zničil tři čtvrtiny lodí 81. bitevní skupiny. Admirálka Triolo poslala zbytek do Virgilu a sama zůstala s 6. bitevní skupinou, aby držela linii. Obléhání trvalo čtyři roky. Obě strany v něm podle opatrných odhadů ztratily dohromady miliony životů.
   - kdo: ARCHIVÁŘ
     text: Ve Virgilu leží planeta Cyrene, kdysi rozkvetlá zahrada plná letovisek a úrodných polí. Kdo měl peníze, utekl už na začátku obléhání. Chudí žádali vládu o pomoc s přesídlením. Imperátor Galor to odmítl. Cyrene si podle něj nemohla dovolit přijít o další dělníky. Mnozí proto zaplatili pašerákům. Jiní zůstali a věřili, že impérium zvítězí. Když do Virgilu dorazily trosky 81. bitevní skupiny, vypukla panika. Místní rada lidi uklidňovala, že po Orionu se Vanduulové také zastavili. Přitom za tři dny dostala pryč přes milion lidí. 2. ledna 2737 padla 6. bitevní skupina v Tiberu. Za pár hodin vlétl Kingship do Virgilu a zamířil přímo na Cyrene. Letka 214 kryla poslední transporty. Když proletěly skokovým bodem, otočila se a vrátila se pro další lidi. Stihla to ještě dvakrát. Vanduulové pak útočili tak dlouho, dokud v soustavě nezůstal nikdo živý. Povrch Cyrene zmizel pod radioaktivním popelem a přišla jaderná zima. Statisíce lidí a Tevarinů, kteří nestihli utéct, zahynuly. Vojenská katastrofa
       se tak změnila i v sociální. Kdo měl peníze nebo loď, odletěl včas. Chudí čekali na pomoc, která nepřišla. Vojenská pomoc, o kterou rada žádala, dorazila za víc než týden. To už nebylo co zachraňovat.
+    obrazky:
+    - src: assets/dejiny/cyrene.webp
+      popisek: Cyrene, Virgil I
+      zdroj: Obrázek z Galactapedie · © Cloud Imperium Games
+    - src: assets/dejiny/letka-214.webp
+      popisek: Letka 214
+      zdroj: Obrázek z comm-linku RSI · © Cloud Imperium Games
+    - src: assets/dejiny/cyrene-trosky.webp
+      popisek: Cyrene · 2737
+      zdroj: Obrázek z komunitní wiki · © Cloud Imperium Games
   - kdo: ARCHIVÁŘ
     text: Po Orionu se Vanduulové zastavili. Tentokrát ustupující lodě následovali. Když válka trvá dost dlouho, stane se součástí běžného života. Dokud nepřijde další Kingship a nepřipomene, co ta běžnost znamená. Válka, kterou nikdo nevyhlásil, teprve začínala.
 kap-8:
@@ -250,22 +498,66 @@ kap-8:
   odstavce:
   - kdo: ARCHIVÁŘ
     text: '29. května 2789. Loď LightHammer hlídala hranici s Xi’any, přímo naproti xi’anské válečné lodi. Posádka jí říkala zrcadlo. Obě lodě se léta pozorovaly a čekaly, která udělá první chybu. Toho dne se nedělo nic. Posádka se nudila a v jídelně se lidé hádali. Ve 15.34 se v lodním deníku objevil zápis, jaký tam ještě nikdo nepsal. Senátor Terrence Akari z Terry prý na vlastní pěst uzavřel s Xi’any mírovou smlouvu. Platit měla od sedmi večer. Lidé si mysleli, že je to vtip. Že se někdo naboural do zpravodajství. Nemělo by se Akariho zatknout pro velezradu? Všechny lodě byly v pohotovosti a čekaly na nějakou léčku. V 19.02 xi’anské zrcadlo odvolalo hlídky, vypnulo zbraně a odletělo. Důstojník do deníku jen napsal: asi máme mír? Po více než dvou stoletích napětí se najednou nic nestalo. Právě to bylo nejpodivnější.'
+    obrazky:
+    - src: assets/dejiny/lighthammer-mustek.webp
+      popisek: LightHammer · 29. 5. 2789
+      zdroj: Obrázek z comm-linku RSI · © Cloud Imperium Games
   - kdo: ARCHIVÁŘ
     text: Celé to začalo o čtrnáct let dřív jedním zvídavým dopisem. Terrence Akari se odjakživa zajímal o xi’anskou kulturu. Když něčemu nerozuměl, využil svého postavení a poslal otázku xi’anské vládě. K jeho překvapení mu začal odpovídat sám císař Kr.ē. Dopisů přibývalo a oba muži začali rozebírat, jak by mohl vypadat mír. Doba tomu přála. Obě říše stály na pokraji války přes dvě stě let a hlídání hranic polykalo peníze, které chyběly jinde. Xi’anské rody protestovaly, že musí posílat své děti proti nepříteli. A lidé začali pochybovat, jestli jsou Xi’ani opravdu příčinou všech jejich potíží, když je mezitím vraždili Vanduulové. Imperátor Linton Messer navíc nebyl oblíbený. Slíbil, že otcovy kruté zákony zruší, a pak je nechal platit. Kdo se mu postavil, rychle za to zaplatil, a tak ztratil většinu spojenců v Senátu i v armádě.
+    obrazky:
+    - src: assets/dejiny/terrence-akari.webp
+      popisek: Terrence Akari
+      zdroj: Ilustrační obrázek
+    - src: assets/dejiny/xian-lode.webp
+      popisek: Císař Kr.ē
+      zdroj: Obrázek z comm-linku RSI · © Cloud Imperium Games
+    - src: assets/dejiny/linton-messer.webp
+      popisek: Linton Messer XI.
+      zdroj: Ilustrační obrázek
   - kdo: ARCHIVÁŘ
     text: V roce 2789 se Akari s císařem dohodli, že se setkají osobně. Vybrali soustavu Tohil na hranici obou říší, kde nebyla armáda. Akari se musel ukrýt před vlastní vládou. Kdyby ho chytili, skončil by v převýchovném táboře za spolupráci s cizí mocností. Pomohl mu velitel tamní Advokacie Nathan Warrick. Spojil ho s pašeráky, kteří přes nikým neovládanou soustavu Nyx převáželi odpůrce Messerů. Riskovali oba. Akariho mohli kdykoli zatknout a císař už jen tím, že vstoupil do Tohilu, riskoval válku. 11. března byla smlouva hotová. Císař ji podepsal a odletěl ji nechat schválit domů. Akari se vrátil na Zemi a čekal na příležitost. 29. května odjeli Linton a jeho sestra Fiona na dovolenou do soustavy Goss. Akari svolal mimořádné zasedání Senátu a nechal o smlouvě okamžitě hlasovat. Bez imperátora neměl kdo zorganizovat odpor a smlouva těsně prošla. Proto ta zpráva na palubě LightHammeru. 29. května se dodnes slaví jako Den příměří. Akari se pak musel skrývat. Jeho čin ale v lidech zasel otázku.
       Pokud Xi’ani nebyli nepřítelem, co ještě byla lež?
+    obrazky:
+    - src: assets/dejiny/tohil.webp
+      popisek: Tohil
+      zdroj: Obrázek z comm-linku RSI · © Cloud Imperium Games
   - kdo: ARCHIVÁŘ
     text: Odpověď přišla v roce 2792. Garron II byl svět plný života. Žily na něm nespočetné druhy zvířat a rostlin a rodila se tam civilizace. Linton Messer prodal práva na jeho terraformaci společnosti napojené na svou rodinu. Firma i imperátor věděli, že tam žije druh, který prokazatelně myslí. Terraformace ho vyhubila. Spolu s většinou všeho ostatního života na planetě. Nebylo to nedorozumění ani chyba techniky. Bylo to politické rozhodnutí.
+    obrazky:
+    - src: assets/dejiny/garron-ii.webp
+      popisek: Garron II
+      zdroj: Obrázek z Galactapedie · © Cloud Imperium Games
+    - src: assets/dejiny/garron-mrtvy.webp
+      popisek: Garron II · 2792
+      zdroj: Obrázek z comm-linku RSI · © Cloud Imperium Games
   - kdo: ARCHIVÁŘ
     text: Celé to ale někdo natočil. Hnutí Tide, česky Příliv, mělo buňky skoro na všech lidských planetách. Každá jednala sama a o ostatních věděla jen málo, aby prozrazení jedné nezničilo celek. Organizovalo protesty, šířilo informace o zločinech Messerů a pokoušelo se osvobozovat politické vězně. Mezi jeho členy byli i senátoři, například Erin Toi. Informace mu tajně dodávala i Lintonova sestra Fiona. Chtěla bratra svrhnout a zdědit jeho místo. Jenže revoluce málokdy zůstane v rukou toho, kdo ji pomáhal spustit. 11. dubna 2792 se večerní zprávy na Terře zrovna věnovaly chystané svatbě v rodině Messerů. Pak vysílání přerušil cizí hlas. Lidé soustav, tady Tide. Strhněte si z očí závoj a podívejte se sami. A celé impérium vidělo, co se stalo na Garronu II.
+    obrazky:
+    - src: assets/dejiny/garron-video.webp
+      popisek: Záznam Tide
+      zdroj: Obrázek z comm-linku RSI · © Cloud Imperium Games
+    - src: assets/dejiny/fiona-messer.webp
+      popisek: Fiona Messer
+      zdroj: Ilustrační obrázek
   - kdo: ARCHIVÁŘ
     text: 'Tři hodiny po vysílání hlásila policie první nepovolené shromáždění. Za další dvě hodiny volala o pomoc armádu, protože jí hrozilo, že bude přemožena. Druhý den nařídil admirál Tal Kale zastavit veškerý provoz skokovými body a střílet do každé lodi, která neuposlechne. Povstalci si ale našli cestu. Své zprávy schovávali přímo do vojenské komunikace. Fiona si do deníku zapsala, že se vzpoura šíří příliš rychle, než aby ji šlo ovládnout. Šestnáctý den zahájily armáda a policie na planetě Vale palbu do pokojných demonstrantů. Zemřelo přes 230 lidí. Letáky v soustavě Croshaw odpověděly: snažili jsme se zůstat slušní. Už ne. Svrhněte imperátora z trůnu. Tím se zhroutil poslední zbytek poslušnosti.'
+    obrazky:
+    - src: assets/dejiny/rise-up.webp
+      popisek: Příliv · duben 2792
+      zdroj: Obrázek z comm-linku RSI · © Cloud Imperium Games
   - kdo: ARCHIVÁŘ
     text: 'Dvacátý druhý den, 2. května 2792, revolucionáři Lintona dostihli a popravili ho v jeho posteli. Fiona zmizela beze stopy. Po dvou stech čtyřiceti šesti letech éra Messerů skončila. Novou imperátorkou se stala Erin Toi. Řekla jen: probudili jsme se z noční můry. Noviny, které léta sloužily imperátorovi, mohly konečně psát pravdu bez cenzorů za zády. Toi omezila vládu imperátora časem a obnovila Tribunál. Ten teď mohl imperátora zbavit moci, kdyby se o ni znovu pokusil nějaký tyran.'
+    obrazky:
+    - src: assets/dejiny/erin-toi.webp
+      popisek: Imperátorka Erin Toi
+      zdroj: Ilustrační obrázek
   - kdo: ARCHIVÁŘ
     text: V roce 2793 rozdělil Pakt o Perryho linii osm sporných soustav napůl mezi lidi a Xi’any. Obě strany slíbily společně odstranit miny a nechat hranice otevřené. Studená válka po dvou stech šedesáti letech oficiálně skončila. Na Zemi začaly soudy s pohlaváry Messerovy vlády. Zpravodajství je vysílalo živě. Většina odsouzených dostala doživotí, někteří omilostnění ale v nové vládě dál sloužili. Nová vláda tak nebyla čistým začátkem. Byla pokusem přestavět systém, aniž by se celý zhroutil. V roce 2795 přijal Senát zákon Fair Chance. Planety, na kterých se rodí myslící život, jsou od té doby nedotknutelné. Nikdo na nich nesmí terraformovat, těžit ani navazovat kontakt. Na Garronu II se lidé dodnes pokoušejí obnovit, co zničili. Terrence Akari odmítl místo velvyslance u Xi’anů. Zůstal v Senátu a pomáhal impérium přestavět. Záznamy o něm se ale rozcházejí. Podle jednoho zemřel v úřadu roku 2833, podle druhého odešel ze Senátu roku 2812 a zemřel roku 2859. Neshodují se ani v tom, kdo jeho
       smlouvu tehdy schválil. Jeden mluví o těsném hlasování Senátu, druhý o jednomyslném souhlasu rady guvernérů Terry. Jisté je, co po něm zůstalo. Mír, který si před ním téměř nikdo netroufl navrhnout, a otázka, která pomohla zničit nejdéle trvající diktaturu lidských dějin.
+    obrazky:
+    - src: assets/dejiny/fair-chance.webp
+      popisek: Fair Chance · 2795
+      zdroj: Obrázek z Galactapedie · © Cloud Imperium Games
 kap-9:
   nazev: IX. Archa a umělý svět
   podtitul: 2800–2884
@@ -273,16 +565,71 @@ kap-9:
   odstavce:
   - kdo: ARCHIVÁŘ
     text: Rok 2800. Na orbitální stanici se konala slavnost, jakou lidstvo ještě nezažilo. Mezi hosty byli vyslanci Xi’anů, Banu i delegace Tevarinů. Pozvat se pokusili i Vanduuly. Nepovedlo se to. Marshall Leon utišil dav a začal slovem vítejte. Podle něj se to slovo s lidstvem dlouho nespojovalo. Přiznal, že lidé byli po celá temná staletí nesnášenliví, nedůvěřiví a krutí. Ale že se lidé můžou změnit. Pak otevřel dveře Archy. Archa je obří knihovna a archiv vědění všech známých civilizací. Pojmenovali ji po biblické lodi. Záměrně nestojí na žádné planetě. Patřila by totiž druhu, který na ní žije. Archa měla patřit všem. Měla být i neutrální půdou, kde se zástupci různých ras mohou setkat a řešit spory rozhovorem místo zbraní.
+    obrazky:
+    - src: assets/dejiny/archa.webp
+      popisek: Archa · 2800
+      zdroj: Obrázek z comm-linku RSI · © Cloud Imperium Games
+    - src: assets/dejiny/marshall-leon.webp
+      popisek: Marshall Leon
+      zdroj: Ilustrační obrázek
+    - src: assets/dejiny/archa-knihovna.webp
+      popisek: Archa · archiv vědění
+      zdroj: Obrázek z komunitní wiki · © Cloud Imperium Games
   - kdo: ARCHIVÁŘ
     text: Marshall Leon začínal v sociálních službách. Pak byl senátorem a za vlády Erin Toi vedl diplomacii impéria. Archu si vymyslel právě tehdy. Senát ji schválil v roce 2794 a za šest let byla hotová. Erin Toi ho podpořila ve volbách a v roce 2801 se stal imperátorem. Po skončení vlády zasedl ve vedení Archy a zůstal v něm až do smrti. Nová vláda se snažila zlo minulosti nejen odsoudit, ale i pojmenovat. V roce 2806 vznikla komise pro pravdu a smíření a zveřejnila tisíce tajných záznamů z doby Messerů. Právě z nich se později vynořila stopa, která vedla od atentátů v Jatě k Ivaru Messerovi.
   - kdo: ARCHIVÁŘ
     text: Dobré úmysly ale stály peníze. A těch se nedostávalo. Navjumperka Toshi Aaron snila o objevu skokového bodu od dětství. Peníze na to neměla. Brala proto nebezpečné a dobře placené práce na rybářských lodích v oceánech soustavy Magnus a mimo sezónu pátrala po anomáliích. Týden před svými devětačtyřicátými narozeninami, v roce 2851, zachytila zvláštní signál. O pár dní později se vrátila s plně vybavenou lodí a vletěla do skokového tunelu. Po několika děsivých chvílích se ocitla na druhé straně. Novou soustavu pojmenovala Stanton, po svém zesnulém bratrovi. Byla to senzace. Všechny tři kamenné planety ležely v pásmu, kde se dá žít, a ze soustavy vedl skok přímo na Terru. Impérium soustavu hned zabralo. Jenže inženýři námořnictva spočítali, že terraformace by stála mnohem víc, než měla vláda bez peněz k dispozici. Úředníci se dohadovali. Námořnictvo mezitím postavilo v atmosféře plynného obra loděnici a začaly první úpravy planet. V roce 2865 hrozil impériu schodek, který mohl odstartovat
       recesi. Senát oznámil, že planety soustavy prodá tomu, kdo nabídne nejvíc. Po dlouhém jednání za zavřenými dveřmi si je rozdělily čtyři korporace. Hurston Dynamics na první planetě hned začala těžit. Crusader Industries převzala plynného obra i s rozestavěnou loděnicí. ArcCorp zastavěla třetí planetu a microTechu se mrazivé podnebí čtvrté hodilo na chlazení serverů. Stanton je dodnes v podstatě obří obchodní zóna. Zákony impéria tam platí, ale prosazuje je ochranka korporací. Pro někoho je to efektivita. Pro jiného důkaz, že stát prodal část své odpovědnosti tomu, kdo měl dost peněz.
+    obrazky:
+    - src: assets/dejiny/toshi-aaron.webp
+      popisek: Toshi Aaron
+      zdroj: Ilustrační obrázek
+    - src: assets/dejiny/stanton.webp
+      popisek: Stanton · 2851
+      zdroj: Obrázek z Galactapedie · © Cloud Imperium Games
+    - src: assets/dejiny/crusader.webp
+      popisek: Crusader
+      zdroj: Obrázek z Galactapedie · © Cloud Imperium Games
+    - src: assets/dejiny/hurston.webp
+      popisek: Hurston
+      zdroj: Obrázek z Galactapedie · © Cloud Imperium Games
+    - src: assets/dejiny/arccorp.webp
+      popisek: ArcCorp
+      zdroj: Obrázek z comm-linku RSI · © Cloud Imperium Games
+    - src: assets/dejiny/microtech.webp
+      popisek: microTech
+      zdroj: Obrázek z comm-linku RSI · © Cloud Imperium Games
   - kdo: ARCHIVÁŘ
     text: V roce 2871 se imperátorem stal Corbyn Salehi. Slíbil otevřenou vládu a konec korupce. Odtajnil tisíce záznamů, podpořil vyšetřování úředníků podezřelých z korupce a rozšířil ochranu planet podle zákona Fair Chance. V březnu 2872 pak v Senátu ohlásil plán, který měl terraformaci navždy nahradit. Projekt Archangel měl postavit celou planetu od základů. Lidé by už nemuseli přetvářet světy, na kterých může vznikat život. Pro stavbu vybrali soustavu Chronos s hvězdou podobnou Slunci, kde v obyvatelném pásmu žádná planeta nebyla. I xi’anský císař Kr.ē vzkázal, že je to velmi povzbudivé a že jeho lid bude projekt sledovat se zájmem. Salehi slíbil, že si lidé tuto techniku nenechají pro sebe. Schopnost stavět světy má patřit všem, aby už nikdo nemusel bojovat o půdu. Po konci své vlády se Salehi postavil do čela projektu. Zemřel v roce 2922. Synthworld dodnes není hotový. Zpoždění, finanční skandály a nedohledný konec z něj udělaly jedno z nejspornějších témat impéria. Stanton a Synthworld
       přitom odpovídají na stejnou otázku. Co udělá civilizace, když potřebuje další prostor, ale už nemůže předstírat, že každý nový svět je prázdný a zadarmo? Ve Stantonu zvítězil trh. V Chronosu obří státní projekt. Ani jedno řešení není bez problémů.
+    obrazky:
+    - src: assets/dejiny/corbyn-salehi.webp
+      popisek: Corbyn Salehi
+      zdroj: Ilustrační obrázek
+    - src: assets/dejiny/synthworld-noviny.webp
+      popisek: Projekt Archangel · 2872
+      zdroj: Obrázek z comm-linku RSI · © Cloud Imperium Games
+    - src: assets/dejiny/synthworld.webp
+      popisek: Synthworld
+      zdroj: Obrázek z Galactapedie · © Cloud Imperium Games
+    - src: assets/dejiny/synthworld-dira.webp
+      popisek: Díra na peníze
+      zdroj: Obrázek z comm-linku RSI · © Cloud Imperium Games
   - kdo: ARCHIVÁŘ
     text: Zatímco se stavěl nový svět, staré se ztrácely. Soustavu Caliban napadali menší vanduulští nájezdníci už od roku 2739. Obyvatelé planety Crion žádali o ochranu, ale Messerové žádnou další pomoc neposlali. Když v roce 2792 padal jejich režim, armáda z Calibanu odletěla potlačovat povstání. Vanduulský klan toho využil a zabil přes sto lidí. Nová vláda poslala bitevní skupinu a nájezdy se vrátily na zhruba pět ročně. Po velkém střetu v roce 2859 nastal klid. Trval tak dlouho, že bitevní skupinu v roce 2870 převeleli jinam. Jedinou vojenskou jednotkou na místě zůstala logistická letka číslo 89. Jednotka určená k podpoře, ne k zastavení velké invaze. Po letech klidu to vypadalo jako přijatelné riziko. 7. července 2884 ve 4.43 proklouzl kolem senzorů soustavy vanduulský klan. Vedl ho Kingship. Co se stalo potom, vypráví příběh Ztracené letky.
+    obrazky:
+    - src: assets/dejiny/crion.webp
+      popisek: Crion, Caliban
+      zdroj: Obrázek z Galactapedie · © Cloud Imperium Games
+    - src: assets/dejiny/letka-89.webp
+      popisek: Letka 89
+      zdroj: Obrázek z comm-linku RSI · © Cloud Imperium Games
+    - src: assets/dejiny/caliban-vanduulove.webp
+      popisek: Caliban · 7. 7. 2884
+      zdroj: Obrázek z comm-linku RSI · © Cloud Imperium Games
+    - src: assets/dejiny/pad-calibanu.webp
+      popisek: Pád Calibanu
+      zdroj: Obrázek z Galactapedie · © Cloud Imperium Games
 kap-10:
   nazev: X. Válka bez konce
   podtitul: 2945–2956
@@ -290,18 +637,72 @@ kap-10:
   odstavce:
   - kdo: ARCHIVÁŘ
     text: 5. října 2945. Planeta Aremis v soustavě Vega. Proslula svými prstenci. Velkou část jejích obyvatel tvořili potomci uprchlíků, kteří sem před dvěma sty lety utekli z hořícího Virgilu. Ten den do soustavy vlétl velký vanduulský klan. Vedl ho Kingship. Útok zdevastoval hlavní město New Corvo. Druhá flotila admirála Ernsta Bishopa se postavila přesile do zoufalé bitvy. A pak se stalo něco, co se lidem ještě nikdy nepodařilo. Kingship byl zničen. Přeživší Vanduulové ze soustavy uprchli. Bylo to vítězství. A zároveň konec iluze, že útoky lze dál považovat za sérii pohraničních incidentů.
+    obrazky:
+    - src: assets/dejiny/aremis.webp
+      popisek: Aremis, Vega II · 5. 10. 2945
+      zdroj: Obrázek z Galactapedie · © Cloud Imperium Games
+    - src: assets/dejiny/vanduul-flotila.webp
+      popisek: Vanduulský klan
+      zdroj: Obrázek z komunitní wiki · © Cloud Imperium Games
+    - src: assets/dejiny/new-corvo-trosky.webp
+      popisek: New Corvo
+      zdroj: Obrázek z komunitní wiki · © Cloud Imperium Games
+    - src: assets/dejiny/ernst-bishop.webp
+      popisek: Admirál Ernst Bishop
+      zdroj: Obrázek z komunitní wiki · © Cloud Imperium Games
   - kdo: ARCHIVÁŘ
     text: Od pádu Calibanu uplynulo šedesát let. Vanduulové za tu dobu nikdy nepřestali útočit, ale impérium se naučilo s tím žít. Lidé měli jiné starosti. V roce 2920 nazvala jedna novinářka projekt Synthworld finančním skokovým bodem, do kterého peníze jen mizí a už se nevrátí. Po padesáti letech měli lidé místo planety jen nestabilní hroudu hmoty. A podle ní kvůli tomu strádala armáda i infrastruktura. Pro jedny představoval Synthworld budoucnost, kterou nelze vzdát. Pro druhé důkaz, že stát nedokáže přiznat neúspěch. Kelos Costigan, bývalý obchodník s komoditami, slíbil, že ekonomiku postaví na nohy. Napoprvé neuspěl. V roce 2940 ho zvolili imperátorem. Rok nato Senát přijal zákon o historické pravdě. Odtajnil tisíce dokumentů z doby Messerů. Vyšly najevo tajné vojenské záznamy, utajované lodě i projekty a osudy lidí, kteří kdysi beze stopy zmizeli. Z těchto spisů čerpá i tato kronika.
+    obrazky:
+    - src: assets/dejiny/kelos-costigan.webp
+      popisek: Kelos Costigan
+      zdroj: Obrázek z komunitní wiki · © Cloud Imperium Games
+    - src: assets/dejiny/kelos-cares.webp
+      popisek: Kelos Cares · 2940
+      zdroj: Obrázek z komunitní wiki · © Cloud Imperium Games
   - kdo: ARCHIVÁŘ
     text: Útok na Vegu II ukázal, že se po více než dvou a půl stoletích šarvátek už nedá předstírat mír. 10. října přednesl admirál Bishop v Senátu vášnivý projev. Imperátor Kelos Costigan pak požádal o vyhlášení války a Senát ji v listopadu 2945 schválil. Senát v závěru roku 2945 formálně uznal Aremis za planetu impéria. New Corvo se dodnes vzpamatovává. Roste ale rychleji než kdy dřív a proslulo odvážnou architekturou a kuchyní.
+    obrazky:
+    - src: assets/dejiny/bishop-senat.webp
+      popisek: Senát · 10. 10. 2945
+      zdroj: Obrázek z komunitní wiki · © Cloud Imperium Games
+    - src: assets/dejiny/new-corvo.webp
+      popisek: New Corvo dnes
+      zdroj: Obrázek z komunitní wiki · © Cloud Imperium Games
+    - src: assets/dejiny/novy-usvit.webp
+      popisek: Nový úsvit
+      zdroj: Obrázek z comm-linku RSI · © Cloud Imperium Games
   - kdo: ARCHIVÁŘ
     text: Po krvavých vanduulských útocích na soustavu Uriel, kde zemřely nebo zmizely tisíce lidí, získalo námořnictvo zprávy, že klan chystá další úder na soustavu Oberon. Bishop poslal napřed malý úderný oddíl. Když se Vanduulové objevili, vrhl se na ně dřív, než stihli napadnout další osadu. Pak do soustavy vplula nová vlajková loď Retribution, odřízla jim únikové cesty a zbytek klanu zničila. Operace Mandrake byla jasné vítězství. Po desetiletích, kdy Vanduulové určovali místo i čas útoků, začalo námořnictvo přebírat iniciativu. Válka změnila i politiku.
+    obrazky:
+    - src: assets/dejiny/uriel.webp
+      popisek: Uriel
+      zdroj: Obrázek z Galactapedie · © Cloud Imperium Games
+    - src: assets/dejiny/retribution.webp
+      popisek: Retribution
+      zdroj: Obrázek z Galactapedie · © Cloud Imperium Games
   - kdo: ARCHIVÁŘ
     text: Costigan s Xi’any tajně vyjednal obchodní dohodu. Měla deset tisíc stran a jednalo se o ní vždy jen mezi dvěma lidmi, aby nikdo nemohl spekulovat. Před hlasováním na Costigana na bankovním summitu v New Yorku zaútočil žoldák Maurice Vano. Imperátor vyvázl bez zranění. Zahynul ale jeden z mariňáků jeho ochranky. Vano zemřel na útěku. V krvi měl velké množství xi’anské drogy, která je pro lidi nebezpečná. Advokacie případ uzavřela s tím, že jednal sám. Mnozí tomu dodnes nevěří, protože se mu podařilo obejít přísná bezpečnostní opatření. Útok paradoxně zvýšil podporu dohody. Senát ji těsně schválil.
   - kdo: ARCHIVÁŘ
     text: 1. ledna 2951 složila přísahu nová imperátorka Laylani Addison. Nebyla v žádné straně. Byla profesorkou mimozemských technologií a děkankou univerzity. Slíbila víc peněz pro vědu, školy i Synthworld. Chce poprvé po staletích uvolnit omezení výzkumu umělé inteligence. A chce založit vládní program, který bude hledat ztracenou loď Artemis. Civilizace, která se kdysi bála, že umělá inteligence zničila první loď mířící ke hvězdám, teď zvažuje, že se k ní vrátí. Do vlády jmenovala první Tevarinku, Ki Jotal. Svěřila jí úřad pro dopravu a navigaci. Národ, který lidé kdysi porazili a vyhnali z domova, má dnes hlas ve vládě.
+    obrazky:
+    - src: assets/dejiny/addison-noviny.webp
+      popisek: Imperátorka Laylani Addison · 2951
+      zdroj: Obrázek z comm-linku RSI · © Cloud Imperium Games
+    - src: assets/dejiny/debata-2950.webp
+      popisek: Volby 2950
+      zdroj: Obrázek z comm-linku RSI · © Cloud Imperium Games
+    - src: assets/dejiny/addison-plakat.webp
+      popisek: Pokrok · věda · vzdělání
+      zdroj: Obrázek z komunitní wiki · © Cloud Imperium Games
   - kdo: ARCHIVÁŘ
     text: Rok 2956 běží souběžně s naším časem a příběh se stále píše. V korporátním Stantonu i v Pyru, nikým nespravované soustavě kolem nevyzpytatelné hvězdy, kde vládnou gangy, dnes létají lidé jako ty. Kurýři, horníci, žoldáci i piráti. Vanduulská hrozba nezmizela, korporace nepolevily a Synthworld stojí nedokončený. První kapitola této kroniky začala mužem, který své dceři sliboval hvězdy. Od té doby lidstvo přetvořilo planety, prošlo skokovými body a potkalo cizí civilizace. Vytvořilo impérium, ztratilo demokracii a znovu ji získalo. Zničilo celé světy a pokusilo se postavit nový. Cena byla obrovská. A příběh není hotový. Poslední stránka této kroniky zůstává prázdná. Je na tobě, co na ni napíšeš.
+    obrazky:
+    - src: assets/dejiny/pyro.webp
+      popisek: Pyro
+      zdroj: Obrázek z comm-linku RSI · © Cloud Imperium Games
+    - src: assets/dejiny/pyro-frakce.webp
+      popisek: Pyro · frakce
+      zdroj: Obrázek z komunitní wiki · © Cloud Imperium Games
 letka:
   nazev: Ztracená letka
   podtitul: Dramatizace · 2884

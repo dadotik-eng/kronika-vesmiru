@@ -207,6 +207,9 @@ html.beta span.jen-beta { display: inline; }
 .u-vlada { color: var(--akcent); }
 .u-partner { font-style: italic; opacity: .85; }
 .strom-pod { max-width: 900px; padding-top: 1rem; }
+.pribuzni { display: flex; flex-wrap: wrap; gap: .8rem; margin: .6rem 0 1.6rem; }
+.uzel.pribuzny { position: static; border-style: dashed; }
+.uzel.pribuzny .u-roky { font-style: italic; }
 .legenda { display: flex; flex-wrap: wrap; gap: .5rem 1.4rem; font-family: var(--label); font-size: .9rem; color: var(--tlumene); margin-bottom: 2rem; }
 .legenda span { display: inline-flex; align-items: center; gap: .45rem; }
 .lg { display: inline-block; width: 22px; height: 12px; border: 1px solid var(--linka); border-radius: 2px; }
@@ -960,6 +963,14 @@ main h1[tabindex="-1"]:focus, main[tabindex="-1"]:focus { outline: none; }
 .kapitola-obrazek { margin: 1.2rem 0 1.6rem; }
 .kapitola-obrazek img { display: block; width: 100%; height: auto; border-radius: 6px; border: 1px solid var(--linka); }
 .kapitola-obrazek figcaption { margin-top: .4rem; font-size: .85rem; color: var(--tlumene); }
+/* Obrázky v psané verzi Dějin: pomalé přiblížení a odlesk jako v přehrávači */
+.dejiny-obrazek { position: relative; }
+.dejiny-obrazek .do-ram { position: relative; overflow: hidden; border-radius: 6px; border: 1px solid var(--linka); }
+.dejiny-obrazek .do-ram img { border: 0; border-radius: 0; transform-origin: 50% 40%; animation: do-zoom 24s ease-in-out infinite alternate; }
+.dejiny-obrazek .do-ram::after { content: ""; position: absolute; inset: -50% -30%; background: linear-gradient(115deg, transparent 42%, rgba(255,250,235,.12) 50%, transparent 58%); transform: translateX(-60%); animation: do-lesk 14s ease-in-out infinite; pointer-events: none; }
+@keyframes do-zoom { from { transform: scale(1); } to { transform: scale(1.07); } }
+@keyframes do-lesk { 0%, 55% { transform: translateX(-60%); } 85%, 100% { transform: translateX(60%); } }
+@media (prefers-reduced-motion: reduce) { .dejiny-obrazek .do-ram img, .dejiny-obrazek .do-ram::after { animation: none; } }
 .pri-karta.ma-obrazek { padding-top: 0; overflow: hidden; }
 .pri-obrazek { position: relative; display: block; margin: 0 -1.3rem 1rem; }
 .pri-obrazek img { display: block; width: 100%; height: 150px; object-fit: cover; }
