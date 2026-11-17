@@ -207,6 +207,9 @@ html.beta span.jen-beta { display: inline; }
 .u-vlada { color: var(--akcent); }
 .u-partner { font-style: italic; opacity: .85; }
 .strom-pod { max-width: 900px; padding-top: 1rem; }
+.pribuzni { display: flex; flex-wrap: wrap; gap: .8rem; margin: .6rem 0 1.6rem; }
+.uzel.pribuzny { position: static; border-style: dashed; }
+.uzel.pribuzny .u-roky { font-style: italic; }
 .legenda { display: flex; flex-wrap: wrap; gap: .5rem 1.4rem; font-family: var(--label); font-size: .9rem; color: var(--tlumene); margin-bottom: 2rem; }
 .legenda span { display: inline-flex; align-items: center; gap: .45rem; }
 .lg { display: inline-block; width: 22px; height: 12px; border: 1px solid var(--linka); border-radius: 2px; }
