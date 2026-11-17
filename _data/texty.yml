@@ -173,18 +173,28 @@ kap-3:
   odstavce:
   - kdo: ARCHIVÁŘ
     text: 12. června 2438, tři hodiny a třináct minut standardního času. Šestatřicetiletý průzkumník Vernon Tar se sám unášel tmou soustavy Davien a hledal nové skokové body. Jedinou společnost mu dělalo bzučení dálkových skenerů. Pak se ozval signál. Nebyl to skokový bod. Byla to loď. Tar si myslel, že jde o jiného jumpera, který mu chce ukrást objev. A začal střílet. Teprve po prvních výstřelech si všiml, že tvar té lodi nepřipomíná nic, co kdy viděl. Cizí loď palbu neopětovala. Zůstala stát na místě. Aby bylo jasné, proč na té chvíli tolik záleželo, musíme se vrátit o téměř šedesát let.
+    obrazky:
+    - src: assets/dejiny/vernon-tar.webp
+      popisek: Vernon Tar · Davien
+      zdroj: Ilustrační obrázek
   - kdo: ARCHIVÁŘ
     text: 'Na jaře 2380 se lidstvu dařilo. Na planetách soustavy Croshaw probíhala terraformace a vědci našli tři nové skokové body. Vůdci vlád se sešli na Světovém summitu. Novináři osm dní každý večer v šest čekali na ohlášení, které nepřicházelo. Pak je 23. dubna 2380 jeden z asistentů odvedl hluboko do komplexu, do sálu Valného shromáždění. Seděli tam delegáti všech vlád světa. U řečnického pultu stál delegát Ivan Tsang. Řekl, že summit si nekladl otázku, kam dál, ale jak dál. Do vesmíru se nedá vyrazit s přetahováním národních, politických ani obchodních zájmů. A oznámil vznik jediné vlády pro tuto i všechny další planety: Spojených národů Země. Země se pak ještě roky přely. Když se ke Spojeným národům přidaly velmoci, ostatní je následovaly. Lidstvo mělo poprvé jedinou vládu. Vznikl první Senát, začal první velký boom terraformace a první vlny vystěhovalců opouštěly Zemi.'
     obrazky:
     - src: assets/dejiny/senat.webp
       popisek: Valné shromáždění · 23. 4. 2380
       zdroj: Obrázek z Galactapedie · © Cloud Imperium Games
+    - src: assets/dejiny/une-shromazdeni.webp
+      popisek: Valné shromáždění · 23. 4. 2380
+      zdroj: Obrázek z comm-linku RSI · © Cloud Imperium Games
   - kdo: ARCHIVÁŘ
     text: Soustavu Davien zmapoval roku 2430 Wendell Dopse a pojmenoval ji po svém tchánovi. Vědci do té doby tvrdili, že ze Sluneční soustavy už žádný další skokový bod nevede. Učebnice se musely přepsat. Jinak to ale byla nezajímavá soustava. Čtyři planety kolem malé oranžové hvězdy, žádné vzácné suroviny, žádný strategický význam. Velení tamní posádky převzal ten rok generál Neal Socolovich. Narodil se na Angeli, druhé planetě soustavy Croshaw, a proslul tím, že dokázal urovnat spory s psanci bez jediného výstřelu. O osm let později to bude potřeba víc než kdy dřív.
     obrazky:
     - src: assets/dejiny/davien.webp
       popisek: Soustava Davien
       zdroj: Obrázek z Galactapedie · © Cloud Imperium Games
+    - src: assets/dejiny/neal-socolovich.webp
+      popisek: Generál Neal Socolovich
+      zdroj: Ilustrační obrázek
   - kdo: ARCHIVÁŘ
     text: Tar nahlásil své souřadnice a Socolovich se svým týmem okamžitě vyrazil. Ve svém hlášení napsal, že cizinec byl palbou zjevně otřesený a rozzlobený. Vojáci ho uklidňovali pantomimou a technické oddělení začalo stavět překladač. Armáda spojení izolovala a novinářům vydala jen to nejnutnější. Na rozhovor s tiskem za Tara poslala jednoho ze svých lidí. Samotnému Tarovi dal Socolovich na vybranou bez okolků. Když bude mlčet, zapíše se do dějin jako hrdina prvního kontaktu. Když ne, jako hlupák, který málem rozpoutal první mezihvězdnou válku. Tar pochopil.
   - kdo: ARCHIVÁŘ
@@ -202,11 +212,22 @@ kap-3:
   - kdo: ARCHIVÁŘ
     text: 'Ironii celé události lidé odhalili až po letech. Davien vůbec neležel poblíž banuského území. A loď, na kterou Tar střílel, nepatřila průzkumníkovi ani vyslanci. Patřila uprchlíkovi. Jmenoval se Njeri. Když dospěl, prodali ho do úřednického soulu, banuského společenství, kde musel na smlouvu léta třídit data. Byl nešťastný a špatně placený. Snil o tom, že bude pilotovat vlastní loď. Začal proto z peněz svého soulu tajně odklánět, aby si mohl koupit místo u průzkumníků. Když na to vedení přišlo, ukradl v panice jednu z jejich lodí a utekl. Pronásledovali ho přes několik soustav. Když ho dostihovali, zachytil čirou náhodou signál neznámého skokového bodu. Měl na výběr: trest, nebo možnou smrt v tunelu, který nikdo neznal. Vybral si tunel. V Davienu na něj skoro okamžitě začala střílet loď neznámého tvaru. Jeho loď palbu přestála. A Njeri pochopil, že ten cizinec může být jeho vstupenkou z problémů. Proto nestřílel zpátky. Historici dnes upozorňují, že kdyby Tarovu loď zničil, mohl
       začít válku mezi lidmi a Banu.'
+    obrazky:
+    - src: assets/dejiny/banu-role.webp
+      popisek: Banuské soully
+      zdroj: Obrázek z komunitní wiki · © Cloud Imperium Games
+    - src: assets/dejiny/njeri-lod.webp
+      popisek: Njeriho útěk
+      zdroj: Obrázek z comm-linku RSI · © Cloud Imperium Games
   - kdo: ARCHIVÁŘ
     text: Lidé mu začali říkat Jerry. Když později zjistil, že to zní podobně jako jeho jméno, přijal ho s hrdostí a nechtěl slyšet jiné. Ochotně pomáhal s překladem. Odtajněné dokumenty zmiňují i to, že když mu lidé nabídli jídlo, snědl všechno, včetně obalů od sendviče. Mírovou dohodu nakonec podepsal i on, jako čestný signatář. Mohl v Davienu zůstat. Vrátil se ale domů, aby si odsloužil zbytek smlouvy. Čekal oslavy. Místo toho ho přijali s opovržením jako zloděje a únosce lodi a posadili ho k datům pod přísný dohled. Když se smlouvy zbavil, chtěl založit vlastní soul pro styky s lidmi. Trh už ale byl plný jiných, kteří uměli lidskou řeč mnohem lépe. S posledními úsporami se tedy vrátil tam, kde byl nejšťastnější. Do Davienu. Teprve tam zjistil, že je mezi lidmi slavný. Jerry, Banu, díky kterému první kontakt dopadl mírem. Jeho přítelkyně z delegace Natalia Gordillo o něm napsala knihu. Vyšla v roce 2447 a stala se bestsellerem. Jerry zemřel 2. listopadu 2456 ve svém domě v Davienu, obklopený
       lidskými i banuskými přáteli. Banu, kteří slavné postavy svých dějin neuctívají, na něj zapomněli. Lidé si ho pamatují dodnes.
   - kdo: ARCHIVÁŘ
     text: Stejná událost přitom pro obě strany neznamenala totéž. Pro lidi se Jerry stal hrdinou. Pro jeho vlastní společnost byl dlouho hlavně tím, kdo porušil pravidla soulu a utekl s cizím majetkem. Lidské učebnice nejsou neutrální pohled na vesmír. A čím víc civilizací lidé potkají, tím častěji zjistí, že jejich verze dějin není jediná. Davien se mezitím proměnil k nepoznání. Stal se bránou k obchodu s Banu a zaplavili ho lidé všeho druhu. První kontakt neskončil vítězstvím ani dobytím. Skončil obchodem. První setkání s cizí civilizací tedy lidstvo zvládlo díky někomu, kdo před ní sám utíkal. Stačilo přitom několik jiných rozhodnutí a rok 2438 mohl být začátkem války. Místo toho se stal začátkem obchodu. Druhé takové štěstí mít nemělo.
+    obrazky:
+    - src: assets/dejiny/darek-pro-babu.webp
+      popisek: Obchod s Banu
+      zdroj: Obrázek z komunitní wiki · © Cloud Imperium Games
 kap-4:
   nazev: IV. Tři pilíře a první trhlina
   podtitul: 2523–2530
