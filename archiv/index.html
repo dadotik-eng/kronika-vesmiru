@@ -314,6 +314,9 @@ function run(){clear();const s=S[sc],l=s.lines[ln],my=++token;
   if(l.p!==undefined)vis.step=l.p;if(l.alarm)vis.alarm=1;
   if(l.r){vis.tgt=l.r;if(E)E.setThreat(l.r[0])}
   applyVis(s,ln);
+  {const h=k=>{const v=Math.sin((ln+1)*k)*43758.5453;return v-Math.floor(v)};if(s.id!=='prolog'&&s.vis!=='years'&&s.vis!=='hub'){vis.camT=l.vis?[1,0,0,0]:[1.03+h(12.9)*.07,(h(78.2)-.5)*.1,(h(37.7)-.5)*.07,(h(91.3)-.5)*.035];if(!l.vis)vis.pulse=performance.now()}
+   if(!l.vis&&!l.lbl){const m=l.t.match(/\b(\d{1,2})\. (ledna|února|března|dubna|května|června|července|srpna|září|října|listopadu|prosince) (\d{4})\b/)||l.t.match(/\b(?:v roce|roku|rok) (\d{4})\b/i);
+     if(m){const MS=['ledna','února','března','dubna','května','června','července','srpna','září','října','listopadu','prosince'],tx=m.length>3?m[1]+'. '+(MS.indexOf(m[2])+1)+'. '+m[3]:'Rok '+m[1],hd=$('#hud');if(hd&&hd.textContent!==tx){hd.classList.remove('on');setTimeout(()=>{hd.textContent=tx;hd.classList.add('on')},250)}}else{const hd=$('#hud');if(hd&&vis.lbl&&hd.textContent!==vis.lbl){hd.classList.remove('on');setTimeout(()=>{hd.textContent=vis.lbl;hd.classList.add('on')},250)}}}}
   if(l.find)$('#fslot').innerHTML=`<button type="button" class="find" data-f="${l.find}">Nalezen záznam: ${D.finds[l.find].title}</button>`;
   if(E&&playing){if(l.radio)E.fx('radio');if(l.fx)E.fx(l.fx)}
   if(!playing)return;
@@ -417,14 +420,17 @@ const stars=Array.from({length:220},()=>[rnd(),rnd(),rnd()*1.2+.3,rnd()]);
 const foes=Array.from({length:64},()=>[rnd()*6.283,.34+rnd()*.64,rnd()]);
 const cons=Array.from({length:30},()=>[rnd()*6.283,rnd(),rnd()*.5+.5]);
 const mine=Array.from({length:16},()=>[rnd()*6.283,.1+rnd()*.2,rnd()*.6+.4]);
-const vis={mode:'years',step:0,alarm:0,o:{},lbl:'',key:'',t0:0,tgt:[0,0,16],cur:[0,0,16],reset(){this.step=0;this.alarm=0;this.tgt=[0,0,16];this.cur=[0,0,16];this.o={};this.lbl='';this.key='';this.key0=0;this.t0=performance.now()}};
+const vis={mode:'years',step:0,alarm:0,o:{},lbl:'',key:'',t0:0,tgt:[0,0,16],cur:[0,0,16],cam:[1,0,0,0],camT:[1,0,0,0],pulse:0,reset(){this.cam=[1,0,0,0];this.camT=[1,0,0,0];this.pulse=0;this.step=0;this.alarm=0;this.tgt=[0,0,16];this.cur=[0,0,16];this.o={};this.lbl='';this.key='';this.key0=0;this.t0=performance.now()}};
 const COL={line:'rgba(222,236,246,.3)',faint:'rgba(222,236,246,.13)',amber:'#f6bd4b',red:'#ff7a5c',ice:'#bfe3f5'};
 function center(){const m=W<=800;return m?[W*.5,H*.3,Math.min(W*.37,H*.2)]:[W*.71,H*.5,Math.min(H*.37,W*.23)]}
 function draw(t){x.clearRect(0,0,W,H);x.fillStyle='#081a33';x.fillRect(0,0,W,H);
   if(vis.warp){warpDraw();if(vis.warp)return}
   for(const s of stars){const tw=.5+.5*Math.sin(t/1400+s[3]*20);x.fillStyle=`rgba(222,236,246,${.14+.42*tw*s[3]})`;x.beginPath();x.arc((s[0]*W+t*.004*s[2])%W,s[1]*H,s[2]*.8,0,7);x.fill()}
   const [cx,cy,R]=center();
-  const M={orbit,radar,ship,planet,jump,contact,map:smap,senate,pillars,signal,dynasty,kingship,ark,decree,redact,release,voice,timeline,mosaic,paths,lab,toll,memorial,oneway,silence,blank,record,holo,press,shiptest,earth,stasis,impact,firefight,system,ruins,siege,pdef,dome,poster,painting,prison,photo,letters,ringed};if(M[vis.mode])M[vis.mode](t,cx,cy,R);else if(vis.mode==='years'||vis.mode==='hub')chart(t,cx,cy,R);}
+  const M={orbit,radar,ship,planet,jump,contact,map:smap,senate,pillars,signal,dynasty,kingship,ark,decree,redact,release,voice,timeline,mosaic,paths,lab,toll,memorial,oneway,silence,blank,record,holo,press,shiptest,earth,stasis,impact,firefight,system,ruins,siege,pdef,dome,poster,painting,prison,photo,letters,ringed};const c=vis.cam,ct=vis.camT,kf=reduce?1:.025;for(let i=0;i<4;i++)c[i]+=(ct[i]-c[i])*kf;
+  x.save();x.translate(cx+c[1]*R,cy+c[2]*R);x.rotate(c[3]);x.scale(c[0],c[0]);x.translate(-cx,-cy);
+  if(M[vis.mode])M[vis.mode](t,cx,cy,R);else if(vis.mode==='years'||vis.mode==='hub')chart(t,cx,cy,R);x.restore();
+  if(vis.pulse&&!reduce){const k=(performance.now()-vis.pulse)/1400;if(k<1){x.strokeStyle=`rgba(246,189,75,${.22*(1-k)})`;x.lineWidth=1.5;x.beginPath();x.arc(cx,cy,R*(.35+k*.9),0,7);x.stroke()}}}
 function warpDraw(){const k=(performance.now()-vis.warp)/1150;if(k>=1){vis.warp=0;return}const cx=W/2,cy=H/2,e=k*k;x.lineCap='round';for(const s of stars){const px=s[0]*W-cx,py=s[1]*H-cy,d=Math.hypot(px,py)||1,ux=px/d,uy=py/d,r0=d*(1+e*2.2),r1=r0+e*H*.9*s[2];x.strokeStyle=`rgba(222,236,246,${.25+.65*s[3]})`;x.lineWidth=s[2]*1.1;x.beginPath();x.moveTo(cx+ux*r0,cy+uy*r0);x.lineTo(cx+ux*r1,cy+uy*r1);x.stroke()}if(k>.72){x.fillStyle=`rgba(232,242,250,${(k-.72)/.28*.75})`;x.fillRect(0,0,W,H)}}
 function ring(cx,cy,r,dash,col){x.strokeStyle=col||COL.line;x.lineWidth=1;x.setLineDash(dash||[]);x.beginPath();x.arc(cx,cy,r,0,7);x.stroke();x.setLineDash([])}
 function chart(t,cx,cy,R){ring(cx,cy,R*.42);ring(cx,cy,R*.72,[2,7]);ring(cx,cy,R);x.strokeStyle=COL.faint;x.beginPath();x.moveTo(cx-R*1.12,cy);x.lineTo(cx+R*1.12,cy);x.moveTo(cx,cy-R*1.12);x.lineTo(cx,cy+R*1.12);x.stroke();
