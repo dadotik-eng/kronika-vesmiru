@@ -27,21 +27,57 @@ kap-1:
     text: 'Ráno 3. května 2075 začalo jako každé jiné. Malá Rebecca seděla u jídelního stolu a kreslila si, zatímco její matka sledovala ranní zprávy. Pak na hologramu uviděla tátu. Stál vedle prezidenta, měl nový plnovous a mluvil o vesmíru. Dlouho ho neviděli. Kdykoli odcházel do práce, ptala se ho, proč musí pořád pracovat. A on jí vždycky odpověděl stejně: snaží se jí dát hvězdy. Ta slova si zapsala do deníku. Toho rána se začala plnit.'
   - kdo: ARCHIVÁŘ
     text: Jejím otcem byl doktor Scott Childress, hlavní inženýr společnosti Roberts Space Industries. Firmu založil v roce 2038 vynálezce Chris Roberts. Slovo vesmír v jejím názvu bylo dlouho jen přáním. Prvním výrobkem byl úsporný měnič baterií pro auta, pak přišly čističky vody a dokonce chov cvrčků. V roce 2061 narazil Roberts na disertaci čerstvého absolventa o dostupnějších motorech pro kosmické lodě. Probudila v něm dávný sen a jejího autora Scotta Childresse hned přijal. Čtrnáct let nato dokončil se svým týmem první soběstačný kvantový pohon. Loď s ním dosáhla setiny rychlosti světla. Sluneční soustava se najednou zmenšila a lidstvo ji poprvé mohlo prozkoumávat takovou rychlostí. Do té doby byl vesmír místem, kam se vysílaly mise. Po roce 2075 se začal stávat místem, kam se jednou budou stěhovat lidé. Jenže hvězdy, které Scott sliboval své dceři, zatím patřily jen vládám, armádě, velkým korporacím a nejbohatším.
+    obrazky:
+    - src: assets/dejiny/scott-childress.webp
+      popisek: Scott Childress · RSI
+      zdroj: Obrázek z komunitní wiki · © Cloud Imperium Games
   - kdo: ARCHIVÁŘ
     text: 'Další velký krok přišel o necelých čtyřicet let později. V dubnu 2113 představila RSI stroj, který dokázal přeměnit atmosféru planety tak, aby se v ní dalo dýchat. Terraformace. Věc, kterou lidé do té doby znali jen z vědecké fantastiky. Pro Chrise Robertse to byla celoživotní posedlost. Průlomu se ale nedožil, zemřel o pět let dřív. Svět jásal. Ale ne všichni. Novinář Hannigan Terrell tehdy v listu United Times napsal, že když něco dokážeme, ještě to neznamená, že to musíme udělat. Lidé podle něj nejsou bohové a přetvářet samotný vzduch celé planety je arogantní a nebezpečné. Svůj sloupek zakončil slibem: Nic dobrého z toho nevzejde.'
+    obrazky:
+    - src: assets/dejiny/terraformace.webp
+      popisek: Terraformace · 2113
+      zdroj: Obrázek z komunitní wiki · © Cloud Imperium Games
   - kdo: ARCHIVÁŘ
     text: Lidstvo přesto pokračovalo. Mělo pro to vážný důvod. Země se dusila přelidněním. Docházelo jídlo, voda i energie a kvůli nim propukaly války. Chráněné přírodní divy padly pod buldozery, aby uvolnily místo osadám a polím, a vymíraly celé druhy zvířat i rostlin. Lidé potřebovali nový domov a nejbližším kandidátem byl Mars. V roce 2120 spojily vlády světa své znalosti i peníze a pustily se do první přeměny celé planety. Na povrch odletěly týmy průzkumníků. Mapovaly terén, vybíraly místa pro atmosférické procesory a zkoumaly vzorky půdy, aby nic neohrozilo nový vzduch. Byla to první opravdu důkladná výprava na naši nejbližší planetu a vlády nechtěly nic ponechat náhodě.
+    obrazky:
+    - src: assets/dejiny/zeme.webp
+      popisek: Země
+      zdroj: Obrázek z Galactapedie · © Cloud Imperium Games
+    - src: assets/dejiny/mars.webp
+      popisek: Mars
+      zdroj: Obrázek z Galactapedie · © Cloud Imperium Games
   - kdo: ARCHIVÁŘ
     text: 'V září roku 2125 byl Mars v závěrečné fázi přeměny. Už dva týdny tam existovalo prostředí, ve kterém se dalo dýchat. Vědci systém ještě prověřovali, ale od oficiálního prohlášení, že je planeta bezpečná, je dělily jen dva dny. Lidé na povrchu proto pracovali bez dýchacích přístrojů. Porušovali tím předpisy, ale nic nenasvědčovalo tomu, že by vzduch nebyl stabilní. 13. září 2125, ve 4.38 ráno, se atmosféra zhroutila. Stalo se to tak rychle, že nikdo nestihl spustit poplach ani utěsnit ventilaci základen. Nový vzduch se rozplynul a 4 876 lidí se udusilo. Úředník, který nechtěl být jmenován, to novinářům shrnul jedinou větou: Atmosféra nevydržela. Podle prvních zpráv šlo o chemickou chybu v atmosférických procesorech.'
+    obrazky:
+    - src: assets/dejiny/mars-krajina.webp
+      popisek: Mars · 2125
+      zdroj: Obrázek z komunitní wiki · © Cloud Imperium Games
+    - src: assets/dejiny/mars-tragedie.webp
+      popisek: „Atmosféra nevydržela“
+      zdroj: Obrázek z Galactapedie · © Cloud Imperium Games
   - kdo: ARCHIVÁŘ
     text: Prezidentka zmínila možnost mezinárodní komise a mrtvé nazvala hrdiny Marsu, kteří zemřeli, když posouvali lidstvo vpřed. Tragédie ale znovu rozdmýchala staré spory o to, zda má terraformace vůbec smysl. Otázka, kterou Hannigan Terrell položil o dvanáct let dřív, najednou nezněla jako přehnaná opatrnost. Vlna veřejného odporu zastavila vývoj terraformace na dvacet let. Celá pravda přitom vyšla najevo až mnohem později. Teprve po zhruba deseti letech novinářského pátrání vláda připustila, že na tragédii mohla mít podíl porucha umělé inteligence, která terraformaci řídila. To už ale nikoho nezajímalo. Byl to jeden z omylů, které lidstvo postupně odradily od myslících strojů.
   - kdo: ARCHIVÁŘ
     text: Mezitím rostl zájem o kvantový pohon pro obyčejné lidi. Ve třicátých letech postavila RSI prototyp první lodi pro běžné zákazníky. Jmenovala se Zeus. Zkušební lety ale odhalovaly problémy s pevností trupu. 23. června 2136 se jeden z letů vysílal živě do celého světa. Když loď opouštěla zemskou atmosféru, trup se roztrhl. Zeus se rozpadl a zkušební pilot zahynul. Jedenáct let po Marsu lidé znovu viděli, jakou cenu má pokrok, a nadšení z levného létání vystřídal strach. Zoufalá RSI se obrátila na námořnictvo a na pilotku Michelle Saleno, prvního člověka, který s kvantovým pohonem doletěl za oběžnou dráhu Jupiteru. Přesvědčila námořnictvo, aby založilo 999. zkušební letku pro testování nejmodernějších lodí, a ta pomohla Zeus vyladit. Saleno a její piloti pak celý rok trvali na změnách. Dokud RSI trup nepřepracuje, nikdo z nich do lodi nesedne. RSI nakonec trup úplně přestavěla a 19. března 2137 Saleno v nové lodi poprvé vzlétla. V roce 2140 se Zeus dostal na trh jako první loď s kvantovým
       pohonem, kterou si mohl koupit i běžný člověk. Hvězdy už nepatřily jen vládám. Vesmír přestal být výlučně státním projektem. Stal se součástí života civilistů.
+    obrazky:
+    - src: assets/dejiny/zeus.webp
+      popisek: RSI Zeus
+      zdroj: Obrázek z komunitní wiki · © Cloud Imperium Games
+    - src: assets/dejiny/michelle-saleno.webp
+      popisek: Michelle Saleno
+      zdroj: Obrázek z Galactapedie · © Cloud Imperium Games
+    - src: assets/dejiny/zeus-reklama.webp
+      popisek: RSI Zeus · 2140
+      zdroj: Obrázek z Galactapedie · © Cloud Imperium Games
   - kdo: ARCHIVÁŘ
     text: A Mars? Data, která po sobě tragédie zanechala, nakonec pomohla. V polovině padesátých let přišly přísnější bezpečnostní předpisy a přesnější normy pro zpracování atmosféry. V roce 2157, po téměř čtyřiceti letech zkoušek a tragédií, byl Mars oficiálně prohlášen za planetu, na které se dá dýchat.
   - kdo: ARCHIVÁŘ
     text: 'U města Port Renatus pak odhalili pomník obětem. Hlavní řeč pronesl senátor Stephen Nguyen, jehož mladší bratr Sean při tragédii zemřel. Když Stephen kdysi poprvé vyhrál volby, nechal mu Sean vzkaz: Buď statečný, buď sám sebou a všechno bude v pořádku. Senátor nechtěl, aby jména vytesaná do kamene vedla jen k tichému vzpomínání. Měla být výzvou vyrazit do vesmíru. Řeč zakončil bratrovými slovy: Buďte stateční, buďte sami sebou a všechno bude v pořádku.'
+    obrazky:
+    - src: assets/dejiny/port-renatus.webp
+      popisek: Port Renatus · Mars
+      zdroj: Obrázek z komunitní wiki · © Cloud Imperium Games
   - kdo: ARCHIVÁŘ
     text: Téhož roku se na Marsu narodila Abeni Okon, první člověk, který přišel na svět mimo Zemi. Lidstvo nevstupovalo do vesmíru jako nepřemožitelný druh, který všechno zvládne napoprvé. Učilo se pokusem, omylem a někdy katastrofou. Mars proto nebyl jen technický úspěch. Byl důkazem, že lidé dokázali po největší katastrofě svého kosmického věku projekt nezahodit, ale přestavět ho. Scott Childress se toho nedožil. Zemřel už v roce 2121. Hvězdy, které sliboval své dceři, však byly konečně na dosah. Lidé měli kvantové lodě, druhou obyvatelnou planetu a techniku, která dokázala měnit celé světy. A přesto pořád nedokázali opustit Sluneční soustavu. A na okraji Sluneční soustavy už čekalo něco, co nikdo nedokázal vysvětlit.
 kap-2:
@@ -52,14 +88,42 @@ kap-2:
   - kdo: ARCHIVÁŘ
     text: V předvečer startu kontrolovala kapitánka Lisa Danvers obvodové desky pod komunikačním pultem. Už potřetí. Ze skrytých reproduktorů na můstku se ozval klidný hlas a zeptal se, jestli jí může pomoct. Patřil Janusovi, umělé inteligenci, která měla loď Artemis řídit. Artemis byla splněný sen. První pokus dostat lidi k jiné hvězdě. Pokus dokázat, že hvězdy jsou dosažitelné i bez zázraku. Skokové body tehdy nikdo neznal. Loď měla k planetě, na které by se snad dalo žít, letět obyčejným kvantovým pohonem přes sto let. Na palubu se přihlásilo přes milion dobrovolníků. Vybrali pět tisíc z nich a ti měli celou cestu prospat ve stázi. Čestným hostem startu byla Abeni Okon, první člověk narozený mimo Zemi. Generace, která přišla na svět na Marsu, symbolicky vyprovázela další generaci ještě dál. Janus měl za ně bdít. Jeho tvůrkyně Carol Zahir na něm pracovala od roku 2201 a vytvořila nejsložitější umělou inteligenci, jakou lidé do té doby měli. Dokončení se nedožila. Zemřela dva roky předtím.
       Ráno startu kapitánka odmítla předat Janusovi řízení. Chtěla loď vyvést sama. Artemis odletěla a každý den posílala na Zemi hlášení o svém stavu. V roce 2237 hlášení přestala chodit. Bez varování. Spojení se mělo ztratit až o čtrnáct let později. Loď už nikdo nikdy neviděl.
+    obrazky:
+    - src: assets/dejiny/artemis.webp
+      popisek: Start Artemis · 2232
+      zdroj: Obrázek z Galactapedie · © Cloud Imperium Games
   - kdo: ARCHIVÁŘ
     text: Zprávami se rychle šířila podezření, že loď zničil sám Janus. Žádný důkaz se nenašel. Nedůvěra ale zůstala a je jedním z důvodů, proč lidé od 23. století umělou inteligenci téměř nevyvíjejí. Hvězdy byly pořád příliš daleko.
   - kdo: ARCHIVÁŘ
     text: Ve vlastní soustavě to ale lidem šlo stále lépe. Na okrajích Sluneční soustavy létaly státní, obchodní i soukromé lodě. V srpnu 2262 vezla nákladní loď Goodman s osmičlennou posádkou zásoby na orbitální plošinu u Neptunu. Byl to běžný let. Tři hodiny před cílem ale zasáhl loď úlomek a vyřadil jí motory na pravoboku. Goodman se vymkl z kurzu a několik hodin bezmocně driftoval. Posádce se nakonec podařilo motory opravit natolik, aby se loď sotva plížila. Pak se ozvalo poslední vysílání. Pátrání na poslední známé pozici nenašlo nic. Žádné trosky. Goodman prostě zmizel. Během několika dalších měsíců zmizely na stejném místě a podobným způsobem ještě dvě lodě. Vyšetřovatelé nedokázali zjistit, co se s nimi stalo. Úřady oblast vyhlásily za zakázanou a lidé jí začali říkat Nesův trojúhelník.
+    obrazky:
+    - src: assets/dejiny/sol.webp
+      popisek: Sluneční soustava
+      zdroj: Obrázek z Galactapedie · © Cloud Imperium Games
+    - src: assets/dejiny/neptun.webp
+      popisek: Goodman · Neptun · 2262
+      zdroj: Obrázek z Galactapedie · © Cloud Imperium Games
   - kdo: ARCHIVÁŘ
     text: 'Jeden muž se ale bát nechtěl. Astrofyzik a pilot Nick Croshaw strávil téměř deset let studiem místa, které pohlcovalo lodě. Byl přesvědčený, že za zmizeními stojí dosud neznámý druh vesmírné anomálie. Postupně přišel na to, jak ji otevřít. Záleželo na rychlosti a úhlu přiblížení a hlavně na záření odhaleného fúzního jádra. Upravil si vlastní kvantový pohon a vydal se tam sám. 10. dubna 2271 vletěl do anomálie a vynořil se v cizí soustavě. Stal se prvním člověkem, který objevil a prolétl skokovým bodem, a prvním, kdo navštívil jinou planetární soustavu. Ta dodnes nese jeho jméno: Croshaw. Jeho příběh se pak vyprávěl ve filmech i v písních a lidé ho znali nazpaměť.'
+    obrazky:
+    - src: assets/dejiny/kvantovy-pohon.webp
+      popisek: Upravený kvantový pohon
+      zdroj: Obrázek z Galactapedie · © Cloud Imperium Games
+    - src: assets/dejiny/skokovy-bod.webp
+      popisek: Skok · 10. 4. 2271
+      zdroj: Obrázek z komunitní wiki · © Cloud Imperium Games
+    - src: assets/dejiny/croshaw.webp
+      popisek: Soustava Croshaw
+      zdroj: Obrázek z Galactapedie · © Cloud Imperium Games
   - kdo: ARCHIVÁŘ
     text: Lidé teď věděli, jak se dostat ke hvězdám. Nevěděli ale, jak na nich žít. Do soustavy Croshaw se hnaly soukromé i státní společnosti, aby si zabraly její planety. Ani jedna neuspěla. Nikdo nespočítal, kolik bude stát dovážet zásoby přes skokový bod. Státy a firmy se mezitím přely, komu budou patřit půda a nerosty. A skok sám zůstával nebezpečný. Mnoho lidí, kteří do skokového bodu mezi Solem a Croshawem vletěli, se už neobjevilo. Lodě se musely provádět ručně. Tak vznikl nový druh pilotů, jumpeři. Nabízeli se jako jediný spolehlivý způsob, jak se mezi soustavami dostat, a nechávali si za to dobře platit. Odvážlivci si upravovali kvantové pohony po vzoru Croshawa. Říkalo se tomu nick, podle jeho křestního jména. Mezi jumpery kolovaly příběhy o lidech, kteří s nickem odletěli a už se neozvali. Po tuctu takových případů s tím skoro všichni přestali.
+    obrazky:
+    - src: assets/dejiny/angeli.webp
+      popisek: Angeli · Croshaw II
+      zdroj: Obrázek z Galactapedie · © Cloud Imperium Games
+    - src: assets/dejiny/skokovy-tunel.webp
+      popisek: Skokový tunel
+      zdroj: Obrázek z komunitní wiki · © Cloud Imperium Games
   - kdo: ARCHIVÁŘ
     text: Pořádek do toho vnesl až výbor, který jmenoval Světový summit, setkání vůdců Země. Jeho mistrovským tahem byl Freeman Act z roku 2281. Zákon zavedl loterii o půdu a práva na nerosty a prodej jednosměrných letenek na planety, které se teprve přetvářely. Kdo si letenku koupil, měl jistý domov. Zároveň svými penězi platil terraformaci. Prodej šel zpočátku pomalu. Život na jiné planetě si lidé už dovedli představit, ale život v úplně jiné soustavě je děsil. Teprve rozsáhlé kampaně a svědectví z nové soustavy jejich strach rozptýlily. Vznikla celá vrstva lidí, kteří odpočítávali dny, než se stanou prvními mezihvězdnými osadníky.
   - kdo: ARCHIVÁŘ
