@@ -11,17 +11,24 @@ for sc in D['scenes']:
     odst, posl, byl_p = [], None, False
     for l in sc['lines']:
         kdo, t = l.get('who', 'ARCHIVÁŘ'), l['t']
+        obr = None
+        if l.get('vis') == 'img' and (l.get('o') or {}).get('src'):
+            o = l['o']
+            obr = {'src': o['src'], 'popisek': l.get('lbl', ''), 'zdroj': o.get('cap') or 'Obrázek z Galactapedie · © Cloud Imperium Games'}
         if sc['id'].startswith('kap-') and 'p' not in l and not byl_p:
             continue  # úvodní věta „Kapitola první. …“
         if 'p' in l: byl_p = True
         # věta bez čísla odstavce po začátku kapitoly = pokračování předchozího odstavce (kap. IX)
         if kdo == 'ARCHIVÁŘ' and 'p' not in l and byl_p and posl is not None and posl['kdo'] == 'ARCHIVÁŘ':
             posl['text'] += ' ' + t
+            if obr: posl.setdefault('obrazky', []).append(obr)
             continue
         if kdo == 'ARCHIVÁŘ' and 'p' in l and posl is not None and posl.get('p') == l['p'] and posl['kdo'] == 'ARCHIVÁŘ':
             posl['text'] += ' ' + t
+            if obr: posl.setdefault('obrazky', []).append(obr)
             continue
         posl = {'kdo': kdo, 'text': t}
+        if obr: posl['obrazky'] = [obr]
         if 'p' in l: posl['p'] = l['p']
         if l.get('radio'): posl['radio'] = True
         odst.append(posl)
