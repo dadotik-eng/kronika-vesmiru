@@ -119,6 +119,9 @@ kap-2:
     - src: assets/dejiny/neptun.webp
       popisek: Goodman · Neptun · 2262
       zdroj: Obrázek z Galactapedie · © Cloud Imperium Games
+    - src: assets/dejiny/nesuv-trojuhelnik.webp
+      popisek: Nesův trojúhelník · 2262
+      zdroj: Obrázek z comm-linku RSI · © Cloud Imperium Games
   - kdo: ARCHIVÁŘ
     text: 'Jeden muž se ale bát nechtěl. Astrofyzik a pilot Nick Croshaw strávil téměř deset let studiem místa, které pohlcovalo lodě. Byl přesvědčený, že za zmizeními stojí dosud neznámý druh vesmírné anomálie. Postupně přišel na to, jak ji otevřít. Záleželo na rychlosti a úhlu přiblížení a hlavně na záření odhaleného fúzního jádra. Upravil si vlastní kvantový pohon a vydal se tam sám. 10. dubna 2271 vletěl do anomálie a vynořil se v cizí soustavě. Stal se prvním člověkem, který objevil a prolétl skokovým bodem, a prvním, kdo navštívil jinou planetární soustavu. Ta dodnes nese jeho jméno: Croshaw. Jeho příběh se pak vyprávěl ve filmech i v písních a lidé ho znali nazpaměť.'
     obrazky:
@@ -140,6 +143,9 @@ kap-2:
     - src: assets/dejiny/skokovy-tunel.webp
       popisek: Skokový tunel
       zdroj: Obrázek z komunitní wiki · © Cloud Imperium Games
+    - src: assets/dejiny/jumper-review.webp
+      popisek: Jumpeři
+      zdroj: Obrázek z comm-linku RSI · © Cloud Imperium Games
   - kdo: ARCHIVÁŘ
     text: Pořádek do toho vnesl až výbor, který jmenoval Světový summit, setkání vůdců Země. Jeho mistrovským tahem byl Freeman Act z roku 2281. Zákon zavedl loterii o půdu a práva na nerosty a prodej jednosměrných letenek na planety, které se teprve přetvářely. Kdo si letenku koupil, měl jistý domov. Zároveň svými penězi platil terraformaci. Prodej šel zpočátku pomalu. Život na jiné planetě si lidé už dovedli představit, ale život v úplně jiné soustavě je děsil. Teprve rozsáhlé kampaně a svědectví z nové soustavy jejich strach rozptýlily. Vznikla celá vrstva lidí, kteří odpočítávali dny, než se stanou prvními mezihvězdnými osadníky.
   - kdo: ARCHIVÁŘ
@@ -147,6 +153,19 @@ kap-2:
   - kdo: ARCHIVÁŘ
     text: Dva z nich, Tara Dilione a Alfonsus Carbrino, pracovali jako mechanici na malé čerpací stanici u skokového bodu mezi Croshawem a Solem. Jednou u nich nouzově přistál transport plný cestujících. Selhal mu skokový pohon a majitel si nemohl dovolit letět do servisu RSI u Marsu. Šlo jen o drobnou opravu kabeláže. Oba mechanici si ale vymysleli složitou historku a celý den si pohon prohlíželi kus po kusu. A pochopili. Část, která ohýbala prostor, byla stejná jako v obyčejném kvantovém pohonu. RSI nevynalezla nic převratného. Jen zdokonalila nick. Dvacet sedm měsíců a skoro všechny své peníze pak dali do modulu, který z kvantového pohonu udělal skokový. První verze zabíraly většinu nákladového prostoru. Pojmenovali ho Tarsus podle svých křestních jmen. Prý to bylo to nejbližší dítěti, co kdy budou mít. Urovnali si všechny záležitosti a 7. listopadu 2292, jedenadvacet let po Croshawově skoku, vletěli do skokového bodu. Věděli proč. Mnoho lidí se před nimi vydalo do skoku s upraveným pohonem
       a už se nevrátilo. Tara a Alfonsus mohli být další. Vynořili se v pořádku. Zpráva se mezi jumpery rozletěla a každý chtěl modul pro sebe. Jedna z nich, právnička Selma Tontil, poznala, co to znamená, a přiměla oba vynálezce, aby si modul nechali patentovat. S její pomocí vznikla firma Tarsus. RSI se ji pokusila zažalovat, ale Tontil právo upravovat pohony uhájila. Za půl roku už RSI prodávala vlastní skokový modul. Za zlomek ceny si teď mohl skokový pohon pořídit každý, kdo vlastnil loď. Croshawův objev změnil i mapy. Hodnota planety už nezávisela jen na vzdálenosti od Země, ale na tom, jaké skokové body má poblíž. Nevýznamná soustava se mohla přes noc změnit v křižovatku. Nick Croshaw objevil cestu. Tarsus ji otevřel davům. A s každým novým skokem se vracela otázka stará jako lidstvo samo. Jsme tu sami?
+    obrazky:
+    - src: assets/dejiny/skokovy-modul.webp
+      popisek: Modul Tarsus
+      zdroj: Obrázek z komunitní wiki · © Cloud Imperium Games
+    - src: assets/dejiny/skokovy-bod-vstup.webp
+      popisek: Skok · 7. 11. 2292
+      zdroj: Obrázek z komunitní wiki · © Cloud Imperium Games
+    - src: assets/dejiny/tarsus.webp
+      popisek: Tarsus
+      zdroj: Obrázek z comm-linku RSI · © Cloud Imperium Games
+    - src: assets/dejiny/angeli-mesto.webp
+      popisek: Angeli, soustava Croshaw · dnes
+      zdroj: Obrázek z comm-linku RSI · © Cloud Imperium Games
 kap-3:
   nazev: III. Nejsme sami
   podtitul: 2380–2438
