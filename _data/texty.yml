@@ -25,6 +25,10 @@ kap-1:
   odstavce:
   - kdo: ARCHIVÁŘ
     text: 'Ráno 3. května 2075 začalo jako každé jiné. Malá Rebecca seděla u jídelního stolu a kreslila si, zatímco její matka sledovala ranní zprávy. Pak na hologramu uviděla tátu. Stál vedle prezidenta, měl nový plnovous a mluvil o vesmíru. Dlouho ho neviděli. Kdykoli odcházel do práce, ptala se ho, proč musí pořád pracovat. A on jí vždycky odpověděl stejně: snaží se jí dát hvězdy. Ta slova si zapsala do deníku. Toho rána se začala plnit.'
+    obrazky:
+    - src: assets/dejiny/rebecca-hologram.webp
+      popisek: 3. 5. 2075 · ranní zprávy
+      zdroj: Obrázek z comm-linku RSI · © Cloud Imperium Games
   - kdo: ARCHIVÁŘ
     text: Jejím otcem byl doktor Scott Childress, hlavní inženýr společnosti Roberts Space Industries. Firmu založil v roce 2038 vynálezce Chris Roberts. Slovo vesmír v jejím názvu bylo dlouho jen přáním. Prvním výrobkem byl úsporný měnič baterií pro auta, pak přišly čističky vody a dokonce chov cvrčků. V roce 2061 narazil Roberts na disertaci čerstvého absolventa o dostupnějších motorech pro kosmické lodě. Probudila v něm dávný sen a jejího autora Scotta Childresse hned přijal. Čtrnáct let nato dokončil se svým týmem první soběstačný kvantový pohon. Loď s ním dosáhla setiny rychlosti světla. Sluneční soustava se najednou zmenšila a lidstvo ji poprvé mohlo prozkoumávat takovou rychlostí. Do té doby byl vesmír místem, kam se vysílaly mise. Po roce 2075 se začal stávat místem, kam se jednou budou stěhovat lidé. Jenže hvězdy, které Scott sliboval své dceři, zatím patřily jen vládám, armádě, velkým korporacím a nejbohatším.
     obrazky:
@@ -37,15 +41,24 @@ kap-1:
     - src: assets/dejiny/terraformace.webp
       popisek: Terraformace · 2113
       zdroj: Obrázek z komunitní wiki · © Cloud Imperium Games
+    - src: assets/dejiny/united-times.webp
+      popisek: United Times · 21. 4. 2113
+      zdroj: Obrázek z comm-linku RSI · © Cloud Imperium Games
   - kdo: ARCHIVÁŘ
     text: Lidstvo přesto pokračovalo. Mělo pro to vážný důvod. Země se dusila přelidněním. Docházelo jídlo, voda i energie a kvůli nim propukaly války. Chráněné přírodní divy padly pod buldozery, aby uvolnily místo osadám a polím, a vymíraly celé druhy zvířat i rostlin. Lidé potřebovali nový domov a nejbližším kandidátem byl Mars. V roce 2120 spojily vlády světa své znalosti i peníze a pustily se do první přeměny celé planety. Na povrch odletěly týmy průzkumníků. Mapovaly terén, vybíraly místa pro atmosférické procesory a zkoumaly vzorky půdy, aby nic neohrozilo nový vzduch. Byla to první opravdu důkladná výprava na naši nejbližší planetu a vlády nechtěly nic ponechat náhodě.
     obrazky:
     - src: assets/dejiny/zeme.webp
       popisek: Země
       zdroj: Obrázek z Galactapedie · © Cloud Imperium Games
+    - src: assets/dejiny/new-york.webp
+      popisek: Přelidněná Země
+      zdroj: Obrázek z comm-linku RSI · © Cloud Imperium Games
     - src: assets/dejiny/mars.webp
       popisek: Mars
       zdroj: Obrázek z Galactapedie · © Cloud Imperium Games
+    - src: assets/dejiny/mars-pruzkum.webp
+      popisek: Průzkum Marsu · 2120
+      zdroj: Obrázek z comm-linku RSI · © Cloud Imperium Games
   - kdo: ARCHIVÁŘ
     text: 'V září roku 2125 byl Mars v závěrečné fázi přeměny. Už dva týdny tam existovalo prostředí, ve kterém se dalo dýchat. Vědci systém ještě prověřovali, ale od oficiálního prohlášení, že je planeta bezpečná, je dělily jen dva dny. Lidé na povrchu proto pracovali bez dýchacích přístrojů. Porušovali tím předpisy, ale nic nenasvědčovalo tomu, že by vzduch nebyl stabilní. 13. září 2125, ve 4.38 ráno, se atmosféra zhroutila. Stalo se to tak rychle, že nikdo nestihl spustit poplach ani utěsnit ventilaci základen. Nový vzduch se rozplynul a 4 876 lidí se udusilo. Úředník, který nechtěl být jmenován, to novinářům shrnul jedinou větou: Atmosféra nevydržela. Podle prvních zpráv šlo o chemickou chybu v atmosférických procesorech.'
     obrazky:
@@ -67,6 +80,9 @@ kap-1:
     - src: assets/dejiny/michelle-saleno.webp
       popisek: Michelle Saleno
       zdroj: Obrázek z Galactapedie · © Cloud Imperium Games
+    - src: assets/dejiny/letka-999.webp
+      popisek: 999. zkušební letka
+      zdroj: Obrázek z komunitní wiki · © Cloud Imperium Games
     - src: assets/dejiny/zeus-reklama.webp
       popisek: RSI Zeus · 2140
       zdroj: Obrázek z Galactapedie · © Cloud Imperium Games
