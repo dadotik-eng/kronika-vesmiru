@@ -15,10 +15,23 @@ Platí pro Spisovatele, Redaktora, Režiséra (agenty v n8n) i pro ruční úpra
 | `[napjatě]` | napětí, zrychlení | `[tense]` |
 | `[s ironií]` | ironie | `[sarcastic]` |
 | `[smutně]` | smutek | `[sad]` |
+| `[nervózně]` | nervozita | `[nervous]` |
+| `[poplašeně]` | poplach, úlek | `[alarmed]` |
+| `[naléhavě]` | naléhavost | `[urgent]` |
+| `[v panice]` | panika | `[panicked]` |
+| `[zachmuřeně]` | zachmuřeně, ponuře | `[grim]` |
+| `[velitelsky]` | rozkaz | `[commanding]` |
+| `[rozhodně]` | rozhodnost | `[determined]` |
+| `[pevně]` | pevný hlas | `[firm]` |
+| `[zoufale]` | zoufalství | `[desperate]` |
+| `[odhodlaně]` | odhodlání | `[resolute]` |
+| `[vyčerpaně]` | únava, vyčerpání | `[exhausted]` |
+| `[váhavě]` | zaváhání | `[hesitant]` |
 | `[pauza]` | znatelná odmlka | `…` (výpustka; ElevenLabs v3/v4 nepodporuje SSML pauzy) |
 | `*slovo*` | důraz na slovo | slovo VELKÝMI PÍSMENY |
 
 - Značka platí od místa, kde stojí, do konce věty.
+- **Vypravěč (Archivář) střídmě:** jen `[vážně]`, `[smutně]`, `[pauza]`, `*důraz*` – žádné šeptání; hlas se stabilním nastavením (stability 0.5). Výraznější značky a kreativnější nastavení (stability 0) jen pro postavy v dramatizacích.
 - Šetřit: nanejvýš jedna značka tónu na větu, důraz jen na klíčová slova. Většinu práce má dělat interpunkce a stavba věty.
 - Náhledový hlas prohlížeče značky vynechá (`[pauza]` přečte jako krátkou odmlku).
 
