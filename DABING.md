@@ -32,7 +32,16 @@ Platí pro Spisovatele, Redaktora, Režiséra (agenty v n8n) i pro ruční úpra
 | Role (`who`) | Hlas | Poznámka |
 |---|---|---|
 | ARCHIVÁŘ | **Honza Bílek** (ElevenLabs, voice_id `kOWmvbNszhdJeaeyEzJB`, model `eleven_v4`) | vypravěč: mužský, starší, klidný, s vahou – vybráno 14. 11. 2026 |
-| rádiová hlášení (`radio`) | (vybere se) | jiný hlas, rádiový filtr |
+| HLÍDKA JEDNA | Josef (`RxVyXZsJK1kay0fTKgd2`) | Ztracená letka |
+| HLÍDKA DVA | Jakub (`c5wGNSgf2u7tCzp10h9T`) | Ztracená letka |
+| VELITELKA RANDALLOVÁ | Michaela (`mRIjyrAJVCSOEK5tjUFq`) | Ztracená letka |
+| VELÍN CRION | Tomas (`f225Nmo9MdjZXT8PTUL6`) | Ztracená letka |
+| CIVILNÍ TRANSPORT | Lukas (`EHnJdgAIwHYrnErfKwwv`) | Ztracená letka |
+| PILOT 89. LETKY | Radek (`Q0EnsKNeW7RgmTlzWA7Z`) | Ztracená letka |
+| DRUHÁ FLOTILA | Alex (`4LBcBR6e10X5RU1Ehwbp`) | Ztracená letka |
+
+Hlasy postav jsou v uzlu „Věty k namluvení“ workflow Namluvit scénu (mapa `HLASY`); postava bez hlasu se nenamluví.
+Příběhy z webu (`web-*`) workflow čte z `archiv/pribehy-vety.json` – po změně příběhu soubor znovu vygenerovat z přehrávače.
 | postavy v citacích | podle potřeby | |
 
 ## Nahrávky na webu (od 14. 11. 2026)
