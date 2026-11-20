@@ -1,8 +1,8 @@
 [
  {
   "i": 0,
-  "f": "0-15eeafc4.mp3",
-  "v": "Sedmého července dva tisíce osm set osmdesát čtyři. Čtyři hodiny čtyřicet tři minut standardního času."
+  "f": "0-03e7f250.mp3",
+  "v": "[vážně] Sedmého července dva tisíce osm set osmdesát čtyři. Čtyři hodiny čtyřicet tři minut standardního času."
  },
  {
   "i": 1,
@@ -16,28 +16,28 @@
  },
  {
   "i": 3,
-  "f": "3-77457b57.mp3",
-  "v": "Hlídko dva, vidíš to za mnou?"
+  "f": "3-74f2bace.mp3",
+  "v": "[nervózně] Hlídko dva, vidíš to za mnou?"
  },
  {
   "i": 4,
-  "f": "4-6bb0d82f.mp3",
-  "v": "Mám jeden kontakt. Ne. Tři. Deset."
+  "f": "4-c9271602.mp3",
+  "v": "[poplašeně] Mám jeden kontakt. Ne. Tři. Deset."
  },
  {
   "i": 5,
-  "f": "5-c8ba5fb7.mp3",
-  "v": "Tohle není nájezd. Vysílám nouzový signál."
+  "f": "5-57dda673.mp3",
+  "v": "[naléhavě] Tohle není nájezd. Vysílám nouzový signál."
  },
  {
   "i": 6,
-  "f": "6-1d9af981.mp3",
-  "v": "Velíne Krajon, tady hlídka dva, hlásím vandúlský kl"
+  "f": "6-34c962a3.mp3",
+  "v": "[v panice] Velíne Krajon, tady hlídka dva, hlásím vandúlský kl"
  },
  {
   "i": 7,
-  "f": "7-65afff26.mp3",
-  "v": "Ani jedna zpráva nebyla dokončena."
+  "f": "7-7b033bfa.mp3",
+  "v": "[vážně] Ani jedna zpráva nebyla dokončena."
  },
  {
   "i": 8,
@@ -46,28 +46,28 @@
  },
  {
   "i": 9,
-  "f": "9-911dbfb5.mp3",
-  "v": "Všem lodím, tady Rendalová. Vidím Kingšip."
+  "f": "9-ad939806.mp3",
+  "v": "[napjatě] Všem lodím, tady Rendalová. Vidím Kingšip."
  },
  {
   "i": 10,
-  "f": "10-27ff5ccd.mp3",
-  "v": "Vypusťte komunikační drony. Žádáme o posily."
+  "f": "10-3a103c13.mp3",
+  "v": "[velitelsky] Vypusťte komunikační drony. Žádáme o posily."
  },
  {
   "i": 11,
-  "f": "11-8e8fc81d.mp3",
-  "v": "Velitelko, nejbližší flotila může dorazit až za dva dny."
+  "f": "11-a700c7f0.mp3",
+  "v": "[zachmuřeně] Velitelko, nejbližší flotila může dorazit až za dva dny."
  },
  {
   "i": 12,
-  "f": "12-67ca83ff.mp3",
-  "v": "Tak máme dva dny."
+  "f": "12-4d690554.mp3",
+  "v": "[rozhodně] Tak máme dva dny."
  },
  {
   "i": 13,
-  "f": "13-b41309a3.mp3",
-  "v": "Přestáváme bránit Krajon. Odteď chráníme konvoje. Každá civilní loď, která odstartuje, se dostane ven."
+  "f": "13-f5c032f5.mp3",
+  "v": "[pevně] Přestáváme bránit Krajon. Odteď chráníme konvoje. Každá civilní loď, která odstartuje, se dostane ven."
  },
  {
   "i": 14,
@@ -76,13 +76,13 @@
  },
  {
   "i": 15,
-  "f": "15-8fdd40d8.mp3",
-  "v": "Tady civilní transport. Na palubě máme tisíce lidí a žádné zbraně."
+  "f": "15-fada7982.mp3",
+  "v": "[zoufale] Tady civilní transport. Na palubě máme tisíce lidí a žádné zbraně."
  },
  {
   "i": 16,
-  "f": "16-581c68dc.mp3",
-  "v": "Leťte a neohlížejte se."
+  "f": "16-2eb6eafc.mp3",
+  "v": "[odhodlaně] Leťte a neohlížejte se."
  },
  {
   "i": 17,
@@ -91,8 +91,8 @@
  },
  {
   "i": 18,
-  "f": "18-5bc85bb7.mp3",
-  "v": "Velitelka Silvi Rendalová z bitvy nevyvázla. Její poslední rozkaz platil do konce."
+  "f": "18-a563911b.mp3",
+  "v": "[smutně] Velitelka Silvi Rendalová z bitvy nevyvázla. Její poslední rozkaz platil do konce."
  },
  {
   "i": 19,
@@ -101,37 +101,52 @@
  },
  {
   "i": 20,
-  "f": "20-482f382a.mp3",
-  "v": "Tady druhá flotila. Krajon hoří. Odpovězte. Je tu někdo živý?"
+  "f": "20-66e22ae6.mp3",
+  "v": "[naléhavě] Tady druhá flotila. Krajon hoří. Odpovězte. Je tu někdo živý?"
  },
  {
   "i": 21,
-  "f": "21-5f264df1.mp3",
-  "v": "Tady osmdesátá devátá."
+  "f": "21-2fcf95de.mp3",
+  "v": "[vyčerpaně] Tady osmdesátá devátá."
  },
  {
   "i": 22,
-  "f": "22-b61e9f86.mp3",
-  "v": "Kolik vás zbývá?"
+  "f": "22-d69dc5b7.mp3",
+  "v": "[váhavě] Kolik vás zbývá?"
  },
  {
   "i": 23,
-  "f": "23-f61b270b.mp3",
-  "v": "Jeden."
+  "f": "23-46fa0d34.mp3",
+  "v": "[vyčerpaně] Jeden."
  },
  {
   "i": 24,
-  "f": "24-eb3237bb.mp3",
-  "v": "Přes tři miliony lidí unikly. Podle odhadů více než pět a půl milionu zemřelo."
+  "f": "24-841791a7.mp3",
+  "v": "[vážně] Přes tři miliony lidí unikly. Podle odhadů více než pět a půl milionu zemřelo."
  },
  {
   "i": 25,
-  "f": "25-45a7818b.mp3",
-  "v": "Roku dva tisíce osm set osmdesát pět námořnictvo letku vyřadilo ze služby. Lidé jí začali říkat Ztracená letka."
+  "f": "25-181df9a3.mp3",
+  "v": "O šestnáct dní později padl celý Kaliban."
  },
  {
   "i": 26,
-  "f": "26-390c2ca7.mp3",
+  "f": "26-b277f595.mp3",
+  "v": "Roku dva tisíce osm set osmdesát pět námořnictvo osmdesátou devátou letku vyřadilo ze služby. Lidé jí začali říkat Ztracená letka."
+ },
+ {
+  "i": 27,
+  "f": "27-6e31a204.mp3",
+  "v": "Impérium Kaliban zpátky nedobylo. Dodnes ho drží Vandúlové."
+ },
+ {
+  "i": 28,
+  "f": "28-390c2ca7.mp3",
   "v": "Oficiální záznam jméno posledního pilota neuvádí."
+ },
+ {
+  "i": 29,
+  "f": "29-cf51a3de.mp3",
+  "v": "[pauza] Nevíme, jak se jmenoval. Víme jen, kolik lidí díky jeho letce přežilo."
  }
 ]
