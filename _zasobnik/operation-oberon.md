@@ -16,7 +16,7 @@ zdroje:
 forma: dramatizace
 hodnoceni: 5
 hodnoceni_proc: Klasická vojenská odysea; výsledek ochotně ponechává zdroj otevřený.
-stav: rozpracováno
+stav: na webu
 priorita: false
 rok_od: 2605
 ---
